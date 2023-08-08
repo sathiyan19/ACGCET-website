@@ -1,0 +1,145 @@
+.whole_content{
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.princ{
+    padding: 20px;
+    background-color: #D9EDFF;
+}
+
+.heading1{
+    color: #01134d;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    /* text-decoration: underline; */
+}
+.princ_msg_head{
+    color: #01134d;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.princ_msg_content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.princ_msg_content_img{
+    width: 40%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.princ_msg_content_desig{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    >div{
+        color: #01134d;
+        font-weight: 600;
+    }
+}
+.princ_msg_content_text{
+    width: 50%;
+    text-align: justify;
+    color: #01134d;
+    line-height: 1.5rem;
+    font-size: 16px;
+}
+
+.princ_msg_content_img_pic{
+    width: 100%;
+}
+
+.princ_pic{
+    width: 100%;
+}
+
+.org_structure{
+    padding: 20px;
+}
+
+.org_pic{
+    /* background-color: #01134d; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.org_text{
+    text-align: justify;
+    /* color: #01134d; */
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+
+.ord_str_img{
+    width: 65%;
+    height: auto;
+}
+
+@media(max-width:1023px){
+    .princ_msg_content{
+        flex-direction: column;
+    }
+    .princ_msg_content_img{
+        width: 100%;
+    }
+    .princ_msg_content_text{
+        width: 100%;
+    }
+}
+
+@media(max-width:475px){
+    .princ_msg_content_text,.org_text{
+        font-size: 14px;
+    }
+    .heading{
+        font-size: 24px;
+    }
+    .princ_msg_head{
+        font-size: 18px;
+    }
+    .princ_msg_content_desig{
+        margin: 10px 0;
+        >div{
+            font-size: 16px;
+        }
+    }
+    .princ,.org_structure{
+        padding: 15px;
+    }
+    .princ_msg_head{
+        margin-bottom: 10px;
+    }
+    .whole_content{
+        margin-top: 70px;
+        padding: 10px;
+    }
+
+    .ord_str_img{
+        width: 100%;
+    }
+}
+
+@media(max-width:375px){
+    .princ_msg_content_text,.org_text{
+        font-size: 12px;
+    }
+
+    .princ_msg_content_desig{
+        margin: 10px 0;
+        >div{
+            font-size: 14px;
+        }
+    }
+}

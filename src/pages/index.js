@@ -1,0 +1,5 @@
+export {default as Home} from './Home/Home'
+export {default as Milestones} from './Milestone/Milestones'
+export {default as About} from './About/About'
+export {default as Vision} from './Vision/Vision'
+export {default as Office} from './Office/Office'

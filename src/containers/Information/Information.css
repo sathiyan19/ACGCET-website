@@ -1,0 +1,116 @@
+.important {
+    display: flex;
+    padding: 0 20px;
+    /* animation-name: slide-up;
+    animation-duration: 1s;
+    animation-timing-function:ease-out; */
+}
+
+.bulletin {
+    width: 70%;
+    background-color: #01134d;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quick {
+    width: 30%;
+    background-color: #01134d;
+    margin-left: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-link {
+    color: white;
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
+.quick-link:hover {
+    background-color: white;
+    color: #01134d;
+    font-weight: 700;
+}
+
+.board {
+    text-align: center;
+    /* text-decoration: underline; */
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.line {
+    height: 2px;
+    background-color: white;
+    width: 210px;
+    margin: 5px 0;
+}
+
+.impmsg {
+    line-height: 1.8rem;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.impmsg:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.list {
+    list-style: disc;
+}
+
+.msg {
+    color: white;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(5%);
+    }
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:610px) {
+    .important {
+        flex-direction: column;
+    }
+    .bulletin {
+        width: 100%;
+        margin: 0;
+    }
+    .quick {
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .board {
+        font-size: 20px;
+    }
+    .impmsg {
+        font-size: 15px;
+    }
+    .quick-link {
+        font-size: 15px;
+    }
+}
