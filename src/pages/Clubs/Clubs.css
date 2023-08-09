@@ -1,0 +1,219 @@
+.hero-image {
+    background-image: linear-gradient(rgba(0, 19, 72, 0.3), rgba(0, 19, 72, 0.9)), url("../../assets/pictures/we.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.clubs_hero {
+    height: 500px;
+    /* margin: 0;
+    font-family: Arial, Helvetica, sans-serif; */
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1{
+    font-weight: bolder;
+    font-size: 60px;
+    color: white;
+}
+
+.clubs_desc{
+    background-color:#00134d;
+    padding: 80px;
+}
+
+.clubs_desc p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+/* intro section ends here */
+ 
+.content{
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .desc{
+    display: flex;
+    background-color: #D9EDFF;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px #ECF6FF;
+  }
+  
+  .text{
+    width: 80%;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image-container{
+    width: 20%;
+    margin: 10px;
+  }
+  
+  .description-container {
+    margin-left: 30px;
+    width: 30%;
+  }
+  
+  .description-container h1 {
+    /* margin: 0 0 10px; */
+    color: #00134d;
+    font-weight: bolder;
+  }
+  
+  
+  
+  .text p{
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.5rem;
+    color: black;
+  }
+  
+  .coordinates>h4{
+    color: #00134d;
+    font-weight:600;
+  }
+  
+  .coordinates>h6{
+    color:black;
+  }
+  
+  
+  
+  .icons a i{
+    color:#00134d;
+    font-size: 30px;
+    margin: 0   10px;
+  }
+  
+  
+  
+  .icons a i:hover{
+    scale: 1.1;
+    transition: 0.5s;
+  }
+  
+
+  @media (max-width:768px){
+  
+    .section {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .desc{
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      margin-top: 15px;
+      padding: 20px;
+    }
+
+    .hero-text{
+      top:80%;
+    }
+
+    .hero-text h1{
+      font-size: 50px;
+    }
+
+    .text{
+      width: 100%;
+    }
+  
+    .text p{
+      padding:0;
+    }
+  
+    .image-container{
+      width: 50%;
+    }
+  
+    .description-container{
+      width: fit-content;
+      margin-left:0 ;
+    }
+  
+    .content{
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .clubs_desc{
+        padding: 20px;
+    }
+
+    .clubs_desc p{
+      font-size: 14px;
+    }
+
+    .hero-text h1{
+        font-size: 32px;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+  
+    .desc{
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+    }
+  
+    .text p{
+      padding:0;
+      font-size: 14px;
+    }
+  
+    .image-container{
+      width: 100%;
+    }
+  
+    .description-container{
+      width: fit-content;
+      margin-left:0 ;
+    }
+  
+    .content{
+      padding: 0;
+    }
+
+    .icons a i{
+      font-size: 26px;
+    }
+  
+  }
+  
+ 
