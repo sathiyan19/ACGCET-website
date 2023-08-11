@@ -1,4 +1,4 @@
-.hero-image {
+/* .hero-image {
     background-image: linear-gradient(rgba(0, 19, 72, 0.3), rgba(0, 19, 72, 0.9)), url("../../assets/pictures/we.jpg");
     height: 100%;
     background-position: center;
@@ -9,13 +9,11 @@
 
 .clubs_hero {
     height: 500px;
-    /* margin: 0;
-    font-family: Arial, Helvetica, sans-serif; */
 }
 
 .hero-text {
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -25,7 +23,7 @@
     font-weight: bolder;
     font-size: 60px;
     color: white;
-}
+} */
 
 .clubs_desc{
     background-color:#00134d;
@@ -42,22 +40,23 @@
 /* intro section ends here */
  
 .content{
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     padding: 20px;
+    border-radius: 20px;
   }
+
+
   
-  .section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
   .desc{
     display: flex;
     background-color: #D9EDFF;
     align-items: center;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 5px #ECF6FF;
+    /* padding: 10px; */
+    /* border-radius: 15px; */
+    margin-left: 60px;
+    margin-right: 60px;
+    /* box-shadow: 5px 5px 10px 5px #ECF6FF; */
   }
   
   .text{
@@ -66,23 +65,36 @@
   
   .image-container img {
     max-width: 100%;
+    /* background-color: #00134d; */
     height: auto;
   }
   
   .image-container{
-    width: 20%;
-    margin: 10px;
+    width: 15%;
+    /* background-color:#D9EDFF; */
+    /* clip-path: polygon(50% 0%, 100% 0, 100% 25%, 75% 50%, 100% 75%, 100% 100%, 50% 100%, 0 100%, 0 75%, 25% 50%, 0 25%); */
+    position: relative;
+    border-radius: 50%;
+    top: 70px;
+    left: 50px;
+    /* margin: 10px; */
   }
   
   .description-container {
-    margin-left: 30px;
-    width: 30%;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: #00134d;
+    /* width: 30%; */
   }
   
   .description-container h1 {
     /* margin: 0 0 10px; */
-    color: #00134d;
+    color:white;
     font-weight: bolder;
+    position: relative;
+    left: 250px;
   }
   
   
@@ -103,17 +115,31 @@
     color:black;
   }
   
+  .connect{
+    background-color: #00134d;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .icons{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
   
-  
-  .icons a i{
-    color:#00134d;
+  .callable a i{
+    color:white;
     font-size: 30px;
     margin: 0   10px;
   }
   
+  .callfor h5{
+    color: white;
+  }
   
-  
-  .icons a i:hover{
+  .callable a i:hover{
     scale: 1.1;
     transition: 0.5s;
   }
@@ -135,14 +161,7 @@
       padding: 20px;
     }
 
-    .hero-text{
-      top:80%;
-    }
-
-    .hero-text h1{
-      font-size: 50px;
-    }
-
+    
     .text{
       width: 100%;
     }
@@ -174,10 +193,7 @@
       font-size: 14px;
     }
 
-    .hero-text h1{
-        font-size: 32px;
-    }
-
+    
     .section {
         flex-direction: column;
         text-align: center;
