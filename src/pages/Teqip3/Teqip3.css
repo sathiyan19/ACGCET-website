@@ -1,0 +1,19 @@
+.teqip3_first{
+    text-align: center;
+}
+.teqip3_third{
+    text-align: right;
+}
+.teqip3_tab{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 120px;
+}
+th:nth-child(2),
+td:nth-child(2){
+    width: 10%; 
+}
+th:nth-child(1),
+td:nth-child(1){
+    width: 10%; 
+}
