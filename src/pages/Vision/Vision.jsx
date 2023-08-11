@@ -73,7 +73,7 @@ const Vision = () => {
 
                 <div className="column">
                     <div className="card">
-                        <img src={integrity} alt="integrity Image" />
+                        <img src={integrity} alt="integrity" />
                         <h3>Integrity</h3>
                         <p>ACGCET is committed to ethical and responsible behavior in our own actions and to developing the
                         same commitment in our students, thus fostering individuals
@@ -85,7 +85,7 @@ const Vision = () => {
 
                 <div class="column">
                     <div class="card">
-                      <img src={ethics} alt="ethics Image"/>
+                      <img src={ethics} alt="ethics"/>
                       <h3>Ethics</h3>
                       <p>
                         ACGCET believes in working with honesty, courage, and trustworthiness.
@@ -98,7 +98,7 @@ const Vision = () => {
 
                 <div class="column">
                     <div class="card">
-                      <img src={respect} alt="respect Image"/>
+                      <img src={respect} alt="respect"/>
                       <h3>Respect</h3>
                       <p>
                         ACGCET supports a community with admiration and thoughtfulness among students, faculty, staff.
@@ -111,7 +111,7 @@ const Vision = () => {
 
                 <div class="column">
                     <div class="card">
-                      <img src={responsibility} alt="responsibility Image"/>
+                      <img src={responsibility} alt="responsibility"/>
                       <h3>Responsibility</h3>
                       <p>
                         ACGCET commits to being responsible for accountability in hassle-free environment of operations at all levels 
@@ -128,57 +128,53 @@ const Vision = () => {
 
                 <div className="column">
                     <div className="card">
-                        <img src={trust} alt="trust Image" />
+                        <img src={trust} alt="trust" />
                         <h3>Trust</h3>
                         <p>ACGCET is committed to earn the public’s trust in all steps and actions through teaching
                             and learning process.We believe that trust is the foundation for collaboration and innovation, 
                             fostering an environment where ideas can flourish and dreams can be realized.At our college, 
                             we encourage open and honest communication, building a culture of trust where individuals feel 
-                            valued and supported.In every interaction, our college upholds trust as a guiding principle, 
-                            ensuring a safe and inclusive space for diverse perspectives to thrive.</p>
+                            valued and supported.</p>
                     </div>
                 </div>
 
                 <div class="column">
                     <div class="card">
-                      <img src={diversity} alt="ethics Image" />
+                      <img src={diversity} alt="ethics" />
                       <h3>Diversity</h3>
                       <p>
                             ACGCET is devoted in supporting a diverse student, faculty, and staff for enhanced multicultural
                             learning opportunities. ACGCET respects the opportunity to work, learn, and develop to embrace the 
                             diversity of individuals, their ideas, irrespective of their caste, race, ethnicity, religion, 
                             spiritual beliefs, national origin, age, gender, marital status, socioeconomic background, and
-                            physical ability.Through diverse interactions, we broaden our horizons and challenge preconceived notions, 
-                            preparing us to thrive in a globalized world. 
+                            physical ability.
                       </p>
                     </div>
                 </div>
 
                 <div class="column">
                     <div class="card">
-                      <img src={ie} alt="respect Image" />
+                      <img src={ie} alt="respect" />
                       <h3>Intellectual Excellence</h3>
                       <p>
                             ACGCET believes in lifelong intellectual development of students, faculty, and staff. ACGCET
                             executes in search of upgradation of knowledge for continuous growth in teaching and learning.
                             We strive to create an environment that challenges minds, ignites curiosity, and encourages 
-                            critical thinking, paving the way for intellectual excellence.In pursuit of intellectual excellence,
-                            our college encourages research, inquiry, and exploration across various disciplines.
+                            critical thinking, paving the way for intellectual excellence.
                       </p>
                     </div>
                 </div>
 
                 <div class="column">
                     <div class="card">
-                      <img src={teamwork} alt="responsibility Image"/>
+                      <img src={teamwork} alt="responsibility"/>
                       <h3>Team Work</h3>
                       <p>
                             ACGCET believes that teamwork is the driving force that propels us towards 
                             achieving common goals and shared visions.Teamwork at our college is not just about working 
                             together but valuing each member's unique strengths and contributions.In the spirit of teamwork,
                             we recognize that the collective efforts of a diverse group can bring about innovative and
-                            transformative outcomes.We nurture an environment where teamwork flourishes, promoting open communication, 
-                            trust, and mutual respect among team members.
+                            transformative outcomes.
                       </p>
                     </div>
                 </div>
