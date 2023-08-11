@@ -1,0 +1,112 @@
+.teqip1_table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin:0 auto;
+   
+}
+
+.teqip1_tab{
+    margin: 180px;
+    margin-bottom: 50px;
+}
+
+table tr:nth-child(even) {
+    background-color:#ECF6FF;
+   }
+
+table tr:nth-child(odd) {
+   background-color:#D9EDFF;
+   }
+
+table th{
+   border: 1px solid #dddddd;
+   color: #00134d;
+   padding: 20px;
+   text-align: center;
+  }  
+
+table td{
+   border: 1px solid #dddddd;
+   text-align: left;
+   padding: 20px;
+   color: black;
+  }
+
+.teqip1_third{
+  text-align: right;
+}
+.teqip1_first{
+  text-align: center;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+        width: 10%; 
+  } 
+
+th:nth-child(3),
+td:nth-child(3) {
+      width: 10%; 
+  }
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 55%; 
+  }
+
+  @media (max-width: 768px){
+    .inner1{
+      background-color: #00134d;
+      top:10px;
+      left:605px;
+      z-index:0;
+      height:100px;
+      width:150px;
+      position: relative;
+      border-radius:15px ;
+    }
+    .inner2{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      /* bottom:px; */
+      top: 84px;
+      right:5px;
+      left:10px;
+      border-radius:15px ;
+    }
+  
+    .inner{
+      border-radius:5px ;
+      margin-top:150px;
+      margin:20px;
+      z-index:2;
+      background-color:#D9EDFF ;
+      position: absolute;
+      border-style: ridge;
+      border-radius:15px ;
+    }
+    .inner p li{
+      color:black;
+      margin:20px;
+      line-height: 1.5rem;
+      
+    }
+    
+    .teqip1_tab{
+      margin:40px;
+    }
+
+    .teqip1_table{
+      margin-top:120px ;
+    }
+    .teqip1_obj{
+      font-weight: bold;
+      color:#00134d;
+      margin-top: 120px;
+      text-align: center;
+    }
+  
+  }

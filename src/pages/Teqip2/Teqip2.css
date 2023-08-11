@@ -1,0 +1,25 @@
+.teqip2_table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin:0 auto;
+}
+
+.teqip2_tab{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.teqip2_third{
+    text-align: center;
+}
+.teqip2_fourth{
+    text-align: right;
+}
+.teqip2_first{
+    text-align: center;
+}
+.teqip2_head3:nth-child(3),
+.teqip2_third:nth-child(3) {
+      width:30px; 
+  }

@@ -82,7 +82,7 @@ export const milestones=[
     {
         'year':'1952',
         'achieve':'Alagappa Chettiar College of Engineering and Technology (ACCET) was started with Civil, Mechanical and Electrical Engineering (3 disciplines).'
-    },
+    }
     
     
 ]
