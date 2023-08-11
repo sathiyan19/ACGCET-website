@@ -48,7 +48,7 @@ const top_nav_paths=[
     {"id":'7',
     "type":"1",
     'title':'Co-Curricular',
-    'links':[{'path':'/','link':"Clubs"},
+    'links':[{'path':'/clubs','link':"Clubs"},
             {'path':'/','link':"Sports"},
             {'path':'/','link':"NSS"},
             {'path':'/','link':"NCC"},

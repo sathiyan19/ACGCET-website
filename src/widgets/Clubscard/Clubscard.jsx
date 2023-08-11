@@ -1,22 +1,24 @@
 import React from "react";
 
-const Clubscard = ({logoimg,title,maillink,instalink,para,staff,staffdesi,student,studentdesi}) => {
+const Clubscard = ({
+  logoimg,
+  title,
+  maillink,
+  instalink,
+  para,
+  staff,
+  staffdesi,
+  student,
+  studentdesi,
+}) => {
   return (
     <div className="content">
       <div className="section">
         <div className="image-container">
-          <img src={logoimg}  />
+          <img src={logoimg} alt="oruimagevaru" />
         </div>
         <div className="description-container">
           <h1>{title}</h1>
-          <div className="icons">
-            <a href={instalink}>
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href={maillink}>
-              <i class="fa fa-envelope"></i>
-            </a>
-          </div>
         </div>
       </div>
 
@@ -31,6 +33,21 @@ const Clubscard = ({logoimg,title,maillink,instalink,para,staff,staffdesi,studen
           <h4>Student President:</h4>
           <h6>{student}</h6>
           <p>{studentdesi}</p>
+        </div>
+      </div>
+      <div className="connect">
+        <div className="icons">
+          <div className="callfor">
+          <h5>Connect with us on</h5>
+          </div>
+          <div className="callable">
+          <a href={instalink}>
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href={maillink}>
+            <i class="fa fa-envelope"></i>
+          </a>
+          </div>
         </div>
       </div>
     </div>

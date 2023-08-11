@@ -3,19 +3,18 @@ import React from "react";
 import "./Clubs.css";
 import { Clubscard } from "../../widgets";
 import { clubsinfo } from "../../constants/clubscardinfo";
-
+import { Heroimagecarousal } from "../../components";
+import { Heroimagecarousalinfo } from "../../constants/Heroimagecarousalinfo";
 
 const Clubs = () => {
   return (
     <div>
       {/* hero image */}
-      <div className="clubs_hero">
-        <div className="hero-image">
-          <div className="hero-text">
-            <h1>Clubs at ACGCET</h1>
-          </div>
-        </div>
-      </div>
+      <Heroimagecarousal
+        key={Heroimagecarousalinfo.id}
+        title={Heroimagecarousalinfo.title}
+        img_list={Heroimagecarousalinfo.img_list}
+      />
 
       {/* description section */}
       <div className="clubs_desc">
@@ -30,9 +29,20 @@ const Clubs = () => {
         </p>
       </div>
 
-      {clubsinfo.map((item)=><Clubscard key={item.id} logoimg={item.logoimg} title={item.title} maillink={item.maillink} instalink={item.instalink} para={item.para} staff={item.staff} staffdesi={item.staffdesi} student={item.student} studentdesi={item.studentdesi} />)}
-
-
+      {clubsinfo.map((item) => (
+        <Clubscard
+          key={item.id}
+          logoimg={item.logoimg}
+          title={item.title}
+          maillink={item.maillink}
+          instalink={item.instalink}
+          para={item.para}
+          staff={item.staff}
+          staffdesi={item.staffdesi}
+          student={item.student}
+          studentdesi={item.studentdesi}
+        />
+      ))}
     </div>
   );
 };

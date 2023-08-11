@@ -2,7 +2,7 @@ import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 
 import { Navigation,Footer } from './components'
-import { Home,Milestones,About,Vision,Office } from './pages'
+import { Home,Milestones,About,Vision,Clubs,Office } from './pages'
 
 import './App.css'
 
@@ -16,6 +16,7 @@ const App = () => {
           <Route path='/about-institution' element={<About/>}/>
           <Route path='/vision' element={<Vision/>}/>
           <Route path='/office' element={<Office/>}/>
+          <Route path='/clubs' element={<Clubs/>}/>
         </Routes>
         <Footer/>
     </div>
