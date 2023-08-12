@@ -2,7 +2,7 @@ import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 
 import { Navigation,Footer } from './components'
-import { Home,Milestones,About,Vision,Clubs,Office,Clubs,Alumni } from './pages'
+import { Home,Milestones,About,Vision,Clubs,Office,Alumni } from './pages'
 
 import './App.css'
 
