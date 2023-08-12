@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Dropdown = ({type,title,links}) => {
+const Dropdown = ({type,title,base,links}) => {
 
   let class_name
   if(type==="1"){
@@ -14,7 +14,7 @@ const Dropdown = ({type,title,links}) => {
   return (
     <div className="dropdown">
         <li className='nav-item'>
-            <a className={class_name} aria-current="page">{title}</a>
+            <a className={class_name} href={base} aria-current="page">{title}</a>
         </li>
          <div className="dropdown-content">
             {links.map((item)=><a key={item.link} href={item.path}>{item.link}</a>)}
