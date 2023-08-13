@@ -1,6 +1,4 @@
-.alumni_body{
-    margin: 60px 0 0 0;
-}
+
 .alumni-menu {
     margin-top: -16px;
     background-color: #fff;
@@ -33,6 +31,13 @@
     height: 1px;
     background-color: #fff;
     box-shadow: 0 10px 3px #000;
+}
+
+.notable {
+    font-size: 40px;
+    font-weight: 500;
+    color: #01134d;
+    padding: 40px 20px;
 }
 
 .about {
@@ -107,6 +112,9 @@
     font-weight: 400;
     color: #01134d;
 }
+.row {
+    margin-top: 5px;
+  }
 
 @media(max-width:1360px) {
     .dsc {
@@ -147,7 +155,7 @@
 }
 
 @media(max-width:500px) {
-    .heading {
+    .notable,.heading {
         font-size: 28px;
     }
     .accetosa {
