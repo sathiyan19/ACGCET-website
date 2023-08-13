@@ -1,3 +1,30 @@
+@keyframes marquee {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.list {
+    overflow: hidden;
+    position: relative;
+    height: 130px;
+    /* background-color: aqua; */
+}
+
+.msg {
+    /* list-style: none; */
+    /* display: block; */
+    animation: marquee 5s linear infinite;
+    animation-play-state: running; 
+}
+
+.list:hover .msg {
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
 .important {
     display: flex;
     padding: 0 20px;
