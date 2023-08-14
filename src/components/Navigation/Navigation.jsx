@@ -11,7 +11,7 @@ import {Dropdown} from '../../widgets'
 const Navigation = () => {
 
     const togglemenu=()=>{
-        console.log("CLICKED")
+        // console.log("CLICKED")
         document.querySelector('.offcanvas-collapse').classList.toggle('open')
     }
 
@@ -29,7 +29,7 @@ const Navigation = () => {
                     <div className="container-fluid hi">
                         <ul className="navbar-nav good me-auto mb-2 mb-lg-0">
 
-                            {top_nav_paths.map((item)=><Dropdown key={item.id} type={item.type} title={item.title} links={item.links}/>)}
+                            {top_nav_paths.map((item)=><Dropdown key={item.id} type={item.type} title={item.title} base={item.basepath} links={item.links}/>)}
                             
                         </ul>
                     </div>
@@ -44,7 +44,7 @@ const Navigation = () => {
                     <div className="container-fluid">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-                            {bottom_nav_paths.map((item)=><Dropdown key={item.id} type={item.type} title={item.title} links={item.links}/>)}
+                            {bottom_nav_paths.map((item)=><Dropdown key={item.id} type={item.type} title={item.title} base={item.basepath} links={item.links}/>)}
 
                         </ul>
                     </div>
