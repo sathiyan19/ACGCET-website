@@ -12,6 +12,10 @@ const Information = () => {
                 {/* Marquee can be implemented using CSS animations or JavaScript */}
                 <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
                 <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
+                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
+                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
+                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
+                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
             </ul>
         </div>
         <div className="quick">
