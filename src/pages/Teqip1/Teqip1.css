@@ -155,8 +155,31 @@ td:nth-child(2) {
     }
     
   }
-  @media only screen and (min-width:320px ) and (max-width:376px){
-    
+  @media only screen and (min-width:375px ) and (max-width:426px){
+    .teqip1_tab{
+      margin:10px ;
+      margin-top:300px;  
+    }
+    .teqip1_inner1{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:8px;
+      left:265px;
+      border-radius:15px ;
+    }
+    .teqip1_inner2{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      top: 250px;
+      border-radius:15px ;
+    }
+    .teqip1_obj{
+      margin-bottom: 25px;
+    }
   }
   @media only screen and (min-width:320px ) and (max-width:376px){
     
