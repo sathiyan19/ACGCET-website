@@ -4,3 +4,4 @@ export {default as Backtotop} from './Backtotop/Backtotop';
 export {default as Floatinmenu} from './Floatingmenu/Floatingmenu';
 export {default as Clubscard} from './Clubscard/Clubscard';
 export {default as Modal} from './Modal/Modal';
+export {default as Profilecard} from './profilecards/profilecard';
