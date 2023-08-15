@@ -2,6 +2,8 @@ import React,{useState,useEffect} from 'react'
 
 import './Slideshow.css'
 
+import touch_effect from '../../Functions/touch_detect';
+
 const Slideshow = ({images}) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,41 +24,8 @@ const Slideshow = ({images}) => {
 
   useEffect(()=>{
     let slides1 = document.getElementsByClassName("mslide");
-var startx1,
-    starty1,
-    starttime1,
-    dist1,
-    distx1,
-    disty1,
-    elapsedtime1,
-    threshold1 = 2000,
-    dist1 = 100,
-    restraint1 = 30
-const element1 = document.querySelector(".slideshow-container")
-element1.addEventListener("touchstart", e1 => {
-    var obj1 = e1.changedTouches[0]
-    startx1 = obj1.pageX
-    starty1 = obj1.pageY
-    starttime1 = new Date().getTime()
-    e1.preventDefault()
-})
+    touch_effect(".slideshow-container",minus,plus)
 
-element1.addEventListener("touchend", e1 => {
-    e1.preventDefault()
-    var obj2 = e1.changedTouches[0]
-    distx1 = obj2.pageX - startx1
-    disty1 = obj2.pageY - starty1
-    elapsedtime1 = new Date().getTime() - starttime1
-    if (elapsedtime1 < threshold1 & disty1 < 60) {
-        if (distx1 < 0) {
-            // console.log("Left")
-            plus()
-        } else if (distx1 > 0) {
-            // console.log("Right")
-            minus()
-        }
-    }
-})
 
 const slideshowInterval = setInterval(plus, 5000); // Change the interval as needed (5000ms = 5 seconds)
     return () => clearInterval(slideshowInterval);
