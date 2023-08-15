@@ -1,33 +1,56 @@
-import React from 'react'
+import React from "react";
 
-import './Milestones.css'
+import "./Milestones.css";
 
-import { milestones } from '../../constants/milestones'
+import { milestones } from "../../constants/milestones";
 
-import mile from '../../assets/pictures/mile.webp'
+import { Table } from "../../components";
+
+import mile from "../../assets/pictures/mile.webp";
 
 const Milestones = () => {
+  const columns = [
+    { field: "year", header: "year" },
+    { field: "achieve", header: "achievement" },
+  ];
   return (
-    <div className="tab">
-        <div className="headingsec">
-            <div className="imghead">
-                <img className="pic" src={mile} alt="Milestones" />
-            </div>
-            <div className="heading">
-                <h1>Milestones</h1>
-            </div>
+    <div className="milestone_tab">
+      <div className="milestone_headingsec">
+        <div className="milestone_imghead">
+          <img className="milestone_pic" src={mile} alt="Milestones" />
         </div>
-        <table>
-            <tr>
-                <th>YEAR</th>
-                <th className="achieve">ACHIEVEMENTS</th>
-            </tr>
+        <div className="milestone_heading">
+          <h1>Milestones</h1>
+        </div>
+      </div>
 
-            {milestones.map((item)=><tr><td>{item.year}</td><td>{item.achieve}</td></tr>)}    
-        
-        </table>
+      <div className="milestone_table">
+        <Table
+          data={milestones}
+          columns={columns}
+          // hover={true}
+          // striped={true}
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
+export default Milestones;
+/* <div className="tab">
+         <div className="headingsec">
+             <div className="imghead">
+                 <img className="pic" src={mile} alt="Milestones" />
+             </div>
+             <div className="heading">
+                 <h1>Milestones</h1>
+             </div>
+         </div>
+         <table>
+             <tr>
+                 <th>YEAR</th>
+                 <th className="achieve">ACHIEVEMENTS</th>
+             </tr>
 
-export default Milestones
+             {milestones.map((item)=><tr><td>{item.year}</td><td>{item.achieve}</td></tr>)}    
+        
+         </table> */
