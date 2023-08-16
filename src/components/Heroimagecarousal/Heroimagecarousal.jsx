@@ -23,7 +23,7 @@ const Heroimagecarousal = ({ img_list, title }) => {
       <div
         className="hero-image"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 19, 72, 0.3), rgba(0, 19, 72, 0.9)), url("${imageUrls[currentIndex]}")`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("${imageUrls[currentIndex]}")`,
         }}
       >
         <div className="hero-text">

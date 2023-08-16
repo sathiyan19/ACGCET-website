@@ -1,5 +1,7 @@
 import React from "react";
 
+import './Clubscard.css'
+
 const Clubscard = ({
   logoimg,
   title,
