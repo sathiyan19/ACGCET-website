@@ -6,3 +6,7 @@ export {default as Office} from './Office/Office'
 export {default as Clubs} from './Clubs/Clubs'
 export {default as Alumni} from './Alumni/Alumni'
 export {default as Nss} from './Nss/Nss'
+
+export {default as Teqip1} from './Teqip1/Teqip1'
+export {default as Teqip2} from './Teqip2/Teqip2'
+export {default as Teqip3} from './Teqip3/Teqip3'

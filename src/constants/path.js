@@ -96,7 +96,10 @@ const top_nav_paths=[
     "type":"2",
     'title':'TEQIP & QIP',
     'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"Under Construction"}]
+    'links':[{'path':'/teqip1','link':"Teqip I"},
+    {'path':'/teqip2','link':"Teqip II"},
+    {'path':'/teqip3','link':"Teqip III"}]
+
     },
 
     {"id":'12',
@@ -152,8 +155,10 @@ const bottom_nav_paths=[
     {"id":'17',
     "type":"3",
     'title':'TEQIP & QIP',
-    'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"Under Construction"}]
+    'links':[{'path':'/teqip1','link':"Teqip I"},
+             {'path':'/teqip2','link':"Teqip II"},
+             {'path':'/teqip3','link':"Teqip III"}
+    ]
     },
 
     {"id":'18',

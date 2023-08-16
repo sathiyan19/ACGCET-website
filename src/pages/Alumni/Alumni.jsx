@@ -1,15 +1,40 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Alumni.css";
 
 import { Modal } from "../../widgets";
-import { contributions } from "../../constants/alumni_info";
+import { Slideshow} from "../../components";
+import { contributions, slideshow_imgs } from "../../constants/alumni_info";
 
 import accetosa_logo from "../../assets/pictures/logo-cms.webp";
 
 const Alumni = () => {
+  useEffect(() => {
+    window.addEventListener("resize", calwidth);
+    var wid;
+
+    let row = document.getElementsByClassName("gyro");
+    calwidth();
+
+    function calwidth() {
+      wid = window.innerWidth;
+      row[0].className = row[0].className.replace("row-cols-3", "");
+      row[0].className = row[0].className.replace("row-cols-2", "");
+      row[0].className = row[0].className.replace("row-cols-1", "");
+      if (wid < 1100 && wid > 650) {
+        row[0].className += "row-cols-2";
+      } else if (wid < 650) {
+        row[0].className += "row-cols-1";
+      } else if (wid > 1100) {
+        row[0].className += "row-cols-3";
+      }
+    }
+  },[]);
   return (
     <div className="alumni_body">
+
+      <Slideshow images={slideshow_imgs}/>
+
       <div className="container alumni-menu">
         <a href="#about" className="lin">
           About
@@ -23,6 +48,10 @@ const Alumni = () => {
       </div>
 
       <div className="divider"></div>
+
+      <div className="notalum">
+        <div className="notable">Notable Alumni</div>
+      </div>
 
       <div className="about">
         <p className="heading" id="about">
@@ -79,7 +108,7 @@ const Alumni = () => {
         <div className="gyro row row-cols-2 g-4">
 
           {contributions.map((item)=>
-            <Modal heading={item.heading} sub_text={item["sub-head"]} pic={item.pic} content_1={item.content_1} content_2={item.content_2}/>
+            <Modal key={item.id} heading={item.heading} sub_text={item["sub-head"]} pic={item.pic} content_1={item.content_1} content_2={item.content_2}/>
           )}
         </div>
       </div>

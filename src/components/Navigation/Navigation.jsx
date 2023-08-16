@@ -11,7 +11,7 @@ import {Dropdown} from '../../widgets'
 const Navigation = () => {
 
     const togglemenu=()=>{
-        console.log("CLICKED")
+        // console.log("CLICKED")
         document.querySelector('.offcanvas-collapse').classList.toggle('open')
     }
 

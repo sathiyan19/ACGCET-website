@@ -1,0 +1,263 @@
+.teqip1_heading{
+  font-weight: bold;
+  color:#00134d;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  
+}
+
+.teqip1_obj {
+  font-weight: bold;
+  color:#00134d;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.teqip1_content{
+  border-radius:5px ;
+  margin-top:30px;
+  margin-left: 70px ;
+  margin-right: 70px;
+  background-color:#D9EDFF ;
+}
+.teqip1_content p{
+  line-height: 1.8rem;
+  color: black;
+  padding: 10px;
+}
+.comp_table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.teqip1_tab{
+    margin: 280px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.teqip1_inner1{
+  height:100px;
+  width:150px;
+  position: relative;
+  background-color: #00134d;
+  top:60px;
+  left:1000px;
+  border-radius:15px ;
+}
+.teqip1_inner2{
+  height:100px;
+  width:150px;
+  position: relative;
+  background-color:#00134d;
+  z-index:0;
+  /* bottom:2px; */
+  top:110px;
+  left:50px;
+  border-radius:15px ;
+}
+
+.teqip1_inner{
+  margin-top:70px;
+  margin-left: 60px ;
+  margin-right: 70px;
+  position:absolute;
+  z-index: 2;
+  background-color:#D9EDFF ;
+  border-style: ridge;
+  border-radius:15px ;
+}
+.teqip1_inner p li{
+  color:black;
+  margin:20px;
+  line-height: 1.5rem;
+  
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+        width: 8%; 
+  } 
+
+th:nth-child(3),
+td:nth-child(3) {
+      width: 15%; 
+      
+  }
+  td:nth-child(3) 
+  {
+    text-align: right;
+  }
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 25%; 
+  }
+
+  @media (max-width: 768px){
+    .teqip1_content{
+      margin:20px;
+    }
+
+    .teqip1_inner1{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:10px;
+      left:605px;
+      border-radius:15px ;
+    }
+    .teqip1_inner2{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      /* bottom:px; */
+      top:80px;
+      right:5px;
+      left:10px;
+      border-radius:15px ;
+    }
+  
+    .teqip1_inner{
+      border-radius:5px ;
+      margin-top:80px;
+      margin:20px;
+      z-index:1;
+      background-color:#D9EDFF ;
+      position: absolute;
+      border-style: ridge;
+      border-radius:15px ;
+    }
+    .teqip1_inner p li{
+      color:black;
+      margin:20px;
+      line-height: 1.5rem;
+      
+    }
+    
+    .teqip1_tab{
+      margin:60px;   /*this gives equal margin*/
+      margin-top: 150px;
+    }
+     
+    
+    
+    .teqip1_obj{
+      font-weight: bold;
+      color:#00134d;
+      margin-top: 40px;
+      text-align: center;
+    }
+    
+  }
+  @media only screen and (min-width:375px ) and (max-width:426px){
+    .teqip1_tab{
+      margin:10px ;
+      margin-top:300px;  
+    }
+    .teqip1_inner1{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:8px;
+      left:265px;
+      border-radius:15px ;
+    }
+    .teqip1_inner2{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      top: 250px;
+      border-radius:15px ;
+    }
+    .teqip1_obj{
+      margin-bottom: 25px;
+    }
+  }
+  @media only screen and (min-width:320px ) and (max-width:376px){
+    
+    .teqip1_tab{
+      margin:10px ;
+      margin-top:300px;  
+    }
+    
+    .teqip1_inner1{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:10px;
+      left:215px;
+      border-radius:15px ;
+    }
+    .teqip1_inner2{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      top: 275px;
+      border-radius:15px ;
+    }
+  }
+
+  @media (max-width: 320px){
+    
+
+    .teqip1_tab{
+      margin-top:370px ; /*this is the gap bet table and content*/
+      /* margin:10px;   don't do this*/
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    
+
+    .teqip1_inner1{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:10px;
+      left:160px;
+      
+      border-radius:15px ;
+    }
+    .teqip1_inner2{
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      /* bottom:px; */
+      top: 345px;
+      bottom: 3px;
+      right:5px;
+      left:10px;
+      border-radius:15px ;
+    }
+  
+    .teqip1_inner{
+      border-radius:5px ;
+      margin-top:80px;
+      margin:20px;
+      z-index:1;
+      background-color:#D9EDFF ;
+      /* position: absolute; */
+      border-style: ridge;
+      border-radius:15px ;
+    }
+    .teqip1_obj{
+      margin-bottom: 25px;
+    }
+  }
+
+ 
+    
+   
+  
