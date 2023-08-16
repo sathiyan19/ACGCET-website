@@ -13,5 +13,9 @@ export const teqip3=[
         'sno':'3',
         'particulars':'Operating Cost',
         'budget':'Rs.70,00,000/-'
+    },
+    {
+        'particulars':'Total Amount (Rs.)',
+        'budget':'Rs. 7,00,00,000/-'
     }
 ]
