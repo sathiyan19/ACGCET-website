@@ -1,7 +1,7 @@
-import freshers from "../assets/pictures/freshers (1).webp"
-import music from "../assets/pictures/band.webp"
-import muthamizh from "../assets/pictures/muthamizh.webp"
-import leo from "../assets/pictures/leo.webp"
+import freshers from "../assets/pictures/fresherslogo.webp"
+import music from "../assets/pictures/musiclogo.webp"
+import muthamizh from "../assets/pictures/muthamizhlogo.webp"
+import leo from "../assets/pictures/leologo.webp"
 
 export const clubsinfo =[
     {
@@ -13,8 +13,8 @@ export const clubsinfo =[
         'para':"The aim of our club is to bring out the service and leadership quality of individuals by involving them in various social activities and coordinating their fellow juniors.Our vision is to develop professional and leadership skills of every individuals.The mission of our club is to provide opportunities for the youth to enhance their personal development skills, to address the social needs of the society by creating better relationships and gaining knowledge in all aspects. The main obejective of our club is to advance the world with goodwill, providing quality education, improving the environment, and alleviating poverty and also to emphasize ethical standards with better leadership qualities.The planned activities include installation, treasure hunt, awareness program, orphanage visit, planting saplings, tutoring government school students, and participating in RYLA (Rotary Youth Leadership Awards).",
         'staff':"Mr. V. Pradeep",
         'staffdesi':"Asst. Prof. EEE Dept, ACGCET",
-        'student':"Harish Ashwathaman",
-        'studentdesi':"4th year"
+        'student':"Anuraj",
+        'studentdesi':"4th year ECE"
     },
 
     {
