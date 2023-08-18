@@ -52,5 +52,10 @@ export const teqip2=[
         'category':'Incremental Operating Cost',
         'percent':'7',
         'amount':'122.50'
+    },
+    {
+        'sno':'Total',
+        'percent':'100',
+        'amount':'1750.00'
     }
 ]

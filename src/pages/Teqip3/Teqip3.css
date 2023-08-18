@@ -1,19 +1,93 @@
-.teqip3_first{
-    text-align: center;
-}
-.teqip3_third{
-    text-align: right;
+.teqip3{
+    width:80%;
 }
 .teqip3_tab{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin: 120px;
+    margin: 70px 150px 50px 190px;
 }
-th:nth-child(2),
-td:nth-child(2){
-    width: 10%; 
+
+.teqip3_heading{
+    font-weight: bold;
+    color:#00134d;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .teqip3_obj {
+    font-weight: bold;
+    color:#00134d;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .teqip3_content{
+    border-radius:5px ;
+    padding:10px;
+    margin: 40px 90px 20px 60px;
+    background-color:#D9EDFF ;
+    box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+    4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+    15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+    29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+    70px 70px 80px rgba(0, 0, 0, 0.02);
+  }
+  .teqip3_content p{
+    line-height: 1.8rem;
+    color: black;
+    padding: 10px;
+  }
+  .teqip3_inner{
+    margin: 50px 90px 20px 60px;
+    padding:10px;
+    box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+    4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+    15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+    29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+    70px 70px 80px rgba(0, 0, 0, 0.02);
+      
+    background-color:#D9EDFF ;
+    border-radius:5px ;
+    }
+    .teqip3_inner p li{
+      color:black;
+      margin:20px;
+      line-height: 1.5rem;
+      
+    }
+.teqip3_tab th:nth-child(3),
+.teqip3_tab td:nth-child(3){
+    width: 30%; 
 }
-th:nth-child(1),
-td:nth-child(1){
-    width: 10%; 
+.teqip3_tab th:nth-child(2),
+.teqip3_tab td:nth-child(2){
+    width: 50%; 
+}
+@media only screen and (max-width:768px) {
+  .teqip3{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .teqip3_tab{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .teqip3_content{
+    width:100%;
+    margin:20px auto 20px auto;
+  }
+  .teqip3_inner{
+    width:100%;
+    margin:20px auto 20px auto;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .teqip3_tab{
+    overflow-x: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    width:95%;
+  } 
 }
