@@ -21,7 +21,7 @@ const top_nav_paths=[
     "type":"1",
     'title':'Academics',
     'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"Programs offered"},
+    'links':[{'path':'/programs','link':"Programs offered"},
             {'path':'/','link':"Academic Calendar"}]
     },
 

@@ -6,8 +6,8 @@ import {Information,Founder,Companies,Events,Paralax,News} from '../../container
 
 import clgpic from '../../assets/pictures/clgpicfinal.webp'
 
-// import {Profilecard} from '../../widgets'
-// import {profileinfo} from '../../constants/profilecards'
+import {Profile_display} from '../../components'
+import {profileinfo} from '../../constants/profilecards'
 
 
 
@@ -28,16 +28,7 @@ const Home = () => {
         <Companies/>
 
         <Events/>
-        {/* {profileinfo.map((item) => (
-        <Profilecard
-          key={item.id}
-          cover={item.cover}
-          dp={item.dp}
-          name={item.name}
-          Designation={item.Designation}
-          mailid={item.mailid}
-        />
-      ))} */}
+        
 
         <Backtotop/>
 

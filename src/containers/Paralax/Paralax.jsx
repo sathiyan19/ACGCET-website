@@ -4,7 +4,6 @@ import {useEffect } from "react";
 import "./Paralax.css";
 
 const Paralax = () => {
-  // const [flag, setFlag] = useState(false);
   let flag = false;
 
   useEffect(() => {
@@ -69,7 +68,7 @@ const Paralax = () => {
               <div className="ther">
                 <div className="figure_box">
                   <div className="figure">
-                    <span className="no" data-val="12"></span>
+                    <span className="no" data-val="15"></span>
                   </div>
                   <div className="figure-text">Programs offered</div>
                 </div>
