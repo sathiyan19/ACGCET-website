@@ -20,13 +20,15 @@ const Teqip3 = () => {
 
   return (
     <div className='teqip3'>
+      <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
+      
       <div className="teqip3_heading">TEQIP-III</div>
       <div className="teqip3_content">
         <p>TEQIP –III is implemented for improving the quality of Engineering Education in existing institutions with a special consideration for Low Income States and Special Category States (SCS) and support to strengthen few affiliated technical universities to improve their policy, academic and management practices.</p>
       </div>
       <div className="teqip3_obj">PROJECT OBJECTIVES</div>
 
-      <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
+      
        
       <div className="teqip3_inner">
           <p>

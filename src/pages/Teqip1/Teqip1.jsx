@@ -49,10 +49,6 @@ const Teqip1 = () => {
           </p>
         </div>
 
-        {/* <div className="teqip1_inner1"></div>
-
-        <div className="teqip1_inner2"></div> */}
-      {/* </div> */}
 
       <div className="teqip1_tab">
         <Table data={teqip1} columns={columns} />

@@ -2,7 +2,7 @@ import React from 'react'
 import {Routes,Route} from 'react-router-dom'
 
 import { Navigation,Footer } from './components'
-import { Home,Milestones,About,Vision,Clubs,Office,Alumni,Teqip1,Teqip2,Teqip3, T3_officials,T3_acad} from './pages'
+import { Home,Milestones,About,Vision,Clubs,Office,Alumni,Teqip1,Teqip2,Teqip3, T3_officials,T3_acad,T3_procure,T3_twin} from './pages'
 
 import './App.css'
 
@@ -23,6 +23,8 @@ const App = () => {
           <Route path='/alumni' element={<Alumni/>}/>
           <Route path='/t3_officials' element={<T3_officials/>}/>
           <Route path='/t3_acad' element={<T3_acad/>}/>
+          <Route path='/t3_procure' element={<T3_procure/>}/>
+          <Route path='/t3_twin' element={<T3_twin/>}/>
         </Routes>
         <Footer/>
     </div>

@@ -14,17 +14,17 @@ export const teqip3_floater_menu={
         {
             'id':'3',
             'link':'Procurement',
-            'path':'#'
+            'path':'/t3_procure'
         },
         {
             'id':'4',
             'link':'Twinning Activities',
-            'path':'#'
+            'path':'/t3_twin'
         },
         {
             'id':'5',
             'link':'Audited Statment',
-            'path':'#'
+            'path':'https://drive.google.com/file/d/1wbyhHTTkMLfdO4GktLYsSelcXHF9sacx/view'
         }
     ]
 }

@@ -8,11 +8,10 @@ import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
 import { Table } from "../../components";
 
-import { t3_acad } from '../../constants/t3_acad';
-
-import { t3_acad1 } from '../../constants/t3_acad1'
-import { t3_acad2 } from '../../constants/t3_acad2';
-import { t3_acad3 } from '../../constants/t3_acad3';
+import { t3_acad } from '../../constants/teqip3';
+import { t3_acad1 } from '../../constants/teqip3'
+import { t3_acad2 } from '../../constants/teqip3';
+import { t3_acad3 } from '../../constants/teqip3';
 
 const T3_acad = () => {
   const columns = [
@@ -30,7 +29,7 @@ const T3_acad = () => {
     { field: "desi",header:"designation"}
   ];
   return (
-    <div>
+    <div className='acad_tot'>
        <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
     
       <div className='acad_head'><h5>Faculty Development Programme</h5></div>
@@ -60,7 +59,7 @@ const T3_acad = () => {
       <div>
       <div className='acad_head'><h5>TEQIP III Training Staff</h5></div>
       <div className='flex_col'>
-        <h6>Name of the Programme:</h6><p>Capacity Building on Non Teaching staff on Personality Development,<br></br>Computer Competency and Work Life balance</p>
+        <h6>Name of the Programme:</h6><p>Capacity Building on Non Teaching staff on Personality Development,Computer Competency and<br></br>Work Life balance</p>
       </div>
       <div className='flex_col'>
         <h6>Place:</h6><p>Hotel Fortune JP Palace, Mysore</p>

@@ -30,13 +30,13 @@ const Teqip2 = () => {
         <p>
           <li>
             Strengthening institutions to improve learning outcomes and
-            employability of graduates
+            employability of graduates.
           </li>
         </p>
         <p>
           <li>
             Scaling‐up Postgraduate Education and demand‐driven Research &
-            Development and Innovation
+            Development and Innovation.
           </li>
         </p>
         <p>
@@ -45,10 +45,10 @@ const Teqip2 = () => {
           </li>
         </p>
         <p>
-          <li>Training of faculty for effective teaching</li>
+          <li>Training of faculty for effective teaching.</li>
         </p>
         <p>
-          <li>Enhancing Institutional and System Management effectiveness</li>
+          <li>Enhancing Institutional and System Management effectiveness.</li>
         </p>
       </div>
 

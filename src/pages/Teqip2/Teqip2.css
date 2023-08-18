@@ -15,8 +15,8 @@
       line-height: 1.5rem;
   }
 
-  .teqip2_tab th:nth-child(1),
-  .teqip2_tab td:nth-child(1) {
+.teqip2_tab th:nth-child(1),
+.teqip2_tab td:nth-child(1) {
         width: 10%; 
         text-align: center;
     }
@@ -55,7 +55,7 @@
   }
   .teqip2_content p{
     color:black;
-    padding: 10px;
+    padding: 8px;
     line-height: 1.5rem;
   }
   .teqip2_inner{
@@ -69,7 +69,6 @@
     15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
     29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
     70px 70px 80px rgba(0, 0, 0, 0.02);
-    
     padding: 10px;
   }
   .teqip2_inner p li{
@@ -77,4 +76,45 @@
     margin:20px;
     line-height: 0.5rem;
     
+  }
+  @media only screen and (max-width: 426px) {
+    .teqip2_content{
+     width:90%;
+     margin: auto;
+    }
+    .teqip2_inner{
+     width:90%;
+     margin:auto;  
+    }
+    .teqip2_inner p li{
+      line-height:1rem;
+    }
+    .teqip2_tab{
+      overflow-x:scroll;
+      width:90%;
+      margin:30px auto 20px auto;
+    }
+    .teqip2_obj{
+      margin-bottom: 20px;
+    }
+    
+  }
+  @media only screen and (max-width:768px) {
+    .teqip2_inner{
+      width:90%;
+      margin:10px auto 10px auto;
+    }
+    .teqip2_content{
+      width:90%;
+      margin:20px auto 10px auto;
+    }
+
+    .teqip2_inner p li{
+      line-height:1rem;
+    }
+    .teqip2_tab{
+      width:90%;
+      margin-left:auto;
+      margin-right: auto;
+    }
   }

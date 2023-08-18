@@ -63,3 +63,31 @@
 .teqip3_tab td:nth-child(2){
     width: 50%; 
 }
+@media only screen and (max-width:768px) {
+  .teqip3{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .teqip3_tab{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .teqip3_content{
+    width:100%;
+    margin:20px auto 20px auto;
+  }
+  .teqip3_inner{
+    width:100%;
+    margin:20px auto 20px auto;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .teqip3_tab{
+    overflow-x: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    width:95%;
+  } 
+}

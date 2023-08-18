@@ -8,13 +8,13 @@ import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
 import { Table } from "../../components";
 
-import { t3_off_nodal } from '../../constants/t3_off_nodal';
+import { t3_off_nodal } from '../../constants/teqip3';
 
-import { t3_off_cell } from '../../constants/t3_off_cell';
+import { t3_off_cell } from '../../constants/teqip3';
 
-import { t3_off_depco } from '../../constants/t3_off_depco';
+import { t3_off_depco } from '../../constants/teqip3';
 
-import { adstaff } from '../../constants/t3_off_adstaff';
+import { adstaff } from '../../constants/teqip3';
 
 const T3_officials = () => {
 
@@ -28,12 +28,13 @@ const T3_officials = () => {
   ];
 
   return (
-    <div>
+    <div className='t3_off'>
 
       <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
 
       <div className='off_head'>INSTITUTIONAL PROJECT DIRECTOR</div>
-      <table className='off mano'>
+      <div className='off_tot'>
+      <table className='off'>
         <tr className='off_row'>
           <td>Name</td>
           <td className='off_name'>Dr.K.MANONMANI</td>
@@ -55,11 +56,12 @@ const T3_officials = () => {
           <td className='off_name'>manokmani@yahoo.co.in</td>
         </tr>
       </table>
-
+      </div>
       
       
       <div className='off_head'>TEQIP COORDINATOR</div>
-      <table className='off mada'>
+      <div className='off_tot'>
+      <table className='off'>
         <tr className='off_row'>
           <td>Name</td>
           <td className='off_name'>Prof.P.MADASAMY</td>
@@ -81,6 +83,7 @@ const T3_officials = () => {
           <td className='off_name'>mjasmitha0612@gmail.com</td>
         </tr>
       </table>
+      </div>
 
       <div className='off_head_nodal'>NODAL OFFICER</div>
       <div className='off_nodal'>
