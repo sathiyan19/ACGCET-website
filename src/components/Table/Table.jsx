@@ -3,6 +3,7 @@ import "./Table.css";
 const Table = ({
   data = null,
   columns = null,
+  
   // hover = true,
   // striped = true,
 }) => {
@@ -26,7 +27,9 @@ const Table = ({
             <td className="comp_td">{row[col.field]}</td>
               ))}
         </tr>
-          ))}
+       
+        ))}
+        
       </table>
       {data ? null : <p>No Row to show :</p>}
     </div>

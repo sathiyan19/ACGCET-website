@@ -1,6 +1,7 @@
 .milestone_table{
-    margin:25px 180px 25px 60px;
-    width:90%;
+  width:100%;
+  margin:25px 130px 25px 180px;
+  margin-right: 90px;
  }
 
 .milestone_headingsec{
@@ -21,70 +22,81 @@ width: 35%;
 .milestone_heading h1{
 font-weight: bold;
 color: #00134d;
-/* text-shadow: 2px 2px 5px #3451a7;  */
 }
 
 .milestone_imghead{
 width: 20%;
 }
-.comp_th:nth-child(2),
-.comp_td:nth-child(2) {
-        width: 40%; 
-  } 
-
-.comp_table .comp_td:first-child {
-    text-align:center;
+.milestone_table:nth-child(2),
+.milestone_table:nth-child(2) {
+        width: 70%; 
   }
+  
+.milestone_table:nth-child(1),
+.milestone_table:nth-child(1) {
+       width: 40%; 
+ } 
 
-/* @media (max-width: 768px) {
-   .milestone_tab{
-    margin-top: 120px; 
-    padding:0px;
-    margin: 30px;
-   }
-  .milestone_table .comp_tr .comp_td{
-         font-size: 16px;
-    }
-} */
 
-@media (max-width: 768px) {
+
+@media (width: 768px) {
     .milestone_table {
-      margin-top: 120px;
       padding: 30px;
-      margin: 0px 70px 20px 40px; 
+      margin: 20px 0px 20px 20px; 
     }
     .milestone_table .comp_tr .comp_td {
       font-size: 16px;
     }
+    .milestone_headingsec{
+      margin-top: 40px;
+    }
+   .milestone_table:nth-child(2),
+   .milestone_table:nth-child(2) {
+        width: 95%; 
+  }/*
+.milestone_table:nth-child(1),
+.milestone_table:nth-child(1) {
+       width: 10%; 
+ }  */
   }
 @media only screen and (max-width: 600px) {
 
     
-.entire_tab{
-    /* margin-top: 120px; */
+.milestone_table{
     padding:10px;
-    width: 100%;
-    overflow-x:scroll;
-
+    margin:10px 10px 20px 20px;
  }
- .milestone_table{
-  margin: 20px;
- }
-
+ .milestone_table:nth-child(2),
+ .milestone_table:nth-child(2) {
+        width: 90%; 
+  }
+ /* ::-webkit-scrollbar  {
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px #152029;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb{
+  background:#00134d ;
+  border-radius: 15px;
+  width:2px; 
+  height: 10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
 .milestone_table .comp_tr .comp_td{
     font-size: 14px;
-}
-
+}*/
 .milestone_imghead{
     width:40%;
 }
-
 .milestone_heading{
     width:60%;
+} 
+.milestone_headingsec{
+  margin-top: 40px;
 }
 
 }
-
-
-
-

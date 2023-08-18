@@ -57,7 +57,7 @@ const top_nav_paths=[
     'basepath':'javascript:void(0);',
     'links':[{'path':'/clubs','link':"Clubs"},
             {'path':'/','link':"Sports"},
-            {'path':'/','link':"NSS"},
+            {'path':'/nss','link':"NSS"},
             {'path':'/','link':"NCC"},
             {'path':'/','link':"YRC"},
             {'path':'/','link':"Thiran"},

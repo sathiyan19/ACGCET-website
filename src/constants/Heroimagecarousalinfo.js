@@ -1,5 +1,5 @@
-import image1 from "../assets/pictures/we.jpg";
-import image2 from "../assets/pictures/we1.jpg";
+import image1 from "../assets/pictures/rotracthero.webp";
+import image2 from "../assets/pictures/freshershero.webp";
 
 export const Heroimagecarousalinfo = {
   id: 1,
