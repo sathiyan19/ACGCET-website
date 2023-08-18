@@ -1,12 +1,12 @@
 .in_this_sec{
     width:20%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    right: 20px;
-    top: 190px;
+    left: auto;
+    right: 20px; 
     padding: 10px;
     background-color: #D9EDFF;
-    border-radius: 10px;
+    border-radius: 5px;
     >p{
         color: #00134d;
     }
@@ -34,6 +34,7 @@
         width: 100%;
         >div{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
         }
     }

@@ -2,4 +2,7 @@ export {default as Navigation} from './Navigation/Navigation';
 export {default as Footer} from './Footer/Footer';
 export {default as Heroimage} from './Heroimage/Heroimage';
 export {default as Heroimagecarousal} from './Heroimagecarousal/Heroimagecarousal';
-export {default as Slideshow} from './Slideshow/Slideshow';export {default as Table} from './Table/Table';
+export {default as Slideshow} from './Slideshow/Slideshow';
+export {default as Table} from './Table/Table';
+export {default as Modal_carousel} from './Modal_carousel/Modal_carousel';
+export {default as Profile_display} from './Profile_display/Profile_display';
