@@ -7,7 +7,7 @@ import {Information,Founder,Companies,Events,Paralax,News} from '../../container
 
 import clgpic from '../../assets/pictures/clgpicfinal.webp'
 
-import {Profile_display} from '../../components'
+import {Profilecard} from '../../widgets'
 import {profileinfo} from '../../constants/profilecards'
 
 
@@ -32,7 +32,7 @@ const Home = () => {
         
         <Backtotop/>
 
-        <Profile_display list_info={profileinfo}/>
+        
     </>
   )
 }

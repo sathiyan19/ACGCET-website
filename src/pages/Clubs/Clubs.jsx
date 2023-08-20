@@ -2,9 +2,9 @@ import React from "react";
 
 import "./Clubs.css";
 import { Clubscard,Backtotop } from "../../widgets";
-import { clubsinfo } from "../../constants/clubscardinfo";
+
 import { Heroimagecarousal } from "../../components";
-import { Heroimagecarousalinfo } from "../../constants/Heroimagecarousalinfo";
+import { Clubs_heroimage_carousalinfo,Clubs_info } from "../../constants/Clubs";
 
 const Clubs = () => {
   return (
@@ -12,9 +12,9 @@ const Clubs = () => {
       <Backtotop/>
       {/* hero image */}
       <Heroimagecarousal
-        key={Heroimagecarousalinfo.id}
-        title={Heroimagecarousalinfo.title}
-        img_list={Heroimagecarousalinfo.img_list}
+        key={Clubs_heroimage_carousalinfo.id}
+        title={Clubs_heroimage_carousalinfo.title}
+        img_list={Clubs_heroimage_carousalinfo.img_list}
       />
 
       {/* description section */}
@@ -30,7 +30,7 @@ const Clubs = () => {
         </p>
       </div>
 
-      {clubsinfo.map((item) => (
+      {Clubs_info.map((item) => (
         <Clubscard
           key={item.id}
           logoimg={item.logoimg}

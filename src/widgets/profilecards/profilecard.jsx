@@ -12,7 +12,7 @@ const Profilecard = ({cover,dp,name,Designation,mailid}) => {
         <img src={dp} className="dp" alt='dpp'/>
         
         
-        <h3>{name}</h3>
+        <h4>{name}</h4>
         
         
         <p>{Designation}</p>
