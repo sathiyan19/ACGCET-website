@@ -27,4 +27,4 @@ const Ncc_heroimage_carousalinfo = {
     },
 ]
 
-  export {Ncc_heroimage_carousalinfo,pro}
+  export {Ncc_heroimage_carousalinfo,profile_info}
