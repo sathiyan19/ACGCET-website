@@ -1,22 +1,28 @@
 .nsspara {
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  text-align: justify;
   > h5 {
     color: black;
   }
 }
 
-.mosec {
+.nssgen{
   display: flex;
-  margin: 30px;
-  justify-content: center;
+  padding: 10px;
+}
+
+.mosec {
+  display: flex;  
+  /* margin: 30px; */
+  /* justify-content: center; */
   align-items: center;
-  height: S350px;
+  height: 350px;
 }
 
 .mottoimg img {
   height: 350px;
 }
+
 
 .mottotext {
   display: flex;
@@ -51,6 +57,12 @@
   > h1 {
     color: white;
   }
+}
+
+.nssgencont{
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.5rem;
 }
 
 .works {
@@ -236,7 +248,7 @@ input:checked + .tab-label::after {
   color: #e5e4e0;
 }
 input:checked ~ .tab-content {
-  max-height: 100vh;
+  max-height: fit-content;
   padding: 1em;
 }
 
@@ -319,5 +331,13 @@ input:checked ~ .tab-content {
     .nsscards {
       flex-direction: column;
     }
+  }
+
+  .tabs{
+    width: 50%;
+  }
+
+  .achieve{
+    overflow-x: scroll;
   }
 }
