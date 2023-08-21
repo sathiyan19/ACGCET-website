@@ -20,7 +20,6 @@ const Home = () => {
 
         <Founder/>
 
-        
         <News/>
 
         <Paralax/>
@@ -29,7 +28,6 @@ const Home = () => {
 
         <Events/>
         
-
         <Backtotop/>
 
     </>
