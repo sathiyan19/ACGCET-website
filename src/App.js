@@ -3,35 +3,22 @@ import { Routes, Route } from "react-router-dom";
 
 import { Navigation, Footer } from "./components";
 
-import {
-  Home,
-  Milestones,
-  About,
-  Vision,
-  Clubs,
-  Office,
-  Alumni,
-  Nss,
-  Teqip1,
-  Teqip2,
-  Teqip3,
-  Programs_offered,
-  Life,
-  T3_officials,
-  T3_acad,
-  T3_procure,
-  T3_twin,
-  Aicte,
-  Organisation,
-  Under,
-  Csedept,
-  Govern,
-  Ecedept,
-  Annual_report,
-  Academic,
-  Fees
-} from "./pages";
-import "./App.css";
+import { Home,Milestones,About,Vision,Clubs,Office,Alumni,Nss,Teqip1,Teqip2,Teqip3,Programs_offered,Life,
+   T3_officials,T3_acad,T3_procure,T3_twin,Aicte,
+   Organisation,
+   Under,
+   Csedept,
+   Govern,
+   Ecedept,
+   Annual_report,
+   Academic,
+   Fees,
+   Ncc,Thiran,Sports
+  } from './pages'
+
+
+
+import './App.css'
 
 const App = () => {
   return (
@@ -63,7 +50,9 @@ const App = () => {
         <Route path="/ecedept" element={<Ecedept/>} /> 
         <Route path="/annual_reports" element={<Annual_report/>} /> 
         <Route path="/academic-calendar" element={<Academic/>} /> 
-        <Route path="/fee-structure" element={<Fees/>} /> 
+        <Route path="/fee-structure" element={<Fees/>} /> <Route path='/ncc' element={<Ncc/>}/>
+          <Route path='/thiran' element={<Thiran/>}/>
+          <Route path='/sports' element={<Sports/>}/>
         </Routes>
         <Footer/>
     </div>

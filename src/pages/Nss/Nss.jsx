@@ -11,12 +11,18 @@ import gal7 from "../../assets/pictures/gal7.jpg";
 import motto from "../../assets/pictures/mottonss.jpg";
 import q1 from "../../assets/pictures/quote1.png";
 import q2 from "../../assets/pictures/quote2.png";
-import { Heroimagecarousal } from "../../components";
+import { Heroimagecarousal,Table } from "../../components";
 import { Profilecard } from "../../widgets";
 import { Backtotop } from "../../widgets";
 import { Nss_heroimage_carousalinfo,profile_info } from "../../constants/Nss";
 
 const Nss = () => {
+  const columns = [
+    { field: "sno", header: "sno" },
+    { field: "name", header: "name" },
+    { field: "noa", header: "nature of the award" },
+    { field: "issue", header: "issuing authority" }
+  ];
   return (
     <>
     <Backtotop/>
@@ -37,6 +43,7 @@ const Nss = () => {
         </h5>
       </div>
 
+      <div className="nssgen"> 
       <div className="mosec">
         <div className="mottoimg">
           <img className="mottonss" src={motto} alt="Mottonss" />
@@ -52,19 +59,10 @@ const Nss = () => {
           </div>
         </div>
       </div>
-
-      <div className="works">
-        <h4>
-          NSS volunteers are conducting and participated in the activities of
-        </h4>
-        <ul>
-          <li>National Integration Camp</li>
-          <li>Blood Donation Camp</li>
-          <li>Plantation</li>
-          <li>Immunization</li>
-          <li>Disaster Management</li>
-          <li>Adventure Programmes</li>
-        </ul>
+      <div className="nssgencont">
+      <h5>Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learnersin leadership qualities so as to achieve better productivity and prosperity for our country.
+ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’sfaculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strongengagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.</h5>
+      </div>
       </div>
 
       <div className="nssofficers">
@@ -91,6 +89,19 @@ const Nss = () => {
         <div className="nssgalleryhead">
           <h1>Our Activities</h1>
         </div>
+        <div className="works">
+        <h4>
+          NSS volunteers are conducting and participated in the activities of
+        </h4>
+        <ul>
+          <li>National Integration Camp</li>
+          <li>Blood Donation Camp</li>
+          <li>Plantation</li>
+          <li>Immunization</li>
+          <li>Disaster Management</li>
+          <li>Adventure Programmes</li>
+        </ul>
+      </div>
       <div className="nssgallery">
         <img src={gal1} alt="we" />
         <img src={gal2} alt="we" />
@@ -147,10 +158,8 @@ const Nss = () => {
                 <label className="tab-label" for="rd3">
                   2017-2018
                 </label>
-                <div className="tab-content">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Nihil, aut.
-                </div>
+                <div className="tab-content achieve">
+                  <Table  data={achieve17} columns={columns} />                </div>
               </div>
               <div className="tab">
                 <input type="radio" id="rd4" name="rd" />
