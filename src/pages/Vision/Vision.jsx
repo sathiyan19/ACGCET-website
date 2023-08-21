@@ -5,7 +5,7 @@ import './Vision.css'
 
 import integrity from '../../assets/pictures/integrity.webp'
 import ethics from '../../assets/pictures/ethics.webp'
-import respect from '../../assets/pictures/respect.webp'
+import respect from '../../assets/pictures/aaaa.png'
 import responsibility from '../../assets/pictures/responsibility.webp'
 import trust from '../../assets/pictures/trust.webp'
 import diversity from '../../assets/pictures/diversity.webp'
