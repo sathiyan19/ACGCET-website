@@ -6,6 +6,8 @@ import { teqip2 } from "../../constants/teqip2";
 
 import { Table } from "../../components";
 
+import { Backtotop } from "../../widgets";
+
 const Teqip2 = () => {
   const columns = [
     { field: "sno", header: "sno" },
@@ -15,6 +17,7 @@ const Teqip2 = () => {
   ];
   return (
     <div>
+      <Backtotop/>
       <div className="teqip2_heading">TEQIP-II</div>
       <div className="teqip2_content">
         <p>

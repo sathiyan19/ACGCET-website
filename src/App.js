@@ -21,7 +21,9 @@ import {
   T3_acad,
   T3_procure,
   T3_twin,
-  Aicte
+  Aicte,
+  Organisation,
+  Under
 } from "./pages";
 
 import "./App.css";
@@ -49,6 +51,8 @@ const App = () => {
         <Route path="/t3_procure" element={<T3_procure />} />
         <Route path="/t3_twin" element={<T3_twin />} />
         <Route path="/aicte" element={<Aicte />} />
+        <Route path="/organisation" element={<Organisation />} />
+        <Route path="/under" element={<Under />} />
       </Routes>
       <Footer />
     </div>

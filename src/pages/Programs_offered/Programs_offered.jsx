@@ -2,12 +2,14 @@ import React from 'react'
 
 import './Programs_offered.css'
 
-import { Content_card } from '../../widgets'
+import { Content_card,Backtotop } from '../../widgets'
 
 import {ug_programs ,pg_programs, pt_programs} from '../../constants/prog_offered'
 
 const Programs_offered = () => {
   return (
+    <>
+    <Backtotop/>
     <div className='prog_off'>
       <div className="head">Programs Offered</div>
 
@@ -39,6 +41,7 @@ const Programs_offered = () => {
       </div>
 
     </div>
+    </>
   )
 }
 

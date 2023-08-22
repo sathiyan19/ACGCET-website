@@ -20,13 +20,13 @@
 }
 
 .radial_bg{
-    height: 950px;
+    height: 980px;
     width: 950px;
     /* height: 128px;
     width: 128px; */
     border-radius: 50%;
     background-color: #d9edff;
-    opacity: .9;
+    opacity: .95;
     z-index: 1;
     position: fixed;
     display: none;
@@ -59,10 +59,6 @@
 
 .scaled{
     display: flex !important;
-}
-
-.dept_menu{
-    /* background-color: #ff6600; */
 }
 
 .dept_link_head{

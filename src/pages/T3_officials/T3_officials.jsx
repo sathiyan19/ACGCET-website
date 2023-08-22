@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./T3_officials.css";
 
-import { Floatinmenu } from '../../widgets'
+import { Floatinmenu,Backtotop } from '../../widgets'
 
 import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
@@ -28,6 +28,8 @@ const T3_officials = () => {
   ];
 
   return (
+    <>
+    <Backtotop/>
     <div className='t3_off'>
 
       <Floatinmenu head={teqip3_floater_menu.head} from_top={200} links={teqip3_floater_menu.links}/>
@@ -106,6 +108,7 @@ const T3_officials = () => {
       </div>
 
     </div>
+    </>
   )
 }
 

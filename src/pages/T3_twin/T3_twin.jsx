@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./T3_twin.css";
 
-import { Floatinmenu } from '../../widgets'
+import { Floatinmenu,Backtotop } from '../../widgets'
 
 import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
@@ -20,6 +20,8 @@ const T3_twin = () => {
     { field: "bene",header:"Beneficiary"}
   ];
   return (
+    <>
+    <Backtotop/>
   <div className='twin'>
     <div className='twin_head'>Twinning Activities</div>
     <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
@@ -39,6 +41,7 @@ const T3_twin = () => {
     <Table data={t3_twin} columns={columns} />
     </div>
 </div>
+</>
   )
 }
 
