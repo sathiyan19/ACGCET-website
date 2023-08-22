@@ -16,6 +16,11 @@ export {default as T3_officials} from './T3_officials/T3_officials'
 export {default as T3_acad} from './T3_acad/T3_acad'
 export {default as T3_procure} from './T3_procure/T3_procure'
 export {default as T3_twin} from './T3_twin/T3_twin'
+export {default as Govern} from './Govern/Govern'
+export {default as Aicte} from './Aicte/Aicte'
+export {default as Organisation} from './Organisation/Organisation'
+export {default as Under} from './Under/Under'
+
 
 
  
