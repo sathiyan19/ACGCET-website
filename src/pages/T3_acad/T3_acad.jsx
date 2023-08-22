@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./T3_acad.css";
 
-import { Floatinmenu } from '../../widgets'
+import { Floatinmenu,Backtotop } from '../../widgets'
 
 import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
@@ -29,6 +29,8 @@ const T3_acad = () => {
     { field: "desi",header:"designation"}
   ];
   return (
+    <>
+    <Backtotop/>
     <div className='acad_tot'>
        <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
     
@@ -111,6 +113,7 @@ const T3_acad = () => {
       </div>
     
     </div>
+    </>
   )
 }
 

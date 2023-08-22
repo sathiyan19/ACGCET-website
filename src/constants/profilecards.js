@@ -10,5 +10,42 @@ export const profileinfo =[
         'Designation':"Designation",
         'mailid':"emailid@gmail.com"
 
-    }
+    },
+    {
+        'id':"1",
+        'cover':cover,
+        'dp':dp,
+        'name':"Arjun",
+        'Designation':"Designation",
+        'mailid':"emailid@gmail.com"
+
+    },
+    {
+        'id':"1",
+        'cover':cover,
+        'dp':dp,
+        'name':"Arjun",
+        'Designation':"Designation",
+        'mailid':"emailid@gmail.com"
+
+    },
+    {
+        'id':"1",
+        'cover':cover,
+        'dp':dp,
+        'name':"Arjun",
+        'Designation':"Designation",
+        'mailid':"emailid@gmail.com"
+
+    },
+    {
+        'id':"1",
+        'cover':cover,
+        'dp':dp,
+        'name':"Arjun",
+        'Designation':"Designation",
+        'mailid':"emailid@gmail.com"
+
+    },
+    
 ]
