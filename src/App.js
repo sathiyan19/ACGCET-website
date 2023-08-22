@@ -23,16 +23,16 @@ import {
   T3_twin,
   Aicte,
   Organisation,
-  Under
+  Under,
+  Csedept
 } from "./pages";
-
 import "./App.css";
 
 const App = () => {
   return (
     <div>
-      <Navigation />
-      <Routes>
+        <Navigation/>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/milestones" element={<Milestones />} />
         <Route path="/about-institution" element={<About />} />
@@ -53,8 +53,10 @@ const App = () => {
         <Route path="/aicte" element={<Aicte />} />
         <Route path="/organisation" element={<Organisation />} />
         <Route path="/under" element={<Under />} />
-      </Routes>
-      <Footer />
+        <Route path="/csedept" element={<Csedept/>} />
+          
+        </Routes>
+        <Footer/>
     </div>
   );
 };
