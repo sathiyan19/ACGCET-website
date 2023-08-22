@@ -30,7 +30,7 @@ const T3_officials = () => {
   return (
     <div className='t3_off'>
 
-      <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
+      <Floatinmenu head={teqip3_floater_menu.head} from_top={200} links={teqip3_floater_menu.links}/>
 
       <div className='off_head'>INSTITUTIONAL PROJECT DIRECTOR</div>
       <div className='off_tot'>

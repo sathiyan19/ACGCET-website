@@ -12,7 +12,7 @@ const Programs_offered = () => {
       <div className="head">Programs Offered</div>
 
       <div className='progs'>
-        <div className='prog_content'>The institution offered 5 U.G and 6 P.G Programs and 4 Part–time Programs.</div>
+        <div className='prog_content'>The institution offers 5 U.G and 6 P.G Programs and 4 Part–time Programs.</div>
 
         <div className='ug_progs progs_flex'>
           <div className='prog_sub_head'>Under Graduate Programs</div>

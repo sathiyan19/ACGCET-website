@@ -2,7 +2,8 @@ const ug_programs=[
     {
         "id":'1',
         "program":"Civil engineering",
-        "intake":"60"
+        "intake":"60",
+        "pdf":"/dfs"
     },
     {
         "id":'2',

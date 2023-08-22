@@ -20,7 +20,7 @@ const Teqip3 = () => {
 
   return (
     <div className='teqip3'>
-      <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
+      <Floatinmenu head={teqip3_floater_menu.head} from_top={190} links={teqip3_floater_menu.links}/>
       
       <div className="teqip3_heading">TEQIP-III</div>
       <div className="teqip3_content">

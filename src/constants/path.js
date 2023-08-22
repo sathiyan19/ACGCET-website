@@ -89,7 +89,8 @@ const top_nav_paths=[
     'basepath':'javascript:void(0);',
     'links':[{'path':'/','link':"NAAC"},
             {'path':'/','link':"NBA"},
-            {'path':'/','link':"NIRF"}]
+            {'path':'/','link':"NIRF"},
+            {'path':'/','link':"Annual Reports"}]
     },
 
     {"id":'11',
@@ -149,7 +150,8 @@ const bottom_nav_paths=[
     'basepath':'javascript:void(0);',
     'links':[{'path':'/','link':"NAAC"},
             {'path':'/','link':"NBA"},
-            {'path':'/','link':"NIRF"}]
+            {'path':'/','link':"NIRF"},
+            {'path':'/','link':"Annual Reports"}]
     },
 
     {"id":'17',
