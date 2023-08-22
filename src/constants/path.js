@@ -12,7 +12,7 @@ const top_nav_paths=[
     "type":"1",
     'title':'Administration',
     'basepath':'javascript:void(0);',
-    'links':[{'path':"/",'link':"Governing council"},
+    'links':[{'path':"/govern",'link':"Governing council"},
             {'path':"/office",'link':"Office"},
             {'path':"/",'link':"Committee/Cell"}]
     },
