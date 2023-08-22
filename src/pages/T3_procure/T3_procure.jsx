@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./T3_procure.css";
 
-import { Floatinmenu } from '../../widgets'
+import { Floatinmenu,Backtotop } from '../../widgets'
 
 import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
@@ -19,6 +19,8 @@ const T3_procure = () => {
         { field: "amount",header:"amount (Rs.)"}
       ];
   return (
+    <>
+    <Backtotop/>
     <div className='proc_tot'>
       <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
         
@@ -28,6 +30,7 @@ const T3_procure = () => {
       </div>
     
     </div>
+    </>
   )
 }
 

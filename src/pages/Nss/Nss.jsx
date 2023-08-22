@@ -1,14 +1,19 @@
 import React from "react";
 
 import "./Nss.css";
+
 import motto from "../../assets/pictures/mottonss.jpg";
 import q1 from "../../assets/pictures/quote1.png"
 import q2 from "../../assets/pictures/quote2.png"
+
 import { Heroimagecarousal } from "../../components";
+import { Backtotop } from "../../widgets";
 import { Nssheroimagecarousalinfo } from "../../constants/Nssheroimagecarousalinfo";
 
 const Nss = () => {
   return (
+    <>
+    <Backtotop/>
     <div>
       {/* hero image */}
       <Heroimagecarousal
@@ -32,6 +37,7 @@ const Nss = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

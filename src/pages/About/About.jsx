@@ -6,6 +6,8 @@ import { Floatinmenu } from "../../widgets";
 
 import { about_floater_menu } from "../../constants/about";
 
+import {Backtotop} from '../../widgets'
+
 import basketball from "../../assets/pictures/basketball.webp";
 import clg_mainbuild from "../../assets/pictures/clg_mainbuild.webp";
 import nehru from "../../assets/pictures/nehru.webp";
@@ -15,6 +17,7 @@ import kkdi from "../../assets/pictures/kkdi.webp";
 const About = () => {
   return (
     <div className="whole_cont">
+      <Backtotop/>
       <div className="abt_heading">About the Institution</div>
 
       <Floatinmenu
@@ -192,6 +195,7 @@ const About = () => {
           <div className="visit_content">
             <div className="abt-sub-head">
               <div className="visit_transport fa fa-solid fa-train"></div>
+              
               &nbsp;&nbsp;&nbsp;&nbsp;By Train
             </div>
 

@@ -14,7 +14,8 @@ const top_nav_paths=[
     'basepath':'javascript:void(0);',
     'links':[{'path':"/",'link':"Governing council"},
             {'path':"/office",'link':"Office"},
-            {'path':"/",'link':"Committee/Cell"}]
+            {'path':"/organisation",'link':"Organisation Structure"},
+            {'path':"/under",'link':"Committee/Cell"}]
     },
 
     {"id":'3',
@@ -22,26 +23,27 @@ const top_nav_paths=[
     'title':'Academics',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/programs','link':"Programs offered"},
-            {'path':'/','link':"Academic Calendar"}]
+            {'path':'/under','link':"Academic Calendar"}]
     },
 
     {"id":'4',
     "type":"1",
     'title':'Research',
     'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"Link1"},
-            {'path':'/','link':"Link2"},
-            {'path':'/','link':"Link3"}]
+    'links':[{'path':'/under','link':"Link1"},
+        //     {'path':'/under','link':"Link2"},
+        //     {'path':'/under','link':"Link3"}
+        ]
     },
 
     {"id":'5',
     "type":"1",
     'title':'Placement',
     'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"Training"},
-            {'path':'/','link':"Recruitment"},
-            {'path':'/','link':"Industry-Interaction cell"},
-            {'path':'/','link':"Internship"}]
+    'links':[{'path':'/under','link':"Training"},
+            {'path':'/under','link':"Recruitment"},
+            {'path':'/under','link':"Industry-Interaction cell"},
+            {'path':'/under','link':"Internship"}]
     },
 
     {"id":'6',
@@ -107,18 +109,20 @@ const top_nav_paths=[
     "type":"2",
     'title':'IIC and I&E Policies',
     'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"Link1"},
-            {'path':'/','link':"Link2"},
-            {'path':'/','link':"Link3"}]
+    'links':[{'path':'/under','link':"Link1"},
+        //     {'path':'/under','link':"Link2"},
+        //     {'path':'/under','link':"Link3"}
+        ]
     },
 
     {"id":'13',
     "type":"2",
     'title':'Quick links',
     'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"Link1"},
-            {'path':'/','link':"Link2"},
-            {'path':'/','link':"Link3"}]
+    'links':[{'path':'/under','link':"Link1"},
+        //     {'path':'/under','link':"Link2"},
+        //     {'path':'/under','link':"Link3"}]
+]
     },
 
 ]
