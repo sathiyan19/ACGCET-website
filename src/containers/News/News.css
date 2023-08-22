@@ -1,27 +1,21 @@
 .blogs {
-    margin-top: 25px;
-    margin-bottom: 50px;
-    background-color: #ffffff;
-    color: #00134d;
-    /* background-color: aqua; */
+  margin-top: 25px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  color: #00134d;
+  /* background-color: aqua; */
 }
-
-.row{
-    display: inline block;
-}
-
-
 
 .hl {
-    height: 9px;
-    background-color: #00134d;
-    width: 20%;
+  height: 9px;
+  background-color: #00134d;
+  width: 20%;
 }
 
 .news {
-    margin-left: 20px;
-    font-weight: 600;
-    margin-top: 10px;
-    font-size: 45px;
-    color: #00134d;
+  margin-left: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 45px;
+  color: #00134d;
 }

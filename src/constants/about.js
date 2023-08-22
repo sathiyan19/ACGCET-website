@@ -4,12 +4,12 @@ export const about_floater_menu={
         {
             'id':'1',
             'link':'Why ACGCET',
-            'path':'#'
+            'path':'#why_acgcet'
         },
         {
             'id':'2',
             'link':'History',
-            'path':'#'
+            'path':'#history'
         },
         {
             'id':'3',
@@ -19,7 +19,7 @@ export const about_floater_menu={
         {
             'id':'4',
             'link':'Visit ACGCET',
-            'path':'#'
+            'path':'#vist_acgcet'
         },
     ]
 }

@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 
 import "./Alumni.css";
 
-import { Modal } from "../../widgets";
+import { Modal,Backtotop } from "../../widgets";
 import { Slideshow} from "../../components";
 import { contributions, slideshow_imgs } from "../../constants/alumni_info";
 
@@ -18,9 +18,9 @@ const Alumni = () => {
 
     function calwidth() {
       wid = window.innerWidth;
-      row[0].className = row[0].className.replace("row-cols-3", " ");
-      row[0].className = row[0].className.replace("row-cols-2", " ");
-      row[0].className = row[0].className.replace("row-cols-1", " ");
+      row[0].className = row[0].className.replace("row-cols-3", "");
+      row[0].className = row[0].className.replace("row-cols-2", "");
+      row[0].className = row[0].className.replace("row-cols-1", "");
       if (wid < 1100 && wid > 650) {
         row[0].className += "row-cols-2";
       } else if (wid < 650) {
@@ -31,6 +31,8 @@ const Alumni = () => {
     }
   },[]);
   return (
+    <>
+    <Backtotop/>
     <div className="alumni_body">
 
       <Slideshow images={slideshow_imgs}/>
@@ -113,6 +115,7 @@ const Alumni = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

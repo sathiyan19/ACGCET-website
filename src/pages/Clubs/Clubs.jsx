@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Clubs.css";
-import { Clubscard } from "../../widgets";
+import { Clubscard,Backtotop } from "../../widgets";
 import { clubsinfo } from "../../constants/clubscardinfo";
 import { Heroimagecarousal } from "../../components";
 import { Heroimagecarousalinfo } from "../../constants/Heroimagecarousalinfo";
@@ -9,6 +9,7 @@ import { Heroimagecarousalinfo } from "../../constants/Heroimagecarousalinfo";
 const Clubs = () => {
   return (
     <div>
+      <Backtotop/>
       {/* hero image */}
       <Heroimagecarousal
         key={Heroimagecarousalinfo.id}

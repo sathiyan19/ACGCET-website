@@ -3,7 +3,6 @@ import React from 'react'
 import './profilecard.css'
 
 const Profilecard = ({cover,dp,name,Designation,mailid}) => {
-    console.log(name)
   return (    
     
       <div className="profile-card">

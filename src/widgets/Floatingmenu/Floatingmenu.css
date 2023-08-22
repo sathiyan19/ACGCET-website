@@ -1,58 +1,58 @@
-.in_this_sec{
-    width:20%;
-    position: absolute;
-    z-index: 1;
-    right: 20px;
-    top: 590px;
+.in_this_sec {
+  width: 20%;
+  position: absolute;
+  z-index: 1;
+  left: auto;
+  right: 20px;
+  padding: 10px;
+  background-color: #d9edff;
+  border-radius: 5px 0;
+  > p {
+    color: #00134d;
     padding: 5px;
-    background-color: #D9EDFF;
-    border-radius: 10px;
-    box-sizing: border-box;
-    >p{
-        color: #00134d;
-    }
-    >div{
-        padding:0 20px;
-        
-    }
-    >div>ul>li{
-        
-        /* list-style: none; */
-        line-height: 1rem;
-        >a{
-            color: black;
-            text-decoration: none;
-            list-style-position: outside;
-        }
-    }
-    >div>ul>li:hover a{
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: 600;
-    }
-    >div>ul>li a:active{
-        cursor: pointer;
-        color:red;
-        
-    }
+    border-bottom: 1px solid #ff6600;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    /* padding:0 20px; */
+  }
+  > div > a {
+    /* text-align: center; */
+    color: #00134d;
+    font-size: 14px;
+    padding: 13px 5px;
+    border-bottom: 0.3px solid #00134d;
+    text-decoration: none;
+  }
+  >div>a:hover .arrow{
+    transform: translateX(5px);
+    transition: 0.5s ease;
+    color: #ff6600;
+  }
 }
 
-@media(max-width:768px){
-    .in_this_sec{
-        position: static;
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        >div{
-            display: flex;
-            justify-content: space-evenly;
-        }
-    }
+.arrow {
+  font-size: 12px;
+  color: #00134d;
 }
 
-@media(max-width:600px){
-    .in_this_sec>div{
-        display: flex;
-        flex-direction: column;
+@media (max-width: 1100px) {
+  .in_this_sec {
+    position: static;
+    width: 100%;
+    > div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .in_this_sec > div {
+    display: flex;
+    flex-direction: column;
+  }
 }

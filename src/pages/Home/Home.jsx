@@ -1,13 +1,15 @@
 import React from 'react'
 
-import {Heroimage } from '../../components'
+import {Heroimage,Radial_menu} from '../../components'
 import {Backtotop} from '../../widgets'
 import {Information,Founder,Companies,Events,Paralax,News} from '../../containers'
 
+
 import clgpic from '../../assets/pictures/clgpicfinal.webp'
 
-// import {Profilecard} from '../../widgets'
-// import {profileinfo} from '../../constants/profilecards'
+import {Profile_display} from '../../components'
+import {profileinfo} from '../../constants/profilecards'
+import {dept_menu} from '../../constants/cse_dept'
 
 
 
@@ -20,7 +22,6 @@ const Home = () => {
 
         <Founder/>
 
-        
         <News/>
 
         <Paralax/>
@@ -28,19 +29,12 @@ const Home = () => {
         <Companies/>
 
         <Events/>
-        {/* {profileinfo.map((item) => (
-        <Profilecard
-          key={item.id}
-          cover={item.cover}
-          dp={item.dp}
-          name={item.name}
-          Designation={item.Designation}
-          mailid={item.mailid}
-        />
-      ))} */}
-
+        
         <Backtotop/>
 
+        {/* <Profile_display list_info={profileinfo}/> */}
+
+        <Radial_menu menu_links={dept_menu}/>
     </>
   )
 }

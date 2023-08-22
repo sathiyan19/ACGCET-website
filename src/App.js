@@ -1,10 +1,12 @@
-import React from 'react'
-import {Routes,Route} from 'react-router-dom'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import { Navigation, Footer } from "./components";
 
 import { Navigation,Footer } from './components'
-import { Home,Milestones,About,Vision,Clubs,Office,Alumni,Teqip1,Teqip2,Teqip3, Csedept } from './pages'
+import { Home,Milestones,About,Vision,Clubs,Office,Alumni,Teqip1,Teqip2,Teqip3 } from './pages'
 
-import './App.css'
+import "./App.css";
 
 const App = () => {
   return (
@@ -21,13 +23,11 @@ const App = () => {
           <Route path='/teqip3' element={<Teqip3/>}/>
           <Route path='/clubs' element={<Clubs/>}/>
           <Route path='/alumni' element={<Alumni/>}/>
-          <Route path='/csedept' element={<Csedept/>}/>
-          
           
         </Routes>
         <Footer/>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

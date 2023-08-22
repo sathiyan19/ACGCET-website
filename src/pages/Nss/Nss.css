@@ -1,0 +1,63 @@
+.mosec{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 30px;
+    /* justify-content: center;
+    align-items: center; */
+    width: 80%;
+}
+
+.mottosection{
+    display: grid;
+    margin: 30px;
+    height: 350px;
+    margin-left: 0;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.mottoimg{
+    grid-row: span 4;
+    display: flex;
+    border-radius: 50px;
+    justify-content: right;
+}
+
+
+.mottotext{
+    grid-row: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    >h2{
+        color: black;
+    }
+}
+
+.q1{
+    margin-bottom: 150px;
+}
+
+.q2{
+    margin-top: 150px;
+}
+
+.mottohead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 0 50px 50px 0; */
+    background-color: #00134d;
+}
+
+.mottohead h1{
+    color: white;
+}
+
+@media (max-width:768px){
+    .mosec{
+        width: 40%;
+    }
+}
+

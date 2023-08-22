@@ -48,6 +48,11 @@ export const teqip1=[
         'sno':'10',
         'detail':'Service to the community',
         'amount':'30'
+    },
+    {    
+        'sno':'Total',
+        'amount':'1548.13'
+
     }
 
 ]

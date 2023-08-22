@@ -6,6 +6,8 @@ import { milestones } from "../../constants/milestones";
 
 import { Table } from "../../components";
 
+import { Backtotop } from "../../widgets";
+
 import mile from "../../assets/pictures/mile.webp";
 
 const Milestones = () => {
@@ -14,6 +16,8 @@ const Milestones = () => {
     { field: "achieve", header: "achievement" },
   ];
   return (
+    <>
+    <Backtotop/>
     <div className="milestone_tab">
       <div className="milestone_headingsec">
         <div className="milestone_imghead">
@@ -33,6 +37,7 @@ const Milestones = () => {
         />
       </div>
     </div>
+    </>
   );
 };
 export default Milestones;

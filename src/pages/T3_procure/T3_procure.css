@@ -1,0 +1,40 @@
+.proc_head{
+    color:#00134d;
+    font-weight: bold;
+    margin:50px 100px 20px 400px;
+}
+.proc_tab{
+    width:70%;
+    margin:50px 0px 50px 50px;  
+}
+
+@media only screen and (max-width:600px) {
+    .proc_tot{
+        width:90%;
+        margin: 35px auto 10px auto;
+    }
+    .proc_head{
+        margin:20px 0px 20px 0px;
+        text-align: center;
+    }
+    .proc_tab{
+        width:90%;
+        overflow-x: scroll;
+        margin:  30px auto 10px auto;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .proc_tot{
+        width:90%;
+        margin: 50px auto 10px auto;
+    }
+    .proc_head{
+        margin:20px 0px 20px 0px;
+        text-align: center;
+    }
+    .proc_tab{
+        width:90%;
+        margin:  30px auto 10px auto;
+    }
+}
