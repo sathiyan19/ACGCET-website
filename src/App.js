@@ -24,7 +24,7 @@ import {
   Aicte,
   Organisation,
   Under,
-  Csedept
+  Csedept,Govern
 } from "./pages";
 import "./App.css";
 
@@ -53,8 +53,9 @@ const App = () => {
         <Route path="/aicte" element={<Aicte />} />
         <Route path="/organisation" element={<Organisation />} />
         <Route path="/under" element={<Under />} />
-        <Route path="/csedept" element={<Csedept/>} />
-          
+        <Route path="/csedept" element={<Csedept/>} /> 
+        <Route path="/govern" element={<Govern/>} /> 
+
         </Routes>
         <Footer/>
     </div>
