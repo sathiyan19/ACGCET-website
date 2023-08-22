@@ -7,7 +7,7 @@ const Floatingmenu = ({head,links}) => {
     <div className="in_this_sec">
         <p>{head}</p>
         <div>
-            {links.map((item)=><li key={item.id}><a key={item.id} href={item.path}>{item.link}</a></li>)}
+            {links.map((item)=><ul><li key={item.id}><a key={item.id} href={item.path}>{item.link}</a></li></ul>)}
         </div>
     </div>
   )
