@@ -1,30 +1,39 @@
 .in_this_sec{
     width:20%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     right: 20px;
-    top: 190px;
-    padding: 10px;
+    top: 590px;
+    padding: 5px;
     background-color: #D9EDFF;
     border-radius: 10px;
+    box-sizing: border-box;
     >p{
         color: #00134d;
     }
     >div{
         padding:0 20px;
+        
     }
-    >div>li{
+    >div>ul>li{
         
         /* list-style: none; */
-        line-height: 2rem;
+        line-height: 1rem;
         >a{
-            color: #00134d;
-            text-decoration: underline;
+            color: black;
+            text-decoration: none;
+            list-style-position: outside;
         }
     }
-    >div>li:hover a{
+    >div>ul>li:hover a{
         cursor: pointer;
         text-decoration: none;
+        font-weight: 600;
+    }
+    >div>ul>li a:active{
+        cursor: pointer;
+        color:red;
+        
     }
 }
 
@@ -32,6 +41,8 @@
     .in_this_sec{
         position: static;
         width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
         >div{
             display: flex;
             justify-content: space-evenly;
