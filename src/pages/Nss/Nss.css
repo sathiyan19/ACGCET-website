@@ -6,6 +6,8 @@
   }
 }
 
+
+
 .nssgen{
   display: flex;
   padding: 10px;
@@ -13,8 +15,8 @@
 
 .mosec {
   display: flex;  
-  /* margin: 30px; */
-  /* justify-content: center; */
+  margin: 30px;
+  justify-content: center;
   align-items: center;
   height: 350px;
 }
@@ -59,23 +61,19 @@
   }
 }
 
-.nssgencont{
-  padding: 20px;
-  text-align: justify;
-  line-height: 1.5rem;
-}
+
 
 .works {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #e5e4e0;
-  padding: 20px;
-  box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+  /* padding: 20px; */
+  /* box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
     15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
     29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
-    70px 70px 80px rgba(0, 0, 0, 0.02);
+    70px 70px 80px rgba(0, 0, 0, 0.02); */
   /* margin: 0 50px 0 50px; */
   > h4 {
     color: #00134d;
@@ -117,7 +115,7 @@
   background-color: #e5e4e0;
   padding: 20px;
   .nssgalleryhead{
-    > h1 {
+    > p {
       font-size: 40px;
       color: #00134d;
       font-weight: 500;
@@ -213,6 +211,7 @@ input {
   text-align: center;
   transition: all 0.35s;
 }
+
 .tab-content {
   max-height: 0;
   padding: 0 1em;
@@ -289,6 +288,10 @@ input:checked ~ .tab-content {
   .nsscards {
     width: 100% !important;
   }
+
+  .tabs{
+    width:95%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -333,11 +336,75 @@ input:checked ~ .tab-content {
     }
   }
 
-  .tabs{
-    width: 50%;
+  .nssgalleryhead p{
+   font-size: 30px !important;
   }
+
+  .nssgallery{
+    >img{
+      height: 150px !important;
+    }
+  }
+
+  /* .tabs{
+    width: 85%;
+  } */
 
   .achieve{
     overflow-x: scroll;
+  }
+}
+
+@media (max-width: 550px){
+  .tabs{
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px){
+  .tabs{
+    width: 80%;
+  }
+}
+
+@media (max-width: 460px){
+  .tabs{
+    width: 75%;
+  }
+}
+
+@media (max-width: 435px){
+  .tabs{
+    width: 70%;
+  }
+}
+
+@media (max-width: 405px){
+  .tabs{
+    width: 65%;
+  }
+}
+
+@media (max-width: 380px){
+  .tabs{
+    width: 60%;
+  }
+}
+
+@media (max-width: 350px){
+  .tabs{
+    width: 55%;
+  }
+}
+
+@media (max-width: 320px){
+  .tabs{
+    width: 50%;
+  }
+}
+
+@media (max-width: 290px){
+  .tabs{
+    width: 45%;
   }
 }
