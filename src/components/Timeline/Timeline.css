@@ -17,19 +17,19 @@
 }
 
 /* Container around content */
-.container1 {
+.timeline_container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
 
-.content p {
+.timeline_content p {
   color: black;
 }
 
 /* The circles on the timeline */
-.container1::after {
+.timeline_container::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -86,7 +86,7 @@
 }
 
 /* The actual content */
-.content {
+.timeline_content {
   padding: 20px 30px;
   background-color: #d9edff;
   position: relative;
@@ -94,6 +94,35 @@
   > h2 {
     color: #00134d;
   }
+}
+
+.button_holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timeline_link{
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #00134d;
+  border-radius: 5px;
+  z-index: 2;
+  position: relative;
+  >span{
+    color: #FFF;
+  }
+}
+.timeline_link:hover{
+  color: #FFF;
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+    4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+    15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+    29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+    70px 70px 80px rgba(0, 0, 0, 0.02);
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -104,14 +133,14 @@
   }
 
   /* Full-width containers */
-  .container1 {
+  .timeline_container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
-  .container1::before {
+  .timeline_container::before {
     left: 60px;
     border: medium solid #d9edff;
     border-width: 10px 10px 10px 0;
@@ -130,13 +159,17 @@
   }
 }
 
-@media (max-width: 600px) {
-  .container1 {
+@media (max-width:600px){
+  .timeline_container{
     padding-left: 50px;
     padding-right: 10px;
   }
 
-  .container1::before {
+  .timeline_container::before{
     left: 43px;
+  }
+  .timeline_link{
+    font-size: 16px;
+    padding: 7px;
   }
 }

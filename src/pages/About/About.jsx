@@ -6,7 +6,7 @@ import { Floatinmenu } from "../../widgets";
 
 import { about_floater_menu } from "../../constants/about";
 
-import {Backtotop} from '../../widgets'
+import { Backtotop } from "../../widgets";
 
 import basketball from "../../assets/pictures/basketball.webp";
 import clg_mainbuild from "../../assets/pictures/clg_mainbuild.webp";
@@ -14,13 +14,18 @@ import nehru from "../../assets/pictures/nehru.webp";
 import prasad from "../../assets/pictures/prasad.webp";
 import kkdi from "../../assets/pictures/kkdi.webp";
 
+import {IoHome} from 'react-icons/io5'
+
+import campusmap from '../../assets/pictures/campus map.webp'
+
 const About = () => {
   return (
     <div className="whole_cont">
-      <Backtotop/>
+      <Backtotop />
       <div className="abt_heading">About the Institution</div>
 
       <Floatinmenu
+      logo={IoHome}
         head={about_floater_menu.head}
         links={about_floater_menu.links}
         from_top={190}
@@ -188,6 +193,13 @@ const About = () => {
         </div>
       </div>
 
+      <div className="campus_map sect" id="campus_map">
+        <div className="div_heading">Campus Map</div>
+        <div className="map_holder">
+          <img className="map" src={campusmap} alt="Campus Map"></img>
+        </div>
+      </div>
+
       <div className="visit_acgcet sect" id="vist_acgcet">
         <div className="div_heading">Visit ACGCET</div>
 
@@ -195,7 +207,6 @@ const About = () => {
           <div className="visit_content">
             <div className="abt-sub-head">
               <div className="visit_transport fa fa-solid fa-train"></div>
-              
               &nbsp;&nbsp;&nbsp;&nbsp;By Train
             </div>
 
@@ -246,7 +257,7 @@ const About = () => {
                 passengers to and from Karaikudi and its surrounding areas. The
                 bus stand is a crucial part of the town's transportation
                 infrastructure, connecting residents and travelers to different
-                destinations within the region. 
+                destinations within the region.
               </p>
               <div className="img_holder">
                 <img className="flex_img" src={kkdi} alt="Nehru at ACGCET" />
@@ -254,19 +265,27 @@ const About = () => {
             </div>
 
             <div className="content">
-            At the bus stand, you can find
-                buses traveling to and from nearby towns and cities, as well as
-                longer-distance routes connecting Karaikudi to various other
-                parts of Tamil Nadu. The bus stand's location in the heart of Karaikudi makes it easily accessible to residents and visitors alike. It plays a significant role in promoting regional connectivity and enabling efficient public transportation options for those traveling by bus.
+              At the bus stand, you can find buses traveling to and from nearby
+              towns and cities, as well as longer-distance routes connecting
+              Karaikudi to various other parts of Tamil Nadu. The bus stand's
+              location in the heart of Karaikudi makes it easily accessible to
+              residents and visitors alike. It plays a significant role in
+              promoting regional connectivity and enabling efficient public
+              transportation options for those traveling by bus.
             </div>
 
             <div className="content">
-            From the karaikudi bus stop, local buses run frequently to Alagappa chettiar government college of engineering and technology. The Alagappa Chettiar Government College of Engineering and Technology (ACGCET) is located about 3.3 kilometres from Karaikudi New Bus Stand.
+              From the karaikudi bus stop, local buses run frequently to
+              Alagappa chettiar government college of engineering and
+              technology. The Alagappa Chettiar Government College of
+              Engineering and Technology (ACGCET) is located about 3.3
+              kilometres from Karaikudi New Bus Stand.
             </div>
-            
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 };

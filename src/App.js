@@ -24,7 +24,7 @@ import {
   Aicte,
   Organisation,
   Under,
-  Csedept,Govern,Ncc,Thiran,Sports
+  Csedept
 } from "./pages";
 import "./App.css";
 
@@ -58,6 +58,11 @@ const App = () => {
 <Route path='/ncc' element={<Ncc/>}/>
           <Route path='/thiran' element={<Thiran/>}/>
           <Route path='/sports' element={<Sports/>}/>
+          <Route path="/ecedept" element={<Ecedept/>} /> 
+        <Route path="/annual_reports" element={<Annual_report/>} /> 
+        <Route path="/academic-calendar" element={<Academic/>} /> 
+        <Route path="/fee-structure" element={<Fees/>} /> 
+          
         </Routes>
         <Footer/>
     </div>

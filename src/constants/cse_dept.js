@@ -1,14 +1,14 @@
-const dept_menu=[
+const cse_dept_menu=[
     {
         "id":"1",
-        "path":"#",
+        "path":"/csedept",
         "link":"About the Department"
     },
-    {
-        "id":"2",
-        "path":"#",
-        "link":"Vision and Mission"
-    },
+    // {
+    //     "id":"2",
+    //     "path":"#",
+    //     "link":"Vision and Mission"
+    // },
     {
         "id":"3",
         "path":"#",
@@ -24,11 +24,11 @@ const dept_menu=[
         "path":"#",
         "link":"Faculties"
     },
-    {
-        "id":"6",
-        "path":"#",
-        "link":"Supporting Staffs"
-    },
+    // {
+    //     "id":"6",
+    //     "path":"#",
+    //     "link":"Supporting Staffs"
+    // },
     {
         "id":"7",
         "path":"#",
@@ -56,4 +56,16 @@ const dept_menu=[
     },
 ]
 
-export {dept_menu}
+const cse_proflies=[
+    {
+        'id':"1",
+        'cover':"cover",
+        'dp':"dp",
+        'name':"Arjun",
+        'Designation':"Designation",
+        'mailid':"emailid@gmail.com"
+
+    },
+]
+
+export {cse_dept_menu,cse_proflies}
