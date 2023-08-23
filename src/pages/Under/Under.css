@@ -1,7 +1,12 @@
+.underbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .uct_bg{
     /* background-image: url("../../assets/pictures/uct.png"); */
     height: auto;
-    width: 100%;
+    width: 78%;
 }
 
 .uct_bg_mob{

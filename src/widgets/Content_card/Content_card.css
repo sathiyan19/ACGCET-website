@@ -114,6 +114,13 @@
     transition: all .5s ease;
   }
 
+  @media(max-width:500px){
+    .card_sub_link{
+      font-size: 16px;
+      padding: 7px;
+    }
+  }
+
   @media(max-width:400px){
     .card_bg{
       top: -55px;
@@ -133,36 +140,3 @@
       right: -15px;
     }
   }
-  
-  
-  
-  
-  /* @media only screen and (max-width: 979px) {
-    .cont_card {
-      -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
-    }
-    .card_title {
-      font-size: 24px;
-    }
-  }
-  
-  
-  @media only screen and (max-width: 639px) {
-    .cont_card {
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-    }
-    .card_title {
-      min-height: 72px;
-      line-height: 1;
-  
-      font-size: 24px;
-    }
-    .card_body {
-      padding: 22px 40px;
-    }
-    .card_sub {
-      font-size: 16px;
-    }
-  } */

@@ -1,0 +1,22 @@
+.academic_container{
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.academic_heading{
+    color: #00134d;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+@media(max-width:500px){
+    .academic_heading{
+        font-size: 28px;
+    }
+}
+@media(max-width:321px){
+    .academic_heading{
+        font-size: 26px;
+    }
+}

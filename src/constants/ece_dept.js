@@ -1,62 +1,62 @@
-const cse_dept_menu=[
+const ece_dept_menu=[
     {
         "id":"1",
-        "path":"/csedept",
+        "path":"/ecedept",
         "link":"About the Department"
     },
-    // {
-    //     "id":"2",
-    //     "path":"#",
-    //     "link":"Vision and Mission"
-    // },
+    {
+        "id":"2",
+        "path":"#",
+        "link":"Programme Objectives & Outcomes"
+    },
     {
         "id":"3",
         "path":"#",
-        "link":"Programme Education Objectives"
+        "link":"Faculties"
     },
     {
         "id":"4",
         "path":"#",
-        "link":"Programme Outcomes"
+        "link":"Lab Facilities"
     },
     {
         "id":"5",
         "path":"#",
-        "link":"Faculties"
-    },
-    // {
-    //     "id":"6",
-    //     "path":"#",
-    //     "link":"Supporting Staffs"
-    // },
-    {
-        "id":"7",
-        "path":"#",
-        "link":"Lab Facilities"
+        "link":"Department Library"
     },
     {
-        "id":"8",
-        "path":"#",
-        "link":"Professional Socities"
-    },
-    {
-        "id":"9",
+        "id":"6",
         "path":"#",
         "link":"Research and Publications"
     },
     {
+        "id":"7",
+        "path":"#",
+        "link":"Department Events"
+    },
+    {
+        "id":"8",
+        "path":"#",
+        "link":"Placement Activites"
+    },
+    {
+        "id":"9",
+        "path":"#",
+        "link":"Elite Rankers"
+    },
+    {
         "id":"10",
         "path":"#",
-        "link":"Programmed Organized"
+        "link":"Student Activities"
     },
     {
         "id":"11",
         "path":"#",
-        "link":"MoU"
+        "link":"Best Projects"
     },
 ]
 
-const cse_proflies=[
+const ece_proflies=[
     {
         'id':"1",
         'cover':"cover",
@@ -68,4 +68,4 @@ const cse_proflies=[
     },
 ]
 
-export {cse_dept_menu,cse_proflies}
+export {ece_dept_menu,ece_proflies}
