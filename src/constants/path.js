@@ -12,7 +12,7 @@ const top_nav_paths=[
     "type":"1",
     'title':'Administration',
     'basepath':'javascript:void(0);',
-    'links':[{'path':"/",'link':"Governing council"},
+    'links':[{'path':"/govern",'link':"Governing council"},
             {'path':"/office",'link':"Office"},
             {'path':"/organisation",'link':"Organisation Structure"},
             {'path':"/under",'link':"Committee/Cell"}]
@@ -58,11 +58,11 @@ const top_nav_paths=[
     'title':'Co-Curricular',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/clubs','link':"Clubs"},
-            {'path':'/','link':"Sports"},
+            {'path':'/sports','link':"Sports"},
             {'path':'/nss','link':"NSS"},
-            {'path':'/','link':"NCC"},
+            {'path':'/ncc','link':"NCC"},
             {'path':'/','link':"YRC"},
-            {'path':'/','link':"Thiran"},
+            {'path':'/thiran','link':"Thiran"},
             {'path':'/','link':"Xprez"}]
     },
 

@@ -20,15 +20,11 @@ import {
   T3_officials,
   T3_acad,
   T3_procure,
-  T3_twin,
+  T3_twin,Ncc,Thiran,Sports,
   Aicte,
   Organisation,
   Under,
-  Csedept,
-  Ecedept,
-  Annual_report,
-  Academic,
-  Fees
+  Csedept
 } from "./pages";
 import "./App.css";
 
@@ -58,10 +54,15 @@ const App = () => {
         <Route path="/organisation" element={<Organisation />} />
         <Route path="/under" element={<Under />} />
         <Route path="/csedept" element={<Csedept/>} /> 
-        <Route path="/ecedept" element={<Ecedept/>} /> 
+        <Route path="/govern" element={<Govern/>} /> 
+<Route path='/ncc' element={<Ncc/>}/>
+          <Route path='/thiran' element={<Thiran/>}/>
+          <Route path='/sports' element={<Sports/>}/>
+          <Route path="/ecedept" element={<Ecedept/>} /> 
         <Route path="/annual_reports" element={<Annual_report/>} /> 
         <Route path="/academic-calendar" element={<Academic/>} /> 
         <Route path="/fee-structure" element={<Fees/>} /> 
+          
         </Routes>
         <Footer/>
     </div>

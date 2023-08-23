@@ -1,0 +1,71 @@
+.governing_council{
+    margin-top:20px;
+    text-align: center;
+    padding:10px;
+    
+  }
+  
+  .governing_council h1{
+    font-weight: bold;
+    text-align: center;
+    color:#00134d;
+  }
+  
+  .governing_title{
+    background-color:#00134d;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    padding:15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .governing_title h5{
+    color:white;
+    font-size: 20px;
+  }
+  
+  .governing_headingsec{
+    margin-top: 30px;
+    margin:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .governing_headingsec .governing_content{
+    background-color:#D9EDFF;
+  }
+  
+  .governing_content li{
+    color:black;
+    padding:15px;
+  }
+  
+  .governing_content{
+    font-size: 17px;
+    border-radius: 10px;
+    line-height: 1.5rem;
+    padding:20px;
+  }
+  
+  .governing_pic{
+    width:100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  
+  .governing_imghead{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .governing_tab{
+    margin:20px 60px 20px 60px;
+  }
+  

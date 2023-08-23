@@ -23,7 +23,7 @@ export const teqip3_floater_menu={
         },
         {
             'id':'5',
-            'link':'Audited Statment',
+            'link':'Audited Statement',
             'path':'https://drive.google.com/file/d/1wbyhHTTkMLfdO4GktLYsSelcXHF9sacx/view'
         }
     ]

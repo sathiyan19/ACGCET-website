@@ -6,5 +6,6 @@ export {default as Slideshow} from './Slideshow/Slideshow';
 export {default as Table} from './Table/Table';
 export {default as Modal_carousel} from './Modal_carousel/Modal_carousel';
 export {default as Profile_display} from './Profile_display/Profile_display';
-export {default as Radial_menu} from './Radial_menu/Radial_menu';
 export {default as Timeline} from './Timeline/Timeline';
+export {default as Listformat} from './Listformat/Listformat';
+export {default as Radial_menu} from './Radial_menu/Radial_menu';
