@@ -11,8 +11,10 @@ import gal7 from "../../assets/pictures/gal7.jpg";
 import motto from "../../assets/pictures/mottonss.jpg";
 import q1 from "../../assets/pictures/quote1.png";
 import q2 from "../../assets/pictures/quote2.png";
+
 import { Heroimagecarousal,Table } from "../../components";
 import { Profilecard } from "../../widgets";
+import { Backtotop } from "../../widgets";
 import { Nss_heroimage_carousalinfo,profile_info,achieve17} from "../../constants/Nss";
 
 const Nss = () => {
@@ -23,6 +25,8 @@ const Nss = () => {
     { field: "issue", header: "issuing authority" }
   ];
   return (
+    <>
+    <Backtotop/>
     <div>
       {/* hero image */}
       <Heroimagecarousal
@@ -166,6 +170,7 @@ const Nss = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

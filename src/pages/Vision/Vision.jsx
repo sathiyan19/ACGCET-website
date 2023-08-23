@@ -50,6 +50,7 @@ const Vision = () => {
         });
       });
     }
+    
 
     setEqualHeight(); // Call the function initially
     window.addEventListener('resize', setEqualHeight); // Recalculate heights on window resize
@@ -61,6 +62,7 @@ const Vision = () => {
 
 
   return (
+
     <div className="main">
         {/* vision section */}
         <div className="sub-division">

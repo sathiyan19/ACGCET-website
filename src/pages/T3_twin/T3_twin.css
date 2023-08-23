@@ -50,7 +50,7 @@
 
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:769px) {
     .twin{
         width:90%;
         margin: 35px auto 10px auto;
@@ -71,5 +71,49 @@
         margin:30px auto 5px auto;
         color:black;
     }
+    .twin_p{
+        width:90%;
+        margin:10px 5px 0px 5px;
+        color:black;
+        line-height: 1.5rem;
+        text-align: left;
+    }
     
+}
+
+@media only screen and (max-width:1170px) and (min-width:770px) {
+ 
+    .twin{
+        width:100%;
+        margin: 35px auto 10px auto;
+    }
+    .twin_tab{
+        width:75%;
+        overflow-x: scroll;    
+        margin:  30px 20px 10px 10px;
+    }
+    .twin_p{
+        width:50%;
+        margin:10px auto 0px auto;
+        color:black;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+    .twin_head{
+        color:#00134d;
+        font-weight: bold;
+        margin:50px auto 20px auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:1026px) {
+    .twin_p{
+        width:75%;
+        margin:10px 25px 0px 10px;
+        padding:8px;
+        color:black;
+        line-height: 1.5rem;
+    }
+
 }

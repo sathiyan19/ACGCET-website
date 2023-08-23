@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 
 import "./Alumni.css";
 
-import { Modal } from "../../widgets";
+import { Modal,Backtotop } from "../../widgets";
 import { Slideshow} from "../../components";
 import { contributions, slideshow_imgs } from "../../constants/alumni_info";
 
@@ -31,6 +31,8 @@ const Alumni = () => {
     }
   },[]);
   return (
+    <>
+    <Backtotop/>
     <div className="alumni_body">
 
       <Slideshow images={slideshow_imgs}/>
@@ -113,6 +115,7 @@ const Alumni = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

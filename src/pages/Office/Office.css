@@ -64,29 +64,6 @@
     width: 100%;
 }
 
-.org_structure{
-    padding: 20px;
-}
-
-.org_pic{
-    /* background-color: #01134d; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.org_text{
-    text-align: justify;
-    /* color: #01134d; */
-    margin-bottom: 20px;
-    line-height: 1.5rem;
-}
-
-.ord_str_img{
-    width: 65%;
-    height: auto;
-}
-
 @media(max-width:1023px){
     .princ_msg_content{
         flex-direction: column;
@@ -124,10 +101,6 @@
     .whole_content{
         margin-top: 70px;
         padding: 10px;
-    }
-
-    .ord_str_img{
-        width: 100%;
     }
 }
 

@@ -12,7 +12,7 @@ const Table = ({
     return field.toUpperCase();
   };
   return (
-    <div className="entire_tab">
+    <div>
       <table className="comp_table">
 
         <tr className="comp_tr">

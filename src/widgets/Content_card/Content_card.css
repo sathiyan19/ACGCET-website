@@ -38,6 +38,15 @@
     color: #FFF;
     transition: 0.5s ease;
   }
+  .card_body:hover,
+  .card_body:hover .card_sub_link {
+    color: #00134d;
+    background-color: #ecf6ff;
+    transition: 0.5s ease;
+    >span{
+      color: #00134d;
+    }
+  }
 
   .card_body:hover .card_bg {
     -webkit-transform: scale(10);
@@ -61,9 +70,23 @@
     display: none;
     font-size: 24px;
     color: #00134d;
+
+    z-index: 2;
+    position: relative;
+  }
+  .card_sub_link{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #00134d;
+    border-radius: 5px;
   
     z-index: 2;
     position: relative;
+    >span{
+      color: #FFF;
+    }
   }
   .card_detail {
     text-decoration: none;

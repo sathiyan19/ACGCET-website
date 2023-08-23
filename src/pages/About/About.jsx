@@ -6,15 +6,19 @@ import { Floatinmenu } from "../../widgets";
 
 import { about_floater_menu } from "../../constants/about";
 
+import {Backtotop} from '../../widgets'
+
 import basketball from "../../assets/pictures/basketball.webp";
 import clg_mainbuild from "../../assets/pictures/clg_mainbuild.webp";
 import nehru from "../../assets/pictures/nehru.webp";
 import prasad from "../../assets/pictures/prasad.webp";
+import kkdi from "../../assets/pictures/kkdi.webp";
 
 const About = () => {
   return (
     <div className="whole_cont">
-      <div className="heading">About the Institution</div>
+      <Backtotop/>
+      <div className="abt_heading">About the Institution</div>
 
       <Floatinmenu
         head={about_floater_menu.head}
@@ -188,10 +192,81 @@ const About = () => {
         <div className="div_heading">Visit ACGCET</div>
 
         <div className="div_content">
+          <div className="visit_content">
+            <div className="abt-sub-head">
+              <div className="visit_transport fa fa-solid fa-train"></div>
+              
+              &nbsp;&nbsp;&nbsp;&nbsp;By Train
+            </div>
 
+            <div className="flex_1">
+              <p className="content">
+                In terms of train connectivity, Karaikudi has a railway station
+                known as "Karaikkudi Junction" (Station code: KKDI), which is an
+                essential transportation hub connecting the town to various
+                other parts of Tamil Nadu and beyond. Karaikkudi Junction serves
+                as a crucial link for both passengers and freight
+                transportation. The railway station is part of the Southern
+                Railway zone, one of the major zones of the Indian Railways.
+              </p>
+              <div className="img_holder">
+                <img className="flex_img" src={kkdi} alt="Nehru at ACGCET" />
+              </div>
+            </div>
+
+            <div className="content">
+              Karaikudi is well connected with the capital city Chennai. Most of
+              the trains bound to Chennai, Manamadurai, Rameswaram and
+              Kanyakumari from Tiruchirappalli pass through this station, with
+              every train having a stoppage here for a minimum of 5–10 minutes.
+              Direct trains run from Karaikudi Junction to important cities
+              including Thanjavur, Rameswaram, Sengotai, Trichy, and Coimbatore.
+            </div>
+
+            <div className="content">
+              The distance between Karaikudi Junction railway station and
+              Alagappa Chettiar Government College of Engineering and Technology
+              (ACGCET) is approximately 2.5 kilometers. This distance can be
+              covered by various modes of transportation, such as auto-rickshaws
+              or local buses, depending on your preference.
+            </div>
+          </div>
+
+          <div className="visit_content">
+            <div className="abt-sub-head">
+              <div className="visit_transport fa fa-bus"></div>
+              &nbsp;&nbsp;&nbsp;&nbsp;By Bus
+            </div>
+
+            <div className="flex_1">
+              <p className="content">
+                Karaikudi New Bus Stand is a major transportation hub located in
+                Karaikudi. It serves as a central point for various intercity
+                and intracity bus routes, facilitating the movement of
+                passengers to and from Karaikudi and its surrounding areas. The
+                bus stand is a crucial part of the town's transportation
+                infrastructure, connecting residents and travelers to different
+                destinations within the region. 
+              </p>
+              <div className="img_holder">
+                <img className="flex_img" src={kkdi} alt="Nehru at ACGCET" />
+              </div>
+            </div>
+
+            <div className="content">
+            At the bus stand, you can find
+                buses traveling to and from nearby towns and cities, as well as
+                longer-distance routes connecting Karaikudi to various other
+                parts of Tamil Nadu. The bus stand's location in the heart of Karaikudi makes it easily accessible to residents and visitors alike. It plays a significant role in promoting regional connectivity and enabling efficient public transportation options for those traveling by bus.
+            </div>
+
+            <div className="content">
+            From the karaikudi bus stop, local buses run frequently to Alagappa chettiar government college of engineering and technology. The Alagappa Chettiar Government College of Engineering and Technology (ACGCET) is located about 3.3 kilometres from Karaikudi New Bus Stand.
+            </div>
+            
+          </div>
         </div>
       </div>
-
     </div>
   );
 };
