@@ -6,7 +6,7 @@ export {default as Office} from './Office/Office'
 export {default as Clubs} from './Clubs/Clubs'
 export {default as Alumni} from './Alumni/Alumni'
 export {default as Nss} from './Nss/Nss'
-
+export {default as Ncc} from './Ncc/Ncc'
 export {default as Teqip1} from './Teqip1/Teqip1'
 export {default as Teqip2} from './Teqip2/Teqip2'
 export {default as Teqip3} from './Teqip3/Teqip3'
@@ -21,7 +21,6 @@ export {default as Aicte} from './Aicte/Aicte'
 export {default as Organisation} from './Organisation/Organisation'
 export {default as Under} from './Under/Under'
 
-
-
- 
+export {default as Thiran} from './Thiran/Thiran'
+export {default as Sports} from './Sports/Sports'
 export {default as Csedept} from './Csedept/Csedept'
