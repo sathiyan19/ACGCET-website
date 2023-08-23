@@ -1,0 +1,52 @@
+.alltitle {
+  > p {
+    color: #00134d;
+    font-weight: 500;
+    font-size: 40px;
+  }
+}
+
+.l1 {
+  height: 5px;
+  background-color: #00134d;
+  width: 10%;
+  margin-bottom: 10px;
+}
+
+.l2 {
+  height: 5px;
+  background-color: #d9edff;
+  width: 10%;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 500px) {
+  .alltitle {
+    > p {
+      font-size: 28px;
+    }
+  }
+  .l1 {
+    height: 3px;
+    width: 20%;
+    margin-bottom: 5px;
+  }
+  .l2 {
+    height: 3px;
+    width: 20%;
+  }
+}
+
+@media (max-width: 321px) {
+  .alltitle {
+    > p {
+      font-size: 26px;
+    }
+  }
+  .l1 {
+    width: 25%;
+  }
+  .l2 {
+    width: 25%;
+  }
+}

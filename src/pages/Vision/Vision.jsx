@@ -20,16 +20,33 @@ const Vision = () => {
     function setEqualHeight() {
       rows.forEach(row => {
         const cards = row.querySelectorAll('.card');
-        let maxHeight = 0;
-        cards.forEach(card => {
-          card.style.height = 'auto';
-          const cardHeight = card.offsetHeight;
-          if (cardHeight > maxHeight) {
-            maxHeight = cardHeight;
-          }
+        let maxCardHeight = 0;
+        
+        // Wait for images to load
+        const imagePromises = Array.from(cards).map(card => {
+          const image = card.querySelector('img');
+          return new Promise(resolve => {
+            if (image.complete) {
+              resolve();
+            } else {
+              image.onload = resolve;
+            }
+          });
         });
-        cards.forEach(card => {
-          card.style.height = `${maxHeight}px`;
+    
+        // Calculate maximum card height after images load
+        Promise.all(imagePromises).then(() => {
+          cards.forEach(card => {
+            card.style.height = 'auto';
+            const cardHeight = card.offsetHeight;
+            if (cardHeight > maxCardHeight) {
+              maxCardHeight = cardHeight;
+            }
+          });
+    
+          cards.forEach(card => {
+            card.style.height = `${maxCardHeight}px`;
+          });
         });
       });
     }
@@ -83,8 +100,8 @@ const Vision = () => {
                     </div>
                 </div>
 
-                <div class="column">
-                    <div class="card">
+                <div className="column">
+                    <div className="card">
                       <img src={ethics} alt="ethics"/>
                       <h3>Ethics</h3>
                       <p>
@@ -96,8 +113,8 @@ const Vision = () => {
                     </div>
                 </div>
 
-                <div class="column">
-                    <div class="card">
+                <div className="column">
+                    <div className="card">
                       <img src={respect} alt="respect"/>
                       <h3>Respect</h3>
                       <p>
@@ -109,8 +126,8 @@ const Vision = () => {
                     </div>
                 </div>
 
-                <div class="column">
-                    <div class="card">
+                <div className="column">
+                    <div className="card">
                       <img src={responsibility} alt="responsibility"/>
                       <h3>Responsibility</h3>
                       <p>
@@ -138,8 +155,8 @@ const Vision = () => {
                     </div>
                 </div>
 
-                <div class="column">
-                    <div class="card">
+                <div className="column">
+                    <div className="card">
                       <img src={diversity} alt="ethics" />
                       <h3>Diversity</h3>
                       <p>
@@ -152,8 +169,8 @@ const Vision = () => {
                     </div>
                 </div>
 
-                <div class="column">
-                    <div class="card">
+                <div className="column">
+                    <div className="card">
                       <img src={ie} alt="respect" />
                       <h3>Intellectual Excellence</h3>
                       <p>
@@ -165,8 +182,8 @@ const Vision = () => {
                     </div>
                 </div>
 
-                <div class="column">
-                    <div class="card">
+                <div className="column">
+                    <div className="card">
                       <img src={teamwork} alt="responsibility"/>
                       <h3>Team Work</h3>
                       <p>
