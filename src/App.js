@@ -24,7 +24,11 @@ import {
   Aicte,
   Organisation,
   Under,
-  Csedept
+  Csedept,
+  Ecedept,
+  Annual_report,
+  Academic,
+  Fees
 } from "./pages";
 import "./App.css";
 
@@ -53,8 +57,11 @@ const App = () => {
         <Route path="/aicte" element={<Aicte />} />
         <Route path="/organisation" element={<Organisation />} />
         <Route path="/under" element={<Under />} />
-        <Route path="/csedept" element={<Csedept/>} />
-          
+        <Route path="/csedept" element={<Csedept/>} /> 
+        <Route path="/ecedept" element={<Ecedept/>} /> 
+        <Route path="/annual_reports" element={<Annual_report/>} /> 
+        <Route path="/academic-calendar" element={<Academic/>} /> 
+        <Route path="/fee-structure" element={<Fees/>} /> 
         </Routes>
         <Footer/>
     </div>

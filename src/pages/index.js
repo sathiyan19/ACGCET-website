@@ -6,7 +6,6 @@ export {default as Office} from './Office/Office'
 export {default as Clubs} from './Clubs/Clubs'
 export {default as Alumni} from './Alumni/Alumni'
 export {default as Nss} from './Nss/Nss'
-
 export {default as Teqip1} from './Teqip1/Teqip1'
 export {default as Teqip2} from './Teqip2/Teqip2'
 export {default as Teqip3} from './Teqip3/Teqip3'
@@ -19,7 +18,8 @@ export {default as T3_twin} from './T3_twin/T3_twin'
 export {default as Aicte} from './Aicte/Aicte'
 export {default as Organisation} from './Organisation/Organisation'
 export {default as Under} from './Under/Under'
-
-
- 
 export {default as Csedept} from './Csedept/Csedept'
+export {default as Ecedept} from './Ecedept/Ecedept'
+export {default as Annual_report} from './Annual_Report/Annual_report'
+export {default as Academic} from './Academic/Academic'
+export {default as Fees} from './Fees/Fees'

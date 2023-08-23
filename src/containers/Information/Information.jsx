@@ -19,10 +19,11 @@ const Information = () => {
             </ul>
         </div>
         <div className="quick">
-            <a href="#" className="quick-link">Lateral Admission</a>
-            <a href="#" className="quick-link">Results</a>
+        <a href="https://www.tneaonline.org" target='blank' className="quick-link">Admission</a>
+            <a href="http://www.tnlea.com/lea/registration/application/" target='blank' className="quick-link">Lateral Admission</a>
+            <a href="https://www.accet.co.in" target='blank' className="quick-link">Results</a>
             <a href="#" className="quick-link">Scholarships</a>
-            <a href="#" className="quick-link">Fee Structure</a>
+            <a href="/fee-structure" className="quick-link">Fee Structure</a>
         </div>
     </div>
   )

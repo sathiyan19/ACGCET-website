@@ -20,7 +20,7 @@ const Radial_menu = ({menu_links}) => {
         <div className="dept_menu">
           <div className="dept_link_head">MENU</div>
           <div className="dept_link_holder">
-            {menu_links.map((item)=><a href={item.path} className="dept_links">{item.link}</a>)}
+            {menu_links.map((item)=><a key={item.id} href={item.path} className="dept_links">{item.link}</a>)}
           </div>
         </div>
       </div>

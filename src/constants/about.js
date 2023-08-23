@@ -14,7 +14,7 @@ export const about_floater_menu={
         {
             'id':'3',
             'link':'Campus Map',
-            'path':'#'
+            'path':'#campus_map'
         },
         {
             'id':'4',
