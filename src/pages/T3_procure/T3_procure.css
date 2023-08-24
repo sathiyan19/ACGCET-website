@@ -1,14 +1,15 @@
 .proc_head{
     color:#00134d;
-    font-weight: bold;
-    margin:50px 100px 20px 400px;
+    font-weight:500;
+    font-size: 26px;
+    margin:60px 0px 20px 40px;
 }
 .proc_tab{
     width:70%;
     margin:50px 0px 50px 50px;  
 }
 
-@media only screen and (max-width:600px) {
+@media(max-width:650px) {
     .proc_tot{
         width:90%;
         margin: 35px auto 10px auto;
@@ -24,7 +25,7 @@
     }
 }
 
-@media only screen and (max-width:768px) {
+@media (max-width:768px) {
     .proc_tot{
         width:90%;
         margin: 50px auto 10px auto;
@@ -34,7 +35,7 @@
         text-align: center;
     }
     .proc_tab{
-        width:90%;
-        margin:  30px auto 10px auto;
+        width:100%;
+        margin: 30px auto 10px auto;
     }
 }

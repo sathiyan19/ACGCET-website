@@ -22,13 +22,16 @@ const Teqip3 = () => {
     <>
     <Backtotop/>
     <div className='teqip3'>
-      <Floatinmenu head={teqip3_floater_menu.head} from_top={190} links={teqip3_floater_menu.links}/>
-      
+
       <div className="teqip3_heading">TEQIP-III</div>
+      <div className='flt'>
+      <Floatinmenu head={teqip3_floater_menu.head} from_top={190} links={teqip3_floater_menu.links}/>
+      </div>
+      
       <div className="teqip3_content">
         <p>TEQIP –III is implemented for improving the quality of Engineering Education in existing institutions with a special consideration for Low Income States and Special Category States (SCS) and support to strengthen few affiliated technical universities to improve their policy, academic and management practices.</p>
       </div>
-      <div className="teqip3_obj">PROJECT OBJECTIVES</div>
+      <div className="teqip3_obj">Project Objectives</div>
 
       
        

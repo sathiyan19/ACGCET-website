@@ -27,20 +27,21 @@
         text-align: right;
     }
 .teqip2_heading{
-        font-weight: bold;
+        font-weight:500;
         color:#00134d;
         margin-top: 40px;
-        text-align: center;
-        font-size: 18px;
+        margin-left: 20px;
+        font-size: 40px;
    }
  .teqip2_obj {
-    font-weight: bold;
+    font-weight: 500;
     color:#00134d;
     margin-top: 60px;
-    text-align: center;
-    font-size: 18px;
+    margin-left: 40px;
+    font-size: 26px;
   }
   .teqip2_content{
+    line-height: 1.5rem;
     border-radius:5px ;
     margin-top:30px;
     margin-left: 70px ;
@@ -74,10 +75,10 @@
   .teqip2_inner p li{
     color:black;
     margin:20px;
-    line-height: 0.5rem;
+    line-height: 1rem;
     
   }
-  @media only screen and (max-width: 426px) {
+  @media (max-width: 515px) {
     .teqip2_content{
      width:90%;
      margin: auto;
@@ -87,7 +88,7 @@
      margin:auto;  
     }
     .teqip2_inner p li{
-      line-height:1rem;
+      line-height:1.5rem;
     }
     .teqip2_tab{
       overflow-x:scroll;
@@ -99,7 +100,7 @@
     }
     
   }
-  @media only screen and (max-width:768px) {
+  @media (max-width:860px) {
     .teqip2_inner{
       width:90%;
       margin:10px auto 10px auto;
@@ -110,7 +111,7 @@
     }
 
     .teqip2_inner p li{
-      line-height:1rem;
+      line-height:1.5rem;
     }
     .teqip2_tab{
       width:90%;

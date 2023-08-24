@@ -12,7 +12,7 @@ const Teqip1 = () => {
   const columns = [
     { field: "sno", header: "sno" },
     { field: "detail", header: "detail" },
-    { field: "amount", header: "amount" },
+    { field: "amount", header: "amount(Lakhs)" },
   ];
 
   return (
@@ -29,7 +29,7 @@ const Teqip1 = () => {
           international levels.
         </p>
       </div>
-      <div className="teqip1_obj">OBJECTIVE</div>
+      <div className="teqip1_obj">Objective</div>
 
       {/* <div className="teqip1_outer"> */}
         <div className="teqip1_inner">

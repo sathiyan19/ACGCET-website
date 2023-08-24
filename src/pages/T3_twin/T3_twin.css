@@ -1,16 +1,25 @@
 .twin{
     width:70%;
 }
+.twin_head1{
+    color:#00134d;
+    font-weight:500;
+    font-size: 40px;
+    margin:70px 100px 20px 20px;
+}
+
 .twin_head{
     color:#00134d;
-    font-weight: bold;
-    margin:50px 100px 20px 400px;
+    font-weight:500;
+    font-size: 26px;
+    margin:20px 100px 20px 40px;
 }
+
 .twin_tab{
     margin:50px 0px 50px 30px;  
 }
 .twin_p{
-    margin:10px 0px 0px 40px;
+    margin:10px 0px 10px 40px;
     color:black;
     line-height: 1.5rem;
 }
@@ -20,7 +29,8 @@
     color:black;
 }
 
-@media only screen and (max-width:600px) {
+
+@media (max-width:600px) {
     .twin{
         width:90%;
         margin: 35px auto 10px auto;
@@ -41,35 +51,79 @@
         margin:30px auto 5px auto;
         color:black;
     }
-    .twin_head{
+    /* .twin_head{
         color:#00134d;
         font-weight: bold;
         margin:50px auto 20px auto;
         text-align: center;
-    }
+    } */
 
 }
 
-@media only screen and (max-width:768px) {
+@media (max-width:769px) {
     .twin{
         width:90%;
         margin: 35px auto 10px auto;
     }
-    .twin_head{
+    /* .twin_head{
         color:#00134d;
         font-weight: bold;
         margin:50px auto 20px auto;
         text-align: center;
-    }
+    } */
     .twin_tab{
-        width:90%;
+        width:100%;
         overflow-x: scroll;
         margin:  30px auto 10px auto;
     }
     .twin_tab_inner{
-        width:90%;
+        width:100%;
         margin:30px auto 5px auto;
         color:black;
     }
+    .twin_p{
+        width:100%;
+        margin:10px auto 0px auto;
+        color:black;
+        line-height: 1.5rem;
+        /* text-align: left; */
+    }
     
 }
+
+@media (min-width:770px) and (max-width:1170px){
+ 
+    .twin{
+        width:100%;
+        margin: 35px auto 10px auto;
+    }
+    .twin_tab{
+        width:75%;
+        overflow-x: scroll;    
+        margin:  30px 20px 10px 10px;
+    }
+    .twin_p{
+        width:70%;
+        /* margin:10px auto 0px auto; */
+        color:black;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+    /* .twin_head{
+        color:#00134d;
+        font-weight: bold;
+        margin:50px auto 20px auto;
+        text-align: center;
+    } */
+}
+
+/* @media only screen and (max-width:1026px) {
+    .twin_p{
+        width:75%;
+        margin:10px 25px 0px 10px;
+        padding:8px;
+        color:black;
+        line-height: 1.5rem;
+    } 
+
+} */

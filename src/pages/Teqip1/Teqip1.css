@@ -1,18 +1,18 @@
 .teqip1_heading{
-  font-weight: bold;
+  font-weight: 500;
   color:#00134d;
-  margin-top: 40px;
-  text-align: center;
-  font-size: 18px;
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 40px;
   
 }
 
 .teqip1_obj {
-  font-weight: bold;
+  font-weight: 500;
   color:#00134d;
   margin-top: 60px;
-  text-align: center;
-  font-size: 18px;
+  margin-left: 40px;
+  font-size: 26px;
 }
 
 .teqip1_content{
@@ -39,7 +39,7 @@
 .teqip1_tab{
     margin: 280px;
     margin-top: 380px;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
 }
 
 /* .teqip1_inner1{
@@ -87,7 +87,7 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
   
 }
 
-.teqip1_tab th:nth-child(1),
+/* .teqip1_tab th:nth-child(1),
 .teqip1_tab td:nth-child(1) {
         width: 8%; 
   } 
@@ -96,18 +96,56 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
 .teqip1_tab td:nth-child(3) {
       width: 5%; 
       
-  }
+  } */
   .teqip1_tab td:nth-child(3) 
   {
     text-align: right;
   }
-
+/* 
   .teqip1_tab th:nth-child(2),
   .teqip1_tab td:nth-child(2) {
     width: 25%; 
+  } */
+  @media (max-width: 1440px){
+    .teqip1_tab{
+      width:50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  .teqip1_tab th:nth-child(2),
+  .teqip1_tab td:nth-child(2) {
+    width: 50%; 
+  }
+.teqip1_tab th:nth-child(3),
+.teqip1_tab td:nth-child(3) {
+      width: 5%;   
+  } 
+  .teqip1_tab th:nth-child(1),
+.teqip1_tab td:nth-child(1) {
+        width: 8%; 
+  } 
+  }
+  
+  @media (max-width: 1100px){
+    .teqip1_tab{
+      width:60%;
+      margin:350px auto 70px auto;  
+    }
+    /* .teqip1_tab th:nth-child(3),
+    .teqip1_tab td:nth-child(3) {
+      width: 5%;     
+    }
+    .teqip1_tab th:nth-child(2),
+    .teqip1_tab td:nth-child(2) {
+      width: 25%; 
+    }
+    .teqip1_tab th:nth-child(1),
+    .teqip1_tab td:nth-child(1) {
+        width: 8%; 
+  }  */
   }
 
-  @media (max-width: 768px){
+  @media (max-width: 900px){
     .teqip1_content{
       margin:20px;
     }
@@ -149,22 +187,58 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     }
 
     .teqip1_tab{
-      margin:350px 70px 70px 70px;   
+      margin:350px auto 70px auto;   
     }
 
     .teqip1_obj{
-      font-weight: bold;
+      font-weight: 500;
       color:#00134d;
       margin-top: 40px;
-      text-align: center;
     }
     
   }
-  
-  @media only screen and (max-width: 426px) {
+
+  @media (max-width: 640px) {
     .teqip1_tab{
-      margin:560px 20px 20px 20px;
-      overflow-x: scroll;
+      margin:400px auto 20px auto;
+      overflow-x: auto;
+      width:90%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .teqip1_tab{
+      margin:460px auto 20px auto;
+      /* overflow-x: scroll; */
+      width:90%;
+    }
+    ::-webkit-scrollbar  {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 5px #152029;
+      border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background:#00134d ;
+      border-radius: 15px;
+      width:2px;
+      height: 10px; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #aaa;
+    }
+
+    .teqip1_inner{
+      border-style: none;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .teqip1_tab{
+      margin:460px auto 20px auto;
+      overflow-x: auto;
+      width:90%;
     }
     ::-webkit-scrollbar  {
       width: 10px;
@@ -188,6 +262,40 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     }
   }
 
+  @media (max-width: 340px) {
+    .teqip1_tab{
+      margin:600px auto 20px auto;
+      overflow-x: scroll;
+    }
+  }
+  @media (max-width: 290px) {
+    .teqip1_tab{
+      margin:690px auto 20px auto;
+      overflow-x:scroll;
+    }
+  }
+
+
+    /* ::-webkit-scrollbar  {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 5px #152029;
+      border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background:#00134d ;
+      border-radius: 15px;
+      width:2px; 
+      height: 10px; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #aaa;
+    }
+
+    .teqip1_inner{
+      border-style: none;
+    } */
   /* @media only screen and (max-width: 425px) {
     .teqip1_tab{
      overflow-x: hidden;
