@@ -3,22 +3,36 @@ import { Routes, Route } from "react-router-dom";
 
 import { Navigation, Footer } from "./components";
 
-import { Home,Milestones,About,Vision,Clubs,Office,Alumni,Nss,Teqip1,Teqip2,Teqip3,Programs_offered,Life,
-   T3_officials,T3_acad,T3_procure,T3_twin,Aicte,
-   Organisation,
-   Under,
-   Csedept,
-   Govern,
+import {
+  Home,
+  Milestones,
+  About,
+  Vision,
+  Clubs,
+  Office,
+  Alumni,
+  Nss,
+  Teqip1,
+  Teqip2,
+  Teqip3,
+  Programs_offered,
+  Life,
+  T3_officials,
+  T3_acad,
+  T3_procure,
+  T3_twin,Ncc,Thiran,Sports,
+  Aicte,
+  Organisation,
+  Under,
+  Csedept,
+  Govern,
    Ecedept,
    Annual_report,
    Academic,
    Fees,
    Ncc,Thiran,Sports
-  } from './pages'
-
-
-
-import './App.css'
+} from "./pages";
+import "./App.css";
 
 const App = () => {
   return (
