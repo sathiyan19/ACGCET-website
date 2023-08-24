@@ -20,7 +20,7 @@ import {
   T3_officials,
   T3_acad,
   T3_procure,
-  T3_twin,
+  T3_twin,Ncc,Thiran,Sports,
   Aicte,
   Organisation,
   Under,
