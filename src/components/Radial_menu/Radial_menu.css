@@ -16,6 +16,7 @@
     animation: scaling .5s ease;
     font-weight: bolder;
     cursor: pointer;
+    z-index: 10;
     /* box-shadow: 2px 2px 5px 2px #fff; */
 }
 
@@ -27,7 +28,7 @@
     border-radius: 50%;
     background-color: #d9edff;
     opacity: .95;
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     display: none;
     bottom: -280px;
@@ -44,7 +45,7 @@
 }
 
 .radial_float_menu{
-    z-index: 3 !important;
+    z-index: 11 !important;
 }
 
 @keyframes scaling {

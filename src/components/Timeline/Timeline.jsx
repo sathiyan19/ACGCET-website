@@ -12,7 +12,7 @@ const Timeline = ({ head, house, content, pdf }) => {
             {content &&(<p>{content}</p>)}
             {pdf && (
               <div className="button_holder">
-              <a className="timeline_link" href={pdf} target="blank" rel="noopener noreferrer" media="print">
+              <a className="timeline_link" href={pdf} target="blank">
               View pdf&nbsp;&nbsp;&nbsp;<span className="fa fa-angle-double-right double_arrow"></span>
             </a>
             </div>

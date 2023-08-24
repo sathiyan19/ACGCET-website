@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   .ecebg {
-    background: url("../../assets/pictures/csebg.webp");
+    background: url("../../assets/pictures/ecebg.webp");
     min-height: 550px;
     background-color: #00134d;
     position: relative;
@@ -70,6 +70,11 @@
     width: 100%;
     padding: 20px 30px;
   }
+  .ece_progs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
   @media(max-width:1100px){
     .ecetwo-col {
@@ -121,7 +126,7 @@
   
   @media (max-width: 425px) {
     .ecebg {
-      background: url("../../assets/pictures/csebgm.webp");
+      background: url("../../assets/pictures/ecebgm.webp");
       min-height: 550px;
       width: 100%;
       height: 750px;

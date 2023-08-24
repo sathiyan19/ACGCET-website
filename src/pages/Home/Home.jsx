@@ -32,7 +32,7 @@ const Home = () => {
         
         <Backtotop/>
 
-        <Profile_display list_info={profileinfo}/>
+        {/* <Profile_display list_info={profileinfo}/> */}
     </>
   )
 }
