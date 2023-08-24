@@ -1,46 +1,38 @@
-
-import annual_rep_21_22 from '../assets/pdfs/Annual report_21-22.pdf'
-import annual_rep_20_21 from '../assets/pdfs/Annual report_20-21.pdf'
-import annual_rep_16_17 from '../assets/pdfs/Annual report_16-17.pdf'
-import annual_rep_15_16 from '../assets/pdfs/Annual report_15-16.pdf'
-import annual_rep_14_15 from '../assets/pdfs/Annual report_14-15.pdf'
-import annual_rep_13_14 from '../assets/pdfs/Annual report_13-14.pdf'
-
 export const annual_reps=[
     {
         'id':"1",
         "head":"2021-2022",
         "house":"left",
-        "pdf":annual_rep_21_22
+        "pdf":"https://drive.google.com/file/d/1nXEUZ2sfntKWDpSYQmKMCGvLZMb2tsMo/view?usp=drive_link"
     },
     {
         'id':"2",
         "head":"2020-2021",
         "house":"right",
-        "pdf":annual_rep_20_21
+        "pdf":"https://drive.google.com/file/d/1rJDSv2XryHNC2G_gksNwurYgRY8h1bDS/view?usp=drive_link"
     },
     {
         'id':"3",
         "head":"2016-2017",
         "house":"left",
-        "pdf":annual_rep_16_17
+        "pdf":"https://drive.google.com/file/d/1TglO5pntw1Vu5dQZBkIRJ3vOVbjn1ow8/view?usp=drive_link"
     },
     {
         'id':"4",
         "head":"2015-2016",
         "house":"right",
-        "pdf":annual_rep_15_16
+        "pdf":"https://drive.google.com/file/d/1kSE0Kn78iyT2cqGL9OIstZPJ_7JPKhe2/view?usp=drive_link"
     },
     {
         'id':"5",
         "head":"2014-2015",
         "house":"left",
-        "pdf":annual_rep_14_15
+        "pdf":"https://drive.google.com/file/d/1nk0hhnzn3se_uyZjZnMq1x9_EVGdXjGh/view?usp=drive_link"
     },
     {
         'id':"6",
         "head":"2013-2014",
         "house":"right",
-        "pdf":annual_rep_13_14
+        "pdf":"https://drive.google.com/file/d/1kFeqpk40oZ9iTJgnnDE2EGBuiYqD4kIs/view?usp=drive_link"
     },
 ]

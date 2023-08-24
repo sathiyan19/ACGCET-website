@@ -1,24 +1,20 @@
-import ac_22_23 from '../assets/pdfs/Academic calendar_22-23.pdf'
-import ac_21_22 from '../assets/pdfs/Academic calendar_21-22.pdf'
-import ac_20_21 from '../assets/pdfs/Academic calendar_20-21.pdf'
-
 export const academic_cals=[
     {
         'id':"1",
         "head":"2022-2023",
         "house":"left",
-        "pdf":ac_22_23
+        "pdf":"https://drive.google.com/file/d/1TnGT1GWi8DhQYioIUJkOs_lbs6IQXH1O/view?usp=drive_link"
     },
     {
         'id':"2",
         "head":"2021-2022",
         "house":"right",
-        "pdf":ac_21_22
+        "pdf":"https://drive.google.com/file/d/1Qv13Zr9O8p55xiHEYdYkKX91eurEnnFD/view?usp=drive_link"
     },
     {
         'id':"3",
         "head":"2020-2021",
         "house":"left",
-        "pdf":ac_20_21
+        "pdf":"https://drive.google.com/file/d/1GB6yrkLkEM-Djm5HzaGQhsKjVpPxHsgx/view?usp=drive_link"
     },
 ]

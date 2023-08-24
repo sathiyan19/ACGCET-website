@@ -16,6 +16,7 @@
   cursor: pointer;
   /* box-shadow: 2px 2px 5px 2px #fff; */
   animation: fade_in_button .5s ease;
+  z-index: 10;
 }
 
 .back:hover {

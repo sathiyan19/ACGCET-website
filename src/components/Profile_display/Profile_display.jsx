@@ -4,8 +4,8 @@ import { Profilecard } from "../../widgets";
 
 
 const Profile_display = ({list_info}) => {
-  const cardsToShowInitially = 5;
-  const cardsIncrement = 5;
+  const cardsToShowInitially = 8;
+  const cardsIncrement = 4;
   const totalCards = list_info.length;
 
   const [visibleCards, setVisibleCards] = useState(cardsToShowInitially);
@@ -33,6 +33,7 @@ const Profile_display = ({list_info}) => {
             name={item.name}
             Designation={item.Designation}
             mailid={item.mailid}
+            pdf={item.pdf}
           />
         ))}
       </div>

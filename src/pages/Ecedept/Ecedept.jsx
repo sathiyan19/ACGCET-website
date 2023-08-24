@@ -1,9 +1,8 @@
 import React from "react";
 
 import "./Ecedept.css";
-import { Backtotop } from "../../widgets";
-import { Floatinmenu } from "../../widgets";
-import { ece_dept_menu } from "../../constants/ece_dept";
+import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
+import { ece_dept_menu,ece_mission,ece_vision,ece_progs } from "../../constants/ece_dept";
 
 import { Radial_menu } from "../../components";
 import cse from "../../assets/pictures/csecover.webp";
@@ -23,8 +22,9 @@ const Ecedept = () => {
           <Floatinmenu logo={FaMicrochip} head="Menu" links={ece_dept_menu} />
         </div>
         <Radial_menu menu_links={ece_dept_menu} />
+        <div className="ece_abt_area">
         <div className="ece_abt">
-        <h3 className="ece_sub_head">About the Department</h3>
+        <Underline heading="About the Department"/>
         <div className="ecetwo-col">
           <p className="ece_dept_content">
             The Department of Electronics and Communication Engineering was
@@ -55,7 +55,19 @@ const Ecedept = () => {
         </div>
         </div>
         <div className="ece_hod">
-          
+          <Underline heading="HOD's Message"/>
+        </div>
+        <div className="ece_vision_mission">
+          <Underline heading="Our Vision & Mission"/>
+        <Deptvision visiondata={ece_vision.visiondata} />
+        <Deptmission points={ece_mission}/>
+        </div>
+        <div className="ece_prog_offered">
+          <Underline heading="Programs Offered"/>
+          <div className="ece_progs">
+            {ece_progs.map((item)=><Content_card key={item.id} period={item.period} year={item.year} top_head={item.top_head} heading={item.program} intake={item.intake}/>)}
+          </div>
+        </div>
         </div>
       </section>
 

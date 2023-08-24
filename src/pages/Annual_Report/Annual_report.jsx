@@ -11,7 +11,6 @@ const Annual_report = () => {
   return (
     <div>
         <Backtotop/>
-
         <div className='annual_container'>
             <div className='annual_heading'>Annual Reports</div>
             {annual_reps.map((item)=><Timeline key={item.id} head={item.head} house={item.house} pdf={item.pdf}/>)}

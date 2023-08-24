@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Clubs.css";
 import { Clubscard,Backtotop } from "../../widgets";
-import { clubsinfo } from "../../constants/clubscardinfo";
+// import { clubsinfo } from "../../constants/clubscardinfo";
 import { Heroimagecarousal } from "../../components";
 import { Clubs_heroimage_carousalinfo,Clubs_info } from "../../constants/Clubs";
 

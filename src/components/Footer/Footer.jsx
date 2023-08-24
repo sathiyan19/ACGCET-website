@@ -1,16 +1,5 @@
 import React from 'react'
 
-import Affliation from '../../assets/pdfs/Affiliation.pdf'
-import Autonomous from '../../assets/pdfs/Conferment of Autonomous Status.pdf'
-import Teqip_audit from '../../assets/pdfs/TEQIP- Audited statements.pdf'
-import ariia from '../../assets/pdfs/ARIIA-2020-21 report.pdf'
-import conduct from '../../assets/pdfs/Code of Conduct for Students.pdf'
-import service from '../../assets/pdfs/Employee Service Rules.pdf'
-import fire from '../../assets/pdfs/FIRE SERVICE LICENCE 2022-23.pdf'
-import occupancy from '../../assets/pdfs/OCCUPANCY CERTIFICATE.pdf'
-import stability from '../../assets/pdfs/STRUCTURAL AND STABILITY CERTIFICATE.pdf'
-import audit from '../../assets/pdfs/Audited Statement 2022-2023.pdf'
-
 import './Footer.css'
 const Footer = () => {
     return (
@@ -32,21 +21,21 @@ const Footer = () => {
                             <li><a href="#">NBA</a></li>
                             <li><a href="#">NAAC</a></li>
                             <li><a href="/aicte">AICTE</a></li>
-                            <li><a href={Affliation} target='blank' rel='noopener noreferrer' media='print'>Affliation</a></li>
-                            <li><a href={Autonomous} target='blank' rel='noopener noreferrer' media='print'>Autonomous</a></li>
-                            <li><a href={fire} target='blank' rel='noopener noreferrer' media='print'>Fire Service License</a></li>
-                            <li><a href={occupancy} target='blank' rel='noopener noreferrer' media='print'>Occupancy Certificate</a></li>
-                            <li><a href={stability} target='blank' rel='noopener noreferrer' media='print'>Structural Stability Certificate</a></li>
+                            <li><a href="https://drive.google.com/file/d/1ZwueQyjgqkqhmbY2-I2G972QQ7TY4urz/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Affliation</a></li>
+                            <li><a href="https://drive.google.com/file/d/1s2O5gv3ZY_UFnatRDD-tI1OodPEEI864/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Autonomous</a></li>
+                            <li><a href="https://drive.google.com/file/d/15XA3lz_0XbcLafIkk5V3IqsXkA-lVG6W/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Fire Service License</a></li>
+                            <li><a href="https://drive.google.com/file/d/1UgGpqWhJyy6stEmUQgu_4TOLEhPqDqlG/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Occupancy Certificate</a></li>
+                            <li><a href="https://drive.google.com/file/d/1ryOwfK8ryUbldT_peyqWiCZgBqiyFIoN/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Structural Stability Certificate</a></li>
                         </ul>
                     </div>
                     <div className="sec quicklinks col-lg-3">
                         <p className="first">Attachments</p>
                         <ul>
-                            <li><a href={Teqip_audit} target='blank' rel='noopener noreferrer' media='print'>TEQIP</a></li>
-                            <li><a href={ariia} target='blank' rel='noopener noreferrer' media='print'>ARIIA</a></li>
-                            <li><a href={audit} target='blank' rel='noopener noreferrer' media='print'>Audit Statement</a></li>
-                            <li><a href={conduct} target='blank' rel='noopener noreferrer' media='print'>Code of Conduct</a></li>
-                            <li><a href={service} target='blank' rel='noopener noreferrer' media='print'>Employees Service rules</a></li>
+                            <li><a href="https://drive.google.com/file/d/15Qmckh-4q0tH5kPdludd8HNTp5BdNYaZ/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>TEQIP</a></li>
+                            <li><a href="https://drive.google.com/file/d/1-DdofEfKjhRdTFNcbrYHbHP7LtdCOcek/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>ARIIA</a></li>
+                            <li><a href="https://drive.google.com/file/d/1Ggm8mRvSuUHSruJek2aE3sbJqv5VIDVl/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Audit Statement</a></li>
+                            <li><a href="https://drive.google.com/file/d/1LpmkLiKlGX6ZI1dQ_g_Z2N19G34U3kqY/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Code of Conduct</a></li>
+                            <li><a href="https://drive.google.com/file/d/1tJM-F8JBMAuM2Z4XFIT4y9dvMX3BgQ10/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Employees Service rules</a></li>
                         </ul>
                     </div>
                     <div className="col-lg-3 sec-contact">

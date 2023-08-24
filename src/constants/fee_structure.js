@@ -1,27 +1,22 @@
-import full_be from '../assets/pdfs/Full time BE fee structure.pdf'
-import lateral_be from '../assets/pdfs/Lateral BE fee structure.pdf'
-import me from '../assets/pdfs/ME fee structure.pdf'
-import part_time from '../assets/pdfs/Part Time BE fee structure.pdf'
-
 export const fee_pdfs=[
     {
         "id":"1",
         "program":"Regular B.E.",
-        "pdf":full_be
+        "pdf":"https://drive.google.com/file/d/100tRe1xPkDeKyUkT5RaKbv2cigBj8F_S/view?usp=drive_link"
     },
     {
         "id":"2",
         "program":"Lateral B.E.",
-        "pdf":lateral_be
+        "pdf":"https://drive.google.com/file/d/1kzEcmG70NVfQ17hltcBd98uACv5NrGM2/view?usp=drive_link"
     },
     {
         "id":"3",
         "program":" Regular M.E.",
-        "pdf":me
+        "pdf":"https://drive.google.com/file/d/1b8bmXH0o3BQmDa7PSXIM63Kk6ZJUhOcP/view?usp=drive_link"
     },
     {
         "id":"4",
         "program":"Part Time B.E.",
-        "pdf":part_time
+        "pdf":"https://drive.google.com/file/d/1Zf2gNwS9hyOxBe6VF1r9_hndrutaIMDd/view?usp=drive_link"
     },
 ]

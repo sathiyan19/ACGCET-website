@@ -3,6 +3,7 @@
     color: #00134d;
     font-weight: 500;
     font-size: 40px;
+    margin-top: 20px;
   }
 }
 
@@ -17,7 +18,8 @@
   height: 5px;
   background-color: #d9edff;
   width: 10%;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  
 }
 
 @media (max-width: 500px) {
