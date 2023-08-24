@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Sports.css";
 
-import { GiBullseye } from "react-icons/gi";
+
 
 import { Heroimagecarousal, Timeline, Listformat } from "../../components";
 import { Deptvision, Underline,Deptmission } from "../../widgets";
