@@ -40,4 +40,8 @@
   .hero-text h1 {
     font-size: 32px;
   }
+
+  .clubs_hero{
+    height: 300px;
+  }
 }

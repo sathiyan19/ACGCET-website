@@ -21,18 +21,28 @@ import {
   T3_acad,
   T3_procure,
   T3_twin,
+  Ncc,
+  Thiran,
+  Sports,
   Aicte,
   Organisation,
   Under,
-  Csedept
+  Csedept,
+  Govern,
+  Ecedept,
+  Ece_peo,
+  Ece_faculties,
+  Annual_report,
+  Academic,
+  Fees,
 } from "./pages";
 import "./App.css";
 
 const App = () => {
   return (
     <div>
-        <Navigation/>
-        <Routes>
+      <Navigation />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/milestones" element={<Milestones />} />
         <Route path="/about-institution" element={<About />} />
@@ -53,10 +63,19 @@ const App = () => {
         <Route path="/aicte" element={<Aicte />} />
         <Route path="/organisation" element={<Organisation />} />
         <Route path="/under" element={<Under />} />
-        <Route path="/csedept" element={<Csedept/>} />
-          
-        </Routes>
-        <Footer/>
+        <Route path="/csedept" element={<Csedept />} />
+        <Route path="/govern" element={<Govern />} />
+        <Route path="/ncc" element={<Ncc />} />
+        <Route path="/thiran" element={<Thiran />} />
+        <Route path="/sports" element={<Sports />} />
+        <Route path="/ecedept" element={<Ecedept />} />
+        <Route path="/annual_reports" element={<Annual_report />} />
+        <Route path="/academic-calendar" element={<Academic />} />
+        <Route path="/fee-structure" element={<Fees />} />
+        <Route path="/ecedept/ece-peo" element={<Ece_peo />} />
+        <Route path="/ecedept/ece-faculties" element={<Ece_faculties />} />
+      </Routes>
+      <Footer />
     </div>
   );
 };

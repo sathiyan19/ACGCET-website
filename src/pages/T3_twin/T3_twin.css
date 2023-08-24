@@ -60,7 +60,7 @@
 
 }
 
-@media (max-width:769px) {
+@media only screen and (max-width:769px) {
     .twin{
         width:90%;
         margin: 35px auto 10px auto;
@@ -82,13 +82,12 @@
         color:black;
     }
     .twin_p{
-        width:100%;
-        margin:10px auto 0px auto;
+        width:90%;
+        margin:10px 5px 0px 5px;
         color:black;
         line-height: 1.5rem;
-        /* text-align: left; */
+        text-align: left;
     }
-    
 }
 
 @media (min-width:770px) and (max-width:1170px){

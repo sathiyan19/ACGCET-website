@@ -12,7 +12,7 @@ const top_nav_paths=[
     "type":"1",
     'title':'Administration',
     'basepath':'javascript:void(0);',
-    'links':[{'path':"/",'link':"Governing council"},
+    'links':[{'path':"/govern",'link':"Governing council"},
             {'path':"/office",'link':"Office"},
             {'path':"/organisation",'link':"Organisation Structure"},
             {'path':"/under",'link':"Committee/Cell"}]
@@ -23,7 +23,7 @@ const top_nav_paths=[
     'title':'Academics',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/programs','link':"Programs offered"},
-            {'path':'/under','link':"Academic Calendar"}]
+            {'path':'/academic-calendar','link':"Academic Calendar"}]
     },
 
     {"id":'4',
@@ -58,11 +58,11 @@ const top_nav_paths=[
     'title':'Co-Curricular',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/clubs','link':"Clubs"},
-            {'path':'/','link':"Sports"},
+            {'path':'/sports','link':"Sports"},
             {'path':'/nss','link':"NSS"},
-            {'path':'/','link':"NCC"},
+            {'path':'/ncc','link':"NCC"},
             {'path':'/','link':"YRC"},
-            {'path':'/','link':"Thiran"},
+            {'path':'/thiran','link':"Thiran"},
             {'path':'/','link':"Xprez"}]
     },
 
@@ -72,7 +72,7 @@ const top_nav_paths=[
     'basepath':'javascript:void(0);',
     'links':[{'path':'/csedept','link':"Computer Science Engineering"},
             {'path':'/','link':"Electrical & Electronics Engineering"},
-            {'path':'/','link':"Electronics & Communication Engineering"},
+            {'path':'/ecedept','link':"Electronics & Communication Engineering"},
             {'path':'/','link':"Mechanical Engineering"},
             {'path':'/','link':"Civil Engineering"},
             {'path':'/','link':"Science & Humanities"}]
@@ -92,7 +92,7 @@ const top_nav_paths=[
     'links':[{'path':'/','link':"NAAC"},
             {'path':'/','link':"NBA"},
             {'path':'/','link':"NIRF"},
-            {'path':'/','link':"Annual Reports"}]
+            {'path':'/annual_reports','link':"Annual Reports"}]
     },
 
     {"id":'11',
@@ -135,7 +135,7 @@ const bottom_nav_paths=[
     'basepath':'javascript:void(0);',
     'links':[{'path':'/csedept','link':"Computer Science Engineering"},
             {'path':'/','link':"Electrical & Electronics Engineering"},
-            {'path':'/','link':"Electronics & Communication Engineering"},
+            {'path':'/ecedept','link':"Electronics & Communication Engineering"},
             {'path':'/','link':"Mechanical Engineering"},
             {'path':'/','link':"Civil Engineering"},
             {'path':'/','link':"Science & Humanities"}]
@@ -155,7 +155,7 @@ const bottom_nav_paths=[
     'links':[{'path':'/','link':"NAAC"},
             {'path':'/','link':"NBA"},
             {'path':'/','link':"NIRF"},
-            {'path':'/','link':"Annual Reports"}]
+            {'path':'/annual_reports','link':"Annual Reports"}]
     },
 
     {"id":'17',
