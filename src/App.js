@@ -20,7 +20,7 @@ import {
   T3_officials,
   T3_acad,
   T3_procure,
-  T3_twin,Ncc,Thiran,Sports,
+  T3_twin,
   Aicte,
   Organisation,
   Under,
@@ -64,9 +64,10 @@ const App = () => {
         <Route path="/ecedept" element={<Ecedept/>} /> 
         <Route path="/annual_reports" element={<Annual_report/>} /> 
         <Route path="/academic-calendar" element={<Academic/>} /> 
-        <Route path="/fee-structure" element={<Fees/>} /> <Route path='/ncc' element={<Ncc/>}/>
-          <Route path='/thiran' element={<Thiran/>}/>
-          <Route path='/sports' element={<Sports/>}/>
+        <Route path="/fee-structure" element={<Fees/>} /> 
+        <Route path='/ncc' element={<Ncc/>}/>
+        <Route path='/thiran' element={<Thiran/>}/>
+        <Route path='/sports' element={<Sports/>}/>
         </Routes>
         <Footer/>
     </div>

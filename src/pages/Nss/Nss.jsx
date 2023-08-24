@@ -14,7 +14,7 @@ import q2 from "../../assets/pictures/quote2.png";
 import { Heroimagecarousal,Table } from "../../components";
 import { Profilecard } from "../../widgets";
 import { Backtotop } from "../../widgets";
-import { Nss_heroimage_carousalinfo,profile_info } from "../../constants/Nss";
+import { Nss_heroimage_carousalinfo,profile_info,achieve17 } from "../../constants/Nss";
 
 const Nss = () => {
   const columns = [
