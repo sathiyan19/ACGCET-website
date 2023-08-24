@@ -95,36 +95,35 @@
     height: 700px;
   }
 }
-@media (max-width: 768px) {
-  .csebg {
-    width: 100%;
-    height: 500px;
-  }
-  .csedark {
-    width: 100%;
-  }
-  
+@media (max-width: 768px){
+    .csebg{
+        width: 100%;
+        height: 500px;
+    }
+    .csedark{
+        width: 100%;
+    }
+    .csetwo-col{
+        display: flex;
+        flex-direction: column;
+    }
+    .csetwo-col p{
+        width: 100%;
+    }
+    .csetwo-col .dept_img_holder{
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
 }
-
-@media (max-width: 500px) {
-  .cse_sub_head {
-    font-size: 28px;
-  }
-  .cse_dept_content {
-    font-size: 16px;
-  }
-  .dept_float_menu {
-    display: none;
-  }
-}
-
-@media (max-width: 425px) {
-  .csebg {
-    background: url("../../assets/pictures/csebgm.webp");
-    min-height: 550px;
-    width: 100%;
-    height: 750px;
-    background-position: center;
+@media (max-width: 425px){
+    .csebg{
+        background: url("../../assets/pictures/csebgm.webp");
+        min-height: 550px;
+        width: 100%;
+        height: 750px;
+        background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

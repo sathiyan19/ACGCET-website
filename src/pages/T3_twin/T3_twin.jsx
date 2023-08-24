@@ -23,7 +23,7 @@ const T3_twin = () => {
     <>
     <Backtotop/>
   <div className='twin'>
-    <div className='twin_head'>Twinning Activities</div>
+    <div className='twin_head1'>Twinning Activities</div>
     <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
     <div className='twin_p'>
     Institutions already participated in TEQIP-I and TEQIP –II will be selected for Twinning Arrangements to Build Capacity and Improve Performance of Participating Institutions.
