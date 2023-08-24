@@ -37,12 +37,6 @@
 
 
 .teqip1_tab{
-  /* margin: 380px 20px 20px 20px;*/
-  /* 
-  display:flex;
-  align-items: center;
-  justify-content: center; */
-
     margin: 280px;
     margin-top: 380px;
     margin-bottom: 50px; 
@@ -113,14 +107,45 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     width: 25%; 
   } */
   @media (max-width: 1440px){
-    .teqip1_tab th:nth-child(2),
+    .teqip1_tab{
+      width:50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  .teqip1_tab th:nth-child(2),
   .teqip1_tab td:nth-child(2) {
-    width: 55%; 
+    width: 50%; 
   }
+.teqip1_tab th:nth-child(3),
+.teqip1_tab td:nth-child(3) {
+      width: 5%;   
+  } 
+  .teqip1_tab th:nth-child(1),
+.teqip1_tab td:nth-child(1) {
+        width: 8%; 
+  } 
+  }
+  
+  @media (max-width: 1100px){
+    .teqip1_tab{
+      width:60%;
+      margin:350px auto 70px auto;  
+    }
+    /* .teqip1_tab th:nth-child(3),
+    .teqip1_tab td:nth-child(3) {
+      width: 5%;     
+    }
+    .teqip1_tab th:nth-child(2),
+    .teqip1_tab td:nth-child(2) {
+      width: 25%; 
+    }
+    .teqip1_tab th:nth-child(1),
+    .teqip1_tab td:nth-child(1) {
+        width: 8%; 
+  }  */
   }
 
-
-  @media (max-width: 880px){
+  @media (max-width: 900px){
     .teqip1_content{
       margin:20px;
     }
@@ -162,7 +187,7 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     }
 
     .teqip1_tab{
-      margin:350px 70px 70px 70px;   
+      margin:350px auto 70px auto;   
     }
 
     .teqip1_obj{
@@ -172,11 +197,20 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     }
     
   }
-  
-  @media (max-width: 550px) {
+
+  @media (max-width: 640px) {
     .teqip1_tab{
-      margin:400px 20px 20px 20px;
+      margin:400px auto 20px auto;
+      overflow-x: auto;
+      width:90%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .teqip1_tab{
+      margin:460px auto 20px auto;
       /* overflow-x: scroll; */
+      width:90%;
     }
     ::-webkit-scrollbar  {
       width: 10px;
@@ -188,7 +222,7 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     ::-webkit-scrollbar-thumb{
       background:#00134d ;
       border-radius: 15px;
-      width:2px; /* width of the thumb */
+      width:2px;
       height: 10px; 
     }
     ::-webkit-scrollbar-thumb:hover {
@@ -199,11 +233,12 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
       border-style: none;
     }
   }
-
-  @media only screen and (max-width: 460px) {
+  
+  @media (max-width: 500px) {
     .teqip1_tab{
-      margin:500px 20px 20px 20px;
+      margin:460px auto 20px auto;
       overflow-x: auto;
+      width:90%;
     }
     ::-webkit-scrollbar  {
       width: 10px;
@@ -229,13 +264,13 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
 
   @media (max-width: 340px) {
     .teqip1_tab{
-      margin:600px 20px 20px 20px;
+      margin:600px auto 20px auto;
       overflow-x: scroll;
     }
   }
   @media (max-width: 290px) {
     .teqip1_tab{
-      margin:690px 20px 20px 20px;
+      margin:690px auto 20px auto;
       overflow-x:scroll;
     }
   }

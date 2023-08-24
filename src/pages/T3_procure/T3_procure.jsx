@@ -22,9 +22,11 @@ const T3_procure = () => {
     <>
     <Backtotop/>
     <div className='proc_tot'>
+      
+    <div className='proc_head'>Teqip - Procurement</div>
+      
       <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
-        
-      <div className='proc_head'>TEQIP - PROCUREMENT</div>
+   
       <div className='proc_tab'>
       <Table data={t3_procure} columns={columns} />
       </div>

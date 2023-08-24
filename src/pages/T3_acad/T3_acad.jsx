@@ -32,15 +32,19 @@ const T3_acad = () => {
     <>
     <Backtotop/>
     <div className='acad_tot'>
+    
+    <div className="teqip3_heading">TEQIP-III</div>
+
+
        <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
     
-      <div className='acad_head'><h5>Faculty Development Programme</h5></div>
+      <div className='acad_head'>Faculty Development Programme</div>
       <div className='acad_tab'>
       <Table data={t3_acad} columns={columns} />
       </div>
 
-      <div>
-      <div className='acad_head'><h5>TEQIP III Training Staff</h5></div>
+      <div  className='acad_text'>
+      <div className='acad_head'>TEQIP III Training Staff</div>
       <div className='flex_col'>
         <h6>Name of the Programme:</h6><p>Personality and Computer Competency Development</p>
       </div>
@@ -58,8 +62,8 @@ const T3_acad = () => {
       </div>
 
 
-      <div>
-      <div className='acad_head'><h5>TEQIP III Training Staff</h5></div>
+      <div className='acad_text'>
+      <div className='acad_head'>TEQIP III Training Staff</div>
       <div className='flex_col'>
         <h6>Name of the Programme:</h6><p>Capacity Building on Non Teaching staff on Personality Development,Computer Competency and<br></br>Work Life balance</p>
       </div>
@@ -75,8 +79,8 @@ const T3_acad = () => {
       <Table data={t3_acad2} columns={columns1} />
       </div>
 
-      <div>
-      <div className='acad_head'><h5>TEQIP III Training Staff</h5></div>
+      <div className='acad_text'>
+      <div className='acad_head'>TEQIP III Training Staff</div>
       <div className='flex_col'>
         <h6>Name of the Programme:</h6><p>SDP on Integrated skills communication computer and stress management</p>
       </div>
@@ -93,8 +97,8 @@ const T3_acad = () => {
       <Table data={t3_acad3} columns={columns1} />
       </div>
 
-      <div>
-      <div className='acad_head'><h5>TEQIP III Training Staff</h5></div>
+      <div className='acad_text'>
+      <div className='acad_head'>TEQIP III Training Staff</div>
       <div className='flex_col'>
         <h6>Name of the Staff:</h6><p>Mr.G.Peter Ramesh</p>
       </div>
