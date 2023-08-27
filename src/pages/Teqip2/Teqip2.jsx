@@ -28,7 +28,7 @@ const Teqip2 = () => {
           amount sanctioned under TEQIP- II was Rs.17.5 Crore.
         </p>
       </div>
-      <div className="teqip2_obj">OBJECTIVE</div>
+      <div className="teqip2_obj">Objective</div>
       <div className="teqip2_inner">
         <p>
           <li>

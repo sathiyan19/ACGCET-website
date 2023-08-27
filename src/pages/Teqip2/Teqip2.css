@@ -27,18 +27,18 @@
         text-align: right;
     }
 .teqip2_heading{
-        font-weight: bold;
+        font-weight:500;
         color:#00134d;
         margin-top: 40px;
-        text-align: center;
-        font-size: 18px;
+        margin-left: 20px;
+        font-size: 40px;
    }
  .teqip2_obj {
-    font-weight: bold;
+    font-weight: 500;
     color:#00134d;
     margin-top: 60px;
-    text-align: center;
-    font-size: 18px;
+    margin-left: 40px;
+    font-size: 26px;
   }
   .teqip2_content{
     line-height: 1.5rem;
@@ -78,7 +78,7 @@
     line-height: 1rem;
     
   }
-  @media only screen and (max-width: 515px) {
+  @media (max-width: 515px) {
     .teqip2_content{
      width:90%;
      margin: auto;
@@ -100,7 +100,7 @@
     }
     
   }
-  @media only screen and (max-width:768px) {
+  @media (max-width:860px) {
     .teqip2_inner{
       width:90%;
       margin:10px auto 10px auto;
