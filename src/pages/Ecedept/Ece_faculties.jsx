@@ -1,12 +1,11 @@
 import React from 'react'
 
-import "./Ecedept.css";
 import { Backtotop,Floatinmenu, Underline} from "../../widgets";
 import {Profile_display} from '../../components'
-import { ece_dept_menu,ece_fac_proflies,ece_sup_proflies} from "../../constants/ece_dept";
+import { ece_dept_menu,ece_fac_profiles,ece_sup_profiles} from "../../constants/ece_dept";
 
 import { Radial_menu } from "../../components";
-// import cse from "../../assets/pictures/csecover.webp";
+
 
 import { FaMicrochip } from "react-icons/fa6";
 
@@ -17,6 +16,7 @@ const Ece_faculties = () => {
             <div className="eceheading">
               Department of Electronics and Communication Engineering
             </div>
+            <div className="ece_sub_heading">Faculties</div>
           </div>
           <section className="ecedark">
             <div className="dept_float_menu">
@@ -26,11 +26,11 @@ const Ece_faculties = () => {
             <div className="ece_fac_area">
                 <div className='ece_teach_fac'>
                     <Underline heading="Teaching Faculties"/>
-                    <Profile_display list_info={ece_fac_proflies}/>
+                    <Profile_display list_info={ece_fac_profiles}/>
                 </div>
                 <div className='ece_teach_fac'>
                     <Underline heading="Suporting Faculties"/>
-                    <Profile_display list_info={ece_sup_proflies}/>
+                    <Profile_display list_info={ece_sup_profiles}/>
                 </div>
             </div>
           </section>

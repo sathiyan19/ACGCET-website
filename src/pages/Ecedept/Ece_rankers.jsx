@@ -1,0 +1,41 @@
+import React from 'react'
+
+import './Ece_rankers.css'
+
+import { Backtotop,Floatinmenu, Underline} from "../../widgets";
+import {Profile_display} from '../../components'
+import { ece_dept_menu,ece_rankers} from "../../constants/ece_dept";
+
+import { Radial_menu } from "../../components";
+// import cse from "../../assets/pictures/csecover.webp";
+
+import { FaMicrochip } from "react-icons/fa6";
+
+const Ece_rankers = () => {
+    return (
+        <div className="ecedept">
+          <div className="ecebg">
+            <div className="eceheading">
+              Department of Electronics and Communication Engineering
+            </div>
+            <div className="ece_sub_heading">Rankers</div>
+          </div>
+          <section className="ecedark">
+            <div className="dept_float_menu">
+              <Floatinmenu logo={FaMicrochip} head="Menu" links={ece_dept_menu} />
+            </div>
+            <Radial_menu menu_links={ece_dept_menu} />
+            <div className="ece_rankers_area">
+                <div className='ece_teach_fac'>
+                    <Underline heading="Elite Rankers"/>
+                    <Profile_display list_info={ece_rankers}/>
+                </div>
+            </div>
+          </section>
+    
+          <Backtotop />
+        </div>
+      );
+}
+
+export default Ece_rankers
