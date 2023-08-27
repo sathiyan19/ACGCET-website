@@ -98,10 +98,18 @@
     height: auto;
     width: 100%;
 }
-
-.map_holder{
-    /* height: 600px;
-    overflow: scroll; */
+.key_title{
+    color: #00134d;
+    font-size: 22px;
+}
+.keys_holder{
+    display: flex;
+    flex-wrap: wrap;
+}
+.campus_map_key{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
 }
 
 @media(max-width:1145px){
@@ -166,6 +174,10 @@
     }
     .abt_heading{
         font-size: 28px;
+    }
+    .keys_holder{
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
 

@@ -71,11 +71,11 @@ const top_nav_paths=[
     'title':'Departments',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/csedept','link':"Computer Science Engineering"},
-            {'path':'/','link':"Electrical & Electronics Engineering"},
+            {'path':'/eeedept','link':"Electrical & Electronics Engineering"},
             {'path':'/ecedept','link':"Electronics & Communication Engineering"},
             {'path':'/','link':"Mechanical Engineering"},
-            {'path':'/','link':"Civil Engineering"},
-            {'path':'/','link':"Science & Humanities"}]
+            {'path':'/civildept','link':"Civil Engineering"},
+            {'path':'/mechdept','link':"Science & Humanities"}]
     },
 
     {"id":'9',
@@ -134,10 +134,10 @@ const bottom_nav_paths=[
     'title':'Departments',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/csedept','link':"Computer Science Engineering"},
-            {'path':'/','link':"Electrical & Electronics Engineering"},
+            {'path':'/eeedept','link':"Electrical & Electronics Engineering"},
             {'path':'/ecedept','link':"Electronics & Communication Engineering"},
-            {'path':'/','link':"Mechanical Engineering"},
-            {'path':'/','link':"Civil Engineering"},
+            {'path':'/mechdept','link':"Mechanical Engineering"},
+            {'path':'/civildept','link':"Civil Engineering"},
             {'path':'/','link':"Science & Humanities"}]
     },
 

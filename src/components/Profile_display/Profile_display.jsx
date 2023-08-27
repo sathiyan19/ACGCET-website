@@ -42,7 +42,7 @@ const Profile_display = ({list_info}) => {
           Read More
         </div>
       )}
-      {shouldShowReadLess && (
+      {(totalCards>cardsToShowInitially) && shouldShowReadLess && (
         <div className="read_less read_button" onClick={handleReadLessClick}>
           Read Less
         </div>

@@ -36,7 +36,7 @@ export const campus_map_keys=[
         place:'Mechanical Laboratories'
     },
     {
-        id:'',
+        id:'10',
         place:'Mechanical Department (WS)'
     },
     {

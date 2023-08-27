@@ -17,7 +17,6 @@ import {
 import {Listformat, Timeline} from '../../components'
 
 import { Radial_menu } from "../../components";
-// import cse from "../../assets/pictures/csecover.webp";
 
 import { FaMicrochip } from "react-icons/fa6";
 
@@ -28,6 +27,7 @@ const Ece_peo = () => {
         <div className="eceheading">
           Department of Electronics and Communication Engineering
         </div>
+        <div className="ece_sub_heading">Objectives & Outcomes</div>
       </div>
       <section className="ecedark">
         <div className="dept_float_menu">
@@ -42,7 +42,7 @@ const Ece_peo = () => {
           </div>
 
           <div className="ece_outcomes">
-            <Underline heading="PROGRAM OUTCOMES"/>
+            <Underline heading="Program Outcomes"/>
             <Listformat points={ece_outcomes}/>
           </div>
 
