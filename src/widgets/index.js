@@ -9,4 +9,3 @@ export {default as Content_card} from './/Content_card/Content_card';
 export {default as Deptvision} from './Deptvision/Deptvision';
 export {default as Deptmission} from './Deptmission/Deptmission';
 export {default as Underline} from './Underline/Underline';
-export {default as Progressbar} from './progressbar/Progressbar';

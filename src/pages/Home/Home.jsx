@@ -33,13 +33,12 @@ const Home = () => {
         
         <Backtotop/>
 
-        {/* {progressinfo.map((item)=>(
+         {/* {progressinfo.map((item)=>(
           <Progressbar
             key={item.id}
             percent1={item.percent1}
-            percent2={item.percent2}
           />
-        ))}  */}
+        ))}   */}
 
         {/* <Profile_display list_info={profileinfo}/> */}
     </>
