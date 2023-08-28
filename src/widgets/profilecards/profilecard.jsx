@@ -12,14 +12,14 @@ const Profilecard = ({cover,dp,name,Designation,mailid,pdf}) => {
         <img src={dp} className="dp" alt='dpp'/>
         
         
-        <h4>{name}</h4>
+        <h5>{name}</h5>
         
         
         <p>{Designation}</p>
-        <p>{mailid}</p>
+        <p className='profile_mail'>{mailid}</p>
         
         {pdf && (
-        <a href={pdf} className="view-btn">More Details</a>
+        <a href={pdf} target='blank' className="view-btn">More Details</a>
         )}
     </div>
     
