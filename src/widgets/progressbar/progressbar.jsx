@@ -1,72 +1,20 @@
-import React from 'react'
+import React from 'react';
+import './Progressbar.css'; // Don't forget to import your CSS file
 
-import './progressbar.css'
-const progressbar = ({percent1,}) => {
-
-    const strokeDashOffset = `calc(436px - (${percent1} * 4.36px))`;
-    // const strokeDashOffset1 = `calc(436px - (${percent2} * 4.36px))`;
-
-const customStyles = {
-  '--stroke-dashoffset': strokeDashOffset,
-//   '--stroke-dashoffset1':strokeDashOffset1,
-};
-  return (
-    <div>
-    <div className='progressbar'>
-    <div className="skill">
-        <div className="outer">
-            <div className="inner">
-                <div className="number">
-                    <h4>{percent1}%</h4>
-                    <p>InCampus</p>
-                </div>
+const Progressbar = ({ bigperc, smallperc }) => {
+    
+    return (
+        <div className="progressbar">
+            <div className="progress" style={{ ['--i']: bigperc, '--clr': '#00134d' }}>
+                <h3>{bigperc}<span>%</span></h3>
+                <h4>Incampus</h4>
+            </div>
+            <div className="progress less" style={{ '--i': smallperc, '--clr': '#00134d' }}>
+                <h3>{smallperc}<span>%</span></h3>
+                <h4>Higher<br /> Studies</h4>
             </div>
         </div>
-
-<div className='circle1'>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-            <defs>
-               <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#00134d" />
-                  <stop offset="100%" stop-color="#002699" />
-               </linearGradient>
-            </defs>
-            
-            <circle cx="80" cy="80" r="70" stroke-linecap="round" style={customStyles}/>
-            
-    </svg>
-    </div>
-
-
-    </div>
-    {/* <div className='circle2'>
-    <div className="skill">
-        <div className="outer">
-            <div className="inner">
-                <div className="number">
-                   <h4>{percent2}%</h4>
-                   <p>Higher Studies</p>
-                </div>
-            </div>
-        </div>
-
-
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-            <defs>
-               <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#00134d" />
-                  <stop offset="100%" stop-color="#00134d" />
-               </linearGradient>
-            </defs>
-            <circle cx="80" cy="80" r="70" stroke-linecap="round" style={customStyles} />
-    </svg>
-
-</div>
-    </div> */}
-
-    </div>
-      </div>
-  )
+    );
 }
 
-export default progressbar;
+export default Progressbar;

@@ -1,83 +1,107 @@
-/* .progressbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-} */
-.skill{
-    transform: rotate(-90deg);
-    width: 160px;
-    height: 160px;
+.progressbar{
+    margin-top: 30px;
     position: relative;
-    margin-left: 50px;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
-.outer{
-    height: 160px;
-    width: 160px;
+
+
+.progressbar .progress{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     color: black;
+    background: #d9edff linear-gradient(to right,transparent 50%,var(--clr)0) ;
+}
+.progressbar .progress h3{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 500;
+    color: black;
+}
+.progressbar .progress h3 span{
+    
+    font-size: 0.65em;
+    font-weight: 400;
+}
+.progressbar .progress h4{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-weight: 500;
+    color: var(--clr);
+    text-transform: uppercase;
+}
+.progressbar .progress::before{
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+.progressbar .progress::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
     border-radius: 50%;
     background: #f1f1f1;
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-    -6px -6px 10px -1px rgba(255,255,255,0.7);
 }
-.inner{
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-    inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-    -0.5px -0.5px 0px rgba(255,255,255,1),
-    0.5px 0.5px 0px rgba(0,0,0,0.15),
-    0px 12px 10px -10px rgba(0,0,0,0.05);
+.progressbar .progress::before{
+    content: 'hi';
+    background: var(--clr);
+    transform: rotate(calc(((var(--i,85) - 50)* 3.6deg)));
 }
-.inner .number{
-    font-weight: 600px;
-    transform: rotate(90deg);
-    text-align: center;
+.progressbar .progress .less::before{
+    background: #d9edff;
+    transform: rotate(calc(((var(--i) - 0 )* 3.6deg)));
 }
-.number h4, p{
-    color: black;
-}
-.circle1 circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 15px;
-    stroke-dasharray: 436;
-    stroke-dashoffset: 436;
-    animation: anim 0.5s linear forwards;
-}
-/* .circle2 circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 15px;
-    stroke-dasharray: 436;
-    stroke-dashoffset: 436;
-    animation: anim1 0.5s linear forwards;
-} */
-svg{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-@keyframes anim{
-    100%{
-        stroke-dashoffset: var(--stroke-dashoffset);
+@media (max-width:768px) {
+    .progressbar .progress{
+        width:150px;
+        height:150px;
+    }
+    .progressbar .progress h3{
+        font-size: 20px;
+    }
+    .progressbar .progress h4{
+        font-size: 16px;
+    }
+    .progressbar{
+        gap: 20px;
+        justify-content: center;
     }
 }
-/* @keyframes anim1{
-    100%{
-        stroke-dashoffset: var(--stroke-dashoffset1);
+@media (max-width:375px){
+    .progressbar .progress{
+        width:100px;
+        height:100px;
     }
-} */
-
-@media (max-width:425px){
-    .skill{
-        margin-left: 10px;
+    .progressbar .progress h3{
+        font-size: 15px;
+    }
+    .progressbar .progress h4{
+        font-size: 10px;
+    }
+    .progressbar{
+        gap: 20px;
+        justify-content: center;
+    }
+    
+}
+@media (max-width:325px){
+    .progressbar{
+        gap: 20px;
+        justify-content: center;
     }
 }
