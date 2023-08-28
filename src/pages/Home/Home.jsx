@@ -10,8 +10,8 @@ import clgpic from '../../assets/pictures/clgpicfinal.webp'
 // import {Profilecard} from '../../widgets'
 // import {profileinfo} from '../../constants/profilecards'
 
-// import {Progressbar} from '../../widgets'
-// import { progressinfo } from '../../constants/progressbar'
+import {Progressbar} from '../../widgets'
+import { progressinfo } from '../../constants/progressbar'
 
 
 const Home = () => {
