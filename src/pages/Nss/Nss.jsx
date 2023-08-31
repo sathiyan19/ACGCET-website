@@ -75,7 +75,13 @@ const Nss = () => {
                 cover={item.cover}
                 dp={item.dp}
                 name={item.name}
-                Designation={item.Designation}
+                Designation={
+                  <p
+            dangerouslySetInnerHTML={{
+              __html: item.Designation.replace('\n', '<br />'),
+            }}
+          />
+                }
                 mailid={item.mailid}
               />
             ))}

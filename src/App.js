@@ -24,7 +24,7 @@ import {
   Aicte,
   Organisation,
   Under,
-  Csedept,Govern,Ncc,Thiran,Sports
+  Csedept,Govern
 } from "./pages";
 import "./App.css";
 

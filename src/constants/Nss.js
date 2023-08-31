@@ -10,7 +10,7 @@ import s2cover from '../assets/pictures/s2cover.webp'
 import s3cover from '../assets/pictures/s3cover.webp'
 import s1 from '../assets/pictures/s1.webp'
 import s2 from '../assets/pictures/s2.webp'
-import s3 from '../assets/pictures/s3.webp'
+import dumy from '../assets/pictures/dp.jpg'
 
 
 const Nss_heroimage_carousalinfo = {
@@ -24,25 +24,25 @@ const profile_info =[
       'id':"1",
       'cover':s1cover,
       'dp':s1,
-      'name':"S.Balasundar",
-      'Designation':"ASST.Prof/Maths",
-      'mailid':"emailid@gmail.com"
+      'name':"Mr.S.Balasundar",
+      'Designation':"Assistant Professor (Mathematics)",
+      'mailid':"balasundaraccet@gmail.com"
   },
   {
       'id':"2",
       'cover':s2cover,
       'dp':s2,
       'name':"Dr.S.M.Sivagami",
-      'Designation':"ASST.Prof/Mech",
-      'mailid':"emailid@gmail.com"
+      'Designation':"Associate Professor (Mechanical)",
+      'mailid':"smsivagami@gmail.com"
   },
   {
       'id':"3",
       'cover':s3cover,
-      'dp':s3,
-      'name':"Dr.S.Pauline",
-      'Designation':"ASST.Prof/Civil",
-      'mailid':"emailid@gmail.com"
+      'dp':dumy,
+      'name':" Dr.R.N.Mariammal",
+      'Designation':"Assistant Professor\n(Physics)",
+      'mailid':"marigayathrirn@gmail.com"
   }
 ]
 
