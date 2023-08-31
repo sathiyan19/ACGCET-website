@@ -49,7 +49,7 @@ const Footer = () => {
                             </li>
                             <li className="social">
                                 <span><i className="fa fa-phone icon" aria-hidden="true"></i></span>
-                                <p><a href="tel:04565 224528">04565 24528</a><br />
+                                <p><a href="tel:04565 224528">04565 224528</a><br />
                                     <a href="tel:224535">224535</a></p>
                             </li>
                             <li className="social">

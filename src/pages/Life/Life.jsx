@@ -5,7 +5,7 @@ import {Radial_menu} from '../../components'
 
 const Life = () => {
   return (
-    <Radial_menu/>
+    <h1>Life at ACGCET</h1>
   );
 };
 

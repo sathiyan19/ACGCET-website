@@ -8,7 +8,7 @@ const Organisation = () => {
   return (
     <div className="org_structure">
           <div className="org_heading ">
-            Organisation Structure
+            Organization Structure
           </div>
           <div className="org_text">
             The college is a Government Institution and comes under the direct
