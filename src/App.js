@@ -20,19 +20,53 @@ import {
   T3_officials,
   T3_acad,
   T3_procure,
-  T3_twin,Ncc,Thiran,Sports,
+  T3_twin,
+  Ncc,
+  Thiran,
+  Sports,
   Aicte,
   Organisation,
   Under,
-  Csedept,Govern
+  Csedept,Govern,Ncc,Thiran,Sports,Cse_faculties,
+  Govern,
+  Ecedept,
+  Ece_peo,
+  Ece_faculties,
+  Ece_lab,
+  Ece_rankers,
+  Ece_events,
+  Ece_projects,
+  Ece_stud_activity,
+  Ece_antenna,
+  Annual_report,
+  Academic,
+  Fees,
+  Civildept,
+  Mechdept,
+  Eeedept,
+  Cse_peo,
+  Cse_lab,
+  Cse_events,
+  Civil_peo,
+  Civil_faculties,
+  Civil_lab,
+  Civil_events,
+  Mech_peo,
+  Mech_faculties,
+  Mech_lab,
+  Mech_events,
+  Eee_peo,
+  Eee_faculties,
+  Eee_lab,
+  Eee_events
 } from "./pages";
 import "./App.css";
 
 const App = () => {
   return (
     <div>
-        <Navigation/>
-        <Routes>
+      <Navigation />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/milestones" element={<Milestones />} />
         <Route path="/about-institution" element={<About />} />
@@ -53,13 +87,44 @@ const App = () => {
         <Route path="/aicte" element={<Aicte />} />
         <Route path="/organisation" element={<Organisation />} />
         <Route path="/under" element={<Under />} />
-        <Route path="/csedept" element={<Csedept/>} /> 
-        <Route path="/govern" element={<Govern/>} /> 
-<Route path='/ncc' element={<Ncc/>}/>
-          <Route path='/thiran' element={<Thiran/>}/>
-          <Route path='/sports' element={<Sports/>}/>
-        </Routes>
-        <Footer/>
+        <Route path="/csedept" element={<Csedept />} />
+        <Route path="/govern" element={<Govern />} />
+        <Route path="/ncc" element={<Ncc />} />
+        <Route path="/thiran" element={<Thiran />} />
+        <Route path="/sports" element={<Sports />} />
+        <Route path="/ecedept" element={<Ecedept />} />
+        <Route path="/annual_reports" element={<Annual_report />} />
+        <Route path="/academic-calendar" element={<Academic />} />
+        <Route path="/fee-structure" element={<Fees />} />
+        <Route path="/ecedept/ece-peo" element={<Ece_peo />} />
+        <Route path="/ecedept/ece-faculties" element={<Ece_faculties />} />
+        <Route path="/ecedept/ece-lab" element={<Ece_lab />} />
+        <Route path="/ecedept/ece-rankers" element={<Ece_rankers/>} />
+        <Route path="/ecedept/ece-dept-events" element={<Ece_events/>} />
+        <Route path="/ecedept/ece-projects" element={<Ece_projects/>} />
+        <Route path="/ecedept/ece-student-activity" element={<Ece_stud_activity/>} />
+        <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
+        <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
+        <Route path="/civildept" element={<Civildept/>} />
+        <Route path="/mechdept" element={<Mechdept/>} />
+        <Route path="/eeedept" element={<Eeedept/>} />
+        <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
+        <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
+        <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
+        <Route path="/civildept/civil-peo" element={<Civil_peo/>} />
+        <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
+        <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
+        <Route path="/civildept/civil-dept-events" element={<Civil_events/>} />
+        <Route path="/mechdept/mech-peo" element={<Mech_peo/>} />
+        <Route path="/mechdept/mech-faculties" element={<Mech_faculties/>} />
+        <Route path="/mechdept/mech-lab" element={<Mech_lab/>} />
+        <Route path="/mechdept/mech-dept-events" element={<Mech_events/>} />
+        <Route path="/eeedept/eee-peo" element={<Eee_peo/>} />
+        <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
+        <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
+        <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
+      </Routes>
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.civbg {
+  background: url("../../assets/pictures/ecebg.webp");
+  min-height: 550px;
+  background-color: #00134d;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.civheading {
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  font-size: 250%;
+  top: 48%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #000;
+}
+.civ_sub_heading {
+  text-align: center;
+  position: absolute;
+  color: #ff6600;
+  font-size: 150%;
+  top: 75%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #000;
+}
+.civtwo-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.civdark {
+  /* display: flex;
+    flex-direction: column; */
+  padding: 40px 20px;
+  width: 75%;
+  /* border-radius: 5px 0 5px 0; */
+}
+.civ_sub_head {
+  font-size: 40px;
+  font-weight: 500;
+  /* width: 100%;  */
+  /* text-align: left;  */
+  color: #00134d;
+}
+.civtwo-col p {
+  margin-top: 20px;
+  width: 50%;
+  padding: 0 30px;
+}
+.civ_dept_content {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5rem;
+  color: black;
+}
+.civtwo-col .dept_img_holder {
+  width: 50%;
+  /* height: auto; */
+  /* align-items: center;
+    justify-content: center; */
+}
+.dept_img {
+  width: 100%;
+  height: auto;
+}
+.civtwo-col1 p {
+  width: 100%;
+  padding: 20px 30px;
+}
+.civ_progs{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media(max-width:1100px){
+  .civtwo-col {
+    
+    flex-direction: column;
+  }
+  .civtwo-col p {
+    width: 100%;
+  }
+  .civtwo-col .dept_img_holder {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .civheading {
+    top: 35%;
+    font-size: 150%;
+    font-weight: 500;
+  }
+  .civ_sub_heading {
+    font-size: 100%;
+    font-weight: 500;
+  }
+  .civbg {
+    width: 100%;
+    height: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .civbg {
+    width: 100%;
+    height: 500px;
+  }
+  .civdark {
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .civ_sub_head {
+    font-size: 28px;
+  }
+  .civ_dept_content {
+    font-size: 16px;
+  }
+  .dept_float_menu {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .civbg {
+    background: url("../../assets/pictures/ecebgm.webp");
+    min-height: 550px;
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .civtwo-col p {
+    padding: 0 5px;
+  }
+  .civtwo-col1 p {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 321px) {
+  .civ_sub_head {
+    font-size: 26px;
+  }
+}

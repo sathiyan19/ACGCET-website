@@ -23,7 +23,7 @@ const top_nav_paths=[
     'title':'Academics',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/programs','link':"Programs offered"},
-            {'path':'/under','link':"Academic Calendar"}]
+            {'path':'/academic-calendar','link':"Academic Calendar"}]
     },
 
     {"id":'4',
@@ -71,11 +71,11 @@ const top_nav_paths=[
     'title':'Departments',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/csedept','link':"Computer Science Engineering"},
-            {'path':'/','link':"Electrical & Electronics Engineering"},
-            {'path':'/','link':"Electronics & Communication Engineering"},
+            {'path':'/eeedept','link':"Electrical & Electronics Engineering"},
+            {'path':'/ecedept','link':"Electronics & Communication Engineering"},
             {'path':'/','link':"Mechanical Engineering"},
-            {'path':'/','link':"Civil Engineering"},
-            {'path':'/','link':"Science & Humanities"}]
+            {'path':'/civildept','link':"Civil Engineering"},
+            {'path':'/mechdept','link':"Science & Humanities"}]
     },
 
     {"id":'9',
@@ -92,7 +92,7 @@ const top_nav_paths=[
     'links':[{'path':'/','link':"NAAC"},
             {'path':'/','link':"NBA"},
             {'path':'/','link':"NIRF"},
-            {'path':'/','link':"Annual Reports"}]
+            {'path':'/annual_reports','link':"Annual Reports"}]
     },
 
     {"id":'11',
@@ -134,10 +134,10 @@ const bottom_nav_paths=[
     'title':'Departments',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/csedept','link':"Computer Science Engineering"},
-            {'path':'/','link':"Electrical & Electronics Engineering"},
-            {'path':'/','link':"Electronics & Communication Engineering"},
-            {'path':'/','link':"Mechanical Engineering"},
-            {'path':'/','link':"Civil Engineering"},
+            {'path':'/eeedept','link':"Electrical & Electronics Engineering"},
+            {'path':'/ecedept','link':"Electronics & Communication Engineering"},
+            {'path':'/mechdept','link':"Mechanical Engineering"},
+            {'path':'/civildept','link':"Civil Engineering"},
             {'path':'/','link':"Science & Humanities"}]
     },
 
@@ -155,7 +155,7 @@ const bottom_nav_paths=[
     'links':[{'path':'/','link':"NAAC"},
             {'path':'/','link':"NBA"},
             {'path':'/','link':"NIRF"},
-            {'path':'/','link':"Annual Reports"}]
+            {'path':'/annual_reports','link':"Annual Reports"}]
     },
 
     {"id":'17',

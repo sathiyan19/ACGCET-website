@@ -31,10 +31,11 @@ const T3_officials = () => {
     <>
     <Backtotop/>
     <div className='t3_off'>
-
+    <div className="teqip3_heading">TEQIP-III</div>
+      <div className='flt1'>
       <Floatinmenu head={teqip3_floater_menu.head} from_top={200} links={teqip3_floater_menu.links}/>
-
-      <div className='off_head'>INSTITUTIONAL PROJECT DIRECTOR</div>
+      </div>
+      <div className='off_head'>Institutional Project Director</div>
       <div className='off_tot'>
       <table className='off'>
         <tr className='off_row'>
@@ -61,7 +62,7 @@ const T3_officials = () => {
       </div>
       
       
-      <div className='off_head'>TEQIP COORDINATOR</div>
+      <div className='off_head'>Teqip Co-ordinator</div>
       <div className='off_tot'>
       <table className='off'>
         <tr className='off_row'>
@@ -87,22 +88,22 @@ const T3_officials = () => {
       </table>
       </div>
 
-      <div className='off_head_nodal'>NODAL OFFICER</div>
+      <div className='off_head_nodal'>Nodal Officers</div>
       <div className='off_nodal'>
       <Table data={t3_off_nodal} columns={columns} />
       </div>
 
-      <div className='off_head_cell'>TEQIP CELL OFFICERS</div>
+      <div className='off_head_cell'>Teqip Cell Officers</div>
       <div className='off_cell'>
       <Table data={t3_off_cell} columns={columns} />
       </div>
 
-      <div className='off_head_depco'>DEPARTMENT CO-ORDINATORS</div>
+      <div className='off_head_depco'>Department Co-ordinators</div>
       <div className='off_depco'>
       <Table data={t3_off_depco} columns={columns} />
       </div>
 
-      <div className='off_head_adstaff'>ADMINISTRATIVE STAFF</div>
+      <div className='off_head_adstaff'>Administrative Staff</div>
       <div className='off_adstaff'>
       <Table data={adstaff} columns={columns} />
       </div>

@@ -12,7 +12,7 @@ const Teqip1 = () => {
   const columns = [
     { field: "sno", header: "sno" },
     { field: "detail", header: "detail" },
-    { field: "amount", header: "amount" },
+    { field: "amount", header: "amount(Lakhs)" },
   ];
 
   return (

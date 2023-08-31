@@ -94,6 +94,23 @@
 .responsive_text{
     display: none;
 }
+.map{
+    height: auto;
+    width: 100%;
+}
+.key_title{
+    color: #00134d;
+    font-size: 22px;
+}
+.keys_holder{
+    display: flex;
+    flex-wrap: wrap;
+}
+.campus_map_key{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+}
 
 @media(max-width:1145px){
     .responsive_text{
@@ -103,29 +120,15 @@
         display: none;
     }
 }
-@media(max-width:1100px){
+/* @media(max-width:1100px){
     .sect{
         width: 100%;
     }
     .content{
         margin-bottom: 10px;
     }
-}
-@media(max-width:500px){
-    .visit_content{
-        padding: 10px;
-    }
-    .sect{
-        padding: 20px 0;
-    }
-    .div_content{
-        padding: 15px 5px;
-    }
-    
-    .content{
-        font-size: 16px;
-    }
-}
+} */
+
 
 @media(max-width:1000px){
     .flex_1{
@@ -166,16 +169,18 @@
     .div_content{
         padding: 15px 5px;
     }
-    .heading{
-        font-size: 40px;
-    }
     .content{
         font-size: 16px;
     }
     .abt_heading{
         font-size: 28px;
     }
+    .keys_holder{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
+
 
 @media(max-width:321px){
     .abt_heading{

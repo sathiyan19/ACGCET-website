@@ -1,8 +1,8 @@
 import React from 'react'
 
 import "./Under.css"
-import bg from "../../assets/pictures/uct.png"
-import bg_mob from "../../assets/pictures/uctmob.png"
+import bg from "../../assets/pictures/uct.webp"
+import bg_mob from "../../assets/pictures/uctmob.webp"
 
 const Under = () => {
   return (

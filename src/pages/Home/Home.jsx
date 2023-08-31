@@ -1,16 +1,17 @@
 import React from 'react'
 
-import {Heroimage,Radial_menu} from '../../components'
+import {Heroimage} from '../../components'
 import {Backtotop} from '../../widgets'
 import {Information,Founder,Companies,Events,Paralax,News} from '../../containers'
 
 
 import clgpic from '../../assets/pictures/clgpicfinal.webp'
 
-import {Profilecard} from '../../widgets'
-import {profileinfo} from '../../constants/profilecards'
-import {dept_menu} from '../../constants/cse_dept'
+// import {Profilecard} from '../../widgets'
+// import {profileinfo} from '../../constants/profilecards'
 
+// import {Progressbar} from '../../widgets'
+// import { progressinfo } from '../../constants/progressbar'
 
 
 const Home = () => {
@@ -32,9 +33,15 @@ const Home = () => {
         
         <Backtotop/>
 
-        {/* <Profile_display list_info={profileinfo}/> */}
+        {/* {progressinfo.map((item)=>(
+          <Progressbar
+            key={item.id}
+            percent1={item.percent1}
+            percent2={item.percent2}
+          />
+        ))}  */}
 
-        <Radial_menu menu_links={dept_menu}/>
+        {/* <Profile_display list_info={profileinfo}/> */}
     </>
   )
 }

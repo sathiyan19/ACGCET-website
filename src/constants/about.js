@@ -12,14 +12,14 @@ export const about_floater_menu={
             'path':'#history'
         },
         {
-            'id':'3',
-            'link':'Campus Map',
-            'path':'#'
+            'id':'5',
+            'link':'Visit ACGCET',
+            'path':'#vist_acgcet'
         },
         {
             'id':'4',
-            'link':'Visit ACGCET',
-            'path':'#vist_acgcet'
+            'link':'Campus Map',
+            'path':'#campus_map'
         },
     ]
 }
