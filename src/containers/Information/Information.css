@@ -10,15 +10,20 @@
 .list {
     overflow: hidden;
     position: relative;
-    height: 170px;
+    height: 200px;
+    padding-left: 0;
+    list-style:circle  ;
     /* background-color: aqua; */
 }
 
 .msg {
-    /* list-style: none; */
-    /* display: block; */
-    animation: marquee 5s linear infinite;
+    margin: 17px 0;
+    animation: marquee 10s linear infinite; /* Adjust duration as needed */
+    /* animation: marquee 5s steps(20) infinite; */
     animation-play-state: running; 
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
 }
 
 .list:hover .msg {
@@ -61,7 +66,7 @@
     text-decoration: none;
     font-size: 20px;
     padding: 5px;
-    margin: 5px;
+    margin: 7px 5px;
     border: 2px solid white;
     border-radius: 7px;
 }
@@ -88,7 +93,7 @@
 }
 
 .impmsg {
-    line-height: 1.8rem;
+    line-height: 1.2rem;
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -97,10 +102,6 @@
 .impmsg:hover {
     text-decoration: underline;
     color: white;
-}
-
-.list {
-    list-style: disc;
 }
 
 .msg {
@@ -117,9 +118,8 @@
         transform: translateY(0);
     }
 }
-
-@media(max-width:610px) {
-    .important {
+@media(max-width:870px){
+    .important{
         flex-direction: column;
     }
     .bulletin {
@@ -131,6 +131,9 @@
         margin-top: 10px;
         width: 100%;
     }
+}
+
+@media(max-width:550px) {
     .board {
         font-size: 20px;
     }

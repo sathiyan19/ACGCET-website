@@ -2,7 +2,8 @@ import React from "react";
 
 import "./Csedept.css";
 import { Backtotop,Floatinmenu,Underline,Deptvision,Deptmission } from "../../widgets";
-import { cse_dept_menu,cse_mission,cse_vision } from "../../constants/cse_dept";
+import {Hodmsg} from '../../components'
+import { cse_dept_menu,cse_mission,cse_vision,cse_hod } from "../../constants/cse_dept";
 
 import {Radial_menu } from "../../components";
 import cse from "../../assets/pictures/csecover.webp";
@@ -58,6 +59,7 @@ const Csedept = () => {
         </div>
         <div className="cse_hod">
         <Underline heading="HOD's Message"/>
+        <Hodmsg name={cse_hod.name} designation={cse_hod.designation} pic={cse_hod.pic} content={cse_hod.content}/>
         </div>
         <div className="cse_vision_mission">
           <Underline heading="Our Vision & Mission"/>

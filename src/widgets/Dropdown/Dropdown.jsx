@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Dropdown = ({type,title,base,links}) => {
+const Dropdown = ({type,title,base,links,func}) => {
 
   let class_name
   if(type==="1"){
@@ -10,14 +11,17 @@ const Dropdown = ({type,title,base,links}) => {
   }else if(type==="3"){
     class_name="nav-link link"
   }
+  console.log(links.length)
+
+
   
   return (
     <div className="dropdown">
         <li className='nav-item'>
-            <a className={class_name} href={base} aria-current="page">{title}</a>
+            <Link className={class_name} onClick={links.length===0? func:null} to={base} aria-current="page">{title}</Link>
         </li>
          <div className="dropdown-content">
-            {links.map((item)=><a key={item.link} href={item.path}>{item.link}</a>)}
+            {links.map((item)=><Link onClick={func} key={item.link} to={item.path}>{item.link}</Link>)}
             
         </div>
     </div>

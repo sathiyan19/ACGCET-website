@@ -2,6 +2,14 @@
     margin-top: 30px;
     padding: 20px;
 }
+.academic_cals_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.academic_reports{
+    width:70%
+}
 
 .academic_heading{
     color: #00134d;
@@ -10,9 +18,23 @@
     font-weight: 500;
 }
 
+@media(max-width:1024px){
+    .academic_reports{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .academic_reports{
+        width:70%
+    }
+}
+
 @media(max-width:500px){
     .academic_heading{
         font-size: 28px;
+    }
+    .academic_reports{
+        width: 100%;
     }
 }
 @media(max-width:321px){

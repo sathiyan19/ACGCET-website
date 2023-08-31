@@ -1,4 +1,6 @@
 import dp from "../assets/pictures/dp.jpg";
+import dpm from '../assets/pictures/boy.webp'
+import dpf from '../assets/pictures/girl.webp'
 import cover from "../assets/pictures/civil_banner.webp";
 
 import swayam from '../assets/pictures/swayam.webp'
@@ -10,41 +12,49 @@ const civ_dept_menu = [
     id: "1",
     path: "/civildept",
     link: "About the Department",
+    arl:'l'
   },
   {
     id: "3",
     path: "/civildept/civil-peo",
     link: "Programme Objectives & Outcomes",
+    arl:'l'
   },
   {
     id: "5",
     path: "/civildept/civil-faculties",
     link: "Faculties",
+    arl:'l'
   },
   {
     id: "7",
     path: "/civildept/civil-lab",
     link: "Lab Facilities",
+    arl:'l'
   },
   {
     id: "8",
     path: "#",
     link: "Professional Socities",
+    arl:'l'
   },
   {
     id: "9",
     path: "#",
     link: "Research and Publications",
+    arl:'l'
   },
   {
     id: "10",
     path: "/civildept/civil-dept-events",
     link: "Department Events",
+    arl:'l'
   },
   {
     id: "11",
     path: "#",
     link: "MoU",
+    arl:'l'
   },
 ];
 
@@ -52,7 +62,7 @@ const civ_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dp,
+    dp: dpf,
     name: "Dr.A.Leelavathi",
     Designation: "Assistant Professor",
     mailid: "leelaaccet2007@gmail.com",
@@ -61,7 +71,7 @@ const civ_fac_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "Senthamizhan M",
     Designation: "Assistant Professor(Consolidated Pay)",
     mailid: "tamizhanirtt@gmail.com",
@@ -70,7 +80,7 @@ const civ_fac_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "R.Manigandan",
     Designation: "Assistant Professor(Adhoc)",
     mailid: "manigandanabm@gmail.com",
@@ -79,7 +89,7 @@ const civ_fac_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "R.Vinothkumar",
     Designation: "Assistant Professor(Adhoc)",
     mailid: "vinothrvkce@gmail.com",
@@ -88,7 +98,7 @@ const civ_fac_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "Venkatesh B",
     Designation: "Assistant Professor",
     mailid: "venkatesh@gcetly.ac.in",
@@ -97,7 +107,7 @@ const civ_fac_profiles = [
   {
     id: "6",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "Dr.C.Subramanian",
     Designation: "Professor",
     mailid: "csk285@gmail.com",
@@ -106,7 +116,7 @@ const civ_fac_profiles = [
   {
     id: "7",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "Dr.C.Vijayaprabha",
     Designation: "Associate Professor",
     mailid: "vijayaprabha.struct@gmail.com",
@@ -115,7 +125,7 @@ const civ_fac_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: dp,
+    dp: dpf,
     name: "Dr.S.M.Kavitha",
     Designation: "Associate Professor",
     mailid: "smkavitha@accetedu.in",
@@ -124,7 +134,7 @@ const civ_fac_profiles = [
   {
     id: "9",
     cover: cover,
-    dp: dp,
+    dp: dpf,
     name: "Dr SR Sumathy",
     Designation: "Associate Professor",
     mailid: "srsumathy@accetedu.in",
@@ -135,7 +145,7 @@ const civ_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "Arjun",
     Designation: "Foreman Instructor",
     mailid: "e",

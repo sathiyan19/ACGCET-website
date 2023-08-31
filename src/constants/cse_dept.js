@@ -1,60 +1,88 @@
 import dp from "../assets/pictures/dp.jpg";
+import dpm from '../assets/pictures/boy.webp'
+import dpf from '../assets/pictures/girl.webp'
 import cover from "../assets/pictures/cse_banner.webp";
 
 import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
 
-import suhaila from "../assets/pictures/suhaila.png";
-
 const cse_dept_menu = [
   {
     id: "1",
     path: "/csedept",
     link: "About the Department",
+    arl:'l'
   },
   {
     id: "3",
     path: "/csedept/cse-peo",
     link: "Programme Objectives & Outcomes",
+    arl:'l'
   },
   {
     id: "5",
     path: "/csedept/cse-faculties",
     link: "Faculties",
+    arl:'l'
   },
   {
     id: "7",
     path: "/csedept/cse-lab",
     link: "Lab Facilities",
+    arl:'l'
   },
   {
     id: "8",
     path: "#",
     link: "Professional Socities",
+    arl:'l'
   },
   {
     id: "9",
     path: "#",
     link: "Research and Publications",
+    arl:'l'
   },
   {
     id: "10",
     path: "/csedept/cse-dept-events",
     link: "Department Events",
+    arl:'l'
   },
   {
     id: "11",
     path: "#",
     link: "MoU",
+    arl:'l'
   },
 ];
+
+const cse_hod={
+  name:"Dr.C.Uma Rani",
+  designation:"Head of the Department, ECE",
+  pic:dpf,
+  content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
+  "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
+  "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
+  "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"+
+  "in reprehenderit in voluptate velit esse cillum dolore eu fugiat"+
+  "nulla pariatur. Excepteur sint occaecat cupidatat non proident,"+
+  "sunt in culpa qui officia deserunt mollit anim id est laborum."+
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
+  "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
+  "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
+  "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"+
+  "in reprehenderit in voluptate velit esse cillum dolore eu fugiat"+
+  "nulla pariatur. Excepteur sint occaecat cupidatat non proident,"+
+  "sunt in culpa qui officia deserunt mollit anim id est laborum."
+}
 
 const cse_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: suhaila,
+    dp: dpf,
     name: "S.Syed Suhaila",
     Designation: "Assistant professor",
     mailid: "syedsuhaila63@gmail.com",
@@ -63,7 +91,7 @@ const cse_fac_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "Dr.K.Sundara Krishnan",
     Designation: "Assistant professor",
     mailid: "sundarakrishnank@gmail.com",
@@ -72,7 +100,7 @@ const cse_fac_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dp,
+    dp: dpf,
     name: "Anbu Selvi P",
     Designation: "Assistant professor",
     mailid: "anbuselvi17@gmail.com",
@@ -81,7 +109,7 @@ const cse_fac_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dp,
+    dp: dpf,
     name: "G. Karthika",
     Designation: "Assistant professor",
     mailid: "kartiga.g@gmail.com",
@@ -90,7 +118,7 @@ const cse_fac_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dp,
+    dp: dpf,
     name: "Mrs.M.Rajanandhini",
     Designation: "Assistant professor(Ad-hoc)",
     mailid: "priyamnandhini@gmail.com",
@@ -101,7 +129,7 @@ const cse_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "G.Vijaya venkata krishnan",
     Designation: "Foreman Instructor",
     mailid: "vijayvisanth@gmail.com",
@@ -110,7 +138,7 @@ const cse_sup_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dp,
+    dp: dpf,
     name: "S.Suriya",
     Designation: "Lab Assistant",
     mailid: "rithikadharshan2016@gmail.com",
@@ -119,7 +147,7 @@ const cse_sup_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "S.Rajendran",
     Designation: "Cleaner",
     mailid: "bhuvanagirirajendran@gmail.com",
@@ -128,7 +156,7 @@ const cse_sup_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dp,
+    dp: dpm,
     name: "R.Raja",
     Designation: "Mechanic Grade-II",
     mailid: "",
@@ -316,5 +344,6 @@ export {
   cse_outcomes,
   cse_peo,
   cse_labs,
-  cse_dept_events
+  cse_dept_events,
+  cse_hod
 };
