@@ -10,12 +10,10 @@ const Information = () => {
             <div className="line"></div>
             <ul className="list">
                 {/* Marquee can be implemented using CSS animations or JavaScript */}
-                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
-                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
-                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
-                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
-                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
-                <li className="msg"><a href="#" className="impmsg">College Fee 2022-23 for BE regular & part-time</a></li>
+                <li className="msg"><a className="impmsg">Commencement of First year B.E ( Full time) classes will be announced shortly.</a></li>
+                <li className="msg"><a href="https://drive.google.com/file/d/10I5byy8zorNlU8Mlpnz1ObRac74EYWko/view?usp=drive_link" className="impmsg">First year part-time B.E. classes commences on 04.09.2023.</a></li>
+                <li className="msg"><a href="https://drive.google.com/file/d/1yy5Gr8WhlTIwK7zNA6Y9uS9r1HbeOovq/view?usp=sharing" className="impmsg">First M.E. classes commences on 21.08.2023.</a></li>
+                <li className="msg"><a href="https://drive.google.com/file/d/1N9yOpdr5ciHkcQ7-J0MHVHPb2LdARswY/view?usp=sharing" className="impmsg">Scholarship renewal</a></li>
             </ul>
         </div>
         <div className="quick">

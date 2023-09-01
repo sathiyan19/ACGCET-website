@@ -14,7 +14,7 @@ const top_nav_paths=[
     'basepath':'javascript:void(0);',
     'links':[{'path':"/govern",'link':"Governing council"},
             {'path':"/office",'link':"Office"},
-            {'path':"/organisation",'link':"Organisation Structure"},
+            {'path':"/organisation",'link':"Organization Structure"},
             {'path':"/under",'link':"Committee/Cell"}]
     },
 

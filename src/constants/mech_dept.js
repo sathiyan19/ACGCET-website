@@ -1,5 +1,5 @@
 import dp from "../assets/pictures/dp.jpg";
-import cover from "../assets/pictures/cse_banner.webp";
+import cover from "../assets/pictures/mech_banner.webp";
 
 import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
@@ -10,46 +10,55 @@ const mech_dept_menu = [
     id: "1",
     path: "/mechdept",
     link: "About the Department",
+    arl:'l'
   },
   {
     id: "3",
     path: "/mechdept/mech-peo",
     link: "Programme Objectives & Outcomes",
+    arl:'l'
   },
   {
     id: "5",
     path: "/mechdept/mech-faculties",
     link: "Faculties",
+    arl:'l'
   },
   {
     id: "7",
     path: "/mechdept/mech-lab",
     link: "Lab Facilities",
+    arl:'l'
   },
   {
     id: "8",
     path: "#",
     link: "Professional Socities",
+    arl:'l'
   },
   {
     id: "9",
     path: "#",
     link: "Research and Publications",
+    arl:'l'
   },
   {
     id: "10",
     path: "/mechdept/mech-dept-events",
     link: "Department Events",
+    arl:'l'
   },
   {
     id: "11",
     path: "#",
     link: "MoU",
+    arl:'l'
   },
   {
     id: "12",
     path: "#",
     link: "Centre of Excellence",
+    arl:'l'
   },
 ];
 

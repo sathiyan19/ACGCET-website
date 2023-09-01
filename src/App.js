@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React,{useEffect} from "react";
+import { Routes, Route,useLocation } from "react-router-dom";
 
 import { Navigation, Footer } from "./components";
 
@@ -65,6 +65,11 @@ import {
 import "./App.css";
 
 const App = () => {
+  const location = useLocation();
+  console.log(location)
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[location])
   return (
     <div>
       <Navigation />
@@ -108,7 +113,8 @@ const App = () => {
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
-        <Route path="/mechdept" element={<Mechdept/>} />
+        <Route path="/mechdept" element={<Under/>} />
+        {/* <Route path="/mechdept" element={<Mechdept/>} /> */}
         <Route path="/eeedept" element={<Eeedept/>} />
         <Route path="/sciencedept" element={<Sciencedept/>} />
         <Route path="/csedept/cse-peo" element={<Cse_peo/>} />

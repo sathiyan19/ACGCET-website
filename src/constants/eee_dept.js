@@ -1,5 +1,5 @@
 import dp from "../assets/pictures/dp.jpg";
-import cover from "../assets/pictures/cse_banner.webp";
+import cover from "../assets/pictures/elec_banner.webp";
 
 import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
@@ -10,56 +10,67 @@ const eee_dept_menu = [
     id: "1",
     path: "/eeedept",
     link: "About the Department",
+    arl:'l'
   },
   {
     id: "3",
     path: "/eeedept/eee-peo",
     link: "Programme Objectives & Outcomes",
+    arl:'l'
   },
   {
     id: "5",
     path: "/eeedept/eee-faculties",
     link: "Faculties",
+    arl:'l'
   },
   {
     id: "7",
     path: "/eeedept/eee-lab",
     link: "Lab Facilities",
+    arl:'l'
   },
   {
     id: "8",
     path: "#",
     link: "Professional Socities",
+    arl:'l'
   },
   {
     id: "9",
     path: "#",
     link: "Research and Publications",
+    arl:'l'
   },
   {
     id: "10",
     path: "/eeedept/eee-dept-events",
     link: "Department Events",
+    arl:'l'
   },
   {
     id: "11",
     path: "#",
     link: "MoU",
+    arl:'l'
   },
   {
     id: "12",
     path: "#",
     link: "Next Gen Lab",
+    arl:'l'
   },
   {
     id: "13",
     path: "#",
     link: "Modern Electric Drives System",
+    arl:'l'
   },
   {
     id: "14",
     path: "#",
     link: "Students Corner",
+    arl:'l'
   },
 ];
 

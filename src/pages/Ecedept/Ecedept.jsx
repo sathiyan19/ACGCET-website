@@ -2,7 +2,8 @@ import React from "react";
 
 import "./Ecedept.css";
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card,Progressbar } from "../../widgets";
-import { ece_dept_menu,ece_mission,ece_vision,ece_progs,progressinfo } from "../../constants/ece_dept";
+import {Hodmsg} from '../../components'
+import { ece_dept_menu,ece_mission,ece_vision,ece_progs,ece_hod,progressinfo } from "../../constants/ece_dept";
 
 import { Radial_menu } from "../../components";
 import ece from "../../assets/pictures/group-pic.webp";
@@ -56,6 +57,7 @@ const Ecedept = () => {
         </div>
         <div className="ece_hod">
           <Underline heading="HOD's Message"/>
+          <Hodmsg name={ece_hod.name} designation={ece_hod.designation} pic={ece_hod.pic} content={ece_hod.content}/>
         </div>
         <div className="ece_vision_mission">
           <Underline heading="Our Vision & Mission"/>
