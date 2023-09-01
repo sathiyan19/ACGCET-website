@@ -1,6 +1,12 @@
+import { FaRProject } from 'react-icons/fa6'
+
 export {default as Information} from './Information/Information'
 export {default as Founder} from './Founder/Founder'
 export {default as Companies} from './Companies/Companies'
 export {default as Events} from './Events/Events'
 export {default as Paralax} from './Paralax/Paralax'
 export {default as News} from './News/News'
+export {default as Sh_English} from './Sh_English/Sh_English'
+export {default as Sh_Maths} from './Sh_Maths/Sh_Maths'
+export {default as Sh_Chemistry} from './Sh_Chemistry/Sh_Chemistry'
+export {default as sh_Physics} from './Sh_Physics/Sh_Physics'

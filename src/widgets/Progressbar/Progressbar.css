@@ -54,7 +54,7 @@
     stroke-dashoffset: 436;
     animation: anim1 0.5s linear forwards;
 } */
-svg{
+.progress_chart{
     position: absolute;
     top: 0;
     left: 0;
