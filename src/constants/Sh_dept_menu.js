@@ -2,10 +2,6 @@ import dp from '../assets/pictures/dp.jpg'
 import cover from '../assets/pictures/microchip.webp'
 
 
-import somasundaram from '../assets/pictures/ece_faculties/Somasundaram.webp'
-
-
-
 const Sh_dept_fmenu = [
     {
         id:'1',
@@ -121,26 +117,26 @@ const phy_vision = {
                             },
                             ]
 
-const eng_fac_profiles = [
-    {
-      id: "1",
-      cover: cover,
-      dp: dp,
-      name: "C.Sinduja",
-      Designation: "Assistant Professor",
-      mailid: "sindhu.mzcet@gmail.com",
-      pdf:"https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link"
-    },
-    {
-      id: "2",
-      cover: cover,
-      dp: somasundaram,
-      name: "Dr.S.Somasundaram",
-      Designation: "Associate Professor",
-      mailid: "ssm98@rediffmail.com",
-      pdf:"https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link"
-    },
-]
+// const eng_fac_profiles = [
+//     {
+//       id: "1",
+//       cover: cover,
+//       dp: dp,
+//       name: "C.Sinduja",
+//       Designation: "Assistant Professor",
+//       mailid: "sindhu.mzcet@gmail.com",
+//       pdf:"https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link"
+//     },
+//     {
+//       id: "2",
+//       cover: cover,
+//       dp: somasundaram,
+//       name: "Dr.S.Somasundaram",
+//       Designation: "Associate Professor",
+//       mailid: "ssm98@rediffmail.com",
+//       pdf:"https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link"
+//     },
+// ]
 
 export {Sh_dept_fmenu,
 eng_mission,
