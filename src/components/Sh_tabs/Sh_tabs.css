@@ -1,0 +1,83 @@
+.sh_tabs{
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    padding: 30px 30px 30px 30px;
+    border-radius: 5px;
+}
+/* .sh_tabs header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+} */
+.sh_tabs nav{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background: #00134d; */
+}
+.sh_tabs nav label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    color: #00134d;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+}
+#sh_English:checked ~nav label.sh_English,
+#sh_Maths:checked ~nav label.sh_Maths,
+#sh_Chemistry:checked ~nav label.sh_Chemistry,
+#sh_Physics:checked ~nav label.sh_Physics{
+    color: #fff;
+}
+input[type="radio"]{
+    display: none;
+}
+.sh_tabs nav .sh_slider{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    background:#00134d ;
+    border-radius: 5px;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+}
+#sh_Maths:checked ~ nav .sh_slider{
+    left: 25%;
+}
+#sh_Chemistry:checked ~ nav .sh_slider{
+    left: 50%;
+}
+#sh_Physics:checked ~ nav .sh_slider{
+    left: 75% ;
+}
+section .shcontent{
+    display: none;
+}
+#sh_English:checked ~ section .content1,
+#sh_Maths:checked ~ section .content2,
+#sh_Chemistry:checked ~ section .content3,
+#sh_Physics:checked ~ section .content4{
+    display: block;
+}
+section .content .stopic{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+    color: black;
+}
+
+@media (max-width:400px){
+    .sh_tabs nav label{
+        font-size: 14px;
+    }
+}

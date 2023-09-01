@@ -21,6 +21,8 @@ import cse from "../../assets/pictures/csecover.webp";
 
 import { AiFillThunderbolt } from "react-icons/ai";
 
+
+
 const Eeedept = () => {
   return (
     <div className="eeedept">
@@ -38,6 +40,8 @@ const Eeedept = () => {
           />
         </div>
         <Radial_menu menu_links={eee_dept_menu} />
+
+
         <div className="eee_abt">
           <Underline heading="About the Department" />
           <div className="eeetwo-col">
