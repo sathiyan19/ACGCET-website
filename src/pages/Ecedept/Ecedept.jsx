@@ -1,11 +1,12 @@
 import React from "react";
 
 import "./Ecedept.css";
-import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
-import { ece_dept_menu,ece_mission,ece_vision,ece_progs } from "../../constants/ece_dept";
+import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card,Progressbar } from "../../widgets";
+import {Hodmsg} from '../../components'
+import { ece_dept_menu,ece_mission,ece_vision,ece_progs,ece_hod,progressinfo } from "../../constants/ece_dept";
 
 import { Radial_menu } from "../../components";
-import cse from "../../assets/pictures/csecover.webp";
+import ece from "../../assets/pictures/group-pic.webp";
 
 import { FaMicrochip } from "react-icons/fa6";
 
@@ -36,7 +37,7 @@ const Ecedept = () => {
             degree programme of M.E (Optical Communication).
           </p>
           <div className="dept_img_holder">
-            <img className="dept_img" src={cse} />
+            <img className="dept_img" src={ece} />
           </div>
         </div>
         <div className="ecetwo-col1">
@@ -56,6 +57,7 @@ const Ecedept = () => {
         </div>
         <div className="ece_hod">
           <Underline heading="HOD's Message"/>
+          <Hodmsg name={ece_hod.name} designation={ece_hod.designation} pic={ece_hod.pic} content={ece_hod.content}/>
         </div>
         <div className="ece_vision_mission">
           <Underline heading="Our Vision & Mission"/>
@@ -69,6 +71,8 @@ const Ecedept = () => {
           </div>
         </div>
         </div>
+
+        {/* {progressinfo.map((item)=><Progressbar bigperc={item.bigperc} smallperc={item.smallperc}/>)} */}
       </section>
 
       <Backtotop />

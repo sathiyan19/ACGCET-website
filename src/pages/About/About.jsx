@@ -5,8 +5,9 @@ import "./About.css";
 import { Floatinmenu } from "../../widgets";
 
 import { about_floater_menu } from "../../constants/about";
+import { campus_map_keys } from "../../constants/campus_map";
 
-import { Backtotop } from "../../widgets";
+import { Backtotop,Underline } from "../../widgets";
 
 import basketball from "../../assets/pictures/basketball.webp";
 import clg_mainbuild from "../../assets/pictures/clg_mainbuild.webp";
@@ -22,7 +23,7 @@ const About = () => {
   return (
     <div className="whole_cont">
       <Backtotop />
-      <div className="abt_heading">About the Institution</div>
+      <Underline heading="About the Institute"/>
 
       <Floatinmenu
       logo={IoHome}
@@ -193,13 +194,6 @@ const About = () => {
         </div>
       </div>
 
-      <div className="campus_map sect" id="campus_map">
-        <div className="div_heading">Campus Map</div>
-        <div className="map_holder">
-          <img className="map" src={campusmap} alt="Campus Map"></img>
-        </div>
-      </div>
-
       <div className="visit_acgcet sect" id="vist_acgcet">
         <div className="div_heading">Visit ACGCET</div>
 
@@ -284,6 +278,19 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <div className="campus_map sect" id="campus_map">
+        <div className="div_heading">Campus Map</div>
+        <div className="map_holder">
+          <img className="map" src={campusmap} alt="Campus Map"></img>
+        </div>
+        <div className="key_title">Keys:</div>
+        <div className="keys_holder">
+          {campus_map_keys.map((item)=><div className="campus_map_key content"><b>{item.id}.</b> {item.place}</div>)}
+        </div>
+      </div>
+
+      
 
       
     </div>

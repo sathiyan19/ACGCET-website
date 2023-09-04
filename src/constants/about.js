@@ -4,22 +4,26 @@ export const about_floater_menu={
         {
             'id':'1',
             'link':'Why ACGCET',
-            'path':'#why_acgcet'
+            'path':'#why_acgcet',
+            'arl':'a'
         },
         {
             'id':'2',
             'link':'History',
-            'path':'#history'
+            'path':'#history',
+            'arl':'a'
         },
         {
-            'id':'3',
-            'link':'Campus Map',
-            'path':'#campus_map'
+            'id':'5',
+            'link':'Visit ACGCET',
+            'path':'#vist_acgcet',
+            'arl':'a'
         },
         {
             'id':'4',
-            'link':'Visit ACGCET',
-            'path':'#vist_acgcet'
+            'link':'Campus Map',
+            'path':'#campus_map',
+            'arl':'a'
         },
     ]
 }

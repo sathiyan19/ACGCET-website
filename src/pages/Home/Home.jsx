@@ -7,8 +7,7 @@ import {Information,Founder,Companies,Events,Paralax,News} from '../../container
 
 import clgpic from '../../assets/pictures/clgpicfinal.webp'
 
-import {Profilecard} from '../../widgets'
-import {profileinfo} from '../../constants/profilecards'
+
 
 
 
@@ -31,6 +30,9 @@ const Home = () => {
         <Events/>
         
         <Backtotop/>
+
+        
+
 
         {/* <Profile_display list_info={profileinfo}/> */}
     </>

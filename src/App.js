@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React,{useEffect} from "react";
+import { Routes, Route,useLocation } from "react-router-dom";
 
 import { Navigation, Footer } from "./components";
 
@@ -28,17 +28,48 @@ import {
   Organisation,
   Under,
   Csedept,
+  Cse_faculties,
   Govern,
   Ecedept,
   Ece_peo,
   Ece_faculties,
+  Ece_lab,
+  Ece_rankers,
+  Ece_events,
+  Ece_projects,
+  Ece_stud_activity,
+  Ece_antenna,
   Annual_report,
   Academic,
   Fees,
+  Civildept,
+  Mechdept,
+  Eeedept,
+  Cse_peo,
+  Cse_lab,
+  Cse_events,
+  Civil_peo,
+  Civil_faculties,
+  Civil_lab,
+  Civil_events,
+  Mech_peo,
+  Mech_faculties,
+  Mech_lab,
+  Mech_events,
+  Eee_peo,
+  Eee_faculties,
+  Eee_lab,
+  Eee_events,
+  Sciencedept
 } from "./pages";
 import "./App.css";
 
 const App = () => {
+  const location = useLocation();
+  console.log(location)
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[location])
   return (
     <div>
       <Navigation />
@@ -74,6 +105,33 @@ const App = () => {
         <Route path="/fee-structure" element={<Fees />} />
         <Route path="/ecedept/ece-peo" element={<Ece_peo />} />
         <Route path="/ecedept/ece-faculties" element={<Ece_faculties />} />
+        <Route path="/ecedept/ece-lab" element={<Ece_lab />} />
+        <Route path="/ecedept/ece-rankers" element={<Ece_rankers/>} />
+        <Route path="/ecedept/ece-dept-events" element={<Ece_events/>} />
+        <Route path="/ecedept/ece-projects" element={<Ece_projects/>} />
+        <Route path="/ecedept/ece-student-activity" element={<Ece_stud_activity/>} />
+        <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
+        <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
+        <Route path="/civildept" element={<Civildept/>} />
+        <Route path="/mechdept" element={<Under/>} />
+        {/* <Route path="/mechdept" element={<Mechdept/>} /> */}
+        <Route path="/eeedept" element={<Eeedept/>} />
+        <Route path="/sciencedept" element={<Sciencedept/>} />
+        <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
+        <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
+        <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
+        <Route path="/civildept/civil-peo" element={<Civil_peo/>} />
+        <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
+        <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
+        <Route path="/civildept/civil-dept-events" element={<Civil_events/>} />
+        <Route path="/mechdept/mech-peo" element={<Mech_peo/>} />
+        <Route path="/mechdept/mech-faculties" element={<Mech_faculties/>} />
+        <Route path="/mechdept/mech-lab" element={<Mech_lab/>} />
+        <Route path="/mechdept/mech-dept-events" element={<Mech_events/>} />
+        <Route path="/eeedept/eee-peo" element={<Eee_peo/>} />
+        <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
+        <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
+        <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
       </Routes>
       <Footer />
     </div>

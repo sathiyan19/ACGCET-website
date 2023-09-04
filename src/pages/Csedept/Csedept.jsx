@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./Csedept.css";
-import { Backtotop } from "../../widgets";
-import { Floatinmenu } from "../../widgets";
-import { cse_dept_menu } from "../../constants/cse_dept";
+import { Backtotop,Floatinmenu,Underline,Deptvision,Deptmission } from "../../widgets";
+import {Hodmsg} from '../../components'
+import { cse_dept_menu,cse_mission,cse_vision,cse_hod } from "../../constants/cse_dept";
 
 import {Radial_menu } from "../../components";
 import cse from "../../assets/pictures/csecover.webp";
@@ -24,7 +24,7 @@ const Csedept = () => {
         </div>
         <Radial_menu menu_links={cse_dept_menu}/>
         <div className="cse_abt">
-        <h3 className="cse_sub_head">About the Department</h3>
+        <Underline heading="About the Department"/>
         <div className="csetwo-col">
           <p className="cse_dept_content">
             Department of Computer Science and Engineering (CSE) was established
@@ -58,7 +58,13 @@ const Csedept = () => {
         </div>
         </div>
         <div className="cse_hod">
-          
+        <Underline heading="HOD's Message"/>
+        <Hodmsg name={cse_hod.name} designation={cse_hod.designation} pic={cse_hod.pic} content={cse_hod.content}/>
+        </div>
+        <div className="cse_vision_mission">
+          <Underline heading="Our Vision & Mission"/>
+        <Deptvision visiondata={cse_vision.visiondata} />
+        <Deptmission points={cse_mission}/>
         </div>
       </section>
 
