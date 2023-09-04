@@ -41,10 +41,7 @@ const Govern = () => {
     </div>
 
     <div className="governing_tab">
-    <Table
-          data={govern_data}
-          columns={columns}
-        />
+    <Table  data={govern_data}  columns={columns}/>
     </div>
   </div>
   )
