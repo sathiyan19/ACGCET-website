@@ -1,32 +1,38 @@
-import dp from '../assets/pictures/dp.jpg'
-import cover from '../assets/pictures/microchip.webp'
 
+import cover from '../assets/pictures/microchip.webp'
+import dpm from '../assets/pictures/boy.webp'
+import dpf from '../assets/pictures/girl.webp'
 
 const Sh_dept_fmenu = [
     {
         id:'1',
-        path:'Sciencedept',
-        link:'About the Department'
+        path:'/Sciencedept',
+        link:'About the Department',
+        arl:'l'
     },
     {
         id:'2',
-        path:'Sciencedept/Sh-faculty',
-        link:'Faculties'
+        path:'/Sciencedept/sh-faculty',
+        link:'Faculties',
+        arl:'1'
     },
     {
         id:'3',
-        path:'Sciencedept/Sh_lab-facilities',
-        link:'Lab Facilities'
+        path:'/Sciencedept/sh-lab-facility',
+        link:'Lab Facilities',
+        arl:'1'
     },
     {
         id:'4',
-        path:'Sciencedept/Sh_research',
-        link:'Research and Publications'
+        path:'/Sciencedept/Sh-research',
+        link:'Research and Publications',
+        arl:'1'
     },
     {
         id:'5',
-        path:'Sciencedept/Sh_programme-organized',
-        link:'Programme Organized'
+        path:'/Sciencedept/science-programme',
+        link:'Programme Organized',
+        arl:'1'
     },
 ]
 
@@ -66,15 +72,12 @@ const mat_mission = [
                     " To enhance  problem-solving ability and creativity among the students. ",
                         },]
 
- const chemi_vision = [{
+ const chemi_vision = {
         id: "1",
         visiondata:
-         "To be a best centre in Chemistry of the new innovative world.",
-                              },
-        {
-            id:"2",
-            visiondata:"To ensure the implementation of the science of Chemistry in day-to-day life."
-        }]
+         "To be a best centre in Chemistry of the new innovative world. To ensure the implementation of the science of Chemistry in day-to-day life."
+                              };
+        
 
         const chemi_mission = [
             {
@@ -117,26 +120,247 @@ const phy_vision = {
                             },
                             ]
 
-// const eng_fac_profiles = [
-//     {
-//       id: "1",
-//       cover: cover,
-//       dp: dp,
-//       name: "C.Sinduja",
-//       Designation: "Assistant Professor",
-//       mailid: "sindhu.mzcet@gmail.com",
-//       pdf:"https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link"
-//     },
-//     {
-//       id: "2",
-//       cover: cover,
-//       dp: somasundaram,
-//       name: "Dr.S.Somasundaram",
-//       Designation: "Associate Professor",
-//       mailid: "ssm98@rediffmail.com",
-//       pdf:"https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link"
-//     },
-// ]
+const eng_fac_profiles = [
+    {
+      id: "1",
+      cover: cover,
+      dp: dpm,
+      name: "M.Sachin Sivakumar",
+      Designation: "Assistant Professor",
+      mailid: "sachinsivakumar94@gmail.com",
+      pdf:"https://drive.google.com/file/d/1v-8N4EkjLwNnrniRh8eSNLfoy0VpEDLw/view?usp=drive_link"
+    },
+    {
+      id: "2",
+      cover: cover,
+      dp: dpf,
+      name: "M.Gayathri",
+      Designation: "Associate Professor (AD-HOC)",
+      mailid: " gaya3muthusamy@gmail.com",
+      pdf:"https://drive.google.com/file/d/1qhwBuJzeyEwU2_eTYUpFKFLyU8kO6Syk/view?usp=drive_link"
+    },
+]
+
+const mat_fac_profiles = [
+    {
+      id: "1",
+      cover: cover,
+      dp: dpf,
+      name: "Dr.R.Vasanthi",
+      Designation: "Assistant Professor and Head of the Department",
+      mailid: "vasanthi2014accet@gmail.com",
+      pdf:"https://drive.google.com/file/d/1nlNp_XBns6MCn8QgWf_-OpFsWCSFOwyH/view?usp=drive_link"
+    },
+    {
+      id: "2",
+      cover: cover,
+      dp: dpm,
+      name: "S.Balasundar",
+      Designation: "Assistant Professor",
+      mailid: "balasundaraccet@gmail.com",
+      pdf:"https://drive.google.com/file/d/184ZiLnlTI-OCHOXCEle1G-VyNHpKk6Tp/view?usp=drive_link"
+    },
+    {
+        id: "3",
+        cover: cover,
+        dp: dpf,
+        name: "Dr.T.Anitha",
+        Designation: "Assistant Professor",
+        mailid: " anitha81t@gmail.com",
+        pdf:"https://drive.google.com/file/d/1Z0s9s4-hxgHmLcPcOF5Z-qxqBbsL8vX0/view?usp=drive_link"
+      },
+      {
+        id: "4",
+        cover: cover,
+        dp: dpf,
+        name: "S.Yamuna",
+        Designation: "Assistant Professor (AD-HOC)",
+        mailid: "bassyam1@gmail.com",
+        pdf:"https://drive.google.com/file/d/1Xz5W5Srd2jyIF3dnVIKBuKAFEJ37SJyz/view?usp=drive_link"
+      },  
+      {
+        id: "5",
+        cover: cover,
+        dp: dpf,
+        name: "Ms.K.Mahalakshmi",
+        Designation: "Assistant Professor (AD-HOC)",
+        mailid: "mahukrishnan95@gmail.com",
+        pdf:"https://drive.google.com/file/d/1WUZbuyUhppUU7lsCVjrj9lSOiyLXnKW5/view?usp=drive_link"
+      },
+      {
+        id: "6",
+        cover: cover,
+        dp: dpm,
+        name: "M.Reegan",
+        Designation: "Assistant Professor (AD-HOC)",
+        mailid: "amalanstar6@gmail.com",
+        pdf:"https://drive.google.com/file/d/1brToTDmWCXdfRDAegGurZg37QS3KBCN6/view?usp=drive_link"
+      },  
+      {
+        id: "7",
+        cover: cover,
+        dp: dpf,
+        name: "V.Anbukkarasi",
+        Designation: "Assistant Professor",
+        mailid: "anbuvelmath@gmail.com",
+        pdf:"https://drive.google.com/file/d/1gx1Ueptma9cwEuUXkG5KTDpebRsOLRme/view?usp=drive_link"
+      },     
+]
+
+
+const chemi_fac_profiles = [
+    {
+      id: "1",
+      cover: cover,
+      dp: dpm,
+      name: "K.T.Loganathan",
+      Designation: "Assistant Professor and Head of the Department",
+      mailid: "logchem80@gmail.com",
+      pdf:"https://drive.google.com/file/d/12xAzZpnK4x9t6ej4w1jqvVkRohfrCQ9d/view?usp=drive_link"
+    },
+    {
+      id: "2",
+      cover: cover,
+      dp: dpm,
+      name: "Dr.M.Thenraj",
+      Designation: "Associate Professor",
+      mailid: "mtr.iisc@gmail.com",
+      pdf:"https://drive.google.com/file/d/1r-WWKM3kXRz6NNzafirdn9LoZHHF7CYQ/view?usp=drive_link"
+    },
+    {
+        id: "3",
+        cover: cover,
+        dp: dpm,
+        name: "M.Rajaperumal",
+        Designation: "Associate Professor",
+        mailid: "rajaperumalsjc@gmail.com",
+        pdf:"https://drive.google.com/file/d/1jQ0lSaFxDO5pTyFQJT0KGQg7P7Zgx_fu/view?usp=drive_link"
+      },
+      {
+        id: "4",
+        cover: cover,
+        dp: dpf,
+        name: "K.Vijayalakshmi",
+        Designation: "Associate Professor",
+        mailid: "vijayalakshmi2280@gmail.com",
+        pdf:"https://drive.google.com/file/d/1qcVYRilzusVWm9GLx2keEPOQa4lAagnM/view?usp=drive_link"
+      },    
+]
+
+const chemi_sup_profiles = [
+    {
+      id: "1",
+      cover: cover,
+      dp: dpm,
+      name: "M.Mahamani",
+      Designation: "Lab Assistant",
+      mailid: "mahamaniaccet1964@gmail.com",
+      pdf:"https://drive.google.com/file/d/1Ha1XHPwh2bBtU9mf4ys3R3fXrXyAIY4s/view?usp=drive_link"
+    },
+    {
+        id: "2",
+        cover: cover,
+        dp: dpm,
+        name: "K.Lakshmi Narayanan",
+        Designation: "Cleaner",
+        mailid: "klakshminarayanan121@gmail.com",
+        pdf:"https://drive.google.com/file/d/19RVQUZejoy4c34KW7IZ7H352yQiRdjmH/view?usp=drive_link"
+      },]
+
+const phy_fac_profiles = [
+    {
+      id: "1",
+      cover: cover,
+      dp: dpf,
+      name: "Dr.B.V.Bhuvaneswari",
+      Designation: "Professor and Head of the Department",
+      mailid: "bhuvanavisaro@gmail.com",
+      
+        },
+        {
+            id: "2",
+            cover: cover,
+            dp: dpm,
+            name: "Dr.S.Ponmudi",
+            Designation: "Assistant Professor",
+            mailid: "ponmudicdm1975@gmail.com",
+            pdf:"https://drive.google.com/file/d/19fzoGvFZWPKA9IVXojDH9OpfltnBrW1e/view?usp=drive_link"
+              },
+              {
+                id: "3",
+                cover: cover,
+                dp: dpm,
+                name: "Mr.S.Venkatrajan",
+                Designation: "Assistant Professor",
+                mailid: "venkatrajan69@gmail.com",
+                pdf:"https://drive.google.com/file/d/17Zc-wpv6oYdvmeG_51RZZOFg_cSoRLkh/view?usp=drive_link"
+                  },
+                  {
+                    id: "4",
+                    cover: cover,
+                    dp: dpf,
+                    name: "Dr.S.R.Cynthia",
+                    Designation: "Assistant Professor",
+                    mailid: "srcynthiasam@gmail.com",
+                    pdf:"https://drive.google.com/file/d/1cJ2q5uQbpHfVX-90OACWHu2zFgKEGU3V/view?usp=drive_link"
+                      },
+                      {
+                        id: "5",
+                        cover: cover,
+                        dp: dpm,
+                        name: "Dr.G.Sivaganesh",
+                        Designation: "Assistant Professor",
+                        mailid: "gc_siva@yahoo.com",
+                        pdf:"https://drive.google.com/file/d/12-Tx1KJ8cDe2MdMgL6sC-wokjaesaXD0/view?usp=drive_link"
+                          },
+                          {
+                            id: "6",
+                            cover: cover,
+                            dp: dpm,
+                            name: "Mr.R.Parthiban",
+                            Designation: "Assistant Professor",
+                            mailid: "parthirathinam@gmail.com",
+                            pdf:"https://drive.google.com/file/d/1Nf9NlWmUWNSOYBhnTx-Jz8Mtsp9IXwxr/view?usp=drive_link"
+                              },
+                              {
+                                id: "7",
+                                cover: cover,
+                                dp: dpm,
+                                name: "Dr.K.R.Vijayaraghavan",
+                                Designation: "Assistant Professor ",
+                                mailid: "vijayanphy@gmail.com",
+                                pdf:"https://drive.google.com/file/d/1HZ_zBJRcZv3qFNP4rf5mnLZF0Txay91p/view?usp=drive_link"
+                                  },
+                                  {
+                                    id: "8",
+                                    cover: cover,
+                                    dp: dpf,
+                                    name: "Dr.R.N.Mariammal",
+                                    Designation: "Assistant Professor ",
+                                    mailid: "marigayathrirn@gmail.com",
+                                    pdf:"https://drive.google.com/file/d/1852qDq-e6pO-R88Ykh4XBNYtGBYwtc-f/view?usp=drive_link"
+                                      },
+    
+                ]
+const phy_sup_profiles = [
+    {
+      id: "1",
+      cover: cover,
+      dp: dpm,
+      name: "V.Rengarajan",
+      Designation: "Lab Assistant",
+      mailid: "rajan3151989@gmail.com",
+        },
+        {
+      id: "2",
+      cover: cover,
+      dp: dpm,
+      name: "R.Arumugam",
+      Designation: "Cleaner",
+      mailid: "ramarumugam1982ra@gmail.com",
+        },]
+
+
 
 export {Sh_dept_fmenu,
 eng_mission,
@@ -146,4 +370,10 @@ mat_mission,
 chemi_vision,
 chemi_mission,
 phy_vision,
-phy_mission };
+phy_mission,
+eng_fac_profiles,
+mat_fac_profiles,
+chemi_fac_profiles,
+chemi_sup_profiles,
+phy_fac_profiles,
+phy_sup_profiles };
