@@ -1,22 +1,21 @@
 import React from 'react'
 
-import './Sciencedept.css'
-
-import { Sh_tabs } from '../../components'
 import { Backtotop } from '../../widgets'
+import { Sh_tab_research } from '../../components'
 
-const Sciencedept = () => {
+const Sh_research = () => {
   return (
-      <div className="Sciencedept">
+    <div className="Sciencedept">
       <div className="Sciencebg">
         <div className="Scienceheading">
           Department of Science and Humanities
         </div>
+        <div className='Science_sub_heading'>Research and Publications</div>
     </div>
-    <Sh_tabs/>
+    <Sh_tab_research/>
     <Backtotop/>
     </div>
   )
 }
 
-export default Sciencedept
+export default Sh_research

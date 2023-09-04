@@ -60,7 +60,11 @@ import {
   Eee_faculties,
   Eee_lab,
   Eee_events,
-  Sciencedept
+  Sciencedept,
+  Sh_faculty,
+  Sh_lab_facility,
+  Sh_research,
+  Science_Programme
 } from "./pages";
 import "./App.css";
 
@@ -117,6 +121,10 @@ const App = () => {
         {/* <Route path="/mechdept" element={<Mechdept/>} /> */}
         <Route path="/eeedept" element={<Eeedept/>} />
         <Route path="/sciencedept" element={<Sciencedept/>} />
+        <Route path="/sciencedept/sh-faculty" element={<Sh_faculty />} />
+        <Route path="/sciencedept/sh-lab-facility" element={<Sh_lab_facility />} />
+        <Route path="/sciencedept/sh-research" element={<Sh_research/>} />
+        <Route path="/sciencedept/science-programme" element={<Science_Programme/>} />
         <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
         <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
         <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
