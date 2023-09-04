@@ -8,10 +8,11 @@ import mobile_logo from '../../assets/pictures/mobile-logo.webp'
 import {top_nav_paths,bottom_nav_paths} from '../../constants/path.js'
 
 import {Dropdown} from '../../widgets'
+import { Link } from 'react-router-dom'
 const Navigation = () => {
 
     const togglemenu=()=>{
-        // console.log("CLICKED")
+        console.log("CLICKED")
         document.querySelector('.offcanvas-collapse').classList.toggle('open')
     }
 
@@ -29,7 +30,7 @@ const Navigation = () => {
                     <div className="container-fluid hi">
                         <ul className="navbar-nav good me-auto mb-2 mb-lg-0">
 
-                            {top_nav_paths.map((item)=><Dropdown key={item.id} type={item.type} title={item.title} base={item.basepath} links={item.links}/>)}
+                            {top_nav_paths.map((item)=><Dropdown func={togglemenu} key={item.id} type={item.type} title={item.title} base={item.basepath} links={item.links}/>)}
                             
                         </ul>
                     </div>
@@ -53,8 +54,8 @@ const Navigation = () => {
         </nav>
 
         <div className="logo">
-            <a href="/" className="u"><img className='responsive' src={desktop_logo} alt="logo image" /></a>
-            <a href="/" className="u"><img className='responsive1' src={mobile_logo} alt="logo image" /></a>
+            <Link to="/" className="u"><img className='responsive' src={desktop_logo} alt="logo image" /></Link>
+            <Link to="/" className="u"><img className='responsive1' src={mobile_logo} alt="logo image" /></Link>
         </div>
 
     </div>

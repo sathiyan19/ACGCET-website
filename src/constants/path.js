@@ -14,7 +14,7 @@ const top_nav_paths=[
     'basepath':'javascript:void(0);',
     'links':[{'path':"/govern",'link':"Governing council"},
             {'path':"/office",'link':"Office"},
-            {'path':"/organisation",'link':"Organisation Structure"},
+            {'path':"/organisation",'link':"Organization Structure"},
             {'path':"/under",'link':"Committee/Cell"}]
     },
 
@@ -75,7 +75,7 @@ const top_nav_paths=[
             {'path':'/ecedept','link':"Electronics & Communication Engineering"},
             {'path':'/','link':"Mechanical Engineering"},
             {'path':'/civildept','link':"Civil Engineering"},
-            {'path':'/mechdept','link':"Science & Humanities"}]
+            {'path':'/sciencedept','link':"Science & Humanities"}]
     },
 
     {"id":'9',
@@ -138,7 +138,7 @@ const bottom_nav_paths=[
             {'path':'/ecedept','link':"Electronics & Communication Engineering"},
             {'path':'/mechdept','link':"Mechanical Engineering"},
             {'path':'/civildept','link':"Civil Engineering"},
-            {'path':'/','link':"Science & Humanities"}]
+            {'path':'/sciencedept','link':"Science & Humanities"}]
     },
 
     {"id":'15',

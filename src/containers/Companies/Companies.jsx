@@ -1,13 +1,37 @@
-import React from 'react'
+import React from "react";
+
+import "./Companies.css";
+
+import zoho from "../../assets/pictures/zoho.webp";
+import hcl from "../../assets/pictures/hcl.webp";
+import lt from "../../assets/pictures/lt.webp";
+import gofrugal from "../../assets/pictures/gofrugal.webp";
+import wipro from "../../assets/pictures/wipro.webp";
+import whiteblue from "../../assets/pictures/whiteblue.webp";
+import { Underline } from "../../widgets";
+
 
 import './Companies.css'
-import { Underline } from "../../widgets";
 import { reccarousal } from '../../constants/home';
 import { Slideshow } from '../../components';
 
+import zoho from '../../assets/pictures/zoho.webp'
+import hcl from '../../assets/pictures/hcl.webp'
+import lt from '../../assets/pictures/lt.webp'
+import gofrugal from '../../assets/pictures/gofrugal.webp'
+import wipro from '../../assets/pictures/wipro.webp'
+import whiteblue from '../../assets/pictures/whiteblue.webp'
+
 import q1 from "../../assets/pictures/quote1.png";
 import q2 from "../../assets/pictures/quote2.png";
-
+const reccarousal=[
+    zoho,
+    hcl,
+    lt,
+    gofrugal,
+    wipro,
+    whiteblue
+  ]
 const Companies = () => {
   return (
     <div className="rec">
@@ -29,11 +53,10 @@ const Companies = () => {
             </div>
           </div>
           <div className="recpic">
-            <Slideshow images={reccarousal} />
+            <Slideshow images={reccarousal} flag="true" />
           </div>
         </div>
-      </div>
+        <a href="/" className="know">Know More</a>
+    </div>
   )
 }
-
-export default Companies

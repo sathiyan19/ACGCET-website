@@ -24,7 +24,7 @@ const customStyles = {
         </div>
 
 <div className='circle1'>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+        <svg className='progress_chart' xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
             <defs>
                <linearGradient id="GradientColor">
                   <stop offset="0%" stop-color="#00134d" />

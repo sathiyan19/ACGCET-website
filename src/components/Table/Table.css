@@ -10,6 +10,7 @@
     padding: 20px;
     line-height: 1.5rem;
     color: black;
+    white-space: pre-line;
 }
 
 .comp_th{

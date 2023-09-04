@@ -9,3 +9,9 @@ export {default as Profile_display} from './Profile_display/Profile_display';
 export {default as Timeline} from './Timeline/Timeline';
 export {default as Listformat} from './Listformat/Listformat';
 export {default as Radial_menu} from './Radial_menu/Radial_menu';
+export {default as Hodmsg} from './Hodmsg/Hodmsg';
+export {default as Sh_tabs} from './Sh_tabs/Sh_tabs'
+export {default as Sh_tab_faculty} from './Sh_tabs/Sh_tab_faculty'
+export {default as Sh_tab_lab} from './Sh_tabs/Sh_tab_lab'
+export {default as Sh_tab_research} from './Sh_tabs/Sh_tab_research'
+export {default as Sh_tab_Programme} from './Sh_tabs/Sh_tab_Programme'

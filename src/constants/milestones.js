@@ -5,7 +5,7 @@ export const milestones=[
     },
     {
         'year':'2022',
-        'achieve':''
+        'achieve':'Centres of excellence in Antenna testing & Electronics test engineering worth 1 crore.'
     },
     {
         'year':'2021',
@@ -17,7 +17,7 @@ export const milestones=[
     },
     {
         'year':'2019',
-        'achieve':'Rs.2.00 Crores was sanctioned for the establishment of Centre of Excellence in Smart Manufacturing.'
+        'achieve':'Rs.1.00 Crores was sanctioned for the establishment of Centre of Excellence in Smart Manufacturing (Mechanical).'
     },
     {
         'year':'2019',

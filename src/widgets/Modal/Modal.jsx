@@ -82,10 +82,12 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2 }) => {
               <div className="cont-head">{heading}</div>
               <div className="cont-abt">{sub_text}</div>
             </div>
+            {(content_1 || content_2) &&(
             <button className="but" id="but" onClick={displaymodal}>
               Know more &nbsp;
               <span className="fa fa-angle-double-right yah"></span>
             </button>
+            )}
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import './Slideshow.css'
 
 import touch_effect from '../../Functions/touch_detect';
 
-const Slideshow = ({images,arrow_flag}) => {
+const Slideshow = ({images,flag}) => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -39,13 +39,10 @@ const slideshowInterval = setInterval(plus, 5000); // Change the interval as nee
             <img src={image} style={{ width: '100%' }} alt={`Slide ${index}`} />
           </div>
         ))}
-        {arrow_flag &&(
-          <>
-          <a className="prev1" onClick={minus}>❮</a>
+        {!flag && (<>
+        <a className="prev1" onClick={minus}>❮</a>
         <a className="next1" onClick={plus}>❯</a>
-          </>
-        )}
-        
+        </>)}
       </div>
       <br />
       <div className="tor">

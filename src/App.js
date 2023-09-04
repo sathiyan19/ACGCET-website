@@ -1,5 +1,5 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React,{useEffect} from "react";
+import { Routes, Route,useLocation } from "react-router-dom";
 
 import { Navigation, Footer } from "./components";
 
@@ -59,11 +59,21 @@ import {
   Eee_peo,
   Eee_faculties,
   Eee_lab,
-  Eee_events
+  Eee_events,
+  Sciencedept,
+  Sh_faculty,
+  Sh_lab_facility,
+  Sh_research,
+  Science_Programme
 } from "./pages";
 import "./App.css";
 
 const App = () => {
+  const location = useLocation();
+  console.log(location)
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[location])
   return (
     <div>
       <Navigation />
@@ -107,8 +117,14 @@ const App = () => {
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
-        <Route path="/mechdept" element={<Mechdept/>} />
+        <Route path="/mechdept" element={<Under/>} />
+        {/* <Route path="/mechdept" element={<Mechdept/>} /> */}
         <Route path="/eeedept" element={<Eeedept/>} />
+        <Route path="/sciencedept" element={<Sciencedept/>} />
+        <Route path="/sciencedept/sh-faculty" element={<Sh_faculty />} />
+        <Route path="/sciencedept/sh-lab-facility" element={<Sh_lab_facility />} />
+        <Route path="/sciencedept/sh-research" element={<Sh_research/>} />
+        <Route path="/sciencedept/science-programme" element={<Science_Programme/>} />
         <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
         <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
         <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />

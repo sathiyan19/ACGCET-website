@@ -18,11 +18,20 @@
     font-size: 20px 
 }
 
+.figure_box{
+    margin:40px 30px;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .figure-text {
     color: white;
     font: "futura-pt-bold", sans-serif;
-    font-size: 35px;
+    font-size: 24px;
 }
 
 .figure {
@@ -33,6 +42,7 @@
     text-shadow: 0 2px 4px #000000;
     align-items: center;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 
@@ -43,9 +53,16 @@
 .boxy{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.boxy-1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 .ther_gap{
-    height: 100px;
+    height: 60px;
 }
 
 .no {
@@ -100,6 +117,26 @@
     text-shadow: 2px 2px 4px #000000
 }
 
+@media(max-width:1293px){
+    .figure_box{
+        margin:40px 20px;
+    }
+}
+@media(max-width:1200px){
+    .ther_gap{
+        height: 30px;
+    }
+    .figure_box{
+        margin: 30px 20px;
+    }
+}
+
+@media(max-width:872px){
+    .boxy-1{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
 @media (max-width:800px) {
     .parallax{
         height: 620px;
@@ -108,7 +145,7 @@
         height: 620px;
     }
     .ther_gap{
-        height: 50px;
+        height: 10px;
     }
     .ri {
         height: 0;
@@ -117,7 +154,7 @@
         padding: 0 30px;
     }
     .headfoot {
-        padding-top: 20px;
+        padding-top: 60px;
     }
     .figure {
         font-size: 30px;
@@ -126,7 +163,7 @@
         font-size: 28px;
     }
     .figure_box {
-        margin: 20px 0;
+        margin: 20px 15px;
     }
     .fs {
         margin-top: 20px;
@@ -139,45 +176,78 @@
     }
 }
 
+@media(max-width:723px){
+    .figure-text{
+        font-size: 20px;
+    }
+}
+
 @media(max-width:575px) {
     .jack {
         font-size: 18px;
     }
     .boxy{
-        justify-content: space-between;
+        justify-content: center;
     }
-    .figure {
-        font-size: 24px;
+    .boxy-1{
+        grid-template-columns: repeat(2,1fr);
     }
-    .figure-text {
-        font-size: 22px;
+    .headfoot{
+        padding-top: 30px;
     }
 }
 
-@media(max-width:425px) {
+@media(max-width:450px) {
+    /* .parallax{
+        height: 750px;
+    }
+    .dna{
+        height: 750px;
+    } */
+    .figure_box{
+        /* margin: 10px; */
+    }
+    .figure{
+        /* margin-bottom: 0; */
+        /* font-size: 22px */
+    }
     .jack {
         font-size: 14px;
     }
     .headfoot {
         font-size: 30px!important;
+        padding-bottom: 0 !important;
     }
     /* .figure {
         font-size: 25px;
-    }
+    }*/
     .figure-text {
-        font-size: 25px;
-    } */
+        /* font-size: 22px; */
+    }
     .boxy{
         flex-direction: column;
         align-items: center;
     }
+    
     .ther_gap{
-        height: 10px;
+        height: 0px;
     }
     .headfoot{
-        padding-top: 5px;
+        padding-top: 30px;
     }
     .dna{
         padding: 20px 10px;
+    }
+}
+
+@media(max-width:356px){
+    .headfoot{
+        padding-top: 10px;
+    }
+    .figure-text{
+        font-size: 17.5px;
+    }
+    .figure{
+        font-size: 24px;
     }
 }

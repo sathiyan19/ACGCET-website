@@ -125,7 +125,7 @@
   
     .recparasec img{
       height: 40px;
-      width:40px;
+      width:40px
     }
   }
   
@@ -141,6 +141,12 @@
   @media (max-width:350px){
     .recout1{
       height: 120px;
+    }
+  }
+  
+  @media (max-width:335px){
+    .recout2{
+      height: 620px;
     }
   }
   
