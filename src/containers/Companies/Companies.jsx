@@ -17,7 +17,7 @@ const Companies = () => {
           <div className="rectext">
             <Underline heading="Top Recruiters" />
             <div className="recparasec">
-              <img className="q1" src={q1} alt="Mottonss" />
+              <img className="recq1" src={q1} alt="Mottonss" />
               <p className="recpara">
                 Experience our College's Top Recruiters Section, where
                 excellence meets opportunity. Explore the remarkable
@@ -25,7 +25,7 @@ const Companies = () => {
                 our students to embark on successful journeys and impactful
                 careers in diverse fields."
               </p>
-              <img className="q2" src={q2} alt="Mottonss" />
+              <img className="recq2" src={q2} alt="Mottonss" />
             </div>
           </div>
           <div className="recpic">

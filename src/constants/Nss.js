@@ -46,6 +46,21 @@ const profile_info =[
   }
 ]
 
+const achieve19 = [
+  {
+    id:1,
+    point:'This college NSS unit received “award of appreciation” from AICTE, NEWDELHI for ONE STUDENT ONE TREE campaign from the MHRD Minister of India.'
+  },
+  {
+    id:2,
+    point:'This college NSS Unit received “Swachch Bharat Summer Internship 2018” award with First Rank at Anna University, Chennai.'
+  },
+  {
+    id:3,
+    point:'Selvan S.M. Mangalam BE Mech IV year and Selvi S. Aarthy, BE EEE III year received “Best NSS Volunteer award” at Anna University, Chennai'
+  }
+]
+
 const achieve17=[
   {
     'sno':'1',
@@ -120,4 +135,4 @@ const achieve17=[
   }
 ]
 
-export {Nss_heroimage_carousalinfo,profile_info,achieve17}
+export {Nss_heroimage_carousalinfo,profile_info,achieve17,achieve19}

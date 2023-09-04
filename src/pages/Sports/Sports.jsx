@@ -2,14 +2,7 @@ import React from "react";
 
 import "./Sports.css";
 
-
-
-
-import {
-  Heroimagecarousal,
-  Timeline,
-  Listformat
-} from "../../components";
+import { Heroimagecarousal, Timeline, Listformat } from "../../components";
 import { Deptvision, Underline, Deptmission } from "../../widgets";
 import {
   Sports_heroimage_carousalinfo,
@@ -43,11 +36,6 @@ const Sports = () => {
 
         <Listformat points={sportslist} />
       </div>
-
-      
-
-
-      
     </div>
   );
 };
