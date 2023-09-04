@@ -14,7 +14,6 @@ import clg_mainbuild from "../../assets/pictures/clg_mainbuild.webp";
 import nehru from "../../assets/pictures/nehru.webp";
 import prasad from "../../assets/pictures/prasad.webp";
 import kkdi from "../../assets/pictures/kkdi.webp";
-import bus from "../../assets/pictures/bus.jpg"
 
 import {IoHome} from 'react-icons/io5'
 
@@ -255,7 +254,7 @@ const About = () => {
                 destinations within the region.
               </p>
               <div className="img_holder">
-                <img className="flex_img" src={bus} alt="Nehru at ACGCET" />
+                <img className="flex_img" src={kkdi} alt="Nehru at ACGCET" />
               </div>
             </div>
 
