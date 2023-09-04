@@ -24,7 +24,7 @@
 }
 
 .visit_content{
-    /* padding: 10px 30px; */
+    padding: 10px 30px;
 }
 
 .abt-sub-head{
@@ -82,12 +82,12 @@
     }
 }
 .img_holder{
-    width: 50%;
+    width: 48%;
     margin-bottom: 20px;
     /* background-color: antiquewhite; */
 }
 .flex_img{
-    width: 100%;
+    width: 98%;
     height: auto;
     /* max-height: 300px; */
 }
@@ -187,5 +187,3 @@
         font-size: 26px;
     }
 }
-
-
