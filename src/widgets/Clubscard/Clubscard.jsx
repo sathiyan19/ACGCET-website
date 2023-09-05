@@ -14,7 +14,7 @@ const Clubscard = ({
   studentdesi,
 }) => {
   return (
-    <div className="content">
+    <div className="clubcard_content">
       <div className="section">
         <div className="image-container">
           <img src={logoimg} alt="oruimagevaru" />
