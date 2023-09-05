@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .eeebg {
-  background: url("../../assets/pictures/ecebg.webp");
+  background: url("../../assets/pictures/eeebg-tinted.webp");
   min-height: 550px;
   background-color: #00134d;
   position: relative;
@@ -142,7 +142,7 @@
 
 @media (max-width: 425px) {
   .eeebg {
-    background: url("../../assets/pictures/ecebgm.webp");
+    background: url("../../assets/pictures/eeebgm-tinted.webp");
     min-height: 550px;
     width: 100%;
     height: 750px;
