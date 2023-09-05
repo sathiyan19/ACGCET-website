@@ -2,16 +2,19 @@
 import image1 from "../assets/pictures/rotracthero.webp";
 import image2 from "../assets/pictures/freshershero.webp";
 
+
 // Clubs_info
 import freshers from "../assets/pictures/fresherslogo.webp";
 import music from "../assets/pictures/musiclogo.webp";
 import muthamizh from "../assets/pictures/muthamizhlogo.webp";
 import leo from "../assets/pictures/leologo.webp";
 
+const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/leo.webp";
+
 const Clubs_heroimage_carousalinfo = {
   id: 1,
   title: "Clubs at ACGCET",
-  img_list: [image1, image2],
+  img_list: [image1, image2,image3],
 };
 
 const Clubs_info = [

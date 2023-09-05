@@ -59,13 +59,13 @@ import {
   Eee_peo,
   Eee_faculties,
   Eee_lab,
-  Eee_events
+  Eee_events,
+  Ece_placement
 } from "./pages";
 import "./App.css";
 
 const App = () => {
   const location = useLocation();
-  console.log(location)
   useEffect(()=>{
     window.scrollTo(0,0)
   },[location])
@@ -130,6 +130,7 @@ const App = () => {
         <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
+        <Route path="/ecedept/ece-placement" element={<Ece_placement/>} />
       </Routes>
       <Footer />
     </div>

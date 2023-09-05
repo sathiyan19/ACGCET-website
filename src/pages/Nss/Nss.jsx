@@ -13,8 +13,7 @@ import q1 from "../../assets/pictures/quote1.png";
 import q2 from "../../assets/pictures/quote2.png";
 
 import { Heroimagecarousal,Table } from "../../components";
-import { Profilecard } from "../../widgets";
-import { Backtotop } from "../../widgets";
+import { Profilecard,Backtotop,Underline } from "../../widgets";
 import { Nss_heroimage_carousalinfo,profile_info,achieve17} from "../../constants/Nss";
 
 const Nss = () => {

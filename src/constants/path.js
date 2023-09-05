@@ -13,7 +13,7 @@ const top_nav_paths=[
     'title':'Administration',
     'basepath':'javascript:void(0);',
     'links':[{'path':"/govern",'link':"Governing council"},
-            {'path':"/office",'link':"Office"},
+            {'path':"/office",'link':"Principal Office"},
             {'path':"/organisation",'link':"Organization Structure"},
             {'path':"/under",'link':"Committee/Cell"}]
     },
@@ -117,7 +117,7 @@ const top_nav_paths=[
 
     {"id":'13',
     "type":"2",
-    'title':'Quick links',
+    'title':'Centers & Facilities',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/under','link':"Link1"},
         //     {'path':'/under','link':"Link2"},
@@ -178,7 +178,7 @@ const bottom_nav_paths=[
 
     {"id":'19',
     "type":"3",
-    'title':'Quick links',
+    'title':'Centers & Facilities',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/','link':"Link1"},
             {'path':'/','link':"Link2"},

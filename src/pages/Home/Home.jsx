@@ -7,13 +7,6 @@ import {Information,Founder,Companies,Events,Paralax,News} from '../../container
 
 import clgpic from '../../assets/pictures/clgpicfinal.webp'
 
-// import {Profilecard} from '../../widgets'
-// import {profileinfo} from '../../constants/profilecards'
-
-// import {Progressbar} from '../../widgets'
-// import { progressinfo } from '../../constants/progressbar'
-
-
 const Home = () => {
   return (
     <>
@@ -33,15 +26,6 @@ const Home = () => {
         
         <Backtotop/>
 
-        {/* {progressinfo.map((item)=>(
-          <Progressbar
-            key={item.id}
-            percent1={item.percent1}
-            percent2={item.percent2}
-          />
-        ))}  */}
-
-        {/* <Profile_display list_info={profileinfo}/> */}
     </>
   )
 }

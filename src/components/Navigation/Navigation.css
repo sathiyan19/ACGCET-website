@@ -104,8 +104,16 @@ nav.navbar-static-top {
     cursor: pointer;
     border-bottom: 2px solid #ff6600;
 }
+.nav-link:focus {
+    color: white;
+}
 
 .link {
+    color: #00134d;
+    border: none;
+    /* border-bottom: 2px solid #00134d; */
+}
+.link:focus {
     color: #00134d;
     border: none;
     /* border-bottom: 2px solid #00134d; */

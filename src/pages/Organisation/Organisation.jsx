@@ -2,13 +2,15 @@ import React from 'react'
 
 import './Organisation.css'
 
+import { Underline } from '../../widgets';
+
 import org_struc from "../../assets/pictures/org_str.webp";
 
 const Organisation = () => {
   return (
     <div className="org_structure">
           <div className="org_heading ">
-            Organization Structure
+            <Underline heading="Organization Structure"/>
           </div>
           <div className="org_text">
             The college is a Government Institution and comes under the direct

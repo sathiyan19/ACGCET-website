@@ -10,3 +10,4 @@ export {default as Timeline} from './Timeline/Timeline';
 export {default as Listformat} from './Listformat/Listformat';
 export {default as Radial_menu} from './Radial_menu/Radial_menu';
 export {default as Hodmsg} from './Hodmsg/Hodmsg';
+export {default as Reunion_card_display} from './Reunion_card_display/Renioun_card_display';

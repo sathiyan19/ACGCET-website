@@ -1,37 +1,11 @@
+//IMPORTANT:: Date Format: SEP 06 2023 
 export const events=[
     {
         'id':'1',
-        'date':'SEP 22',
-        'title':'Thiran',
-        'time':'4:00 pm',
-        'venue':'Murugappa Hall'
-    },
-    {
-        'id':'2',
-        'date':'SEP 22',
-        'title':'Thiran',
-        'time':'4:00 pm',
-        'venue':'Murugappa Hall'
-    },
-    {
-        'id':'3',
-        'date':'SEP 22',
-        'title':'Thiran',
-        'time':'4:00 pm',
-        'venue':'Murugappa Hall'
-    },
-    {
-        'id':'4',
-        'date':'SEP 22',
-        'title':'Thiran',
-        'time':'4:00 pm',
-        'venue':'Murugappa Hall'
-    },
-    {
-        'id':'5',
-        'date':'SEP 22',
-        'title':'Thiran',
-        'time':'4:00 pm',
-        'venue':'Murugappa Hall'
+        'date':'SEP 14 2023',
+        'title':'Induction Programme for Freshers',
+        'time':'09:00 am',
+        'venue':'Murugappa Hall',
+        'details':'Hi'
     },
 ]

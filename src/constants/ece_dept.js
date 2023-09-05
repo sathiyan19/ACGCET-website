@@ -1,120 +1,120 @@
-import dp from '../assets/pictures/dp.jpg'
-import dpm from '../assets/pictures/boy.webp'
-import dpf from '../assets/pictures/girl.webp'
-import cover from '../assets/pictures/microchip.webp'
+import dp from "../assets/pictures/dp.jpg";
+import dpm from "../assets/pictures/boy.webp";
+import dpf from "../assets/pictures/girl.webp";
+import cover from "../assets/pictures/microchip.webp";
 
-import swayam from '../assets/pictures/swayam.webp'
-import robotics from '../assets/pictures/robotics.webp'
-import placement from '../assets/pictures/placement.webp'
+import swayam from "../assets/pictures/swayam.webp";
+import robotics from "../assets/pictures/robotics.webp";
+import placement from "../assets/pictures/placement.webp";
 
-import thiran_2k22 from '../assets/pictures/ece_dept/stud_activities/Thiran 2k22.webp'
-import circuit_debug from '../assets/pictures/ece_dept/stud_activities/Circuit Debugging.webp'
-import best_manager from '../assets/pictures/ece_dept/stud_activities/best_manager.webp'
-import tech_quiz from '../assets/pictures/ece_dept/stud_activities/tech_quiz.webp'
-import paper_presentation from '../assets/pictures/ece_dept/stud_activities/paper_presentation.webp'
-import circuit_designers from '../assets/pictures/ece_dept/stud_activities/circuit_designers.webp'
-import top_design1 from '../assets/pictures/ece_dept/stud_activities/top_design1.webp'
-import top_design2 from '../assets/pictures/ece_dept/stud_activities/top_designer2.webp'
-import top_designers_2k22 from '../assets/pictures/ece_dept/stud_activities/top_designers_2k22.webp'
+import thiran_2k22 from "../assets/pictures/ece_dept/stud_activities/Thiran 2k22.webp";
+import circuit_debug from "../assets/pictures/ece_dept/stud_activities/Circuit Debugging.webp";
+import best_manager from "../assets/pictures/ece_dept/stud_activities/best_manager.webp";
+import tech_quiz from "../assets/pictures/ece_dept/stud_activities/tech_quiz.webp";
+import paper_presentation from "../assets/pictures/ece_dept/stud_activities/paper_presentation.webp";
+import circuit_designers from "../assets/pictures/ece_dept/stud_activities/circuit_designers.webp";
+import top_design1 from "../assets/pictures/ece_dept/stud_activities/top_design1.webp";
+import top_design2 from "../assets/pictures/ece_dept/stud_activities/top_designer2.webp";
+import top_designers_2k22 from "../assets/pictures/ece_dept/stud_activities/top_designers_2k22.webp";
 
-import somasundaram from '../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp'
-import asr from '../assets/pictures/ece_dept/ece_faculties/ASR.webp'
-
+import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
+import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
 
 const ece_dept_menu = [
   {
     id: "1",
     path: "/ecedept",
     link: "About the Department",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "2",
     path: "/ecedept/ece-peo",
     link: "Programme Objectives & Outcomes",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "3",
     path: "/ecedept/ece-faculties",
     link: "Faculties",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "4",
     path: "/ecedept/ece-lab",
     link: "Lab Facilities",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "5",
     path: "#",
     link: "Department Library",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "6",
     path: "#",
     link: "Research and Publications",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "7",
     path: "/ecedept/ece-dept-events",
     link: "Association Events",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "8",
-    path: "#",
+    path: "/ecedept/ece-placement",
     link: "Placement Activites",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "9",
     path: "/ecedept/ece-rankers",
     link: "Elite Rankers",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "10",
     path: "/ecedept/ece-student-activity",
     link: "Student Activities",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "11",
     path: "/ecedept/ece-projects",
     link: "Best Projects",
-    arl:'l'
+    arl: "l",
   },
   {
     id: "12",
     path: "/ecedept/ece-antenna-testing",
     link: "Antenna Testing",
-    arl:'l'
+    arl: "l",
   },
 ];
 
-const ece_hod={
-  name:"Dr.A.Sivanantharaja",
-  designation:"Head of the Department, ECE",
-  pic:asr,
-  content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
-  "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
-  "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
-  "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"+
-  "in reprehenderit in voluptate velit esse cillum dolore eu fugiat"+
-  "nulla pariatur. Excepteur sint occaecat cupidatat non proident,"+
-  "sunt in culpa qui officia deserunt mollit anim id est laborum."+
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
-  "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
-  "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
-  "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"+
-  "in reprehenderit in voluptate velit esse cillum dolore eu fugiat"+
-  "nulla pariatur. Excepteur sint occaecat cupidatat non proident,"+
-  "sunt in culpa qui officia deserunt mollit anim id est laborum."
-}
+const ece_hod = {
+  name: "Dr.A.Sivanantharaja",
+  designation: "Head of the Department, ECE",
+  pic: asr,
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" +
+    "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut" +
+    "enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
+    "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" +
+    "in reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
+    "nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
+    "sunt in culpa qui officia deserunt mollit anim id est laborum." +
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" +
+    "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut" +
+    "enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
+    "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" +
+    "in reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
+    "nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
+    "sunt in culpa qui officia deserunt mollit anim id est laborum.",
+};
 
 const ece_fac_profiles = [
   {
@@ -124,7 +124,7 @@ const ece_fac_profiles = [
     name: "C.Sinduja",
     Designation: "Assistant Professor",
     mailid: "sindhu.mzcet@gmail.com",
-    pdf:"https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link",
   },
   {
     id: "2",
@@ -133,7 +133,7 @@ const ece_fac_profiles = [
     name: "Dr.S.Somasundaram",
     Designation: "Associate Professor",
     mailid: "ssm98@rediffmail.com",
-    pdf:"https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link",
   },
   {
     id: "3",
@@ -142,7 +142,7 @@ const ece_fac_profiles = [
     name: "Dr.G.Karpagarajesh",
     Designation: "Associate Professor",
     mailid: "gkrajesh1@gmail.com",
-    pdf:"https://drive.google.com/file/d/1NJ0Um7-gKLpc5v-WkQLJ40yrlZnNeXgV/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1NJ0Um7-gKLpc5v-WkQLJ40yrlZnNeXgV/view?usp=drive_link",
   },
   {
     id: "4",
@@ -151,7 +151,7 @@ const ece_fac_profiles = [
     name: "Keerthana.P",
     Designation: "Assistant Professor",
     mailid: "keerthiperumal@gmail.com",
-    pdf:"https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
   },
   {
     id: "5",
@@ -160,7 +160,7 @@ const ece_fac_profiles = [
     name: "Dr.D.Helena Margaret",
     Designation: "Associate Professor",
     mailid: "helenaraj@yahoo.com",
-    pdf:"https://drive.google.com/file/d/1YnfHK-jwVQ_U8XSfZMwNrubMH7S8fgQs/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1YnfHK-jwVQ_U8XSfZMwNrubMH7S8fgQs/view?usp=drive_link",
   },
   {
     id: "6",
@@ -169,7 +169,7 @@ const ece_fac_profiles = [
     name: "Renisha G",
     Designation: "Associate Professor",
     mailid: "renisha.ece@gmail.com",
-    pdf:"https://drive.google.com/file/d/12KYashHei2R52bEaM0KDNBhoMiKU_k66/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/12KYashHei2R52bEaM0KDNBhoMiKU_k66/view?usp=drive_link",
   },
   {
     id: "7",
@@ -178,7 +178,7 @@ const ece_fac_profiles = [
     name: "M.Aruna Rani",
     Designation: "Assistant Professor(adhoc)",
     mailid: "arunaselva27@gmail.com",
-    pdf:"https://drive.google.com/file/d/1iZp_6Wj4nb6q9TxaK6yxXn_yHW-J6jwc/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1iZp_6Wj4nb6q9TxaK6yxXn_yHW-J6jwc/view?usp=drive_link",
   },
   {
     id: "8",
@@ -187,7 +187,7 @@ const ece_fac_profiles = [
     name: "Dr.B.Rajesh Kanna",
     Designation: "Assistant Professor",
     mailid: "rajeshkanna.ece.au@gmail.com",
-    pdf:"https://drive.google.com/file/d/1aQxGj7vgE1McsS4UULIW2PPYPuk7K2VQ/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1aQxGj7vgE1McsS4UULIW2PPYPuk7K2VQ/view?usp=drive_link",
   },
   {
     id: "9",
@@ -196,7 +196,7 @@ const ece_fac_profiles = [
     name: "C.Karthika Pragadeeswari",
     Designation: "Assistant Professor",
     mailid: "bk.karthika1969@gmail.com",
-    pdf:"https://drive.google.com/file/d/1u1pS75PDwZ4xLl7yhVyJFx4U_Iryzm5z/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1u1pS75PDwZ4xLl7yhVyJFx4U_Iryzm5z/view?usp=drive_link",
   },
   {
     id: "10",
@@ -205,7 +205,7 @@ const ece_fac_profiles = [
     name: "G.Dhevanandhini",
     Designation: "Assistant Professor",
     mailid: "dhevakeshav@gmail.com",
-    pdf:"https://drive.google.com/file/d/1EAyFUlaybqf58HDIQIR1wU7_GSKIDtaD/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1EAyFUlaybqf58HDIQIR1wU7_GSKIDtaD/view?usp=drive_link",
   },
   {
     id: "11",
@@ -214,7 +214,7 @@ const ece_fac_profiles = [
     name: "C.Mahendran",
     Designation: "Assistant Professor",
     mailid: "gc.mahendran@gmail.com",
-    pdf:"https://drive.google.com/file/d/1lT8lYFWnoW8bkBYg8wfEfo-G4p6ru2Ui/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1lT8lYFWnoW8bkBYg8wfEfo-G4p6ru2Ui/view?usp=drive_link",
   },
   {
     id: "12",
@@ -223,7 +223,7 @@ const ece_fac_profiles = [
     name: "Mrs.X.Merlin Sheeba",
     Designation: "Assistant Professor",
     mailid: "renachristina@gmail.com",
-    pdf:"https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
   },
   {
     id: "13",
@@ -232,7 +232,7 @@ const ece_fac_profiles = [
     name: "SP.Ramya",
     Designation: "Assistant Professor",
     mailid: "sp.ramya08@gmail.com",
-    pdf:"https://drive.google.com/file/d/1L1R7FViSxmTaNyeJP9Y7bKDWWMO79gOU/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/1L1R7FViSxmTaNyeJP9Y7bKDWWMO79gOU/view?usp=drive_link",
   },
   {
     id: "14",
@@ -241,7 +241,7 @@ const ece_fac_profiles = [
     name: "P.Sezhina Kanakambika",
     Designation: "Assistant Professor",
     mailid: "sezhina@gmail.com",
-    pdf:"https://drive.google.com/file/d/16zoEOL7QgiNCEoQ3SaSxov7y2f34XKTj/view?usp=drive_link"
+    pdf: "https://drive.google.com/file/d/16zoEOL7QgiNCEoQ3SaSxov7y2f34XKTj/view?usp=drive_link",
   },
 ];
 const ece_sup_profiles = [
@@ -252,7 +252,7 @@ const ece_sup_profiles = [
     name: "Mr.B.Chandrasekaran",
     Designation: "Electrician",
     mailid: "Chandrasekaran70@gmail.com",
-    pdf:""
+    pdf: "",
   },
   {
     id: "2",
@@ -261,7 +261,7 @@ const ece_sup_profiles = [
     name: "Ms.D.Tamil Selvi",
     Designation: "Mech.Grade-II",
     mailid: "tamilmd123@gmail.com",
-    pdf:""
+    pdf: "",
   },
   {
     id: "3",
@@ -270,7 +270,7 @@ const ece_sup_profiles = [
     name: "Ms.N.Vasanthi Meena",
     Designation: "Lab Assistant",
     mailid: "vasanthimeena8686@gmail.com",
-    pdf:""
+    pdf: "",
   },
   {
     id: "4",
@@ -279,7 +279,7 @@ const ece_sup_profiles = [
     name: "Mr.G.Karthikeyan",
     Designation: "Mech.Grade-II",
     mailid: "gkarthikece1973@gmail.com",
-    pdf:""
+    pdf: "",
   },
   {
     id: "5",
@@ -288,7 +288,7 @@ const ece_sup_profiles = [
     name: "Mr.K.Sankar",
     Designation: "Cleaner",
     mailid: "",
-    pdf:""
+    pdf: "",
   },
   {
     id: "6",
@@ -297,17 +297,15 @@ const ece_sup_profiles = [
     name: "Ms.A.Akila",
     Designation: "Lab Assistant",
     mailid: "Akilaanu1999@gmail.com",
-    pdf:""
+    pdf: "",
   },
-  
-  
 ];
 const ece_rankers = [
   {
     id: "1",
     cover: cover,
-    dp: dp,
-    name: "Arjun",
+    dp: dpf,
+    name: "Name",
     Designation: "Designation",
     mailid: "emailid@gmail.com",
   },
@@ -427,289 +425,359 @@ const ece_outcomes = [
 const ece_progs = [
   {
     id: "1",
-    year:"1986",
-    period:"4 Years",
-    top_head:"B.E.",
+    year: "1986",
+    period: "4 Years",
+    top_head: "B.E.",
     program: "Electronics and Communication Engineering",
     intake: "60",
   },
   {
     id: "2",
-    year:"1986",
-    period:"2 Years",
-    top_head:"M.E.",
+    year: "1986",
+    period: "2 Years",
+    top_head: "M.E.",
     program: "Microwave & Optical Communication",
     intake: "18",
   },
   {
     id: "3",
-    year:"1986",
-    period:"4 Years",
-    top_head:"Part time B.E.",
+    year: "1986",
+    period: "4 Years",
+    top_head: "Part time B.E.",
     program: "Electronics and Communication Engineering",
     intake: "60",
   },
 ];
 
-const ece_acad_labs=[
+const ece_acad_labs = [
   {
-      'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    id: "1",
+    heading: "One Week Training on Robotics",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: robotics,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
   {
-      'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    id: "2",
+    heading: "Placement Activities",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: placement,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
   {
-      'id':'3',
-      'heading':'Foreign Training at University',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':swayam,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    id: "3",
+    heading: "Foreign Training at University",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: swayam,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
   {
-      'id':'4',
-      'heading':'Hi',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':swayam,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    id: "4",
+    heading: "Hi",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: swayam,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
-]
-const ece_dept_events=[
+];
+const ece_dept_events = [
   {
-      'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-  },
-  {
-      'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-  },
-]
-const ece_indus_labs=[
-  {
-      'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    id: "1",
+    heading: "One Week Training on Robotics",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: robotics,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
   {
-      'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    id: "2",
+    heading: "Placement Activities",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: placement,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
-]
-const ece_projects=[
+];
+const ece_indus_labs = [
   {
-      'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-  },
-  {
-      'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-  },
-]
-const ece_stud_activities=[
-  {
-    'id':'8',
-    'heading':'No event',
-    'sub-head':'Divya barathi, S.Lavanya & M.Arthi bagged 3rd place in _____________ contest conducted by Sudharsan Engineering College.',
-    'pic':top_design2,
-    'content_1':'',
-    'content_2':""
+    id: "1",
+    heading: "One Week Training on Robotics",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: robotics,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
   {
-    'id':'7',
-    'heading':'No event',
-    'sub-head':'S.Kavya, K.Thiviyadarssini & V.Sowmiya bagged 1st place in _____________ contest conducted by Sudharsan Engineering College.',
-    'pic':top_design1,
-    'content_1':'',
-    'content_2':""
+    id: "2",
+    heading: "Placement Activities",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: placement,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+  },
+];
+const ece_projects = [
+  {
+    id: "1",
+    heading: "One Week Training on Robotics",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: robotics,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
   {
-    'id':'6',
-    'heading':'Circuit Designers',
-    'sub-head':'R.Tharini, K.Rishika & T.Mhadevi bagged 3rd place in Circuit Designers contest conducted by Sudharsan Engineering College.',
-    'pic':circuit_designers,
-    'content_1':'',
-    'content_2':""
+    id: "2",
+    heading: "Placement Activities",
+    "sub-head":
+      "Some representative placeholder content for the second slide of the carousel.",
+    pic: placement,
+    content_1:
+      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
+      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    content_2:
+      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
+      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
+      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+  },
+];
+const ece_stud_activities = [
+  {
+    id: "8",
+    heading: "No event",
+    "sub-head":
+      "Divya barathi, S.Lavanya & M.Arthi bagged 3rd place in _____________ contest conducted by Sudharsan Engineering College.",
+    pic: top_design2,
+    content_1: "",
+    content_2: "",
   },
   {
-    'id':'9',
-    'heading':'Top Designers',
-    'sub-head':'',
-    'pic':top_designers_2k22,
-    'content_1':"Content1",
-    'content_2':"Content2"
+    id: "7",
+    heading: "No event",
+    "sub-head":
+      "S.Kavya, K.Thiviyadarssini & V.Sowmiya bagged 1st place in _____________ contest conducted by Sudharsan Engineering College.",
+    pic: top_design1,
+    content_1: "",
+    content_2: "",
   },
   {
-    'id':'5',
-    'heading':'Paper Presentation',
-    'sub-head':'',
-    'pic':paper_presentation,
-    'content_1':'',
-    'content_2':""
+    id: "6",
+    heading: "Circuit Designers",
+    "sub-head":
+      "R.Tharini, K.Rishika & T.Mhadevi bagged 3rd place in Circuit Designers contest conducted by Sudharsan Engineering College.",
+    pic: circuit_designers,
+    content_1: "",
+    content_2: "",
   },
   {
-    'id':'4',
-    'heading':'Technical Quiz-St.Michael',
-    'sub-head':'',
-    'pic':tech_quiz,
-    'content_1':'',
-    'content_2':""
+    id: "9",
+    heading: "Top Designers",
+    "sub-head": "",
+    pic: top_designers_2k22,
+    content_1: "Content1",
+    content_2: "Content2",
   },
   {
-    'id':'3',
-    'heading':'Best Manager',
-    'sub-head':'has bagged the best manager award in Hindustan Engineering College event.',
-    'pic':best_manager,
-    'content_1':'',
-    'content_2':""
+    id: "5",
+    heading: "Paper Presentation",
+    "sub-head": "",
+    pic: paper_presentation,
+    content_1: "",
+    content_2: "",
   },
   {
-      'id':'2',
-      'heading':'Circuit Debugging',
-      'sub-head':'S.Sushmitha bagged 1st place in Circuit Debugging contest conducted by GCE Srirangam.',
-      'pic':circuit_debug,
-      'content_1':'',
-      'content_2':""
+    id: "4",
+    heading: "Technical Quiz-St.Michael",
+    "sub-head": "",
+    pic: tech_quiz,
+    content_1: "",
+    content_2: "",
   },
   {
-    'id':'1',
-    'heading':"Thiran 2k22",
-    'sub-head':"Gokulakrishnan G bagged 2nd place in Thiran 2k22 with the project 'Wifi Automation' built with a team of 4.",
-    'pic':thiran_2k22,
-    'content_1':"",
-    'content_2':""
-},
-]
+    id: "3",
+    heading: "Best Manager",
+    "sub-head":
+      "has bagged the best manager award in Hindustan Engineering College event.",
+    pic: best_manager,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "2",
+    heading: "Circuit Debugging",
+    "sub-head":
+      "S.Sushmitha bagged 1st place in Circuit Debugging contest conducted by GCE Srirangam.",
+    pic: circuit_debug,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "1",
+    heading: "Thiran 2k22",
+    "sub-head":
+      "Gokulakrishnan G bagged 2nd place in Thiran 2k22 with the project 'Wifi Automation' built with a team of 4.",
+    pic: thiran_2k22,
+    content_1: "",
+    content_2: "",
+  },
+];
 
-const ece_antenna_software=[
+const ece_antenna_software = [
   {
-    id:'1',
-    point:'Advanced Design System (ADS)'
+    id: "1",
+    point: "Advanced Design System (ADS)",
   },
   {
-    id:'2',
-    point:'Ansys – Electronics Desktop'
+    id: "2",
+    point: "Ansys – Electronics Desktop",
   },
   {
-    id:'3',
-    point:'CST Studio Suite'
+    id: "3",
+    point: "CST Studio Suite",
   },
   {
-    id:'4',
-    point:'PathWave EM Design (EMPro)'
+    id: "4",
+    point: "PathWave EM Design (EMPro)",
   },
-]
-const ece_antenna_anechoic=[
+];
+const ece_antenna_anechoic = [
   {
-    id:'1',
-    point:'Vector Network Analyzer (100KHz - 20GHz) – Rohde & Schwarz make'
-  },
-  {
-    id:'2',
-    point:'Double Ridged Horn Antenna (1GHz - 18 GHz) and computational software'
-  },
-]
-const ece_antenna_rf=[
-  {
-    id:'1',
-    point:'Vector Network Analyzer (100KHz - 20GHz) – Rohde & Schwarz make'
+    id: "1",
+    point: "Vector Network Analyzer (100KHz - 20GHz) – Rohde & Schwarz make",
   },
   {
-    id:'2',
-    point:'Vector Network Analyzer (300KHz - 3GHz) - Agilent make'
+    id: "2",
+    point:
+      "Double Ridged Horn Antenna (1GHz - 18 GHz) and computational software",
+  },
+];
+const ece_antenna_rf = [
+  {
+    id: "1",
+    point: "Vector Network Analyzer (100KHz - 20GHz) – Rohde & Schwarz make",
   },
   {
-    id:'3',
-    point:'Spectrum Analyzer (5KHz-7.5GHz) – Rohde & Schwarz make'
+    id: "2",
+    point: "Vector Network Analyzer (300KHz - 3GHz) - Agilent make",
   },
   {
-    id:'4',
-    point:'Spectrum Analyzer (9KHz-3GHz) – Agilent make'
+    id: "3",
+    point: "Spectrum Analyzer (5KHz-7.5GHz) – Rohde & Schwarz make",
   },
   {
-    id:'5',
-    point:'Vector Signal Generator (250KHz-3GHz) – Agilent make'
+    id: "4",
+    point: "Spectrum Analyzer (9KHz-3GHz) – Agilent make",
   },
   {
-    id:'6',
-    point:'Mixed Signal Oscilloscope (300MHz) – Agilent make'
+    id: "5",
+    point: "Vector Signal Generator (250KHz-3GHz) – Agilent make",
   },
   {
-    id:'7',
-    point:'Power Sensor (10MHz -18GHz, -30dBm to 20dBm)'
+    id: "6",
+    point: "Mixed Signal Oscilloscope (300MHz) – Agilent make",
   },
-]
+  {
+    id: "7",
+    point: "Power Sensor (10MHz -18GHz, -30dBm to 20dBm)",
+  },
+];
 
-const progressinfo=[
+const ece_placement_info = [
   {
-      'id':"1",
-      'bigperc':85,
-      'smallperc':15,
-  }
-]
+    id:"1",
+    year: "2019-2023 Batch",
+    details: [
+      {
+        id: "1",
+        heading: "In-Campus",
+        perc: 72,
+      },
+      {
+        id: "2",
+        heading: "Higher Studies",
+        perc: 3,
+      },
+    ],
+  },
+  {
+    id:"2",
+    year: "2018-2022 Batch",
+    details: [
+      {
+        id: "1",
+        heading: "In-Campus",
+        perc: 69,
+      },
+    ],
+  },
+  {
+    id:"3",
+    year: "2017-2021 Batch",
+    details: [
+      {
+        id: "1",
+        heading: "In-Campus",
+        perc: 59,
+      },
+    ],
+  },
+];
 
 export {
   ece_dept_menu,
@@ -730,6 +798,5 @@ export {
   ece_antenna_rf,
   ece_antenna_software,
   ece_hod,
-
-  progressinfo
+  ece_placement_info,
 };

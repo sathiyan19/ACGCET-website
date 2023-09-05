@@ -21,7 +21,7 @@ const Radial_menu = ({menu_links}) => {
         <div className="dept_menu">
           <div className="dept_link_head">MENU</div>
           <div className="dept_link_holder">
-            {menu_links.map((item)=><Link key={item.id} to={item.path} className="dept_links">{item.link}</Link>)}
+            {menu_links.map((item)=><Link key={item.id} onClick={toggle_menu} to={item.path} className="dept_links">{item.link}</Link>)}
           </div>
         </div>
       </div>
