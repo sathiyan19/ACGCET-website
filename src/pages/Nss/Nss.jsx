@@ -12,10 +12,10 @@ import motto from "../../assets/pictures/mottonss.jpg";
 import q1 from "../../assets/pictures/quote1.png";
 import q2 from "../../assets/pictures/quote2.png";
 
-import { Heroimagecarousal,Table } from "../../components";
+import { Heroimagecarousal,Table,Listformat } from "../../components";
 import { Profilecard } from "../../widgets";
 import { Backtotop } from "../../widgets";
-import { Nss_heroimage_carousalinfo,profile_info,achieve17} from "../../constants/Nss";
+import { Nss_heroimage_carousalinfo,profile_info,achieve17,achieve19} from "../../constants/Nss";
 
 const Nss = () => {
   const columns = [
@@ -75,7 +75,13 @@ const Nss = () => {
                 cover={item.cover}
                 dp={item.dp}
                 name={item.name}
-                Designation={item.Designation}
+                Designation={
+                  <p
+            dangerouslySetInnerHTML={{
+              __html: item.Designation.replace('\n', '<br />'),
+            }}
+          />
+                }
                 mailid={item.mailid}
               />
             ))}
@@ -124,11 +130,12 @@ const Nss = () => {
                   2019-2020
                 </label>
                 <div className="tab-content">
-                  <ol>
+                <Listformat points={achieve19} />
+                  {/* <ol>
                     <li>This college NSS unit received “award of appreciation” from AICTE, NEWDELHI for ONE STUDENT ONE TREE campaign from the MHRD Minister of India.</li>
                     <li>This college NSS Unit received “Swachch Bharat Summer Internship 2018” award with First Rank at Anna University, Chennai.</li>
                     <li>Selvan S.M. Mangalam BE Mech IV year and Selvi S. Aarthy, BE EEE III year received “Best NSS Volunteer award” at Anna University, Chennai</li>
-                  </ol>
+                  </ol> */}
                 </div>
               </div>
               <div className="tab">

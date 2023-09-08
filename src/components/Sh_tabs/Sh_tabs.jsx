@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Sh_tabs.css';
-import { Sh_English,Sh_Maths,Sh_Chemistry,sh_Physics } from '../../containers';
-import Sh_Physics from '../../containers/Sh_Physics/Sh_Physics';
+import { Sh_English,Sh_Maths,Sh_Chemistry,Sh_Physics } from '../../containers';
+
 
 const Sh_tabs = () => {
   const [selectedOption, setSelectedOption] = useState('sh_English');
@@ -48,7 +48,7 @@ const Sh_tabs = () => {
             htmlFor="sh_Maths"
             className={selectedOption === 'sh_Maths' ? 'sh_Maths' : ''}
           >
-            Maths
+            Mathematics
           </label>
           <label
             htmlFor="sh_Chemistry"

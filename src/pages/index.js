@@ -62,10 +62,8 @@ export {default as Iqac_feed} from './Iqac_feed/Iqac_feed'
 export {default as Nba} from './Nba/Nba'
 export {default as Nirf} from './Nirf/Nirf'
 export {default as Iic} from './Iic/Iic'
-
-
-
-
-
-
-
+export {default as Sh_faculty} from './Sciencedept/Sh_faculty'
+export {default as Sh_lab_facility} from './Sciencedept/Sh_lab_facility'
+export {default as Sh_research} from './Sciencedept/Sh_research'
+export {default as Science_Programme} from './Sciencedept/Science_Programme'
+export {default as Scholarship} from './Scholarship/Scholarship'

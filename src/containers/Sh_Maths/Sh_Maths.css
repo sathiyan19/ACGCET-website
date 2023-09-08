@@ -58,6 +58,9 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  /* .sh_mat{
+    margin-top: 20px;
+  } */
 
   @media(max-width:1100px){
     .shmattwo-col {
@@ -74,7 +77,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     .eceheading {
       top: 35%;
       font-size: 150%;
@@ -88,16 +91,18 @@
       width: 100%;
       height: 700px;
     }
-  }
+  } */
   @media (max-width: 768px) {
-    .ecebg {
-      width: 100%;
-      height: 500px;
-    }
+    
     .shmatdark {
       width: 100%;
     }
-    
+  }
+
+  @media(max-width:576px){
+    .sh_mat{
+      overflow-x: scroll;
+    }
   }
   
   @media (max-width: 500px) {

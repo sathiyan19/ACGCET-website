@@ -4,14 +4,16 @@ import './Thiran.css'
 
 import { Heroimagecarousal} from "../../components";
 
-import thiran_logo from "../../assets/pictures/thiran.webp"
+import thiran_logo from "../../assets/pictures/thiran.webp";
 
 import { Thiran_heroimage_carousalinfo,vision,mission_data} from "../../constants/thiran";
 
-import { Deptvision,Deptmission,Underline } from '../../widgets'
+import { Deptvision,Deptmission,Underline } from '../../widgets';
 
-
+// import { Scholar_card } from "../../widgets";
+// import { Scholar_info } from "../../constants/Scholar_card";
 const Thiran = () => {
+  
   return (
     <div>
     

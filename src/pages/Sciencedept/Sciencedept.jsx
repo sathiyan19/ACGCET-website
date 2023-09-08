@@ -1,9 +1,9 @@
 import React from 'react'
-import { Sh_English } from '../../containers'
 
 import './Sciencedept.css'
 
 import { Sh_tabs } from '../../components'
+import { Backtotop } from '../../widgets'
 
 const Sciencedept = () => {
   return (
@@ -13,10 +13,8 @@ const Sciencedept = () => {
           Department of Science and Humanities
         </div>
     </div>
-
-    
-
     <Sh_tabs/>
+    <Backtotop/>
     </div>
   )
 }

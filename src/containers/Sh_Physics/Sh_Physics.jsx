@@ -23,7 +23,7 @@ const Sh_Physics = () => {
         <Underline heading="About the Department"/>
         <div className="shphytwo-col">
           <p className="shphy_dept_content">
-          The Physics department of ACCET was established in the year 1952  to impart a state-of-the art education, training and then later to develop research activities in the field of physics. The department is well equipped with the best, cost and time effective research equipments such as XRD, planar Magnetron RF/DC Sputtering Coating unit and Digital Source Meter, etc., to develop thin film Technology. The department offers valuable research support using XRD to the research scholars in Tamil Nadu.
+          The Physics department of ACCET was established in the year 1952 to impart a state-of-the art education, training and then later to develop research activities in the field of physics. The department is well equipped with the best, cost and time effective research equipments such as XRD, planar Magnetron RF/DC Sputtering Coating unit and Digital Source Meter, etc., to develop thin film Technology. The department offers valuable research support using XRD to the research scholars in Tamil Nadu.
           </p>
           <div className="dept_img_holder">
             <img className="dept_img" src={ece} />

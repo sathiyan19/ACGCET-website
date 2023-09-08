@@ -22,14 +22,14 @@ import {
   T3_procure,
   T3_twin,
   Ncc,
-  Thiran,
-  Sports,
   Aicte,
   Organisation,
   Under,
   Csedept,
-  Cse_faculties,
   Govern,
+  Thiran,
+  Sports,
+  Cse_faculties,
   Ecedept,
   Ece_peo,
   Ece_faculties,
@@ -67,7 +67,12 @@ import {
   Iqac_feed,
   Nba,
   Nirf,
-  Iic
+  Iic,
+  Sh_faculty,
+  Sh_lab_facility,
+  Sh_research,
+  Science_Programme,
+  Scholarship
 } from "./pages";
 import "./App.css";
 
@@ -120,10 +125,14 @@ const App = () => {
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
-        <Route path="/mechdept" element={<Under/>} />
-        {/* <Route path="/mechdept" element={<Mechdept/>} /> */}
+        {/* <Route path="/mechdept" element={<Under/>} /> */}
+        <Route path="/mechdept" element={<Mechdept/>} />
         <Route path="/eeedept" element={<Eeedept/>} />
         <Route path="/sciencedept" element={<Sciencedept/>} />
+        <Route path="/sciencedept/sh-faculty" element={<Sh_faculty />} />
+        <Route path="/sciencedept/sh-lab-facility" element={<Sh_lab_facility />} />
+        <Route path="/sciencedept/sh-research" element={<Sh_research/>} />
+        <Route path="/sciencedept/science-programme" element={<Science_Programme/>} />
         <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
         <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
         <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
@@ -139,6 +148,7 @@ const App = () => {
         <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
+        <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/iqac_min" element={<Iqac_min/>} />
         <Route path="/iqac_aqar" element={<Iqac_aqar/>} />
         <Route path="/iqac" element={<Iqac/>} />

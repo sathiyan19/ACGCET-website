@@ -76,8 +76,8 @@ section .content .stopic{
     color: black;
 }
 
-@media (max-width:400px){
+@media (max-width:420px){
     .sh_tabs nav label{
-        font-size: 14px;
+        font-size: 13px;
     }
 }
