@@ -8,7 +8,9 @@
 }
 
 .acad_text{
-   width:70%;
+   width:100%;
+   margin-left:50px;
+
 }
 
 .acad_tab{
@@ -23,7 +25,9 @@
 
   .flex_col{
     display: flex;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    /* margin-right:50px; */
+    display: inline;
   }
 
   .flex_col h6{
@@ -35,6 +39,7 @@
     top:2px;
     margin-left: 0px;
     color:black;
+   
   }
   .acad_tab1,.acad_tab2,.acad_tab3{
     width:70%;
@@ -90,12 +95,11 @@
 }
 .acad_tab1{
    width:90%;
-   overflow-x:scroll;
    margin:30px auto 20px auto;
 
 }
 .flex_col{
-   width:90%;
+   width:100%;
 }
 
  }
@@ -104,16 +108,30 @@
    .acad_head h5{
       margin:30px auto 20px 40px;
    }
-   .flex_col{
+   /* .flex_col{
       display: flex;
       margin-left:20px;
-    }
-   .acad_tab1,.acad_tab3,.acad_tab2{
+    } */
+   .acad_tab1{
       width:95%;
-      overflow-x: scroll;
+      /* overflow-x: scroll; */
       margin:30px auto 20px auto;
    }
    .acad_text{
       width:70%;
+   }
+ }
+
+ @media (max-width:500px) {
+   .acad_tab3,.acad_tab2{
+      overflow-x: scroll;
+
+   }
+ }
+
+ @media (max-width:550px) {
+   .acad_tab1{
+      overflow-x: scroll;
+
    }
  }

@@ -55,3 +55,17 @@ export {default as Eee_faculties} from './Eeedept/Eee_faculties'
 export {default as Eee_lab} from './Eeedept/Eee_lab'
 export {default as Eee_events} from './Eeedept/Eee_events'
 export {default as Sciencedept} from './Sciencedept/Sciencedept'
+export {default as Iqac} from './Iqac/Iqac'
+export {default as Iqac_min} from './Iqac_min/Iqac_min'
+export {default as Iqac_aqar} from './Iqac_aqar/Iqac_aqar'
+export {default as Iqac_feed} from './Iqac_feed/Iqac_feed'
+export {default as Nba} from './Nba/Nba'
+export {default as Nirf} from './Nirf/Nirf'
+export {default as Iic} from './Iic/Iic'
+
+
+
+
+
+
+

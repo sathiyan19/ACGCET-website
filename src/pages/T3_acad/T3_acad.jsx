@@ -65,7 +65,7 @@ const T3_acad = () => {
       <div className='acad_text'>
       <div className='acad_head'>TEQIP III Training Staff</div>
       <div className='flex_col'>
-        <h6>Name of the Programme:</h6><p>Capacity Building on Non Teaching staff on Personality Development,Computer Competency and<br></br>Work Life balance</p>
+        <h6>Name of the Programme:</h6><p>Capacity Building on Non Teaching staff on Personality Development,Computer Competency and Work Life balance</p>
       </div>
       <div className='flex_col'>
         <h6>Place:</h6><p>Hotel Fortune JP Palace, Mysore</p>
@@ -106,7 +106,7 @@ const T3_acad = () => {
         <h6>Designation</h6><p>Mechanic</p>
       </div>
       <div className='flex_col'>
-        <h6>Name of the Programme:</h6><p>Two days workshop on Laboratory Practical  Skills Training in <br></br>Electrical Engineering</p>
+        <h6>Name of the Programme:</h6><p>Two days workshop on Laboratory Practical  Skills Training in Electrical Engineering</p>
       </div>
       <div className='flex_col'>
         <h6>Place:</h6><p>VIT, Vellore</p>

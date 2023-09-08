@@ -268,7 +268,7 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     }
   }
 
-  @media (max-width: 340px) {
+  @media (max-width: 380px) {
     .teqip1_tab{
       margin:600px auto 20px auto;
       overflow-x: scroll;
