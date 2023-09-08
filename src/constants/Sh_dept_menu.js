@@ -3,6 +3,8 @@ import cover from '../assets/pictures/microchip.webp'
 import dpm from '../assets/pictures/boy.webp'
 import dpf from '../assets/pictures/girl.webp'
 
+import englab from '../assets/pictures/englab.webp'
+
 const Sh_dept_fmenu = [
     {
         id:'1',
@@ -360,7 +362,169 @@ const phy_sup_profiles = [
       mailid: "ramarumugam1982ra@gmail.com",
         },]
 
+const eng_labs=[
+  {
+    'id':"1",
+    'heading':"English Language Laboratory",
+    'pic':englab,
+    'content_1':" Our Department has a well established language laboratory that boosts of well furnished equipment and technical gadgets to impart the nuances of communication through the digital platform catering to the needs of the technocrats."
+  }
+]
 
+const mat_prog=[
+  {
+    'sno':"1",
+    'title':"FDP on “Advanced Mathematics in Engineering",
+    'name':"ACGCET, Karaikudi",
+    'dur':"14.09.2016 to 20.09.2016"
+  },
+  {
+    'sno':"2",
+    'title':"FDP on “Mathematics for Engineers”",
+    'name':"ACGCET, Karaikudi",
+    'dur':"17.12.2018 to 30.12.2018"
+  },
+  {
+    'sno':"3",
+    'title':"	One Day Seminar on ‘Mathematics II for I year B.E students’",
+    'name':"ACGCET, Karaikudi",
+    'dur':"04.03.2017"
+  },
+  {
+    'sno':"4",
+    'title':"Two days Induction Programme on ‘Human Values’ for I year B.E students",
+    'name':"ACGCET, Karaikudi",
+    'dur':"13.02.2018 to 14.02.2018"
+  },
+]
+
+const chemi_prog=[
+  {
+    'sno':"1",
+    'name':"TEQIP III sponsored one week induction programme to I year BE students",
+    'period':"23.10.17 to 29.10.17",
+    'par':360
+  },
+  {
+    'sno':"2",
+    'name':"TEQIP III Sponsored two day workshop on “ESPERANZIA” for I year BE students",
+    'period':"22.03.18 to 23.03.18",
+    'par':360
+  },
+  {
+    'sno':"3",
+    'name':"TEQIP III sponsored one day FDP on “E-Procurement",
+    'period':"09.10.18",
+    'par':28
+  },
+  {
+    'sno':"4",
+    'name':"TEQIP III sponsored three week induction programme for I year BE",
+    'period':"13.08.18 to 02.09.18",
+    'par':380
+  },
+]
+
+const phy_prog=[
+  {
+    'sno':"1",
+    'title':"DOTE and TNSCTE sponsored FDP on New trends in Nanoscience and Technology",
+    'name':"ACGCET, Karaikudi",
+    'dur':"02-07-10 to 11-10-10"
+  },
+  {
+    'sno':"2",
+    'title':"TEQIP-II sponsored One week FDP on Advances in Engineering Materials",
+    'name':"ACGCET, Karaikudi",
+    'dur':"19-11-12 to 25-11-12"
+  },
+  {
+    'sno':"3",
+    'title':"TNSCTE and TEQIP Sponsored Workshop on Emerging trends in Nanoscience and technology",
+    'name':"ACGCET, Karaikudi",
+    'dur':"25-11-14"
+  },
+  {
+    'sno':"4",
+    'title':"National workshop on theory and practice of X-ray diffraction techniques",
+    'name':"ACGCET, Karaikudi",
+    'dur':"25-05-17 to 27-05-17"
+  },
+  {
+    'sno':"5",
+    'title':"TEQIP-II Sponsored One week FDP on Recent Developments in Material Science",
+    'name':"ACGCET, Karaikudi",
+    'dur':"08-08-16 to 24-07-16"
+  },
+  {
+    'sno':"6",
+    'title':"AICTE-QIP sponsored Two week FDP on thin film deposition and characterization",
+    'name':"ACGCET, Karaikudi",
+    'dur':"21-11-17 to 04-12-17"
+  },
+  {
+    'sno':"7",
+    'title':"TEQIP-II Sponsored One week Induction programme for I BE (2017-18)",
+    'name':"ACGCET, Karaikudi",
+    'dur':"23-10-17 to 29-10-17"
+  },
+  {
+    'sno':"8",
+    'title':"TEQIP-III Sponsored Three week Induction Programme for I BE (2018-19)",
+    'name':"ACGCET, Karaikudi",
+    'dur':"13-08-18 to 02-09-18"
+  },
+  {
+    'sno':"9",
+    'title':"TEQIP-III Sponsored Three week Induction Programme for I BE (2019-20)",
+    'name':"ACGCET, Karaikudi",
+    'dur':"01-08-19 to 21-08-19"
+  },
+  {
+    'sno':"10",
+    'title':"TEQIP-III Sponsored Two week online Induction programme for I BE (2020-21)",
+    'name':"ACGCET, Karaikudi",
+    'dur':"06-11-20 to 19-11-20"
+  },
+]
+
+const eng_prog=[
+  {
+    'sno':"1",
+    'title':"TEQIP-III Sponsored Workshop on “Developing Communication Skills,” conducted for I Year Students",
+    'dur':"24.01.2018 to 25.01.2018"
+  },
+  {
+    'sno':"2",
+    'title':"	TEQIP-III sponsored Awareness Programme on International Property Rights for staff and students",
+    'dur':"29.10.18 to 30.10.2018"
+  },
+  {
+    'sno':"3",
+    'title':"AICTE sponsored one week FDP on “English for Global Communication: Recent Trends and Approaches,” for Teachers",
+    'dur':"07.12.2018 to 13.07.2018"
+  },
+  {
+    'sno':"4",
+    'title':"TEQIP- III sponsored Training programme for TOEFL for third and final year students",
+    'dur':"13.10.2018"
+  },
+  {
+    'sno':"5",
+    'title':"TEQIP- III sponsored Training programme for TOEFL for third and final year students",
+    'dur':"09.12.2019 to 03.03.2019 (only on weekends)"
+  },
+  {
+    'sno':"6",
+    'title':"Conducted Teacher training programme, sponsored by Government of Tamilnadu and organized by Anna University, Chennai",
+    'dur':"18.12.2019 – 21.12.2019"
+  },
+  {
+    'sno':"7",
+    'title':"TEQIP-III sponsored two-week online Induction Programme for the first year BE students",
+    'dur':"06.11.2020 to 19.11.2020"
+  },
+]
 
 export {Sh_dept_fmenu,
 eng_mission,
@@ -376,4 +540,9 @@ mat_fac_profiles,
 chemi_fac_profiles,
 chemi_sup_profiles,
 phy_fac_profiles,
-phy_sup_profiles };
+phy_sup_profiles,
+eng_labs,
+mat_prog,
+phy_prog,
+chemi_prog,
+eng_prog };
