@@ -89,9 +89,10 @@ const top_nav_paths=[
     "type":"2",
     'title':'Accreditation',
     'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"NAAC"},
-            {'path':'/','link':"NBA"},
-            {'path':'/','link':"NIRF"},
+    'links':[{'path':'https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing','link':"NAAC"},
+            {'path':'/nba','link':"NBA"},
+            {'path':'/iqac','link':"IQAC"},
+            {'path':'/nirf','link':"NIRF"},
             {'path':'/annual_reports','link':"Annual Reports"}]
     },
 
@@ -152,9 +153,10 @@ const bottom_nav_paths=[
     "type":"3",
     'title':'Accreditation',
     'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"NAAC"},
-            {'path':'/','link':"NBA"},
-            {'path':'/','link':"NIRF"},
+    'links':[{'path':'https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing','link':"NAAC"},
+            {'path':'/iqac','link':"IQAC"},
+            {'path':'/nba','link':"NBA"},
+            {'path':'/nirf','link':"NIRF"},
             {'path':'/annual_reports','link':"Annual Reports"}]
     },
 
@@ -170,10 +172,8 @@ const bottom_nav_paths=[
     {"id":'18',
     "type":"3",
     'title':'IIC and I&E Policies',
-    'basepath':'javascript:void(0);',
-    'links':[{'path':'/','link':"Link1"},
-            {'path':'/','link':"Link2"},
-            {'path':'/','link':"Link3"}]
+    'basepath':'/iic',
+    'links':[ ]
     },
 
     {"id":'19',
