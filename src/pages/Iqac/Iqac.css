@@ -1,0 +1,23 @@
+.iqac_whole{
+    width:75%;
+    padding: 20px;
+
+    >p{
+        line-height: 1.5rem;
+    }
+}
+.iqac_tab{
+    margin-bottom: 30px;
+}
+@media (max-width:768px) {
+    .iqac_whole{
+        width:100%;
+    }
+}
+
+@media (max-width:530px) {
+    .iqac_tab{
+        margin-bottom: 30px;
+        overflow-x: scroll;
+    }
+}

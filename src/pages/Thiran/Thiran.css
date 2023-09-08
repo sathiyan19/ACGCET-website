@@ -1,0 +1,128 @@
+.thiran_cont{
+    color:black;
+    line-height: 1.5rem;
+    padding:0 30px;
+    width:80%;
+    text-align: justify;
+/* 
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+    */
+}
+.thiran_img{
+    width:100%;
+    height:auto;
+}
+
+.thiran_img_holder{
+    width:15%;
+}
+
+.thiran_flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thiran_underline{
+    padding:20px;
+}
+.thiran_vis{
+    padding:10px;
+}
+.thiran_cont1,.thiran_cont2{
+    display: none;
+}
+
+.thiran_obj p{
+    background-color:#f1f1f1;
+    width:80%;
+    text-align: justify;
+    margin-left:auto;
+    margin-right:auto;
+    padding:20px;
+    border-radius:20px;
+    border-left:3px solid #00134d;
+}
+.thiran_obj1 p{
+    background-color:#f1f1f1;
+    width:80%;
+    text-align: justify;
+    margin-left:auto;
+    margin-right:auto;
+    padding:20px;
+    border-radius:20px;
+    border-right:3px solid #00134d;
+}
+
+@media (max-width:1040px){
+    .thiran_img_holder{
+        width:25%;
+    }
+    .thiran_cont{
+        width:70%;
+    }
+}
+
+@media (max-width:768px){
+.thiran_flex{
+    display:flex;
+    justify-content: space-between;
+    padding:0 50px;
+    /* margin-bottom: 10px; */
+
+}
+.thiran_img_holder{
+    width:25%;
+}
+.thiran_cont{
+display: none;
+}
+
+.thiran_cont1{
+    display: block;
+    width:70%;
+    text-align: justify;
+
+}
+.thiran_cont2{
+    display:flex;
+    width:100%;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    padding:0 50px;
+    
+
+}
+}
+@media (max-width:600px){
+
+    .thiran_flex{
+        display:flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding:0 10px;    
+    }
+
+    .thiran_cont1{
+        display:none;
+    }
+    .thiran_cont2{
+        display:none;
+    }
+
+    .thiran_cont{
+        display: block;
+    }
+
+    .thiran_img_holder{
+        width:45%;
+        margin-bottom:30px;
+    }
+    .thiran_cont{
+        width:95%;
+    }
+
+}

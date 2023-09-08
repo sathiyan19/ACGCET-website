@@ -60,7 +60,14 @@ import {
   Eee_faculties,
   Eee_lab,
   Eee_events,
-  Sciencedept
+  Sciencedept,
+  Iqac,
+  Iqac_min,
+  Iqac_aqar,
+  Iqac_feed,
+  Nba,
+  Nirf,
+  Iic
 } from "./pages";
 import "./App.css";
 
@@ -132,6 +139,17 @@ const App = () => {
         <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
+        <Route path="/iqac_min" element={<Iqac_min/>} />
+        <Route path="/iqac_aqar" element={<Iqac_aqar/>} />
+        <Route path="/iqac" element={<Iqac/>} />
+        <Route path="/iqac_feed" element={<Iqac_feed/>} />
+        <Route path="/nba" element={<Nba/>} />
+        <Route path="/nirf" element={<Nirf/>} />
+        <Route path="/iic" element={<Iic/>} />
+        
+        
+        
+
       </Routes>
       <Footer />
     </div>
