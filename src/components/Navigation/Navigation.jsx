@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom'
 const Navigation = () => {
 
     const togglemenu=()=>{
-        console.log("CLICKED")
         document.querySelector('.offcanvas-collapse').classList.toggle('open')
     }
 

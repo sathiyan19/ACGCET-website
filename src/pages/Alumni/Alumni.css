@@ -33,22 +33,25 @@
     box-shadow: 0 10px 3px #000;
 }
 
-.notable {
+/* .notable {
     font-size: 40px;
     font-weight: 500;
     color: #01134d;
     padding: 40px 20px;
+} */
+.notalum{
+    padding: 20px;
 }
 
 .about {
     padding: 30px 20px;
 }
-
+/* 
 .heading {
     font-size: 40px;
     font-weight: 500;
     color: #01134d;
-}
+} */
 
 .abt {
     padding: 20px;
@@ -62,7 +65,8 @@
 
 .dsc {
     width: 77%;
-    font-weight: 400;
+    /* font-weight: 400; */
+    color: #000;
     font-size: 18px;
     line-height: 1.5rem;
     /* color: #01134d; */
@@ -103,18 +107,23 @@
     padding: 0px 20px;
     /* color: #01134d; */
     line-height: 1.5rem;
-    font-weight: 400;
+    color: #000;
+    /* font-weight: 400; */
     text-align: justify;
 }
 
-.heads {
+/* .heads {
     font-size: 40px;
     font-weight: 400;
     color: #01134d;
-}
+} */
 .row {
     margin-top: 5px;
   }
+
+.alumni_reunion{
+    padding: 20px;
+}
 
 @media(max-width:1360px) {
     .dsc {

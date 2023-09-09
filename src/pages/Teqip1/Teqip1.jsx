@@ -6,7 +6,7 @@ import { teqip1 } from "../../constants/teqip1";
 
 import { Table } from "../../components";
 
-import { Backtotop } from "../../widgets";
+import { Backtotop, Underline } from "../../widgets";
 
 const Teqip1 = () => {
   const columns = [
@@ -18,7 +18,9 @@ const Teqip1 = () => {
   return (
     <div>
       <Backtotop/>
-      <div className="teqip1_heading">TEQIP-I</div>
+      <div className="teqip1_heading">
+      <Underline heading="TEQIP-I"/>
+      </div>
       <div className="teqip1_content">
         <p>
           The Programme aims to upscale and support ongoing efforts of GOI to

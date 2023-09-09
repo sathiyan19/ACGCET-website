@@ -11,7 +11,6 @@ const Dropdown = ({type,title,base,links,func}) => {
   }else if(type==="3"){
     class_name="nav-link link"
   }
-  console.log(links.length)
 
 
   

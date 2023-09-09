@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./Teqip3.css";
 
-import { Floatinmenu,Backtotop } from '../../widgets'
+import { Floatinmenu,Backtotop, Underline } from '../../widgets'
 
 import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
@@ -23,7 +23,9 @@ const Teqip3 = () => {
     <Backtotop/>
     <div className='teqip3'>
 
-      <div className="teqip3_heading">TEQIP-III</div>
+      <div className="teqip3_heading">
+        <Underline heading="TEQIP-III"/>
+      </div>
       <div className='flt'>
       <Floatinmenu head={teqip3_floater_menu.head} from_top={190} links={teqip3_floater_menu.links}/>
       </div>

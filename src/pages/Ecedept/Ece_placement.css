@@ -1,0 +1,30 @@
+.ece_place_chart_holder{
+    padding: 10px 20px;
+}
+.ece_place_head{
+    font-size: 28px;
+}
+.ece_place_hold{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+@media(max-width:600px){
+    .ece_place_chart_holder{
+        padding: 10px 0px;
+    }
+    .ece_place_head{
+        font-size: 22px;
+    }
+    .ece_place_hold{
+        padding: 30px 0px;
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:350px){
+    .ece_place_hold{
+        flex-direction: column;
+    }
+}

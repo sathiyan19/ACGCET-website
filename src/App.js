@@ -60,6 +60,7 @@ import {
   Eee_faculties,
   Eee_lab,
   Eee_events,
+  Ece_placement,
   Sciencedept,
   Iqac,
   Iqac_min,
@@ -72,13 +73,13 @@ import {
   Sh_lab_facility,
   Sh_research,
   Science_Programme,
-  Scholarship
+  Scholarship,
+  Civil_awards
 } from "./pages";
 import "./App.css";
 
 const App = () => {
   const location = useLocation();
-  console.log(location)
   useEffect(()=>{
     window.scrollTo(0,0)
   },[location])
@@ -148,7 +149,9 @@ const App = () => {
         <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
+        <Route path="/ecedept/ece-placement" element={<Ece_placement/>} />
         <Route path="/scholarship" element={<Scholarship/>} />
+        <Route path="/civildept/civil-awards" element={<Civil_awards/>} />
         <Route path="/iqac_min" element={<Iqac_min/>} />
         <Route path="/iqac_aqar" element={<Iqac_aqar/>} />
         <Route path="/iqac" element={<Iqac/>} />

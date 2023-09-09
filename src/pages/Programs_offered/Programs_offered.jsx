@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Programs_offered.css'
 
-import { Content_card,Backtotop } from '../../widgets'
+import { Content_card,Backtotop,Underline } from '../../widgets'
 
 import {ug_programs ,pg_programs, pt_programs} from '../../constants/prog_offered'
 
@@ -11,7 +11,8 @@ const Programs_offered = () => {
     <>
     <Backtotop/>
     <div className='prog_off'>
-      <div className="head">Programs Offered</div>
+      {/* <div className="head">Programs Offered</div> */}
+      <Underline heading="Programs Offered"/>
 
       <div className='progs'>
         <div className='prog_content'>The institution offers 5 U.G and 6 P.G Programs and 4 Part–time Programs.</div>
