@@ -32,7 +32,7 @@ const T3_twin = () => {
     <div className='twin_head'>Mentee Institute:</div>
 
     <div className='twin_p'>
-    University College of Engineering and Technology (UCET), Vinoba Bhave University, Hazaribagh, Jharkhand
+    University College of Engineering and Technology (UCET), Vinoba Bhave University, Hazaribagh, Jharkhand.
     </div>
 
     <div className='twin_tab_inner'>Programmes conducted for the benefit of Mentee Institute</div>

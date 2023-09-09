@@ -3,7 +3,7 @@ import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } f
 
 import { Radial_menu } from "../../components";
 import ece from "../../assets/pictures/group-pic.webp";
-import {eng_mission} from '../../constants/Sh_dept_menu'
+
 import { Sh_dept_fmenu,mat_vision,mat_mission } from '../../constants/Sh_dept_menu';
 import './Sh_Maths.css'
 import { FaMicrochip } from "react-icons/fa6";

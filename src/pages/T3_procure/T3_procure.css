@@ -9,7 +9,7 @@
     margin:50px 0px 50px 50px;  
 }
 
-@media(max-width:650px) {
+@media(max-width:600px) {
     .proc_tot{
         width:90%;
         margin: 35px auto 10px auto;
