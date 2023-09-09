@@ -3,7 +3,7 @@ import React from 'react'
 import "./Deptvision.css"
 import { IoTelescopeSharp } from "react-icons/io5";
 
-const Deptvisionmission = ({visiondata}) => {
+const Deptvisionmission = ({visionhead,visiondata}) => {
   return (
     <div>
         <div className="vissionholder">
@@ -11,7 +11,7 @@ const Deptvisionmission = ({visiondata}) => {
             <div className="visionhead">
               <div className="visionlogosec">
                 <IoTelescopeSharp className="visionlogo" />
-                &nbsp;&nbsp;Vision
+                &nbsp;&nbsp;{visionhead ? visionhead : 'Vision'}
               </div>
             </div>
             <p>

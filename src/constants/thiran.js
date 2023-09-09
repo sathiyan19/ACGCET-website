@@ -10,4 +10,30 @@ const Thiran_heroimage_carousalinfo = {
     img_list: [image1, image2 ,image3,image4],
   };
 
-export{ Thiran_heroimage_carousalinfo}
+  const vision= {
+
+    id:'1',
+    visiondata:'To enhance the knowledge of an individual in particular concern that is considered and improve the leadership skills  of an every individual by a set of achievable actions.'
+  }
+
+  const mission_data=[
+    {
+      id:'1',
+      mission:'To provide the standard approach for the porject execution.'
+    },
+    {
+      id:'2',
+      mission:'To bring forth the complete and accurate visibility of the project status.'
+    },
+    {
+      id:'3',
+      mission:'To set a effective prioritisation for the project management to support the fellowing teams to direct the projects.'
+    },
+    {
+      id:'4',
+      mission:'To improvise the  professional skills of an individual in project management.'
+    }
+
+  ]
+
+export{ Thiran_heroimage_carousalinfo,vision,mission_data}
