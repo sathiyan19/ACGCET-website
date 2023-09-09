@@ -66,7 +66,8 @@ import {
   Sh_lab_facility,
   Sh_research,
   Science_Programme,
-  Scholarship
+  Scholarship,
+  Civil_awards
 } from "./pages";
 import "./App.css";
 
@@ -143,6 +144,7 @@ const App = () => {
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
         <Route path="/ecedept/ece-placement" element={<Ece_placement/>} />
         <Route path="/scholarship" element={<Scholarship/>} />
+        <Route path="/civildept/civil-awards" element={<Civil_awards/>} />
       </Routes>
       <Footer />
     </div>

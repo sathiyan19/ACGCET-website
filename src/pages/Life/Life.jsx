@@ -9,6 +9,7 @@ import crossyear from "../../assets/pictures/crossyear.webp";
 import library from "../../assets/pictures/library.webp";
 import iv from "../../assets/pictures/iv.webp";
 import technical from "../../assets/pictures/technical.webp";
+import culture_pic from "../../assets/pictures/culture_pic.webp";
 import { Link } from "react-router-dom";
 
 const Life = () => {
@@ -285,7 +286,7 @@ In addition to advanced facilities, our college boasts a team of tech-savvy facu
 
         <div class="life_crd life_item9">
           <div class="life_head_image">
-            <img class="life_image" src={iv} />
+            <img class="life_image" src={culture_pic} />
           </div>
           <div className="life_crd_content">
             <div className="life_head life_text_9">Cultural Events</div>
