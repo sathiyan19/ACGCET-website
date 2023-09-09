@@ -58,10 +58,23 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  /* .sh_mat{
-    margin-top: 20px;
-  } */
+  .shmatbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .uct_bg{
+    /* background-image: url("../../assets/pictures/uct.png"); */
+    height: auto;
+    width: 100%;
+}
+.uct_bg_mob{
+    height: auto;
+    width: 100%;
+    display: none;
+}
+  
   @media(max-width:1100px){
     .shmattwo-col {
       
@@ -103,6 +116,12 @@
     .sh_mat{
       overflow-x: scroll;
     }
+    .uct_bg{
+      display: none;
+  }
+  .uct_bg_mob{
+      display: block;
+  }
   }
   
   @media (max-width: 500px) {

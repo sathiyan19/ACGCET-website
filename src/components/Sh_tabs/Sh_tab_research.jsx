@@ -1,4 +1,8 @@
 import React, {useState} from 'react'
+import Sh_mat_research from '../../containers/Sh_Maths/Sh_mat_research';
+import Sh_Chemi_research from '../../containers/Sh_Chemistry/Sh_Chemi_research';
+import Sh_Phy_research from '../../containers/Sh_Physics/Sh_Phy_research';
+import { Sh_Eng_research } from '../../containers';
 
 const Sh_tab_research = () => {
     const [selectedOption, setSelectedOption] = useState('sh_English');
@@ -63,16 +67,16 @@ const Sh_tab_research = () => {
           </nav>
           <section>
           <div className="shcontent content1">
-                      
+                      <Sh_Eng_research/>
                       </div>
                   <div className="shcontent content2">
-                      
+                      <Sh_mat_research/>
                       </div>
                   <div className="shcontent content3">
-                      
+                      <Sh_Chemi_research/>
                       </div>
                   <div className="shcontent content4">
-                      
+                      <Sh_Phy_research/>
                       </div>
           </section>
         </div>

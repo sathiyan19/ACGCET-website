@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Sh_Chemi_lab, Sh_Eng_lab, Sh_Phy_lab } from '../../containers';
+import { Sh_Chemi_lab, Sh_Eng_lab, Sh_Phy_lab, Sh_mat_lab } from '../../containers';
 
 const Sh_tab_lab = () => {
     const [selectedOption, setSelectedOption] = useState('sh_English');
@@ -67,7 +67,7 @@ const Sh_tab_lab = () => {
                       <Sh_Eng_lab/>
                       </div>
                   <div className="shcontent content2">
-                      
+                      <Sh_mat_lab/>
                       </div>
                   <div className="shcontent content3">
                       <Sh_Chemi_lab/>
