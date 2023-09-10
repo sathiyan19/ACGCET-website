@@ -109,9 +109,10 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2,link }) => {
                 <span className="close">&times;</span>
               </div>
             </div>
+            <div className="layout_outer_flex">
             <div className="first-flex">
               <img src={pic} className="picsque" alt="Contribution Picture" />
-              <div className="popcontent1">{content_1}</div>
+              {content_1 && (<div className="popcontent1">{content_1}</div>)}
             </div>
             <div className="popcontent2">{content_2}</div>
             {link &&(
@@ -121,6 +122,7 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2,link }) => {
               </div>
             </div>
             )}
+            </div>
           </div>
         </div>
       )}

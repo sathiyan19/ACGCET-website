@@ -2,7 +2,8 @@ import React from "react";
 
 import "./Ece_events.css";
 
-import { Backtotop, Floatinmenu, Underline, Modal } from "../../widgets";
+import { Backtotop, Floatinmenu, Underline } from "../../widgets";
+import {Timeline} from '../../components'
 import { ece_dept_menu, ece_dept_events } from "../../constants/ece_dept";
 
 import { Radial_menu } from "../../components";
@@ -25,18 +26,9 @@ const Ece_events = () => {
         <Radial_menu menu_links={ece_dept_menu} />
         <div className="ece_event_area">
           <div className="ece_events">
-            <Underline heading="Department Events" />
-            <div className="lab_cards row">
-              {ece_dept_events.map((item) => (
-                <Modal
-                  heading={item.heading}
-                  pic={item.pic}
-                  content_1={item.content_1}
-                  content_2={item.content_2}
-                  sub_text={item["sub-head"]}
-                />
-              ))}
-            </div>
+            <Underline heading="Association Events" />
+            {ece_dept_events.map((item)=><Timeline key={item.id} head={item.head} date={item.date} house={item.house} content={item.content}/>)}
+          
           </div>
         </div>
       </section>

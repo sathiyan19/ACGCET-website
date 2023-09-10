@@ -14,7 +14,7 @@ import { Radial_menu, Listformat } from "../../components";
 
 import { FaMicrochip } from "react-icons/fa6";
 
-import antenna1 from "../../assets/pictures/ECE_Ant_Chamber_1.webp";
+import antenna1 from "../../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.webp";
 // import antenna2 from '../../assets/pictures/ECE_Ant_Chamber_2.webp'
 
 const Ece_antenna = () => {
