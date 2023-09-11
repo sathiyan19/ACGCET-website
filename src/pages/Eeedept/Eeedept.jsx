@@ -13,11 +13,12 @@ import {
   eee_dept_menu,
   eee_mission,
   eee_vision,
-  eee_progs
+  eee_progs,
+  eee_hod
 } from "../../constants/eee_dept";
 
-import { Radial_menu } from "../../components";
-import cse from "../../assets/pictures/csecover.webp";
+import { Radial_menu,Hodmsg } from "../../components";
+import eee from "../../assets/pictures/eee_about.webp";
 
 import { AiFillThunderbolt } from "react-icons/ai";
 
@@ -56,7 +57,7 @@ const Eeedept = () => {
               undergraduate, postgraduate, and research programmes.
             </p>
             <div className="dept_img_holder">
-              <img className="dept_img" src={cse} />
+              <img className="dept_img" src={eee} />
             </div>
           </div>
           <div className="eeetwo-col1">
@@ -92,6 +93,7 @@ const Eeedept = () => {
         </div>
         <div className="eee_hod">
           <Underline heading="HOD's Message" />
+          <Hodmsg name={eee_hod.name} designation={eee_hod.designation} pic={eee_hod.pic} content={eee_hod.content}/>
         </div>
         <div className="eee_vision_mission">
           <Underline heading="Our Vision & Mission" />

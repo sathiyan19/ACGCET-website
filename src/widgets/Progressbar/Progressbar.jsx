@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './Progressbar.css'
-const Progressbar = ({percent1}) => {
+const Progressbar = ({percent1,heading}) => {
 
     const strokeDashOffset = `calc(436px - (${percent1} * 4.36px))`;
     // const strokeDashOffset1 = `calc(436px - (${percent2} * 4.36px))`;
@@ -18,7 +18,7 @@ const customStyles = {
             <div className="inner">
                 <div className="number">
                     <h4>{percent1}%</h4>
-                    <p>InCampus</p>
+                    <p>{heading}</p>
                 </div>
             </div>
         </div>

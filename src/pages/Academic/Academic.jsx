@@ -3,7 +3,7 @@ import React from "react";
 import "./Academic.css";
 
 import { Timeline } from "../../components";
-import { Backtotop } from "../../widgets";
+import { Backtotop,Underline } from "../../widgets";
 
 import { academic_cals } from "../../constants/academic_calendar";
 
@@ -13,7 +13,8 @@ const Academic = () => {
       <Backtotop />
 
       <div className="academic_container">
-        <div className="academic_heading">Academic Calendar</div>
+        {/* <div className="academic_heading">Academic Calendar</div> */}
+        <Underline heading="Academic Calendar"/>
         <div className="academic_cals_container">
           <div className="academic_reports">
             {academic_cals.map((item) => (

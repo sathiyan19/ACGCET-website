@@ -104,6 +104,27 @@ const eee_dept_menu = [
   },
 ];
 
+const eee_hod = {
+  name: "Dr.K.Baskaran",
+  designation: "Head of the Department, EEE",
+  pic: kb,
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" +
+    "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut" +
+    "enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
+    "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" +
+    "in reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
+    "nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
+    "sunt in culpa qui officia deserunt mollit anim id est laborum." +
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" +
+    "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut" +
+    "enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
+    "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" +
+    "in reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
+    "nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
+    "sunt in culpa qui officia deserunt mollit anim id est laborum.",
+};
+
 const eee_vision = {
   id: "1",
   visiondata:
@@ -609,5 +630,5 @@ export {
   eee_peo,
   eee_spec_outcomes,
   eee_dept_events,
-  eee_labs
+  eee_labs,eee_hod
 };

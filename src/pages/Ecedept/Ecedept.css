@@ -15,6 +15,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.indent{
+  text-indent: 20px;
+}
 .eceheading {
   text-align: center;
   position: absolute;

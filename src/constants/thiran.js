@@ -3,6 +3,11 @@ import image1 from "../assets/pictures/nsshero1.webp";
 import image2 from "../assets/pictures/nsshero2.webp";
 import image3 from "../assets/pictures/nsshero3.webp";
 import image4 from "../assets/pictures/nsshero4.webp";
+import kavz from "../assets/pictures/girl.webp";
+import cov from "../assets/pictures/csecover.webp";
+
+
+
 
 const Thiran_heroimage_carousalinfo = {
     id: 1,
@@ -36,4 +41,30 @@ const Thiran_heroimage_carousalinfo = {
 
   ]
 
-export{ Thiran_heroimage_carousalinfo,vision,mission_data}
+  const profile_info =[
+    {
+        'id':"1",
+        'cover':cov,
+        'dp':kavz,
+        'name':"Kaviya",
+        'Designation':"IAS Officer",
+        'mailid':"abc@gmail.com"
+    },
+    {
+      'id':"2",
+      'cover':cov,
+      'dp':kavz,
+      'name':"Yogesh",
+      'Designation':"Doctor",
+      'mailid':"abc@gmail.com"
+  },
+  {
+    'id':"3",
+    'cover':cov,
+    'dp':kavz,
+    'name':"Hema",
+    'Designation':"Doctor",
+    'mailid':"abc@gmail.com"
+}
+  ]
+export{ Thiran_heroimage_carousalinfo,vision,mission_data,profile_info}

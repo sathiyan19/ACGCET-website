@@ -6,12 +6,10 @@ import { Heroimagecarousal} from "../../components";
 
 import thiran_logo from "../../assets/pictures/thiran.webp";
 
-import { Thiran_heroimage_carousalinfo,vision,mission_data} from "../../constants/thiran";
+import { Thiran_heroimage_carousalinfo,vision,mission_data,profile_info} from "../../constants/thiran";
 
-import { Deptvision,Deptmission,Underline } from '../../widgets';
+import { Deptvision,Deptmission,Underline,Profilecard } from '../../widgets';
 
-// import { Scholar_card } from "../../widgets";
-// import { Scholar_info } from "../../constants/Scholar_card";
 const Thiran = () => {
   
   return (
@@ -60,8 +58,26 @@ const Thiran = () => {
        <p>To develop the actions in initiation of the project procedures, planning, execution, regulation and closure as well as the guidance of the project team operations towards achieving their goals with in the set scope and time.
        To develop the actions in initiation of the project procedures, planning, execution, regulation and closure as well as the guidance of the project team operations towards achieving their goals with in the set scope and time.</p> 
     </div>
+
+   
+    <Underline heading="Staff Members"/>
+     
+
+    <div className="thiran_cardholder">
+    <div className="thiran_cards">
+    {profile_info.map((item) => (
     
-       
+    <Profilecard
+                key={item.id}
+                cover={item.cover}
+                dp={item.dp}
+                name={item.name}
+                Designation={item.Designation}
+                mailid={item.mailid}
+              />
+              ))}
+            </div>
+       </div>
     </div>
   );
 };
