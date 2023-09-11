@@ -54,7 +54,7 @@ const ece_dept_menu = [
   },
   {
     id: "6",
-    path: "#",
+    path: "/ecedept/ece-research",
     link: "Research and Publications",
     arl:'l'
   },
@@ -299,9 +299,188 @@ const ece_sup_profiles = [
     mailid: "Akilaanu1999@gmail.com",
     pdf:""
   },
-  
-  
 ];
+
+const ece_research_info=[
+  {
+    'name':"Dr. A.Sivanantharaja",
+    'area':"Optical Communication"
+  },
+  {
+    'name':"Dr. G.Karpagarajesh",
+    'area':"Optical communication and networks"
+  },
+  {
+    'name':"G Renisha",
+    'area':"Signal processing"
+  },
+  {
+    'name':"Dr. D.Helena Margaret",
+    'area':"Microwave Antenna"
+  },
+  {
+    'name':"Prof. C.Mahendran",
+    'area':"Microwave Antenna"
+  },
+  {
+    'name':"Dr. S.Somasundaram",
+    'area':"Polynomial Controllers, Stable Controllers"
+  },
+  {
+    'name':"Prof. C.Karthika Pragadeeswari",
+    'area':"Video Surveilance"
+  },
+  {
+    'name':"Prof. G.Dhevanandhini",
+    'area':"Digital Image Processing"
+  },
+  {
+    'name':"Dr. B.Rajeshkanna",
+    'area':"Wireless Sensor Networks"
+  },
+];
+
+const patent_info=[
+  {
+    'name':"Dr. A.Sivanantharaja",
+    'title':"Noise free Public Address System for Auditorium using White Light Emitting Diode Communication",
+    'App':"202041002376",
+    'status':"Applied"
+  },
+];
+
+const guide_info=[
+  {
+    'sno':"1",
+    'name':"Dr. A.Sivanantha Raja",
+    'npprod':"12",
+    'nppur':"04",
+    'msres':"02"
+  },
+  {
+    'sno':"2",
+    'name':"Dr. G.Karpagarajesh",
+    'npprod':"-",
+    'nppur':"04",
+    'msres':"-"
+  },
+  {
+    'sno':"3",
+    'name':"Dr. S.Somasundaram",
+    'npprod':"04",
+    'nppur':"-",
+    'msres':"-"
+  },
+];
+
+const scholar_info1=[
+  {
+    'sno':"1",
+    'name':"A.Anand",
+    'area':"Investigation on Brillouin Scattering Effect in Fiber Optic Communication",
+  },
+  {
+    'sno':"2",
+    'name':"N.Gopi",
+    'area':"Investigation on Nonlinear Polarization Effects in Fiber Optic Communication",
+  },
+  {
+    'sno':"3",
+    'name':"Yarra Naga Subrahmanya Vamsi Mohan",
+    'area':"Outdoor Applications of Optical Wireless Communication Systems",
+  },
+  {
+    'sno':"4",
+    'name':"M. Sindhu",
+    'area':"SS",
+  },
+];
+
+const scholar_info2=[
+  {
+    'sno':"1",
+    'name':"John Samuel Raj",
+    'area':"SS",
+  },
+  {
+    'sno':"2",
+    'name':"Amutha",
+    'area':"SS",
+  },
+  {
+    'sno':"3",
+    'name':"Bala Karthick",
+    'area':"SS",
+  },
+  {
+    'sno':"4",
+    'name':"Sarathi",
+    'area':"SS",
+  },
+];
+
+const scholar_info3=[
+  {
+    'sno':"1",
+    'name':"T. Geetha",
+    'area':"Design and real time implementation of Stable PI Controller for Spherical tank process"
+  },
+];
+
+const scholar_info4=[
+  {
+    'sno':"1",
+    'name':"Mr.Kanaka Raju Penmetsa",
+    'area':"Diverse image segmentation methods for identifying and estimating the severity of plaque psoriasis in human skin"
+  },
+  {
+    'sno':"2",
+    'name':"Kataru Shravan Kumar",
+    'area':"Performance analysis for wireless sensor networks in IOT enabled Green Power Applications"
+  },
+];
+
+const ece_siva=[
+  {
+    'id':"1",
+    'point':"Shanmuga Sundar,A.Sivanantha Raja, C.Sanjeeviraja and D.Jeyakumar (2015), “Syntheis and characterization of novel siloxane based transparent and flexible substrate for OLEDs”, Nanoelectronics and Sensors, ISBN: 978-93-85436-94-9, Bloomsbury Publication."
+  },
+  {
+    'id':"2",
+    'point':"Shanmuga Sundar,V.Nidhya Vijay, T.Sridarshini and A.Sivanantha Raja (2018), “Performance analysis of multichannel EDM hybrid Optical communication system for long haul communications”, Frontier Research and Innovation in Optoelectronics Technology and Industry, ISBN: 978-1-138-33178-5, CRC Press, Taylor & Francis."
+  },
+  {
+    'id':"3",
+    'point':"Shanmuga Sundar, A.Sivanantha Raja, R.Saravanan and Marcos Flores Carrasco (2018), “Photocatalyst for indoor air pollution: a brief review” Green Photocatalysts for Energy and Environmental Process, Springer, doi: 10.1007/978-3-030-17638-9, ISBN: 978-3-030-17638-9."
+  },
+  {
+    'id':"4",
+    'point':"Shanmuga Sundar, T.Sridarshini, R.Sitharthan, Madurakavi Karthikeyan, A.Sivanantha Rajaand Marcos Flores Carrasco (2019), “Performance investigation of 16/32- channel DWDM PON and long-reach PON systems using an ASE noise source”, Advances in Optoelectronic Technology and Industry Development – Jose & Ferreira (eds.), ISBN: 978-0-367-24634-1, CRC Press, Taylor & Francis, London, pp. 93-99."
+  },
+  {
+    'id':"5",
+    'point':"Shanmuga Sundar, T. Arun, M. Muneeswaran, R.Sitharthan, M. Karthikeyan, A.Sivanantha Raja, and Marcos Flores C (2020), “Conductive oxides role in Flexible Electronic Device Applications”, Metal and Metal Oxides for Energy and Electronics, Springer Nature, ISBN: 978-3-030-53065-5, pp.121-148, doi: 10.1007/978-3-030-53065-5_4."
+  },
+  {
+    'id':"6",
+    'point':"Jayson Keerthy Jayabarathan,  Sivanantha Rajaand S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
+  },
+];
+
+const ece_margaret=[
+  {
+    'id':"1",
+    'point':"Vasuki, D. Helena Margaret and Rajeswari, “Microwave Engineering”, Mc Graw Hill Education (India) Pvt Ltd., 2015. (ISBN: 93-392-1948-1)",
+  },
+];
+
+const ece_rajesh=[
+  {
+    'id':"1",
+    'point':"Gopinath A, Rajesh Kanna B, Vellingiri Jayagopal, Aviral Srivastava (2023), Internet of Things (IOT), ISBN: 978-81-19489-07-7, First Edition, RK Publication, India, 21.07.2023.",
+  },
+];
+
 const ece_rankers = [
   {
     id: "1",
@@ -730,6 +909,15 @@ export {
   ece_antenna_rf,
   ece_antenna_software,
   ece_hod,
-
-  progressinfo
+  progressinfo,
+  ece_research_info,
+  patent_info,
+  guide_info,
+  scholar_info1,
+  scholar_info2,
+  scholar_info3,
+  scholar_info4,
+  ece_siva,
+  ece_margaret,
+  ece_rajesh
 };

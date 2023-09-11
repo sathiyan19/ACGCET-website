@@ -21,11 +21,11 @@ const Sh_mat_research = () => {
         <div className="shmat_abt">
         <Underline heading="Research and Publications"/>
         <div className='pts'>
-            <h3>R. Vasanthi</h3>
+            <h3>Dr.R. Vasanthi</h3>
             <Listformat points={mat_res_vas}/>
           </div>
           <div className='pts'>
-            <h3>T. Anitha</h3>
+            <h3>Dr.T. Anitha</h3>
             <Listformat points={mat_res_ani}/>
           </div>
         </div>

@@ -1,10 +1,39 @@
 import dpm from "../assets/pictures/boy.webp";
 import dpf from "../assets/pictures/girl.webp"
-import cover from "../assets/pictures/elec_banner.webp";
+import cover from "../assets/pictures/eee-cover.webp";
 
 import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
+
+import baskaran from '../assets/pictures/eee_dept/eee_faculties/1-Baskaran-_3_.webp'
+import arunya from '../assets/pictures/eee_dept/eee_faculties/2-Arunya-Revathi.webp'
+import Nageswari from '../assets/pictures/eee_dept/eee_faculties/3-Nageswari.webp'
+import Vennila from '../assets/pictures/eee_dept/eee_faculties/4-Vennila.webp'
+import Madasamy from '../assets/pictures/eee_dept/eee_faculties/5-Madasamy.webp'
+import Ramadas from '../assets/pictures/eee_dept/eee_faculties/6-Ramadas.webp'
+import arun from '../assets/pictures/eee_dept/eee_faculties/7 Arun.webp'
+import amuthan from '../assets/pictures/eee_dept/eee_faculties/8 Amuthan.webp'
+import pradeep from '../assets/pictures/eee_dept/eee_faculties/11 PRADEEP.webp'
+import Padmanaban from '../assets/pictures/eee_dept/eee_faculties/12 Padmanaban (1).webp'
+import ida from '../assets/pictures/eee_dept/eee_faculties/13 Ida Evangeline.webp'
+import asaimani from '../assets/pictures/eee_dept/eee_faculties/14 Asaimani.webp'
+import dhivya from '../assets/pictures/eee_dept/eee_faculties/15 Dhivya.webp'
+import saranya from '../assets/pictures/eee_dept/eee_faculties/17 Saranya.webp'
+import preethi from '../assets/pictures/eee_dept/eee_faculties/18 Preethi.webp'
+import abarna from '../assets/pictures/eee_dept/eee_faculties/19 Abarna.webp'
+import mansoor from '../assets/pictures/eee_dept/eee_faculties/21-Mansoore.webp'
+import abinesh from '../assets/pictures/eee_dept/eee_faculties/22-Abinesh.webp'
+import akbar from '../assets/pictures/eee_dept/eee_faculties/Akbar-_2_.webp'
+import ananthi from '../assets/pictures/eee_dept/eee_faculties/Ananthii-_1_.webp'
+import arulmani from '../assets/pictures/eee_dept/eee_faculties/Arulmani-_1_.webp'
+import chockalingam from '../assets/pictures/eee_dept/eee_faculties/Chokalingam-_1_.webp'
+import natchiappan from '../assets/pictures/eee_dept/eee_faculties/Natchiappan-_1_.webp'
+import peter from '../assets/pictures/eee_dept/eee_faculties/Peter-_1_.webp'
+import raja from '../assets/pictures/eee_dept/eee_faculties/Raja-_1_.webp'
+import suresh from '../assets/pictures/eee_dept/eee_faculties/Suresh-kumar-_1_.webp'
+import mani from '../assets/pictures/eee_dept/eee_faculties/manimaran-_1_.webp'
+import sakthi from '../assets/pictures/eee_dept/eee_faculties/Sakthivel-_1_.webp'
 
 const eee_dept_menu = [
   {
@@ -227,7 +256,7 @@ const eee_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: baskaran,
     name: "Dr.K.Baskaran",
     Designation: "Professor and HOD",
     mailid: "drbaskaran@accetedu.in",
@@ -236,7 +265,7 @@ const eee_fac_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dpf,
+    dp: arunya,
     name: "Dr.A.ArunyaRevathi",
     Designation: "Professor (CAS)",
     mailid: "arunyarevathi_eee@yahoo.co.in",
@@ -245,7 +274,7 @@ const eee_fac_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpf,
+    dp: Nageswari,
     name: "Dr.S.Nageswari",
     Designation: "Associate Professor",
     mailid: "mahabashyam@gmail.com",
@@ -254,7 +283,7 @@ const eee_fac_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpf,
+    dp: Vennila,
     name: "Dr.C.Vennila",
     Designation: "Associate Professor",
     mailid: "vennila@accetedu.in",
@@ -263,7 +292,7 @@ const eee_fac_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dpm,
+    dp: Madasamy,
     name: "Prof.P.Madasamy",
     Designation: "Associate Professor(CAS)",
     mailid: "mjasmitha0612@gmail.com",
@@ -272,7 +301,7 @@ const eee_fac_profiles = [
   {
     id: "6",
     cover: cover,
-    dp: dpm,
+    dp: Ramadas,
     name: "Prof.K.Ramadas",
     Designation: "Associate Professor(CAS)",
     mailid: "proframadas@gmail.com",
@@ -281,7 +310,7 @@ const eee_fac_profiles = [
   {
     id: "7",
     cover: cover,
-    dp: dpm,
+    dp: arun,
     name: "Dr.M.Arun",
     Designation: "Associate Professor(CAS)",
     mailid: "arunmano80@gmail.com",
@@ -290,7 +319,7 @@ const eee_fac_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: dpm,
+    dp: amuthan,
     name: "Prof.G.Amuthan",
     Designation: "Assistant Professor",
     mailid: "amuthan@accetedu.in",
@@ -317,7 +346,7 @@ const eee_fac_profiles = [
   {
     id: "11",
     cover: cover,
-    dp: dpm,
+    dp: pradeep,
     name: "Prof.V.Pradeep",
     Designation: "Assistant Professor",
     mailid: "pradeep.vee@gmail.com",
@@ -326,7 +355,7 @@ const eee_fac_profiles = [
   {
     id: "12",
     cover: cover,
-    dp: dpm,
+    dp: Padmanaban,
     name: "Prof.K.Padmanaban",
     Designation: "Assistant Professor",
     mailid: "padupoi@gmail.com",
@@ -335,7 +364,7 @@ const eee_fac_profiles = [
   {
     id: "13",
     cover: cover,
-    dp: dpf,
+    dp: ida,
     name: "Dr.S.Ida Evangeline",
     Designation: "Assistant Professor",
     mailid: "ida.fragi@gmail.com",
@@ -344,7 +373,7 @@ const eee_fac_profiles = [
   {
     id: "14",
     cover: cover,
-    dp: dpm,
+    dp: asaimani,
     name: "Prof.S.Aasaimani",
     Designation: "Assistant Professor",
     mailid: "aasaimani.be.eee@gmail.com",
@@ -353,7 +382,7 @@ const eee_fac_profiles = [
   {
     id: "15",
     cover: cover,
-    dp: dpf,
+    dp: dhivya,
     name: "Ms.K.Dhivya",
     Designation: "Assistant Professor (Contract Basis)",
     mailid: "dhivyaacgcet@gmail.com",
@@ -371,7 +400,7 @@ const eee_fac_profiles = [
   {
     id: "17",
     cover: cover,
-    dp: dpf,
+    dp: saranya,
     name: "Ms.M.Sharanya",
     Designation: "Assistant Professor (Contract Basis)",
     mailid: "sharanyam105@gmail.com",
@@ -380,7 +409,7 @@ const eee_fac_profiles = [
   {
     id: "18",
     cover: cover,
-    dp: dpf,
+    dp: preethi,
     name: "Ms.M.Preethi",
     Designation: "Assistant Professor (Part time)",
     mailid: "mpreethi890@gmail.com",
@@ -389,7 +418,7 @@ const eee_fac_profiles = [
   {
     id: "19",
     cover: cover,
-    dp: dpf,
+    dp: abarna,
     name: "Ms.C.Abarna",
     Designation: "Assistant Professor (Part time)",
     mailid: "cabarna97@gmail.com",
@@ -407,7 +436,7 @@ const eee_fac_profiles = [
   {
     id: "21",
     cover: cover,
-    dp: dpm,
+    dp: mansoor,
     name: "Mr.S.Mohamed Jaidu Mansoor",
     Designation: "Assistant Professor (Part time)",
     mailid: "mohamedjaidumansoor@gmail.com",
@@ -416,7 +445,7 @@ const eee_fac_profiles = [
   {
     id: "22",
     cover: cover,
-    dp: dpm,
+    dp: abinesh,
     name: "Mr.G.Abinesh",
     Designation: "Assistant Professor (Part time)",
     mailid: "abineshkkdi@gmail.com",
@@ -427,7 +456,7 @@ const eee_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: natchiappan,
     name: "P.Nachiappan",
     Designation: "Junior Draughting Officer",
     mailid: "nachiappan.perumal@gmail.com",
@@ -435,7 +464,7 @@ const eee_sup_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dpf,
+    dp: ananthi,
     name: "I.Ananthi",
     Designation: "Lab Assistant (SR.Gr)",
     mailid: "ananthiselvaraj71@gmail.com",
@@ -443,7 +472,7 @@ const eee_sup_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpm,
+    dp: mani,
     name: "K.Manimaran",
     Designation: "Electrician – II",
     mailid: "maranmani132@gmail.com",
@@ -451,7 +480,7 @@ const eee_sup_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpm,
+    dp: sakthi,
     name: "M.Sakthivel",
     Designation: "Electrician – II",
     mailid: "sudhasakthisri@gmail.com",
@@ -459,7 +488,7 @@ const eee_sup_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dpm,
+    dp: peter,
     name: "G.Peter Ramesh",
     Designation: "Mechanic – II",
     mailid: "accetpeter@gmail.com",
@@ -467,7 +496,7 @@ const eee_sup_profiles = [
   {
     id: "6",
     cover: cover,
-    dp: dpm,
+    dp: akbar,
     name: "J.Akbar Ali",
     Designation: "Electrician  - II",
     mailid: "akku1485@gmail.com",
@@ -475,7 +504,7 @@ const eee_sup_profiles = [
   {
     id: "7",
     cover: cover,
-    dp: dpm,
+    dp: chockalingam,
     name: "G.Chokalingam",
     Designation: "Electrician – II",
     mailid: "chockugs@gmail.com",
@@ -483,7 +512,7 @@ const eee_sup_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: dpm,
+    dp: raja,
     name: "M.Raja",
     Designation: "Cleaner",
     mailid: "rajanivi167@gmail.com",
@@ -491,7 +520,7 @@ const eee_sup_profiles = [
   {
     id: "9",
     cover: cover,
-    dp: dpm,
+    dp: arulmani,
     name: "R.Arulmani",
     Designation: "Cleaner",
   },
