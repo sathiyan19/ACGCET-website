@@ -107,7 +107,7 @@ const eee_dept_menu = [
 const eee_hod = {
   name: "Dr.K.Baskaran",
   designation: "Head of the Department, EEE",
-  pic: kb,
+  pic: baskaran,
   content:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" +
     "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut" +

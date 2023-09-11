@@ -1955,8 +1955,6 @@ export {
   ece_antenna_rf,
   ece_antenna_software,
   ece_hod,
-
-  progressinfo,
   ece_research_info,
   patent_info,
   guide_info,
@@ -1966,6 +1964,7 @@ export {
   scholar_info4,
   ece_siva,
   ece_margaret,
-  ece_rajesh
+  ece_rajesh,
   ece_placement_info,
+  ece_stud_data
 };
