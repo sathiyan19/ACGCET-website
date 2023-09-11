@@ -9,6 +9,17 @@ import placement from '../assets/pictures/placement.webp'
 
 import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
 
+import suhaila from '../assets/pictures/cse_dept/cse_faculties/suhaila.webp'
+import sk from '../assets/pictures/cse_dept/cse_faculties/sk.webp'
+import hema from '../assets/pictures/cse_dept/cse_faculties/hema.webp'
+import anbu from '../assets/pictures/cse_dept/cse_faculties/anbuselvi.webp'
+import karthiga from '../assets/pictures/cse_dept/cse_faculties/karthiga.webp'
+import rajanandhini from '../assets/pictures/cse_dept/cse_faculties/rajanandini.webp'
+import vijay from '../assets/pictures/cse_dept/cse_faculties/Vijay Profile 2023.webp'
+import chandraprabha from '../assets/pictures/cse_dept/cse_faculties/chandraprabha.webp'
+import raja from '../assets/pictures/cse_dept/cse_faculties/raja.webp'
+import rajendran from '../assets/pictures/cse_dept/cse_faculties/rajendran.webp'
+
 const cse_dept_menu = [
   {
     id: "1",
@@ -84,7 +95,7 @@ const cse_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpf,
+    dp: chandraprabha,
     name: "K.Chandraprabha",
     Designation: "Associate professor",
     mailid: "kcprabha@gmail.com",
@@ -93,7 +104,7 @@ const cse_fac_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dpf,
+    dp: suhaila,
     name: "S.Syed Suhaila",
     Designation: "Assistant professor",
     mailid: "syedsuhaila63@gmail.com",
@@ -102,7 +113,7 @@ const cse_fac_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpm,
+    dp: sk,
     name: "Dr.K.Sundara Krishnan",
     Designation: "Assistant professor",
     mailid: "sundarakrishnank@gmail.com",
@@ -111,7 +122,7 @@ const cse_fac_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpf,
+    dp: hema,
     name: "Dr.N.Hema Rajini",
     Designation: "Associate professor",
     mailid: "auhemasmith@yahoo.co.in",
@@ -120,7 +131,7 @@ const cse_fac_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dpf,
+    dp: anbu,
     name: "Anbu Selvi P",
     Designation: "Assistant professor",
     mailid: "anbuselvi17@gmail.com",
@@ -129,7 +140,7 @@ const cse_fac_profiles = [
   {
     id: "6",
     cover: cover,
-    dp: dpf,
+    dp: karthiga,
     name: "G. Karthika",
     Designation: "Assistant professor",
     mailid: "kartiga.g@gmail.com",
@@ -138,7 +149,7 @@ const cse_fac_profiles = [
   {
     id: "7",
     cover: cover,
-    dp: dpf,
+    dp: rajanandhini,
     name: "Mrs.M.Rajanandhini",
     Designation: "Assistant professor(Ad-hoc)",
     mailid: "priyamnandhini@gmail.com",
@@ -149,7 +160,7 @@ const cse_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: vijay,
     name: "G.Vijaya venkata krishnan",
     Designation: "Foreman Instructor",
     mailid: "vijayvisanth@gmail.com",
@@ -167,7 +178,7 @@ const cse_sup_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpm,
+    dp: rajendran,
     name: "S.Rajendran",
     Designation: "Cleaner",
     mailid: "bhuvanagirirajendran@gmail.com",
@@ -176,7 +187,7 @@ const cse_sup_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpm,
+    dp: raja,
     name: "R.Raja",
     Designation: "Mechanic Grade-II",
     mailid: "",

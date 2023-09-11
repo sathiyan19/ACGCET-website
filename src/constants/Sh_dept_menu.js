@@ -218,7 +218,7 @@ const chemi_fac_profiles = [
       name: "K.T.Loganathan",
       Designation: "Assistant Professor and Head of the Department",
       mailid: "logchem80@gmail.com",
-      pdf:"https://drive.google.com/file/d/12xAzZpnK4x9t6ej4w1jqvVkRohfrCQ9d/view?usp=drive_link"
+      pdf:"https://drive.google.com/file/d/1JujcMUsFo6rWqzcwv2_BQf203WU9M7au/view?usp=drive_link"
     },
     {
       id: "2",

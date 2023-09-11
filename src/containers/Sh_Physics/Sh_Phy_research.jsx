@@ -20,11 +20,11 @@ const Sh_Phy_research = () => {
         <div className="shchemi_abt">
         <Underline heading="Research and Publications"/>
         <div className='pts'>
-            <h3>Bhuvaneshwari B V</h3>
+            <h3>Dr.Bhuvaneshwari B V</h3>
             <Listformat points={Phy_research_B}/>
           </div>
           <div className='pts'>
-            <h3>Ponmudi S</h3>
+            <h3>Dr.Ponmudi S</h3>
             <Listformat points={Phy_research_P}/>
           </div>
           <div className='pts'>
@@ -40,11 +40,11 @@ const Sh_Phy_research = () => {
             <Listformat points={Phy_research_S}/>
           </div>
           <div className='pts'>
-            <h3>Vijayaraghavan K R</h3>
+            <h3>Dr.Vijayaraghavan K R</h3>
             <Listformat points={Phy_research_Vj}/>
           </div>
           <div className='pts'>
-            <h3>Mariammal R N</h3>
+            <h3>Dr.Mariammal R N</h3>
             <Listformat points={Phy_research_M}/>
           </div>
         </div>
