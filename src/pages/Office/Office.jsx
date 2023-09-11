@@ -3,16 +3,17 @@ import React from "react";
 import "./Office.css";
 
 import principal from "../../assets/pictures/principal.webp";
+import {office_admin_staffs} from '../../constants/office.js';
 
-
-import { Backtotop } from "../../widgets";
+import { Backtotop,Underline } from "../../widgets";
+import { Profile_display } from "../../components";
 
 const Office = () => {
   return (
     <>
       <Backtotop />
       <div className="whole_content">
-        <div className="heading1">Office</div>
+        <Underline heading="Principal Office"/>
 
         <div className="princ">
           <div className="princ_msg_head">Principal's message:</div>
@@ -52,7 +53,11 @@ const Office = () => {
           </div>
         </div>
 
-        
+        <div className="admin_staff">
+          <Underline heading="Admistrative Staffs"/>
+          <Profile_display list_info={office_admin_staffs}/>
+        </div>
+
       </div>
     </>
   );

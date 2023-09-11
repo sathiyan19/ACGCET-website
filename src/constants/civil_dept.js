@@ -51,6 +51,12 @@ const civ_dept_menu = [
     arl:'l'
   },
   {
+    id: "12",
+    path: "/civildept/civil-awards",
+    link: "Awards, Patents & Copyrights",
+    arl:'l'
+  },
+  {
     id: "11",
     path: "#",
     link: "MoU",
@@ -396,6 +402,92 @@ const civ_dept_events=[
       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
   },
 ]
+
+const civ_awards = [
+  {
+    id: "6",
+    head: "",
+    house: "right",
+    pdf:"https://drive.google.com/file/d/1XH1mUAAL8EJ48JKdN-RFFY5Uqz34F0Ap/view?usp=drive_link",
+    content:
+      "Dr. C. Vijayaprabha achieved the distinction of being designated as an 'NPTEL Domain Scholar' in the field of Concrete Technology by IIT Madras during the period from July to October 2023, demonstrating her advanced knowledge and expertise in civil engineering.",
+  },
+  {
+    id: "5",
+    head: "",
+    house: "left",
+    pdf:"https://drive.google.com/file/d/1lIQNqnjuMviz1KNEMD_zvqDEQRwnrSQl/view?usp=drive_link",
+    content:
+      "Dr. C. Vijayaprabha was recognized as an 'NPTEL Discipline Star' in Concrete Technology by IIT Madras for her exceptional performance during the NPTEL course from July to October 2022, showcasing her dedication and expertise in the field of civil engineering.",
+  },
+  {
+    id: "4",
+    head: "",
+    house: "right",
+    pdf:"https://drive.google.com/file/d/1iwS94tI0WzzlkaNFHhMxT-oTRT8ovjTd/view?usp=drive_link",
+    content:
+      "Dr. C. Vijayaprabha demonstrated her commitment to learning by earning the 'NPTEL Believer' recognition in the field of Concrete Technology from IIT Madras during the January to April 2022 period through the NPTEL (National Programme on Technology Enhanced Learning) program.",
+  },
+  {
+    id: "3",
+    head: "",
+    house: "left",
+    pdf:"https://drive.google.com/file/d/160ufTl6ly5eM-KoyJ2qgcAgAakJBEXos/view?usp=drive_link",
+    content:
+      "In 2022, Dr. C. Vijayaprabha was honored with the Best Paper Award from the Ramco Institute of Technology for her research titled 'The Effect of Sloshing due to the Dynamic Load in a Liquid Storage Tank with and Without Internal Obstructions' in the field of civil engineering.",
+  },
+  {
+    id: "1",
+    head: "",
+    house: "right",
+    content:
+      "In 2021, Dr. S. R. Sumathy was awarded the NESIN Award for Best Researcher in Civil Engineering by Science Father, recognizing her exceptional contributions to the field.",
+  },
+  {
+    id: "2",
+    head: "",
+    house: "left",
+    pdf:"https://drive.google.com/file/d/1rnXzucT0I21lJqn-QUhqXvN67S4lb1Ke/view?usp=drive_link",
+    content:
+      "In October 2020, Dr. C. Vijayaprabha received the Research Excellence Award in Civil Engineering, known as the InSc Award 2020, from the Institute of Scholars (InSc), acknowledging her outstanding contributions to the field.",
+  },
+];
+
+const civ_patents = [
+  {
+    id: "1",
+    head: "",
+    house: "left",
+    pdf:"https://drive.google.com/file/d/1XoBHM3ZcFcCX72-rz8Lb49Te5HvjVmqR/view?usp=drive_link",
+    content:
+      "In 2021, a patent was granted to Dr. C. Vijayaprabha, Mr. A. Ramanan, Dr. K. Aarthi, and Dr. S. R. Sumathy for their innovative method of preparing paver blocks that incorporate copper slag.In 2021, a patent was granted to Dr. C. Vijayaprabha, Mr. A. Ramanan, Dr. K. Aarthi, and Dr. S. R. Sumathy for their innovative method of preparing paver blocks that incorporate copper slag. ",
+  },
+  {
+    id: "2",
+    head: "",
+    house: "right",
+    pdf:"",
+    content:
+      "Dr. K. Aarthi, Dr. C. Vijayaprabha, Dr. A. Leelavathi, and Dr. S. R. Sumathy published a method for the preparation of unburnt bricks that incorporate sewage sludge and granite sawing waste.",
+  },
+  {
+    id: "3",
+    head: "",
+    house: "left",
+    pdf:"https://drive.google.com/file/d/1yv2MQaWwZolT02GicJ993G2ULaoWlmkT/view?usp=drive_link",
+    content:
+      "In 2021, Dr. K. Aarthi was granted a patent for Manual-15CEC80, which focuses on the design and drawing of steel and RCC (Reinforced Concrete) structures, incorporating innovative software applications.",
+  },
+  {
+    id: "4",
+    head: "",
+    house: "right",
+    pdf:"https://drive.google.com/file/d/1gTXEGkQLlQr_c11c6bEilSshFh0Kkx-4/view?usp=drive_link",
+    content:
+      "In 2021, a patent was granted to Dr. C. Vijayaprabha for the creation of the 15CEC76 Concrete and Highway Laboratory Manual.",
+  },
+];
+
 export {
   civ_dept_menu,
   civ_fac_profiles,
@@ -407,5 +499,7 @@ export {
   civ_vision,
   civ_progs,
   civ_dept_events,
-  civ_labs
+  civ_labs,
+  civ_awards,
+  civ_patents
 };

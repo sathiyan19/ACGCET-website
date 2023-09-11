@@ -4,13 +4,16 @@ import "./News.css";
 
 import { Modal_carousel } from "../../components";
 
+import { Underline } from "../../widgets";
+
 import { news_info } from "../../constants/news_info";
 
 const News = () => {
   return (
     <div className="blogs">
-      <p className="news">News</p>
-      <div className="hl"></div>
+      <div className="news_heading">
+      <Underline heading="News"/>
+      </div>
       <Modal_carousel info={news_info}/>
     </div>
   );

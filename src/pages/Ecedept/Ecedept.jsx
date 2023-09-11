@@ -1,9 +1,10 @@
 import React from "react";
 
 import "./Ecedept.css";
-import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card,Progressbar } from "../../widgets";
-import {Hodmsg} from '../../components'
-import { ece_dept_menu,ece_mission,ece_vision,ece_progs,ece_hod,progressinfo } from "../../constants/ece_dept";
+import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card} from "../../widgets";
+import {Accordion, Hodmsg} from '../../components'
+import { ece_dept_menu,ece_mission,ece_vision,ece_progs,ece_hod,ece_stud_data} from "../../constants/ece_dept";
+
 
 import { Radial_menu } from "../../components";
 import ece from "../../assets/pictures/group-pic.webp";
@@ -70,9 +71,13 @@ const Ecedept = () => {
             {ece_progs.map((item)=><Content_card key={item.id} period={item.period} year={item.year} top_head={item.top_head} heading={item.program} intake={item.intake}/>)}
           </div>
         </div>
+        <div className="ece_students">
+          <Underline heading="Student Details"/>
+          <Accordion accord_data={ece_stud_data}/>
         </div>
 
-        {/* {progressinfo.map((item)=><Progressbar bigperc={item.bigperc} smallperc={item.smallperc}/>)} */}
+        </div>
+
       </section>
 
       <Backtotop />

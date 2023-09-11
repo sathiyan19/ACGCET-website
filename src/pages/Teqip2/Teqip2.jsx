@@ -6,7 +6,7 @@ import { teqip2 } from "../../constants/teqip2";
 
 import { Table } from "../../components";
 
-import { Backtotop } from "../../widgets";
+import { Backtotop, Underline } from "../../widgets";
 
 const Teqip2 = () => {
   const columns = [
@@ -18,7 +18,9 @@ const Teqip2 = () => {
   return (
     <div>
       <Backtotop/>
-      <div className="teqip2_heading">TEQIP-II</div>
+      <div className="teqip2_heading">
+        <Underline heading="TEQIP-II"/>
+      </div>
       <div className="teqip2_content">
         <p>
           As per TEQIP project design, the institution has been selected for

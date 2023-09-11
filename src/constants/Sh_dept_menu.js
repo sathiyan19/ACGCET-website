@@ -526,6 +526,279 @@ const eng_prog=[
   },
 ]
 
+const mat_res_vas=[
+  {
+    'id':"1",
+    'point':"R.Vasanthi , K.Subramanian, Vertex covering transversal domination in graphs,   International Journal of Mathematics and Soft Computing, Vol.5, No.2 (2015), 01 – 07",
+  },
+  {
+    'id':"2",
+    'point':"R.Vasanthi , K.Subramanian, On vertex covering transversal domination number  of regular graphs, The Scientific World Journal, Vol 2016, Article ID 1029024, 7 pages",
+  },
+  {
+    'id':"3",
+    'point':"R.Vasanthi , K.Subramanian, Vertex covering transversal domatic number of graphs   Advances and Applications in Discrete Mathematics, Volume 18, Number 1, 2017,  pp 87-105 ",
+  },
+  {
+    'id':"4",
+    'point':"M. Perumalsamy, P. Arul Paul Sudhahar, J. John and R. Vasanthi, Edge Fixed Steiner Number of a Graph,International Journal of Mathematical Analysis Vol. 11, 2017, no. 16, 771 – 785",
+  },
+  {
+    'id':"5",
+    'point':"R.Vasanthi , K.Subramanian, On the minimum vertex covering transversal dominating sets in graphs and their classification, Discrete Mathematics, Algorithms and Applications, Vol. 09, No.05, (2017).",
+  },
+  {
+    'id':"6",
+    'point':"R.Vasanthi , K.Subramanian, Convex hull of   in graphs, International Journal of Computer Applications, Volume 180 ,No.23,2018",
+  },
+  {
+    'id':"7",
+    'point':"R.Vasanthi , M. Perumalsamy, K.Subramanian,  On the Convex hull of  in graphs, Global Journal of Pure and Applied Mathematics,Volume 15 Number 5, 2019 ,pp. 743-754",
+  },
+  {
+    'id':"8",
+    'point':"M. Perumalsamy, P. Arul Paul Sudhahar, J. John and R. Vasanthi, The forcing edge fixed Steiner number of a Graph, Journal of Statistics and Management Systems, 22 (1), 2019,1-10",
+  },
+  {
+    'id':"9",
+    'point':"M. Perumalsamy, P. Arul Paul Sudhahar, J. Johnand R. Vasanthi,  Edge Fixed edge Steiner Number of a Graph, International Journal of Computational System Engineering, 5,No.4, (2019).",
+  },
+  {
+    'id':"10",
+    'point':"M. Perumalsamy, P. Arul Paul Sudhaharand  R.Vasanthi, Extreme Edge Fixed Steiner Graphs, International Journal of Computer Applications, 178,No. 51,2019.",
+  },
+  {
+    'id':"11",
+    'point':"M. Perumalsamy , P. Arul Paul Sudhahar and R. Vasanthi,The Upper Edge Fixed Steiner  Number of a Graph,  International Journal of Mathematics and its Applications,6(2–A)(2018), 337–343 ISSN: 2347-1557",
+  },
+  {
+    'id':"12",
+    'point':"R. Vasanthi, M. Perumalsamy presented a paper entitled “Edge fixed edge Steiner number of a graph” in the International Conference on‘Mathematical Modeling and Computational Methods in Science and Engineering’ ,held at Alagappa University, Karaikudi during Feb. 20-22, 2017.",
+  },
+]
+
+const mat_res_ani=[
+  {
+    'id':"1",
+    'point':"T. Anitha and D. Krishnaswamy, Roughness in subtraction semigroups, International journal of Algebra, V6,Number 32, pp. 1569-1578, 2011.",
+  },
+  {
+    'id':"2",
+    'point':"T. Anitha and D. Krishnaswamy, (λ,μ)- Fuzzy quasi ideals and (λ,μ )-Fuzzy bi-iedals in ternary semirings, Malaya Journal of Mathematik, V4, No 1, pp 171-177, 2013.",
+  },
+  {
+    'id':"3",
+    'point':"T. Anitha and D. Krishnaswamy, (λ,μ)- Fuzzy prime ideals in ternary semirings, Annals of fuzzy mathematics and informatics, V8, No 1, pp 47-54, 2014.",
+  },
+  {
+    'id':"4",
+    'point':"T. Anitha and D. Krishnaswamy, Fuzzy prime ideals in ternary semirings, Annals of fuzzy mathematics and informatics, V7, No 5, pp 755-763, 2014.",
+  },
+  {
+    'id':"5",
+    'point':"P. Dheena, T.Anitha, On intuitionistic Q-fuzzy sets in ternary semirings, Annals of fuzzy mathematics and informatics, V9, No 6, pp 925-940, 2015.",
+  },
+  {
+    'id':"6",
+    'point':"T. Anitha, D. Krisnaswamy, (λ,μ)- Fuzzy ideals in ternary semirings,  Journal of Prime Research in Mathematics, V11, No 818-5495, pp 85-92, 2015.",
+  },
+  {
+    'id':"7",
+    'point':"T. Anitha, (λ,μ)- Fuzzy ideals in ordered ternary semigroups, Malaya Journal of Mathematik, s(2),  pp 326-335, 2015.",
+  },
+  {
+    'id':"8",
+    'point':"D. Krishnaswamy, J. Jayaraj and T. Anitha, interval-valued intuitionistic fuzzy bi-ideals in ternary semirings, Romanian Journal of Mathematics and Computer science, V6 (1), pp 6-15, 2016.",
+  },
+  {
+    'id':"9",
+    'point':"D. Krishnaswamy,  J. Jayaraj and T. Anitha, interval-valued intuitionistic fuzzy k-ideals in ternary semirings, The Journal of Fuzzy mathematics, V24, No 4, pp.941-954, 2016.",
+  },
+  {
+    'id':"10",
+    'point':" J. Jayaraj and T. Anitha, interval-valued intuitionistic Q-fuzzy bi-ideals in ternary semirings, Malaya Journal of Mathematik, V1, No S(1), pp 144-150, 2019.",
+  },
+  {
+    'id':"11",
+    'point':"T. Anitha , J. Jayaraj and Thirumaran. S,-Fuzzy  ideals in ternary semirings, Malaya Journal of Mathematik, V1, No S(1), pp 120-125, 2019.",
+  },
+  {
+    'id':"12",
+    'point':"J. Jayaraj and T. Anitha , Interval valued -Fuzzy  ideals in ternary semirings, Recent trends in Pure and Applied Mathematics, AIP Conf. Proc. 2177, pp 020026-1—020026-7, 2019.",
+  },
+  {
+    'id':"13",
+    'point':"Anitha T, Interval-Valued Anti Fuzzy ideals in Ternary Semirings, 4th International Conference on Emerging Trends in Multidisciplinary Research, Feb 23-24, 2019, Shanmuga Industries Arts & Science College,Tiruvannamalai, pp. 9-9. Tiruvannamalai, Arunai International Research Foundation.",
+  },
+  {
+    'id':"14",
+    'point':"Anitha T, (∈,∈∨ q)-Fuzzy Prime ideals in Ternary Semirings, Recent Advancements in Pure and Applied Mathematics, Feb 25-25, 2019, Government Arts College(Autonomous),Kumbakonam, pp. 13-13. Kumbakonam, Ramanujan Research Centre,PG & Research Department of Mathematics.",
+  },
+  {
+    'id':"15",
+    'point':"Dheena.P, Krishnaswamy, D and T. Anitha, (λ,μ)- Fuzzy ideals in ternary semirings., National                 Conference on Mathematical Modelling 2012(supported by UGC), Feb 23-24, 2012, Department of Mathematics,Annamalai University, pp. 9-9. Chidambaram, Annamalai University.",
+  },
+  {
+    'id':"16",
+    'point':"Anitha T, (λ,μ)- Fuzzy ideals in Ordered Ternary Semigroups, National Conference on Applied Mathematics and Computer Simulation-Recent Trends-2015, Oct 7-8, 2015, Tranquebar Bishop Manikam Lutheran College(TELC),Porayar, pp. 36-36. Porayar, PG & Research Department of Mathematics,TELC.",
+  },
+  {
+    'id':"17",
+    'point':"Anitha.T , J.Jayaraj and Thirumaran.S, (∈,∈∨ q)-Fuzzy ideals in Ternary Semirings, National Conference on Recent Research Development in Pure and Applied Mathematics, Feb 21-22, 2019, Government Arts College(Autonomous), Karur, pp. 13-13. Karur, PG & Research Department of Mathematics,Karur.",
+  },
+]
+
+const chemi_research_l=[
+  {
+    'id':"1",
+    'point':"Loganathan K T, Aditya P. Pandey, Uday Kumar Padidela, and Ramakrishnan Sethu, in collaboration with Pothiappan Vairaprakash and Venkatesan S. Thimmakondu*, conducted research on MgC6H2 isomers, which are considered potential candidates for laboratory and radioastronomical studies. Their findings were published in the Journal of Physical Chemistry A in 2020, Volume 124, Issue 37, pages 7518–7525.",
+  },
+]
+
+const chemi_research_R=[
+  {
+    'id':"1",
+    'point':"M. Rajaperumal provided a commentary on the paper titled 'Microwave synthesis of graphene/magnetite composite electrode material for symmetric supercapacitor with superior rate performance' authored by K. Karthikeyan, D. Kalpana, S. Amaresh, and Y. S. Lee, published in RSC Advances in 2017, with the reference pages 47332-47334.",
+  },
+  {
+    'id':"2",
+    'point':"M. Rajaperumal collaborated with K. Sivakumar and C. Sivanesan on research involving the production of biodiesel and emission analysis using Karanja (Pongamia) non-edible vegetable oil. This work was published in the International Research Journal of Engineering and Technology.",
+  },
+  
+]
+
+const Phy_research_B=[
+  {
+    'id':"1",
+    'point':"R.M. Sakthi Sadhasivam, K. Ramanathan, B.V. Bhuvaneswari and K. Raja, A study on tribological behaviour and analysis of ZnO reinforced AA6061 matrix composites fabricated by stir casting route, Industrial Lubricant and Tribology, Vol.73, Issue 4, 2021.",
+  },
+  {
+    'id':"2",
+    'point':"S.Venkatarjan, B.V.Bhuvaneswari,A.Athijayamani,S.Sekar, Effect of addition of areca fine fibers on the mechanical properties of CGF/PF biocomposites,  Elsevier- Vacuum, 166(2019), 6-10,0042-207X.",
+  },
+  {
+    'id':"3",
+    'point':"S.Venkatarajan, B.V.Bhuvaneswari, A.Athijayamani, S.Navaneethakrishnan, Mechanical Properties of Roselle fiber/Coconut shell particulate/Vinyl Ester Hybrid composite, Journal of Applied Science and Computations, Vol 5, ISS 10 OCT 2018P.1369 – 1378, 1076-5131.",
+  },
+]
+const Phy_research_P=[
+  {
+    'id':"1",
+    'point':"S Ponmudi, R Sivakumar, C Sanjeeviraja, C Gopalakrishnan and T Okamoto, Development of room temperature sensor based on high quality rhombohedral Al2O3: Cr2O3 (1:1) thin film with bone like morphological feature for ultrasensitive detection of NH3 gas. Journal of Materials Science: Materials in Electronics 31 (2020) 10123–10141.",
+  },
+  {
+    'id':"2",
+    'point':"S. Ponmudi,R. Sivakumar, C. Sanjeeviraja, C. Gopalakrishnanand K. Jeyadheepan, Facile fabrication of spinel structured n-type CuAl2O4 thin film with nano-grass like morphology by sputtering technique, Appl. Surf. Sci. 483 (2019) 601-615 [IF: 6.182].",
+  },
+  {
+    'id':"3",
+    'point':"S. Ponmudi,R. Sivakumar, C. Sanjeeviraja, C. Gopalakrishnanand K. Jeyadheepan,  Influences of sputtering power and annealing temperature on the structural and optical properties of Al2O3:CuO thin films fabricated by radio frequency magnetron sputtering technique, Journal of Materials Science: Materials in Electronics30 (2019) 18315–18327.",
+  },
+  {
+    'id':"4",
+    'point':"S. Ponmudi,R. Sivakumar, C. Sanjeeviraja, C. Gopalakrishnanand K. Jeyadheepan,  Al2O3:Cr2O3:CuO (1:1:1) thin film prepared by radio frequency magnetron sputtering technique: a promising material for high sensitive room temperature ammonia sensor, Mater. Res. Express 6 (2019) 066422.",
+  },
+  {
+    'id':"5",
+    'point':"S. Ponmudi,R. Sivakumar, C. Sanjeeviraja, Tuning the morphology of Cr2O3:CuO (50:50) thin films by RF magnetron sputtering for room temperature sensing application, C. Gopalakrishnanand K. Jeyadheepan, Appl. Surf. Sci. 466 (2019) 703-714.",
+  },
+  {
+    'id':"6",
+    'point':"S. Ponmudi,R. Sivakumar andC. Sanjeeviraja, Effects of sputtering power and substrate temperature on the optical properties of Al2O3:Cr2O3 thin films, Mater. Today Proc. 9 (2019) 1979-1984.",
+  },
+]
+
+const Phy_research_V=[
+  {
+    'id':"1",
+    'point':"S.Venkatarajan, A.Athijayamani, B.V.Bhuvaneswari, R.Ganesamoorthy, Analysis of mechanical properties of Agave Sisalana Variegata/banana fiber reinforced vinyl ester composites, AIP Conference Proceedings 2281, 020027(2020), https://doi.org/10.1063/5.0028043.",
+  },
+  {
+    'id':"2",
+    'point':"S.Venkatarajan, Athijayamani, An overview on natural cellulose fiber reinforced polymer composites, Elseiver- Materials Today: Proceedings 2214-7853 (2020),",
+  },
+  {
+    'id':"3",
+    'point':"S.Venkatarjan, B.V.Bhuvaneswari,A.Athijayamani,S.Sekar, Effect of addition of areca fine fibers on the mechanical properties of CGF/PF biocomposites,  Elsevier- Vacuum, 166(2019), 6-10,0042-207X.",
+  },
+  {
+    'id':"4",
+    'point':"S.Venkatarajan, B.V.Bhuvaneswari, A.Athijayamani, S.Navaneethakrishnan, Mechanical Properties of Roselle fiber/Coconut shell particulate/Vinyl Ester Hybrid composite, Journal of Applied Science and Computations, Vol 5, ISS 10 OCT 2018P.1369 – 1378, 1076-5131.",
+  },
+]
+
+const Phy_research_C=[
+  {
+    'id':"1",
+    'point':"S.R. Cynthia, R. Sivakumar, C. Sanjeeviraja, Ternary CuO:SnO2:ZnO (1:1:1) composite thin film for room temperature gas sensor application, Optik 234 (2021) 166615",
+  },
+  {
+    'id':"2",
+    'point':"S.R. Cynthia, R. Sivakumar, C. Sanjeeviraja, C. Gopalakrishnan, K. Jeyadheepan, Sputtering power and annealing effects on the properties of Zn2SnO4–SnO2 composite thin film for pungent smelling gas (NH3) detection, Phys. Status Solidi A 217 (2020) 2000512.",
+  },
+  {
+    'id':"3",
+    'point':"S.R. Cynthia, R. Sivakumar, C. Sanjeeviraja, C. Gopalakrishnan, K. Jeyadheepan, Room temperature ammonia gas sensing characteristics of copper oxide-tin oxide composite thin films prepared by radio frequency magnetron sputtering technique, J. Mater. Sci. Mater. Electron 31 (2020) 18018.",
+  },
+]
+
+const Phy_research_S=[
+  {
+    'id':"1",
+    'point':"Sharmila, BD, Sivaganesh, G, & Arulgnanam, A, 2020, ‘Effect of optimal uncoupling in enhancing synchronization stability in drive-response system’, Europhysics Letters, Vol. 131, No. 6, pp. 60003.",
+  },
+  {
+    'id':"2",
+    'point':"Sharmila, BD, Sivaganesh, G, & Arulgnanam, A, 2020, ‘Inducement and enhancement of synchronization stability by transient uncoupling in coupled chaotic systems with inherent frequency parameters’, The European Physical Journal B, Vol. 93, pp. 72.",
+  },
+  {
+    'id':"3",
+    'point':"Sivaganesh, G, Arulgnanam, A & Seethalakshmi, AN, 2019, ‘Generalized analytical solutions for secure transmission of signals using a simple communication scheme with numerical and experimental confirmation’, Chinese Journal of Physics, Vol. 62, pp. 72-85.",
+  },
+  {
+    'id':"4",
+    'point':"Sivaganesh, G, Arulgnanam, A & Seethalakshmi, AN, 2019, ‘Stability enhancement by induced synchronization using transient uncoupling in certain coupled chaotic systems’, Chaos Solitons & Fractals, Vol. 123, pp. 213-228.",
+  },
+  {
+    'id':"5",
+    'point':"Sivaganesh, G, Arulgnanam, A & Seethalakshmi, AN, 2019, ‘A complete analytical study on the dynamics of simple chaotic systems’, Pramana, Vol. 92, pp. 42.",
+  },
+  {
+    'id':"6",
+    'point':"Sivaganesh, G, Arulgnanam, A & Seethalakshmi, AN, 2018, ‘Generalized analytical solutions and experimental confirmation of complete synchronization in a class of mutually coupled simple nonlinear electronic circuits’, Chaos Solitons & Fractals, Vol. 123, pp. 294-307.",
+  },
+  {
+    'id':"7",
+    'point':"Sivaganesh, G, Arulgnanam, A, Seethalakshmi, AN & Selvaraj, S, 2018, ‘Analytical studies on the synchronization of a network of linearly-coupled simple chaotic systems’, Journal of the Korean Physical Society, Vol. 72, No. 10, pp. 1121-1128.",
+  },
+  {
+    'id':"8",
+    'point':"Sivaganesh, G & Arulgnanam, A, 2017, ‘Generalized analytical solutions for certain coupled simple chaotic systems’, Chinese Physics B, Vol. 26, No. 5.",
+  },
+]
+
+const Phy_research_Vj=[
+  {
+    'id':"1",
+    'point':"K. R. Vijayaraghavan, V. Gokula Lakshmi, P. Prema and M Balasubramaniam, Equatorial, collinear trajectories in the ternary fission of  for various third fragments , Journal of Physics G: Nuclear and Particle Physics 46, 025103 (2019).",
+  },
+]
+
+const Phy_research_M=[
+  {
+    'id':"1",
+    'point':" R.N. Mariammal and K. Ramachandran,  Increasing the reactive sites of ZnO nanoparticles by Li doping for ethanol sensingMaterials Research Express, 6 015024 (2019).",
+  },
+  {
+    'id':"2",
+    'point':"R.N. Mariammal and K. Ramachandran, Study on gas sensing mechanism in p-CuO/n-ZnO heterojunction sensor, Materials Research Bulletin, 100 420–428 (2018).",
+  },
+  {
+    'id':"3",
+    'point':" R. N. Mariammal, N. Rajamanickam, B. Renganathan, D. Sastikumar, and K. Ramachandran, Effect of Co on the magnetic and gas sensing properties of SnO2 nanoparticles, Journal of Applied Physics,122 124504 (2017).",
+  },
+]
+
 export {Sh_dept_fmenu,
 eng_mission,
 eng_vision,
@@ -545,4 +818,15 @@ eng_labs,
 mat_prog,
 phy_prog,
 chemi_prog,
-eng_prog };
+eng_prog,
+mat_res_vas,
+mat_res_ani,
+chemi_research_l,
+chemi_research_R,
+Phy_research_B,
+Phy_research_P,
+Phy_research_V,
+Phy_research_C,
+Phy_research_S,
+Phy_research_Vj,
+Phy_research_M };

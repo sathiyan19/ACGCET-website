@@ -59,6 +59,22 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  .shengbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .uct_bg{
+    /* background-image: url("../../assets/pictures/uct.png"); */
+    height: auto;
+    width: 100%;
+}
+
+.uct_bg_mob{
+    height: auto;
+    width: 100%;
+    display: none;
+}
 
   @media(max-width:1100px){
     .shengtwo-col {
@@ -105,6 +121,12 @@
     .sh_eng{
       overflow-x: scroll;
     }
+    .uct_bg{
+      display: none;
+  }
+  .uct_bg_mob{
+      display: block;
+  }
   }
   
   @media (max-width: 500px) {
@@ -117,6 +139,8 @@
     .shengdept_float_menu {
       display: none;
     }
+    
+    
   }
   
   @media (max-width: 425px) {

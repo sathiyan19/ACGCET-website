@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./T3_acad.css";
 
-import { Floatinmenu,Backtotop } from '../../widgets'
+import { Floatinmenu,Backtotop,Underline } from '../../widgets'
 
 import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
@@ -33,7 +33,7 @@ const T3_acad = () => {
     <Backtotop/>
     <div className='acad_tot'>
     
-    <div className="teqip3_heading">TEQIP-III</div>
+    <div className="teqip3_heading"><Underline heading="TEQIP-III"/></div>
 
 
        <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>

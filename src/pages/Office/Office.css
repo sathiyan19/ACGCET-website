@@ -1,11 +1,12 @@
 .whole_content{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     padding: 20px;
 }
 
 .princ{
     padding: 20px;
     background-color: #D9EDFF;
+    border-radius: 5px;
 }
 
 .heading1{
@@ -51,9 +52,9 @@
 .princ_msg_content_text{
     width: 50%;
     text-align: justify;
-    color: #01134d;
+    color: black;
     line-height: 1.5rem;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .princ_msg_content_img_pic{
@@ -62,6 +63,10 @@
 
 .princ_pic{
     width: 100%;
+}
+.admin_staff{
+    /* padding: 20px; */
+    margin-top: 60px;
 }
 
 @media(max-width:1023px){

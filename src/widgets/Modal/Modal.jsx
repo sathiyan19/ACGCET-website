@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./Modal.css";
 
-const Modal = ({ heading, sub_text, pic, content_1, content_2 }) => {
+const Modal = ({ heading, sub_text, pic, content_1, content_2,link }) => {
   const [modal_flag, setmodal_flag] = useState(false);
   const displaymodal = () => {
     setmodal_flag(true);
@@ -114,6 +114,13 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2 }) => {
               <div className="popcontent1">{content_1}</div>
             </div>
             <div className="popcontent2">{content_2}</div>
+            {link &&(
+            <div className="modal_ext_link_holder">
+              <div className="modal_ext_link">
+                <a href={link} className="modal_ext_link_tag">Video&nbsp;&nbsp;<span className="fa fa-angle-double-right yah"></span></a>
+              </div>
+            </div>
+            )}
           </div>
         </div>
       )}

@@ -5,6 +5,7 @@
 .foun {
     padding: 20px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     background-color: #D9EDFF;
 }

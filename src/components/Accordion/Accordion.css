@@ -1,0 +1,183 @@
+.accord_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .accord_col{
+    display: flex;
+    justify-content: center;
+  }
+  .accord_row .accord_col {
+    flex: 1;
+  }
+  
+  
+  .accord_tabs {
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+      4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+      15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+      29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+      70px 70px 80px rgba(0, 0, 0, 0.02); */
+  }
+  
+  .accord_tab {
+    width: 100%;
+    /* border-radius: 40px; */
+    overflow: hidden;
+  }
+  .accord_tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    color: #00134d;
+    font-size: large;
+    background: #d9edff;
+    /* margin-bottom: 10px; */
+    /* font-weight: bold; */
+    cursor: pointer;
+    /* Icon */
+  }
+  .accord_tab-label:hover {
+    background: #00134d;
+    color: #e5e4e0;
+  }
+  .accord_tab_non-active:focus {
+    background: #e5e4e0;
+    color: #00134d;
+  }
+  
+  .accord_tab_non-active:hover::after {
+    color: #e5e4e0;
+  }
+  .accord_tab_active{
+    background: #00134d !important;
+    color: #e5e4e0 !important;
+  }
+  .accord_tab_active::after {
+    content: "×";
+    width: 1em;
+    height: 1em;
+    color: #e5e4e0; 
+    text-align: center;
+    /* transition: all 0.35s; */
+  }
+  .accord_tab_non-active::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    color: #00134d; 
+    text-align: center;
+    transition: all 0.35s;
+  }
+  
+  .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    background: white;
+    transition: all 0.35s;
+    >ol>li{
+      color: black;
+      font-size:large;
+      text-align: justify;
+      line-height: 1.5rem;
+    }
+  }
+  
+  .accord_tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    color: #00134d;
+    font-size:medium;
+    background: #d9edff;
+    cursor: pointer;
+  }
+
+.accord_layout {
+    margin: 10px;
+    animation: slideup 0.5s ease; /* Changed 'ease' to 'linear' */
+    transform-origin: top; /* Set the transform origin to the top to control the direction of scaling */
+    transform: scaleY(0);
+    overflow-x: scroll;
+     /* Added a transition for smooth scaleY changes */
+}
+
+.accord_close {
+    display: none;
+}
+
+.accord_open {
+    display: block;
+    transform: scaleY(1); /* Set the initial state for transform */
+}
+
+@keyframes slideup {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+/* @media (max-width: 768px) {
+  .accord_tabs{
+    width:95%;
+  }
+}
+
+@media (max-width: 550px){
+  .accord_tabs{
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px){
+  .accord_tabs{
+    width: 80%;
+  }
+}
+
+@media (max-width: 460px){
+  .accord_tabs{
+    width: 75%;
+  }
+}
+
+@media (max-width: 435px){
+  .accord_tabs{
+    width: 70%;
+  }
+}
+
+@media (max-width: 405px){
+  .accord_tabs{
+    width: 65%;
+  }
+}
+
+@media (max-width: 380px){
+  .accord_tabs{
+    width: 60%;
+  }
+}
+
+@media (max-width: 350px){
+  .accord_tabs{
+    width: 55%;
+  }
+}
+
+@media (max-width: 320px){
+  .accord_tabs{
+    width: 50%;
+  }
+}
+
+@media (max-width: 290px){
+  .accord_tabs{
+    width: 45%;
+  }
+} */
