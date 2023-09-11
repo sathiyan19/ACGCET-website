@@ -67,6 +67,12 @@
   height: auto;
   border-radius: 5px;
 }
+.layout_outer_flex{
+  display: flex;
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 .first-flex {
   margin-top: 20px;
@@ -77,20 +83,20 @@
 
 .popcontent1 {
   padding: 5px;
-  color: #01134d;
+  color: black;
   /* font-weight: 600; */
-  line-height: 24px;
-  width: 45%;
+  line-height: 1.5rem;
+  width: 48%;
   font-size: 18px;
   text-align: justify;
 }
 
 .popcontent2 {
   /* font-weight: 600; */
-  line-height: 24px;
+  line-height: 1.5rem;
   font-size: 18px;
   padding: 5px;
-  color: #01134d;
+  color: black;
   text-align: justify;
 }
 
@@ -205,7 +211,7 @@
 }
 
 .modal_ext_link_holder{
-  margin-top: 30px;
+  
   display: flex;
   justify-content: center;
 }
