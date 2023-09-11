@@ -32,6 +32,11 @@ import top_designers_2k22 from "../assets/pictures/ece_dept/stud_activities/top_
 import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
 import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
 
+import priya_21 from '../assets/pictures/ece_dept/ece_rankers/priya_21.webp'
+import navin_21 from '../assets/pictures/ece_dept/ece_rankers/navin_21.webp'
+import aish_20 from '../assets/pictures/ece_dept/ece_rankers/aishwarya_20.webp'
+import sujitha_20 from '../assets/pictures/ece_dept/ece_rankers/sujitha_20.webp'
+
 const ece_dept_menu = [
   {
     id: "1",
@@ -123,23 +128,14 @@ const ece_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpf,
-    name: "C.Sinduja",
-    Designation: "Assistant Professor",
-    mailid: "sindhu.mzcet@gmail.com",
-    pdf: "https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link",
+    dp: dpm,
+    name: "Dr.A.Sivanantha Raja",
+    Designation: "Head of the Department",
+    mailid: "sivanantharaja@gmail.com",
+    pdf: "https://drive.google.com/file/d/1R9A7ul9goH87qnMYhIZQvI8qFCNcR2iX/view?usp=drive_link",
   },
   {
     id: "2",
-    cover: cover,
-    dp: somasundaram,
-    name: "Dr.S.Somasundaram",
-    Designation: "Associate Professor",
-    mailid: "ssm98@rediffmail.com",
-    pdf: "https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link",
-  },
-  {
-    id: "3",
     cover: cover,
     dp: dpm,
     name: "Dr.G.Karpagarajesh",
@@ -148,16 +144,16 @@ const ece_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1NJ0Um7-gKLpc5v-WkQLJ40yrlZnNeXgV/view?usp=drive_link",
   },
   {
-    id: "4",
+    id: "3",
     cover: cover,
     dp: dpf,
-    name: "Keerthana.P",
-    Designation: "Assistant Professor",
-    mailid: "keerthiperumal@gmail.com",
-    pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
+    name: "Dr.Renisha G",
+    Designation: "Associate Professor",
+    mailid: "renisha.ece@gmail.com",
+    pdf: "https://drive.google.com/file/d/12KYashHei2R52bEaM0KDNBhoMiKU_k66/view?usp=drive_link",
   },
   {
-    id: "5",
+    id: "4",
     cover: cover,
     dp: dpf,
     name: "Dr.D.Helena Margaret",
@@ -166,25 +162,43 @@ const ece_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1YnfHK-jwVQ_U8XSfZMwNrubMH7S8fgQs/view?usp=drive_link",
   },
   {
+    id: "5",
+    cover: cover,
+    dp: dpm,
+    name: "Prof.C.Mahendran",
+    Designation: "Assistant Professor",
+    mailid: "gc.mahendran@gmail.com",
+    pdf: "https://drive.google.com/file/d/1lT8lYFWnoW8bkBYg8wfEfo-G4p6ru2Ui/view?usp=drive_link",
+  },
+  {
     id: "6",
     cover: cover,
-    dp: dpf,
-    name: "Renisha G",
+    dp: somasundaram,
+    name: "Dr.S.Somasundaram",
     Designation: "Associate Professor",
-    mailid: "renisha.ece@gmail.com",
-    pdf: "https://drive.google.com/file/d/12KYashHei2R52bEaM0KDNBhoMiKU_k66/view?usp=drive_link",
+    mailid: "ssm98@rediffmail.com",
+    pdf: "https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link",
   },
   {
     id: "7",
     cover: cover,
     dp: dpf,
-    name: "M.Aruna Rani",
-    Designation: "Assistant Professor(adhoc)",
-    mailid: "arunaselva27@gmail.com",
-    pdf: "https://drive.google.com/file/d/1iZp_6Wj4nb6q9TxaK6yxXn_yHW-J6jwc/view?usp=drive_link",
+    name: "Dr.C.Karthika Pragadeeswari",
+    Designation: "Assistant Professor",
+    mailid: "bk.karthika1969@gmail.com",
+    pdf: "https://drive.google.com/file/d/1u1pS75PDwZ4xLl7yhVyJFx4U_Iryzm5z/view?usp=drive_link",
   },
   {
     id: "8",
+    cover: cover,
+    dp: dpf,
+    name: "Dr.G.Dhevanandhini",
+    Designation: "Assistant Professor",
+    mailid: "dhevakeshav@gmail.com",
+    pdf: "https://drive.google.com/file/d/1EAyFUlaybqf58HDIQIR1wU7_GSKIDtaD/view?usp=drive_link",
+  },
+  {
+    id: "9",
     cover: cover,
     dp: dpm,
     name: "Dr.B.Rajesh Kanna",
@@ -193,40 +207,31 @@ const ece_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1aQxGj7vgE1McsS4UULIW2PPYPuk7K2VQ/view?usp=drive_link",
   },
   {
-    id: "9",
-    cover: cover,
-    dp: dpf,
-    name: "C.Karthika Pragadeeswari",
-    Designation: "Assistant Professor",
-    mailid: "bk.karthika1969@gmail.com",
-    pdf: "https://drive.google.com/file/d/1u1pS75PDwZ4xLl7yhVyJFx4U_Iryzm5z/view?usp=drive_link",
-  },
-  {
     id: "10",
     cover: cover,
     dp: dpf,
-    name: "G.Dhevanandhini",
+    name: "P.Sezhina Kanakambika",
     Designation: "Assistant Professor",
-    mailid: "dhevakeshav@gmail.com",
-    pdf: "https://drive.google.com/file/d/1EAyFUlaybqf58HDIQIR1wU7_GSKIDtaD/view?usp=drive_link",
+    mailid: "sezhina@gmail.com",
+    pdf: "https://drive.google.com/file/d/16zoEOL7QgiNCEoQ3SaSxov7y2f34XKTj/view?usp=drive_link",
   },
   {
     id: "11",
     cover: cover,
-    dp: dpm,
-    name: "C.Mahendran",
+    dp: dpf,
+    name: "C.Sinduja",
     Designation: "Assistant Professor",
-    mailid: "gc.mahendran@gmail.com",
-    pdf: "https://drive.google.com/file/d/1lT8lYFWnoW8bkBYg8wfEfo-G4p6ru2Ui/view?usp=drive_link",
+    mailid: "sindhu.mzcet@gmail.com",
+    pdf: "https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link",
   },
   {
     id: "12",
     cover: cover,
     dp: dpf,
-    name: "Mrs.X.Merlin Sheeba",
-    Designation: "Assistant Professor",
-    mailid: "renachristina@gmail.com",
-    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
+    name: "M.Aruna Rani",
+    Designation: "Assistant Professor(adhoc)",
+    mailid: "arunaselva27@gmail.com",
+    pdf: "https://drive.google.com/file/d/1iZp_6Wj4nb6q9TxaK6yxXn_yHW-J6jwc/view?usp=drive_link",
   },
   {
     id: "13",
@@ -241,10 +246,19 @@ const ece_fac_profiles = [
     id: "14",
     cover: cover,
     dp: dpf,
-    name: "P.Sezhina Kanakambika",
+    name: "Keerthana.P",
     Designation: "Assistant Professor",
-    mailid: "sezhina@gmail.com",
-    pdf: "https://drive.google.com/file/d/16zoEOL7QgiNCEoQ3SaSxov7y2f34XKTj/view?usp=drive_link",
+    mailid: "keerthiperumal@gmail.com",
+    pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
+  },
+  {
+    id: "15",
+    cover: cover,
+    dp: dpf,
+    name: "Mrs.X.Merlin Sheeba",
+    Designation: "Assistant Professor",
+    mailid: "renachristina@gmail.com",
+    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
   },
 ];
 
@@ -262,18 +276,18 @@ const ece_sup_profiles = [
     id: "2",
     cover: cover,
     dp: dpf,
-    name: "Ms.D.Tamil Selvi",
-    Designation: "Mech.Grade-II",
-    mailid: "tamilmd123@gmail.com",
+    name: "Ms.N.Vasanthi Meena",
+    Designation: "Lab Assistant",
+    mailid: "vasanthimeena8686@gmail.com",
     pdf: "",
   },
   {
     id: "3",
     cover: cover,
     dp: dpf,
-    name: "Ms.N.Vasanthi Meena",
-    Designation: "Lab Assistant",
-    mailid: "vasanthimeena8686@gmail.com",
+    name: "Ms.D.Tamil Selvi",
+    Designation: "Mech.Grade-II",
+    mailid: "tamilmd123@gmail.com",
     pdf: "",
   },
   {
@@ -312,18 +326,39 @@ const ece_rankers = [
       {
         id: "1",
         cover: cover,
-        dp: dpf,
+        dp: priya_21,
         name: "Priyadharshini R",
-        Designation: "CGPA: 9.244",
+        Designation: "First rank holder",
         mailid: "1714041",
       },
       {
         id: "2",
         cover: cover,
-        dp: dpm,
+        dp: navin_21,
         name: "Navin Frank L",
-        Designation: "CGPA: 9.117",
+        Designation: "Second rank holder",
         mailid: "1714035",
+      },
+    ]
+  },
+  {
+    head:"2016-2020 Batch",
+    rankers:[
+      {
+        id: "1",
+        cover: cover,
+        dp: aish_20,
+        name: "Aishwarya B",
+        Designation: "First rank holder",
+        mailid: "1614002",
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: sujitha_20,
+        name: "Sujitha V",
+        Designation: "Second rank holder",
+        mailid: "1614037",
       },
     ]
   },
@@ -444,7 +479,7 @@ const ece_outcomes = [
 const ece_progs = [
   {
     id: "1",
-    year: "1986",
+    year: "1969",
     period: "4 Years",
     top_head: "B.E.",
     program: "Electronics and Communication Engineering",
@@ -452,7 +487,7 @@ const ece_progs = [
   },
   {
     id: "2",
-    year: "1986",
+    year: "2002",
     period: "2 Years",
     top_head: "M.E.",
     program: "Microwave & Optical Communication",
@@ -460,7 +495,7 @@ const ece_progs = [
   },
   {
     id: "3",
-    year: "1986",
+    year: "2002",
     period: "4 Years",
     top_head: "Part time B.E.",
     program: "Electronics and Communication Engineering",
@@ -1721,28 +1756,28 @@ const ece_projects = [
 
 const ece_stud_activities = [
   {
-    id: "8",
-    heading: "No event",
-    "sub-head":
-      "Divya barathi, S.Lavanya & M.Arthi bagged 3rd place in _____________ contest conducted by Sudharsan Engineering College.",
-    pic: top_design2,
-    content_1: "",
-    content_2: "",
-  },
-  {
     id: "7",
-    heading: "No event",
+    heading: "Top Designers 2023",
     "sub-head":
-      "S.Kavya, K.Thiviyadarssini & V.Sowmiya bagged 1st place in _____________ contest conducted by Sudharsan Engineering College.",
+      "S.Kavya, K.Thiviyadarssini & V.Sowmiya bagged 1st place in Top Designers contest conducted by Sudharsan Engineering College.",
     pic: top_design1,
     content_1: "",
     content_2: "",
   },
   {
-    id: "6",
-    heading: "Circuit Designers",
+    id: "8",
+    heading: "Top Designers 2023",
     "sub-head":
-      "R.Tharini, K.Rishika & T.Mhadevi bagged 3rd place in Circuit Designers contest conducted by Sudharsan Engineering College.",
+      "Divya barathi, S.Lavanya & M.Arthi bagged 3rd place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: top_design2,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "6",
+    heading: "Top Designers 2023",
+    "sub-head":
+      "R.Tharini, K.Rishika & T.Mhadevi bagged 4th place in Top Designers contest conducted by Sudharsan Engineering College.",
     pic: circuit_designers,
     content_1: "",
     content_2: "",
@@ -1866,38 +1901,50 @@ const ece_placement_info = [
   {
     id:"1",
     year: "2019-2023 Batch",
+    salary:"8 Lakhs",
     details: [
       {
         id: "1",
         heading: "In-Campus",
-        perc: 72,
-      },
-      {
-        id: "2",
-        heading: "Higher Studies",
-        perc: 3,
+        perc: 59,
+        symbol:"%"
       },
     ],
   },
   {
     id:"2",
     year: "2018-2022 Batch",
+    salary:"5.6 Lakhs",
     details: [
       {
         id: "1",
         heading: "In-Campus",
         perc: 69,
+        symbol:"%"
       },
     ],
   },
   {
     id:"3",
     year: "2017-2021 Batch",
+    salary:"5 Lakhs",
     details: [
       {
         id: "1",
         heading: "In-Campus",
-        perc: 59,
+        perc: 72,
+        symbol:"%"
+      },
+      {
+        id: "2",
+        heading: "Higher Studies",
+        perc: 3,
+        symbol:"%"
+      },
+      {
+        id: "2",
+        heading: "Entrepreneur",
+        perc: 1,
       },
     ],
   },

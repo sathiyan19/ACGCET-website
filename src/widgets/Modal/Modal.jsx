@@ -80,7 +80,7 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2,link }) => {
           <div className="cont-desc">
             <div className="cont-exp">
               <div className="cont-head">{heading}</div>
-              <div className="cont-abt">{sub_text}</div>
+              {sub_text &&(<div className="cont-abt">{sub_text}</div>)}
             </div>
             {(content_1 || content_2) &&(
             <button className="but" id="but" onClick={displaymodal}>

@@ -3,8 +3,10 @@
     width: 160px;
     height: 160px;
     position: relative;
-    margin-left: 50px;
-    margin-bottom: 30px;
+    /* margin-left: 50px; */
+    margin: 30px 10px;
+    display: flex;
+    align-items: center;
 }
 .outer{
     height: 160px;
