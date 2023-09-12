@@ -1,3 +1,4 @@
+// import dp from "../assets/pictures/dp.jpg";
 import dpm from "../assets/pictures/boy.webp";
 import dpf from "../assets/pictures/girl.webp";
 import cover from "../assets/pictures/microchip.webp";
@@ -113,7 +114,7 @@ const ece_dept_menu = [
 ];
 
 const ece_hod = {
-  name: "Dr.A.Sivanantharaja",
+  name: "Dr.A.Sivanantha Raja",
   designation: "Head of the Department, ECE",
   pic: asr,
   content:
@@ -321,7 +322,7 @@ const ece_sup_profiles = [
 
 const ece_research_info=[
   {
-    'name':"Dr. A.Sivanantharaja",
+    'name':"Dr. A.Sivanantha Raja",
     'area':"Optical Communication"
   },
   {
@@ -360,7 +361,7 @@ const ece_research_info=[
 
 const patent_info=[
   {
-    'name':"Dr. A.Sivanantharaja",
+    'name':"Dr. A.Sivanantha Raja",
     'title':"Noise free Public Address System for Auditorium using White Light Emitting Diode Communication",
     'App':"202041002376",
     'status':"Applied"
@@ -410,7 +411,7 @@ const scholar_info1=[
   {
     'sno':"4",
     'name':"M. Sindhu",
-    'area':"SS",
+    'area':"Application of SOA for optical networks",
   },
 ];
 
@@ -481,7 +482,7 @@ const ece_siva=[
   },
   {
     'id':"6",
-    'point':"Jayson Keerthy Jayabarathan,  Sivanantha Rajaand S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
+    'point':"Jayson Keerthy Jayabarathan,  Sivanantha Raja and S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
   },
 ];
 
