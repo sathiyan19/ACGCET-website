@@ -56,7 +56,11 @@
     border-right:3px solid #00134d;
 }
 
-.thiran_cardholder {
+.thiran_winners{
+    padding:20px;
+}
+
+/* .thiran_cardholder {
     display: flex;
     justify-content: center;
   }
@@ -66,7 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-  }
+  } */
 
 @media (max-width:1040px){
     .thiran_img_holder{
