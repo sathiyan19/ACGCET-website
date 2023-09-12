@@ -39,7 +39,7 @@ const Ece_research = () => {
     <div className="ecedept">
     <div className="ecebg">
       <div className="eceheading">
-        Department of Electronics and Communication Engineering
+      Department of Electrical and Electronics Engineering
       </div>
       <div className='ece_sub_heading'>Research and Publications</div>
     </div>
@@ -123,21 +123,6 @@ const Ece_research = () => {
             <Listformat points={ece_rajesh}/>
           </div>
 
-      {/* <div className="ece_hod">
-        <Underline heading="HOD's Message"/>
-        <Hodmsg name={ece_hod.name} designation={ece_hod.designation} pic={ece_hod.pic} content={ece_hod.content}/>
-      </div> */}
-      {/* <div className="ece_vision_mission">
-        <Underline heading="Our Vision & Mission"/>
-      <Deptvision visiondata={ece_vision.visiondata} />
-      <Deptmission points={ece_mission}/>
-      </div> */}
-      {/* <div className="ece_prog_offered">
-        <Underline heading="Programs Offered"/>
-        <div className="ece_progs">
-          {ece_progs.map((item)=><Content_card key={item.id} period={item.period} year={item.year} top_head={item.top_head} heading={item.program} intake={item.intake}/>)}
-        </div>
-      </div> */}
       </div>
 
       {/* {progressinfo.map((item)=><Progressbar bigperc={item.bigperc} smallperc={item.smallperc}/>)} */}
