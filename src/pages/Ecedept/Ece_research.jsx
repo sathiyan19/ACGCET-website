@@ -86,32 +86,32 @@ const Ece_research = () => {
       <div className='ece_res'>
         <div className='ece_res_table'>
         <p className='ece_dept_content'>The major ongoing research activities in the department under the Guidance of our faculty  members are:</p>
-        <div className='res_head1'><h3><b>Supervisor</b>: Dr. A.Sivanantharaja</h3></div>
+        <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. A.Sivanantha Raja</h3></div>
       <Table data={scholar_info1} columns={column3} />
       </div>
       </div>
       <div className='ece_res'>
         <div className='ece_res_table'>
-        <div className='res_head1'><h3><b>Supervisor</b>: Dr. G.Karpagarajesh</h3></div>
+        <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. G.Karpagarajesh</h3></div>
       <Table data={scholar_info2} columns={column3} />
       </div>
       </div>
       <div className='ece_res'>
         <div className='ece_res_table'>
-        <div className='res_head1'><h3><b>Supervisor</b>: Dr. S.Somasundaram</h3></div>
+        <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. S.Somasundaram</h3></div>
       <Table data={scholar_info3} columns={column3} />
       </div>
       </div>
       <div className='ece_res'>
         <div className='ece_res_table'>
-        <div className='res_head1'><h3><b>Supervisor</b>: Dr. B.Rajeshkanna</h3></div>
+        <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. B.Rajeshkanna</h3></div>
       <Table data={scholar_info4} columns={column3} />
       </div>
       </div>
       
       <div className='res_head'><Underline heading="Book and Book Chapters"/></div>
       <div className='ece_pts'>
-            <h3>Dr. A.Sivanantharaja</h3>
+            <h3>Dr. A.Sivanantha Raja</h3>
             <Listformat points={ece_siva}/>
           </div>
           <div className='ece_pts'>
