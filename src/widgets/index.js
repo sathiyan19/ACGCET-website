@@ -10,3 +10,5 @@ export {default as Deptvision} from './Deptvision/Deptvision';
 export {default as Deptmission} from './Deptmission/Deptmission';
 export {default as Underline} from './Underline/Underline';
 export {default as Progressbar} from './Progressbar/Progressbar';
+export {default as Reunion_card} from './Reunion_card/Reunion_card';
+export {default as Scholar_card} from './Scholar_card/Scholar_card'

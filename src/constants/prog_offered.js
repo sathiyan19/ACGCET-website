@@ -59,7 +59,7 @@ const pg_programs = [
   },
   {
     id: "6",
-    program: "Optical Communication",
+    program: "Microwave andOptical Communication",
     intake: "18",
   },
 ];

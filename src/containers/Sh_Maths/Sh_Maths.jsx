@@ -2,8 +2,8 @@ import React from 'react'
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
 
 import { Radial_menu } from "../../components";
-import ece from "../../assets/pictures/group-pic.webp";
-import {eng_mission} from '../../constants/Sh_dept_menu'
+import maths from "../../assets/pictures/maths.webp";
+
 import { Sh_dept_fmenu,mat_vision,mat_mission } from '../../constants/Sh_dept_menu';
 import './Sh_Maths.css'
 import { FaMicrochip } from "react-icons/fa6";
@@ -25,7 +25,7 @@ const Sh_Maths = () => {
           In memory of Dr.M.K.Venkataraman, one of our college boys’ hostel has been named as Dr.M.K.Venkataraman Illam which was built by our Alumni.
           </p>
           <div className="dept_img_holder">
-            <img className="dept_img" src={ece} />
+            <img className="dept_img" src={maths} />
           </div>
         </div>
         <div className="shmattwo-col1">

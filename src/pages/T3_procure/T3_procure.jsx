@@ -2,7 +2,7 @@ import React from 'react'
 
 import "./T3_procure.css";
 
-import { Floatinmenu,Backtotop } from '../../widgets'
+import { Floatinmenu,Backtotop, Underline } from '../../widgets'
 
 import { teqip3_floater_menu } from '../../constants/teqip3-float';
 
@@ -23,7 +23,7 @@ const T3_procure = () => {
     <Backtotop/>
     <div className='proc_tot'>
       
-    <div className='proc_head'>Teqip - Procurement</div>
+    <div className='proc_head'><Underline heading="Teqip - Procurement"/></div>
       
       <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>
    

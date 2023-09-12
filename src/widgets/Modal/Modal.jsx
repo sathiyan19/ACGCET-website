@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./Modal.css";
 
-const Modal = ({ heading, sub_text, pic, content_1, content_2 }) => {
+const Modal = ({ heading, sub_text, pic, content_1, content_2,link }) => {
   const [modal_flag, setmodal_flag] = useState(false);
   const displaymodal = () => {
     setmodal_flag(true);
@@ -80,7 +80,7 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2 }) => {
           <div className="cont-desc">
             <div className="cont-exp">
               <div className="cont-head">{heading}</div>
-              <div className="cont-abt">{sub_text}</div>
+              {sub_text &&(<div className="cont-abt">{sub_text}</div>)}
             </div>
             {(content_1 || content_2) &&(
             <button className="but" id="but" onClick={displaymodal}>
@@ -109,11 +109,20 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2 }) => {
                 <span className="close">&times;</span>
               </div>
             </div>
+            <div className="layout_outer_flex">
             <div className="first-flex">
               <img src={pic} className="picsque" alt="Contribution Picture" />
-              <div className="popcontent1">{content_1}</div>
+              {content_1 && (<div className="popcontent1">{content_1}</div>)}
             </div>
             <div className="popcontent2">{content_2}</div>
+            {link &&(
+            <div className="modal_ext_link_holder">
+              <div className="modal_ext_link">
+                <a href={link} className="modal_ext_link_tag">Video&nbsp;&nbsp;<span className="fa fa-angle-double-right yah"></span></a>
+              </div>
+            </div>
+            )}
+            </div>
           </div>
         </div>
       )}

@@ -1,5 +1,9 @@
 import React, {useState} from 'react'
 
+import Sh_mat_prog from '../../containers/Sh_Maths/Sh_mat_prog'
+import Sh_Phy_prog from '../../containers/Sh_Physics/Sh_Phy_prog';
+import Sh_Chemi_prog from '../../containers/Sh_Chemistry/Sh_Chemi_prog';
+import Sh_Eng_prog from '../../containers/Sh_English/Sh_Eng_prog';
 const Sh_tab_Programme = () => {
     const [selectedOption, setSelectedOption] = useState('sh_English');
 
@@ -63,16 +67,16 @@ const Sh_tab_Programme = () => {
           </nav>
           <section>
           <div className="shcontent content1">
-                      
+                      <Sh_Eng_prog/>
                       </div>
                   <div className="shcontent content2">
-                      
+                      <Sh_mat_prog/>
                       </div>
                   <div className="shcontent content3">
-                      
+                      <Sh_Chemi_prog/>
                       </div>
                   <div className="shcontent content4">
-                      
+                      <Sh_Phy_prog/>
                       </div>
           </section>
         </div>

@@ -7,6 +7,7 @@ import govern from "../../assets/pictures/govern.webp"
 import { Table } from "../../components";
 
 import { govern_data } from "../../constants/govern";
+import { Underline } from '../../widgets';
 
 const Govern = () => {
   const columns = [
@@ -18,7 +19,8 @@ const Govern = () => {
   return (
     <div>
         <div className="governing_council">
-      <h1>Governing Council</h1>
+      {/* <h1>Governing Council</h1> */}
+      <Underline heading="Governing Council"/>
     </div>
 
     <div className="governing_title">

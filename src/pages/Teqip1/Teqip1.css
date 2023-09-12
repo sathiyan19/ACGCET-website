@@ -1,9 +1,9 @@
 .teqip1_heading{
-  font-weight: 500;
-  color:#00134d;
+  /* font-weight: 500;
+  color:#00134d; */
   margin-top: 50px;
   margin-left: 20px;
-  font-size: 40px;
+  /* font-size: 40px; */
   
 }
 
@@ -77,7 +77,7 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
 15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
 29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
 70px 70px 80px rgba(0, 0, 0, 0.02);
-  margin-top:50px;
+  margin-top:30px;
   margin-left: 60px ;
   margin-right: 70px;
   position:absolute;
@@ -268,7 +268,7 @@ box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
     }
   }
 
-  @media (max-width: 340px) {
+  @media (max-width: 380px) {
     .teqip1_tab{
       margin:600px auto 20px auto;
       overflow-x: scroll;

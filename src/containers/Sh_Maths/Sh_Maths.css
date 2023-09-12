@@ -58,7 +58,23 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  .shmatbg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .uct_bg{
+    /* background-image: url("../../assets/pictures/uct.png"); */
+    height: auto;
+    width: 100%;
+}
+.uct_bg_mob{
+    height: auto;
+    width: 100%;
+    display: none;
+}
+  
   @media(max-width:1100px){
     .shmattwo-col {
       
@@ -74,7 +90,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     .eceheading {
       top: 35%;
       font-size: 150%;
@@ -88,16 +104,24 @@
       width: 100%;
       height: 700px;
     }
-  }
+  } */
   @media (max-width: 768px) {
-    .ecebg {
-      width: 100%;
-      height: 500px;
-    }
+    
     .shmatdark {
       width: 100%;
     }
-    
+  }
+
+  @media(max-width:576px){
+    .sh_mat{
+      overflow-x: scroll;
+    }
+    .uct_bg{
+      display: none;
+  }
+  .uct_bg_mob{
+      display: block;
+  }
   }
   
   @media (max-width: 500px) {

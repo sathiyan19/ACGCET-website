@@ -1,9 +1,39 @@
-import dp from "../assets/pictures/dp.jpg";
-import cover from "../assets/pictures/elec_banner.webp";
+import dpm from "../assets/pictures/boy.webp";
+import dpf from "../assets/pictures/girl.webp"
+import cover from "../assets/pictures/eee-cover.webp";
 
 import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
+
+import baskaran from '../assets/pictures/eee_dept/eee_faculties/1-Baskaran-_3_.webp'
+import arunya from '../assets/pictures/eee_dept/eee_faculties/2-Arunya-Revathi.webp'
+import Nageswari from '../assets/pictures/eee_dept/eee_faculties/3-Nageswari.webp'
+import Vennila from '../assets/pictures/eee_dept/eee_faculties/4-Vennila.webp'
+import Madasamy from '../assets/pictures/eee_dept/eee_faculties/5-Madasamy.webp'
+import Ramadas from '../assets/pictures/eee_dept/eee_faculties/6-Ramadas.webp'
+import arun from '../assets/pictures/eee_dept/eee_faculties/7 Arun.webp'
+import amuthan from '../assets/pictures/eee_dept/eee_faculties/8 Amuthan.webp'
+import pradeep from '../assets/pictures/eee_dept/eee_faculties/11 PRADEEP.webp'
+import Padmanaban from '../assets/pictures/eee_dept/eee_faculties/12 Padmanaban (1).webp'
+import ida from '../assets/pictures/eee_dept/eee_faculties/13 Ida Evangeline.webp'
+import asaimani from '../assets/pictures/eee_dept/eee_faculties/14 Asaimani.webp'
+import dhivya from '../assets/pictures/eee_dept/eee_faculties/15 Dhivya.webp'
+import saranya from '../assets/pictures/eee_dept/eee_faculties/17 Saranya.webp'
+import preethi from '../assets/pictures/eee_dept/eee_faculties/18 Preethi.webp'
+import abarna from '../assets/pictures/eee_dept/eee_faculties/19 Abarna.webp'
+import mansoor from '../assets/pictures/eee_dept/eee_faculties/21-Mansoore.webp'
+import abinesh from '../assets/pictures/eee_dept/eee_faculties/22-Abinesh.webp'
+import akbar from '../assets/pictures/eee_dept/eee_faculties/Akbar-_2_.webp'
+import ananthi from '../assets/pictures/eee_dept/eee_faculties/Ananthii-_1_.webp'
+import arulmani from '../assets/pictures/eee_dept/eee_faculties/Arulmani-_1_.webp'
+import chockalingam from '../assets/pictures/eee_dept/eee_faculties/Chokalingam-_1_.webp'
+import natchiappan from '../assets/pictures/eee_dept/eee_faculties/Natchiappan-_1_.webp'
+import peter from '../assets/pictures/eee_dept/eee_faculties/Peter-_1_.webp'
+import raja from '../assets/pictures/eee_dept/eee_faculties/Raja-_1_.webp'
+import suresh from '../assets/pictures/eee_dept/eee_faculties/Suresh-kumar-_1_.webp'
+import mani from '../assets/pictures/eee_dept/eee_faculties/manimaran-_1_.webp'
+import sakthi from '../assets/pictures/eee_dept/eee_faculties/Sakthivel-_1_.webp'
 
 const eee_dept_menu = [
   {
@@ -73,6 +103,27 @@ const eee_dept_menu = [
     arl:'l'
   },
 ];
+
+const eee_hod = {
+  name: "Dr.K.Baskaran",
+  designation: "Head of the Department, EEE",
+  pic: baskaran,
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" +
+    "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut" +
+    "enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
+    "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" +
+    "in reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
+    "nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
+    "sunt in culpa qui officia deserunt mollit anim id est laborum." +
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" +
+    "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut" +
+    "enim ad minim veniam, quis nostrud exercitation ullamco laboris" +
+    "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor" +
+    "in reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
+    "nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
+    "sunt in culpa qui officia deserunt mollit anim id est laborum.",
+};
 
 const eee_vision = {
   id: "1",
@@ -226,22 +277,273 @@ const eee_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dp,
-    name: "Arjun",
-    Designation: "Assistant professor",
-    mailid: "e",
+    dp: baskaran,
+    name: "Dr.K.Baskaran",
+    Designation: "Professor and HOD",
+    mailid: "drbaskaran@accetedu.in",
+    pdf: "https://drive.google.com/file/d/1-CyaqHhAV-kbm73tNpQWzePwJpnZb5mh/view?usp=drive_link",
+  },
+  {
+    id: "2",
+    cover: cover,
+    dp: arunya,
+    name: "Dr.A.ArunyaRevathi",
+    Designation: "Professor (CAS)",
+    mailid: "arunyarevathi_eee@yahoo.co.in",
+    pdf: "https://drive.google.com/file/d/1KGuTXZdM25MKdLXwN7wmjnCoVpyUGXLF/view?usp=drive_link",
+  },
+  {
+    id: "3",
+    cover: cover,
+    dp: Nageswari,
+    name: "Dr.S.Nageswari",
+    Designation: "Associate Professor",
+    mailid: "mahabashyam@gmail.com",
+    pdf: "https://drive.google.com/file/d/1j0WWZP729GsSQTUxizR_vtWOGOLBJolb/view?usp=drive_link",
+  },
+  {
+    id: "4",
+    cover: cover,
+    dp: Vennila,
+    name: "Dr.C.Vennila",
+    Designation: "Associate Professor",
+    mailid: "vennila@accetedu.in",
+    pdf: "https://drive.google.com/file/d/1hwItDOCeoFC1Tch5xhuZ4okuI72u1XTI/view?usp=drive_link",
+  },
+  {
+    id: "5",
+    cover: cover,
+    dp: Madasamy,
+    name: "Prof.P.Madasamy",
+    Designation: "Associate Professor(CAS)",
+    mailid: "mjasmitha0612@gmail.com",
+    pdf: "https://drive.google.com/file/d/1zk2vQddK_B9d3XtbwoLXDIfIWhlEKMWL/view?usp=drive_link",
+  },
+  {
+    id: "6",
+    cover: cover,
+    dp: Ramadas,
+    name: "Prof.K.Ramadas",
+    Designation: "Associate Professor(CAS)",
+    mailid: "proframadas@gmail.com",
+    pdf: "https://drive.google.com/file/d/1a60IrGfnpHU23Uj0a54mEuo4Iopi2ffE/view?usp=drive_link",
+  },
+  {
+    id: "7",
+    cover: cover,
+    dp: arun,
+    name: "Dr.M.Arun",
+    Designation: "Associate Professor(CAS)",
+    mailid: "arunmano80@gmail.com",
     pdf: "#",
+  },
+  {
+    id: "8",
+    cover: cover,
+    dp: amuthan,
+    name: "Prof.G.Amuthan",
+    Designation: "Assistant Professor",
+    mailid: "amuthan@accetedu.in",
+    pdf: "https://drive.google.com/file/d/1hRTZiBIRMz5uSjgxjG1qqZ31BeXVP--_/view?usp=drive_link",
+  },
+  {
+    id: "9",
+    cover: cover,
+    dp: dpm,
+    name: "Prof.M.L.Ramamoorthy",
+    Designation: "Assistant Professor",
+    mailid: "ramamoorthyml@gmail.com",
+    pdf: "https://drive.google.com/file/d/1TDYW0Jlk76GKtapo-fZVtlgbn91eUaV1/view?usp=drive_link",
+  },
+  {
+    id: "10",
+    cover: cover,
+    dp: dpm,
+    name: "Dr.S.Balamurugan",
+    Designation: "Assistant Professor",
+    mailid: "balamurugan@accetedu.in",
+    pdf: "https://drive.google.com/file/d/1v5dDO-5JuPdU7Hd7upXXPDJ2s9XP9kHG/view?usp=drive_link",
+  },
+  {
+    id: "11",
+    cover: cover,
+    dp: pradeep,
+    name: "Prof.V.Pradeep",
+    Designation: "Assistant Professor",
+    mailid: "pradeep.vee@gmail.com",
+    pdf: "https://drive.google.com/file/d/1nsd2W5GQO7jlECkVSSag6Qqf52QO7QRB/view?usp=drive_link",
+  },
+  {
+    id: "12",
+    cover: cover,
+    dp: Padmanaban,
+    name: "Prof.K.Padmanaban",
+    Designation: "Assistant Professor",
+    mailid: "padupoi@gmail.com",
+    pdf: "https://drive.google.com/file/d/1LPeLnjYS3YyPGIc01u1HdiiRJUc3Z5xJ/view?usp=drive_link",
+  },
+  {
+    id: "13",
+    cover: cover,
+    dp: ida,
+    name: "Dr.S.Ida Evangeline",
+    Designation: "Assistant Professor",
+    mailid: "ida.fragi@gmail.com",
+    pdf: "https://drive.google.com/file/d/1PcBZXj5XygaQGojKwCZWLn4o9SykS9J5/view?usp=drive_link",
+  },
+  {
+    id: "14",
+    cover: cover,
+    dp: asaimani,
+    name: "Prof.S.Aasaimani",
+    Designation: "Assistant Professor",
+    mailid: "aasaimani.be.eee@gmail.com",
+    pdf: "https://drive.google.com/file/d/1I_TzxbSMu6Kja_8XgtEV-S36HcqaWkbt/view?usp=drive_link",
+  },
+  {
+    id: "15",
+    cover: cover,
+    dp: dhivya,
+    name: "Ms.K.Dhivya",
+    Designation: "Assistant Professor (Contract Basis)",
+    mailid: "dhivyaacgcet@gmail.com",
+    pdf: "https://drive.google.com/file/d/15LGkH7mXJXN7jTLQyB5PImy7NYtR9B_W/view?usp=drive_link",
+  },
+  {
+    id: "16",
+    cover: cover,
+    dp: dpf,
+    name: "Ms.B.Subashini",
+    Designation: "Assistant Professor (Contract Basis)",
+    mailid: "subasubramani11@gmail.com",
+    pdf: "https://drive.google.com/file/d/1LeLwtT80IVMAeNXk_b-lc2KGmEDpisyW/view?usp=drive_link",
+  },
+  {
+    id: "17",
+    cover: cover,
+    dp: saranya,
+    name: "Ms.M.Sharanya",
+    Designation: "Assistant Professor (Contract Basis)",
+    mailid: "sharanyam105@gmail.com",
+    pdf: "https://drive.google.com/file/d/1gLf-Plr7M_wHqoTKvj2ZrU3VdPKoVmRR/view?usp=drive_link",
+  },
+  {
+    id: "18",
+    cover: cover,
+    dp: preethi,
+    name: "Ms.M.Preethi",
+    Designation: "Assistant Professor (Part time)",
+    mailid: "mpreethi890@gmail.com",
+    pdf: "https://drive.google.com/file/d/1DNv-vi7I1A2NGiZf_LOj0bkD-spSm66k/view?usp=drive_link",
+  },
+  {
+    id: "19",
+    cover: cover,
+    dp: abarna,
+    name: "Ms.C.Abarna",
+    Designation: "Assistant Professor (Part time)",
+    mailid: "cabarna97@gmail.com",
+    pdf: "https://drive.google.com/file/d/1IXsTDmJhYnarMU1H-LTsbNp4YDRBiNj8/view?usp=drive_link",
+  },
+  {
+    id: "20",
+    cover: cover,
+    dp: dpf,
+    name: "Mrs.E.Priyanka",
+    Designation: "Assistant Professor (Part time)",
+    mailid: "evspriya@gmail.com",
+    pdf: "https://drive.google.com/file/d/1GUx7nbxF9GCk5RftL-CyHKvUAqa2vWzL/view?usp=drive_link",
+  },
+  {
+    id: "21",
+    cover: cover,
+    dp: mansoor,
+    name: "Mr.S.Mohamed Jaidu Mansoor",
+    Designation: "Assistant Professor (Part time)",
+    mailid: "mohamedjaidumansoor@gmail.com",
+    pdf: "https://drive.google.com/file/d/1WjKK-NvxihJQeJ0l-vOCrtHmPtMmd6R_/view?usp=drive_link",
+  },
+  {
+    id: "22",
+    cover: cover,
+    dp: abinesh,
+    name: "Mr.G.Abinesh",
+    Designation: "Assistant Professor (Part time)",
+    mailid: "abineshkkdi@gmail.com",
+    pdf: "https://drive.google.com/file/d/1R5qwoGs3-tS22Cdcbssh1ltGjpR33mm3/view?usp=drive_link",
   },
 ];
 const eee_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dp,
-    name: "Arjun",
-    Designation: "Foreman Instructor",
-    mailid: "e",
-    pdf: "#",
+    dp: natchiappan,
+    name: "P.Nachiappan",
+    Designation: "Junior Draughting Officer",
+    mailid: "nachiappan.perumal@gmail.com",
+  },
+  {
+    id: "2",
+    cover: cover,
+    dp: ananthi,
+    name: "I.Ananthi",
+    Designation: "Lab Assistant (SR.Gr)",
+    mailid: "ananthiselvaraj71@gmail.com",
+  },
+  {
+    id: "3",
+    cover: cover,
+    dp: mani,
+    name: "K.Manimaran",
+    Designation: "Electrician – II",
+    mailid: "maranmani132@gmail.com",
+  },
+  {
+    id: "4",
+    cover: cover,
+    dp: sakthi,
+    name: "M.Sakthivel",
+    Designation: "Electrician – II",
+    mailid: "sudhasakthisri@gmail.com",
+  },
+  {
+    id: "5",
+    cover: cover,
+    dp: peter,
+    name: "G.Peter Ramesh",
+    Designation: "Mechanic – II",
+    mailid: "accetpeter@gmail.com",
+  },
+  {
+    id: "6",
+    cover: cover,
+    dp: akbar,
+    name: "J.Akbar Ali",
+    Designation: "Electrician  - II",
+    mailid: "akku1485@gmail.com",
+  },
+  {
+    id: "7",
+    cover: cover,
+    dp: chockalingam,
+    name: "G.Chokalingam",
+    Designation: "Electrician – II",
+    mailid: "chockugs@gmail.com",
+  },
+  {
+    id: "8",
+    cover: cover,
+    dp: raja,
+    name: "M.Raja",
+    Designation: "Cleaner",
+    mailid: "rajanivi167@gmail.com",
+  },
+  {
+    id: "9",
+    cover: cover,
+    dp: arulmani,
+    name: "R.Arulmani",
+    Designation: "Cleaner",
   },
 ];
 
@@ -328,5 +630,5 @@ export {
   eee_peo,
   eee_spec_outcomes,
   eee_dept_events,
-  eee_labs
+  eee_labs,eee_hod
 };

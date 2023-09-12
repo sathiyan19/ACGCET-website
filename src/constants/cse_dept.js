@@ -7,6 +7,19 @@ import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
 
+import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
+
+import suhaila from '../assets/pictures/cse_dept/cse_faculties/suhaila.webp'
+import sk from '../assets/pictures/cse_dept/cse_faculties/sk.webp'
+import hema from '../assets/pictures/cse_dept/cse_faculties/hema.webp'
+import anbu from '../assets/pictures/cse_dept/cse_faculties/anbuselvi.webp'
+import karthiga from '../assets/pictures/cse_dept/cse_faculties/karthiga.webp'
+import rajanandhini from '../assets/pictures/cse_dept/cse_faculties/rajanandini.webp'
+import vijay from '../assets/pictures/cse_dept/cse_faculties/Vijay Profile 2023.webp'
+import chandraprabha from '../assets/pictures/cse_dept/cse_faculties/chandraprabha.webp'
+import raja from '../assets/pictures/cse_dept/cse_faculties/raja.webp'
+import rajendran from '../assets/pictures/cse_dept/cse_faculties/rajendran.webp'
+
 const cse_dept_menu = [
   {
     id: "1",
@@ -60,8 +73,8 @@ const cse_dept_menu = [
 
 const cse_hod={
   name:"Dr.C.Uma Rani",
-  designation:"Head of the Department, ECE",
-  pic:dpf,
+  designation:"Head of the Department, CSE",
+  pic:uma_rani,
   content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
   "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
   "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
@@ -82,43 +95,61 @@ const cse_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpf,
+    dp: chandraprabha,
+    name: "K.Chandraprabha",
+    Designation: "Associate professor",
+    mailid: "kcprabha@gmail.com",
+    pdf: "https://drive.google.com/file/d/1vLl4q7g8vqOGGjfTlJQvFL1tkmoLVfVM/view?usp=drive_link",
+  },
+  {
+    id: "2",
+    cover: cover,
+    dp: suhaila,
     name: "S.Syed Suhaila",
     Designation: "Assistant professor",
     mailid: "syedsuhaila63@gmail.com",
     pdf: "https://drive.google.com/file/d/1bhp8EW2O_4bXHvchHsbfsE-ylujZnDfe/view?usp=drive_link",
   },
   {
-    id: "2",
+    id: "3",
     cover: cover,
-    dp: dpm,
+    dp: sk,
     name: "Dr.K.Sundara Krishnan",
     Designation: "Assistant professor",
     mailid: "sundarakrishnank@gmail.com",
     pdf: "https://drive.google.com/file/d/1Q8LmN5KQyHpSfPGzqJxVSleJzQg_hHPj/view?usp=drive_link",
   },
   {
-    id: "3",
+    id: "4",
     cover: cover,
-    dp: dpf,
+    dp: hema,
+    name: "Dr.N.Hema Rajini",
+    Designation: "Associate professor",
+    mailid: "auhemasmith@yahoo.co.in",
+    pdf: "https://drive.google.com/file/d/1PzD1k3JgWvEyM75nEx0CBqzEqH2FVBpz/view?usp=drive_link",
+  },
+  {
+    id: "5",
+    cover: cover,
+    dp: anbu,
     name: "Anbu Selvi P",
     Designation: "Assistant professor",
     mailid: "anbuselvi17@gmail.com",
     pdf: "https://drive.google.com/file/d/19_plkpq1IGaxhevM7d1QUyVZocjaPcoe/view?usp=drive_link",
   },
   {
-    id: "4",
+    id: "6",
     cover: cover,
-    dp: dpf,
+    dp: karthiga,
     name: "G. Karthika",
     Designation: "Assistant professor",
     mailid: "kartiga.g@gmail.com",
     pdf: "https://drive.google.com/file/d/1SRHrupLxqjI6IzVpVVEzmAS8MpTUJp6I/view?usp=drive_link",
   },
   {
-    id: "5",
+    id: "7",
     cover: cover,
-    dp: dpf,
+    dp: rajanandhini,
     name: "Mrs.M.Rajanandhini",
     Designation: "Assistant professor(Ad-hoc)",
     mailid: "priyamnandhini@gmail.com",
@@ -129,7 +160,7 @@ const cse_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: vijay,
     name: "G.Vijaya venkata krishnan",
     Designation: "Foreman Instructor",
     mailid: "vijayvisanth@gmail.com",
@@ -147,7 +178,7 @@ const cse_sup_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpm,
+    dp: rajendran,
     name: "S.Rajendran",
     Designation: "Cleaner",
     mailid: "bhuvanagirirajendran@gmail.com",
@@ -156,7 +187,7 @@ const cse_sup_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpm,
+    dp: raja,
     name: "R.Raja",
     Designation: "Mechanic Grade-II",
     mailid: "",
@@ -263,50 +294,59 @@ const cse_outcomes = [
   },
 ];
 
+const cse_spec_outcomes = [
+  {
+    id: "1",
+    point:
+      "The Computer Science and Engineering graduates are able to analyze, design, develop, test and apply mathematical foundations, management principles in the development of computational solutions, make them expert in designing the computer software and hardware.",
+  },
+  {
+    id: "2",
+    point:
+      "The ability to employ modern computer languages, environments, and platforms in creating innovative career paths to be an entrepreneur, and a zest for higher studies.",
+  },
+];
+
 const cse_labs=[
   {
       'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+      'heading':"Common Computer Lab (G2)",
+      'sub-head':'',
       'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'content_1':"The Common Computer Lab (G2) is a spacious facility measuring 18.3 meters by 6.9 meters, equipped to accommodate up to 50 computers. Each computer is powered by an Intel Core i3 processor and is configured with 4 GB of RAM and a 1 TB hard drive. The operating system in use is Windows 7, providing a stable environment for various software applications.",
+      'content_2':"This lab is well-suited for programming and development tasks, offering essential software tools such as Python 3, Turbo C, Microsoft Visual Studio, JDK 7 for Java development, and Dev C++. With this hardware and software setup, students and researchers have the necessary resources to engage in coding, software development, and related activities effectively."
   },
   {
       'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+      'heading':'Casetools Lab (G6)',
+      'sub-head':'',
       'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'content_1':'The CASETOOLS LAB (G6) is a well-structured space measuring 18.3 meters by 6.9 meters, thoughtfully designed to accommodate 25 computers. These computers are equipped with varying hardware specifications, featuring Intel Core i3 processors, with a range of 2 GB and 4 GB of RAM, and hard drives of both 1 TB and 500 GB capacities.',
+      'content_2':"Running on the Windows 7 operating system, this lab provides a reliable platform for various software applications. Specifically tailored to support computer-aided software engineering, the lab offers essential tools such as Turbo C, Microsoft Visual Studio, and Rational Rose. This setup empowers students and professionals to engage in software development, modeling, and related activities efficiently and effectively."
   },
   {
       'id':'3',
-      'heading':'Foreign Training at University',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+      'heading':'Graphics and Multimedia Lab (F2)',
+      'sub-head':'',
       'pic':swayam,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'content_1':'The Graphics and Multimedia Lab (F2) is a spacious facility spanning 18.3 meters by 6.9 meters, thoughtfully designed to accommodate 55 computers. These computers boast a variety of hardware specifications, featuring Intel Core i3 and i5 processors, each equipped with 4 GB of RAM and hard drives of 1 TB and 500 GB capacities. ',
+      'content_2':"Operating systems include both Windows 7 and Windows 8, providing versatility for software applications. This lab is equipped with a range of software tools, including C#, Visual Studio, Oracle 10g, NetBeans, Turbo C, and Multimedia Flash 8. With this impressive hardware and software setup, students and professionals have the ideal environment for graphic design, multimedia development, and related creative endeavors."
   },
   {
       'id':'4',
-      'heading':'Hi',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+      'heading':'DBMS Lab (F4)',
+      'sub-head':'',
       'pic':swayam,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'content_1':'The DBMS Lab (F4) is a spacious facility, measuring 22 meters by 6.9 meters, dedicated to database management systems. It houses 52 computers equipped with a range of hardware specifications, featuring Intel Core i7 and i3 processors, with 2 GB and 4 GB of RAM options, and hard drives of 1 TB and 500 GB capacities. ',
+      'content_2':"The lab offers a versatile environment with multiple operating systems, including Windows 8, Windows 7, and Ubuntu, catering to a variety of software applications. Students and researchers in this lab have access to essential software tools such as Oracle 10g for database management, Rational Rose for software modeling, JDK 7 for Java development, Visual Studio, and Turbo C++ for programming needs. This comprehensive setup empowers users to excel in database-related tasks and software development."
+  },
+  {
+      'id':'5',
+      'heading':'Microprocessor and Digital Lab (F6)',
+      'sub-head':'',
+      'pic':swayam,
+      'content_1':'The Microprocessor & Digital Lab (F6) is a dedicated facility spanning 18.3 meters by 6.9 meters, designed for hands-on exploration of microprocessor and digital electronics concepts. This lab is well-equipped with a specialized set of hardware, including 8085 Trainer Kits, 8086 Trainer Kits, 8051 Trainer Kit, and IC Trainer Kit. ',
+      'content_2':"These resources provide students and researchers with the invaluable opportunity to gain practical experience in working with microprocessors and digital circuits. Whether it's programming and interfacing microcontrollers or delving into the intricate world of digital electronics, this lab serves as a vital hub for fostering a deep understanding of these fundamental principles within the realm of computer science and engineering."
   },
 ]
 
@@ -343,7 +383,8 @@ export {
   cse_vision,
   cse_outcomes,
   cse_peo,
+  cse_spec_outcomes,
   cse_labs,
   cse_dept_events,
-  cse_hod
+  cse_hod,
 };

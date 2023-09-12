@@ -10,7 +10,7 @@ const Deptmission = ({head,points}) => {
           <div className="missionchip">
             <div className="missionhead">
               <div className="missionlogosec">
-              {head ? head : 'Mission'}&nbsp;&nbsp;
+                {head ? head : 'Mission'}&nbsp;&nbsp;
                 <GiBullseye className="missionlogo" />
               </div>
             </div>

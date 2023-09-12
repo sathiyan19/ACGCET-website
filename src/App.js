@@ -60,19 +60,30 @@ import {
   Eee_faculties,
   Eee_lab,
   Eee_events,
+  Ece_placement,
   Sciencedept,
+  Iqac,
+  Iqac_min,
+  Iqac_aqar,
+  Iqac_feed,
+  Nba,
+  Nirf,
+  Iic,
   Sh_faculty,
   Sh_lab_facility,
   Sh_research,
   Science_Programme,
-  UBA
+  UBA,
+  Scholarship,
+  Civil_awards,
+  Ece_dept_lib,
+  Ece_research
 } from "./pages";
 import "./App.css";
 import Uba from "./pages/Uba/Uba";
 
 const App = () => {
   const location = useLocation();
-  console.log(location)
   useEffect(()=>{
     window.scrollTo(0,0)
   },[location])
@@ -112,6 +123,7 @@ const App = () => {
         <Route path="/ecedept/ece-peo" element={<Ece_peo />} />
         <Route path="/ecedept/ece-faculties" element={<Ece_faculties />} />
         <Route path="/ecedept/ece-lab" element={<Ece_lab />} />
+        <Route path="/ecedept/ece-research" element={<Ece_research />} />
         <Route path="/ecedept/ece-rankers" element={<Ece_rankers/>} />
         <Route path="/ecedept/ece-dept-events" element={<Ece_events/>} />
         <Route path="/ecedept/ece-projects" element={<Ece_projects/>} />
@@ -119,8 +131,8 @@ const App = () => {
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
-        <Route path="/mechdept" element={<Under/>} />
-        {/* <Route path="/mechdept" element={<Mechdept/>} /> */}
+        {/* <Route path="/mechdept" element={<Under/>} /> */}
+        <Route path="/mechdept" element={<Mechdept/>} />
         <Route path="/eeedept" element={<Eeedept/>} />
         <Route path="/sciencedept" element={<Sciencedept/>} />
         <Route path="/sciencedept/sh-faculty" element={<Sh_faculty />} />
@@ -143,6 +155,21 @@ const App = () => {
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
         <Route path="/uba" element={<Uba/>} />
+        <Route path="/ecedept/ece-placement" element={<Ece_placement/>} />
+        <Route path="/scholarship" element={<Scholarship/>} />
+        <Route path="/civildept/civil-awards" element={<Civil_awards/>} />
+        <Route path="/iqac_min" element={<Iqac_min/>} />
+        <Route path="/iqac_aqar" element={<Iqac_aqar/>} />
+        <Route path="/iqac" element={<Iqac/>} />
+        <Route path="/iqac_feed" element={<Iqac_feed/>} />
+        <Route path="/nba" element={<Nba/>} />
+        <Route path="/nirf" element={<Nirf/>} />
+        <Route path="/iic" element={<Iic/>} />
+        <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
+        
+        
+        
+
       </Routes>
       <Footer />
     </div>

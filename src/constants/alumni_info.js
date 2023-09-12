@@ -1,4 +1,5 @@
 import contrib_pic from '../assets/pictures/clgphoto.webp'
+import cover from "../assets/pictures/cover pic.jpg";
 import alumni1 from '../assets/pictures/alumni1.webp'
 import alumni2 from '../assets/pictures/alumni2.webp'
 import alumni3 from '../assets/pictures/alumni3.webp'
@@ -43,4 +44,39 @@ export const slideshow_imgs=[
     alumni1,
     alumni2,
     alumni3
+]
+
+export const alumni_reunions=[
+    {
+        id:'1',
+        coverpic:cover,
+        batch:"1994-98",
+        name:"Harmony '98",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        date:"24th July 2023"
+    },
+    {
+        id:'1',
+        coverpic:cover,
+        batch:"1994-98",
+        name:"Harmony '98",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        date:"24th July 2023"
+    },
+    {
+        id:'1',
+        coverpic:cover,
+        batch:"1994-98",
+        name:"Harmony '98",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        date:"24th July 2023"
+    },
+    {
+        id:'1',
+        coverpic:cover,
+        batch:"1994-98",
+        name:"Harmony '98",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+        date:"24th July 2023"
+    },
 ]
