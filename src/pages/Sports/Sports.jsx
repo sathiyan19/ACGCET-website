@@ -25,7 +25,7 @@ const Sports = () => {
       <div className="vimisec">
         <Underline heading="sathiyan" />
         <Deptvision visiondata={sportsvision.visiondata} />
-        <Deptmission points={sportsmission} />
+        <Deptmission head="SSS" points={sportsmission} />
         {sportstime.map((item) => (
           <Timeline
             head={item.head}

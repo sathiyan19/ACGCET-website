@@ -4,13 +4,13 @@ import './Deptmission.css'
 
 import { GiBullseye } from "react-icons/gi";
 
-const Deptmission = ({points}) => {
+const Deptmission = ({head,points}) => {
   return (
     <div className="missionholder">
           <div className="missionchip">
             <div className="missionhead">
               <div className="missionlogosec">
-                Mission&nbsp;&nbsp;
+              {head ? head : 'Mission'}&nbsp;&nbsp;
                 <GiBullseye className="missionlogo" />
               </div>
             </div>
