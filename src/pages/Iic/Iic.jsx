@@ -9,7 +9,7 @@ import { iic } from '../../constants/iic';
 
 const Iic = () => {
   return (
-    <div>
+    <div className='iic_container'>
 
        <Underline heading="Innovation and Startup policies"/>
 

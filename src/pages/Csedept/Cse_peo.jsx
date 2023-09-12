@@ -11,7 +11,8 @@ import {
   import {
     cse_dept_menu,
     cse_peo,
-    cse_outcomes
+    cse_outcomes,
+    cse_spec_outcomes
   } from "../../constants/cse_dept";
   
   import {Listformat, Timeline} from '../../components'
@@ -50,6 +51,10 @@ const Cse_peo = () => {
           <div className="cse_outcomes">
             <Underline heading="Program Outcomes" />
             <Listformat points={cse_outcomes} />
+          </div>
+          <div className="civ_spec_outcomes">
+              <Underline heading="Program Specific Outcomes"/>
+              <Listformat points={cse_spec_outcomes}/>
           </div>
         </div>
       </section>

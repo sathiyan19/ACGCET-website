@@ -2,7 +2,7 @@ import React from 'react'
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
 
 import { Radial_menu } from "../../components";
-import ece from "../../assets/pictures/group-pic.webp";
+import eng from "../../assets/pictures/eng.webp";
 import {Sh_dept_fmenu,eng_mission,eng_vision} from '../../constants/Sh_dept_menu'
 
 import './Sh_English.css'
@@ -27,7 +27,7 @@ const Sh_English = () => {
           Orientation programmes are also conducted for foreign languages to create awareness among students to learn foreign languages
           </p>
           <div className="dept_img_holder">
-            <img className="dept_img" src={ece} />
+            <img className="dept_img" src={eng} />
           </div>
         </div>
         <div className="shengtwo-col1">

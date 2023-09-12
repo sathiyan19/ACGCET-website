@@ -5,28 +5,24 @@ import mechcover from '../assets/pictures/mech_banner.webp'
 import ececover from '../assets/pictures/microchip.webp'
 import cover from '../assets/pictures/cover pic.jpg'
 
+import edc from '../assets/pictures/news_img/edc.webp'
+
 export const news_info=[
     {
         'id':'4',
-        'heading':"Coder's Club",
+        'heading':"NLP For 3rd years",
         'sub-head':'Some representative placeholder content for the second slide of the carousel.',
         'pic':csecover,
-        'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                    'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-        'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-        "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-        "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+        'content_1':'',
+        'content_2':"The 3rd year students of our college attended a program called the Neuro- Linguistic Programming for three weeks on weekends from August 18,2023 to September 2,2023. This program consisted six engaging sessions and is related to communication and personality development. Our Alumni of 1998 batch sponsored for this program. A set of 32 students attended the program which was referred to as the 'Pilot Batch'. The students were greatly benefited by this program and a big thanks to our Alumni for arranging such a productive program for the students."
     },
     {
         'id':'5',
-        'heading':"Architecture",
+        'heading':"EDC Coordinator Selection",
         'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-        'pic':civilcover,
-        'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                    'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-        'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-        "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-        "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+        'pic':edc,
+        'content_1':'',
+        'content_2':"Entrepreneurship Development is defined as the process of improving entrepreneurs’ skills and knowledge in the development, management, and organisation of a business venture while keeping the risks in mind. On 31.8.23, the entrepreneurship development cell of our college held a selection of coordinators from third years in our college’s gallery hall.Many entrepreneur enthusiasts took part actively."
     },
     {
         'id':'6',

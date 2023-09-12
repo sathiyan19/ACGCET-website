@@ -1,4 +1,3 @@
-import dp from "../assets/pictures/dp.jpg";
 import dpm from "../assets/pictures/boy.webp";
 import dpf from "../assets/pictures/girl.webp";
 import cover from "../assets/pictures/microchip.webp";
@@ -9,6 +8,16 @@ import placement from "../assets/pictures/placement.webp";
 
 import ece_adc_lab from "../assets/pictures/ece_dept/ece_labs/ece_adc_lab-c.webp"
 import ece_rfs_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfs_lab-c.webp"
+import ece_fo_lab from "../assets/pictures/ece_dept/ece_labs/ece_fo_lab.webp"
+import ece_cn_lab from "../assets/pictures/ece_dept/ece_labs/ece_cn_lab.webp"
+import ece_vlsi_lab from "../assets/pictures/ece_dept/ece_labs/ece_vlsi_lab.webp"
+import ece_ic_lab from "../assets/pictures/ece_dept/ece_labs/ece_ic_lab.webp"
+import ece_sig_lab from "../assets/pictures/ece_dept/ece_labs/ece_sig_lab.webp"
+import ece_edc_lab from "../assets/pictures/ece_dept/ece_labs/ece_edc_lab.webp"
+import ece_opt_lab from "../assets/pictures/ece_dept/ece_labs/ece_opt_lab.webp"
+import ece_pcb_lab from "../assets/pictures/ece_dept/ece_labs/PCB_Fabrication_Station.webp"
+import ece_antenna_lab from "../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.webp";
+
 
 import thiran_2k22 from "../assets/pictures/ece_dept/stud_activities/Thiran 2k22.webp";
 import circuit_debug from "../assets/pictures/ece_dept/stud_activities/Circuit Debugging.webp";
@@ -22,6 +31,11 @@ import top_designers_2k22 from "../assets/pictures/ece_dept/stud_activities/top_
 
 import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
 import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
+
+import priya_21 from '../assets/pictures/ece_dept/ece_rankers/priya_21.webp'
+import navin_21 from '../assets/pictures/ece_dept/ece_rankers/navin_21.webp'
+import aish_20 from '../assets/pictures/ece_dept/ece_rankers/aishwarya_20.webp'
+import sujitha_20 from '../assets/pictures/ece_dept/ece_rankers/sujitha_20.webp'
 
 const ece_dept_menu = [
   {
@@ -50,13 +64,13 @@ const ece_dept_menu = [
   },
   {
     id: "5",
-    path: "#",
+    path: "/ecedept/ece-dept-lib",
     link: "Department Library",
     arl: "l",
   },
   {
     id: "6",
-    path: "#",
+    path: "/ecedept/ece-research",
     link: "Research and Publications",
     arl: "l",
   },
@@ -114,23 +128,14 @@ const ece_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpf,
-    name: "C.Sinduja",
-    Designation: "Assistant Professor",
-    mailid: "sindhu.mzcet@gmail.com",
-    pdf: "https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link",
+    dp: dpm,
+    name: "Dr.A.Sivanantha Raja",
+    Designation: "Head of the Department",
+    mailid: "sivanantharaja@gmail.com",
+    pdf: "https://drive.google.com/file/d/1R9A7ul9goH87qnMYhIZQvI8qFCNcR2iX/view?usp=drive_link",
   },
   {
     id: "2",
-    cover: cover,
-    dp: somasundaram,
-    name: "Dr.S.Somasundaram",
-    Designation: "Associate Professor",
-    mailid: "ssm98@rediffmail.com",
-    pdf: "https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link",
-  },
-  {
-    id: "3",
     cover: cover,
     dp: dpm,
     name: "Dr.G.Karpagarajesh",
@@ -139,16 +144,16 @@ const ece_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1NJ0Um7-gKLpc5v-WkQLJ40yrlZnNeXgV/view?usp=drive_link",
   },
   {
-    id: "4",
+    id: "3",
     cover: cover,
     dp: dpf,
-    name: "Keerthana.P",
-    Designation: "Assistant Professor",
-    mailid: "keerthiperumal@gmail.com",
-    pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
+    name: "Dr.Renisha G",
+    Designation: "Associate Professor",
+    mailid: "renisha.ece@gmail.com",
+    pdf: "https://drive.google.com/file/d/12KYashHei2R52bEaM0KDNBhoMiKU_k66/view?usp=drive_link",
   },
   {
-    id: "5",
+    id: "4",
     cover: cover,
     dp: dpf,
     name: "Dr.D.Helena Margaret",
@@ -157,25 +162,43 @@ const ece_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1YnfHK-jwVQ_U8XSfZMwNrubMH7S8fgQs/view?usp=drive_link",
   },
   {
+    id: "5",
+    cover: cover,
+    dp: dpm,
+    name: "Prof.C.Mahendran",
+    Designation: "Assistant Professor",
+    mailid: "gc.mahendran@gmail.com",
+    pdf: "https://drive.google.com/file/d/1lT8lYFWnoW8bkBYg8wfEfo-G4p6ru2Ui/view?usp=drive_link",
+  },
+  {
     id: "6",
     cover: cover,
-    dp: dpf,
-    name: "Renisha G",
+    dp: somasundaram,
+    name: "Dr.S.Somasundaram",
     Designation: "Associate Professor",
-    mailid: "renisha.ece@gmail.com",
-    pdf: "https://drive.google.com/file/d/12KYashHei2R52bEaM0KDNBhoMiKU_k66/view?usp=drive_link",
+    mailid: "ssm98@rediffmail.com",
+    pdf: "https://drive.google.com/file/d/163gMBrbM22WAadjTr2AFz4cHJBFMJf7_/view?usp=drive_link",
   },
   {
     id: "7",
     cover: cover,
     dp: dpf,
-    name: "M.Aruna Rani",
-    Designation: "Assistant Professor(adhoc)",
-    mailid: "arunaselva27@gmail.com",
-    pdf: "https://drive.google.com/file/d/1iZp_6Wj4nb6q9TxaK6yxXn_yHW-J6jwc/view?usp=drive_link",
+    name: "Dr.C.Karthika Pragadeeswari",
+    Designation: "Assistant Professor",
+    mailid: "bk.karthika1969@gmail.com",
+    pdf: "https://drive.google.com/file/d/1u1pS75PDwZ4xLl7yhVyJFx4U_Iryzm5z/view?usp=drive_link",
   },
   {
     id: "8",
+    cover: cover,
+    dp: dpf,
+    name: "Dr.G.Dhevanandhini",
+    Designation: "Assistant Professor",
+    mailid: "dhevakeshav@gmail.com",
+    pdf: "https://drive.google.com/file/d/1EAyFUlaybqf58HDIQIR1wU7_GSKIDtaD/view?usp=drive_link",
+  },
+  {
+    id: "9",
     cover: cover,
     dp: dpm,
     name: "Dr.B.Rajesh Kanna",
@@ -184,40 +207,31 @@ const ece_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1aQxGj7vgE1McsS4UULIW2PPYPuk7K2VQ/view?usp=drive_link",
   },
   {
-    id: "9",
-    cover: cover,
-    dp: dpf,
-    name: "C.Karthika Pragadeeswari",
-    Designation: "Assistant Professor",
-    mailid: "bk.karthika1969@gmail.com",
-    pdf: "https://drive.google.com/file/d/1u1pS75PDwZ4xLl7yhVyJFx4U_Iryzm5z/view?usp=drive_link",
-  },
-  {
     id: "10",
     cover: cover,
     dp: dpf,
-    name: "G.Dhevanandhini",
+    name: "P.Sezhina Kanakambika",
     Designation: "Assistant Professor",
-    mailid: "dhevakeshav@gmail.com",
-    pdf: "https://drive.google.com/file/d/1EAyFUlaybqf58HDIQIR1wU7_GSKIDtaD/view?usp=drive_link",
+    mailid: "sezhina@gmail.com",
+    pdf: "https://drive.google.com/file/d/16zoEOL7QgiNCEoQ3SaSxov7y2f34XKTj/view?usp=drive_link",
   },
   {
     id: "11",
     cover: cover,
-    dp: dpm,
-    name: "C.Mahendran",
+    dp: dpf,
+    name: "C.Sinduja",
     Designation: "Assistant Professor",
-    mailid: "gc.mahendran@gmail.com",
-    pdf: "https://drive.google.com/file/d/1lT8lYFWnoW8bkBYg8wfEfo-G4p6ru2Ui/view?usp=drive_link",
+    mailid: "sindhu.mzcet@gmail.com",
+    pdf: "https://drive.google.com/file/d/1XSyQR1gJwej0E7xagF4u9oydmF0D6h8P/view?usp=drive_link",
   },
   {
     id: "12",
     cover: cover,
     dp: dpf,
-    name: "Mrs.X.Merlin Sheeba",
-    Designation: "Assistant Professor",
-    mailid: "renachristina@gmail.com",
-    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
+    name: "M.Aruna Rani",
+    Designation: "Assistant Professor(adhoc)",
+    mailid: "arunaselva27@gmail.com",
+    pdf: "https://drive.google.com/file/d/1iZp_6Wj4nb6q9TxaK6yxXn_yHW-J6jwc/view?usp=drive_link",
   },
   {
     id: "13",
@@ -232,12 +246,22 @@ const ece_fac_profiles = [
     id: "14",
     cover: cover,
     dp: dpf,
-    name: "P.Sezhina Kanakambika",
+    name: "Keerthana.P",
     Designation: "Assistant Professor",
-    mailid: "sezhina@gmail.com",
-    pdf: "https://drive.google.com/file/d/16zoEOL7QgiNCEoQ3SaSxov7y2f34XKTj/view?usp=drive_link",
+    mailid: "keerthiperumal@gmail.com",
+    pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
+  },
+  {
+    id: "15",
+    cover: cover,
+    dp: dpf,
+    name: "Mrs.X.Merlin Sheeba",
+    Designation: "Assistant Professor",
+    mailid: "renachristina@gmail.com",
+    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
   },
 ];
+
 const ece_sup_profiles = [
   {
     id: "1",
@@ -252,18 +276,18 @@ const ece_sup_profiles = [
     id: "2",
     cover: cover,
     dp: dpf,
-    name: "Ms.D.Tamil Selvi",
-    Designation: "Mech.Grade-II",
-    mailid: "tamilmd123@gmail.com",
+    name: "Ms.N.Vasanthi Meena",
+    Designation: "Lab Assistant",
+    mailid: "vasanthimeena8686@gmail.com",
     pdf: "",
   },
   {
     id: "3",
     cover: cover,
     dp: dpf,
-    name: "Ms.N.Vasanthi Meena",
-    Designation: "Lab Assistant",
-    mailid: "vasanthimeena8686@gmail.com",
+    name: "Ms.D.Tamil Selvi",
+    Designation: "Mech.Grade-II",
+    mailid: "tamilmd123@gmail.com",
     pdf: "",
   },
   {
@@ -294,15 +318,231 @@ const ece_sup_profiles = [
     pdf: "",
   },
 ];
+
+const ece_research_info=[
+  {
+    'name':"Dr. A.Sivanantharaja",
+    'area':"Optical Communication"
+  },
+  {
+    'name':"Dr. G.Karpagarajesh",
+    'area':"Optical communication and networks"
+  },
+  {
+    'name':"G Renisha",
+    'area':"Signal processing"
+  },
+  {
+    'name':"Dr. D.Helena Margaret",
+    'area':"Microwave Antenna"
+  },
+  {
+    'name':"Prof. C.Mahendran",
+    'area':"Microwave Antenna"
+  },
+  {
+    'name':"Dr. S.Somasundaram",
+    'area':"Polynomial Controllers, Stable Controllers"
+  },
+  {
+    'name':"Prof. C.Karthika Pragadeeswari",
+    'area':"Video Surveilance"
+  },
+  {
+    'name':"Prof. G.Dhevanandhini",
+    'area':"Digital Image Processing"
+  },
+  {
+    'name':"Dr. B.Rajeshkanna",
+    'area':"Wireless Sensor Networks"
+  },
+];
+
+const patent_info=[
+  {
+    'name':"Dr. A.Sivanantharaja",
+    'title':"Noise free Public Address System for Auditorium using White Light Emitting Diode Communication",
+    'App':"202041002376",
+    'status':"Applied"
+  },
+];
+
+const guide_info=[
+  {
+    'sno':"1",
+    'name':"Dr. A.Sivanantha Raja",
+    'npprod':"12",
+    'nppur':"04",
+    'msres':"02"
+  },
+  {
+    'sno':"2",
+    'name':"Dr. G.Karpagarajesh",
+    'npprod':"-",
+    'nppur':"04",
+    'msres':"-"
+  },
+  {
+    'sno':"3",
+    'name':"Dr. S.Somasundaram",
+    'npprod':"04",
+    'nppur':"-",
+    'msres':"-"
+  },
+];
+
+const scholar_info1=[
+  {
+    'sno':"1",
+    'name':"A.Anand",
+    'area':"Investigation on Brillouin Scattering Effect in Fiber Optic Communication",
+  },
+  {
+    'sno':"2",
+    'name':"N.Gopi",
+    'area':"Investigation on Nonlinear Polarization Effects in Fiber Optic Communication",
+  },
+  {
+    'sno':"3",
+    'name':"Yarra Naga Subrahmanya Vamsi Mohan",
+    'area':"Outdoor Applications of Optical Wireless Communication Systems",
+  },
+  {
+    'sno':"4",
+    'name':"M. Sindhu",
+    'area':"SS",
+  },
+];
+
+const scholar_info2=[
+  {
+    'sno':"1",
+    'name':"John Samuel Raj",
+    'area':"SS",
+  },
+  {
+    'sno':"2",
+    'name':"Amutha",
+    'area':"SS",
+  },
+  {
+    'sno':"3",
+    'name':"Bala Karthick",
+    'area':"SS",
+  },
+  {
+    'sno':"4",
+    'name':"Sarathi",
+    'area':"SS",
+  },
+];
+
+const scholar_info3=[
+  {
+    'sno':"1",
+    'name':"T. Geetha",
+    'area':"Design and real time implementation of Stable PI Controller for Spherical tank process"
+  },
+];
+
+const scholar_info4=[
+  {
+    'sno':"1",
+    'name':"Mr.Kanaka Raju Penmetsa",
+    'area':"Diverse image segmentation methods for identifying and estimating the severity of plaque psoriasis in human skin"
+  },
+  {
+    'sno':"2",
+    'name':"Kataru Shravan Kumar",
+    'area':"Performance analysis for wireless sensor networks in IOT enabled Green Power Applications"
+  },
+];
+
+const ece_siva=[
+  {
+    'id':"1",
+    'point':"Shanmuga Sundar,A.Sivanantha Raja, C.Sanjeeviraja and D.Jeyakumar (2015), “Syntheis and characterization of novel siloxane based transparent and flexible substrate for OLEDs”, Nanoelectronics and Sensors, ISBN: 978-93-85436-94-9, Bloomsbury Publication."
+  },
+  {
+    'id':"2",
+    'point':"Shanmuga Sundar,V.Nidhya Vijay, T.Sridarshini and A.Sivanantha Raja (2018), “Performance analysis of multichannel EDM hybrid Optical communication system for long haul communications”, Frontier Research and Innovation in Optoelectronics Technology and Industry, ISBN: 978-1-138-33178-5, CRC Press, Taylor & Francis."
+  },
+  {
+    'id':"3",
+    'point':"Shanmuga Sundar, A.Sivanantha Raja, R.Saravanan and Marcos Flores Carrasco (2018), “Photocatalyst for indoor air pollution: a brief review” Green Photocatalysts for Energy and Environmental Process, Springer, doi: 10.1007/978-3-030-17638-9, ISBN: 978-3-030-17638-9."
+  },
+  {
+    'id':"4",
+    'point':"Shanmuga Sundar, T.Sridarshini, R.Sitharthan, Madurakavi Karthikeyan, A.Sivanantha Rajaand Marcos Flores Carrasco (2019), “Performance investigation of 16/32- channel DWDM PON and long-reach PON systems using an ASE noise source”, Advances in Optoelectronic Technology and Industry Development – Jose & Ferreira (eds.), ISBN: 978-0-367-24634-1, CRC Press, Taylor & Francis, London, pp. 93-99."
+  },
+  {
+    'id':"5",
+    'point':"Shanmuga Sundar, T. Arun, M. Muneeswaran, R.Sitharthan, M. Karthikeyan, A.Sivanantha Raja, and Marcos Flores C (2020), “Conductive oxides role in Flexible Electronic Device Applications”, Metal and Metal Oxides for Energy and Electronics, Springer Nature, ISBN: 978-3-030-53065-5, pp.121-148, doi: 10.1007/978-3-030-53065-5_4."
+  },
+  {
+    'id':"6",
+    'point':"Jayson Keerthy Jayabarathan,  Sivanantha Rajaand S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
+  },
+];
+
+const ece_margaret=[
+  {
+    'id':"1",
+    'point':"Vasuki, D. Helena Margaret and Rajeswari, “Microwave Engineering”, Mc Graw Hill Education (India) Pvt Ltd., 2015. (ISBN: 93-392-1948-1)",
+  },
+];
+
+const ece_rajesh=[
+  {
+    'id':"1",
+    'point':"Gopinath A, Rajesh Kanna B, Vellingiri Jayagopal, Aviral Srivastava (2023), Internet of Things (IOT), ISBN: 978-81-19489-07-7, First Edition, RK Publication, India, 21.07.2023.",
+  },
+];
+
 const ece_rankers = [
   {
-    id: "1",
-    cover: cover,
-    dp: dpf,
-    name: "Name",
-    Designation: "Designation",
-    mailid: "emailid@gmail.com",
+    head:"2017-2021 Batch",
+    rankers:[
+      {
+        id: "1",
+        cover: cover,
+        dp: priya_21,
+        name: "Priyadharshini R",
+        Designation: "First rank holder",
+        mailid: "1714041",
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: navin_21,
+        name: "Navin Frank L",
+        Designation: "Second rank holder",
+        mailid: "1714035",
+      },
+    ]
   },
+  {
+    head:"2016-2020 Batch",
+    rankers:[
+      {
+        id: "1",
+        cover: cover,
+        dp: aish_20,
+        name: "Aishwarya B",
+        Designation: "First rank holder",
+        mailid: "1614002",
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: sujitha_20,
+        name: "Sujitha V",
+        Designation: "Second rank holder",
+        mailid: "1614037",
+      },
+    ]
+  },
+  
 ];
 
 const ece_vision = {
@@ -419,7 +659,7 @@ const ece_outcomes = [
 const ece_progs = [
   {
     id: "1",
-    year: "1986",
+    year: "1969",
     period: "4 Years",
     top_head: "B.E.",
     program: "Electronics and Communication Engineering",
@@ -427,7 +667,7 @@ const ece_progs = [
   },
   {
     id: "2",
-    year: "1986",
+    year: "2002",
     period: "2 Years",
     top_head: "M.E.",
     program: "Microwave & Optical Communication",
@@ -435,7 +675,7 @@ const ece_progs = [
   },
   {
     id: "3",
-    year: "1986",
+    year: "2002",
     period: "4 Years",
     top_head: "Part time B.E.",
     program: "Electronics and Communication Engineering",
@@ -1340,12 +1580,12 @@ const ece_acad_labs = [
     heading: "Electronic Devices & Circuits Lab",
     "sub-head":
       "",
-    pic: robotics,
+    pic: ece_edc_lab,
     link:"https://youtu.be/ZfA004WzxEU",
     content_1:
-      "The Electronic Devices and Circuits Laboratory has been established over an area of 159 sq.m. Here courses such as Digital Electronics Lab for III Sem, Linear Integrated Circuits Lab for V Sem and Electronic Circuits & Simulation Lab for IV Sem, are conducted.",
+      "",
     content_2:
-      "This lab is equipped with Electronic Workbenches with Regulated  Power supply, Function Generator, Cathode Ray Oscilloscope, Micro ammeter and Voltmeter, Bread Board and Personal computer with Mulitsim and ORCAD PSPICE Perpetual License (Software) and Digital trainer Kits.",
+      "The Electronic Devices and Circuits Laboratory has been established over an area of 159 sq.m. Here courses such as Digital Electronics Lab for III Sem, Linear Integrated Circuits Lab for V Sem and Electronic Circuits & Simulation Lab for IV Sem, are conducted. This lab is equipped with Electronic Workbenches with Regulated  Power supply, Function Generator, Cathode Ray Oscilloscope, Micro ammeter and Voltmeter, Bread Board and Personal computer with Mulitsim and ORCAD PSPICE Perpetual License (Software) and Digital trainer Kits.",
   },
   {
     id: "2",
@@ -1355,42 +1595,33 @@ const ece_acad_labs = [
     pic: ece_adc_lab,
     link:"https://youtu.be/_S7TKURJSlI",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+    "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "The Analog & Digital Communication Lab has an area about  159  sq.m. Here courses such as Electron Devices and Circuits lab for III Sem, Digital Electronics and  Communication Lab for III Sem CSE, Analog and  Digital Communication  Lab for VI Sem  are conducted. This lab is equipped with Digital Storage Oscilloscopes, Advanced Motorized antenna Set up to determine the radiation characteristics of Loop antenna, dipole antenna, Yagi-Uda antenna and Micro strip antennas, Communication Trainer Kits, Regulated Power supplies, Function Generators, Cathode Ray Oscilloscopes, Ammeters and Voltmeters.",
   },
   {
     id: "3",
     heading: "VLSI & Cyber Physical Systems Lab",
     "sub-head":
       "",
-    pic: swayam,
+    pic: ece_vlsi_lab,
     link:"https://youtu.be/1CGh5oMUmu0",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "VLSI & Cyber Physical Systems Lab has an area about 247.7 sq.m where  courses such as VLSI Lab for VI Sem, Cyber Physical Systems Lab for VII Sem, Microprocessor and Microcontrollers Lab for V Sem  are conducted. This lab is equipped with   FPGA kits, 8085 & 8086 Microprocessor Kits and 8051 Microcontroller kits, interfacing kits, Arduino Microcontrollers and various  sensors such as Ultrasonic sensors, Infrared sensors, Temperature sensors, LDR, LED and Photodiodes for doing Cyber Lab Experiments. This Lab is also equipped with Xilinx and  IC Design Software (CADENCE) for doing VLSI Lab experiments.",
   },
   {
     id: "4",
     heading: "Computer Networks Lab",
     "sub-head":
       "",
-    pic: swayam,
+    pic: ece_cn_lab,
     link:"https://youtu.be/ceGhtogDQaQ",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "The Network Programming Lab, tailored for VI-semester students, is a crucial component of our academic program. It is well-equipped with LAN Trainer kits for hands-on experience in Local Area Network management. Additionally, the lab features Network simulation software (NETSIM) to simulate Network routing protocols and Wireless Sensor Networks kits for undergraduate project work, enabling students to develop practical skills and conduct research in the field of network programming and management.",
   },
   {
     id: "5",
@@ -1400,57 +1631,45 @@ const ece_acad_labs = [
     pic: swayam,
     link:"https://youtu.be/YsQiOEL3B84",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "RF & Microwave Electronics Lab has an area of about 54.3 sq.m where the course  RF and Microwave Lab for VII Sem is conducted. This lab is equipped with Klystron Microwave Test Bench and Gunn Oscillator Microwave Test Bench for measuring the Frequency, Guided wave length, Power, Insertion loss and Coupling coefficient at Microwave frequency.",
   },
   {
     id: "6",
     heading: "Signal Processing Lab",
     "sub-head":
       "",
-    pic: swayam,
+    pic: ece_sig_lab,
     link:"https://youtu.be/HKTqdZcdL30",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "The Digital Signal Processing Lab, spanning 400 sq.m, serves as the venue for the V Semester's Digital Signal Processing Lab sessions. The lab is well-appointed with essential tools, including DSP Processors and PCs equipped with MATLAB simulation software. This setup enables students to delve into the practical aspects of digital signal processing, enhancing their understanding and skills in this critical field of study.",
   },
   {
     id: "8",
     heading: "Fiber Optic Networking Lab",
     "sub-head":
       "",
-    pic: swayam,
+    pic: ece_fo_lab,
     link:"https://youtu.be/59r3J5tJ12k",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "This Lab has  an  area of 32.5 sq.m where courses such as  Fiber Optic Networking  Lab for I Sem(M.E) and Optical communication and Networking Lab for VII Sem(B.E)  are conducted. This Lab is also used for Ph.D Research scholars. It is equipped with UV3000+ UV/VIS Spectro Photo Meter, E6000CI Single Mode OTDR, MS 9740A Optical Spectrum Analyzer, Light Runner and LASER Equipments.",
   },
   {
     id: "9",
     heading: "Optical Networking & Simulation Lab",
     "sub-head":
       "",
-    pic: swayam,
+    pic: ece_opt_lab,
     link:"https://youtu.be/7lqgUOTra3I",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "In this Lab Optical Networking  Lab for II Sem(M.E) is conducted. This Lab is also used by Project students of VIII Sem(B.E) and  II year (M.E). This Lab is equipped with OPTI System Perpetual License (Software) version 12,16,16.1, OPTSIM Perpetual License (Software) and Photonics CAD Perpetual License (Software).",
   },
   {
     id: "10",
@@ -1460,89 +1679,230 @@ const ece_acad_labs = [
     pic: ece_rfs_lab,
     link:"https://youtu.be/VszECOgNqHg",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "The RF System Validation Laboratory serves as a crucial resource for verifying RF systems designed by B.E, M.E, and Ph.D. scholars during their projects and research endeavors. Additionally, the lab is open for use by outstation Ph.D. scholars, PG scholars, and industry professionals at a nominal fee.",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "It offers a range of measurement capabilities, including assessing the Return Loss, Transmission coefficient, Reflection coefficient, Gain of RF systems, and the input/output impedance of RF systems. The lab also enables the measurement of the Frequency Spectrum of single or composite signals, Phase Noise of RF oscillators, and the Constellation of digitally modulated signals. Equipped with advanced tools like Vector Network Analyzers, Spectrum Analyzers, and Signal Generators, as well as a variety of RF and Microwave Frequency Simulators, this facility empowers researchers and scholars to conduct in-depth RF system analysis and validation for both academic and industrial applications.",
   },
 ];
+
 const ece_indus_labs = [
   {
     id: "1",
     heading: "PCB Prototyping Station",
     "sub-head":
       "",
-    pic: swayam,
+    pic: ece_pcb_lab,
     link:"https://youtu.be/WRvpYQJ1VtY",
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "The PCB Prototyping Station, covering 11.16 sq.m., plays a pivotal role in enabling the fabrication of RF and Microwave components and antennas for projects undertaken by undergraduate, postgraduate students, and research scholars. This versatile facility supports the creation of two-layer PCBs, catering to both low and high-frequency electronic circuits. Equipped with a state-of-the-art PCB Prototyping Machine and a dedicated Soldering station, it empowers individuals to translate their theoretical designs into tangible prototypes. This hands-on approach fosters practical skills and innovation, enhancing the overall learning and research experience in the domains of electronics and telecommunications.",
   },
   {
     id: "2",
-    heading: "One Week Training on Robotics",
+    heading: "Antenna Testing Centre",
     "sub-head":
-      "Some representative placeholder content for the second slide of the carousel.",
-    pic: robotics,
+      "",
+    pic: ece_antenna_lab,
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "This Centre can measure the various radiation parameters such as Azimuth & Elevation Radiation Pattern / Co-Polarization, Cross Polarization, Gain, Radiation Efficiency, Directivity, Half Power Beam Width, Front to Back Ratio, Linear Polarization, Reflection coefficient (Return Loss), SWR, Transmission Parameter and Port Impedance Profile.",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "The center is equipped with cutting-edge equipment, including a Vector Network Analyzer (100KHz - 20GHz) by Rohde & Schwarz, a Double Ridged Horn Antenna (1GHz - 18 GHz) with computational software in the Anechoic Chamber, and major RF equipment like Vector Network Analyzers, Spectrum Analyzers, Signal Generators, and more. It also features essential simulation software, including Advanced Design System (ADS), Ansys – Electronics Desktop, CST Studio Suite, and PathWave EM Design (EMPro).",
   },
   {
     id: "3",
-    heading: "Placement Activities",
+    heading: "IC Testing Facility",
     "sub-head":
-      "Some representative placeholder content for the second slide of the carousel.",
-    pic: placement,
+      "",
+    pic: ece_ic_lab,
     content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
+      "",
     content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+      "The Center of Excellence in Electronics Test Engineering serves as a valuable resource for B.E., M.E., and Ph.D. scholars conducting mini-projects, final-year projects, and research initiatives. Beyond its academic role, this center offers an opportunity for revenue generation by providing access to outstation Ph.D. scholars and industry professionals for testing electronic boards at a nominal fee. It thus bridges the gap between academia and industry, facilitating practical learning and fostering collaborative research endeavors in the field of electronics.",
   },
 ];
-const ece_dept_events = [
+
+const ece_dept_lib = [
   {
     id: "1",
-    heading: "One Week Training on Robotics",
-    "sub-head":
-      "Some representative placeholder content for the second slide of the carousel.",
-    pic: robotics,
-    content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
-    content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+    head: "",
+    house: "left",
+    content:"TV, VLSI, ROBOTICS, TQM,PE & HVs",
+    pdf:"https://drive.google.com/file/d/1kHfVDHTi_T5yHA1kzntvL3bMaw7bsZoJ/view?usp=drive_link"
   },
   {
     id: "2",
-    heading: "Placement Activities",
-    "sub-head":
-      "Some representative placeholder content for the second slide of the carousel.",
-    pic: placement,
-    content_1:
-      "Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners" +
-      "in leadership qualities so as to achieve better productivity and prosperity for our country.",
-    content_2:
-      "ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s" +
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong" +
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
+    head: "",
+    house: "right",
+    content:"SATELLITE COMMMUNICATION, RADAR, LIC, DIP",
+    pdf:"https://drive.google.com/file/d/1CRdFa6dAP9LbxFgSL3LvajzjemGb3im3/view?usp=drive_link"
+  },
+  {
+    id: "3",
+    head: "",
+    house: "left",
+    content:"OPTICS, SIGNALS AND SYSTEMS",
+    pdf:"https://drive.google.com/file/d/1dmtaz7Qmo671Nspe95w0GISO91pylEac/view?usp=drive_link"
+  },
+  {
+    id: "4",
+    head: "",
+    house: "right",
+    content:"MP & MC, M&I, MEDICAL ELECTRONICS",
+    pdf:"https://drive.google.com/file/d/1c2OINbHfD1jNqcPPqM25kmWQAlsPGdTS/view?usp=drive_link"
+  },
+  {
+    id: "5",
+    head: "",
+    house: "left",
+    content:"EMF, TLW, MICROWAVE, ANTENNA",
+    pdf:"https://drive.google.com/file/d/1gB26h5KP30jAaKyrDhemyrzoDqYt4Xi_/view?usp=drive_link"
+  },
+  {
+    id: "6",
+    head: "",
+    house: "right",
+    content:"Electronic Circuits",
+    pdf:"https://drive.google.com/file/d/1e64hQIRWP2qfOVsrKRlLVAkAqJwHjBzg/view?usp=drive_link"
+  },
+  {
+    id: "7",
+    head: "",
+    house: "left",
+    content:"Digital Signal Processing",
+    pdf:"https://drive.google.com/file/d/1IkCh-td-VoHNW0VPPJRfPUTroA3JBVAq/view?usp=drive_link"
+  },
+  {
+    id: "8",
+    head: "",
+    house: "right",
+    content:"Digital Electronics & Circuits",
+    pdf:"https://drive.google.com/file/d/1UhefC14fD0EyU8cGMXHFFxaQkyg5hlfp/view?usp=drive_link"
+  },
+  {
+    id: "9",
+    head: "",
+    house: "left",
+    content:"Computer Networks & Control Systems",
+    pdf:"https://drive.google.com/file/d/1UBeavd7cGGtX_xE3XGjjpdSSoTsNDrA8/view?usp=drive_link"
+  },
+  {
+    id: "10",
+    head: "",
+    house: "right",
+    content:"Communication Systems",
+    pdf:"https://drive.google.com/file/d/1KLyoDU9zMFRdnOqLPWg9HVv0mSoQtrAR/view?usp=drive_link"
+  },
+  
+];
+
+const ece_dept_events = [
+  {
+    id: "13",
+    head: "Faculty Development Programme “Artificial Inteligence”",
+    house: "left",
+    date:"20th DEC 2022",
+    content:
+      "",
+  },
+  {
+    id: "12",
+    head: "Short talk on “Expand your horizon”",
+    house: "right",
+    date:"1st NOV 2021",
+    content:
+      "",
+  },
+  {
+    id: "11",
+    head: "Intra Department Technical Symposium – STARWARTZ 2k21",
+    house: "left",
+    date:"13th MAR 2021",
+    content:
+      "",
+  },
+  {
+    id: "10",
+    head: "Intra Department Technical Symposium – Shnkrayaan 2k20",
+    house: "right",
+    date:"28th FEB 2020",
+    content:
+      "",
+  },
+  {
+    id: "9",
+    head: "Two weeks Faculty Development Programme Recent advances in Communication system",
+    house: "left",
+    date:"2nd - 15th DEC 2019",
+    content:
+      "",
+  },
+  {
+    id: "8",
+    head: "National Level Technical Symposium – PRAGYANZ’ 19",
+    house: "right",
+    date:"18th OCT 2019",
+    content:
+      "",
+  },
+  {
+    id: "7",
+    head: "Conference NCMOC 2019",
+    house: "left",
+    date:"25th MAR 2019",
+    content:
+      "",
+  },
+  {
+    id: "6",
+    head: "One week FDP on Recent Progress in Optical Communication Research",
+    house: "right",
+    date:"18th - 24th OCT 2018",
+    content:
+      "",
+  },
+  {
+    id: "5",
+    head: "National Level Technical Symposium – PRAGYANZ 2K18",
+    house: "left",
+    date:"26th & 27th SEP 2018",
+    content:
+      "",
+  },
+  {
+    id: "4",
+    head: "Two days workshop on “Recent trends in Arduino boards & systems”",
+    house: "right",
+    date:"16th & 17th AUG 2018",
+    content:
+      "",
+  },
+  {
+    id: "3",
+    head: "Conference NCMOC 2018",
+    house: "left",
+    date:"25th APR 2018",
+    content:
+      "",
+  },
+  {
+    id: "2",
+    head: "Three days workshop on “Mobile maintenance and servicing”",
+    house: "right",
+    date:"4th-6th APR 2018",
+    content:
+      "",
+  },
+  {
+    id: "1",
+    head: "Intra Department Technical Symposium – SIRUS’18",
+    house: "left",
+    date:"20th FEB 2018",
+    content:
+      "",
   },
 ];
+
 const ece_projects = [
   {
     id: "1",
@@ -1573,30 +1933,31 @@ const ece_projects = [
       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity.",
   },
 ];
+
 const ece_stud_activities = [
   {
-    id: "8",
-    heading: "No event",
-    "sub-head":
-      "Divya barathi, S.Lavanya & M.Arthi bagged 3rd place in _____________ contest conducted by Sudharsan Engineering College.",
-    pic: top_design2,
-    content_1: "",
-    content_2: "",
-  },
-  {
     id: "7",
-    heading: "No event",
+    heading: "Top Designers 2023",
     "sub-head":
-      "S.Kavya, K.Thiviyadarssini & V.Sowmiya bagged 1st place in _____________ contest conducted by Sudharsan Engineering College.",
+      "S.Kavya, K.Thiviyadarssini & V.Sowmiya bagged 1st place in Top Designers contest conducted by Sudharsan Engineering College.",
     pic: top_design1,
     content_1: "",
     content_2: "",
   },
   {
-    id: "6",
-    heading: "Circuit Designers",
+    id: "8",
+    heading: "Top Designers 2023",
     "sub-head":
-      "R.Tharini, K.Rishika & T.Mhadevi bagged 3rd place in Circuit Designers contest conducted by Sudharsan Engineering College.",
+      "Divya barathi, S.Lavanya & M.Arthi bagged 3rd place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: top_design2,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "6",
+    heading: "Top Designers 2023",
+    "sub-head":
+      "R.Tharini, K.Rishika & T.Mhadevi bagged 4th place in Top Designers contest conducted by Sudharsan Engineering College.",
     pic: circuit_designers,
     content_1: "",
     content_2: "",
@@ -1672,6 +2033,7 @@ const ece_antenna_software = [
     point: "PathWave EM Design (EMPro)",
   },
 ];
+
 const ece_antenna_anechoic = [
   {
     id: "1",
@@ -1683,6 +2045,7 @@ const ece_antenna_anechoic = [
       "Double Ridged Horn Antenna (1GHz - 18 GHz) and computational software",
   },
 ];
+
 const ece_antenna_rf = [
   {
     id: "1",
@@ -1718,38 +2081,50 @@ const ece_placement_info = [
   {
     id:"1",
     year: "2019-2023 Batch",
+    salary:"8 Lakhs",
     details: [
       {
         id: "1",
         heading: "In-Campus",
-        perc: 72,
-      },
-      {
-        id: "2",
-        heading: "Higher Studies",
-        perc: 3,
+        perc: 59,
+        symbol:"%"
       },
     ],
   },
   {
     id:"2",
     year: "2018-2022 Batch",
+    salary:"5.6 Lakhs",
     details: [
       {
         id: "1",
         heading: "In-Campus",
         perc: 69,
+        symbol:"%"
       },
     ],
   },
   {
     id:"3",
     year: "2017-2021 Batch",
+    salary:"5 Lakhs",
     details: [
       {
         id: "1",
         heading: "In-Campus",
-        perc: 59,
+        perc: 72,
+        symbol:"%"
+      },
+      {
+        id: "2",
+        heading: "Higher Studies",
+        perc: 3,
+        symbol:"%"
+      },
+      {
+        id: "2",
+        heading: "Entrepreneur",
+        perc: 1,
       },
     ],
   },
@@ -1774,6 +2149,17 @@ export {
   ece_antenna_rf,
   ece_antenna_software,
   ece_hod,
+  ece_research_info,
+  patent_info,
+  guide_info,
+  scholar_info1,
+  scholar_info2,
+  scholar_info3,
+  scholar_info4,
+  ece_siva,
+  ece_margaret,
+  ece_rajesh,
   ece_placement_info,
-  ece_stud_data
+  ece_stud_data,
+  ece_dept_lib
 };

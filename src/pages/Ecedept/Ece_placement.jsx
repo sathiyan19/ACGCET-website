@@ -29,7 +29,11 @@ const Ece_placement = () => {
                     {ece_placement_info.map((object)=><>
                     <div className='ece_place_head'>{object.year}</div>
                     <div className='ece_place_hold'>
-                        {object.details.map((item)=><Progressbar key={item.id} percent1={item.perc} heading={item.heading}/>)}
+                        {object.details.map((item)=><Progressbar key={item.id} percent1={item.perc} symbol={item.symbol} heading={item.heading}/>)}
+                        <div className='ece_place_high_salary'>
+                          <div className='ece_place_high_head'>Highest Salary:</div>
+                          <div className='ece_place_high_content'>{object.salary}</div>
+                        </div>
                     </div>
                     </>)}
                 </div>
