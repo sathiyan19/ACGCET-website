@@ -11,6 +11,10 @@
     /* overflow-x: scroll; */
     /* padding: 20px 30px; */
 }
+
+.ece_super{
+    color: #00134d;
+}
 @media (max-width:650px){
     .ece_res_table{
         width:90%;
@@ -21,7 +25,7 @@
         width:100%;
     }
 }
-@media (max-width:350px){
+@media (max-width:450px){
     .ece_res_table{
         overflow-x:scroll ;
     }

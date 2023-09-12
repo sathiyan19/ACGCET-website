@@ -2,6 +2,7 @@ import React from "react";
 
 import "./Sports.css";
 
+
 import { Heroimagecarousal, Timeline, Listformat } from "../../components";
 import { Deptvision, Underline, Deptmission,Devcard } from "../../widgets";
 import {
@@ -25,7 +26,7 @@ const Sports = () => {
       <div className="vimisec">
         <Underline heading="sathiyan" />
         <Deptvision visiondata={sportsvision.visiondata} />
-        <Deptmission points={sportsmission} />
+        <Deptmission head="SSS" points={sportsmission} />
         {sportstime.map((item) => (
           <Timeline
             head={item.head}

@@ -2,11 +2,11 @@ import React from "react";
 
 import './Thiran.css'
 
-import { Heroimagecarousal} from "../../components";
+import { Heroimagecarousal,Reunion_card_display} from "../../components";
 
 import thiran_logo from "../../assets/pictures/thiran.webp";
 
-import { Thiran_heroimage_carousalinfo,vision,mission_data,profile_info} from "../../constants/thiran";
+import { Thiran_heroimage_carousalinfo,vision,mission_data,jury_awards} from "../../constants/thiran";
 
 import { Deptvision,Deptmission,Underline,Profilecard } from '../../widgets';
 
@@ -23,7 +23,7 @@ const Thiran = () => {
       />
 <div className="thiran_underline">
         <Underline heading="Aim"/>
-        </div>
+</div>
         <div className="thiran_flex">
              <p className="thiran_cont">
           To establish a advanced platform for the students to plan and manage their new ideas into strategy and to bring out the leadership quality of an individual by involving them in project management and guidance.
@@ -47,8 +47,10 @@ const Thiran = () => {
     <Deptvision visiondata={vision.visiondata} />
     <Deptmission points={mission_data}/>
     </div>
-    <Underline heading="Objective"/>
 
+    <div className="thiran_underline">
+    <Underline  heading="Objective"/>
+    </div>
     <div className="thiran_obj">
      
        <p>To develop the actions in initiation of the project procedures, planning, execution, regulation and closure as well as the guidance of the project team operations towards achieving their goals with in the set scope and time.
@@ -60,10 +62,9 @@ const Thiran = () => {
     </div>
 
    
-    <Underline heading="Staff Members"/>
      
 
-    <div className="thiran_cardholder">
+    {/* <div className="thiran_cardholder">
     <div className="thiran_cards">
     {profile_info.map((item) => (
     
@@ -77,7 +78,16 @@ const Thiran = () => {
               />
               ))}
             </div>
+       </div> */}
+
+       <div  className="thiran_winners">
+
+       <Underline heading="Jury Awards"/>
+
+       <Reunion_card_display cardinfo_list={jury_awards}/>       
+        
        </div>
+
     </div>
   );
 };
