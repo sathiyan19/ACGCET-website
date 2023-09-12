@@ -76,7 +76,8 @@ import {
   Scholarship,
   Civil_awards,
   Ece_dept_lib,
-  Ece_research
+  Ece_research,
+  Devpage
 } from "./pages";
 import "./App.css";
 
@@ -163,10 +164,7 @@ const App = () => {
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
-        
-        
-        
-
+        <Route path="/webdev-team" element={<Devpage/>} />
       </Routes>
       <Footer />
     </div>

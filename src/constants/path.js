@@ -26,15 +26,15 @@ const top_nav_paths=[
             {'path':'/academic-calendar','link':"Academic Calendar"}]
     },
 
-    {"id":'4',
-    "type":"1",
-    'title':'Research',
-    'basepath':'javascript:void(0);',
-    'links':[{'path':'/under','link':"Link1"},
-        //     {'path':'/under','link':"Link2"},
-        //     {'path':'/under','link':"Link3"}
-        ]
-    },
+//     {"id":'4',
+//     "type":"1",
+//     'title':'Research',
+//     'basepath':'javascript:void(0);',
+//     'links':[{'path':'/under','link':"Link1"},
+//         //     {'path':'/under','link':"Link2"},
+//         //     {'path':'/under','link':"Link3"}
+//         ]
+//     },
 
     {"id":'5',
     "type":"1",
