@@ -76,7 +76,8 @@ import {
   Scholarship,
   Civil_awards,
   Ece_dept_lib,
-  Ece_research
+  Ece_research,
+  Eee_research
 } from "./pages";
 import "./App.css";
 
@@ -151,6 +152,7 @@ const App = () => {
         <Route path="/eeedept/eee-peo" element={<Eee_peo/>} />
         <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
+        <Route path="/eeedept/eee-research" element={<Eee_research/>} />
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
         <Route path="/ecedept/ece-placement" element={<Ece_placement/>} />
         <Route path="/scholarship" element={<Scholarship/>} />

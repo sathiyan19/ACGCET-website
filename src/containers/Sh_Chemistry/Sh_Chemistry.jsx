@@ -36,9 +36,9 @@ const Sh_Chemistry = () => {
           The department carries out collaborative research programmes with  colleges/universities/institutes. </p>
         </div>
         </div>
-        <div className="ece_hod">
+        {/* <div className="ece_hod">
           <Underline heading="HOD's Message"/>
-        </div>
+        </div> */}
         <div className="ece_vision_mission">
           <Underline heading="Our Vision & Mission"/>
         <Deptvision visiondata={chemi_vision.visiondata} />

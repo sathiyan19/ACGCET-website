@@ -34,9 +34,9 @@ const Sh_Maths = () => {
           At present, the department consists of 8 faculty members among which 3 are with doctorate degree in various fields. </p>
         </div>
         </div>
-        <div className="ece_hod">
+        {/* <div className="ece_hod">
           <Underline heading="HOD's Message"/>
-        </div>
+        </div> */}
         <div className="ece_vision_mission">
           <Underline heading="Our Vision & Mission"/>
         <Deptvision visiondata={mat_vision.visiondata} />
