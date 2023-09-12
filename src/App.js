@@ -75,6 +75,7 @@ import {
   Science_Programme,
   Scholarship,
   Civil_awards,
+  Ece_dept_lib,
   Ece_research
 } from "./pages";
 import "./App.css";
@@ -161,6 +162,7 @@ const App = () => {
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
+        <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
         
         
         

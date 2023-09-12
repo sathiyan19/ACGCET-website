@@ -26,9 +26,14 @@ const Ece_rankers = () => {
             </div>
             <Radial_menu menu_links={ece_dept_menu} />
             <div className="ece_rankers_area">
-                <div className='ece_teach_fac'>
+                <div className='ece_rankers'>
                     <Underline heading="Elite Rankers"/>
-                    <Profile_display list_info={ece_rankers}/>
+                    {ece_rankers.map((item)=>
+                    <div className='ece_ranker_batch'>
+                      <div className='ece_batch_head'>{item.head}</div>
+                      <Profile_display list_info={item.rankers}/>
+                    </div>
+                    )}
                 </div>
             </div>
           </section>

@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Timeline.css";
 
-const Timeline = ({ head, house, content, pdf }) => {
+const Timeline = ({ head, house, content, pdf,date }) => {
   return (
     <div>
       <div className="timeline">
@@ -17,6 +17,7 @@ const Timeline = ({ head, house, content, pdf }) => {
             </a>
             </div>
             )}
+            {date && (<div className="timeline_date">{date}</div>)}
           </div>
         </div>
       </div>
