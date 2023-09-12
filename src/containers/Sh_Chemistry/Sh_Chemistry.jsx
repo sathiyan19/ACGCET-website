@@ -4,7 +4,7 @@ import './Sh_Chemistry.css'
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
 
 import { Radial_menu } from "../../components";
-import ece from "../../assets/pictures/group-pic.webp";
+import chem from "../../assets/pictures/chem.webp";
 import {Sh_dept_fmenu,chemi_mission,chemi_vision} from '../../constants/Sh_dept_menu'
 
 import { FaMicrochip } from "react-icons/fa6";
@@ -27,7 +27,7 @@ const Sh_Chemistry = () => {
           The department has the state of the art instrumentation facilities for thermal, electrochemical and spectroscopic characterization of materials and well furnished laboratory.
           The department conducts Faculty Development Programmes and Short Term courses periodically to spread awareness about Chemistry and the Environment. </p>
           <div className="dept_img_holder">
-            <img className="dept_img" src={ece} />
+            <img className="dept_img" src={chem} />
           </div>
         </div>
         <div className="shchemitwo-col1">

@@ -8,6 +8,7 @@ import hostel_life from "../../assets/pictures/hostel_life.webp";
 import crossyear from "../../assets/pictures/crossyear.webp";
 import library from "../../assets/pictures/library.webp";
 import iv from "../../assets/pictures/iv.webp";
+import sports from "../../assets/pictures/sports.webp";
 import technical from "../../assets/pictures/technical.webp";
 import culture_pic from "../../assets/pictures/culture_pic.webp";
 import { Link } from "react-router-dom";
@@ -227,7 +228,7 @@ const Life = () => {
 
         <div class="life_crd life_item7">
           <div class="life_head_image">
-            <img class="life_image" src={iv} />
+            <img class="life_image" src={sports} />
           </div>
           <div className="life_crd_content">
             <div className="life_head life_text_7">Sports</div>
