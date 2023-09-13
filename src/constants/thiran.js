@@ -1,8 +1,8 @@
 // Thiran_heroimage_carousalinfo
-import image1 from "../assets/pictures/nsshero1.webp";
-import image2 from "../assets/pictures/nsshero2.webp";
-import image3 from "../assets/pictures/nsshero3.webp";
-import image4 from "../assets/pictures/nsshero4.webp";
+import image1 from "../assets/pictures/nss/nsshero1.webp";
+import image2 from "../assets/pictures/nss/nsshero2.webp";
+import image3 from "../assets/pictures/nss/nsshero3.webp";
+import image4 from "../assets/pictures/nss/nsshero4.webp";
 
 import cover from "../assets/pictures/pangu auto.webp";
 import cover1 from "../assets/pictures/thiran_water.webp";

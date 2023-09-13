@@ -89,8 +89,8 @@
     position: absolute;
     bottom: 20px;
     background: rgba(0, 0, 0, 0.6);
-    width: 70%;
-    border-radius: 20px;
+    width: 95%;
+    /* border-radius: 20px; */
     padding: 20px;
     >h1{
       color: white;
@@ -118,6 +118,11 @@
     align-items: center;
     justify-content: space-evenly;
   }
+}
+
+.nccachieve{
+  margin-bottom: 10px;
+  padding: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -252,6 +257,27 @@
 }
 
 @media (max-width:500px){
+  .nccabt{
+    >p{
+      font-size: 16px ;
+    }
+    .nccabt1{
+      .nccabt1{
+        >p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .nccflagsec{
+    .nccflag{
+      .nccflagtext{
+        >p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
   .nccpledge{
     .nccpledgetext{
       top:80px;  

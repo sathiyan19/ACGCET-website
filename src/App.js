@@ -73,14 +73,18 @@ import {
   Sh_lab_facility,
   Sh_research,
   Science_Programme,
-  UBA,
+  Uba,
   Scholarship,
   Civil_awards,
   Ece_dept_lib,
-  Ece_research
+  Ece_research,
+  Iste,
+  Sih,
+  Committee,
+  Yrc
 } from "./pages";
 import "./App.css";
-import Uba from "./pages/Uba/Uba";
+
 
 const App = () => {
   const location = useLocation();
@@ -166,7 +170,10 @@ const App = () => {
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
-        
+        <Route path="/iste" element={<Iste/>} />
+        <Route path="/sih" element={<Sih/>} />
+        <Route path="/committee" element={<Committee/>} />
+        <Route path="/yrc" element={<Yrc/>} />
         
         
 

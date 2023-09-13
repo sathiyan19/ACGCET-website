@@ -31,7 +31,7 @@
   /* width: 30%; */
 }
 
-.description-container h1 {
+.description-container h3 {
   /* margin: 0 0 10px; */
   color: white;
   font-weight: bolder;
@@ -141,7 +141,7 @@
     margin-left: 10px;
   }
 
-  .description-container h1 {
+  .description-container h3 {
     left: 90px;
   }
 

@@ -10,8 +10,8 @@ import { reccarousal } from '../../constants/home';
 import { Slideshow } from '../../components';
 
 
-import q1 from "../../assets/pictures/quote1.png";
-import q2 from "../../assets/pictures/quote2.png";
+import q1 from "../../assets/pictures/quote1.webp";
+import q2 from "../../assets/pictures/quote2.webp";
 
 const Companies = () => {
   return (
