@@ -40,7 +40,7 @@ const Thiran = () => {
           <p className="thiran_cont2">
           The club encourages interdisciplinary collaboration, allowing students from various fields of study to come together and work on projects. This fosters diversity of thought and enriches the learning experience.</p>
         <div className="thiran_underline">
-        <Underline heading="Vision Mission"/>
+        <Underline heading="Vision & Mission"/>
         </div>
     <div className="thiran_vis">
       
@@ -54,11 +54,11 @@ const Thiran = () => {
     <div className="thiran_obj">
      
        <p>To develop the actions in initiation of the project procedures, planning, execution, regulation and closure as well as the guidance of the project team operations towards achieving their goals with in the set scope and time.
-       To develop the actions in initiation of the project procedures, planning, execution, regulation and closure as well as the guidance of the project team operations towards achieving their goals with in the set scope and time.</p> 
+         Detailed planning involves creating comprehensive project plans, allocating resources, and setting milestones. </p> 
     </div>
     <div className="thiran_obj1">
-       <p>To develop the actions in initiation of the project procedures, planning, execution, regulation and closure as well as the guidance of the project team operations towards achieving their goals with in the set scope and time.
-       To develop the actions in initiation of the project procedures, planning, execution, regulation and closure as well as the guidance of the project team operations towards achieving their goals with in the set scope and time.</p> 
+       <p>To effectively initiate and manage a project, one must undertake a structured process involving initiation, planning, execution, regulation, and closure.
+  This entails defining project objectives, creating detailed plans, overseeing task execution, ensuring adherence to regulations, and ultimately closing out the project.</p> 
     </div>
 
    

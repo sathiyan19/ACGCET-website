@@ -48,6 +48,7 @@ import {
   Cse_peo,
   Cse_lab,
   Cse_events,
+  Cse_prog_org,
   Civil_peo,
   Civil_faculties,
   Civil_lab,
@@ -78,6 +79,7 @@ import {
   Civil_awards,
   Ece_dept_lib,
   Ece_research,
+  Devpage,
   Eee_research,
   Eee_nextgen
 } from "./pages";
@@ -144,6 +146,7 @@ const App = () => {
         <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
         <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
         <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
+        <Route path="/csedept/cse-prog" element={<Cse_prog_org/>} />
         <Route path="/civildept/civil-peo" element={<Civil_peo/>} />
         <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
         <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
@@ -170,10 +173,7 @@ const App = () => {
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
-        
-        
-        
-
+        <Route path="/webdev-team" element={<Devpage/>} />
       </Routes>
       <Footer />
     </div>
