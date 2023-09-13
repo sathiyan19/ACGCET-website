@@ -7,6 +7,12 @@ import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
 
+import cse_com_lab from '../assets/pictures/cse_dept/cse_labs/cse_com_lab.webp'
+import cse_case_lab from '../assets/pictures/cse_dept/cse_labs/cse_case_lab.webp'
+import cse_grap_lab from '../assets/pictures/cse_dept/cse_labs/cse_grap_lab.webp'
+import cse_dbms_lab from '../assets/pictures/cse_dept/cse_labs/cse_dbms_lab.webp'
+import cse_mpmc_lab from '../assets/pictures/cse_dept/cse_labs/cse_mpmc_lab.webp'
+
 import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
 
 import suhaila from '../assets/pictures/cse_dept/cse_faculties/suhaila.webp'
@@ -19,6 +25,10 @@ import vijay from '../assets/pictures/cse_dept/cse_faculties/Vijay Profile 2023.
 import chandraprabha from '../assets/pictures/cse_dept/cse_faculties/chandraprabha.webp'
 import raja from '../assets/pictures/cse_dept/cse_faculties/raja.webp'
 import rajendran from '../assets/pictures/cse_dept/cse_faculties/rajendran.webp'
+
+import cogno from '../assets/pictures/cse_dept/cse_dept_events/cognoblaze.webp'
+import deftra from '../assets/pictures/cse_dept/cse_dept_events/deftra.webp'
+
 
 const cse_dept_menu = [
   {
@@ -72,8 +82,8 @@ const cse_dept_menu = [
   
   {
     id: "11",
-    path: "#",
-    link: "MoU",
+    path: "cse-mou",
+    link: "MOU",
     arl:'l'
   },
 ];
@@ -319,7 +329,7 @@ const cse_labs=[
       'id':'1',
       'heading':"Common Computer Lab (G2)",
       'sub-head':'',
-      'pic':robotics,
+      'pic':cse_com_lab,
       'content_1':"The Common Computer Lab (G2) is a spacious facility measuring 18.3 meters by 6.9 meters, equipped to accommodate up to 50 computers. Each computer is powered by an Intel Core i3 processor and is configured with 4 GB of RAM and a 1 TB hard drive. The operating system in use is Windows 7, providing a stable environment for various software applications.",
       'content_2':"This lab is well-suited for programming and development tasks, offering essential software tools such as Python 3, Turbo C, Microsoft Visual Studio, JDK 7 for Java development, and Dev C++. With this hardware and software setup, students and researchers have the necessary resources to engage in coding, software development, and related activities effectively."
   },
@@ -327,7 +337,7 @@ const cse_labs=[
       'id':'2',
       'heading':'Casetools Lab (G6)',
       'sub-head':'',
-      'pic':placement,
+      'pic':cse_case_lab,
       'content_1':'The CASETOOLS LAB (G6) is a well-structured space measuring 18.3 meters by 6.9 meters, thoughtfully designed to accommodate 25 computers. These computers are equipped with varying hardware specifications, featuring Intel Core i3 processors, with a range of 2 GB and 4 GB of RAM, and hard drives of both 1 TB and 500 GB capacities.',
       'content_2':"Running on the Windows 7 operating system, this lab provides a reliable platform for various software applications. Specifically tailored to support computer-aided software engineering, the lab offers essential tools such as Turbo C, Microsoft Visual Studio, and Rational Rose. This setup empowers students and professionals to engage in software development, modeling, and related activities efficiently and effectively."
   },
@@ -335,7 +345,7 @@ const cse_labs=[
       'id':'3',
       'heading':'Graphics and Multimedia Lab (F2)',
       'sub-head':'',
-      'pic':swayam,
+      'pic':cse_grap_lab,
       'content_1':'The Graphics and Multimedia Lab (F2) is a spacious facility spanning 18.3 meters by 6.9 meters, thoughtfully designed to accommodate 55 computers. These computers boast a variety of hardware specifications, featuring Intel Core i3 and i5 processors, each equipped with 4 GB of RAM and hard drives of 1 TB and 500 GB capacities. ',
       'content_2':"Operating systems include both Windows 7 and Windows 8, providing versatility for software applications. This lab is equipped with a range of software tools, including C#, Visual Studio, Oracle 10g, NetBeans, Turbo C, and Multimedia Flash 8. With this impressive hardware and software setup, students and professionals have the ideal environment for graphic design, multimedia development, and related creative endeavors."
   },
@@ -343,7 +353,7 @@ const cse_labs=[
       'id':'4',
       'heading':'DBMS Lab (F4)',
       'sub-head':'',
-      'pic':swayam,
+      'pic':cse_dbms_lab,
       'content_1':'The DBMS Lab (F4) is a spacious facility, measuring 22 meters by 6.9 meters, dedicated to database management systems. It houses 52 computers equipped with a range of hardware specifications, featuring Intel Core i7 and i3 processors, with 2 GB and 4 GB of RAM options, and hard drives of 1 TB and 500 GB capacities. ',
       'content_2':"The lab offers a versatile environment with multiple operating systems, including Windows 8, Windows 7, and Ubuntu, catering to a variety of software applications. Students and researchers in this lab have access to essential software tools such as Oracle 10g for database management, Rational Rose for software modeling, JDK 7 for Java development, Visual Studio, and Turbo C++ for programming needs. This comprehensive setup empowers users to excel in database-related tasks and software development."
   },
@@ -351,36 +361,36 @@ const cse_labs=[
       'id':'5',
       'heading':'Microprocessor and Digital Lab (F6)',
       'sub-head':'',
-      'pic':swayam,
+      'pic':cse_mpmc_lab,
       'content_1':'The Microprocessor & Digital Lab (F6) is a dedicated facility spanning 18.3 meters by 6.9 meters, designed for hands-on exploration of microprocessor and digital electronics concepts. This lab is well-equipped with a specialized set of hardware, including 8085 Trainer Kits, 8086 Trainer Kits, 8051 Trainer Kit, and IC Trainer Kit. ',
       'content_2':"These resources provide students and researchers with the invaluable opportunity to gain practical experience in working with microprocessors and digital circuits. Whether it's programming and interfacing microcontrollers or delving into the intricate world of digital electronics, this lab serves as a vital hub for fostering a deep understanding of these fundamental principles within the realm of computer science and engineering."
   },
 ]
 
-const cse_dept_events=[
-  {
-      'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-  },
-  {
-      'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-  },
-]
+// const cse_dept_events=[
+//   {
+//       'id':'1',
+//       'heading':"One Week Training on Robotics",
+//       'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+//       'pic':robotics,
+//       'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+//                   'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+//       'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+//       "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+//       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+//   },
+//   {
+//       'id':'2',
+//       'heading':'Placement Activities',
+//       'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+//       'pic':placement,
+//       'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+//                   'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+//       'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+//       "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+//       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+//   },
+// ]
 
 const cse_stud_data = [
   {
@@ -1493,6 +1503,230 @@ const cse_prog_time=[
 
 ]
 
+const cse_mou_data=[
+  {
+    sno:'1',
+    comp_name:'ABC TECHNO LABS INDIA Pvt.Ltd',
+    sign_date:'12/3/2012',
+    valid:'3 YEARS',
+    end_date:'12/3/2015'
+  },
+  {
+    sno:'2',
+    comp_name:'ALAGAPPA UNIVERSITY,KARAIKUDI',
+    sign_date:'6/14/2019',
+    valid:'4 YEARS',
+    end_date:'6/14/2023'
+  },
+  {
+    sno:'3',
+    comp_name:'BENCHMARK ELECTRONIC SYSTEMS PVT.LTD',
+    sign_date:'7/10/2013',
+    valid:'UNTIL CLOSURE OF TEQIP I',
+    end_date:'-'
+  },
+  {
+    sno:'4',
+    comp_name:'BHEL,THIRUMAYAM',
+    sign_date:'9/28/2015',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'5',
+    comp_name:'CENTRE FOR FACULTY DEVELOPMENT',
+    sign_date:'11/12/2012',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'6',
+    comp_name:'CENTRE FOR FACULTY DEVELOPMENT,ANNA UNIVERSITY(FDTP)',
+    sign_date:'6/28/2017',
+    valid:'5 YEARS',
+    end_date:'6/28/2022'
+  },
+  {
+    sno:'7',
+    comp_name:'Dr.UMAYAL RAMANATHAN COLLEGE FOR WOMEN,KARAIKUDI',
+    sign_date:'7/21/2017',
+    valid:'3 YEARS',
+    end_date:'7/21/2020'
+  },
+  {
+    sno:'8',
+    comp_name:'EXCEL DIE CASTING',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'9',
+    comp_name:'FORD INDIA Pvt.Ltd',
+    sign_date:'11/14/2018',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'10',
+    comp_name:'FRONTLINE ELECTRONICS PRIVATE LTD',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'11',
+    comp_name:'GREEN PLANET ENVIRONMENT SOLUTIONS',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'12',
+    comp_name:'MM MICROTECH',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'13',
+    comp_name:'PANTECH PROED PVT.LTD.',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'14',
+    comp_name:'POLYLAB ENGINEERING EQUIPMENT',
+    sign_date:'3/30/2019',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'15',
+    comp_name:'POWERLAB INSTRUMENTS',
+    sign_date:'6/14/2019',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'16',
+    comp_name:'PRISMS INDIA PRIVATE LIMITED',
+    sign_date:'10/10/2017',
+    valid:'3 YEARS',
+    end_date:'10/10/2020'
+  },
+  {
+    sno:'17',
+    comp_name:'SCIENTIFIC METAL ENGINEERS(P) LTD',
+    sign_date:'12/3/2012',
+    valid:'3 YEARS',
+    end_date:'12/3/2015'
+  },
+  {
+    sno:'18',
+    comp_name:'SPIC TUTICORIN',
+    sign_date:'3/5/2008',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'19',
+    comp_name:'TI CYCLES INDIA LIMITED (TICI)',
+    sign_date:'-',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'20',
+    comp_name:'UNIVERSITY COLLEGE OF ENGINEERING&TECHNOLOGY,VBU,HZB',
+    sign_date:'12/3/2012',
+    valid:'2 YEARS',
+    end_date:'12/3/2014'
+  },
+  {
+    sno:'21',
+    comp_name:'UNIVERSITY COLLEGE OF ENGINEERING&TECHNOLOGY,VBU,HZB',
+    sign_date:'-',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'22',
+    comp_name:'VAIBHAVA POWER SOLUTIONS',
+    sign_date:'4/11/2019',
+    valid:'3 YEARS',
+    end_date:'4/11/2022'
+  },
+  {
+    sno:'23',
+    comp_name:'VAIBHAVA POWER SOLUTIONS(ASHOK LEYLAND)',
+    sign_date:'9/15/2014',
+    valid:'2 YEARS\n(INITIALLY)',
+    end_date:'9/15/2016'
+  },
+  {
+    sno:'24',
+    comp_name:'VARAGHI SOLUTION (POWEROL BY MAHINDRA)',
+    sign_date:'2/23/2013',
+    valid:'5 YEARS',
+    end_date:'2/23/2018'
+  },
+  {
+    sno:'25',
+    comp_name:'VENUS ENERGY,BANGALORE',
+    sign_date:'12/30/2015',
+    valid:'3 YEARS',
+    end_date:'12/30/2018'
+  },
+  {
+    sno:'26',
+    comp_name:'VENUS ENERGY,CUDDALORE',
+    sign_date:'5/3/2013',
+    valid:'2 YEARS',
+    end_date:'5/3/2015'
+  },
+  {
+    sno:'27',
+    comp_name:'VI MICROSYSTEMS PVT.LTD.,',
+    sign_date:'10/28/2013',
+    valid:'2 YEARS',
+    end_date:'10/28/2015'
+  },
+  {
+    sno:'28',
+    comp_name:'WABCO INDIA LIMITED',
+    sign_date:'2/21/2014',
+    valid:'1 YEAR',
+    end_date:'2/21/2015'
+  }
+]
+
+const cse_asso_events=[
+  {
+    id: "1",
+    heading: "Cognoblaze'23",
+    "sub-head":
+      "26th APR 2023",
+    pic: cogno,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "2",
+    heading: "Deftra'22",
+    "sub-head":
+      "29th NOV 2022",
+    pic: deftra,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+]
+
 export {
   cse_dept_menu,
   cse_fac_profiles,
@@ -1503,8 +1737,9 @@ export {
   cse_peo,
   cse_spec_outcomes,
   cse_labs,
-  cse_dept_events,
   cse_hod,
   cse_stud_data,
-  cse_prog_time
+  cse_prog_time,
+  cse_mou_data,
+  cse_asso_events
 };

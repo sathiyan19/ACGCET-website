@@ -8,6 +8,8 @@ import cse from "../../assets/pictures/csecover.webp";
 
 import { FaComputer } from "react-icons/fa6";
 
+import cse_lab_cover from '../../assets/pictures/cse_dept/cse_labs/cse_lab_cover.webp'
+
 const Cse_lab = () => {
   return (
     <div className="csedept">
@@ -35,7 +37,7 @@ const Cse_lab = () => {
               have access to the tools they need for their coursework.
             </p>
             <div className="dept_img_holder">
-              <img className="dept_img" src={cse} />
+              <img className="dept_img" src={cse_lab_cover} />
             </div>
           </div>
           <div className="csetwo-col1">

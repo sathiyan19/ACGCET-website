@@ -4,6 +4,8 @@ import alumni1 from '../assets/pictures/alumni1.webp'
 import alumni2 from '../assets/pictures/alumni2.webp'
 import alumni3 from '../assets/pictures/alumni3.webp'
 
+import coral_reef from '../assets/pictures/alumni_pics/coral_reef_alumni.webp'
+
 export const contributions=[
     {
         'id':'1',
@@ -49,11 +51,11 @@ export const slideshow_imgs=[
 export const alumni_reunions=[
     {
         id:'1',
-        coverpic:cover,
-        batch:"1994-98",
-        name:"Harmony '98",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        date:"24th July 2023"
+        coverpic:coral_reef,
+        batch:"1984-88",
+        name:"35th Coral Reef Batch Meet",
+        desc:"1984-88 batch's 35th reunion in Kodaikanal on Aug 18-19 celebrated genuine connections and shared memories with 63 attendees.",
+        date:"18th & 19th AUG 2023"
     },
     {
         id:'1',

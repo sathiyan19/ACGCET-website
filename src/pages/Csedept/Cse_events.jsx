@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Backtotop, Floatinmenu, Underline, Modal } from "../../widgets";
-import { cse_dept_menu, cse_dept_events } from "../../constants/cse_dept";
+import { Backtotop, Floatinmenu, Underline, Reunion_card } from "../../widgets";
+import { cse_dept_menu, cse_asso_events } from "../../constants/cse_dept";
 
 import { Radial_menu } from "../../components";
 
@@ -24,17 +24,11 @@ const Cse_events = () => {
         <div className="cse_event_area">
           <div className="cse_events">
             <Underline heading="Department Events" />
-            <div className="lab_cards row">
-              {cse_dept_events.map((item) => (
-                <Modal
-                  heading={item.heading}
-                  pic={item.pic}
-                  content_1={item.content_1}
-                  content_2={item.content_2}
-                  sub_text={item["sub-head"]}
-                />
-              ))}
+            
+            <div className=' row'>
+              {cse_asso_events.map((item)=><Reunion_card margin_bw={20} cover={item.pic}  name={item.heading} date={item["sub-head"]}/>)}
             </div>
+
           </div>
         </div>
       </section>

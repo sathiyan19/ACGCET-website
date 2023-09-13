@@ -53,7 +53,7 @@ const Ece_research = () => {
       <Underline heading="Research Activities"/>
       <div className="ecetwo-col1">
         <p className="ece_dept_content">
-        The Department of Communication Engineering at our institution is a thriving hub of research and innovation, where dedicated faculty members collaborate closely with enthusiastic students to explore and contribute to the ever-evolving field of Communication Engineering. This dynamic synergy has resulted in a plethora of significant research publications, highlighting our commitment to academic excellence and cutting-edge discoveries.
+        The Department of Electronics & Communication Engineering at our institution is a thriving hub of research and innovation, where dedicated faculty members collaborate closely with enthusiastic students to explore and contribute to the ever-evolving field of Communication Engineering. This dynamic synergy has resulted in a plethora of significant research publications, highlighting our commitment to academic excellence and cutting-edge discoveries.
         One notable achievement in our journey is the application for a patent in the field of Optical Communication, a testament to our pioneering work in this domain. This patent application signifies our dedication to pushing the boundaries of knowledge and technology, with the aim of advancing the field for the betterment of society.
         </p>
       </div>
@@ -96,12 +96,12 @@ const Ece_research = () => {
       <Table data={scholar_info2} columns={column3} />
       </div>
       </div>
-      <div className='ece_res'>
+      {/* <div className='ece_res'>
         <div className='ece_res_table'>
         <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. S.Somasundaram</h3></div>
       <Table data={scholar_info3} columns={column3} />
       </div>
-      </div>
+      </div> */}
       <div className='ece_res'>
         <div className='ece_res_table'>
         <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. B.Rajeshkanna</h3></div>

@@ -49,6 +49,7 @@ import {
   Cse_lab,
   Cse_events,
   Cse_prog_org,
+  Cse_mou,
   Civil_peo,
   Civil_faculties,
   Civil_lab,
@@ -74,11 +75,15 @@ import {
   Sh_lab_facility,
   Sh_research,
   Science_Programme,
-  UBA,
+  Uba,
   Scholarship,
   Civil_awards,
   Ece_dept_lib,
   Ece_research,
+  Iste,
+  Sih,
+  Committee,
+  Yrc,
   Devpage,
   Eee_research,
   Eee_nextgen,
@@ -86,7 +91,7 @@ import {
   Civil_research
 } from "./pages";
 import "./App.css";
-import Uba from "./pages/Uba/Uba";
+
 
 const App = () => {
   const location = useLocation();
@@ -147,6 +152,7 @@ const App = () => {
         <Route path="/sciencedept/science-programme" element={<Science_Programme/>} />
         <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
         <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
+        <Route path="/csedept/cse-mou" element={<Cse_mou/>} />
         <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
         <Route path="/csedept/cse-prog" element={<Cse_prog_org/>} />
         <Route path="/civildept/civil-peo" element={<Civil_peo/>} />
@@ -177,7 +183,14 @@ const App = () => {
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
+        <Route path="/iste" element={<Iste/>} />
+        <Route path="/sih" element={<Sih/>} />
+        <Route path="/committee" element={<Committee/>} />
+        <Route path="/yrc" element={<Yrc/>} />
         <Route path="/webdev-team" element={<Devpage/>} />
+        
+        
+
       </Routes>
       <Footer />
     </div>

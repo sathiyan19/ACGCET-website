@@ -1,16 +1,17 @@
 import React from "react";
 
 import "./Ncc.css";
-import { Heroimagecarousal, Listformat, Table } from "../../components";
+import { Heroimagecarousal, Listformat, Accordion } from "../../components";
 import {
   Ncc_heroimage_carousalinfo,
   profile_info,
   nccaim,
   nccmotto,
   ncccore,
+  nccachievements
 } from "../../constants/ncc";
 import { Profilecard, Underline, Deptmission, Deptvision } from "../../widgets";
-import abt1 from "../../assets/pictures/ncc/3.jpg";
+import abt1 from "../../assets/pictures/ncc/abt.webp";
 import nccflag from "../../assets/pictures/ncc/nccflag.webp";
 import nccpledge from "../../assets/pictures/ncc/pledg2-min.webp";
 import mobpledge from "../../assets/pictures/ncc/pledge1.webp";
@@ -142,7 +143,10 @@ const Ncc = () => {
         <Listformat points={ncccore} />
       </div>
 
-      
+      <div className="nccachieve">
+        <Underline heading="Our Achievements"/>
+        <Accordion accord_data={nccachievements}/>
+      </div>
 
     </div>
   );
