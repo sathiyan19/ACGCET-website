@@ -15,51 +15,69 @@ const civ_dept_menu = [
     arl:'l'
   },
   {
-    id: "3",
+    id: "2",
     path: "/civildept/civil-peo",
     link: "Programme Objectives & Outcomes",
     arl:'l'
   },
   {
-    id: "5",
+    id: "3",
     path: "/civildept/civil-faculties",
     link: "Faculties",
     arl:'l'
   },
   {
-    id: "7",
+    id: "4",
     path: "/civildept/civil-lab",
     link: "Lab Facilities",
     arl:'l'
   },
   {
-    id: "8",
-    path: "#",
-    link: "Professional Socities",
-    arl:'l'
-  },
-  {
-    id: "9",
+    id: "5",
     path: "#",
     link: "Research and Publications",
     arl:'l'
   },
   {
-    id: "10",
-    path: "/civildept/civil-dept-events",
-    link: "Department Events",
+    id: "6",
+    path: "#",
+    link: "Placement and Higher Studies",
     arl:'l'
   },
   {
-    id: "12",
+    id: "7",
+    path: "#",
+    link: "Department Library",
+    arl:'l'
+  },
+  {
+    id: "8",
+    path: "#",
+    link: "Magazine and Newsletter",
+    arl:'l'
+  },
+  {
+    id: "9",
+    path: "#",
+    link: "Activities",
+    arl:'l'
+  },
+  {
+    id: "10",
     path: "/civildept/civil-awards",
-    link: "Awards, Patents & Copyrights",
+    link: "Achiewvements",
     arl:'l'
   },
   {
     id: "11",
     path: "#",
-    link: "MoU",
+    link: "Internal Revenue Generation",
+    arl:'l'
+  },
+  {
+    id: "12",
+    path: "#",
+    link: "Industry Interaction",
     arl:'l'
   },
 ];
