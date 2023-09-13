@@ -49,6 +49,7 @@ import {
   Cse_lab,
   Cse_events,
   Cse_prog_org,
+  Cse_mou,
   Civil_peo,
   Civil_faculties,
   Civil_lab,
@@ -144,6 +145,7 @@ const App = () => {
         <Route path="/sciencedept/science-programme" element={<Science_Programme/>} />
         <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
         <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
+        <Route path="/csedept/cse-mou" element={<Cse_mou/>} />
         <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
         <Route path="/csedept/cse-prog" element={<Cse_prog_org/>} />
         <Route path="/civildept/civil-peo" element={<Civil_peo/>} />

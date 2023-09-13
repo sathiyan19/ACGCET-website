@@ -2,7 +2,7 @@
 
 import image1 from "../assets/pictures/thiran_grp.JPG";
 import image2 from "../assets/pictures/thiran_grp1.jpg";
-import image3 from "../assets/pictures/thiran_grp2.JPG";
+import image3 from "../assets/pictures/thiran_grp3.webp";
 
 
 
