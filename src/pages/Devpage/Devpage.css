@@ -1,0 +1,9 @@
+.webdevpage{
+    padding: 20px;
+}
+
+.dev_profile_holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

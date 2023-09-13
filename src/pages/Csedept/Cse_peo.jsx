@@ -52,7 +52,7 @@ const Cse_peo = () => {
             <Underline heading="Program Outcomes" />
             <Listformat points={cse_outcomes} />
           </div>
-          <div className="civ_spec_outcomes">
+          <div className="cse_spec_outcomes">
               <Underline heading="Program Specific Outcomes"/>
               <Listformat points={cse_spec_outcomes}/>
           </div>
