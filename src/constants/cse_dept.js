@@ -7,6 +7,12 @@ import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
 
+import cse_com_lab from '../assets/pictures/cse_dept/cse_labs/cse_com_lab.webp'
+import cse_case_lab from '../assets/pictures/cse_dept/cse_labs/cse_case_lab.webp'
+import cse_grap_lab from '../assets/pictures/cse_dept/cse_labs/cse_grap_lab.webp'
+import cse_dbms_lab from '../assets/pictures/cse_dept/cse_labs/cse_dbms_lab.webp'
+import cse_mpmc_lab from '../assets/pictures/cse_dept/cse_labs/cse_mpmc_lab.webp'
+
 import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
 
 import suhaila from '../assets/pictures/cse_dept/cse_faculties/suhaila.webp'
@@ -312,7 +318,7 @@ const cse_labs=[
       'id':'1',
       'heading':"Common Computer Lab (G2)",
       'sub-head':'',
-      'pic':robotics,
+      'pic':cse_com_lab,
       'content_1':"The Common Computer Lab (G2) is a spacious facility measuring 18.3 meters by 6.9 meters, equipped to accommodate up to 50 computers. Each computer is powered by an Intel Core i3 processor and is configured with 4 GB of RAM and a 1 TB hard drive. The operating system in use is Windows 7, providing a stable environment for various software applications.",
       'content_2':"This lab is well-suited for programming and development tasks, offering essential software tools such as Python 3, Turbo C, Microsoft Visual Studio, JDK 7 for Java development, and Dev C++. With this hardware and software setup, students and researchers have the necessary resources to engage in coding, software development, and related activities effectively."
   },
@@ -320,7 +326,7 @@ const cse_labs=[
       'id':'2',
       'heading':'Casetools Lab (G6)',
       'sub-head':'',
-      'pic':placement,
+      'pic':cse_case_lab,
       'content_1':'The CASETOOLS LAB (G6) is a well-structured space measuring 18.3 meters by 6.9 meters, thoughtfully designed to accommodate 25 computers. These computers are equipped with varying hardware specifications, featuring Intel Core i3 processors, with a range of 2 GB and 4 GB of RAM, and hard drives of both 1 TB and 500 GB capacities.',
       'content_2':"Running on the Windows 7 operating system, this lab provides a reliable platform for various software applications. Specifically tailored to support computer-aided software engineering, the lab offers essential tools such as Turbo C, Microsoft Visual Studio, and Rational Rose. This setup empowers students and professionals to engage in software development, modeling, and related activities efficiently and effectively."
   },
@@ -328,7 +334,7 @@ const cse_labs=[
       'id':'3',
       'heading':'Graphics and Multimedia Lab (F2)',
       'sub-head':'',
-      'pic':swayam,
+      'pic':cse_grap_lab,
       'content_1':'The Graphics and Multimedia Lab (F2) is a spacious facility spanning 18.3 meters by 6.9 meters, thoughtfully designed to accommodate 55 computers. These computers boast a variety of hardware specifications, featuring Intel Core i3 and i5 processors, each equipped with 4 GB of RAM and hard drives of 1 TB and 500 GB capacities. ',
       'content_2':"Operating systems include both Windows 7 and Windows 8, providing versatility for software applications. This lab is equipped with a range of software tools, including C#, Visual Studio, Oracle 10g, NetBeans, Turbo C, and Multimedia Flash 8. With this impressive hardware and software setup, students and professionals have the ideal environment for graphic design, multimedia development, and related creative endeavors."
   },
@@ -336,7 +342,7 @@ const cse_labs=[
       'id':'4',
       'heading':'DBMS Lab (F4)',
       'sub-head':'',
-      'pic':swayam,
+      'pic':cse_dbms_lab,
       'content_1':'The DBMS Lab (F4) is a spacious facility, measuring 22 meters by 6.9 meters, dedicated to database management systems. It houses 52 computers equipped with a range of hardware specifications, featuring Intel Core i7 and i3 processors, with 2 GB and 4 GB of RAM options, and hard drives of 1 TB and 500 GB capacities. ',
       'content_2':"The lab offers a versatile environment with multiple operating systems, including Windows 8, Windows 7, and Ubuntu, catering to a variety of software applications. Students and researchers in this lab have access to essential software tools such as Oracle 10g for database management, Rational Rose for software modeling, JDK 7 for Java development, Visual Studio, and Turbo C++ for programming needs. This comprehensive setup empowers users to excel in database-related tasks and software development."
   },
@@ -344,7 +350,7 @@ const cse_labs=[
       'id':'5',
       'heading':'Microprocessor and Digital Lab (F6)',
       'sub-head':'',
-      'pic':swayam,
+      'pic':cse_mpmc_lab,
       'content_1':'The Microprocessor & Digital Lab (F6) is a dedicated facility spanning 18.3 meters by 6.9 meters, designed for hands-on exploration of microprocessor and digital electronics concepts. This lab is well-equipped with a specialized set of hardware, including 8085 Trainer Kits, 8086 Trainer Kits, 8051 Trainer Kit, and IC Trainer Kit. ',
       'content_2':"These resources provide students and researchers with the invaluable opportunity to gain practical experience in working with microprocessors and digital circuits. Whether it's programming and interfacing microcontrollers or delving into the intricate world of digital electronics, this lab serves as a vital hub for fostering a deep understanding of these fundamental principles within the realm of computer science and engineering."
   },

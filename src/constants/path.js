@@ -110,11 +110,8 @@ const top_nav_paths=[
     {"id":'12',
     "type":"2",
     'title':'IIC and I&E Policies',
-    'basepath':'javascript:void(0);',
-    'links':[{'path':'/under','link':"Link1"},
-        //     {'path':'/under','link':"Link2"},
-        //     {'path':'/under','link':"Link3"}
-        ]
+    'basepath':'/iic',
+    'links':[ ]
     },
 
     {"id":'13',
