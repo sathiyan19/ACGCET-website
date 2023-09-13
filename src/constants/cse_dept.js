@@ -26,6 +26,10 @@ import chandraprabha from '../assets/pictures/cse_dept/cse_faculties/chandraprab
 import raja from '../assets/pictures/cse_dept/cse_faculties/raja.webp'
 import rajendran from '../assets/pictures/cse_dept/cse_faculties/rajendran.webp'
 
+import cogno from '../assets/pictures/cse_dept/cse_dept_events/cognoblaze.webp'
+import deftra from '../assets/pictures/cse_dept/cse_dept_events/deftra.webp'
+
+
 const cse_dept_menu = [
   {
     id: "1",
@@ -52,6 +56,18 @@ const cse_dept_menu = [
     arl:'l'
   },
   {
+    id: "10",
+    path: "/csedept/cse-dept-events",
+    link: "Department Events",
+    arl:'l'
+  },
+  {
+    id: "12",
+    path: "/csedept/cse-prog",
+    link: "Programme Organized",
+    arl:'l'
+  },
+  {
     id: "8",
     path: "#",
     link: "Professional Socities",
@@ -63,16 +79,11 @@ const cse_dept_menu = [
     link: "Research and Publications",
     arl:'l'
   },
-  {
-    id: "10",
-    path: "/csedept/cse-dept-events",
-    link: "Department Events",
-    arl:'l'
-  },
+  
   {
     id: "11",
-    path: "#",
-    link: "MoU",
+    path: "cse-mou",
+    link: "MOU",
     arl:'l'
   },
 ];
@@ -356,28 +367,1363 @@ const cse_labs=[
   },
 ]
 
-const cse_dept_events=[
+// const cse_dept_events=[
+//   {
+//       'id':'1',
+//       'heading':"One Week Training on Robotics",
+//       'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+//       'pic':robotics,
+//       'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+//                   'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+//       'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+//       "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+//       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+//   },
+//   {
+//       'id':'2',
+//       'heading':'Placement Activities',
+//       'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+//       'pic':placement,
+//       'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+//                   'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+//       'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+//       "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+//       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+//   },
+// ]
+
+const cse_stud_data = [
   {
-      'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    id: "1",
+    heading: "2nd Year",
+    component: "table",
+    structure: {
+      data: [
+        {
+          sno: "1",
+          regno:"91762215001",
+          name: "ABINAYA M",
+        },
+        {
+          sno: "2",
+          regno:"91762215002",
+          name: "ABINAYA SRI G",
+        },
+        {
+          sno: "3",
+          regno:"91762215003",
+          name: "ABINESH S A",
+        },
+        {
+          sno: "4",
+          regno:"91762215005",
+          name: "AMUDHAN M",
+        },
+        {
+          sno: "5",
+          regno:"91762215006",
+          name: "ANITHA K",
+        },
+        {
+          sno: "6",
+          regno:"91762215007",
+          name: "ATCHAYA M",
+        },
+        {
+          sno: "7",
+          regno:"91762215008",
+          name: "CHINNARANI F",
+        },
+        {
+          sno: "8",
+          regno:"91762215009",
+          name: "CHUBATHRAN K",
+        },
+        {
+          sno: "9",
+          regno:"91762215010",
+          name: "DEEPA M",
+        },
+        {
+          sno: "10",
+          regno:"91762215011",
+          name: "DHANUSH A",
+        },
+        {
+          sno: "11",
+          regno:"91762215012",
+          name: "DIVYABHARATHI S",
+        },
+        {
+          sno: "12",
+          regno:"91762215013",
+          name: "DURAIPANDI J",
+        },
+        {
+          sno: "13",
+          regno:"91762215014",
+          name: "ELAKKIYA A N",
+        },
+        {
+          sno: "14",
+          regno:"91762215015",
+          name: "ELAVARASAN A",
+        },
+        {
+          sno: "15",
+          regno:"91762215016",
+          name: "ESAKY S",
+        },
+        {
+          sno: "16",
+          regno:"91762215017",
+          name: "GANIKA SRI T",
+        },
+        {
+          sno: "17",
+          regno:"91762215018",
+          name: "GOPINATH S",
+        },
+        {
+          sno: "18",
+          regno:"91762215019",
+          name: "GURU SRINIVASAN P",
+        },
+        {
+          sno: "19",
+          regno:"91762215020",
+          name: "HARIVEL C",
+        },
+        {
+          sno: "20",
+          regno:"91762215021",
+          name: "IYYAPPAN A",
+        },
+        {
+          sno: "21",
+          regno:"91762215022",
+          name: "KALAIARASI S",
+        },
+        {
+          sno: "22",
+          regno:"91762215023",
+          name: "KAMALA KANNAN M",
+        },
+        {
+          sno: "23",
+          regno:"91762215024",
+          name: "KANISHKA M",
+        },
+        {
+          sno: "24",
+          regno:"91762215025",
+          name: "KARISHMA C",
+        },
+        {
+          sno: "25",
+          regno:"91762215026",
+          name: "KAVITHA K",
+        },
+        {
+          sno: "26",
+          regno:"91762215027",
+          name: "KESAVA PRIYA G",
+        },
+        {
+          sno: "27",
+          regno:"91762215028",
+          name: "LOGAPRIYAN K",
+        },
+        {
+          sno: "28",
+          regno:"91762215029",
+          name: "MAHIMA S",
+        },
+        {
+          sno: "29",
+          regno:"91762215030",
+          name: "MOHAMMED THALHA M",
+        },
+        {
+          sno: "30",
+          regno:"91762215031",
+          name: "MOHANA MALA J",
+        },
+        {
+          sno: "31",
+          regno:"91762215032",
+          name: "MONISHWARAN S",
+        },
+        {
+          sno: "32",
+          regno:"91762215033",
+          name: "MUGESWARAN K",
+        },
+        {
+          sno: "33",
+          regno:"91762215034",
+          name: "NASHRIN FATHIMA K",
+        },
+        {
+          sno: "34",
+          regno:"91762215035",
+          name: "NISHANTHI S",
+        },
+        {
+          sno: "35",
+          regno:"91762215036",
+          name: "POOJA R",
+        },
+        {
+          sno: "36",
+          regno:"91762215037",
+          name: "POORNISHA S",
+        },
+        {
+          sno: "37",
+          regno:"91762215038",
+          name: "PRITHIVI P",
+        },
+        {
+          sno: "38",
+          regno:"91762215040",
+          name: "PURUSOTHAMAN T",
+        },
+        {
+          sno: "39",
+          regno:"91762215041",
+          name: "RISIKA K",
+        },
+        {
+          sno: "40",
+          regno:"91762215042",
+          name: "RUKSHANA FATHIMA U",
+        },
+        {
+          sno: "41",
+          regno:"91762215043",
+          name: "SAKTHIVEL A",
+        },
+        {
+          sno: "42",
+          regno:"91762215044",
+          name: "SAKTHIVEL P",
+        },
+        {
+          sno: "43",
+          regno:"91762215045",
+          name: "SANTHIYA M",
+        },
+        {
+          sno: "44",
+          regno:"91762215047",
+          name: "SHABANA PARVEEN S",
+        },
+        {
+          sno: "45",
+          regno:"91762215048",
+          name: "SIVARAMAN P",
+        },
+        {
+          sno: "46",
+          regno:"91762215049",
+          name: "SOUNDHARKABILAN G K",
+        },
+        {
+          sno: "47",
+          regno:"91762215050",
+          name: "SRIRAM K",
+        },
+        {
+          sno: "48",
+          regno:"91762215051",
+          name: "SUDHARSAN E",
+        },
+        {
+          sno: "49",
+          regno:"91762215052",
+          name: "THAIYEBA TASLEEMA S",
+        },
+        {
+          sno: "50",
+          regno:"91762215053",
+          name: "THANGADURAI S",
+        },
+        {
+          sno: "51",
+          regno:"91762215054",
+          name: "VAISHALI S",
+        },
+        {
+          sno: "52",
+          regno:"91762215055",
+          name: "VARSHINI R",
+        },{
+          sno: "53",
+          regno:"91762215057",
+          name: "VIMALRAJ V",
+        },
+        {
+          sno: "54",
+          regno:"91762215058",
+          name: "YOGA SATHYA RV",
+        }
+      ],
+      columns: [
+        { field: "sno", header: "sno" },
+        { field: "regno", header: "Register No" },
+        { field: "name", header: "name" },
+      ],
+    },
+  },
+
+
+  {
+    id: "2",
+    heading: "3rd Year",
+    component: "table",
+    structure: {
+      data: [
+        {
+          sno: "1",
+          regno:"91762115001",
+          name: "ABINAYA R",
+        },
+        {
+          sno: "2",
+          regno:"91762115002 ",
+          name: "ABIRAMI K",
+        },
+        {
+          sno: "3",
+          regno:"91762115003",
+          name: "AKASH G",
+        },
+        {
+          sno: "4",
+          regno:"91762115005",
+          name: "ARAVIND KRISHNAN N",
+        },
+        {
+          sno: "5",
+          regno:"91762115006",
+          name: "AROCKIYA BELCY VS",
+        },
+        {
+          sno: "6",
+          regno:"91762115010",
+          name: "BOWSUL NILOFAR N",
+        },
+        {
+          sno: "7",
+          regno:"91762115011",
+          name: "DEEP R SHAH",
+        },
+        {
+          sno: "8",
+          regno:"91762115012",
+          name: "DHAKSHANA R",
+        },
+        {
+          sno: "9",
+          regno:"91762115014",
+          name: "GOPIKA S D",
+        },
+        {
+          sno: "10",
+          regno:"91762115015",
+          name: "HARISH I",
+        },
+        {
+          sno: "11",
+          regno:"91762115016",
+          name: "HEMA P",
+        },
+        {
+          sno: "12",
+          regno:"91762115017",
+          name: "JALISHA JOANS J",
+        },
+        {
+          sno: "13",
+          regno:"91762115018",
+          name: "JAYASRI R",
+        },
+        {
+          sno: "14",
+          regno:"91762115019",
+          name: "KARTHIKEYAN V",
+        },
+        {
+          sno: "15",
+          regno:"91762115020",
+          name: "KAVIYA B",
+        },
+        {
+          sno: "16",
+          regno:"91762115021",
+          name: "KAVYA K",
+        },
+        {
+          sno: "17",
+          regno:"91762115023",
+          name: "LOKANYA S",
+        },
+        {
+          sno: "18",
+          regno:"91762115025",
+          name: "MADHUMITHA S",
+        },
+        {
+          sno: "19",
+          regno:"91762115026",
+          name: "MEENACHI KR",
+        },
+        {
+          sno: "20",
+          regno:"91762115027",
+          name: "MENAKA J",
+        },{
+          sno: "21",
+          regno:"91762115028",
+          name: "MUGESH M",
+        },
+        {
+          sno: "22",
+          regno:"91762115029",
+          name: "MUTHUKRISHNAN M",
+        },
+        {
+          sno: "23",
+          regno:"91762115030",
+          name: "NITHYASRI S",
+        },
+        {
+          sno: "24",
+          regno:"91762115031",
+          name: "PADMANABAN M",
+        },
+        {
+          sno: "25",
+          regno:"91762115032",
+          name: "PRIYADHARSHINI S",
+        },
+        {
+          sno: "26",
+          regno:"91762115033",
+          name: "PUVIYARASAN.S",
+        },
+        {
+          sno: "27",
+          regno:"91762115034",
+          name: "ROSHAN FARHANA.S",
+        },
+        {
+          sno: "28",
+          regno:"91762115035",
+          name: "SARASWATHI.R",
+        },
+        {
+          sno: "29",
+          regno:"91762115036",
+          name: "SATHIYAN R",
+        },
+        {
+          sno: "30",
+          regno:"91762115038",
+          name: "SRIVENKATACHALAPATHY M",
+        },
+        {
+          sno: "31",
+          regno:"91762115039",
+          name: "SUGAN G",
+        },
+        {
+          sno: "32",
+          regno:"91762115040",
+          name: "SUJITHA T",
+        },
+        {
+          sno: "33",
+          regno:"91762115041",
+          name: "SWETHA S",
+        },
+        {
+          sno: "34",
+          regno:"91762115042",
+          name: "THASNEEM BANU S",
+        },
+        {
+          sno: "35",
+          regno:"91762115043",
+          name: "THILAGARASAN B",
+        },
+        {
+          sno: "36",
+          regno:"91762115044",
+          name: "UDAYA GEETHA T",
+        },
+        {
+          sno: "37",
+          regno:"91762115045",
+          name: "VETRISELVAN M",
+        },
+        {
+          sno: "38",
+          regno:"91762115046",
+          name: "VIJAY MURUGA A",
+        },
+        {
+          sno: "39",
+          regno:"91762115047",
+          name: "YAMUNAA R K",
+        },
+        {
+          sno: "40",
+          regno:"91762115048",
+          name: "YOGADHARSHINII T",
+        },
+        {
+          sno: "41",
+          regno:"91762115049",
+          name: "SRISAKTHIDEVI J",
+        },
+        {
+          sno: "42",
+          regno:"2015018",
+          name: "GUNAALAN P G",
+        },
+        {
+          sno: "43",
+          regno:"91762215201",
+          name: "CHOUDRY R",
+        },
+        {
+          sno: "44",
+          regno:"91762215202",
+          name: "HARIRAJ K",
+        },
+        {
+          sno: "45",
+          regno:"91762215203",
+          name: "JAWAHAR RL",
+        },
+        {
+          sno: "46",
+          regno:"91762215204",
+          name: "JEGATHEESHWARI P",
+        },
+        {
+          sno: "47",
+          regno:"91762215205",
+          name: "JOSEPH CHRISTOPHER B",
+        },
+        {
+          sno: "48",
+          regno:"91762215206",
+          name: "MAGIMMUTHU K",
+        },
+        {
+          sno: "49",
+          regno:"91762215207",
+          name: "NAVEENKUMAR C",
+        },
+        {
+          sno: "50",
+          regno:"91762215208",
+          name: "PRASANNA SRIDHAR M",
+        },
+        {
+          sno: "51",
+          regno:"91762115301",
+          name: "AISHWARYA B",
+        },
+        {
+          sno: "52",
+          regno:"91762115302",
+          name: "ARJUN PRAKASH AS",
+        },{
+          sno: "53",
+          regno:"91762115303",
+          name: "GAYATHIRI NS",
+        },
+        {
+          sno: "54",
+          regno:"91762115304",
+          name: "KEERTHANA S",
+        },
+        {
+          sno: "55",
+          regno:"91762115305",
+          name: "MOHAMAD SAMEER S",
+        },
+        {
+          sno: "56",
+          regno:"91762115306",
+          name: "MOHANA SUNDARAM V",
+        },
+        {
+          sno: "57",
+          regno:"91762115307",
+          name: "MUTHUMANI G",
+        },
+        {
+          sno: "58",
+          regno:"91762115308",
+          name: "PAVITHRA M",
+        },
+        {
+          sno: "59",
+          regno:"91762115309",
+          name: "PONKUMAR S",
+        },
+        {
+          sno: "60",
+          regno:"91762115310",
+          name: "ROHITH G",
+        },
+        {
+          sno: "61",
+          regno:"91762115311",
+          name: "SOLAI DHANUSH V",
+        },
+        {
+          sno: "62",
+          regno:"91762115312",
+          name: "UMMAL FAJEELA N",
+        },
+        
+      ],
+      columns: [
+        { field: "sno", header: "sno" },
+        { field: "regno", header: "Register No" },
+        { field: "name", header: "name" },
+      ],
+    },
+  },
+  
+  {
+    id: "3",
+    heading: "4th Year",
+    component: "table",
+    structure: {
+      data: [
+        {
+          sno: "1",
+          regno:"2015001",
+          name: "AADHISHANKARAN S R",
+        },
+        {
+          sno: "2",
+          regno:"2015003",
+          name: "ANNAMALAI A",
+        },
+        {
+          sno: "3",
+          regno:"2015004",
+          name: "ARAVIND KUMAR V",
+        },
+        {
+          sno: "4",
+          regno:"2015005",
+          name: "ARAVINDHAN P",
+        },
+        {
+          sno: "5",
+          regno:"2015006",
+          name: "ATHITHYAA S B",
+        },
+        {
+          sno: "6",
+          regno:"2015007",
+          name: "BALAKUMARAN M",
+        },
+        {
+          sno: "7",
+          regno:"2015008",
+          name: "BARATH STALIN K",
+        },
+        {
+          sno: "8",
+          regno:"2015009",
+          name: "CHERIN R",
+        },
+        {
+          sno: "9",
+          regno:"2015010",
+          name: "DHANABAL T",
+        },
+        {
+          sno: "10",
+          regno:"2015011",
+          name: "DHANALAKSHMI D",
+        },
+        {
+          sno: "11",
+          regno:"2015013",
+          name: "DHANUSHREE M",
+        },
+        {
+          sno: "12",
+          regno:"2015015",
+          name: "DHURIKA V",
+        },
+        {
+          sno: "13",
+          regno:"2015017",
+          name: "GOWTHAMA RAJAA M",
+        },
+        {
+          sno: "14",
+          regno:"2015019",
+          name: "HEMA DHARSHINI M",
+        },
+        {
+          sno: "15",
+          regno:"2015020",
+          name: "IJAS AHAMED A",
+        },
+        {
+          sno: "16",
+          regno:"2015021",
+          name: "JOTHI M",
+        },
+        {
+          sno: "17",
+          regno:"2015022",
+          name: "KALAI PRABAKARAN B",
+        },
+        {
+          sno: "18",
+          regno:"2015023",
+          name: "KALAIYARASAN R",
+        },
+        {
+          sno: "19",
+          regno:"2015025",
+          name: "MADHUMITHA M",
+        },
+        {
+          sno: "20",
+          regno:"2015026",
+          name: "MANIKANDAN K",
+        },
+        {
+          sno: "21",
+          regno:"2015027",
+          name: "MOHAMED SIDDIQUE J",
+        },
+        {
+          sno: "22",
+          regno:"2015028",
+          name: "NITIN HARIHARAN S S",
+        },
+        {
+          sno: "23",
+          regno:"2015029",
+          name: "PERUMAL P",
+        },
+        {
+          sno: "24",
+          regno:"2015030",
+          name: "PON VINAYAK VICKRAM M",
+        },
+        {
+          sno: "25",
+          regno:"2015033",
+          name: "SABARINATHAN S",
+        },
+        {
+          sno: "26",
+          regno:"2015035",
+          name: "SHANMUGAM N P",
+        },
+        {
+          sno: "27",
+          regno:"2015036",
+          name: "SOUNDERYA S",
+        },
+        {
+          sno: "28",
+          regno:"2015037",
+          name: "SUNDAR R",
+        },
+        {
+          sno: "29",
+          regno:"2015038",
+          name: "SURENDHAR S",
+        },
+        {
+          sno: "30",
+          regno:"2015039",
+          name: "SUWIN S",
+        },
+        {
+          sno: "31",
+          regno:"2015040",
+          name: "SWARNAMALYA A",
+        },
+        {
+          sno: "32",
+          regno:"2015041",
+          name: "SWETHA K",
+        },
+        {
+          sno: "33",
+          regno:"2015043",
+          name: "SAYAF HAMEED SHEIKH",
+        },
+        {
+          sno: "34",
+          regno:"2015044",
+          name: "MAJID HUSSAIN CHOTHER GOJAR",
+        },
+        {
+          sno: "35",
+          regno:"2015301",
+          name: "INDU R",
+        },
+        {
+          sno: "36",
+          regno:"2015302",
+          name: "JANNET K",
+        },
+        {
+          sno: "37",
+          regno:"91762015501",
+          name: "FATHIMA BEEVI A",
+        },
+        {
+          sno: "38",
+          regno:"91762015502",
+          name: "NEHA S",
+        },
+        {
+          sno: "39",
+          regno:"91762015503",
+          name: "SANJAY KUMARAN K ",
+        },
+        {
+          sno: "40",
+          regno:"91762015504",
+          name: "SOLAI ANBARASU P",
+        },
+        {
+          sno: "41",
+          regno:"91762115201",
+          name: "ANITHA A",
+        },
+        {
+          sno: "42",
+          regno:"91762115202",
+          name: "ARUN PRASANTH S",
+        },
+        {
+          sno: "43",
+          regno:"91762115203",
+          name: "ARUNACHALAM N",
+        },
+        {
+          sno: "44",
+          regno:"91762115204",
+          name: "HARIPRASATH E",
+        },
+        {
+          sno: "45",
+          regno:"91762115205",
+          name: "JAFFER ALI Y",
+        },
+        {
+          sno: "46",
+          regno:"91762115206",
+          name: "KABILAN T S",
+        },
+        {
+          sno: "47",
+          regno:"91762115207",
+          name: "KALAISELVAM G",
+        },
+        {
+          sno: "48",
+          regno:"91762115208",
+          name: "KARTHICK A",
+        },
+        {
+          sno: "49",
+          regno:"91762115209",
+          name: "KEERTHIVASAN K",
+        },
+        {
+          sno: "50",
+          regno:"91762115210",
+          name: "MADHAN J",
+        },
+        {
+          sno: "51",
+          regno:"91762115211",
+          name: "MUDALIYAR LOGESH ANNADURAI",
+        },
+        {
+          sno: "52",
+          regno:"91762115212",
+          name: "MUKESH R",
+        },{
+          sno: "53",
+          regno:"91762115213",
+          name: "NAVEEN M",
+        },
+        {
+          sno: "54",
+          regno:"91762115214",
+          name: "PACHAIYAPPAN V",
+        },
+        {
+          sno: "55",
+          regno:"91762115215",
+          name: "PRADEEP M",
+        },
+        {
+          sno: "56",
+          regno:"91762115216",
+          name: "PRASANNAH S S",
+        },
+        {
+          sno: "57",
+          regno:"91762115217",
+          name: "RAGURAMAN R",
+        },
+        {
+          sno: "58",
+          regno:"91762115218",
+          name: "SAKTHIVEL P",
+        },
+        {
+          sno: "59",
+          regno:"91762115219",
+          name: "SANDEEP V",
+        },
+        {
+          sno: "60",
+          regno:"91762115220",
+          name: "SAVITHRI A",
+        },
+        {
+          sno: "61",
+          regno:"91762115221",
+          name: "SENTHIL KUMAR M",
+        },
+        {
+          sno: "62",
+          regno:"91762115222",
+          name: "SRI YOGESHWARAN S",
+        },
+        {
+          sno: "63",
+          regno:"91762115223",
+          name: "SUBAKRISHNA R",
+        },
+        {
+          sno: "64",
+          regno:"91762115224",
+          name: "SUJITHA B",
+        },
+      ],
+      columns: [
+        { field: "sno", header: "sno" },
+        { field: "regno", header: "Register No" },
+        { field: "name", header: "name" },
+      ],
+    },
+  },
+];
+
+const cse_prog_time=[
+  {
+    id:27,
+    head:'',
+    house:'right',
+    content:'On June 12,2021, a webinar titled "Let\'s Solve Simple ML Problems" was held, featuring Mr. Guruprasad, a Data Scientist at ZOHO Corp, as the speaker addressing UG students.The event was coordinated by Dr.K.Chandraprabha, HOD–CSE.'
   },
   {
-      'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    id:1,
+    head:'',
+    house:'left',
+    content:'On June 12,2021, a webinar titled "Roles and Responsibilities Involved in the Life Cycle of a Product" was conducted, with Mr. Prakash, a Member of Leadership Staff at ZOHO Corp, as the speaker addressing UG students. The event was coordinated by Dr.K.Chandraprabha, HOD–CSE'
+  },
+  {
+    id:2,
+    head:'',
+    house:'right',
+    content:'On June 11,2021, a webinar titled "How to Start Your Career as an Ultimate UI/UX Designer" was held, featuring Mr.Prakash Kumar, a Visual Designer at ZOHO Corp, as the speaker addressing UG students. The event was coordinated by Dr.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:3,
+    head:'',
+    house:'left',
+    content:'On June 10,2021, a webinar titled "Android Platform" was conducted with Mr.Sathish Kumar, an Android Developer at Mind Tree Ltd., as the speaker addressing UG students. The event was coordinated by Dr.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:4,
+    head:'',
+    house:'right',
+    content:'On June 9,2021, a webinar titled "Introduction to Apache Kafka" was conducted with Ms. Swetha M, a Graduate Engineer Trainee at Data Aces, as the speaker addressing UG students. The event was coordinated by Dr.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:5,
+    head:'',
+    house:'left',
+    content:'On June 8,s2021, a webinar titled "Looking for a Lucrative Career? Gate Preparation Strategy and Opportunities After Gate" featured Ms.Smriti S, a Gate Aspirant and Trainer, as the speaker addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:6,
+    head:'',
+    house:'right',
+    content:'On June 7,2021, a webinar titled "Introduction to UI/UX Design" was conducted, with Mr.Amsavarathan K, a Product Designer at Kissflow, as the speaker addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:7,
+    head:'',
+    house:'left',
+    content:'On June 5,2021, a webinar on "Data Visualization Using Tableau" was held, featuring Ms. Keerthana Sankari S as the speaker addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:8,
+    head:'',
+    house:'right',
+    content:'On June 3,2021, a webinar titled "Building Self-Confidence" was conducted with Mr.Vignesh T, a Software Engineer at Admindroid, as the speaker, addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:9,
+    head:'',
+    house:'left',
+    content:'On June 2,2021, a webinar titled "Blockchain Technology and Usage of Algorithms in the Real World" featured Mr.Nithish Kumar P, a Software Developer at Admindroid, as the speaker, addressing UG students. The event was coordinated by Prof.K.Chandraprabha,HOD–CSE.'
+  },
+  {
+    id:10,
+    head:'',
+    house:'right',
+    content:'On June 1, 2021, a webinar titled "Etiquette for Future Engineers - Need of the Hour" was conducted with Dr. Hyacinth Suganthi X, the Placement Officer at ACGCET, as the speaker, addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:11,
+    head:'',
+    house:'left',
+    content:'On May 31, 2021, a webinar titled "Fundamentals of Web Development" featured Kishor Kumar G, a Software Engineer at Multicore Ware, as the speaker, addressing UG students. The event was coordinated by Prof. K. Chandraprabha, HOD – CSE.'
+  },
+  {
+    id:12,
+    head:'',
+    house:'right',
+    content:'On May 29,2021, a webinar titled "Fundamentals of Data Science" was conducted with Sasikumar Gp, a Senior Analyst from Latent View Analysis, as the resource person, addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:13,
+    head:'',
+    house:'left',
+    content:'On May 28,2021, a webinar titled "Data-Driven Technologies and Skills Needed" featured Bagavathy Priya N, a Data Analyst from Shopup, as the speaker, addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE'
+  },
+  {
+    id:14,
+    head:'',
+    house:'right',
+    content:'DEFTERA-21, held on March 6,2021, featured Dr.K.Manonmani, Principal of ACGCET, engaging with UG students, and Mr.L.Rasikannan, AP–CSE, as part of the event'
+  },
+  {
+    id:15,
+    head:'',
+    house:'left',
+    content:'On May 29,2020, a webinar titled "Machine Learning Practices Followed in Industry" featured Mr. T. Radhakrishnan as the speaker, addressing UG students, and was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:16,
+    head:'',
+    house:'right',
+    content:'On May 28,2020, a webinar titled "Illakiyamum Inaivazhi Vaasipum" featured Dr.Karthagaipandi, Assistant Professor at SKCE, Coimbatore, as the speaker, addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE'
+  },
+  {
+    id:17,
+    head:'',
+    house:'left',
+    content:'On May 27, 2020, a webinar titled "AI - An Industrial Approach" featured Mr.S.Maheswaran, Project Lead at Honeywell Technology Solutions, as the speaker, addressing UG students, and it was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:18,
+    head:'',
+    house:'right',
+    content:'On May 26, 2020, a webinar titled "How to Improve and Cope Up With Emerging Technologies" featured T.Krishnan Kumar, an IT Analyst at TCS, as the resource person, addressing UG students. The event was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:19,
+    head:'',
+    house:'left',
+    content:'On May 25,2020, a webinar on "Introduction to DevOps" featured Mrs. Annie Michelia, a DB Specialist Architect with expertise in AWS and on-premise solutions from New Jersey, addressing UG students, and it was coordinated by Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:20,
+    head:'',
+    house:'right',
+    content:'On February 27,2020, Cognoblaze-20 welcomed Dr.P.Tamilrasan, a scientist at CECRI, who addressed UG students in the presence of Prof.K.Chandraprabha, HOD–CSE.'
+  },
+  {
+    id:21,
+    head:'',
+    house:'left',
+    content:'DEFTERA-19, held on October 23,2019, featured Dr.R.Shanmugalakshmi, Principal of ACGCET, engaging with UG students, and Dr.C.Uma Rani,AP/CSE, as part of the event.'
+  },
+  {
+    id:22,
+    head:'',
+    house:'right',
+    content:'On September 23, 2019, Cognoblaze-19 had Mr.G.Kathirvelan, Digital Transformation Lead at TCS, delivering a session to UG students, with the presence of Dr.L.Ganesan, HOD–CSE.'
+  },
+  {
+    id:23,
+    head:'',
+    house:'left',
+    content:'DEFTERA-18, held on October 16,2018, featured Dr.A.Elango, Principal of ACGCET, addressing UG students, and Dr. C. Uma Rani, AP/CSE, served as the coordinator for the workshop.'
+  },
+  {
+    id:24,
+    head:'',
+    house:'right',
+    content:'A workshop on Android Application Development, held from September 14,2018, to September 15,2018, featured Mr.Sathish Kumar, a developer from Winapp IT Solutions PVT Ltd, as the resource person, with UG students from ACGCET and Dr. URCW as beneficiaries. Dr.L.Ganesan, HOD–CSE, served as the coordinator for the workshop.'
+  },{
+    id:25,
+    head:'',
+    house:'left',
+    content:'From March 14,2018, to March 20,2018, an FDP on Computer Vision and its Application was conducted with distinguished professors from various institutes as resource persons, benefiting faculties, and coordinated by Dr.L.Ganesan,HOD–CSE.'
+  },
+  {
+    id:26,
+    head:'',
+    house:'right',
+    content:'On February 15, 2018, Dr. A. Elango, the Principal of ACGCET, engaged with UG students alongside Dr. L. Ganesan, the HOD of CSE, during Cognoblaze-18.'
+  },
+ 
+
+]
+
+const cse_mou_data=[
+  {
+    sno:'1',
+    comp_name:'ABC TECHNO LABS INDIA Pvt.Ltd',
+    sign_date:'12/3/2012',
+    valid:'3 YEARS',
+    end_date:'12/3/2015'
+  },
+  {
+    sno:'2',
+    comp_name:'ALAGAPPA UNIVERSITY,KARAIKUDI',
+    sign_date:'6/14/2019',
+    valid:'4 YEARS',
+    end_date:'6/14/2023'
+  },
+  {
+    sno:'3',
+    comp_name:'BENCHMARK ELECTRONIC SYSTEMS PVT.LTD',
+    sign_date:'7/10/2013',
+    valid:'UNTIL CLOSURE OF TEQIP I',
+    end_date:'-'
+  },
+  {
+    sno:'4',
+    comp_name:'BHEL,THIRUMAYAM',
+    sign_date:'9/28/2015',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'5',
+    comp_name:'CENTRE FOR FACULTY DEVELOPMENT',
+    sign_date:'11/12/2012',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'6',
+    comp_name:'CENTRE FOR FACULTY DEVELOPMENT,ANNA UNIVERSITY(FDTP)',
+    sign_date:'6/28/2017',
+    valid:'5 YEARS',
+    end_date:'6/28/2022'
+  },
+  {
+    sno:'7',
+    comp_name:'Dr.UMAYAL RAMANATHAN COLLEGE FOR WOMEN,KARAIKUDI',
+    sign_date:'7/21/2017',
+    valid:'3 YEARS',
+    end_date:'7/21/2020'
+  },
+  {
+    sno:'8',
+    comp_name:'EXCEL DIE CASTING',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'9',
+    comp_name:'FORD INDIA Pvt.Ltd',
+    sign_date:'11/14/2018',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'10',
+    comp_name:'FRONTLINE ELECTRONICS PRIVATE LTD',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'11',
+    comp_name:'GREEN PLANET ENVIRONMENT SOLUTIONS',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'12',
+    comp_name:'MM MICROTECH',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'13',
+    comp_name:'PANTECH PROED PVT.LTD.',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'14',
+    comp_name:'POLYLAB ENGINEERING EQUIPMENT',
+    sign_date:'3/30/2019',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'15',
+    comp_name:'POWERLAB INSTRUMENTS',
+    sign_date:'6/14/2019',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'16',
+    comp_name:'PRISMS INDIA PRIVATE LIMITED',
+    sign_date:'10/10/2017',
+    valid:'3 YEARS',
+    end_date:'10/10/2020'
+  },
+  {
+    sno:'17',
+    comp_name:'SCIENTIFIC METAL ENGINEERS(P) LTD',
+    sign_date:'12/3/2012',
+    valid:'3 YEARS',
+    end_date:'12/3/2015'
+  },
+  {
+    sno:'18',
+    comp_name:'SPIC TUTICORIN',
+    sign_date:'3/5/2008',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'19',
+    comp_name:'TI CYCLES INDIA LIMITED (TICI)',
+    sign_date:'-',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'20',
+    comp_name:'UNIVERSITY COLLEGE OF ENGINEERING&TECHNOLOGY,VBU,HZB',
+    sign_date:'12/3/2012',
+    valid:'2 YEARS',
+    end_date:'12/3/2014'
+  },
+  {
+    sno:'21',
+    comp_name:'UNIVERSITY COLLEGE OF ENGINEERING&TECHNOLOGY,VBU,HZB',
+    sign_date:'-',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'22',
+    comp_name:'VAIBHAVA POWER SOLUTIONS',
+    sign_date:'4/11/2019',
+    valid:'3 YEARS',
+    end_date:'4/11/2022'
+  },
+  {
+    sno:'23',
+    comp_name:'VAIBHAVA POWER SOLUTIONS(ASHOK LEYLAND)',
+    sign_date:'9/15/2014',
+    valid:'2 YEARS\n(INITIALLY)',
+    end_date:'9/15/2016'
+  },
+  {
+    sno:'24',
+    comp_name:'VARAGHI SOLUTION (POWEROL BY MAHINDRA)',
+    sign_date:'2/23/2013',
+    valid:'5 YEARS',
+    end_date:'2/23/2018'
+  },
+  {
+    sno:'25',
+    comp_name:'VENUS ENERGY,BANGALORE',
+    sign_date:'12/30/2015',
+    valid:'3 YEARS',
+    end_date:'12/30/2018'
+  },
+  {
+    sno:'26',
+    comp_name:'VENUS ENERGY,CUDDALORE',
+    sign_date:'5/3/2013',
+    valid:'2 YEARS',
+    end_date:'5/3/2015'
+  },
+  {
+    sno:'27',
+    comp_name:'VI MICROSYSTEMS PVT.LTD.,',
+    sign_date:'10/28/2013',
+    valid:'2 YEARS',
+    end_date:'10/28/2015'
+  },
+  {
+    sno:'28',
+    comp_name:'WABCO INDIA LIMITED',
+    sign_date:'2/21/2014',
+    valid:'1 YEAR',
+    end_date:'2/21/2015'
+  }
+]
+
+const cse_asso_events=[
+  {
+    id: "1",
+    heading: "Cognoblaze'23",
+    "sub-head":
+      "26th APR 2023",
+    pic: cogno,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "2",
+    heading: "Deftra'22",
+    "sub-head":
+      "29th NOV 2022",
+    pic: deftra,
+    content_1:
+      "",
+    content_2:
+      "",
   },
 ]
 
@@ -391,6 +1737,9 @@ export {
   cse_peo,
   cse_spec_outcomes,
   cse_labs,
-  cse_dept_events,
   cse_hod,
+  cse_stud_data,
+  cse_prog_time,
+  cse_mou_data,
+  cse_asso_events
 };

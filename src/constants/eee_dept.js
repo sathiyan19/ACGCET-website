@@ -34,6 +34,15 @@ import raja from '../assets/pictures/eee_dept/eee_faculties/Raja-_1_.webp'
 import suresh from '../assets/pictures/eee_dept/eee_faculties/Suresh-kumar-_1_.webp'
 import mani from '../assets/pictures/eee_dept/eee_faculties/manimaran-_1_.webp'
 import sakthi from '../assets/pictures/eee_dept/eee_faculties/Sakthivel-_1_.webp'
+import priyanka from '../assets/pictures/eee_dept/eee_faculties/20-Priyanka.webp'
+
+import AC from '../assets/pictures/eee_dept/eee_labs/AC.webp'
+import DC from '../assets/pictures/eee_dept/eee_labs/DC.webp'
+import comp from '../assets/pictures/eee_dept/eee_labs/computer.webp'
+import drives from '../assets/pictures/eee_dept/eee_labs/drives.webp'
+import electro from '../assets/pictures/eee_dept/eee_labs/electronics.webp'
+import ped from '../assets/pictures/eee_dept/eee_labs/PED.webp'
+import ecl from '../assets/pictures/eee_dept/eee_labs/ECL.webp'
 
 const eee_dept_menu = [
   {
@@ -86,7 +95,7 @@ const eee_dept_menu = [
   },
   {
     id: "12",
-    path: "#",
+    path: "/eeedept/eee-nextgen",
     link: "Next Gen Lab",
     arl:'l'
   },
@@ -640,6 +649,44 @@ const eee_progs = [
   },
 ];
 
+const eee_gen=[
+  {
+    id: "1",
+    head: "18.01.2021 to 28.02.2021",
+    house: "left",
+    content:
+      "NPIU, with IIT Bombay, trains faculty in IoT. They, in turn, train students. Batch I: 30 students. Batch II: 47 students, 10 NASSCOM-certified.",
+  },
+  {
+    id: "2",
+    head: "23.08.2020 to 01.11.2020",
+    house: "right",
+    content:
+      "The Digital Transformation Learning Series facilitated peer learning among 100 students via online platforms during the lockdown, with students sharing insights from 23.08.2020 to 01.11.2020.",
+  },
+  {
+    id: "3",
+    head: "17.02.2020 to 21.02.2020",
+    house: "left",
+    content:
+      "Students were trained in robot building with ROS, including simulation and prototyping, from 17.02.2020 to 21.02.2020 at the NextGen Lab, EEE Department, benefiting 56 students.",
+  },
+  {
+    id: "4",
+    head: "30.10..2019 to 03.11.2019",
+    house: "right",
+    content:
+      "In a week-long training on AI, experts from Smart Bridge Services instructed 50 students at the NextGen Lab, EEE Department, covering IBM Watson AI services, including chatbots and image recognition from 30.10.2019 to 03.11.2019.",
+  },
+  {
+    id: "5",
+    head: "09.09.2019 to 14.09.2019",
+    house: "left",
+    content:
+      "During a one-week training on IoT from 09.09.2019 to 14.09.2019 at the NextGen Lab, EEE Department, 52 students acquired skills in building IoT systems, sensor selection, IBM cloud services, and MIT App Inventor app development.",
+  },
+]
+
 const eee_peo = [
   {
     id: "1",
@@ -913,11 +960,11 @@ const eee_fac_profiles = [
   {
     id: "20",
     cover: cover,
-    dp: dpf,
+    dp: priyanka,
     name: "Mrs.E.Priyanka",
     Designation: "Assistant Professor (Part time)",
     mailid: "evspriya@gmail.com",
-    pdf: "https://drive.google.com/file/d/1GUx7nbxF9GCk5RftL-CyHKvUAqa2vWzL/view?usp=drive_link",
+    pdf: "https://drive.google.com/file/d/1Lz27nytpYp-4YBdPozz8BxL0SFPw_fhQ/view?usp=drive_link",
   },
   {
     id: "21",
@@ -1015,48 +1062,88 @@ const eee_sup_profiles = [
 const eee_labs=[
   {
       'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'heading':"DC Machines Lab",
+      'pic':DC,
+      'content_1':'The Machines Lab holds the distinction of being one of the earliest established facilities within our department. It stands as a testament to our commitment to practical engineering education. This lab is adorned with a treasure trove of imported machinery from industry giants like ASEA and Brown Boveri, which adds a historical dimension to our learning environment.',
+      'content_2':'The lab is well-equipped with a diverse array of meters, each calibrated for different measurement ranges, enabling students to engage in a wide range of experiments. While its primary purpose is to support the Undergraduate Machines Lab course, it serves a dual role as a hub for project development. Here, ambitious endeavors like the creation of linear induction motors come to life.'+"Covering a substantial area of 199.2 square meters, the Machines Lab offers ample space for students to explore, learn, and innovate. Among its major assets are DC Shunt Generators, DC Series Generators, DC Compound Generators, DC Shunt Motors, DC Series Motors, and DC Compound Motors, all of which contribute significantly to the hands-on learning experience of our engineering students."
   },
   {
       'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'heading':'AC Machines Lab',
+      'pic':AC,
+      'content_1':'The AC Machines Lab, occupying 199.2 square meters, serves as a pivotal hub for hands-on learning in our department. Equipped with essential apparatus, including Single Phase Transformers, 3 Phase Alternator Sets, Transformers, Salient Pole Alternators, and Pole Changing setups, it facilitates comprehensive exploration of AC machinery.',
+      'content_2':"This lab also features Induction Motors (both single-phase and three-phase), including Squirrel Cage and Slip-ring variants, along with Induction Generators, Synchronous Motors, and Pole-changing Induction Motors. This array of equipment allows students to gain practical insights into the behavior and operation of AC machines, bridging the gap between theory and real-world applications in electrical engineering education."
   },
   {
       'id':'3',
-      'heading':'Foreign Training at University',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':swayam,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'heading':'Power Electronics and Drives Lab (PG)',
+      'pic':ped,
+      'content_1':'The Power Electronics and Drives Lab for postgraduate studies spans an area of 58.9 square meters and serves multiple key functions within our department. Primarily, it is dedicated to PG-level Power Electronics and Drives lab courses, offering students an in-depth understanding of these critical subjects. Additionally, the lab serves as a hub for research endeavors, fostering innovation in power electronics and drives. Moreover, it plays a pivotal role in consultancy work such as energy audits.',
+      'content_2':"This multifaceted lab is equipped with a diverse range of major equipment including Power Analyzers, IGBT-based Three-Phase PWM Inverters for SR Motors, Three-Phase Half and Fully Controlled Rectifiers, Cyclo Converters, Inverters (both Series and Parallel), IPM-Based Electrical Drives, Speed Control Setups, Oscilloscopes, MOSFET Power Modules, AC Voltage Regulators, Resonant Converters, Multilevel Inverters, Harmonic Analyzers, and Power Meters. It serves as a dynamic space for learning, research, and practical applications in the realm of power electronics and drives."
   },
   {
       'id':'4',
-      'heading':'Hi',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':swayam,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'heading':'Computer Lab',
+      'pic':comp,
+      'content_1':'With an area of 186.5 square meters, this lab is a technological hub. Equipped with advanced computing machines running industrial-grade software, it primarily serves for teaching simulation experiments in power systems, control systems, and power electronics.',
+      'content_2':"Additionally, it facilitates online quizzes and other technology-enhanced learning activities. The lab boasts 40 Pentium-i7-based computers, a Pentium-i7 N-Computing System with 5 nodes, and a range of software, including Mi-Power, MATLAB/Simulink, PSCADEMTDC, ETAP, LabVIEW, dSpace with data acquisition modules. It also features essential infrastructure like a high-speed laser printer, internet connectivity, and robust UPS systems."
   },
+  {
+    'id':'5',
+    'heading':"Drives Lab",
+    'pic':drives,
+    'content_1':'Spanning an area of 156.2 square meters, the Drives Lab is equipped with a state-of-the-art AD DC drive system. This setup serves as a robust test bench for research activities related to drives.',
+    'content_2':"The lab boasts a machine assembly capable of real-time data acquisition and control, as well as hardware in loop capabilities for Power Electronics & Drives (cRIO-9039). Additionally, it houses essential equipment like a 3 Phase Slip-ring Induction Motor, Compound Motor Coupled set, DC Shunt Motor, and DC Series Generator Coupled Set.",
+  },
+{
+    'id':'6',
+    'heading':'Power Electronics Lab',
+    'pic':placement,
+    'content_1':'Spanning an area of 240 square meters, this lab houses an array of major equipment for research and experimentation. It includes Single Phase Inverter Modules, Single Phase Semi Converters, Single Phase Fully Controlled Converters, 3 Phase Fully Controlled Converters, 3 Phase IGBT based Inverters, SCR-based 1 Phase AC Voltage Controllers, DC-DC Buck, Boost, and Buck/Boost Converters.',
+    'content_2':" Additionally, the lab features an FPGA-based Speed Controller for Rectifier-fed DC Motors, as well as Analog and Dual Trace Oscilloscopes for in-depth analysis, enabling advanced research in power electronics and control systems."
+},
+{
+    'id':'7',
+    'heading':'Electronics Lab',
+    'pic':electro,
+    'content_1':'The Electronics Lab, spanning 187 square meters, is a vital educational space within our department. It plays a pivotal role in teaching Electronics devices, analog and digital integrated lab courses, forming the foundation of our students understanding of electronics. At the heart of this lab are crucial resources, including Digital IC Trainers, which enable students to explore the intricate world of digital integrated circuits.',
+    'content_2':"Dual Tracking Power Supplies ensure a stable power source for experiments, while Function Generators generate precise waveforms for testing and analysis. Dual Trace CROs provide visual insights into electronic signals, aiding in troubleshooting and comprehension. Moreover, the lab houses Digital Measuring Instruments, essential for accurate measurements, and an Electronic Work Bench, which serves as a versatile workspace for students to assemble, test, and refine their electronic projects."
+},
+{
+    'id':'8',
+    'heading':'Embeded Controllers Lab',
+    'pic':ecl,
+    'content_1':'With an area spanning 105 square meters, the lab is well-equipped to facilitate hands-on learning in the realm of embedded systems and microcontrollers. The lab is furnished with essential equipment, including six computers and a variety of microcontroller-based modules, such as ARM 2148 and PIC microcontroller-based modules.',
+    'content_2':"Additionally, it features universal add-on modules for Microcontroller 8051 and 8085 kits, along with ADSP 2148-based embedded modules. These resources provide students with a practical understanding of embedded systems and microcontroller applications, preparing them for the ever-evolving field of electronics and computer engineering."
+},
+{
+'id':'9',
+'heading':"VLSI and DSP Lab",
+'pic':robotics,
+'content_1':'Spanning 80.1 square meters, our VLSI and DSP Lab is a hub for advanced digital system design. Its well-equipped with 19 computers and an array of specialized equipment, including VLSI Trainer kits and Spartan Trainer kits.',
+'content_2':"These tools empower students to delve into VLSI design. The lab also features Spartan 3E Trainer kits for hands-on FPGA development. Additionally, it includes DSP kits like TMS3202407, TMS320C5416, and TMS320V6713, enabling students to explore the intricacies of digital signal processing, ensuring a comprehensive understanding of these vital technologies.",
+},
+{
+'id':'10',
+'heading':'Measurements Control and Instrumentation Lab',
+'pic':placement,
+'content_1':'Spanning an area of 160.2 square meters, our Measurements Control and Instrumentation Lab is a pivotal space for practical learning.',
+'content_2':"Equipped with a range of major instruments, including LVDTs, Synchronous AC and DC Bridges, Hall Effect Transducer Modules, Pressure and Temperature Transducers, Load cell Transducers, Dual Tracking Power Supplies, Instrumentation Amplifiers, A/D & D/A Converters, Current Transformers, and AC & DC Servomotors, this lab provides students with hands-on experience in precision measurement, control, and instrumentation techniques, preparing them for diverse applications in engineering and technology."
+},
+{
+'id':'11',
+'heading':'Smart Grid Lab',
+'pic':swayam,
+'content_1':'Our Smart Grid Test Bench is a crucial addition to our facilities, serving both undergraduate students and facilitating advanced research for postgraduates and research associates. The Electrical Power Generating station features 2KVA Alternator sets with three-phase protection relays, ensuring robust overcurrent, Earth fault, overvoltage, and under-voltage protection.',
+'content_2':"The Smart Grid Test Bench features a 3 KW solar inverter with protective measures, a 3.73 KW Induction Generator for fault simulation, a robust Electrical Power Transmission System, an Electrical Grid station with Autotransformer and Isolation transformer, and a Distribution station with transformers and fault protection. It's IoT-enabled with SCADA integration for real-time smart grid research and learning."
+},
+{
+'id':'12',
+'heading':'NextGen Lab',
+'pic':swayam,
+'content_1':'The Next Gen Lab, established in collaboration with 1994 batch alumni, is a hub for exploring cutting-edge technologies. This facility fosters knowledge in Internet of Things (IoT), Robotics, and Artificial Intelligence (AI).',
+'content_2':" It houses a range of advanced equipment including Arduino Uno, Bluetooth 5 Development Kits, Intel Movidius computing stick, Dragino Lora Shield, Raspberry Pi module, Arduino processors, Xbee and Zigbee communication modules, 3D prototype development with Prusa i3 3D printer, NVIDIA Jetson Nano GPU-based Processor, Intel RealSense Robotic Development Kit, and Turtle Bot Burger, offering students a dynamic space to innovate and experiment."
+},
 ]
 
 const eee_dept_events=[
@@ -1106,5 +1193,6 @@ export {
   pub2,
   pub3,
   pub4,
-  pub5
+  pub5,
+  eee_gen
 };

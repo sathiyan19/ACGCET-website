@@ -20,9 +20,11 @@ const Nba = () => {
     
   return (
     <div className='nba'>
-
+      
+      
       <Underline heading="NBA" />
       
+
       <p>The institution is committed to continuous improvement in the quality of excellence through strong leadership. National Board of Accreditation (NBA) granted accreditation to the programmmes after critically evaluated and assured the quality of the programmes offered by  the institution.</p>
 
       <div className='nba_tab'>

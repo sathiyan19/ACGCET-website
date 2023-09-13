@@ -48,6 +48,8 @@ import {
   Cse_peo,
   Cse_lab,
   Cse_events,
+  Cse_prog_org,
+  Cse_mou,
   Civil_peo,
   Civil_faculties,
   Civil_lab,
@@ -73,16 +75,21 @@ import {
   Sh_lab_facility,
   Sh_research,
   Science_Programme,
-  UBA,
+  Uba,
   Scholarship,
   Civil_awards,
   Ece_dept_lib,
   Ece_research,
+  Iste,
+  Sih,
+  Committee,
+  Yrc,
   Devpage,
-  Eee_research
+  Eee_research,
+  Eee_nextgen
 } from "./pages";
 import "./App.css";
-import Uba from "./pages/Uba/Uba";
+
 
 const App = () => {
   const location = useLocation();
@@ -143,7 +150,9 @@ const App = () => {
         <Route path="/sciencedept/science-programme" element={<Science_Programme/>} />
         <Route path="/csedept/cse-peo" element={<Cse_peo/>} />
         <Route path="/csedept/cse-lab" element={<Cse_lab/>} />
+        <Route path="/csedept/cse-mou" element={<Cse_mou/>} />
         <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
+        <Route path="/csedept/cse-prog" element={<Cse_prog_org/>} />
         <Route path="/civildept/civil-peo" element={<Civil_peo/>} />
         <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
         <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
@@ -156,6 +165,7 @@ const App = () => {
         <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
         <Route path="/eeedept/eee-research" element={<Eee_research/>} />
+        <Route path="/eeedept/eee-nextgen" element={<Eee_nextgen/>}/>
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
         <Route path="/uba" element={<Uba/>} />
         <Route path="/ecedept/ece-placement" element={<Ece_placement/>} />
@@ -169,7 +179,14 @@ const App = () => {
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
+        <Route path="/iste" element={<Iste/>} />
+        <Route path="/sih" element={<Sih/>} />
+        <Route path="/committee" element={<Committee/>} />
+        <Route path="/yrc" element={<Yrc/>} />
         <Route path="/webdev-team" element={<Devpage/>} />
+        
+        
+
       </Routes>
       <Footer />
     </div>

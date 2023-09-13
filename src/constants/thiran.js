@@ -1,8 +1,11 @@
 // Thiran_heroimage_carousalinfo
-import image1 from "../assets/pictures/nsshero1.webp";
-import image2 from "../assets/pictures/nsshero2.webp";
-import image3 from "../assets/pictures/nsshero3.webp";
-import image4 from "../assets/pictures/nsshero4.webp";
+
+import image1 from "../assets/pictures/thiran_grp.JPG";
+import image2 from "../assets/pictures/thiran_grp1.jpg";
+import image3 from "../assets/pictures/thiran_grp3.webp";
+
+
+
 
 import cover from "../assets/pictures/pangu auto.webp";
 import cover1 from "../assets/pictures/thiran_water.webp";
@@ -23,7 +26,7 @@ import cover5 from "../assets/pictures/thiran_civil.webp";
 const Thiran_heroimage_carousalinfo = {
     id: 1,
     title: "Thiran",
-    img_list: [image1, image2 ,image3,image4],
+    img_list: [image1, image2 ,image3],
   };
 
 const vision= {
@@ -58,58 +61,50 @@ const jury_awards=[
   {
       id:'1',
       coverpic:cover,
-      batch:"2021-25 Batch",
+      batch:"CSE 2021-25 Batch",
       name:"Share Auto App",
-      desc:"Sathiyan and Harish are the ones who have brought this project to fruition.",
-      date:"24th July 2023"
+      desc:"Sathiyan and Harish are the individuals responsible for making the project a reality.",
+      date:"Thiran 2023"
   },
   {
     id:'2',
     coverpic:cover1,
-    batch:"2020-24 Batch",
+    batch:"EEE 2020-24 Batch",
     name:"Smart Public Water Distribution System",
-    desc:"K.Madhavan,S.Vinothkumar,M.M.Nidhish",
-    date:"24th July 2023"
+    desc:"K.Madhavan,S.Vinothkumar & M.M.Nidhish are the individuals responsible for making the project a reality.",
+    date:"Thiran 2023"
   },
   {
     id:'3',
     coverpic:cover2,
-    batch:"1994-98",
-    name:"Harmony '98",
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    date:"24th July 2023"
+    batch:"ECE 2020-24 Batch",
+    name:"Home Automation",
+    desc:"S.Thevi Srinidhi,J.Joselin Shinita & S.G.Jayaprakash are the individuals responsible for making the project a reality.",
+    date:"Thiran 2023"
   },
   {
     id:'4',
     coverpic:cover3,
-    batch:"1994-98",
-    name:"Harmony '98",
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    date:"24th July 2023"
+    batch:"EEE 2022-26 Batch",
+    name:"Anti Sleep Alarm for Drivers",
+    desc:"M.Hari Prasath, P.Ganesh, S.Sivasanagaran & V.Prathiksha Aara are the individuals responsible for making the project a reality.",
+    date:"Thiran 2023"
   },
   {
     id:'5',
     coverpic:cover4,
-    batch:"1994-98",
-    name:"Harmony '98",
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    date:"24th July 2023"
+    batch:"MECH 2020-24 Batch",
+    name:"Compass",
+    desc:"I.Jeffrey, S.Sathyan & S.Bala Mani Arasu are the individuals responsible for making the project a reality.",
+    date:"Thiran 2023"
   },
   {
     id:'6',
     coverpic:cover5,
-    batch:"1994-98",
-    name:"Harmony '98",
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    date:"24th July 2023"
-  },
-  {
-    id:'7',
-    coverpic:cover,
-    batch:"1994-98",
-    name:"Harmony '98",
-    desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    date:"24th July 2023"
+    batch:"CIVIL 2020-24 Batch",
+    name:"Bacterial Concrete",
+    desc:"B.Sruthi, S.Nivetha, B.Hamsini, S.Pavithra, R.Dinesh Raja & L.Nagarajan are the individuals responsible for making the project a reality.",
+    date:"Thiran 2023"
   }
 ]
 

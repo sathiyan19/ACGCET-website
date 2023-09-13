@@ -1,37 +1,31 @@
 import React from "react";
 
 import "./Nss.css";
-import motto from "../../assets/pictures/mottonss.jpg";
-import q1 from "../../assets/pictures/quote1.png";
-import q2 from "../../assets/pictures/quote2.png";
-import nsslogo from "../../assets/pictures/nsslogo.webp";
+import motto from "../../assets/pictures/nss/mottonss.webp";
+import q1 from "../../assets/pictures/quote1.webp";
+import q2 from "../../assets/pictures/quote2.webp";
+import nsslogo from "../../assets/pictures/nss/nsslogo.webp";
 
 import {
   Heroimagecarousal,
   Table,
   Listformat,
   Slideshow,
+  Accordion,
 } from "../../components";
-import { Profilecard, Underline, Deptmission, Deptvision } from "../../widgets";
+import { Profilecard, Underline } from "../../widgets";
 import { Backtotop } from "../../widgets";
 import {
   Nss_heroimage_carousalinfo,
   profile_info,
-  achieve17,
-  achieve19,
   valaward,
-  achieve18,
   nssactivity,
   activitylist,
+  nssachievements
 } from "../../constants/Nss";
 
 const Nss = () => {
-  const columns = [
-    { field: "sno", header: "sno" },
-    { field: "name", header: "name" },
-    { field: "noa", header: "nature of the award" },
-    { field: "issue", header: "issuing authority" },
-  ];
+
   const nsslogatab = [
     { field: "sno", header: "sno" },
     { field: "category", header: "Category" },
@@ -178,7 +172,6 @@ const Nss = () => {
             </div>
           </div>
 
-
           <div className="nssloga">
             <Underline heading="NSS Awards" />
             <p>
@@ -193,13 +186,16 @@ const Nss = () => {
             <div className="nssawardtable">
               <Table data={valaward} columns={nsslogatab} />
             </div>
-
           </div>
         </div>
 
+        <div className="nssachieve">
+          <Underline heading="Our Achievements"/>
+          <Accordion accord_data={nssachievements}/>
+        </div>
 
-  
-    </div>
+        
+      </div>
     </>
   );
 };

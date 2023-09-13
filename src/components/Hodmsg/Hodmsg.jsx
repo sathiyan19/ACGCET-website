@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Hodmsg.css'
 
-import q1 from "../../assets/pictures/quote1.png";
+import q1 from "../../assets/pictures/quote1.webp";
 import dp from "../../assets/pictures/dp.jpg";
 
 const Hodmsg = ({pic,name,designation,content}) => {
