@@ -86,7 +86,9 @@ import {
   Yrc,
   Devpage,
   Eee_research,
-  Eee_nextgen
+  Eee_nextgen,
+  Civil_internal,
+  Civil_research
 } from "./pages";
 import "./App.css";
 
@@ -156,7 +158,9 @@ const App = () => {
         <Route path="/civildept/civil-peo" element={<Civil_peo/>} />
         <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
         <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
+        <Route path="/civildept/civil-research" element={<Civil_research/>} />
         <Route path="/civildept/civil-dept-events" element={<Civil_events/>} />
+        <Route path="/civildept/civil-internal-revenue" element={<Civil_internal/>} />
         <Route path="/mechdept/mech-peo" element={<Mech_peo/>} />
         <Route path="/mechdept/mech-faculties" element={<Mech_faculties/>} />
         <Route path="/mechdept/mech-lab" element={<Mech_lab/>} />
