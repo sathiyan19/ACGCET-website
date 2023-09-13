@@ -68,7 +68,7 @@ const eee_dept_menu = [
   },
   {
     id: "9",
-    path: "#",
+    path: "/eeedept/eee-research",
     link: "Research and Publications",
     arl:'l'
   },
@@ -147,6 +147,471 @@ const eee_mission = [
       "To ensure the graduates acquire leadership qualities and commitment towards lifelong learning.",
   },
 ];
+
+const eee_research_info=[
+  {
+    'name':"Dr. K.Baskaran",
+    'area':"Smart Grid, Power System , Computer Networks and Security",
+  },
+  {
+    'name':"Prof. P.Madasamy",
+    'area':"Power Quality management",
+  },
+  {
+    'name':"Prof. K.Ramadas",
+    'area':"Microcontroller and microprocessor, signal and systems.",
+  },
+  {
+    'name':"Dr. A.Arunya Revathi",
+    'area':"Power System , Power electronics ,Digital System",
+  },
+  {
+    'name':"Dr. M.Balasubramonian",
+    'area':"	Power converters ,Power system",
+  },
+  {
+    'name':"Dr. M.Arun",
+    'area':"FACT Devices",
+  },
+  {
+    'name':"Dr. S.Nageswari",
+    'area':"Power Converters",
+  },
+  {
+    'name':"Prof. G.Amuthan",
+    'area':"Solar Photovoltaic system",
+  },
+  {
+    'name':"Prof. C.Vennila",
+    'area':"Solar Photovoltaic system, MPPT Algorithm",
+  },
+  {
+    'name':"Prof. M.L.Ramamoorthy",
+    'area':"Multi Sensor Data fusion",
+  },
+  {
+    'name':"Dr. S.Venkatesan",
+    'area':"Investigation of power converters for solar pv system",
+  },
+  {
+    'name':"Prof. S.Balamurugan",
+    'area':"Analysis of modular multilevel inverter",
+  },
+  {
+    'name':"Prof. V.Pradeep",
+    'area':"Wide area protection in Smart Grid, Insulation Co-ordination, Distance Relaying",
+  },
+  {
+    'name':"Prof. K.Padmanaban",
+    'area':"Power Converters",
+  },
+  {
+    'name':"Prof S.Ida Evangeline",
+    'area':"Power System",
+  },
+  {
+    'name':"Prof. S.Aasaimani",
+    'area':"Active Distribution Network, Microgrid, Smart Grid",
+  },
+  {
+    'name':"Prof K.Thirumal",
+    'area':"	Control System and Power Systems",
+  },
+];
+
+const scholar_info1=[
+  {
+    'sno':"1",
+    'guide':"Mr.Hans John Dcruz",
+    'area':"Development of Model ware for improving reliability of smart grid",
+  },
+  {
+    'sno':"2",
+    'guide':"Mr.M.Subha Renuka",
+    'area':"Intelligent controllers for Electronics Devices",
+  },
+  {
+    'sno':"3",
+    'guide':"Mr.T.Sivaranjani",
+    'area':"Power converters for Renewable Energy",
+  },
+  {
+    'sno':"4",
+    'guide':"Mr.J.Shanmugapriya",
+    'area':"Cyber security in smart Grid",
+  },
+  {
+    'sno':"5",
+    'guide':"Mr.K.Ramadas",
+    'area':"Electric Vehicle",
+  },
+  {
+    'sno':"6",
+    'guide':"Mr.G.Amuthan",
+    'area':"Solar Photo Voltaic Systems",
+  },
+  {
+    'sno':"7",
+    'guide':"Mr.V.Pradeep",
+    'area':"Wide area Protection of Power System",
+  },
+  {
+    'sno':"8",
+    'guide':"Mr.S.Aasaimani",
+    'area':"Voltage control in active distribution network",
+  },
+  {
+    'sno':"9",
+    'guide':"Mr.S.Ramalingam",
+    'area':"Energy Efficient Routing Protocol in Wireless Sensor Network",
+  },
+  {
+    'sno':"10",
+    'guide':"Mr.S. SelvaKumaran",
+    'area':"Smart Grid Based Farming Land water Pump system using induction motor drive with reduced switches",
+  },
+  {
+    'sno':"11",
+    'guide':"Mr.K.Manikandan",
+    'area':"Protection Coordination of AC DC distribution system",
+  },
+];
+const scholar_info2=[
+  {
+    'sno':"1",
+    'guide':"Ms.N.Hemadevi",
+    'area':"Invisibility cloaking using plasmonic meta materials at optical frequency",
+  },
+  {
+    'sno':"2",
+    'guide':"Ms.D.Rajeswari",
+    'area':"Design and analysis of photonic crystal fiber for various applications",
+  },
+];
+const scholar_info3=[
+  {
+    'sno':"1",
+    'guide':"Mr.A. Pandiyarajan",
+    'area':"An investigation and analysis of a conical antenna with meta material for low earth orbit satellite applicationd",
+  },
+  {
+    'sno':"2",
+    'guide':"Mr.J.Nagarajan",
+    'area':"Investigation of self adaptive speed controller for DC DC converter for control applications",
+  },
+  {
+    'sno':"3",
+    'guide':"Mr.S.M. Ayyappan",
+    'area':"Some investigation on analysis and design of low power high speed bimode cmos logic circuits for automatic applications",
+  },
+  {
+    'sno':"4",
+    'guide':"Mrs.R.Dharani",
+    'area':"Multi-Criteria decision analysis for Renewable Energy Integration",
+  },
+];
+const scholar_info4=[
+  {
+    'sno':"1",
+    'guide':"Mr.S.Annadurai",
+    'area':"Control implementation of Power converters with Green Energy sources",
+  },
+  {
+    'sno':"2",
+    'guide':"Ms.R Durga Devi",
+    'area':"Investigation of Performance Enhancement Techniques for standalone solar photovoltaic system",
+  },
+  {
+    'sno':"3",
+    'guide':"Mr S.Balamurugan",
+    'area':"Multi level Inverters",
+  },
+  {
+    'sno':"4",
+    'guide':"Ms.A. Maheshwari",
+    'area':"Optimal Energy Management System of Electrical Energy System",
+  },
+];
+const scholar_info5=[
+  {
+    'sno':"1",
+    'guide':"Mr.K Rajamohana",
+    'area':"Investigation on performance of  a Photovoltaic power Generation System integrated converter topologies",
+  },
+  {
+    'sno':"2",
+    'guide':"Ms.R.Nirmala",
+    'area':"Performance of Solar PV system Standalone Grid connected system",
+  },
+  {
+    'sno':"3",
+    'guide':"Ms S.Indumathi",
+    'area':"Investigation of Different Doping effects on ZnO based piezo electric nano generator",
+  },
+  {
+    'sno':"4",
+    'guide':"Ms K.Rajesh",
+    'area':"Advanced Power converters for Renewable Energy Sources",
+  },
+];
+
+const pub1=[
+  {
+    'id':"1",
+    'point':"R Dharani and M Balasubramonian, Load Shifting and Peak Clipping forReducing Energy Consumption inan Indian University Campus MDPI-Energies January 2021"
+  },
+  {
+    'id':"2",
+    'point':"R Dharani and M Balasubramonian, “Investigation of Optimum Tilt Angle for Solar PV Installation in Southern India Solid State Technology”, February 2021"
+  },
+  {
+    'id':"3",
+    'point':"Vennila C., and Vijayaraj., M, “Dynamical Performance Investigation of DynamicalModel Based Maximum Power Point Tracking Controller in Solar Photovoltaic System”, Tierärztliche Praxis Multidisciplinary Journal, ISSN: 0303-6286,Vol 41, 2021, PP No:540-555."
+  },
+  {
+    'id':"4",
+    'point':"S Venkatesan, M Saravanan, S Venkatanarayanan “Signal-flow graph analysis and implementation of novel power tracking algorithm using fuzzy logic controller”, 2021, International Journal of Business Intelligence and Data Mining, Volume 18, Issue 1,  Pages 88-108, Inderscience Publisher (IEL)."
+  },
+];
+const pub2=[
+  {
+    'id':"1",
+    'point':"Ramalingam, S. and Baskaran, K. ‘An Efficient Data Prediction Model Using Hybrid Harris Hawk Optimization with Random Forest Algorithm in Wireless Sensor Network’. Journal of Intelligent & Fuzzy Systems, vol. 40, no. 3, pp. 5171-5195, 2021. DOI: 10.3233/JIFS-201921."
+  },
+  {
+    'id':"2",
+    'point':"Ramalingam, S. and Baskaran, K. ‘An energy‐efficient clustering and cross‐layer‐based opportunistic routing protocol (CORP) for wireless sensor network’, International Journal of Communication systems, 09 February 2021 https://doi.org/10.1002/dac.4752.",
+  },
+  {
+    'id':"3",
+    'point':"MadasamyPerisnayagam, Skumar, “A Modified High Voltage Gain Quasi impedance source Coupled Inductor Multilevel Inverterfor Photovoltaic Applications”, Energies 13(4),874,2020."
+  },
+  {
+    'id':"4",
+    'point':"Veerapandiyan Veerasamy, , Balasubramonian Madasamy and others, A Novel RK4-Hopfield Neuralnetwork for power flow analysis ofpower system,Applied soft computing Journal, April 2020."
+  },
+  {
+    'id':"5",
+    'point':"Arunya Revathi& D. Rajeswari Surface Plasmon resonance biosensor-based dual-core photonic crystal fiber:design and analysis”, Journal of Optics, ISSN: 0972-8821, Volume 49, Number 2, and PP163-167, 2020.",
+  },
+  {
+    'id':"6",
+    'point':"Hemalatha, N &Nageswari, „A New Approach of Position Sensorless Control for Brushless DC Motor‟, Real time processing in Control, Computer Vision and Power Electronics, Current Signal Transduction Therapy, Bentham Science Publishers, ISSN: 1574-3624, vol. 15, Issue 1, (2020),pp. 65-76."
+  },
+  {
+    'id':"7",
+    'point':"Durga Devi &S. Nageswari“Distributed SM MPPT Controller for Solar PV System Under Non-Uniform Atmospheric Conditions”, IETE Journal of Research (2020) , DOI: 10.1080/03772063.2020.1844069"
+  },
+  {
+    'id':"8",
+    'point':"Annadurai, S.Nageswari“Performance Enhancement of Differential Power Processing converter with Switched Inductor”, Solid State Technology (2020), vol. 63, Issue 5, pp. 8521-8532."
+  },
+  {
+    'id':"9",
+    'point':"P Anbarasan, V Krishnakumar, S Ramkuma, “A new three-phase multilevel DC-link invertertopology with reduced switch count for photovoltaic applications”, Circuit World (2020),Volume 47 Issue 2, Emerald Publishing Limited."
+  },
+  {
+    'id':"10",
+    'point':"Balamurugan, S.Nageswari, “ Performance Analysis of multi carrier PWM (m-PWM) based Single Phase Modular Multilevel Converter using dSPACE”, Solid State Technology (2020), vol. 63, Issue 5, pp. 8639-8651."
+  },
+];
+
+const pub3=[
+  {
+    'id':"1",
+    'point':"Hans John Dcruz, Dr K.Baskaran, “Analysis of Cyber-Physical Security in Electric SmartGrid – Survey and challenges”, IEEE Explore, ISSN: 2380-7393, ISBN: 978-1- 7281-1182-7, 02 May 2019, DOI Number: 10.1109/IRSEC.2018.8702957.",
+  },
+  {
+    'id':"2",
+    'point':"V Santhosh, K Baskaran, K Santha, S Sethupathy, “Enhanced P16INK4A Expression In Cervical Cancer Among HPV Infected Women”, International Journal of Chemical and Lifesciences, 2019 Vol 3, issue 3 pp 1301-1305.",
+  },
+  {
+    'id':"3",
+    'point':"V Radhika, K Baskaran, “High resolution DPWM clustered architecture for digitally controlled DC–DC converter using FPGA”, International Journal on Cluster Computing, Springer US, 2019 Volume22, Issue2,pp 4421-4430."
+  },
+  {
+    'id':"4",
+    'point':"K Naveen Durai, K Baskaran, “Decision tree classification-N tier solution for preventing SQL injection attack on websites”, International Journal of Enterprise Network Management,2019, Volume10, Issue3-4, pp 253-271."
+  },
+  {
+    'id':"5",
+    'point':"P Madasamy, V Suresh Kumar, “A Three phase transformer less T type NPC-MLI for grid Connected PV Systems withcommon mode leakage Current mitigation”, Energies, 12(12),2434,2019.",
+  },
+  {
+    'id':"6",
+    'point':"Vaishnavadevi .A & Rmadas.K “Power Generation using DC Driven Self-Excited InductionGenerator Supplying DC Load”, Journal of Applied Science and Computations, Vol VI, Issue IV,April/2019, ISSN :1076-5131, Impact Factor: 5.8."
+  },
+  {
+    'id':"7",
+    'point':"A & Ramadas.K , “Performance Analysis of Self Excited Induction GeneratorSupplying DC load”, Vol. 5, Issue 4, April -2019, ISSN: 2395-1052",
+  },
+  {
+    'id':"8",
+    'point':"A Arunya Revathi,“Implementation of Heric Transformer-Less Inverter with Multiple Sources”,International Journal of Engineering and Advanced Technology (IJEAT), ISSN:2249-8958,Volume-9,Issue-I,October2019."
+  },
+  {
+    'id':"9",
+    'point':"A Arunya Revathi, “Performance Analysis of HERIC Inverter using Multiple Inputs”, Journal ofApplied Science and Computations, ISSN: 1076-5131, Vol. VI, Issue VI, 652-657, June2019, 41238."
+  },
+  {
+    'id':"10",
+    'point':"A Arunya Revathi “Power Quality Improvement using Fuzzy Based Dynamic Voltage Restorer”,International Journal of Scientific Research and Review, ISSN: 2279-543X, Vol.8, Issue7,249-254,July2019."
+  },
+  {
+    'id':"11",
+    'point':"Durga Devi and S.Nageswari, “Mathematical modelling and analysis of voltage super-lift power dc-dc converter for enhanced dynamic characteristics in CCM” Compel: International Journal for computation and mathematics in electrical and electronic engineering, ISSN: 0332-1649, Vol. 38, No.2 (2019), pp.759-776."
+  },
+  {
+    'id':"12",
+    'point':"Vennila, C., and Vijay raj., “Design and Implementation of Fuzzy Logic and Sliding ModeMPPT Controller for Solar PV System.” Journal of Electrical Engineering, University ofPolytechnica Timisoara Romania Faculty of Electrical and Power Engineering, ISSN 1582-4594,Vol. 19,Issue 19/2019, PP No: 441-448.",
+  },
+  {
+    'id':"13",
+    'point':"BanupriyaDr.S. Venkatesan, “Performance Analysis of PWM Controlled Single Phase Quasi Cascaded Z source Multilevel Inverter”, International Research Journal of Engineering Sciences (2019), Volume 5, Issue1, pages 52-62, International Research Journal of Engineering Sciences,ISSN :2394-983X."
+  },
+  {
+    'id':"14",
+    'point':"Indumathi S, Banupriya M , Venkatesan S, “Influence of PSSPWM Control analysis on Different Level of Quasi Z Source Cascaded H Bridge Multilevel Inverter”, SSRG International Journal of Electrical and Electronics Engineering (SSRG-IJEEE) – Special Issue ICRTETM Mar 2019, Special Issue ICRTETM Mar 2019, Pages:10-16, Seventh Sense Research Group."
+  },
+];
+const pub4=[
+  {
+    'id':"1",
+    'point':"Edwin Prem Kumar Gilbert, Baskaran Kaliaperumal, Elijah Blessing Rajsingh, M.Lydia, “Trust based Data Prediction, Aggregation and Reconstruction using Compressed Sensing for Clustered Wireless Sensor Networks, ” Computers and Electrical Engineering (Elsevier), February 2018, ISSN 0045-7906. (Article in Press)DOI: 10.1016/j.compeleceng.2018.01.013 (Impact Factor: 1.570"
+  },
+  {
+    'id':"2",
+    'point':"S SindhujaBanu, K Baskaran, “Hybrid FGWO based FLCs modeling for performance enhancement in wireless body area networks”, Wireless Personal Communications, Springer US 2018, Volume 100, Issue 3, pp 1163-1199",
+  },
+  {
+    'id':"3",
+    'point':"KC Sriharipriya, K Baskaran, “Optimal number of cooperators in the cooperative spectrum sensing schemes”,Circuits, Systems, and Signal Processing, Springer US, 2018, Volume37, Issue5, pp 1988-2000."
+  },
+  {
+    'id':"4",
+    'point':"K Baskaran, PK Kumar, K Santha, I Sivakamasundari, “Association of estrogen and progesterone with cancer of the uterine cervix in women infected with high-risk human papillomavirus”, Journal of Research in Medical Sciences, 2018, Vol 6, issue 3 , pp 74-79."
+  },
+  {
+    'id':"5",
+    'point':"K Baskaran, R Malathi, P Thirusakthimurugan, “Feature Fusion for FDG-PET and MRI for Automated Extra Skeletal Bone Sarcoma Classification”, Materials Today: Proceedings, Elsevier, 2018, Vol 5, Issue 1, pp 1879-1889.",
+  },
+  {
+    'id':"6",
+    'point':"V Radhika, K Baskaran, “SCADA Based Intelligent Control and Monitoring of Bottle Filling System”, TAGA JOURNAL,2018, VOL. 14, ISSN: 1748-0345 (Online),pp 1622-1625."
+  },
+  {
+    'id':"7",
+    'point':"V Radhika, K Baskaran, “Block-Random Access Memory-Based Digital Pulse Modulator Architecture for DC–DC Converters”, Intelligent and Efficient Electrical Systems, Springer, 2018."
+  },
+  {
+    'id':"8",
+    'point':"Tamil Selvi, P & Baskaran, K 2018, ‘Enhanced Energy Saving Tree Based Clustering with Multiple Input and Multiple Output’, in International Journal of Computational and Theoretical Nano science, vol. 15, pp. 773-780."
+  },
+  {
+    'id':"9",
+    'point':"Tamil Selvi, P & Baskaran, K 2018, ‘Improved Communication Confining Clustering Using Unceasing Possession Node Allocation Algorithm’, International journal of Control Theory and Applications, vol. 11, no. 1, ISSN:0974-5572."
+  },
+  {
+    'id':"10",
+    'point':"M Balasubramoniam,An Investigation of Square Microstrip Antenna with the Developments of its Charecteristicsin WI-MAX Application, International Journal of Advance Research, Ideas and Innovations in Technology, May 2018."
+  },
+  {
+    'id':"11",
+    'point':"M Balasubramoniam, Design and Comparative Analysis ofBi-mode CMOS logic circuits forArithmetic Applications, International journal Imageprocessing and networktechniques,May 2018.",
+  },
+  {
+    'id':"12",
+    'point':"M Balasubramoniam Power Factor Correction Converterfor AC Drives Application,International journal of powersystems and powerelectronics,May 2018.",
+  },
+  {
+    'id':"13",
+    'point':"M Balasubramoniam , Load Frequency Control of aDynamic Power System usingGeneralised Hopfield Neural Network based Self-Adaptive PIDController,IET Journal,August 2018."
+  },
+  {
+    'id':"14",
+    'point':"A Arunya Revathi “Development of Multiport Converter for Hybrid Renewable Energy System”,Journal of Computational and Theoretical Nanoscience, ISSN: 1546-1955, 15(5):1634- 1638,May 2018."
+  },
+  {
+    'id':"15",
+    'point':"A Arunya Revathi , “Performance Improvement in Birefringence of Photonic Crystal Fiber UsingFull-Vectorial Finite Element Method”, Journal of Computational and TheoreticalNanoscience, ISSN: 1546-1955, 15(5):1594-1597 · May 2018.",
+  },
+  {
+    'id':"16",
+    'point':"A Arunya Revathi “Dispersion and Modal Characteristics Analysis of 2D Rectangular PlasmonicWaveguide Structure”, Journal of Computational and Theoretical Nanoscience,ISSN:1546-1955, 15(5):1577-1581 · May 2018."
+  },
+  {
+    'id':"17",
+    'point':"Durga Devi and S.Nageswari, “Recursive Identification of MPP Using Adaptive MPPT Controller For Solar PV System”, Journal of Electrical Engineering, Volume 18, Number 1 (2018), pp.442-449.",
+  },
+  {
+    'id':"18",
+    'point':"Gomathi, R. Durga Devi and Nageswari“Modeling and Analysis of Sliding Mode MPPT Controller for Solar Photovoltaic System”, International Journal of Advanced Research in Electrical, Electronics and Instrumentation Engineering, Volume 7 Number 2 (2018), pp. 726-734."
+  },
+  {
+    'id':"19",
+    'point':"Vennila, C., and M. Vijayaraj. “A Novel MPPT Scheme for Unequally Irradiated Solar Photovoltaic Panels Feeding a Common Load Using Sliding Mode Controller.” Current SignalTransduction Therapy, Vol 13,Issue 1/2018, PP No:11–18."
+  },
+  {
+    'id':"20",
+    'point':"SundharajanVenketasen, ManimaranSaravanan, Journal of Electrical Engineering (International), Volume 18, Issue: 2018/1, pages: 94-120, Journal of Electrical Engineering,Romania, ISSN:1582-4594."
+  },
+  {
+    'id':"21",
+    'point':"Sundharajan Venkatesan, ManimaranSaravanan, “Implementation of a Single sensor Based MPPT for Solar PV System using LUO converter”, Journal of Electrical Engineering, (2018),Volume 18, Issue1, Pages 27-27."
+  },
+];
+
+const pub5=[
+  {
+    'id':"1",
+    'point':"N Kaleeswari and, K Baskaran, “An Optimized Secure Data Gathering Scheme for Wireless Sensor Network”, Journal of Computational and Theoretical Nanoscience, Vol 14 issue 3 pp 1653-1660."
+  },
+  {
+    'id':"2",
+    'point':"J Sujitha, K Baskaran, “Blind Channel Estimation Based Linear Precoding using MIMO-OFCDM”, Wireless Personal Communications, Springer US, 2017, Vol 97, Issue 4, pp 5969-5981",
+  },
+  {
+    'id':"3",
+    'point':"S SindhujaBanu, K Baskaran, “Time stationed traffic prioritization protocol for wireless body area network (WBAN)-modeling and energy consumption analysis”, Advances in Natural and Applied Sciences, 2017, Vol 11, No 9, pp 10-17."
+  },
+  {
+    'id':"4",
+    'point':"K & Anusiya.K “Fuzzy Based Maximum Power Point Tracking in Transformer lessGrid connected PV System” International Journal of Innovative Research in Science, Engineeringand Technology, Vol. 6, Issue 8, August 2017 ISSN 2319-8753"
+  },
+  {
+    'id':"5",
+    'point':"K & Raga Brindha.S “A Comparison Between Perturb and Observe and ModifiedPerturb and Observe MPPT Techniques”, International Journal of Advance Engineering andResearch Development, Vol. 4, Issue 11, November- 2017 ISSN : 2348-4470 Impact Factor:4.72.",
+  },
+  {
+    'id':"6",
+    'point':"K & Madasamy.P “Monitoring the Transformer Oil Temperature and Load sharing UsingGSM”, International Journal for Research in Applied Science & Engineering Technology, Vol 5,Issue XI, November 2017, ISSN : 2321-9653, Impact Factor: 6.887"
+  },
+  {
+    'id':"7",
+    'point':"K & Nagananthini.R, ” Cascaded Multilevel Inverter Based Unified Power Flow Controller”, International Journal of Advance Engineering and Research Development, Vol. 4,Issue 11, November- 2017 ISSN : 2348-4470 Impact Factor: 4.72."
+  },
+  {
+    'id':"8",
+    'point':"K, Raga Brindha.S, “ A Single stage Switched Capacitor Inverter withMaximumPower Point Tracking”, International Journal for Research in Applied Science & EngineeringTechnology, Vol 5, Issue XII, December- 2017, ISSN : 2321-9653, Impact Factor: 6.887"
+  },
+  {
+    'id':"9",
+    'point':"M Balasubramoniam, Load flow analysis in generalisedHOP-field neural network, IET Journal, December 2017."
+  },
+  {
+    'id':"10",
+    'point':"A Arunya Revathi, “Working Principle of Semi dual Dynamic Bridge Converter with Dual Source”,Elysium Journal of Engineering Research and Management, ISSN: 2347-4734, Volume – 4,Issue:1, page No. 1-5, February 2017."
+  },
+  {
+    'id':"11",
+    'point':"Amuthameena Subramanian, Amuthan G, Ganesan L, “Comparative Analysis of Unity Power factor Grid Connected PV system with PI and Fuzzy Based Controllers”,International Journal of Power Electronics. J. Power Electronics, Vol. 8, No. 2, 2017,  Pp159-177.",
+  },
+  {
+    'id':"12",
+    'point':"Durga Devi and S.Nageswari, “Analysis and Implementation of MPPT Technique and Battery Voltage Regulation System for a Standalone Solar PV System”, Middle-East Journal of Scientific Research, Volume 25, Number 2 (2017), pp.408-416.",
+  },
+];
+
 
 const eee_progs = [
   {
@@ -630,5 +1095,16 @@ export {
   eee_peo,
   eee_spec_outcomes,
   eee_dept_events,
-  eee_labs,eee_hod
+  eee_labs,eee_hod,
+  eee_research_info,
+  scholar_info1,
+  scholar_info2,
+  scholar_info3,
+  scholar_info4,
+  scholar_info5,
+  pub1,
+  pub2,
+  pub3,
+  pub4,
+  pub5
 };

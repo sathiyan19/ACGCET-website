@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './Footer.css'
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="footer">
@@ -61,7 +62,7 @@ const Footer = () => {
                 </div>
                 <div className="copyrights">
                     <p className="copy">&#169; 2022 ACGCET, Karaikudi, All rights are reserved</p>
-                    <a href="#" className="maintained">Developed & Maintained by CSE students</a>
+                    <Link to="/webdev-team" className="maintained">Developed & Maintained by CSE students</Link>
                 </div>
             </div>
         </div>

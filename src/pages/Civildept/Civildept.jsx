@@ -18,7 +18,7 @@ import {
 } from "../../constants/civil_dept";
 
 import { Radial_menu } from "../../components";
-import cse from "../../assets/pictures/csecover.webp";
+import civil from "../../assets/pictures/civilabt.webp";
 
 import { BsFillBuildingsFill } from "react-icons/bs";
 
@@ -50,7 +50,7 @@ const Civildept = () => {
               each.
             </p>
             <div className="dept_img_holder">
-              <img className="dept_img" src={cse} />
+              <img className="dept_img" src={civil} />
             </div>
           </div>
           <div className="civtwo-col1">
@@ -68,9 +68,9 @@ const Civildept = () => {
             </p>
           </div>
         </div>
-        <div className="civ_hod">
+        {/* <div className="civ_hod">
           <Underline heading="HOD's Message" />
-        </div>
+        </div> */}
         <div className="civ_vision_mission">
           <Underline heading="Our Vision & Mission" />
           <Deptvision visiondata={civ_vision.visiondata} />

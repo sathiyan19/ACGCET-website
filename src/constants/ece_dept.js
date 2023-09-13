@@ -1,3 +1,4 @@
+// import dp from "../assets/pictures/dp.jpg";
 import dpm from "../assets/pictures/boy.webp";
 import dpf from "../assets/pictures/girl.webp";
 import cover from "../assets/pictures/microchip.webp";
@@ -14,6 +15,7 @@ import ece_vlsi_lab from "../assets/pictures/ece_dept/ece_labs/ece_vlsi_lab.webp
 import ece_ic_lab from "../assets/pictures/ece_dept/ece_labs/ece_ic_lab.webp"
 import ece_sig_lab from "../assets/pictures/ece_dept/ece_labs/ece_sig_lab.webp"
 import ece_edc_lab from "../assets/pictures/ece_dept/ece_labs/ece_edc_lab.webp"
+import ece_rfm_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfm_lab.webp"
 import ece_opt_lab from "../assets/pictures/ece_dept/ece_labs/ece_opt_lab.webp"
 import ece_pcb_lab from "../assets/pictures/ece_dept/ece_labs/PCB_Fabrication_Station.webp"
 import ece_antenna_lab from "../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.webp";
@@ -27,7 +29,20 @@ import paper_presentation from "../assets/pictures/ece_dept/stud_activities/pape
 import circuit_designers from "../assets/pictures/ece_dept/stud_activities/circuit_designers.webp";
 import top_design1 from "../assets/pictures/ece_dept/stud_activities/top_design1.webp";
 import top_design2 from "../assets/pictures/ece_dept/stud_activities/top_designer2.webp";
-import top_designers_2k22 from "../assets/pictures/ece_dept/stud_activities/top_designers_2k22.webp";
+import hrk_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/hrk_topdesign_2k22.webp";
+import sow_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/sow_topdesign_2k22.webp";
+import anu_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/anu_topdesign_2k22.webp";
+import asw_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/asw_topdesign_2k22.webp";
+import malai_thiran_23 from "../assets/pictures/ece_dept/stud_activities/malai_thiran_23.webp";
+import mm_thiran_23 from "../assets/pictures/ece_dept/stud_activities/mm_thiran_23.webp";
+import gok_thiran_23 from "../assets/pictures/ece_dept/stud_activities/gok_thiran_23.webp";
+import jos_thiran_23 from "../assets/pictures/ece_dept/stud_activities/jos_thiran_23.webp";
+
+import ncmoc19 from '../assets/pictures/ece_dept/ece_events/ncmoc19.webp'
+import stal21 from '../assets/pictures/ece_dept/ece_events/stalwartz21.webp'
+import prag21 from '../assets/pictures/ece_dept/ece_events/pragyanz21.webp'
+import prag22 from '../assets/pictures/ece_dept/ece_events/pragyanz22.webp'
+import unknown from '../assets/pictures/ece_dept/ece_events/unkown.webp'
 
 import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
 import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
@@ -113,7 +128,7 @@ const ece_dept_menu = [
 ];
 
 const ece_hod = {
-  name: "Dr.A.Sivanantharaja",
+  name: "Dr.A.Sivanantha Raja",
   designation: "Head of the Department, ECE",
   pic: asr,
   content:
@@ -321,7 +336,7 @@ const ece_sup_profiles = [
 
 const ece_research_info=[
   {
-    'name':"Dr. A.Sivanantharaja",
+    'name':"Dr. A.Sivanantha Raja",
     'area':"Optical Communication"
   },
   {
@@ -360,7 +375,7 @@ const ece_research_info=[
 
 const patent_info=[
   {
-    'name':"Dr. A.Sivanantharaja",
+    'name':"Dr. A.Sivanantha Raja",
     'title':"Noise free Public Address System for Auditorium using White Light Emitting Diode Communication",
     'App':"202041002376",
     'status':"Applied"
@@ -410,7 +425,7 @@ const scholar_info1=[
   {
     'sno':"4",
     'name':"M. Sindhu",
-    'area':"SS",
+    'area':"Application of SOA for optical networks",
   },
 ];
 
@@ -481,7 +496,7 @@ const ece_siva=[
   },
   {
     'id':"6",
-    'point':"Jayson Keerthy Jayabarathan,  Sivanantha Rajaand S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
+    'point':"Jayson Keerthy Jayabarathan,  Sivanantha Raja and S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
   },
 ];
 
@@ -653,6 +668,18 @@ const ece_outcomes = [
     id: "12",
     point:
       "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
+  },
+];
+const ece_spec_outcomes = [
+  {
+    id: "1",
+    point:
+      "ECE Graduates will Analyze, Synthesize, design and provide an engineering solution in the areas of VLSI, Image Processing and Embedded Systems.",
+  },
+  {
+    id: "2",
+    point:
+      "ECE Graduates will Analyze, design and provide an engineering solution in the areas of RF and Microwaves, Wireless and Optical Communication.",
   },
 ];
 
@@ -1628,7 +1655,7 @@ const ece_acad_labs = [
     heading: "RF & Microwave Electronics Lab",
     "sub-head":
       "",
-    pic: swayam,
+    pic: ece_rfm_lab,
     link:"https://youtu.be/YsQiOEL3B84",
     content_1:
       "",
@@ -1903,6 +1930,63 @@ const ece_dept_events = [
   },
 ];
 
+const ece_events = [
+  {
+    id: "5",
+    heading: "",
+    "sub-head":
+      "",
+    pic: unknown,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "4",
+    heading: "",
+    "sub-head":
+      "",
+    pic: prag22,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "3",
+    heading: "",
+    "sub-head":
+      "",
+    pic: prag21,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "2",
+    heading: "Intra-Department Symposium-Stalwartz 2k21",
+    "sub-head":
+      "13th MAR 2021",
+    pic: stal21,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "1",
+    heading: "Conference NCMOC 2019",
+    "sub-head":
+      "25th MAR 2019",
+    pic: ncmoc19,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+];
 const ece_projects = [
   {
     id: "1",
@@ -1936,6 +2020,42 @@ const ece_projects = [
 
 const ece_stud_activities = [
   {
+    id: "17",
+    heading: "Thiran 2023",
+    "sub-head":
+      "S.Thevi Srinidhi & J.Joselin Shinita bagged Squadron Leader Victoria Cecil award in Thiran 2k23.",
+    pic: jos_thiran_23,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "16",
+    heading: "Thiran 2023",
+    "sub-head":
+      "Mohamed Mujahith P, Sowndhirarajan P & Aatheshwaran S bagged 1st place in Thiran 2k23.",
+    pic: mm_thiran_23,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "15",
+    heading: "Thiran 2023",
+    "sub-head":
+      "Divya Barathi S, Gokul R & Dharaneesh K bagged 2nd place in Thiran 2k23.",
+    pic: gok_thiran_23,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "14",
+    heading: "Thiran 2023",
+    "sub-head":
+      "Malaiarasan P & Akash P bagged 3rd place in Thiran 2k23.",
+    pic: malai_thiran_23,
+    content_1: "",
+    content_2: "",
+  },
+  {
     id: "7",
     heading: "Top Designers 2023",
     "sub-head":
@@ -1963,17 +2083,41 @@ const ece_stud_activities = [
     content_2: "",
   },
   {
-    id: "9",
-    heading: "Top Designers",
-    "sub-head": "",
-    pic: top_designers_2k22,
-    content_1: "Content1",
-    content_2: "Content2",
+    id: "10",
+    heading: "Top Designers 2k22",
+    "sub-head": "Aswin S, Dharaneesh K, Dinesh kumar R bagged 1st place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: asw_top_design_2k22,
+    content_1: "",
+    content_2: "",
   },
   {
-    id: "5",
+    id: "9",
+    heading: "Top Designers 2k22",
+    "sub-head": "P Hema, R Vishalini devi & S Hari rama krishnan bagged 2nd place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: hrk_top_design_2k22,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "13",
+    heading: "Top Designers 2k22",
+    "sub-head": "Anusha K, Thiviyadarshini K, Vidhya S bagged 3rd place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: anu_top_design_2k22,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "11",
+    heading: "Top Designers 2k22",
+    "sub-head": "V sowmiya, K Rishika,M Arthi bagged 2nd place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: sow_top_design_2k22,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "12",
     heading: "Paper Presentation",
-    "sub-head": "",
+    "sub-head": "Malaiarasan P and Abhimanyu P bagged 1st place in Paper presentation contest in St.Michael Engineering College.",
     pic: paper_presentation,
     content_1: "",
     content_2: "",
@@ -1981,7 +2125,7 @@ const ece_stud_activities = [
   {
     id: "4",
     heading: "Technical Quiz-St.Michael",
-    "sub-head": "",
+    "sub-head": "J Anuraj kishore & S Aswin has bagged the 1st place in the Technical Quiz contest in St.Michael Engineering College.",
     pic: tech_quiz,
     content_1: "",
     content_2: "",
@@ -1990,7 +2134,7 @@ const ece_stud_activities = [
     id: "3",
     heading: "Best Manager",
     "sub-head":
-      "has bagged the best manager award in Hindustan Engineering College event.",
+      "J Anuraj kishore has bagged the best manager award in Hindustan Engineering College event.",
     pic: best_manager,
     content_1: "",
     content_2: "",
@@ -2161,5 +2305,7 @@ export {
   ece_rajesh,
   ece_placement_info,
   ece_stud_data,
-  ece_dept_lib
+  ece_dept_lib,
+  ece_events,
+  ece_spec_outcomes
 };

@@ -2,9 +2,9 @@ import React from 'react'
 
 import "./Reunion_card.css";
 
-const Reunion_card = ({cover,batch,name,desc,date}) => {
+const Reunion_card = ({margin_bw,cover,batch,name,desc,date}) => {
   return (
-    <div className="reunion_card">
+    <div className="reunion_card" style={{marginLeft: margin_bw, marginRight:margin_bw}}>
               <div className="reunion_img_holder">
                 <img src={cover} className="reunion_img" />
               </div>

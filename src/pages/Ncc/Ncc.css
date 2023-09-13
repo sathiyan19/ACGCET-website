@@ -1,21 +1,271 @@
-.nccofficers {
-    margin-top: 10px;
-    padding: 20px;
-    .nccpohead {
-      > h1 {
-        font-size: 40px;
-        color: #00134d;
-        font-weight: 500;
+.nccabt {
+  padding: 20px;
+  > p {
+    /* padding: 10px; */
+    line-height: 1.5rem;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+  }
+  .nccabt1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .nccabt1text {
+      width: 60%;
+      > p {
+        line-height: 1.5rem;
+        font-size: 18px;
+        color: black;
+        text-align: justify;
+        /* padding: 10px; */
       }
     }
-    .ncccardholder {
-      display: flex;
-      justify-content: center;
-    }
-    .ncccards {
-      width: 70%;
+    .nccabt1img {
+      width: 40%;
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
+      > img {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+      }
     }
   }
+}
+
+.nccam {
+  padding: 20px;
+}
+
+.nccflagsec {
+  padding: 20px;
+  .nccflag {
+    display: flex;
+    .nccflagtext {
+      width: 80%;
+      padding: 10px;
+      > p {
+        line-height: 1.5rem;
+        color: black;
+        text-align: justify;
+        font-size: 18px;
+      }
+    }
+    .nccflagpic {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.ncccore {
+  padding: 20px;
+}
+
+.nccpledge {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  > img {
+    width: 95%;
+    vertical-align: middle;
+    height: auto;
+  }
+  .mobpledgeimg{
+    display: none;
+  }
+  .nccpledgetext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 70%;
+    border-radius: 20px;
+    padding: 20px;
+    >h1{
+      color: white;
+      text-align: center;
+    }
+    >p{
+      color: white;
+      line-height: 1.5rem;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+
+.nccofficers {
+  margin-top: 10px;
+  padding: 20px;
+  .ncccardholder {
+    display: flex;
+    justify-content: center;
+  }
+  .ncccards {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nccabt {
+    .nccabt1 {
+      flex-direction: column-reverse;
+      .nccabt1text {
+        width: 100%;
+      }
+      .nccabt1img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        > img {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .nccflagsec {
+    .nccflag {
+      .nccflagtext {
+        width: 70%;
+      }
+      .nccflagpic {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .nccabt {
+    .nccabt1 {
+      .nccabt1img {
+        > img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .nccflagsec {
+    .nccflag {
+      flex-direction: column-reverse;
+      .nccflagtext {
+        width: 100%;
+      }
+      .nccflagpic {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        > img {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .nccpledge{
+    >img{
+      width: 100%;
+    }
+    .nccpledgetext{
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .nccabt {
+    .nccabt1 {
+      .nccabt1img {
+        > img {
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .nccpledge{
+    .nccpledgetext{
+      bottom: 0;
+      top:0;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .nccofficers {
+    .ncccards {
+      width: 100%;
+    }
+  }
+  .nccabt {
+    .nccabt1 {
+      .nccabt1img {
+        > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .nccflagsec {
+    .nccflag {
+      .nccflagpic {
+        > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .nccpledge{
+    .lappledgeimg{
+      display: none;
+    }
+    .mobpledgeimg{
+      display: block;
+    }
+    .nccpledgetext{
+      top:100px;  
+      bottom:100px;
+    }
+  }
+}
+
+@media (max-width:500px){
+  .nccpledge{
+    .nccpledgetext{
+      top:80px;  
+      bottom:80px;
+    }
+  }
+}
+
+@media (max-width:450px){
+  .nccpledge{
+    .nccpledgetext{
+      padding: 10px;
+      top:0;  
+      bottom:0;
+    }
+  }
+}

@@ -35,9 +35,9 @@ const Sh_English = () => {
           The department conducts Faculty development programmes and Teacher training programmes to empower the teachers in innovative teaching methodologies in ELT. </p>
         </div>
         </div>
-        <div className="ece_hod">
+        {/* <div className="ece_hod">
           <Underline heading="HOD's Message"/>
-        </div>
+        </div> */}
         <div className="ece_vision_mission">
           <Underline heading="Our Vision & Mission"/>
         <Deptvision visiondata={eng_vision.visiondata} />

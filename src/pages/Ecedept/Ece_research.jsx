@@ -39,7 +39,7 @@ const Ece_research = () => {
     <div className="ecedept">
     <div className="ecebg">
       <div className="eceheading">
-        Department of Electronics and Communication Engineering
+      Department of Electrical and Electronics Engineering
       </div>
       <div className='ece_sub_heading'>Research and Publications</div>
     </div>
@@ -86,32 +86,32 @@ const Ece_research = () => {
       <div className='ece_res'>
         <div className='ece_res_table'>
         <p className='ece_dept_content'>The major ongoing research activities in the department under the Guidance of our faculty  members are:</p>
-        <div className='res_head1'><h3><b>Supervisor</b>: Dr. A.Sivanantharaja</h3></div>
+        <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. A.Sivanantha Raja</h3></div>
       <Table data={scholar_info1} columns={column3} />
       </div>
       </div>
       <div className='ece_res'>
         <div className='ece_res_table'>
-        <div className='res_head1'><h3><b>Supervisor</b>: Dr. G.Karpagarajesh</h3></div>
+        <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. G.Karpagarajesh</h3></div>
       <Table data={scholar_info2} columns={column3} />
       </div>
       </div>
       <div className='ece_res'>
         <div className='ece_res_table'>
-        <div className='res_head1'><h3><b>Supervisor</b>: Dr. S.Somasundaram</h3></div>
+        <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. S.Somasundaram</h3></div>
       <Table data={scholar_info3} columns={column3} />
       </div>
       </div>
       <div className='ece_res'>
         <div className='ece_res_table'>
-        <div className='res_head1'><h3><b>Supervisor</b>: Dr. B.Rajeshkanna</h3></div>
+        <div className='res_head1'><h3><b className='ece_super'>Supervisor</b>: Dr. B.Rajeshkanna</h3></div>
       <Table data={scholar_info4} columns={column3} />
       </div>
       </div>
       
       <div className='res_head'><Underline heading="Book and Book Chapters"/></div>
       <div className='ece_pts'>
-            <h3>Dr. A.Sivanantharaja</h3>
+            <h3>Dr. A.Sivanantha Raja</h3>
             <Listformat points={ece_siva}/>
           </div>
           <div className='ece_pts'>
@@ -123,21 +123,6 @@ const Ece_research = () => {
             <Listformat points={ece_rajesh}/>
           </div>
 
-      {/* <div className="ece_hod">
-        <Underline heading="HOD's Message"/>
-        <Hodmsg name={ece_hod.name} designation={ece_hod.designation} pic={ece_hod.pic} content={ece_hod.content}/>
-      </div> */}
-      {/* <div className="ece_vision_mission">
-        <Underline heading="Our Vision & Mission"/>
-      <Deptvision visiondata={ece_vision.visiondata} />
-      <Deptmission points={ece_mission}/>
-      </div> */}
-      {/* <div className="ece_prog_offered">
-        <Underline heading="Programs Offered"/>
-        <div className="ece_progs">
-          {ece_progs.map((item)=><Content_card key={item.id} period={item.period} year={item.year} top_head={item.top_head} heading={item.program} intake={item.intake}/>)}
-        </div>
-      </div> */}
       </div>
 
       {/* {progressinfo.map((item)=><Progressbar bigperc={item.bigperc} smallperc={item.smallperc}/>)} */}

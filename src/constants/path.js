@@ -26,15 +26,15 @@ const top_nav_paths=[
             {'path':'/academic-calendar','link':"Academic Calendar"}]
     },
 
-    {"id":'4',
-    "type":"1",
-    'title':'Research',
-    'basepath':'javascript:void(0);',
-    'links':[{'path':'/under','link':"Link1"},
-        //     {'path':'/under','link':"Link2"},
-        //     {'path':'/under','link':"Link3"}
-        ]
-    },
+//     {"id":'4',
+//     "type":"1",
+//     'title':'Research',
+//     'basepath':'javascript:void(0);',
+//     'links':[{'path':'/under','link':"Link1"},
+//         //     {'path':'/under','link':"Link2"},
+//         //     {'path':'/under','link':"Link3"}
+//         ]
+//     },
 
     {"id":'5',
     "type":"1",
@@ -55,13 +55,14 @@ const top_nav_paths=[
 
     {"id":'7',
     "type":"1",
-    'title':'Co-Curricular',
+    'title':'Holistic Pursuits',
     'basepath':'javascript:void(0);',
     'links':[{'path':'/clubs','link':"Clubs"},
             {'path':'/sports','link':"Sports"},
             {'path':'/nss','link':"NSS"},
             {'path':'/ncc','link':"NCC"},
             {'path':'/','link':"YRC"},
+            {'path':'/uba','link':"UBA"},
             {'path':'/thiran','link':"Thiran"},
             {'path':'/','link':"Xprez"}]
     },

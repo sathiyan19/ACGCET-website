@@ -74,12 +74,16 @@ import {
   Sh_lab_facility,
   Sh_research,
   Science_Programme,
+  UBA,
   Scholarship,
   Civil_awards,
   Ece_dept_lib,
-  Ece_research
+  Ece_research,
+  Devpage,
+  Eee_research
 } from "./pages";
 import "./App.css";
+import Uba from "./pages/Uba/Uba";
 
 const App = () => {
   const location = useLocation();
@@ -153,7 +157,9 @@ const App = () => {
         <Route path="/eeedept/eee-peo" element={<Eee_peo/>} />
         <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
+        <Route path="/eeedept/eee-research" element={<Eee_research/>} />
         <Route path="/eeedept/eee-dept-events" element={<Eee_events/>} />
+        <Route path="/uba" element={<Uba/>} />
         <Route path="/ecedept/ece-placement" element={<Ece_placement/>} />
         <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/civildept/civil-awards" element={<Civil_awards/>} />
@@ -165,10 +171,7 @@ const App = () => {
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
-        
-        
-        
-
+        <Route path="/webdev-team" element={<Devpage/>} />
       </Routes>
       <Footer />
     </div>
