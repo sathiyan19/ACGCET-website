@@ -20,7 +20,7 @@ const Clubscard = ({
           <img src={logoimg} alt="oruimagevaru" />
         </div>
         <div className="description-container">
-          <h1>{title}</h1>
+          <h3>{title}</h3>
         </div>
       </div>
 

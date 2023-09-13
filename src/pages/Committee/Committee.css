@@ -1,0 +1,31 @@
+.commwhole {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.commpdfsec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commpdf {
+  width: 85%;
+}
+
+@media (max-width: 1024px) {
+  .commpdf {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .commpdf {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .commpdf {
+    width: 100%;
+  }
+}
