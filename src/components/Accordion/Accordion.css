@@ -122,6 +122,33 @@
         transform: scaleY(1);
     }
 }
+
+@media (max-width: 450px){
+  .accord_layout accord_close{
+    width: 70%;
+  }
+  .accord_tabs{
+    width:85%;
+  }
+}
+
+@media (max-width: 410px){
+  .accord_layout accord_close{
+    width: 70%;
+  }
+  .accord_tabs{
+    width:70%;
+  }
+}
+
+@media (max-width: 350px){
+  .accord_layout accord_close{
+    width: 60%;
+  }
+  .accord_tabs{
+    width:60%;
+  }
+}
 /* @media (max-width: 768px) {
   .accord_tabs{
     width:95%;
@@ -146,11 +173,7 @@
   }
 }
 
-@media (max-width: 435px){
-  .accord_tabs{
-    width: 70%;
-  }
-}
+
 
 @media (max-width: 405px){
   .accord_tabs{

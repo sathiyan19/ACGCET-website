@@ -20,6 +20,10 @@ import chandraprabha from '../assets/pictures/cse_dept/cse_faculties/chandraprab
 import raja from '../assets/pictures/cse_dept/cse_faculties/raja.webp'
 import rajendran from '../assets/pictures/cse_dept/cse_faculties/rajendran.webp'
 
+import cogno from '../assets/pictures/cse_dept/cse_dept_events/cognoblaze.webp'
+import deftra from '../assets/pictures/cse_dept/cse_dept_events/deftra.webp'
+
+
 const cse_dept_menu = [
   {
     id: "1",
@@ -72,8 +76,8 @@ const cse_dept_menu = [
   
   {
     id: "11",
-    path: "#",
-    link: "MoU",
+    path: "cse-mou",
+    link: "MOU",
     arl:'l'
   },
 ];
@@ -357,30 +361,30 @@ const cse_labs=[
   },
 ]
 
-const cse_dept_events=[
-  {
-      'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-  },
-  {
-      'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-  },
-]
+// const cse_dept_events=[
+//   {
+//       'id':'1',
+//       'heading':"One Week Training on Robotics",
+//       'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+//       'pic':robotics,
+//       'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+//                   'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+//       'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+//       "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+//       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+//   },
+//   {
+//       'id':'2',
+//       'heading':'Placement Activities',
+//       'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+//       'pic':placement,
+//       'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+//                   'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+//       'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+//       "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+//       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+//   },
+// ]
 
 const cse_stud_data = [
   {
@@ -1493,6 +1497,230 @@ const cse_prog_time=[
 
 ]
 
+const cse_mou_data=[
+  {
+    sno:'1',
+    comp_name:'ABC TECHNO LABS INDIA Pvt.Ltd',
+    sign_date:'12/3/2012',
+    valid:'3 YEARS',
+    end_date:'12/3/2015'
+  },
+  {
+    sno:'2',
+    comp_name:'ALAGAPPA UNIVERSITY,KARAIKUDI',
+    sign_date:'6/14/2019',
+    valid:'4 YEARS',
+    end_date:'6/14/2023'
+  },
+  {
+    sno:'3',
+    comp_name:'BENCHMARK ELECTRONIC SYSTEMS PVT.LTD',
+    sign_date:'7/10/2013',
+    valid:'UNTIL CLOSURE OF TEQIP I',
+    end_date:'-'
+  },
+  {
+    sno:'4',
+    comp_name:'BHEL,THIRUMAYAM',
+    sign_date:'9/28/2015',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'5',
+    comp_name:'CENTRE FOR FACULTY DEVELOPMENT',
+    sign_date:'11/12/2012',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'6',
+    comp_name:'CENTRE FOR FACULTY DEVELOPMENT,ANNA UNIVERSITY(FDTP)',
+    sign_date:'6/28/2017',
+    valid:'5 YEARS',
+    end_date:'6/28/2022'
+  },
+  {
+    sno:'7',
+    comp_name:'Dr.UMAYAL RAMANATHAN COLLEGE FOR WOMEN,KARAIKUDI',
+    sign_date:'7/21/2017',
+    valid:'3 YEARS',
+    end_date:'7/21/2020'
+  },
+  {
+    sno:'8',
+    comp_name:'EXCEL DIE CASTING',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'9',
+    comp_name:'FORD INDIA Pvt.Ltd',
+    sign_date:'11/14/2018',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'10',
+    comp_name:'FRONTLINE ELECTRONICS PRIVATE LTD',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'11',
+    comp_name:'GREEN PLANET ENVIRONMENT SOLUTIONS',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'12',
+    comp_name:'MM MICROTECH',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'13',
+    comp_name:'PANTECH PROED PVT.LTD.',
+    sign_date:'8/7/2017',
+    valid:'3 YEARS',
+    end_date:'8/7/2020'
+  },
+  {
+    sno:'14',
+    comp_name:'POLYLAB ENGINEERING EQUIPMENT',
+    sign_date:'3/30/2019',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'15',
+    comp_name:'POWERLAB INSTRUMENTS',
+    sign_date:'6/14/2019',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'16',
+    comp_name:'PRISMS INDIA PRIVATE LIMITED',
+    sign_date:'10/10/2017',
+    valid:'3 YEARS',
+    end_date:'10/10/2020'
+  },
+  {
+    sno:'17',
+    comp_name:'SCIENTIFIC METAL ENGINEERS(P) LTD',
+    sign_date:'12/3/2012',
+    valid:'3 YEARS',
+    end_date:'12/3/2015'
+  },
+  {
+    sno:'18',
+    comp_name:'SPIC TUTICORIN',
+    sign_date:'3/5/2008',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'19',
+    comp_name:'TI CYCLES INDIA LIMITED (TICI)',
+    sign_date:'-',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'20',
+    comp_name:'UNIVERSITY COLLEGE OF ENGINEERING&TECHNOLOGY,VBU,HZB',
+    sign_date:'12/3/2012',
+    valid:'2 YEARS',
+    end_date:'12/3/2014'
+  },
+  {
+    sno:'21',
+    comp_name:'UNIVERSITY COLLEGE OF ENGINEERING&TECHNOLOGY,VBU,HZB',
+    sign_date:'-',
+    valid:'-',
+    end_date:'-'
+  },
+  {
+    sno:'22',
+    comp_name:'VAIBHAVA POWER SOLUTIONS',
+    sign_date:'4/11/2019',
+    valid:'3 YEARS',
+    end_date:'4/11/2022'
+  },
+  {
+    sno:'23',
+    comp_name:'VAIBHAVA POWER SOLUTIONS(ASHOK LEYLAND)',
+    sign_date:'9/15/2014',
+    valid:'2 YEARS\n(INITIALLY)',
+    end_date:'9/15/2016'
+  },
+  {
+    sno:'24',
+    comp_name:'VARAGHI SOLUTION (POWEROL BY MAHINDRA)',
+    sign_date:'2/23/2013',
+    valid:'5 YEARS',
+    end_date:'2/23/2018'
+  },
+  {
+    sno:'25',
+    comp_name:'VENUS ENERGY,BANGALORE',
+    sign_date:'12/30/2015',
+    valid:'3 YEARS',
+    end_date:'12/30/2018'
+  },
+  {
+    sno:'26',
+    comp_name:'VENUS ENERGY,CUDDALORE',
+    sign_date:'5/3/2013',
+    valid:'2 YEARS',
+    end_date:'5/3/2015'
+  },
+  {
+    sno:'27',
+    comp_name:'VI MICROSYSTEMS PVT.LTD.,',
+    sign_date:'10/28/2013',
+    valid:'2 YEARS',
+    end_date:'10/28/2015'
+  },
+  {
+    sno:'28',
+    comp_name:'WABCO INDIA LIMITED',
+    sign_date:'2/21/2014',
+    valid:'1 YEAR',
+    end_date:'2/21/2015'
+  }
+]
+
+const cse_asso_events=[
+  {
+    id: "1",
+    heading: "Cognoblaze'23",
+    "sub-head":
+      "26th APR 2023",
+    pic: cogno,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "2",
+    heading: "Deftra'22",
+    "sub-head":
+      "29th NOV 2022",
+    pic: deftra,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+]
+
 export {
   cse_dept_menu,
   cse_fac_profiles,
@@ -1503,8 +1731,9 @@ export {
   cse_peo,
   cse_spec_outcomes,
   cse_labs,
-  cse_dept_events,
   cse_hod,
   cse_stud_data,
-  cse_prog_time
+  cse_prog_time,
+  cse_mou_data,
+  cse_asso_events
 };
