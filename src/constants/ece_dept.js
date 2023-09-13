@@ -113,12 +113,12 @@ const ece_dept_menu = [
     link: "Student Activities",
     arl: "l",
   },
-  {
-    id: "11",
-    path: "/ecedept/ece-projects",
-    link: "Best Projects",
-    arl: "l",
-  },
+  // {
+  //   id: "11",
+  //   path: "/ecedept/ece-projects",
+  //   link: "Best Projects",
+  //   arl: "l",
+  // },
   {
     id: "12",
     path: "/ecedept/ece-antenna-testing",
@@ -404,6 +404,13 @@ const guide_info=[
     'nppur':"-",
     'msres':"-"
   },
+  {
+    'sno':"4",
+    'name':"Dr. B.Rajeshkanna",
+    'npprod':"-",
+    'nppur':"02",
+    'msres':"-"
+  },
 ];
 
 const scholar_info1=[
@@ -432,23 +439,23 @@ const scholar_info1=[
 const scholar_info2=[
   {
     'sno':"1",
-    'name':"John Samuel Raj",
-    'area':"SS",
+    'name':" K John Samuel Raj",
+    'area':"Identification of Malicious user and its spectral performance Analysis using Improvised Supervised Learning Algorithm in Cognitive Radio Networks",
   },
   {
     'sno':"2",
-    'name':"Amutha",
-    'area':"SS",
+    'name':"S Amutha",
+    'area':"An optimized multichannel slotted detection multiple access protocol  for Wireless Sensor Network (WSN) Applications",
   },
   {
     'sno':"3",
     'name':"Bala Karthick",
-    'area':"SS",
+    'area':"PCOD detection using transfer learning",
   },
   {
     'sno':"4",
-    'name':"Sarathi",
-    'area':"SS",
+    'name':"S Sarathi",
+    'area':"VLSI deisgn - an efficient power consumption built in self test architecture using test pattern technique",
   },
 ];
 
@@ -496,7 +503,7 @@ const ece_siva=[
   },
   {
     'id':"6",
-    'point':"Jayson Keerthy Jayabarathan,  Sivanantha Raja and S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
+    'point':"Jayson Keerthy Jayabarathan, Dr.A.Sivanantha Raja and S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
   },
 ];
 
@@ -686,7 +693,7 @@ const ece_spec_outcomes = [
 const ece_progs = [
   {
     id: "1",
-    year: "1969",
+    year: "1968",
     period: "4 Years",
     top_head: "B.E.",
     program: "Electronics and Communication Engineering",
@@ -1932,21 +1939,10 @@ const ece_dept_events = [
 
 const ece_events = [
   {
-    id: "5",
-    heading: "",
-    "sub-head":
-      "",
-    pic: unknown,
-    content_1:
-      "",
-    content_2:
-      "",
-  },
-  {
     id: "4",
-    heading: "",
+    heading: "Pragyanz'22",
     "sub-head":
-      "",
+      "20th APR 2022",
     pic: prag22,
     content_1:
       "",
@@ -1954,11 +1950,11 @@ const ece_events = [
       "",
   },
   {
-    id: "3",
-    heading: "",
+    id: "5",
+    heading: "Workshop on modern semi-con devices & PCBAs",
     "sub-head":
-      "",
-    pic: prag21,
+      "19th MAR 2022",
+    pic: unknown,
     content_1:
       "",
     content_2:
@@ -1966,10 +1962,21 @@ const ece_events = [
   },
   {
     id: "2",
-    heading: "Intra-Department Symposium-Stalwartz 2k21",
+    heading: "Stalwartz 2k21",
     "sub-head":
       "13th MAR 2021",
     pic: stal21,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "3",
+    heading: "Pragyanz'19",
+    "sub-head":
+      "18th OCT 2019",
+    pic: prag21,
     content_1:
       "",
     content_2:
@@ -2225,7 +2232,7 @@ const ece_placement_info = [
   {
     id:"1",
     year: "2019-2023 Batch",
-    salary:"8 Lakhs",
+    salary:"8 LPA",
     details: [
       {
         id: "1",
@@ -2238,7 +2245,7 @@ const ece_placement_info = [
   {
     id:"2",
     year: "2018-2022 Batch",
-    salary:"5.6 Lakhs",
+    salary:"5.6 LPA",
     details: [
       {
         id: "1",
@@ -2251,7 +2258,7 @@ const ece_placement_info = [
   {
     id:"3",
     year: "2017-2021 Batch",
-    salary:"5 Lakhs",
+    salary:"5 LPA",
     details: [
       {
         id: "1",

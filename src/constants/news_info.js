@@ -7,13 +7,14 @@ import cover from '../assets/pictures/cover pic.jpg'
 
 import edc from '../assets/pictures/news_img/edc.webp'
 import ga from '../assets/pictures/news_img/ga.webp'
+import nlp from '../assets/pictures/news_img/nlp.webp'
 
 export const news_info=[
     {
         'id':'4',
         'heading':"NLP For 3rd years",
         'sub-head':"College's 3rd-year students benefited from 3-week NLP program sponsored by 1998 Alumni.",
-        'pic':csecover,
+        'pic':nlp,
         'content_1':'',
         'content_2':"The 3rd year students of our college attended a program called the Neuro- Linguistic Programming for three weeks on weekends from August 18,2023 to September 2,2023. This program consisted six engaging sessions and is related to communication and personality development. Our Alumni of 1998 batch sponsored for this program. A set of 32 students attended the program which was referred to as the 'Pilot Batch'. The students were greatly benefited by this program and a big thanks to our Alumni for arranging such a productive program for the students."
     },
