@@ -2,8 +2,8 @@ import React from "react";
 
 import "./Csedept.css";
 import { Backtotop,Floatinmenu,Underline,Deptvision,Deptmission } from "../../widgets";
-import {Hodmsg} from '../../components'
-import { cse_dept_menu,cse_mission,cse_vision,cse_hod } from "../../constants/cse_dept";
+import {Accordion,Hodmsg} from '../../components'
+import { cse_dept_menu,cse_mission,cse_vision,cse_hod,cse_stud_data } from "../../constants/cse_dept";
 
 import {Radial_menu } from "../../components";
 import cse from "../../assets/pictures/csecover.webp";
@@ -66,6 +66,12 @@ const Csedept = () => {
         <Deptvision visiondata={cse_vision.visiondata} />
         <Deptmission points={cse_mission}/>
         </div>
+
+        <div className="cse_students">
+          <Underline heading="Student Details"/>
+          <Accordion accord_data={cse_stud_data}/>
+        </div>
+
       </section>
 
       <Backtotop />
