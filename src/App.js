@@ -88,6 +88,8 @@ import {
   Devpage,
   Eee_research,
   Eee_nextgen,
+  Civil_library,
+  Civil_placement,
   Civil_indus,
   Civil_internal,
   Civil_research
@@ -192,8 +194,8 @@ const App = () => {
         <Route path="/committee" element={<Committee/>} />
         <Route path="/yrc" element={<Yrc/>} />
         <Route path="/webdev-team" element={<Devpage/>} />
-        
-        
+        <Route path="/civildept/civil-library" element={<Civil_library/>} />
+        <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
 
       </Routes>
       <Footer />
