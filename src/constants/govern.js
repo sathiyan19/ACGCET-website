@@ -20,19 +20,19 @@ export const govern_data=[
     {
         'sno':'4',
         'name':'Dr.K.Baskaran,\nProfessor and Head/Department of Electrical and Electronics Engineering,\nACGCET,\nKaraikudi.',
-        'desi':'Senoir Professor of the Institution',
+        'desi':'Senior Professor of the Institution',
         'tenure':''
     },
     {
         'sno':'5',
         'name':'Dr.P.K.Palani,\nPrincipal,\nACGCET,\nKaraikudi.',
-        'desi':'',
+        'desi':'Member/Secretary',
         'tenure':''
     },
     {
         'sno':'6',
         'name':'Dr.A.Sivanantharaja,\nProfessor and Head/Department of Electronics and Communication Engineering,\nACGCET,\nKaraikudi.',
-        'desi':'Senoir Professor of the Institution',
+        'desi':'Senior Professor of the Institution',
         'tenure':''
     },
     {
