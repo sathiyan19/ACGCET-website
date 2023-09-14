@@ -2,6 +2,12 @@ import dp from "../assets/pictures/dp.jpg";
 import dpm from '../assets/pictures/boy.webp'
 import dpf from '../assets/pictures/girl.webp'
 import cover from "../assets/pictures/civil_banner.webp";
+import slide1 from "../assets/pictures/civil_dept/civil_industry/intern1.webp";
+import slide2 from "../assets/pictures/civil_dept/civil_industry/inter2.webp";
+import slide3 from "../assets/pictures/civil_dept/civil_industry/intern3.webp";
+
+
+
 
 import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
@@ -52,20 +58,20 @@ const civ_dept_menu = [
   },
   {
     id: "8",
-    path: "#",
+    path: "/civildept/civil-dept-magazine",
     link: "Magazine and Newsletter",
     arl:'l'
   },
-  {
-    id: "9",
-    path: "#",
-    link: "Activities",
-    arl:'l'
-  },
+  // {
+  //   id: "9",
+  //   path: "#",
+  //   link: "Activities",
+  //   arl:'l'
+  // },
   {
     id: "10",
     path: "/civildept/civil-awards",
-    link: "Achiewvements",
+    link: "Achievements",
     arl:'l'
   },
   {
@@ -76,7 +82,7 @@ const civ_dept_menu = [
   },
   {
     id: "12",
-    path: "#",
+    path: "/civildept/civil-dept-indus",
     link: "Industry Interaction",
     arl:'l'
   },
@@ -569,6 +575,49 @@ const civ_patents = [
   },
 ];
 
+const mag_data=[
+  {
+    'id':'1',
+    'program':'Cesar Magazine 2021',
+    'pdf':'https://drive.google.com/file/d/103v3bTK5ynXUzOxk5hzzr_upcQLJKJcc/view?usp=sharing'
+  },
+  {
+    'id':'2',
+    'program':'Cesar Magazine 2020',
+    'pdf':'https://drive.google.com/file/d/1wvRtm8_BDqIFSj3oSlI7clnOANdDVkLk/view?usp=sharing'
+  },
+]
+
+const intern_data=[
+  {
+    'id':'1',
+    'program':'Internship 2023-2024',
+    'pdf':'https://drive.google.com/file/d/1CLuzMgo3roJNBq1WZ_fk4DbxjwNQ-4hB/view?usp=drive_link'
+  },
+  {
+    'id':'2',
+    'program':'Internship 2022-2023',
+    'pdf':'https://drive.google.com/file/d/1IIDeJbROJ94K_oo7UstfNNmwnM6DURgL/view?usp=drive_link'
+  }
+]
+
+const mou_data=[
+  {
+    'id':'1',
+    'program':'Mou - Alagappan             ',
+    'pdf':'https://drive.google.com/file/d/1TItIYGBOuqZurmqYxvnAS3w3Ou783mE5/view?usp=drive_link'
+  },
+  {
+    'id':'2',
+    'program':'Memorandum of understanding 1',
+    'pdf':'https://drive.google.com/file/d/1jcufj4gPIj1kFXJ4o6l-_TxzQ_bPnC4t/view?usp=drive_link'
+  }
+]
+
+const civ_indus_slide=[
+     slide1,slide2,slide3
+]
+
 export {
   civ_dept_menu,
   civ_fac_profiles,
@@ -582,5 +631,9 @@ export {
   civ_dept_events,
   civ_labs,
   civ_awards,
-  civ_patents
+  civ_patents,
+  mag_data,
+  intern_data,
+  mou_data,
+  civ_indus_slide
 };

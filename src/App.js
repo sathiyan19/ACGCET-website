@@ -54,6 +54,7 @@ import {
   Civil_faculties,
   Civil_lab,
   Civil_events,
+  Civil_magazine,
   Mech_peo,
   Mech_faculties,
   Mech_lab,
@@ -82,7 +83,8 @@ import {
   Ece_research,
   Devpage,
   Eee_research,
-  Eee_nextgen
+  Eee_nextgen,
+  Civil_indus
 } from "./pages";
 import "./App.css";
 import Uba from "./pages/Uba/Uba";
@@ -153,6 +155,8 @@ const App = () => {
         <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
         <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
         <Route path="/civildept/civil-dept-events" element={<Civil_events/>} />
+        <Route path="/civildept/civil-dept-magazine" element={<Civil_magazine/>} />
+        <Route path="/civildept/civil-dept-indus" element={<Civil_indus/>} />
         <Route path="/mechdept/mech-peo" element={<Mech_peo/>} />
         <Route path="/mechdept/mech-faculties" element={<Mech_faculties/>} />
         <Route path="/mechdept/mech-lab" element={<Mech_lab/>} />
