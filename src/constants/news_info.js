@@ -34,39 +34,39 @@ export const news_info=[
         'content_1':'',
         'content_2':"Commencing on the 9th of September, a specialized general aptitude training program has been organized for 60 third-year students over the weekends. Taking place on both Saturdays and Sundays, this initiative seeks to nurture the students' problem-solving skills and overall aptitude. By dedicating their weekends to this training, participants are preparing themselves for a competitive edge in their academic pursuits and future career endeavors. This comprehensive program is designed to instill valuable knowledge and capabilities, enabling these students to excel academically and navigate the complexities of the professional world with confidence. It serves as a valuable investment in their personal and intellectual growth."
     },
-    {
-        'id':'1',
-        'heading':"One Week Training on Robotics",
-        'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-        'pic':cover,
-        'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                    'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-        'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-        "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-        "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-    },
-    {
-        'id':'2',
-        'heading':'Placement Activities',
-        'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-        'pic':mechcover,
-        'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                    'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-        'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-        "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-        "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-    },
-    {
-        'id':'3',
-        'heading':'Foreign Training at University',
-        'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-        'pic':eleccover,
-        'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                    'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-        'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-        "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-        "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
-    },
+    // {
+    //     'id':'1',
+    //     'heading':"One Week Training on Robotics",
+    //     'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+    //     'pic':cover,
+    //     'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+    //                 'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+    //     'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+    //     "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+    //     "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    // },
+    // {
+    //     'id':'2',
+    //     'heading':'Placement Activities',
+    //     'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+    //     'pic':mechcover,
+    //     'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+    //                 'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+    //     'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+    //     "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+    //     "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    // },
+    // {
+    //     'id':'3',
+    //     'heading':'Foreign Training at University',
+    //     'sub-head':'Some representative placeholder content for the second slide of the carousel.',
+    //     'pic':eleccover,
+    //     'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
+    //                 'in leadership qualities so as to achieve better productivity and prosperity for our country.',
+    //     'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
+    //     "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
+    //     "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+    // },
     
     
     
