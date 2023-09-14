@@ -18,17 +18,17 @@ const Alumni = () => {
     calwidth();
 
     function calwidth() {
-      wid = window.innerWidth;
-      row[0].className = row[0].className.replace("row-cols-3", "");
-      row[0].className = row[0].className.replace("row-cols-2", "");
-      row[0].className = row[0].className.replace("row-cols-1", "");
-      if (wid < 1100 && wid > 650) {
-        row[0].className += "row-cols-2";
-      } else if (wid < 650) {
-        row[0].className += "row-cols-1";
-      } else if (wid > 1100) {
-        row[0].className += "row-cols-3";
-      }
+      // wid = window.innerWidth;
+      // row[0].className = row[0].className.replace("row-cols-3", "");
+      // row[0].className = row[0].className.replace("row-cols-2", "");
+      // row[0].className = row[0].className.replace("row-cols-1", "");
+      // if (wid < 1100 && wid > 650) {
+      //   row[0].className += "row-cols-2";
+      // } else if (wid < 650) {
+      //   row[0].className += "row-cols-1";
+      // } else if (wid > 1100) {
+      //   row[0].className += "row-cols-3";
+      // }
     }
   }, []);
   return (
@@ -41,9 +41,9 @@ const Alumni = () => {
           <a href="#about" className="lin">
             About
           </a>
-          <a href="#contribution" className="lin">
+          {/* <a href="#contribution" className="lin">
             Contributions
-          </a>
+          </a> */}
           <a href="#reunions" className="lin">
             Reunions
           </a>
@@ -51,10 +51,9 @@ const Alumni = () => {
 
         <div className="divider"></div>
 
-        <div className="notalum">
-          {/* <div className="notable">Notable Alumni</div> */}
+        {/* <div className="notalum">
           <Underline heading="Notable Alumni" />
-        </div>
+        </div> */}
 
         <div className="about">
           <p className="heading" id="about">
@@ -104,9 +103,8 @@ const Alumni = () => {
           </div>
         </div>
 
-        <div className="contrib">
+        {/* <div className="contrib">
           <div id="contribution" className="heads">
-            {/* Contributions */}
             <Underline heading="Contributions" />
           </div>
           <div className="gyro row row-cols-2 g-4">
@@ -121,7 +119,7 @@ const Alumni = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="alumni_reunion">
           <div id="reunions" className="heads">

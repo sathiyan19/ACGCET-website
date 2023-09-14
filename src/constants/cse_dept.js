@@ -67,18 +67,18 @@ const cse_dept_menu = [
     link: "Programme Organized",
     arl:'l'
   },
-  {
-    id: "8",
-    path: "#",
-    link: "Professional Socities",
-    arl:'l'
-  },
-  {
-    id: "9",
-    path: "#",
-    link: "Research and Publications",
-    arl:'l'
-  },
+  // {
+  //   id: "8",
+  //   path: "#",
+  //   link: "Professional Socities",
+  //   arl:'l'
+  // },
+  // {
+  //   id: "9",
+  //   path: "#",
+  //   link: "Research and Publications",
+  //   arl:'l'
+  // },
   
   {
     id: "11",

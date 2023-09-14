@@ -7,11 +7,11 @@ import rotaract from "../assets/pictures/rotractlogo.webp";
 import build from "../assets/pictures/buildlogo.webp";
 
 // Clubs_heroimage_carousalinfo
-const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/rotracthero.webp"
-const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/freshershero.webp"
-const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/leo.webp"
-const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/MUTHAMIL.webp"
-const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/music.webp"
+const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/rotracthero.webp"
+const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/freshershero.webp"
+const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/leo.webp"
+const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/MUTHAMIL.webp"
+const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/music.webp"
 const Clubs_heroimage_carousalinfo = {
   id: 1,
   title: "Clubs at ACGCET",

@@ -4,10 +4,12 @@ import './Sh_Chemistry.css'
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
 
 import { Radial_menu } from "../../components";
-import chem from "../../assets/pictures/chem.webp";
+// import chem from "../../assets/pictures/chem.webp";
 import {Sh_dept_fmenu,chemi_mission,chemi_vision} from '../../constants/Sh_dept_menu'
 
-import { FaMicrochip } from "react-icons/fa6";
+import { GrTest } from "react-icons/gr";
+
+const chem="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/chem.webp"
 
 
 const Sh_Chemistry = () => {
@@ -15,7 +17,7 @@ const Sh_Chemistry = () => {
     <div>
       <section className="shchemidark">
         <div className="shchemidept_float_menu">
-          <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
         </div>
         <Radial_menu menu_links={Sh_dept_fmenu} />
         <div className="shchemi_abt_area">

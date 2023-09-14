@@ -91,10 +91,10 @@ const Eeedept = () => {
             </p>
           </div>
         </div>
-        <div className="eee_hod">
+        {/* <div className="eee_hod">
           <Underline heading="HOD's Message" />
           <Hodmsg name={eee_hod.name} designation={eee_hod.designation} pic={eee_hod.pic} content={eee_hod.content}/>
-        </div>
+        </div> */}
         <div className="eee_vision_mission">
           <Underline heading="Our Vision & Mission" />
           <Deptvision visiondata={eee_vision.visiondata} />
