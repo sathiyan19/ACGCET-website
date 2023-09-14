@@ -313,16 +313,16 @@ export const office_admin_staffs = [
     phn:'',
     email:'periyasamy5500@gmail.com'
   },
-  {
-    id:'32',   
-    cover: cover,
-    dp: dpf,
-    name:'Mrs.T.Amutha',
-    quali:'',
-    Designation:'Library Attender',
-    phn:'',
-    email:''
-  },
+  // {
+  //   id:'32',   
+  //   cover: cover,
+  //   dp: dpf,
+  //   name:'Mrs.T.Amutha',
+  //   quali:'',
+  //   Designation:'Library Attender',
+  //   phn:'',
+  //   email:''
+  // },
   {
     id:'33',   
     cover: cover,
@@ -349,10 +349,22 @@ export const office_admin_staffs = [
     dp: dpm,
     name:'Mr.S.Sembulingam',
     quali:'',
-    Designation:'ffice Asst.(SG)',
+    Designation:'Office Asst.(SG)',
     phn:'',
     email:''
   },
+
+  {
+    id:'46',   
+    cover: cover,
+    dp: dpm,
+    name:'Mr.Dharmalingam',
+    quali:'',
+    Designation:'Sargent',
+    phn:'',
+    email:''
+  },
+
   {
     id:'36',   
     cover: cover,
@@ -423,16 +435,16 @@ export const office_admin_staffs = [
     phn:'',
     email:''
   },
-  {
-    id:'43',   
-    cover: cover,
-    dp: dpm,
-    name:'Mr.M.Nallamani',
-    quali:'',
-    Designation:'Marker(SG)',
-    phn:'',
-    email:''
-  },
+  // {
+  //   id:'43',   
+  //   cover: cover,
+  //   dp: dpm,
+  //   name:'Mr.M.Nallamani',
+  //   quali:'',
+  //   Designation:'Marker(SG)',
+  //   phn:'',
+  //   email:''
+  // },
   {
     id:'44',   
     cover: cover,

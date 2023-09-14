@@ -35,7 +35,7 @@ const Eee_nextgen = () => {
 
 
         <div className="eee_abt">
-          <Underline heading="About the Department" />
+          <Underline heading="Next Gen Lab" />
           <div className="eeetwo-col">
             <p className="eee_dept_content">
             Next Generation Laboratory has been established with the support of 1994 batch Alumni aims to train the students to the need of industry 4.0. The lab is equipped with high speed i7 processor computers along various sensor kits. The Lab is open for all the final year and third year students of all the departments , the list of interested students is collected across the departments. The interested students are interviewed and shortlisted by the Alumni. Initially a group of 50 interested students are trained by the industrial experts. The trained students will train the next batch of students through peer learning techniques and the process will go on.

@@ -14,7 +14,7 @@ const Govern = () => {
     { field: "sno", header: "s.no" },
     { field: "name", header: "name of the members" },
     { field: "desi", header: "designation" },
-    { field: "tenure", header: "tenure" }
+    // { field: "tenure", header: "tenure" }
   ];
   return (
     <div>

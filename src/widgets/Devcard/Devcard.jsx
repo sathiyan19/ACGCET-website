@@ -12,7 +12,9 @@ const Devcard = ({title,desc,link,pic}) => {
     alt="Developer pic"
     width="1920"
     height="2193"
+    oncontextmenu="return false;"
   />
+  <div className="dev_overlay"></div>
   <div class="devcard__content | flow">
     <div class="devcard__content--container | flow">
       <h2 class="devcard__title">{title}</h2>

@@ -46,6 +46,26 @@ import unknown from '../assets/pictures/ece_dept/ece_events/unkown.webp'
 
 import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
 import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
+import aruna from "../assets/pictures/ece_dept/ece_faculties/Ece_Aruna Rani M-1.webp"
+import helena from "../assets/pictures/ece_dept/ece_faculties/Ece_HelenaD-1.webp"
+import rajesh from "../assets/pictures/ece_dept/ece_faculties/Ece_KarpagarajeshG-1.webp"
+import keerthana from "../assets/pictures/ece_dept/ece_faculties/Ece_KeerthanaP-1.webp"
+import mahendran from "../assets/pictures/ece_dept/ece_faculties/Ece_Mahendran C-1.webp"
+import merlin from "../assets/pictures/ece_dept/ece_faculties/Ece_Merlin sheeba X-1.webp"
+import khanna from "../assets/pictures/ece_dept/ece_faculties/Ece_Rajesh kanna B-1.webp"
+import ramya from "../assets/pictures/ece_dept/ece_faculties/Ece_Ramya SP-1.webp"
+import renisha from "../assets/pictures/ece_dept/ece_faculties/Ece_RenishaG-1.webp"
+import sindhu from "../assets/pictures/ece_dept/ece_faculties/Ece_SindujaC-1.webp"
+import sezhina from "../assets/pictures/ece_dept/ece_faculties/sezhina.webp"
+import karthika from "../assets/pictures/ece_dept/ece_faculties/karthika.webp"
+import nandhini from "../assets/pictures/ece_dept/ece_faculties/dhevanandhini.webp"
+
+import akila from "../assets/pictures/ece_dept/ece_faculties/akila.webp"
+import chandrasekar from "../assets/pictures/ece_dept/ece_faculties/chandrasekaran.webp"
+import selvi from "../assets/pictures/ece_dept/ece_faculties/tamilselvi.webp"
+import vasanthi from "../assets/pictures/ece_dept/ece_faculties/vasanthi.webp"
+import karthi from "../assets/pictures/ece_dept/ece_faculties/karthikeyan.webp"
+import sankar from "../assets/pictures/ece_dept/ece_faculties/sankar.webp"
 
 import priya_21 from '../assets/pictures/ece_dept/ece_rankers/priya_21.webp'
 import navin_21 from '../assets/pictures/ece_dept/ece_rankers/navin_21.webp'
@@ -113,12 +133,12 @@ const ece_dept_menu = [
     link: "Student Activities",
     arl: "l",
   },
-  {
-    id: "11",
-    path: "/ecedept/ece-projects",
-    link: "Best Projects",
-    arl: "l",
-  },
+  // {
+  //   id: "11",
+  //   path: "/ecedept/ece-projects",
+  //   link: "Best Projects",
+  //   arl: "l",
+  // },
   {
     id: "12",
     path: "/ecedept/ece-antenna-testing",
@@ -143,7 +163,7 @@ const ece_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: asr,
     name: "Dr.A.Sivanantha Raja",
     Designation: "Head of the Department",
     mailid: "sivanantharaja@gmail.com",
@@ -152,7 +172,7 @@ const ece_fac_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dpm,
+    dp: rajesh,
     name: "Dr.G.Karpagarajesh",
     Designation: "Associate Professor",
     mailid: "gkrajesh1@gmail.com",
@@ -161,7 +181,7 @@ const ece_fac_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpf,
+    dp: renisha,
     name: "Dr.Renisha G",
     Designation: "Associate Professor",
     mailid: "renisha.ece@gmail.com",
@@ -170,7 +190,7 @@ const ece_fac_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpf,
+    dp: helena,
     name: "Dr.D.Helena Margaret",
     Designation: "Associate Professor",
     mailid: "helenaraj@yahoo.com",
@@ -179,7 +199,7 @@ const ece_fac_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dpm,
+    dp: mahendran,
     name: "Prof.C.Mahendran",
     Designation: "Assistant Professor",
     mailid: "gc.mahendran@gmail.com",
@@ -197,7 +217,7 @@ const ece_fac_profiles = [
   {
     id: "7",
     cover: cover,
-    dp: dpf,
+    dp: karthika,
     name: "Dr.C.Karthika Pragadeeswari",
     Designation: "Assistant Professor",
     mailid: "bk.karthika1969@gmail.com",
@@ -206,7 +226,7 @@ const ece_fac_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: dpf,
+    dp: nandhini,
     name: "Dr.G.Dhevanandhini",
     Designation: "Assistant Professor",
     mailid: "dhevakeshav@gmail.com",
@@ -215,7 +235,7 @@ const ece_fac_profiles = [
   {
     id: "9",
     cover: cover,
-    dp: dpm,
+    dp: khanna,
     name: "Dr.B.Rajesh Kanna",
     Designation: "Assistant Professor",
     mailid: "rajeshkanna.ece.au@gmail.com",
@@ -224,7 +244,7 @@ const ece_fac_profiles = [
   {
     id: "10",
     cover: cover,
-    dp: dpf,
+    dp: sezhina,
     name: "P.Sezhina Kanakambika",
     Designation: "Assistant Professor",
     mailid: "sezhina@gmail.com",
@@ -233,7 +253,7 @@ const ece_fac_profiles = [
   {
     id: "11",
     cover: cover,
-    dp: dpf,
+    dp: sindhu,
     name: "C.Sinduja",
     Designation: "Assistant Professor",
     mailid: "sindhu.mzcet@gmail.com",
@@ -242,7 +262,7 @@ const ece_fac_profiles = [
   {
     id: "12",
     cover: cover,
-    dp: dpf,
+    dp: aruna,
     name: "M.Aruna Rani",
     Designation: "Assistant Professor(adhoc)",
     mailid: "arunaselva27@gmail.com",
@@ -251,7 +271,7 @@ const ece_fac_profiles = [
   {
     id: "13",
     cover: cover,
-    dp: dpf,
+    dp: ramya,
     name: "SP.Ramya",
     Designation: "Assistant Professor",
     mailid: "sp.ramya08@gmail.com",
@@ -260,7 +280,7 @@ const ece_fac_profiles = [
   {
     id: "14",
     cover: cover,
-    dp: dpf,
+    dp: keerthana,
     name: "Keerthana.P",
     Designation: "Assistant Professor",
     mailid: "keerthiperumal@gmail.com",
@@ -269,7 +289,7 @@ const ece_fac_profiles = [
   {
     id: "15",
     cover: cover,
-    dp: dpf,
+    dp: merlin,
     name: "Mrs.X.Merlin Sheeba",
     Designation: "Assistant Professor",
     mailid: "renachristina@gmail.com",
@@ -281,7 +301,7 @@ const ece_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: chandrasekar,
     name: "Mr.B.Chandrasekaran",
     Designation: "Electrician",
     mailid: "Chandrasekaran70@gmail.com",
@@ -290,7 +310,7 @@ const ece_sup_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dpf,
+    dp: vasanthi,
     name: "Ms.N.Vasanthi Meena",
     Designation: "Lab Assistant",
     mailid: "vasanthimeena8686@gmail.com",
@@ -299,7 +319,7 @@ const ece_sup_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpf,
+    dp: selvi,
     name: "Ms.D.Tamil Selvi",
     Designation: "Mech.Grade-II",
     mailid: "tamilmd123@gmail.com",
@@ -308,7 +328,7 @@ const ece_sup_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpm,
+    dp: karthi,
     name: "Mr.G.Karthikeyan",
     Designation: "Mech.Grade-II",
     mailid: "gkarthikece1973@gmail.com",
@@ -317,7 +337,7 @@ const ece_sup_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dpm,
+    dp: sankar,
     name: "Mr.K.Sankar",
     Designation: "Cleaner",
     mailid: "",
@@ -326,7 +346,7 @@ const ece_sup_profiles = [
   {
     id: "6",
     cover: cover,
-    dp: dpf,
+    dp: akila,
     name: "Ms.A.Akila",
     Designation: "Lab Assistant",
     mailid: "Akilaanu1999@gmail.com",
@@ -404,6 +424,13 @@ const guide_info=[
     'nppur':"-",
     'msres':"-"
   },
+  {
+    'sno':"4",
+    'name':"Dr. B.Rajeshkanna",
+    'npprod':"-",
+    'nppur':"02",
+    'msres':"-"
+  },
 ];
 
 const scholar_info1=[
@@ -432,23 +459,23 @@ const scholar_info1=[
 const scholar_info2=[
   {
     'sno':"1",
-    'name':"John Samuel Raj",
-    'area':"SS",
+    'name':" K John Samuel Raj",
+    'area':"Identification of Malicious user and its spectral performance Analysis using Improvised Supervised Learning Algorithm in Cognitive Radio Networks",
   },
   {
     'sno':"2",
-    'name':"Amutha",
-    'area':"SS",
+    'name':"S Amutha",
+    'area':"An optimized multichannel slotted detection multiple access protocol  for Wireless Sensor Network (WSN) Applications",
   },
   {
     'sno':"3",
     'name':"Bala Karthick",
-    'area':"SS",
+    'area':"PCOD detection using transfer learning",
   },
   {
     'sno':"4",
-    'name':"Sarathi",
-    'area':"SS",
+    'name':"S Sarathi",
+    'area':"VLSI deisgn - an efficient power consumption built in self test architecture using test pattern technique",
   },
 ];
 
@@ -496,7 +523,7 @@ const ece_siva=[
   },
   {
     'id':"6",
-    'point':"Jayson Keerthy Jayabarathan,  Sivanantha Raja and S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
+    'point':"Jayson Keerthy Jayabarathan, Dr.A.Sivanantha Raja and S. Robinson, “QoS Enhancement in MANET”, Cloud and IoT based Vehicular Ad-Hoc Networks, Scrivener, Wiley Publisher, pp. 325-348, 2021, ISBN: 1119761832, 9781119761839."
   },
 ];
 
@@ -686,7 +713,7 @@ const ece_spec_outcomes = [
 const ece_progs = [
   {
     id: "1",
-    year: "1969",
+    year: "1968",
     period: "4 Years",
     top_head: "B.E.",
     program: "Electronics and Communication Engineering",
@@ -1932,21 +1959,10 @@ const ece_dept_events = [
 
 const ece_events = [
   {
-    id: "5",
-    heading: "",
-    "sub-head":
-      "",
-    pic: unknown,
-    content_1:
-      "",
-    content_2:
-      "",
-  },
-  {
     id: "4",
-    heading: "",
+    heading: "Pragyanz'22",
     "sub-head":
-      "",
+      "20th APR 2022",
     pic: prag22,
     content_1:
       "",
@@ -1954,11 +1970,11 @@ const ece_events = [
       "",
   },
   {
-    id: "3",
-    heading: "",
+    id: "5",
+    heading: "Workshop on modern semi-con devices & PCBAs",
     "sub-head":
-      "",
-    pic: prag21,
+      "19th MAR 2022",
+    pic: unknown,
     content_1:
       "",
     content_2:
@@ -1966,10 +1982,21 @@ const ece_events = [
   },
   {
     id: "2",
-    heading: "Intra-Department Symposium-Stalwartz 2k21",
+    heading: "Stalwartz 2k21",
     "sub-head":
       "13th MAR 2021",
     pic: stal21,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "3",
+    heading: "Pragyanz'19",
+    "sub-head":
+      "18th OCT 2019",
+    pic: prag21,
     content_1:
       "",
     content_2:
@@ -2225,7 +2252,7 @@ const ece_placement_info = [
   {
     id:"1",
     year: "2019-2023 Batch",
-    salary:"8 Lakhs",
+    salary:"8 LPA",
     details: [
       {
         id: "1",
@@ -2238,7 +2265,7 @@ const ece_placement_info = [
   {
     id:"2",
     year: "2018-2022 Batch",
-    salary:"5.6 Lakhs",
+    salary:"5.6 LPA",
     details: [
       {
         id: "1",
@@ -2251,7 +2278,7 @@ const ece_placement_info = [
   {
     id:"3",
     year: "2017-2021 Batch",
-    salary:"5 Lakhs",
+    salary:"5 LPA",
     details: [
       {
         id: "1",

@@ -30,6 +30,7 @@
 }
 .thiran_vis{
     padding:10px;
+    font-size:18px;
 }
 .thiran_cont1,.thiran_cont2{
     display: none;
@@ -45,6 +46,7 @@
     border-radius:20px;
     border-left:3px solid #00134d;
     line-height: 1.5rem;
+    font-size:18px;
 }
 .thiran_obj1 p{
     background-color:#f1f1f1;
@@ -56,7 +58,8 @@
     border-radius:20px;
     border-right:3px solid #00134d;
     line-height: 1.5rem;
-
+    font-size:18px;
+    
 }
 
 .thiran_winners{

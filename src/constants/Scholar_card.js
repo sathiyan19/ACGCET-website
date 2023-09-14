@@ -1,12 +1,12 @@
-import one from '../assets/pictures/schone.png'
-import two from '../assets/pictures/schtwo.png'
-import three from '../assets/pictures/schthree.png'
-import four from '../assets/pictures/schfour.png'
-import five from '../assets/pictures/schfive.png'
-import six from '../assets/pictures/schsix.png'
-import seven from '../assets/pictures/schseven.png'
-import eight from '../assets/pictures/scheight.png'
-import nine from '../assets/pictures/schnine.png'
+import one from '../assets/pictures/scholarships/schone.webp'
+import two from '../assets/pictures/scholarships/schtwo.webp'
+import three from '../assets/pictures/scholarships/schthree.webp'
+import four from '../assets/pictures/scholarships/schfour.webp'
+import five from '../assets/pictures/scholarships/schfive.webp'
+import six from '../assets/pictures/scholarships/schsix.webp'
+import seven from '../assets/pictures/scholarships/schseven.webp'
+import eight from '../assets/pictures/scholarships/scheight.webp'
+import nine from '../assets/pictures/scholarships/schnine.webp'
 
 const Scholar_info=[
     {

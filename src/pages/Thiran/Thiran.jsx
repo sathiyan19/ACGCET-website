@@ -51,6 +51,7 @@ const Thiran = () => {
     <div className="thiran_underline">
     <Underline  heading="Objective"/>
     </div>
+    
     <div className="thiran_obj">
      
        <p>To develop the actions in initiation of the project procedures, planning, execution, regulation and closure as well as the guidance of the project team operations towards achieving their goals with in the set scope and time.

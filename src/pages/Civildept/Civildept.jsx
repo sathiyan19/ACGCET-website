@@ -15,9 +15,10 @@ import {
   civ_mission,
   civ_vision,
   civ_progs,
+  about_info
 } from "../../constants/civil_dept";
 
-import { Radial_menu } from "../../components";
+import { Radial_menu,Listformat } from "../../components";
 import civil from "../../assets/pictures/civilabt.webp";
 
 import { BsFillBuildingsFill } from "react-icons/bs";
@@ -41,13 +42,7 @@ const Civildept = () => {
           <Underline heading="About the Department" />
           <div className="civtwo-col">
             <p className="civ_dept_content">
-              The Department of Civil Engineering was established in the year of
-              1952. The Department is offering UG Courses in Civil
-              Engineering(Both Full time and Time) and PG Courses in Structural
-              Engineering & Environmental Engineering. The Civil Engineering
-              course has a sanctioned intake of 60 in regular and 60 in Part
-              Time Course. The PG courses have a sanctioned intake of 18 in
-              each.
+            The Department of Civil Engineering was established in the year of 1952. The Department is offering UG Courses in Civil Engineering (Both Full time and Time) and PG Courses in Structural Engineering & Environmental Engineering. The Civil Engineering course has a sanctioned intake of 60 in regular and 60 in Part Time Course. The PG courses have a sanctioned intake of 18 in each. Department is filled with professors, researchers, and support staff who are experts in various fields of Civil Engineering. They play a crucial role in teaching students, conducting research, and providing guidance.
             </p>
             <div className="dept_img_holder">
               <img className="dept_img" src={civil} />
@@ -55,18 +50,12 @@ const Civildept = () => {
           </div>
           <div className="civtwo-col1">
             <p className="civ_dept_content">
-              The Department has a team of well qualified, energetic and
-              dedicated faculty members. Out of 13 regular faculty 9 have
-              doctoral degree. 2 Contractual and 2 Adhocfaculty are also serving
-              for the department. The department has well equipped Laboratories
-              with all kinds of Sophisticated Equipments and Instruments,
-              Research Centre, Virtual Class Room, Library and Excellent
-              Computer Centre. Faculty members are actively involved in Research
-              and Consultancy Services. The Department of Civil Engineering is
-              regularly organizing programs like International Conference,
-              National Conference, Workshop, Special Seminar and Symposium etc.
+            The department has well equipped Laboratories with all kinds of Sophisticated Equipments and Instruments, Research Centre, Virtual Classroom, Library and Excellent Computer Centre. These resources support both research and student learning. Faculty members are actively engaging in research activities to advance the field. Faculty members work on consultancy projects related to infrastructure design, testing on construction materials, stability check and third-party inspection etc. Our department has Civil Engineering Association (CEA), Standard club and Institution of Engineer (IEI) that provide opportunities for students to network, gain practical experience, and engage in extracurricular activities related to civil engineering. The Department of Civil Engineering is regularly organizing programs like International Conference, National Conference, Workshop, Special Seminar and Symposium etc. some of the highlights are,
             </p>
           </div>
+          <div className="civ_spec_outcomes">
+                <Listformat points={about_info}/>
+              </div>
         </div>
         {/* <div className="civ_hod">
           <Underline heading="HOD's Message" />

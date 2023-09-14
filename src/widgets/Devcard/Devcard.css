@@ -10,6 +10,16 @@
   --font-text: "Lato", sans-serif;
 }
 
+.dev_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  pointer-events: none; /* Allows interactions to pass through to the image */
+}
+
 /* RESET */
 
 /* Box sizing rules */
