@@ -34,7 +34,7 @@ import raja from '../assets/pictures/eee_dept/eee_faculties/Raja-_1_.webp'
 import suresh from '../assets/pictures/eee_dept/eee_faculties/Suresh-kumar-_1_.webp'
 import mani from '../assets/pictures/eee_dept/eee_faculties/manimaran-_1_.webp'
 import sakthi from '../assets/pictures/eee_dept/eee_faculties/Sakthivel-_1_.webp'
-import priyanka from '../assets/pictures/eee_dept/eee_faculties/20-Priyanka.webp'
+import priyanka from '../assets/pictures/eee_dept/eee_faculties/priyanka.webp'
 
 import AC from '../assets/pictures/eee_dept/eee_labs/AC.webp'
 import DC from '../assets/pictures/eee_dept/eee_labs/DC.webp'
@@ -43,6 +43,9 @@ import drives from '../assets/pictures/eee_dept/eee_labs/drives.webp'
 import electro from '../assets/pictures/eee_dept/eee_labs/electronics.webp'
 import ped from '../assets/pictures/eee_dept/eee_labs/PED.webp'
 import ecl from '../assets/pictures/eee_dept/eee_labs/ECL.webp'
+import vlsi from '../assets/pictures/eee_dept/eee_labs/VLSI.webp'
+import pe from '../assets/pictures/eee_dept/eee_labs/pe.webp'
+import smart from '../assets/pictures/eee_dept/eee_labs/smart.webp'
 
 const eee_dept_menu = [
   {
@@ -1098,7 +1101,7 @@ const eee_labs=[
 {
     'id':'6',
     'heading':'Power Electronics Lab',
-    'pic':placement,
+    'pic':pe,
     'content_1':'Spanning an area of 240 square meters, this lab houses an array of major equipment for research and experimentation. It includes Single Phase Inverter Modules, Single Phase Semi Converters, Single Phase Fully Controlled Converters, 3 Phase Fully Controlled Converters, 3 Phase IGBT based Inverters, SCR-based 1 Phase AC Voltage Controllers, DC-DC Buck, Boost, and Buck/Boost Converters.',
     'content_2':" Additionally, the lab features an FPGA-based Speed Controller for Rectifier-fed DC Motors, as well as Analog and Dual Trace Oscilloscopes for in-depth analysis, enabling advanced research in power electronics and control systems."
 },
@@ -1119,7 +1122,7 @@ const eee_labs=[
 {
 'id':'9',
 'heading':"VLSI and DSP Lab",
-'pic':robotics,
+'pic':vlsi,
 'content_1':'Spanning 80.1 square meters, our VLSI and DSP Lab is a hub for advanced digital system design. Its well-equipped with 19 computers and an array of specialized equipment, including VLSI Trainer kits and Spartan Trainer kits.',
 'content_2':"These tools empower students to delve into VLSI design. The lab also features Spartan 3E Trainer kits for hands-on FPGA development. Additionally, it includes DSP kits like TMS3202407, TMS320C5416, and TMS320V6713, enabling students to explore the intricacies of digital signal processing, ensuring a comprehensive understanding of these vital technologies.",
 },
@@ -1133,7 +1136,7 @@ const eee_labs=[
 {
 'id':'11',
 'heading':'Smart Grid Lab',
-'pic':swayam,
+'pic':smart,
 'content_1':'Our Smart Grid Test Bench is a crucial addition to our facilities, serving both undergraduate students and facilitating advanced research for postgraduates and research associates. The Electrical Power Generating station features 2KVA Alternator sets with three-phase protection relays, ensuring robust overcurrent, Earth fault, overvoltage, and under-voltage protection.',
 'content_2':"The Smart Grid Test Bench features a 3 KW solar inverter with protective measures, a 3.73 KW Induction Generator for fault simulation, a robust Electrical Power Transmission System, an Electrical Grid station with Autotransformer and Isolation transformer, and a Distribution station with transformers and fault protection. It's IoT-enabled with SCADA integration for real-time smart grid research and learning."
 },

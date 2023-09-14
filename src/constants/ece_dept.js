@@ -46,6 +46,26 @@ import unknown from '../assets/pictures/ece_dept/ece_events/unkown.webp'
 
 import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
 import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
+import aruna from "../assets/pictures/ece_dept/ece_faculties/Ece_Aruna Rani M-1.webp"
+import helena from "../assets/pictures/ece_dept/ece_faculties/Ece_HelenaD-1.webp"
+import rajesh from "../assets/pictures/ece_dept/ece_faculties/Ece_KarpagarajeshG-1.webp"
+import keerthana from "../assets/pictures/ece_dept/ece_faculties/Ece_KeerthanaP-1.webp"
+import mahendran from "../assets/pictures/ece_dept/ece_faculties/Ece_Mahendran C-1.webp"
+import merlin from "../assets/pictures/ece_dept/ece_faculties/Ece_Merlin sheeba X-1.webp"
+import khanna from "../assets/pictures/ece_dept/ece_faculties/Ece_Rajesh kanna B-1.webp"
+import ramya from "../assets/pictures/ece_dept/ece_faculties/Ece_Ramya SP-1.webp"
+import renisha from "../assets/pictures/ece_dept/ece_faculties/Ece_RenishaG-1.webp"
+import sindhu from "../assets/pictures/ece_dept/ece_faculties/Ece_SindujaC-1.webp"
+import sezhina from "../assets/pictures/ece_dept/ece_faculties/sezhina.webp"
+import karthika from "../assets/pictures/ece_dept/ece_faculties/karthika.webp"
+import nandhini from "../assets/pictures/ece_dept/ece_faculties/dhevanandhini.webp"
+
+import akila from "../assets/pictures/ece_dept/ece_faculties/akila.webp"
+import chandrasekar from "../assets/pictures/ece_dept/ece_faculties/chandrasekaran.webp"
+import selvi from "../assets/pictures/ece_dept/ece_faculties/tamilselvi.webp"
+import vasanthi from "../assets/pictures/ece_dept/ece_faculties/vasanthi.webp"
+import karthi from "../assets/pictures/ece_dept/ece_faculties/karthikeyan.webp"
+import sankar from "../assets/pictures/ece_dept/ece_faculties/sankar.webp"
 
 import priya_21 from '../assets/pictures/ece_dept/ece_rankers/priya_21.webp'
 import navin_21 from '../assets/pictures/ece_dept/ece_rankers/navin_21.webp'
@@ -143,7 +163,7 @@ const ece_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: asr,
     name: "Dr.A.Sivanantha Raja",
     Designation: "Head of the Department",
     mailid: "sivanantharaja@gmail.com",
@@ -152,7 +172,7 @@ const ece_fac_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dpm,
+    dp: rajesh,
     name: "Dr.G.Karpagarajesh",
     Designation: "Associate Professor",
     mailid: "gkrajesh1@gmail.com",
@@ -161,7 +181,7 @@ const ece_fac_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpf,
+    dp: renisha,
     name: "Dr.Renisha G",
     Designation: "Associate Professor",
     mailid: "renisha.ece@gmail.com",
@@ -170,7 +190,7 @@ const ece_fac_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpf,
+    dp: helena,
     name: "Dr.D.Helena Margaret",
     Designation: "Associate Professor",
     mailid: "helenaraj@yahoo.com",
@@ -179,7 +199,7 @@ const ece_fac_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dpm,
+    dp: mahendran,
     name: "Prof.C.Mahendran",
     Designation: "Assistant Professor",
     mailid: "gc.mahendran@gmail.com",
@@ -197,7 +217,7 @@ const ece_fac_profiles = [
   {
     id: "7",
     cover: cover,
-    dp: dpf,
+    dp: karthika,
     name: "Dr.C.Karthika Pragadeeswari",
     Designation: "Assistant Professor",
     mailid: "bk.karthika1969@gmail.com",
@@ -206,7 +226,7 @@ const ece_fac_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: dpf,
+    dp: nandhini,
     name: "Dr.G.Dhevanandhini",
     Designation: "Assistant Professor",
     mailid: "dhevakeshav@gmail.com",
@@ -215,7 +235,7 @@ const ece_fac_profiles = [
   {
     id: "9",
     cover: cover,
-    dp: dpm,
+    dp: khanna,
     name: "Dr.B.Rajesh Kanna",
     Designation: "Assistant Professor",
     mailid: "rajeshkanna.ece.au@gmail.com",
@@ -224,7 +244,7 @@ const ece_fac_profiles = [
   {
     id: "10",
     cover: cover,
-    dp: dpf,
+    dp: sezhina,
     name: "P.Sezhina Kanakambika",
     Designation: "Assistant Professor",
     mailid: "sezhina@gmail.com",
@@ -233,7 +253,7 @@ const ece_fac_profiles = [
   {
     id: "11",
     cover: cover,
-    dp: dpf,
+    dp: sindhu,
     name: "C.Sinduja",
     Designation: "Assistant Professor",
     mailid: "sindhu.mzcet@gmail.com",
@@ -242,7 +262,7 @@ const ece_fac_profiles = [
   {
     id: "12",
     cover: cover,
-    dp: dpf,
+    dp: aruna,
     name: "M.Aruna Rani",
     Designation: "Assistant Professor(adhoc)",
     mailid: "arunaselva27@gmail.com",
@@ -251,7 +271,7 @@ const ece_fac_profiles = [
   {
     id: "13",
     cover: cover,
-    dp: dpf,
+    dp: ramya,
     name: "SP.Ramya",
     Designation: "Assistant Professor",
     mailid: "sp.ramya08@gmail.com",
@@ -260,7 +280,7 @@ const ece_fac_profiles = [
   {
     id: "14",
     cover: cover,
-    dp: dpf,
+    dp: keerthana,
     name: "Keerthana.P",
     Designation: "Assistant Professor",
     mailid: "keerthiperumal@gmail.com",
@@ -269,7 +289,7 @@ const ece_fac_profiles = [
   {
     id: "15",
     cover: cover,
-    dp: dpf,
+    dp: merlin,
     name: "Mrs.X.Merlin Sheeba",
     Designation: "Assistant Professor",
     mailid: "renachristina@gmail.com",
@@ -281,7 +301,7 @@ const ece_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: chandrasekar,
     name: "Mr.B.Chandrasekaran",
     Designation: "Electrician",
     mailid: "Chandrasekaran70@gmail.com",
@@ -290,7 +310,7 @@ const ece_sup_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dpf,
+    dp: vasanthi,
     name: "Ms.N.Vasanthi Meena",
     Designation: "Lab Assistant",
     mailid: "vasanthimeena8686@gmail.com",
@@ -299,7 +319,7 @@ const ece_sup_profiles = [
   {
     id: "3",
     cover: cover,
-    dp: dpf,
+    dp: selvi,
     name: "Ms.D.Tamil Selvi",
     Designation: "Mech.Grade-II",
     mailid: "tamilmd123@gmail.com",
@@ -308,7 +328,7 @@ const ece_sup_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpm,
+    dp: karthi,
     name: "Mr.G.Karthikeyan",
     Designation: "Mech.Grade-II",
     mailid: "gkarthikece1973@gmail.com",
@@ -317,7 +337,7 @@ const ece_sup_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dpm,
+    dp: sankar,
     name: "Mr.K.Sankar",
     Designation: "Cleaner",
     mailid: "",
@@ -326,7 +346,7 @@ const ece_sup_profiles = [
   {
     id: "6",
     cover: cover,
-    dp: dpf,
+    dp: akila,
     name: "Ms.A.Akila",
     Designation: "Lab Assistant",
     mailid: "Akilaanu1999@gmail.com",

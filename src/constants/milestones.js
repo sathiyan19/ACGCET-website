@@ -1,19 +1,19 @@
 export const milestones=[
-    {
-        'year':'2023',
-        'achieve':''
-    },
+    // {
+    //     'year':'2023',
+    //     'achieve':''
+    // },
     {
         'year':'2022',
         'achieve':'Centres of excellence in Antenna testing & Electronics test engineering worth 1 crore.'
     },
     {
         'year':'2021',
-        'achieve':''
+        'achieve':'NBA accredition of 3 programs namely B.E Civil Engineering, B.E Mechanical Engineering and B.E Electrical and Electronics Engineering'
     },
     {
         'year':'2020',
-        'achieve':'Accredited by NACC with B++ Grade.'
+        'achieve':'Accredited by NAAC with B++ Grade.'
     },
     {
         'year':'2019',
