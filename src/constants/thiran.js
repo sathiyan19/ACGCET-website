@@ -1,7 +1,7 @@
 // Thiran_heroimage_carousalinfo
 
-import image1 from "../assets/pictures/thiran_grp.JPG";
-import image2 from "../assets/pictures/thiran_grp1.jpg";
+import image1 from "../assets/pictures/thiran_grp.webp";
+import image2 from "../assets/pictures/thiran_grp1.webp";
 import image3 from "../assets/pictures/thiran_grp3.webp";
 
 
