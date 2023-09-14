@@ -2,16 +2,26 @@ import React from "react";
 import "./Life.css";
 
 import { Underline } from "../../widgets";
-
-import karaikudi_palace from "../../assets/pictures/Chettinad-new.webp";
-import hostel_life from "../../assets/pictures/hostel_life.webp";
-import crossyear from "../../assets/pictures/crossyear.webp";
-import library from "../../assets/pictures/library.webp";
-import iv from "../../assets/pictures/iv.webp";
-import sports from "../../assets/pictures/sports.webp";
-import technical from "../../assets/pictures/technical.webp";
-import culture_pic from "../../assets/pictures/culture_pic.webp";
 import { Link } from "react-router-dom";
+
+// import karaikudi_palace from "../../assets/pictures/Chettinad-new.webp";
+// import hostel_life from "../../assets/pictures/hostel_life.webp";
+// import crossyear from "../../assets/pictures/crossyear.webp";
+// import library from "../../assets/pictures/library.webp";
+// import iv from "../../assets/pictures/iv.webp";
+// import sports from "../../assets/pictures/sports.webp";
+// import technical from "../../assets/pictures/technical.webp";
+// import culture_pic from "../../assets/pictures/culture_pic.webp";
+
+const karaikudi_palace="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/Chettinad-new.webp"
+const hostel_life="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/hostel_life.webp"
+const crossyear="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/crossyear.webp"
+const library="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/library.webp"
+const iv="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/iv.webp"
+const sports="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/sports.webp"
+const technical="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/technical.webp"
+const culture_pic="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/culture_pic.webp"
+const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
 
 const Life = () => {
   return (
@@ -54,11 +64,11 @@ const Life = () => {
               personal enrichment, making it an appealing choice for students
               seeking a distinctive and rewarding academic journey.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_1" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -81,11 +91,11 @@ const Life = () => {
               disciplines converge to broaden their horizons, fostering a
               culture of inquisitiveness, education, and personal advancement.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_2" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -118,17 +128,17 @@ const Life = () => {
             <div class="life_crd_writing change_cross_text_900 life_text_4">
             The existing senior-junior interaction in our college is characterized by a harmonious blend of mentorship and camaraderie. Seniors warmly welcome juniors, offering guidance, support, and friendship. This atmosphere of trust and respect encourages open communication, making it easy for juniors to seek advice and share their concerns. Seniors, in turn, share their experiences and insights, creating a strong support network. This interaction extends beyond academics, with seniors and juniors often collaborating on projects, participating in extracurricular activities, and organizing events together. The result is a college community that thrives on mutual respect, cooperation, and a shared commitment to personal and academic growth.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_4" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div class="life_crd life_item3">
           <div class="life_head_image">
-            <img class="life_image" src={library} />
+            <img class="life_image" src={gym} />
           </div>
           <div className="life_crd_content">
             <div className="life_head life_text_3">Build yourself in Gym!</div>
@@ -142,11 +152,11 @@ const Life = () => {
               a valuable resource, promoting not only physical health but also a
               balanced, holistic approach to student life.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_3" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -166,11 +176,11 @@ const Life = () => {
               a valuable resource, promoting not only physical health but also a
               balanced, holistic approach to student life.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_5" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -218,11 +228,11 @@ const Life = () => {
               go beyond the classroom. It's a time of self-discovery, cultural
               exchange, and memories that will last a lifetime.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_6" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -243,11 +253,11 @@ const Life = () => {
               recreation, sports enrich the college experience, providing
               holistic development and valuable life lessons.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_7" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -277,11 +287,11 @@ Furthermore, the college frequently hosts a range of workshops, seminars, and te
 
 In addition to advanced facilities, our college boasts a team of tech-savvy faculty members and dedicated technical support teams. They ensure that students have a seamless learning experience, providing guidance, troubleshooting assistance, and mentorship.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_8" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -305,11 +315,11 @@ In addition to advanced facilities, our college boasts a team of tech-savvy facu
               cultural gatherings are a source of entertainment, education, and
               community-building, enriching the college experience.
             </div>
-            <div className="life_read_more">
+            {/* <div className="life_read_more">
               <Link className="life_read_link read_link_9" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 

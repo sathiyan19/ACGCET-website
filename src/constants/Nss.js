@@ -1,8 +1,8 @@
 // Nss_heroimage_carousalinfo
-import image1 from "../assets/pictures/nss/nsshero1.webp";
-import image2 from "../assets/pictures/nss/nsshero2.webp";
-import image3 from "../assets/pictures/nss/nsshero3.webp";
-import image4 from "../assets/pictures/nss/nsshero4.webp";
+// import image1 from "../assets/pictures/nss/nsshero1.webp";
+// import image2 from "../assets/pictures/nss/nsshero2.webp";
+// import image3 from "../assets/pictures/nss/nsshero3.webp";
+// import image4 from "../assets/pictures/nss/nsshero4.webp";
 
 // profile_info
 import s1cover from "../assets/pictures/nss/s1cover.webp";
@@ -22,6 +22,10 @@ import gal5 from "../assets/pictures/nss/gal5.webp";
 import gal6 from "../assets/pictures/nss/gal6.webp";
 import gal7 from "../assets/pictures/nss/gal7.webp";
 
+const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/nss/nsshero1.webp"
+const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/nss/nsshero2.webp"
+const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/nss/nsshero3.webp"
+const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/nss/nsshero4.webp"
 
 
 const Nss_heroimage_carousalinfo = {

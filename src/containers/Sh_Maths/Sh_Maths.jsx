@@ -2,18 +2,20 @@ import React from 'react'
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
 
 import { Radial_menu } from "../../components";
-import maths from "../../assets/pictures/maths.webp";
+// import maths from "../../assets/pictures/maths.webp";
 
 import { Sh_dept_fmenu,mat_vision,mat_mission } from '../../constants/Sh_dept_menu';
 import './Sh_Maths.css'
-import { FaMicrochip } from "react-icons/fa6";
+import { VscSymbolOperator } from "react-icons/vsc";
+
+const maths="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/maths.webp"
 
 const Sh_Maths = () => {
   return (
     <div>
        <section className="shmatdark">
         <div className="shmatdept_float_menu">
-          <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Sh_dept_fmenu} />
         </div>
         <Radial_menu menu_links={Sh_dept_fmenu} />
         <div className="shmat_abt_area">
