@@ -13,6 +13,34 @@ import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
 
+import leela from '../assets/pictures/civil_dept/civil_faculties/leela.webp'
+import subramani from '../assets/pictures/civil_dept/civil_faculties/Civil C.Subramanian-1.webp'
+import vijaya from '../assets/pictures/civil_dept/civil_faculties/Civil C.Vijayaprabha-1.webp'
+import vinoth from '../assets/pictures/civil_dept/civil_faculties/Civil R.Vinothkumar-1.webp'
+import kavitha from '../assets/pictures/civil_dept/civil_faculties/Civil S.M.Kavitha-1.webp'
+import sumathy from '../assets/pictures/civil_dept/civil_faculties/Civil SR Sumathy-1.webp'
+import venkat from '../assets/pictures/civil_dept/civil_faculties/Civil Venkatesh Baskaran-1.webp'
+import mani from '../assets/pictures/civil_dept/civil_faculties/Prof.R.MANIGANDAN.webp'
+import tamizh from '../assets/pictures/civil_dept/civil_faculties/Civil Senthamizhan (1)-1.webp'
+
+import raja from '../assets/pictures/civil_dept/civil_faculties/civil_rajasekar.webp'
+import kathir from '../assets/pictures/civil_dept/civil_faculties/civil_kathiresan.webp'
+import thyagu from '../assets/pictures/civil_dept/civil_faculties/civil_thyagarajan.webp'
+import selva from '../assets/pictures/civil_dept/civil_faculties/civil_selvaraj.webp'
+import muthu from '../assets/pictures/civil_dept/civil_faculties/civil_muthuramalingam.webp'
+import murugesan from '../assets/pictures/civil_dept/civil_faculties/civil_murugesan.webp'
+import veenus from '../assets/pictures/civil_dept/civil_faculties/civil_veenusrani.webp'
+
+import computer from '../assets/pictures/civil_dept/civil_labs/Computer Lab.webp'
+import concrete from '../assets/pictures/civil_dept/civil_labs/Concrete lab.webp'
+import corrosion from '../assets/pictures/civil_dept/civil_labs/Corrosion Lab.webp'
+import ug from '../assets/pictures/civil_dept/civil_labs/Environmental Engg Lab.webp'
+import pg from '../assets/pictures/civil_dept/civil_labs/PG Environmental Lab.webp'
+import sm from '../assets/pictures/civil_dept/civil_labs/SM Lab.webp'
+import soil from '../assets/pictures/civil_dept/civil_labs/Soil Lab.webp'
+import structure from '../assets/pictures/civil_dept/civil_labs/Structural Lab.webp'
+import survey from '../assets/pictures/civil_dept/civil_labs/Survey Lab.webp'
+
 const civ_dept_menu = [
   {
     id: "1",
@@ -40,7 +68,7 @@ const civ_dept_menu = [
   },
   {
     id: "5",
-    path: "#",
+    path: "/civildept/civil-research",
     link: "Research and Publications",
     arl:'l'
   },
@@ -76,7 +104,7 @@ const civ_dept_menu = [
   },
   {
     id: "11",
-    path: "#",
+    path: "/civildept/civil-internal-revenue",
     link: "Internal Revenue Generation",
     arl:'l'
   },
@@ -88,65 +116,75 @@ const civ_dept_menu = [
   },
 ];
 
+const about_info=[
+  {
+    'id':"1",
+    'point':"Recognized Research Centre of Anna University, Chennai for pursuing Ph.D. in Civil Engineering",
+  },
+  {
+    'id':"2",
+    'point':"There are 11 part time PhD scholars and 2 full time PhD scholars, pursuing their doctoral degree in this department.",
+  },
+  {
+    'id':"3",
+    'point':"The department is regularly conducting GATE coaching classes and special lectures from industrial experts for increasing the employability skills and for easy access to get PG admission.",
+  },
+  {
+    'id':"4",
+    'point':"The department is earning  10 to 15 Lakhs regularly per annum as consultancy revenue under Internal Revenue Generation.",
+  },
+  {
+    'id':"5",
+    'point':"The students are regularly undertaking projects related to the use of energy efficient materials in building construction and reducing pollution related impacts on the environment in order to promote green energy principles and clean environment.",
+  },
+  {
+    'id':"6",
+    'point':"The research works of the faculty and students are being published in reputed journals. The faculty members are publishing about 10 research papers every year.",
+  },
+  {
+    'id':"7",
+    'point':"Students are encouraged to undergo Internship under fast-track scheme to improve their placement prospects.",
+  },
+  {
+    'id':"8",
+    'point':"Soft skill training programmes offered by reputed professionals are arranged to enhance their communication and general aptitude skills.",
+  },
+  {
+    'id':"9",
+    'point':"Wi-Fi enabled internet facilities are available in the department.",
+  },
+  {
+    'id':"10",
+    'point':"Tamil Nadu government has been offering PG Assistantship Rs6000 per month for non-GATE students in order to increase the enrolment of PG students.",
+  },
+  {
+    'id':"11",
+    'point':"The students are allowed to do the online courses as per their field of interest through SWAYAM-NPTEL platform instead of professional and Open Electives.",
+  },
+];
 const civ_fac_profiles = [
-  {
-    id: "1",
-    cover: cover,
-    dp: dpf,
-    name: "Dr.A.Leelavathi",
-    Designation: "Assistant Professor",
-    mailid: "leelaaccet2007@gmail.com",
-    pdf: "https://drive.google.com/file/d/19E3dQNGUdMENQp4p6EyeA2GpwlD1rJAW/view?usp=drive_link",
-  },
-  {
-    id: "2",
-    cover: cover,
-    dp: dpm,
-    name: "Senthamizhan M",
-    Designation: "Assistant Professor(Consolidated Pay)",
-    mailid: "tamizhanirtt@gmail.com",
-    pdf: "https://drive.google.com/file/d/1sGVV5DEdPB0yVdtoquz4VQ6idq8l3JEC/view?usp=drive_link",
-  },
-  {
-    id: "3",
-    cover: cover,
-    dp: dpm,
-    name: "R.Manigandan",
-    Designation: "Assistant Professor(Adhoc)",
-    mailid: "manigandanabm@gmail.com",
-    pdf: "https://drive.google.com/file/d/1F3pYXr90rYHYqkrTK7EJJ8ucdWTMYDxu/view?usp=drive_link",
-  },
-  {
-    id: "4",
-    cover: cover,
-    dp: dpm,
-    name: "R.Vinothkumar",
-    Designation: "Assistant Professor(Adhoc)",
-    mailid: "vinothrvkce@gmail.com",
-    pdf: "https://drive.google.com/file/d/1aM6O4cKxCGbSstY4XhUOoQtoqGfuhOu_/view?usp=drive_link",
-  },
-  {
-    id: "5",
-    cover: cover,
-    dp: dpm,
-    name: "Venkatesh B",
-    Designation: "Assistant Professor",
-    mailid: "venkatesh@gcetly.ac.in",
-    pdf: "https://drive.google.com/file/d/1mepcWTb4EsJf7fFTMs7S4QBf1t9yDJ-f/view?usp=drive_link",
-  },
   {
     id: "6",
     cover: cover,
-    dp: dpm,
+    dp: subramani,
     name: "Dr.C.Subramanian",
     Designation: "Professor",
     mailid: "csk285@gmail.com",
     pdf: "https://drive.google.com/file/d/1reOgq2O5xQzEsPK_cgvN6UhCgrSYKMYt/view?usp=drive_link",
   },
   {
+    id: "9",
+    cover: cover,
+    dp: sumathy,
+    name: "Dr SR Sumathy",
+    Designation: "Associate Professor",
+    mailid: "srsumathy@accetedu.in",
+    pdf: "https://drive.google.com/file/d/1T6Jiwq-TywClE-EZ1gr0UwG2F3ck9ks-/view?usp=drive_link",
+  },
+  {
     id: "7",
     cover: cover,
-    dp: dpm,
+    dp: vijaya,
     name: "Dr.C.Vijayaprabha",
     Designation: "Associate Professor",
     mailid: "vijayaprabha.struct@gmail.com",
@@ -155,27 +193,63 @@ const civ_fac_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: dpf,
+    dp: kavitha,
     name: "Dr.S.M.Kavitha",
     Designation: "Associate Professor",
     mailid: "smkavitha@accetedu.in",
     pdf: "https://drive.google.com/file/d/1jZ2CmroavW3pQ7e75-GZM7VYaYiacLdt/view?usp=drive_link",
   },
   {
-    id: "9",
+    id: "1",
     cover: cover,
-    dp: dpf,
-    name: "Dr SR Sumathy",
-    Designation: "Associate Professor",
-    mailid: "srsumathy@accetedu.in",
-    pdf: "https://drive.google.com/file/d/1T6Jiwq-TywClE-EZ1gr0UwG2F3ck9ks-/view?usp=drive_link",
+    dp: leela,
+    name: "Dr.A.Leelavathi",
+    Designation: "Assistant Professor",
+    mailid: "leelaaccet2007@gmail.com",
+    pdf: "https://drive.google.com/file/d/19E3dQNGUdMENQp4p6EyeA2GpwlD1rJAW/view?usp=drive_link",
+  },
+  {
+    id: "2",
+    cover: cover,
+    dp: tamizh,
+    name: "Senthamizhan M",
+    Designation: "Assistant Professor(Consolidated Pay)",
+    mailid: "tamizhanirtt@gmail.com",
+    pdf: "https://drive.google.com/file/d/1sGVV5DEdPB0yVdtoquz4VQ6idq8l3JEC/view?usp=drive_link",
+  },
+  {
+    id: "3",
+    cover: cover,
+    dp: mani,
+    name: "R.Manigandan",
+    Designation: "Assistant Professor(Adhoc)",
+    mailid: "manigandanabm@gmail.com",
+    pdf: "https://drive.google.com/file/d/1F3pYXr90rYHYqkrTK7EJJ8ucdWTMYDxu/view?usp=drive_link",
+  },
+  {
+    id: "4",
+    cover: cover,
+    dp: vinoth,
+    name: "R.Vinothkumar",
+    Designation: "Assistant Professor(Adhoc)",
+    mailid: "vinothrvkce@gmail.com",
+    pdf: "https://drive.google.com/file/d/1aM6O4cKxCGbSstY4XhUOoQtoqGfuhOu_/view?usp=drive_link",
+  },
+  {
+    id: "5",
+    cover: cover,
+    dp: venkat,
+    name: "Venkatesh B",
+    Designation: "Assistant Professor",
+    mailid: "venkatesh@gcetly.ac.in",
+    pdf: "https://drive.google.com/file/d/1mepcWTb4EsJf7fFTMs7S4QBf1t9yDJ-f/view?usp=drive_link",
   },
 ];
 const civ_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dpm,
+    dp: raja,
     name: "R.Rajasekar",
     Designation: "Mechanic Grade II",
     mailid: "rajasekaraccet15@gmail.com",
@@ -184,7 +258,7 @@ const civ_sup_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: dpm,
+    dp: kathir,
     name: "E.Kathiresan",
     Designation: "Lab Assistantr",
     mailid: "kathiresane2777@gmail.com",
@@ -202,7 +276,7 @@ const civ_sup_profiles = [
   {
     id: "4",
     cover: cover,
-    dp: dpm,
+    dp: thyagu,
     name: "K.Thiyagarajan",
     Designation: "Cleaner",
     mailid: "",
@@ -211,7 +285,7 @@ const civ_sup_profiles = [
   {
     id: "5",
     cover: cover,
-    dp: dpm,
+    dp: selva,
     name: "C.Selvaraj",
     Designation: "Lab Assistant(spl-gr)",
     mailid: "selvarajc1971@gmail.com",
@@ -220,7 +294,7 @@ const civ_sup_profiles = [
   {
     id: "6",
     cover: cover,
-    dp: dpm,
+    dp: muthu,
     name: "C.Muthuramalingam",
     Designation: "Lab Assistant(spl-gr)",
     mailid: "",
@@ -229,7 +303,7 @@ const civ_sup_profiles = [
   {
     id: "7",
     cover: cover,
-    dp: dpm,
+    dp: murugesan,
     name: "P.K.Murugesan",
     Designation: "Lab Assistant",
     mailid: "easank.81@gmail.com",
@@ -238,7 +312,7 @@ const civ_sup_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: dpf,
+    dp: veenus,
     name: "J.Veenus Rani",
     Designation: "Junior Draughting Officer",
     mailid: "veenusrani22@gmail.com",
@@ -384,6 +458,27 @@ const civ_spec_outcomes = [
   },
 ];
 
+const internal=[
+  {
+    id:"1",
+    top_head:"2021-2022",
+    program:"Consultancy Details",
+    pdf:"https://drive.google.com/file/d/1VtwOzFIDpM0B2llsMr5TsE2zikdUrxek/view?usp=drive_link",
+  },
+  {
+    id:"2",
+    top_head:"2022-2023",
+    program:"Consultancy Details",
+    pdf:"https://drive.google.com/file/d/1ukat9JsKvhqON9ccTeQeoIAw0fq6-v3n/view?usp=drive_link",
+  },
+  {
+    id:"3",
+    top_head:"2022-2023",
+    program:"Testing Details",
+    pdf:"https://drive.google.com/file/d/19uZA_DKs0auUcs3GpoqR3rKRfQM6KHxM/view?usp=drive_link",
+  },
+]
+
 const civ_progs = [
   {
     id: "1",
@@ -421,48 +516,67 @@ const civ_progs = [
 const civ_labs=[
   {
       'id':'1',
-      'heading':"One Week Training on Robotics",
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':robotics,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'heading':"Soil Mechanics Laboratory",
+      'pic':soil,
+      'content_1':'The Soil Mechanics Laboratory, occupying 120 sq.m., is well-equipped for a wide range of soil tests. It conducts tests on various sample sizes, covering shear strength, consolidation, CBR, grain size distribution, unconfined compressive strength, and compaction. Students learn index and engineering properties determination techniques. Understanding soil properties and safe bearing capacity is essential for construction design. ',
+      'content_2':"The lab also offers consultancy services to government and private organizations, generating college revenue. Clients include PWD, TNEB, RDPR Department, Highways Department, Indian Railways, and more. Key equipment includes CBR apparatus, tri-axial compression test setup, electrical oven, direct shear test apparatus, sieve shaker, and soil permeability test tools."
   },
   {
       'id':'2',
-      'heading':'Placement Activities',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':placement,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'heading':'Concrete Laboratory',
+      'pic':concrete,
+      'content_1':'The Concrete Lab within the Civil Department encompasses an area of 159m², inclusive of a dedicated laboratory incharge cabin. This multifaceted facility caters to the practical laboratory requirements of undergraduate students while also serving as a hub for nondestructive testing activities in collaboration with the Civil Engineering Department.',
+      'content_2':"Among its significant assets are the 200T Compression Testing Machine, an accelerated curing tank, a rebound hammer, ultra-sonic pulse velocity testing apparatus, bitumen testing instrumentation, and a comprehensive suite of workability measuring equipment. These resources empower students to engage in hands-on learning and provide a foundation for conducting consultancy projects. The lab actively participates in consultancy endeavors spanning mix design, structural analysis, and stability assessments for existing buildings and historical monuments, contributing significantly to research and industry support."
   },
   {
       'id':'3',
-      'heading':'Foreign Training at University',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':swayam,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'heading':'Computer Laboratory',
+      'pic':computer,
+      'content_1':'The Civil Engineering Department houses a robust computer lab, providing students with cutting-edge resources for their academic and practical needs. The CAD lab, equipped with the latest AUTOCAD software, offers in-depth training in 2D and 3D drafting for Civil Engineering drawings, enhancing students skills in analysis, design, and drafting, crucial for their field.',
+      'content_2':"With over 30 computers featuring Core-i7, Core-i3, and Pentium IV configurations, the lab ensures a seamless learning experience. Software like STAADPRO, SAP 2000, ETABS, AUTOCAD 2016, and RCDC detailing software supports structural analysis and design consultancy. High-speed internet connectivity (100MBPS), Smart Boards, printers, copiers, projectors, and UPS systems further facilitate a comprehensive teaching and learning environment."
   },
   {
       'id':'4',
-      'heading':'Hi',
-      'sub-head':'Some representative placeholder content for the second slide of the carousel.',
-      'pic':swayam,
-      'content_1':'Our Commitment as a Centre of Engineering Education is to impart Technical Knowledge par excellence, motivate the learners in Research, evolve result-oriented, innovative techniques in Engineering, provide necessary career guidance, and train our learners'+
-                  'in leadership qualities so as to achieve better productivity and prosperity for our country.',
-      'content_2':"ACGCET, a leader in higher education in engineering and technology, is committed to excellence through the delivery of outstanding undergraduate and graduate education that remains current and responsive to the diverse needs of those it serves. The institution’s"+
-      "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
-      "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
+      'heading':'Strength of Materials Laboratory',
+      'pic':sm,
+      'content_1':'The Strength of Materials Lab is a versatile facility catering to extensive material testing under varying loading conditions, such as gradual, sudden, cyclic, impact, axial, and tangential loading. It encompasses tests for bending, tension, compression, shear, and torsion on materials like steel, concrete, and wood.',
+      'content_2':"The lab boasts a comprehensive set of equipment, including UTM machines with 30T and 100T capacities, torsion testing apparatus, Izod and Charpy impact testing machines, wood testing equipment, hardness and spring testing machines, a 16 Channel Data Logger, Electronic Digital Extensometer, Screw Driven 10T UTM, extensometers, and dial gauges. These resources enable thorough material analysis, ensuring students gain practical insights into material behavior and properties."
   },
+  {
+    'id':'5',
+    'heading':"Survey Laboratory",
+    'pic':survey,
+    'content_1':'In the Surveying Laboratory, students gain valuable experience in collecting and processing field data, honing their skills in landscape measurement and analysis. This dynamic learning environment provides access to a wide range of surveying instruments, both traditional and modern.',
+    'content_2':" These instruments include Total Stations, Digital Theodolites, Digital Levels, Digital Planimeters, Theodolites, Dumpy Levels, Leveling Staffs, Prismatic Compasses, Plane Tables, Arrows, Tapes, Ranging Rods, and Chains. Through practical hands-on exercises, students develop proficiency in surveying techniques, equipping them for the practical challenges of land measurement and geospatial analysis in the field."
+},
+{
+    'id':'6',
+    'heading':'UG-Environmental Engineering Laboratory',
+    'pic':ug,
+    'content_1':'The Environmental Engineering Laboratory (UG) occupies 84.8 sq.m. and offers comprehensive facilities for water and wastewater testing. It is a hub for cutting-edge water treatment technologies, renewable energy-based processes, emerging treatment methods, site restoration, and water quality solutions.',
+    'content_2':"The lab conducts tests on various sample sizes, encompassing parameters like hardness, chlorides, alkalinity, acidity, sulfates, total solids, total dissolved solids, total suspended solids, pH, turbidity, and dissolved oxygen. Key equipment includes a UV spectrophotometer, COD digester, BOD incubator, Kjeldahl apparatus, Muffle Furnace, and a double distillation unit, supporting a wide range of environmental testing and research activities."
+},
+{
+    'id':'7',
+    'heading':'PG-Environmental Engineering Laboratory',
+    'pic':pg,
+    'content_1':'Spanning 71.3 sq.m., the Environmental Engineering Laboratory (UG) is well-equipped for a wide array of water and wastewater tests. It facilitates chemical, bacteriological, and radiological analyses for various sample types, including drinking water, surface water, wastewater, sediment, air, soil, and hazardous waste.',
+    'content_2':"Major equipment comprises an Atomic Absorption Spectrophotometer, Rotary Shaker, Flue Gas Analyzer, Digital Bomb Calorimeter, Flame Photometer, Laminar Flow Chamber, High Volume Sampler, and Ion Chromatography equipment, enabling comprehensive environmental analysis and research activities."
+},
+{
+    'id':'8',
+    'heading':'Heavy Testing Laboratory',
+    'pic':structure,
+    'content_1':'The Heavy Testing Lab is a cutting-edge research facility primarily used by research scholars and postgraduate students. It features high-precision equipment with computer interface capabilities. Notable equipment includes a hollow block machine for concrete block production, a shake table for dynamic studies and seismic simulations,',
+    'content_2':"a 16-channel data logger for simultaneous deflection measurements, and a pile testing system for evaluating model piles. Additional resources comprise a Servo Hydraulic UTM (25T capacity), loading frames (50T and 100T capacity), a 5T crane, LVDTs, dial gauges, power packs with hydraulic jacks, and an RC Reaction cell for structural testing."
+},
+{
+  'id':'9',
+  'heading':'Corrosion Laboratory',
+  'pic':corrosion,
+  'content_1':'The Corrosion Engineering Lab focuses on the prevention and control of corrosion damage through scientific and artistic approaches. It conducts corrosion tests to establish mechanisms, define material corrosion resistance, estimate equipment service life, develop corrosion protection processes, and identify critical potential values in various environments.',
+  'content_2':"This lab conducts experiments on the corrosion and durability performance of concrete, steel, metals, and alloys under varying conditions. It plays a crucial role in teaching, research, and consultancy activities. Key equipment includes Rapid Chloride Penetration Test (RCPT) Apparatus, Linear Polarization Resistivity Meter, Electro Chemical Impedance Analyzer, Basic Vibration Testing Rig, and a Screw Driven UTM, enabling comprehensive corrosion-related studies."
+},
 ]
 
 const civ_dept_events=[
@@ -618,6 +732,346 @@ const civ_indus_slide=[
      slide1,slide2,slide3
 ]
 
+const scholar_info1=[
+  {
+    'sno':"1",
+    'name':"M Sasi Rekha",
+    'yr':"July 2018",
+    'title':"Experimental Investigation of fly ash and GGBS based Geopolymer concrete cured at ambient temperature",
+    'status':"Completed",
+  },
+  {
+    'sno':"2",
+    'name':"R Jagadheeswari",
+    'yr':"July 2018",
+    'title':"Experimental investigation of using aluminium based binder compound to make carbon negative concrete",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"3",
+    'name':"G.Elavarasi",
+    'yr':"July 2022",
+    'title':"Experimental investigation on Pervious Concrete",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"4",
+    'name':"S.Vigneshkannan",
+    'yr':"July 2021",
+    'title':"Experimental and analytical investigation of flexural behaviour of reinforced concrete beam with Calatropis gigantean fibre composite as shear reinforcement",
+    'status':"Ongoing",
+  },
+];
+const scholar_info2=[
+  {
+    'sno':"1",
+    'name':"T.Chockalingam",
+    'yr':"July 2018",
+    'title':"Investigation on Structural Behavior of Pervious Concrete Slabs - A Sustainable Material for Pavements",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"2",
+    'name':"V.Ragavan",
+    'yr':"July 2018",
+    'title':"Development of engineered high-performance concrete incorporated with Polyvinyl Alcohol Fibre (PVA)",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"3",
+    'name':"P.Janaki",
+    'yr':"2019",
+    'title':"Evaluation of Geopolymer coatings for corrosion protection of steel reinforcement in concrete",
+    'status':"Completed",
+  },
+  {
+    'sno':"4",
+    'name':"R.Thenmozhi",
+    'yr':"July 2018",
+    'title':"Experimental investigation on performance evaluation of coatings in geopolymer concrete",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"5",
+    'name':"V.Ramya",
+    'yr':"July 2019",
+    'title':"Experimental Study on the Behaviour of Flexible Concrete Incorporating AR Glass Fiber And Industrial By-Product",
+    'status':"Ongoing",
+  },
+];
+const scholar_info3=[
+  {
+    'sno':"1",
+    'name':"Vasu Nithyanandam N",
+    'yr':"2022",
+    'title':"Use of demolished concrete waste and coconut Shells as coarse aggregate for bacterial Concrete",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"2",
+    'name':"Muruganantham R",
+    'yr':"2022",
+    'title':"Response of wall panels Under blast loading",
+    'status':"Ongoing",
+  },
+];
+const scholar_info4=[
+  {
+    'sno':"1",
+    'name':"S.Nagalakshmi",
+    'yr':"July 2018",
+    'title':"Performance Evaluation of Membrane Bio reactor in treating Domestic Wastewater",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"2",
+    'name':"T.Swathi",
+    'yr':"July 2018",
+    'title':"Experimental studies on modified upflow anaerobic sludge blanket reactor in treating wastewater",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"3",
+    'name':"C.Nivedhitha",
+    'yr':"Jul 2018",
+    'title':"Removal of Toxic Elements from Wastewater by Adsorption",
+    'status':"Ongoing",
+  },
+];
+const scholar_info5=[
+  {
+    'sno':"1",
+    'name':"R.Vivekanandan",
+    'yr':"Jan 2020",
+    'title':"Carbon fibre as shear reinforcement in RC beams",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"2",
+    'name':"A.S.Sathishkumar",
+    'yr':"Jan 2020",
+    'title':"Effect of Kenaf Fiber in Bacterial Concrete",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"3",
+    'name':"M.Banupriya",
+    'yr':"Jan 2021",
+    'title':"Cold Formed Steel beams with Concrete infills",
+    'status':"Ongoing",
+  },
+  {
+    'sno':"4",
+    'name':"R.L.Lija",
+    'yr':"Jan 2017",
+    'title':"Self Curing concrete with Super Absorbent polymers",
+    'status':"Ongoing",
+  },
+];
+const civ_research_info=[
+  {
+    'sno':"1",
+    'author':"Senthamizhan M, Balamurugan.P, Shunmugapriya K",
+    'title':"Morphometric analysis of thadayampatti watershed, Madurai district, Tamilnadu, India",
+    'name':"International journal of engineering development and research ",
+    'yr':"July-16",
+    'vol':"Volume:4 ; Issue:3",
+    'fac':"7.37",
+    'Doi':"https://www.ijedr.org/papers/IJEDR1603018.pdf"
+  },
+  {
+    'sno':"2",
+    'author':"Gowtham.B , Pauline.S",
+    'title':"Performance Evaluation studies of Fenton Oxidation on Different Dyes and its Optimization of Experimental Parameters",
+    'name':"Journal of Materials and Environmental Sciences ",
+    'yr':"Jan-20",
+    'vol':"Volume 11, ISsue :2",
+    'fac':"0.75",
+    'Doi':"https://www.jmaterenvironsci.com/Document/vol11/vol11_N2/JMES-2020-11-20-Gowtham.pdf"
+  },
+  {
+    'sno':"3",
+    'author':"Balamurugan Panneerselvam & Suresh Kumar Paramasivam & Shankar Karuppannan & Nagavinothini Ravichandran & Pauline Selvaraj",
+    'title':"A GIS-based evaluation of hydrochemical characterisation of groundwater in hard rock region, South Tamil Nadu, India",
+    'name':"Arabian Journal of Geosciences",
+    'yr':"Aug-20",
+    'vol':"Volume 13",
+    'fac':"1.534",
+    'Doi':"https://doi.org/10.1007/s12517-020-05813-w"
+  },
+  {
+    'sno':"4",
+    'author':"SR Sumathy,Sasi Rekha, Jagadheeswari , Arunprasath",
+    'title':"Durability properties of copper slag and fly ash based concrete for a sustainable environment",
+    'name':"Materialstoday: Proceedings ",
+    'yr':"Oct-01",
+    'vol':"Volume 37; Issue 2",
+    'fac':"1.3",
+    'Doi':"https://doi.org/10.1016/j.matpr.2020.08.490"
+  },
+  {
+    'sno':"5",
+    'author':"SR Sumathy,Sasi Rekha",
+    'title':"A study on cement-free gepolymer concrete incorporated with industrial waste cured at open environment for different molarities of sodium hydroxide",
+    'name':"Global NEST Journal, vol 23,No X,pp 1-10",
+    'yr':"-",
+    'vol':"Volume 23",
+    'fac':"-",
+    'Doi':"Print ISSN: 1790-7632"
+  },
+  {
+    'sno':"6",
+    'author':"S M Kavitha, Dr G Venkatesan, Siva A, Erick Saavedra Flores",
+    'title':"Mechanical and flexural performance of self compacting concrete with natural fiber",
+    'name':"Revista de la Construcción. Journal of Construction",
+    'yr':"Aug,2020",
+    'vol':"Vol.19, Issue no.2",
+    'fac':"0.21",
+    'Doi':"Electronic ISSN: 2241-777X"
+  },
+  {
+    'sno':"7",
+    'author':"P balamurugan, S.Pauline,M.Kirubarakaran, M.Thomas",
+    'title':"Assessment of inverse fluidized bed reactor on thetreatment efficiency of distillery spent wash water",
+    'name':"International Journal of Environmental Science and Technology",
+    'yr':"Sep,2021",
+    'vol':"-",
+    'fac':"2.86",
+    'Doi':"https://doi.org/10.1007/s13762-021-03650-2"
+  },
+  {
+    'sno':"8",
+    'author':"Alagar Leelavathi& Sudalaimani, K",
+    'title':"Study on self-compacting concrete with sustainable materials",
+    'name':"Polish Journal of Environmental Studies",
+    'yr':"Oct,2021",
+    'vol':"vol. 30, no. 6, pp. 5079-5088",
+    'fac':"1.699",
+    'Doi':"DOI: https://doi.org/10.15244/pjoes/135827"
+  },
+  {
+    'sno':"9",
+    'author':"Leelvathi A, Mohammed Uvais‘",
+    'title':"Numerical Investigation on the Behaviour of Beam-column Joints under controlled corrosion levels",
+    'name':"Journal of structural engineering , its applications and Analysis",
+    'yr':"Oct,2021",
+    'vol':"vol:4,issue:3,2021",
+    'fac':"-",
+    'Doi':"http://hbrppublication.com/OJS/index.php/JSEAA/article/view/2103"
+  },
+  {
+    'sno':"10",
+    'author':"Vijayaprabha Chakrawarthi , Siva Avudaiappan , Mugahed Amran , Brindha Dharmar , Leon Raj Jesuarulraj , Roman Fediuk , Radhamanohar Aepuru , Nikolai Vatin and Erick Saavedra Flores",
+    'title':"Impact Resistance of Polypropylene Fibre-Reinforced Alkali–Activated Copper Slag Concrete",
+    'name':"Materials",
+    'yr':"Dec-21",
+    'vol':"vol,14 issue 24,pp:1 -27",
+    'fac':"3.748",
+    'Doi':"https://doi.org/10.3390/ma14247735"
+  },
+
+  {
+    'sno':"11",
+    'author':"Harish S., Meiaraj C. and Vijayaprabha C",
+    'title':"Assessment of Ground water quality maping along the banks of the Noyyal river in Tirupur district",
+    'name':"International Journal of Current Engineering and Technology",
+    'yr':"Aug-21",
+    'vol':"vol.9 PP.120-123",
+    'fac':"-",
+    'Doi':"E-ISSN 2277 – 4106, P-ISSN 2347 – 5161"
+  },
+  {
+    'sno':"12",
+    'author':"Karmugilan , Vijayaprabha C",
+    'title':"Experimental and Numerical investigation on Cold-Formed Steel builtup beams",
+    'name':"International Journal of Current Engineering and Technology",
+    'yr':"Aug-21",
+    'vol':"vol.9 PP.129-132",
+    'fac':"-",
+    'Doi':"E-ISSN 2277 – 4106, P-ISSN 2347 – 5161"
+  },
+  {
+    'sno':"13",
+    'author':"Selvaraj S and Vijayaprabha",
+    'title':"Experimental study of concrete with partial replacement of fine aggregate by using iron scale",
+    'name':"International Journal of Current Engineering and Technology",
+    'yr':"Aug-21",
+    'vol':"vol.9 PP.133-137",
+    'fac':"-",
+    'Doi':"E-ISSN 2277 – 4106, P-ISSN 2347 – 5161"
+  },
+  {
+    'sno':"14",
+    'author':"Vijayaprabha Chakrawarthi , Brindha Dharmar, Siva Avudaiappan, Mugahed Amran, Erick Saavedra Flores , Mohammad Ayaz Alam , Roman Fediuk, Nikolai Ivanovich Vatin and Raizal S. M. Rashid",
+    'title':"Destructive and Non-Destructive Testing of the Performance of Copper Slag Fiber-Reinforced Concrete",
+    'name':"Materials ",
+    'yr':"Jun-22",
+    'vol':"vol.15, issue 13, pp1-24",
+    'fac':"-",
+    'Doi':"https://doi.org/10.3390/ma15134536"
+  },
+  {
+    'sno':"15",
+    'author':"Sumathy Raju, Jagadheeswari Rathinam , Brindha Dharmar , Sasi Rekha , Siva Avudaiappan , Mugahed Amran , Kseniia Iurevna Usanova , Roman Fediuk , Pablo Guindos and Ramkumar Velayutham Ramamoorthy 1",
+    'title':"Cyclically Loaded Copper Slag Admixed Reinforced Concrete Beams with Cement Partially Replaced with Fly Ash",
+    'name':"Materials",
+    'yr':"Apr-22",
+    'vol':" Volume 15; Issue 9",
+    'fac':"-",
+    'Doi':" doi: 10.3390/ma15093101"
+  },
+  {
+    'sno':"16",
+    'author':"S.Mariraj Mohan, S.Nagalakshmi",
+    'title':"A review on aerobic self-forming dynamic memebane bioreactor:Formation,performance,fouling and cleaning",
+    'name':"Journal of water process Engineering",
+    'yr':"Jul-20",
+    'vol':"Vol 37, article no:101541",
+    'fac':"7.34",
+    'Doi':"https://doi.org/10.1016/j.jwpe.2020.101541"
+  },
+  {
+    'sno':"17",
+    'author':"G.Venkatesan, S.Pauline",
+    'title':"Influence of Chemical, Electrochemical Exfoliation, Hydrophilic, and Hydrophobic Binder on the Sorption Capacity of Graphene in Capacitive Deionization",
+    'name':"Journal of Environmental Engineering",
+    'yr':"Jul-22",
+    'vol':"Vol.148, Issue no: 7",
+    'fac':"1.657",
+    'Doi':"https://doi.org/10.1061/(ASCE)EE.1943-7870.0001999"
+  },
+  {
+    'sno':"18",
+    'author':"Aarthi K , Siva Avudaiappan, Mugahed Amran , Pablo Guindos, Nikolai Ivanovich Vatin, Roman Fediuk,",
+    'title':"Retrofitting RC beams using high-early strength alkali-activated concrete",
+    'name':"ELSEVIER Case Studies in Construction Materials 17 (2022) e01194, Available online 27 May 2022",
+    'yr':"May-22",
+    'vol':"Vol 17 (2022) e01194",
+    'fac':"5.06",
+    'Doi':"DOI:https://doi.org/10.1016/j.cscm.2022.e01194"
+  },
+  {
+    'sno':"19",
+    'author':"Aarthi.K, Pavithran.R",
+    'title':"Shear Connector Slabs Longitudinal Shear Resistance of Sandwich Panels with Truss and Trapezoidal shear connectors’",
+    'name':"Mathematical Statistician and Engineering Applications",
+    'yr':"Jul-22",
+    'vol':"Page Number: 899 – 913, Publication Issue: Vol. 71 No. 3s (2022)",
+    'fac':"-",
+    'Doi':"http://philstat.org.ph"
+  },
+  {
+    'sno':"20",
+    'author':"Aarthi K., Poongothai S. P",
+    'title':"Soil Stabilization with Vertical Piles Bearing Capacity and Settlement Characteristics of Cohesive Soil Reinforced with Sand, M Sand, Quarry Dust Piles",
+    'name':"Mathematical Statistician and Engineering Applications",
+    'yr':"Jul-22",
+    'vol':"Page Number: 879 – 898, Publication Issue: Vol. 71 No. 3s (2022)",
+    'fac':"-",
+    'Doi':"http://philstat.org.ph5"
+  },
+]
+
 export {
   civ_dept_menu,
   civ_fac_profiles,
@@ -632,6 +1086,14 @@ export {
   civ_labs,
   civ_awards,
   civ_patents,
+  about_info,
+  internal,
+  scholar_info1,
+  scholar_info2,
+  scholar_info3,
+  scholar_info4,
+  scholar_info5,
+  civ_research_info,
   mag_data,
   intern_data,
   mou_data,

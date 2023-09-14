@@ -23,7 +23,7 @@ const Civil_lab = () => {
             <Radial_menu menu_links={civ_dept_menu} />
             <div className="civ_lab_area">
                 <div className='civ_acad_labs'>
-                    <Underline heading="Department Labs"/>
+                    <Underline heading="Lab Facilities"/>
                     <div className='lab_cards row'>
                         {civ_labs.map((item)=><Modal heading={item.heading} pic={item.pic} content_1={item.content_1} content_2={item.content_2} sub_text={item["sub-head"]}/>)}
                     </div>

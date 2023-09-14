@@ -76,18 +76,24 @@ import {
   Sh_lab_facility,
   Sh_research,
   Science_Programme,
-  UBA,
+  Uba,
   Scholarship,
   Civil_awards,
   Ece_dept_lib,
   Ece_research,
+  Iste,
+  Sih,
+  Committee,
+  Yrc,
   Devpage,
   Eee_research,
   Eee_nextgen,
-  Civil_indus
+  Civil_indus,
+  Civil_internal,
+  Civil_research
 } from "./pages";
 import "./App.css";
-import Uba from "./pages/Uba/Uba";
+
 
 const App = () => {
   const location = useLocation();
@@ -154,9 +160,11 @@ const App = () => {
         <Route path="/civildept/civil-peo" element={<Civil_peo/>} />
         <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
         <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
+        <Route path="/civildept/civil-research" element={<Civil_research/>} />
         <Route path="/civildept/civil-dept-events" element={<Civil_events/>} />
         <Route path="/civildept/civil-dept-magazine" element={<Civil_magazine/>} />
         <Route path="/civildept/civil-dept-indus" element={<Civil_indus/>} />
+        <Route path="/civildept/civil-internal-revenue" element={<Civil_internal/>} />
         <Route path="/mechdept/mech-peo" element={<Mech_peo/>} />
         <Route path="/mechdept/mech-faculties" element={<Mech_faculties/>} />
         <Route path="/mechdept/mech-lab" element={<Mech_lab/>} />
@@ -179,7 +187,14 @@ const App = () => {
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
+        <Route path="/iste" element={<Iste/>} />
+        <Route path="/sih" element={<Sih/>} />
+        <Route path="/committee" element={<Committee/>} />
+        <Route path="/yrc" element={<Yrc/>} />
         <Route path="/webdev-team" element={<Devpage/>} />
+        
+        
+
       </Routes>
       <Footer />
     </div>
