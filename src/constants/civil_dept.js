@@ -1724,6 +1724,53 @@ const civ_research_info=[
   },
 ]
 
+const about_info=[
+  {
+    'id':"1",
+    'point':"Recognized Research Centre of Anna University, Chennai for pursuing Ph.D. in Civil Engineering",
+  },
+  {
+    'id':"2",
+    'point':"There are 11 part time PhD scholars and 2 full time PhD scholars, pursuing their doctoral degree in this department.",
+  },
+  {
+    'id':"3",
+    'point':"The department is regularly conducting GATE coaching classes and special lectures from industrial experts for increasing the employability skills and for easy access to get PG admission.",
+  },
+  {
+    'id':"4",
+    'point':"The department is earning  10 to 15 Lakhs regularly per annum as consultancy revenue under Internal Revenue Generation.",
+  },
+  {
+    'id':"5",
+    'point':"The students are regularly undertaking projects related to the use of energy efficient materials in building construction and reducing pollution related impacts on the environment in order to promote green energy principles and clean environment.",
+  },
+  {
+    'id':"6",
+    'point':"The research works of the faculty and students are being published in reputed journals. The faculty members are publishing about 10 research papers every year.",
+  },
+  {
+    'id':"7",
+    'point':"Students are encouraged to undergo Internship under fast-track scheme to improve their placement prospects.",
+  },
+  {
+    'id':"8",
+    'point':"Soft skill training programmes offered by reputed professionals are arranged to enhance their communication and general aptitude skills.",
+  },
+  {
+    'id':"9",
+    'point':"Wi-Fi enabled internet facilities are available in the department.",
+  },
+  {
+    'id':"10",
+    'point':"Tamil Nadu government has been offering PG Assistantship Rs6000 per month for non-GATE students in order to increase the enrolment of PG students.",
+  },
+  {
+    'id':"11",
+    'point':"The students are allowed to do the online courses as per their field of interest through SWAYAM-NPTEL platform instead of professional and Open Electives.",
+  },
+];
+
 export {
   civ_dept_menu,
   civ_fac_profiles,
@@ -1742,8 +1789,7 @@ export {
   civ_place_lt,
   civ_place_hexagon,
   civ_place_aarbee,
-  civ_place_pinnacle
-,
+  civ_place_pinnacle,
   about_info,
   internal,
   scholar_info1,
