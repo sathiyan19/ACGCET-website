@@ -13,8 +13,9 @@ import cse_grap_lab from '../assets/pictures/cse_dept/cse_labs/cse_grap_lab.webp
 import cse_dbms_lab from '../assets/pictures/cse_dept/cse_labs/cse_dbms_lab.webp'
 import cse_mpmc_lab from '../assets/pictures/cse_dept/cse_labs/cse_mpmc_lab.webp'
 
-import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
+import uma_rani_sq from '../assets/pictures/cse_dept/cse_faculties/umarani_square.webp'
 
+import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
 import suhaila from '../assets/pictures/cse_dept/cse_faculties/suhaila.webp'
 import sk from '../assets/pictures/cse_dept/cse_faculties/sk.webp'
 import hema from '../assets/pictures/cse_dept/cse_faculties/hema.webp'
@@ -67,18 +68,18 @@ const cse_dept_menu = [
     link: "Programme Organized",
     arl:'l'
   },
-  {
-    id: "8",
-    path: "#",
-    link: "Professional Socities",
-    arl:'l'
-  },
-  {
-    id: "9",
-    path: "#",
-    link: "Research and Publications",
-    arl:'l'
-  },
+  // {
+  //   id: "8",
+  //   path: "#",
+  //   link: "Professional Socities",
+  //   arl:'l'
+  // },
+  // {
+  //   id: "9",
+  //   path: "#",
+  //   link: "Research and Publications",
+  //   arl:'l'
+  // },
   
   {
     id: "11",
@@ -91,7 +92,7 @@ const cse_dept_menu = [
 const cse_hod={
   name:"Dr.C.Uma Rani",
   designation:"Head of the Department, CSE",
-  pic:uma_rani,
+  pic:uma_rani_sq,
   content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
   "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
   "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
@@ -109,6 +110,15 @@ const cse_hod={
 }
 
 const cse_fac_profiles = [
+  {
+    id: "8",
+    cover: cover,
+    dp: uma_rani,
+    name: "Dr. C.UmaRani",
+    Designation: "Associate professor",
+    mailid: "drcumakkd@gmail.com",
+    pdf: "#",
+  },
   {
     id: "1",
     cover: cover,

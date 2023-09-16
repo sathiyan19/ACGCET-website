@@ -60,7 +60,7 @@ const top_nav_paths = [
   {
     id: "7",
     type: "1",
-    title: "Holistic Pursuits",
+    title: "Co-curricular",
     basepath: "javascript:void(0);",
     links: [
       { path: "/iste", link: "ISTE" },
@@ -85,7 +85,7 @@ const top_nav_paths = [
       { path: "/csedept", link: "Computer Science Engineering" },
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
-      { path: "/", link: "Mechanical Engineering" },
+      { path: "/under", link: "Mechanical Engineering" },
       { path: "/civildept", link: "Civil Engineering" },
       { path: "/sciencedept", link: "Science & Humanities" },
     ],
@@ -139,9 +139,9 @@ const top_nav_paths = [
     id: "13",
     type: "2",
     title: "Centers & Facilities",
-    basepath: "javascript:void(0);",
+    basepath: "/under",
     links: [
-      { path: "/under", link: "Link1" },
+      // { path: "/under", link: "Link1" },
       //     {'path':'/under','link':"Link2"},
       //     {'path':'/under','link':"Link3"}]
     ],
@@ -158,7 +158,7 @@ const bottom_nav_paths = [
       { path: "/csedept", link: "Computer Science Engineering" },
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
-      { path: "/mechdept", link: "Mechanical Engineering" },
+      { path: "/under", link: "Mechanical Engineering" },
       { path: "/civildept", link: "Civil Engineering" },
       { path: "/sciencedept", link: "Science & Humanities" },
     ],
@@ -212,11 +212,11 @@ const bottom_nav_paths = [
     id: "19",
     type: "3",
     title: "Centers & Facilities",
-    basepath: "javascript:void(0);",
+    basepath: "/under",
     links: [
-      { path: "/", link: "Link1" },
-      { path: "/", link: "Link2" },
-      { path: "/", link: "Link3" },
+      // { path: "/", link: "Link1" },
+      // { path: "/", link: "Link2" },
+      // { path: "/", link: "Link3" },
     ],
   },
 ];

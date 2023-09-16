@@ -16,14 +16,15 @@ import {
 const Sports = () => {
   return (
     <div>
+      Sports
       {/* hero image */}
-      <Heroimagecarousal
+      {/* <Heroimagecarousal
         key={Sports_heroimage_carousalinfo.id}
         title={Sports_heroimage_carousalinfo.title}
         img_list={Sports_heroimage_carousalinfo.img_list}
-      />
+      /> */}
 
-      <div className="vimisec">
+      {/* <div className="vimisec">
         <Underline heading="sathiyan" />
         <Deptvision visiondata={sportsvision.visiondata} />
         <Deptmission head="SSS" points={sportsmission} />
@@ -37,8 +38,8 @@ const Sports = () => {
 
         <Listformat points={sportslist} />
 
-        <Devcard/>
-      </div>
+        <Devcard/> */}
+      {/* </div> */}
     </div>
   );
 };

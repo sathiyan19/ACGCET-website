@@ -54,6 +54,7 @@ import {
   Civil_faculties,
   Civil_lab,
   Civil_events,
+  Civil_magazine,
   Mech_peo,
   Mech_faculties,
   Mech_lab,
@@ -87,6 +88,9 @@ import {
   Devpage,
   Eee_research,
   Eee_nextgen,
+  Civil_library,
+  Civil_placement,
+  Civil_indus,
   Civil_internal,
   Civil_research
 } from "./pages";
@@ -160,6 +164,8 @@ const App = () => {
         <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
         <Route path="/civildept/civil-research" element={<Civil_research/>} />
         <Route path="/civildept/civil-dept-events" element={<Civil_events/>} />
+        <Route path="/civildept/civil-dept-magazine" element={<Civil_magazine/>} />
+        <Route path="/civildept/civil-dept-indus" element={<Civil_indus/>} />
         <Route path="/civildept/civil-internal-revenue" element={<Civil_internal/>} />
         <Route path="/mechdept/mech-peo" element={<Mech_peo/>} />
         <Route path="/mechdept/mech-faculties" element={<Mech_faculties/>} />
@@ -188,8 +194,8 @@ const App = () => {
         <Route path="/committee" element={<Committee/>} />
         <Route path="/yrc" element={<Yrc/>} />
         <Route path="/webdev-team" element={<Devpage/>} />
-        
-        
+        <Route path="/civildept/civil-library" element={<Civil_library/>} />
+        <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
 
       </Routes>
       <Footer />

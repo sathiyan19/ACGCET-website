@@ -7,11 +7,11 @@ import rotaract from "../assets/pictures/rotractlogo.webp";
 import build from "../assets/pictures/buildlogo.webp";
 
 // Clubs_heroimage_carousalinfo
-const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/rotracthero.webp"
-const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/freshershero.webp"
-const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/leo.webp"
-const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/MUTHAMIL.webp"
-const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/music.webp"
+const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/rotracthero.webp"
+const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/freshershero.webp"
+const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/leo.webp"
+const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/MUTHAMIL.webp"
+const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/music.webp"
 const Clubs_heroimage_carousalinfo = {
   id: 1,
   title: "Clubs at ACGCET",
@@ -27,7 +27,7 @@ const Clubs_info = [
     instalink: "https://www.instagram.com/rotaract_acgcet/",
     para: "The aim of our club is to bring out the service and leadership quality of individuals by involving them in various social activities and coordinating their fellow juniors.Our vision is to develop professional and leadership skills of every individuals.The mission of our club is to provide opportunities for the youth to enhance their personal development skills, to address the social needs of the society by creating better relationships and gaining knowledge in all aspects. The main obejective of our club is to advance the world with goodwill, providing quality education, improving the environment, and alleviating poverty and also to emphasize ethical standards with better leadership qualities.The planned activities include installation, treasure hunt, awareness program, orphanage visit, planting saplings, tutoring government school students, and participating in RYLA (Rotary Youth Leadership Awards).",
     staff: "Mr. V. Pradeep",
-    staffdesi: "Asst.Prof. EEE Dept",
+    staffdesi: "Asst.Prof. EEE Dept",
     student: "Anuraj",
     studentdesi: "4th year ECE",
   },
@@ -39,10 +39,10 @@ const Clubs_info = [
     maillink: "mailto:leoclubofacgcet@gmail.com",
     instalink: "https://www.instagram.com/leo_club_of_acgcet/",
     para: "The primary aim of the club is to inspire young individuals to cultivate leadership traits through active engagement in various social service endeavors. The club envisions becoming a worldwide frontrunner in initiatives related to community and humanitarian assistance. Its mission is centered on equipping volunteers with the means to make impactful contributions to their communities, address humanitarian concerns, and promote the ideals of peace. The core objectives encompass affording youth the chance to evolve into responsible contributors within their local, national, and international spheres. The club's planned activities encompass a range of events such as treasure hunts and inaugurations, all aimed at fostering personal development and community involvement among its members.",
-    staff: "Prof.V.Jawahar",
-    staffdesi: "Ece",
-    student: "Harish Ashwathaman",
-    studentdesi: "4th year",
+    staff: "Mr. V. Jawahar",
+    staffdesi: "Asst.Prof. Mech Dept",
+    student: "P.Gokulavasan ",
+    studentdesi: "4th year Civil",
   },
 
   // {

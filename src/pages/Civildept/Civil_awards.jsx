@@ -25,7 +25,7 @@ const Civil_awards = () => {
             <div className="civheading">
               Department of Civil Engineering
             </div>
-            <div className="civ_sub_heading">Objectives & Outcomes</div>
+            <div className="civ_sub_heading">Achievements</div>
           </div>
           <section className="civdark">
             <div className="dept_float_menu">
