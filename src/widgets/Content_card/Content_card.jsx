@@ -8,7 +8,7 @@ const Content_card = ({ top_head, heading, intake, pdf, period, year }) => {
       <div className="card_body">
         <div className="card_bg"></div>
 
-        <div className="card_top_head">{top_head}</div>
+        {top_head && (<div className="card_top_head">{top_head}</div>)}
 
         <div className="card_title">{heading}</div>
 
