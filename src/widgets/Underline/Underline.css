@@ -1,10 +1,10 @@
 .alltitle {
-  > p {
-    color: #00134d;
     font-weight: 500;
     font-size: 40px;
     margin-top: 20px;
-  }
+}
+.alltitle .alltitlep {
+color:#00134d;
 }
 
 .l1 {
@@ -23,10 +23,10 @@
 }
 
 @media (max-width: 500px) {
-  .alltitle {
-    > p {
+  .alltitlep {
+    
       font-size: 28px;
-    }
+    
   }
   .l1 {
     height: 3px;
@@ -40,10 +40,9 @@
 }
 
 @media (max-width: 321px) {
-  .alltitle {
-    > p {
+  .alltitlep {
       font-size: 26px;
-    }
+    
   }
   .l1 {
     width: 25%;
