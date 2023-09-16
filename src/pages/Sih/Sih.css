@@ -8,42 +8,44 @@
     
     justify-content: center;
     align-items: center;
+    }
     .sihabttext{
         width: 80%;
-        >p{
-            line-height: 1.5rem;
+    }
+    .sihabttextp{
+line-height: 1.5rem;
             color: black;
             font-size: 18px;
             text-align: justify;
-        }
     }
     .sih_logo_holder{
         width: 20%;
-        >img{
-            width: 100%;
-            height: auto;
-        }
     }
-}
+    .sih_logo_img{
+width: 100%;
+            height: auto;
+    }
+
 
 .sihparticipate{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 30px;
+}
     .sihsrjr{
-        width: 40%;
+width: 40%;
         border-radius:20px ;
         padding: 20px;
         background-color: #f1f1f1;
-        >p{
-            line-height: 1.5rem;
+    }
+    .sihsrjrp{
+line-height: 1.5rem;
             color: black;
             font-size: 18px;
             text-align: justify;
-        }
     }
     
-}
+
 
 .sihpro{
     >h3{
@@ -72,40 +74,37 @@
             margin-bottom: 10px;
         }
     }
-    .sihparticipate{
-        .sihsrjr{
+    .sihparticipate.sihsrjr{
             width: 48%;
         }
-    }
+    
 }
 
 @media(max-width:768px){
-    .sihabt{
-        .sih_logo_holder{
+    .sihabt.sih_logo_holder{
             width: 20%;
         }
-    }
+    
 }
 
 @media (max-width:600px){
-    .sihabt{
-        .sihabttext{
-            >p{
-                font-size: 16px;
-            }
-        }
-        .sih_logo_holder{
-            width: 30%;
-        }
+    .sihabttext{
+        width: 100%;
+    }
+    .sihabttext .sihabttextp{
+font-size: 16px;
+    }
+    .sih_logo_holder{
+        width: 30%;
     }
     .sihparticipate{
         flex-direction: column;
-        .sihsrjr{
+    }
+    .sihparticipate .sihsrjr{
             width: 100%;
             margin-bottom: 10px;
-            >p{
-                font-size: 16px;
-            }
-        }
+    }
+    .sihsrjr .sihsrjrp{
+        font-size: 16px;
     }
 }

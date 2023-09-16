@@ -6,22 +6,22 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    .isteabttext{
-        width: 78%;
-        >p{
-            line-height: 1.5rem;
-            color: black;
-            font-size: 18px;
-            text-align: justify;
-        }
-    }
-    .isteabtpic{
-        width: 20%;
-        >img{
-            width: 100%;
-            height: auto;
-        }
-    }
+}
+.isteabt .isteabttext{
+    width: 78%;
+}
+.isteabttext .isteabttextp{
+    line-height: 1.5rem;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+}
+.isteabtpic{
+    width: 20%;
+}
+.isteabtpici{
+    width: 100%;
+    height: auto;
 }
 
 .istepdfsec{
@@ -36,52 +36,43 @@
 
 @media(max-width:1350px){
     .isteabt{
-        flex-direction: column-reverse;
-        .isteabttext{
-            width: 100%;
-        }
-        .isteabtpic{
-            margin-bottom: 10px;
-        }
+        flex-direction: column-reverse; 
+    }
+    .isteabt .isteabttext{
+        width: 100%;
+    }
+    .isteabt .isteabtpic{
+        margin-bottom: 10px;
     }
 }
 
 @media(max-width:1024px){
-    .isteabt{
-        .isteabtpic{
-            width: 30%;
-        }
+    .isteabt .isteabtpic{
+        width: 30%;
     }
     .istepdf{
         width: 100%;
     }
 }
 @media(max-width:768px){
-    .isteabt{
-        .isteabtpic{
+    .isteabt.isteabtpic{
             width: 40%;
         }
-    }
+    
     .istepdf{
         width:70%
     }
 }
 
 @media(max-width:600px){
-    .isteabt{
-        .isteabtpic{
+    .isteabt .isteabtpic{
             width: 50%;
         }
-    }
 }
 
 @media(max-width:500px){
-    .isteabt{
-        .isteabttext{
-            >p{
+    .isteabt .isteabttext .isteabttextp{
                 font-size: 16px;
-            }
-        }
     }
     .istepdf{
         width: 100%;
