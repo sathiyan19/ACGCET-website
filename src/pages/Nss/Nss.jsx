@@ -47,7 +47,7 @@ const Nss = () => {
           <Underline heading="About Us" />
           <div className="nsstherila">
             <div className="nssparacont">
-              <p>
+              <p className="nssparacont_p">
                 The National Service Scheme (NSS) is a Central Sector Scheme of
                 Government of India, Ministry of Youth Affairs & Sports. It
                 provides opportunity to the student youth of 11th & 12th Class
@@ -78,11 +78,11 @@ const Nss = () => {
           <div className="mottoinfo">
             <div className="mottotext">
               <img className="q1" src={q1} alt="Mottonss" />
-              <h2>NOT ME BUT YOU</h2>
+              <h2 className="mottotext_h2">NOT ME BUT YOU</h2>
               <img className="q2" src={q2} alt="Mottonss" />
             </div>
             <div className="mottohead">
-              <h1>Our Motto</h1>
+              <h1 className="mottohead_h1">Our Motto</h1>
             </div>
           </div>
         </div>
@@ -124,8 +124,8 @@ const Nss = () => {
 
           <div className="nsstime">
             <div className="nsstime1">
-              <h3>National Integration Camp:</h3>
-              <p>
+              <h3 className="nsstime1_h3">National Integration Camp:</h3>
+              <p className="nsstime1_p">
                 The National Integration Camp (NIC) is organized every year and
                 the duration of each camp is of 7 days with day-night boarding &
                 lodging. These camps are held in different parts of the country.
@@ -134,8 +134,8 @@ const Nss = () => {
               </p>
             </div>
             <div className="nsstime1">
-              <h3>Adventure Programs:</h3>
-              <p>
+              <h3 className="nsstime1_h3">Adventure Programs:</h3>
+              <p className="nsstime1_p">
                 The camps are held every year which are attended by
                 approximately 1500 NSS volunteers with at least 50% of the
                 volunteers being girl students. These camps are conducted in
@@ -146,8 +146,8 @@ const Nss = () => {
               </p>
             </div>
             <div className="nsstime1">
-              <h3>Republic Day Parade Camp:</h3>
-              <p>
+              <h3 className="nsstime1_h3">Republic Day Parade Camp:</h3>
+              <p className="nsstime1_p">
                 The first Republic Day Camp of NSS Volunteers was held in 1988.
                 The camp takes place in Delhi between 1st and 31st January every
                 year with 200 NSS selected volunteers who are good in
@@ -159,8 +159,8 @@ const Nss = () => {
               </p>
             </div>
             <div className="nsstime1">
-              <h3>National Youth Festival:</h3>
-              <p>
+              <h3 className="nsstime1_h3">National Youth Festival:</h3>
+              <p className="nsstime1_p">
                 National Youth Festivals are organized every year from 12th to
                 16th January by the Government of India, Ministry of Youth
                 Affairs & Sports in collaboration with the State Governments in
@@ -174,7 +174,7 @@ const Nss = () => {
 
           <div className="nssloga">
             <Underline heading="NSS Awards" />
-            <p>
+            <p className="nssloga_p">
               The Ministry of Youth Affairs and Sports, Government of India had
               instituted the National Service Scheme Awards to recognize the
               voluntary service rendered by NSS volunteers, Programme Officers,
