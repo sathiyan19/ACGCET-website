@@ -8,7 +8,7 @@ import {
   nccaim,
   nccmotto,
   ncccore,
-  nccachievements
+  nccachievements,
 } from "../../constants/ncc";
 import { Profilecard, Underline, Deptmission, Deptvision } from "../../widgets";
 import abt1 from "../../assets/pictures/ncc/abt.webp";
@@ -17,7 +17,6 @@ import nccflag from "../../assets/pictures/ncc/nccflag.webp";
 import mobpledge from "../../assets/pictures/ncc/pledge1.webp";
 
 const nccpledge="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/pledg2-min.webp"
-
 const Ncc = () => {
   return (
     <div>
@@ -30,7 +29,7 @@ const Ncc = () => {
 
       <div className="nccabt">
         <Underline heading="About Us " />
-        <p>
+        <p className="nccabtp">
           The National Cadet Corps (NCC) is a vibrant youth organization with a
           military focus, operating in numerous countries around the world, with
           India hosting one of the largest and most active NCC programs.
@@ -41,7 +40,7 @@ const Ncc = () => {
         </p>
         <div className="nccabt1">
           <div className="nccabt1text">
-            <p>
+            <p className="nccabt1textp">
               These activities range from precision drill and marksmanship to
               adventure sports like trekking and rock climbing, instilling
               qualities such as teamwork, perseverance, and courage.
@@ -71,7 +70,7 @@ const Ncc = () => {
             </p>
           </div>
           <div className="nccabt1img">
-            <img src={abt1} alt="abt1" />
+            <img className="nccabt1imgi" src={abt1} alt="abt1" />
           </div>
         </div>
       </div>
@@ -103,7 +102,7 @@ const Ncc = () => {
         <Underline heading="NCC Flag" />
         <div className="nccflag">
           <div className="nccflagtext">
-            <p>
+            <p className="nccflagtextp">
               The NCC flag for various units of the NCC was first introduced in
               1951. The flag was of same pattern, colour and size as was used by
               various regiments of the Army. The only difference was that it had
@@ -119,25 +118,24 @@ const Ncc = () => {
             </p>
           </div>
           <div className="nccflagpic">
-            <img src={nccflag} alt="nccflag" />
+            <img className="nccflagpici" src={nccflag} alt="nccflag" />
           </div>
         </div>
       </div>
 
       <div className="nccpledge">
-        <img className="lappledgeimg" src={nccpledge} alt="nccpledge"/>
-        <img className="mobpledgeimg" src={mobpledge} alt="nccpledge"/>
+        <img className="lappledgeimg" src={nccpledge} alt="nccpledge" />
+        <img className="mobpledgeimg" src={mobpledge} alt="nccpledge" />
         <div className="nccpledgetext">
-          <h1>Pledge</h1>
-        <p>
-          We the cadets of the National Cadet Corps,do solemnly pledge that we
-          shall always uphold the unity of India.We resolve to be disciplined
-          and responsible citizen of our nation.We shall undertake positive
-          community service in the spirit of selflessness and concern for our
-          fellow beings.
-        </p>
+          <h1 className="nccpledgetexth1">Pledge</h1>
+          <p className="nccpledgetextp">
+            We the cadets of the National Cadet Corps,do solemnly pledge that we
+            shall always uphold the unity of India.We resolve to be disciplined
+            and responsible citizen of our nation.We shall undertake positive
+            community service in the spirit of selflessness and concern for our
+            fellow beings.
+          </p>
         </div>
-       
       </div>
 
       <div className="ncccore">
@@ -146,10 +144,9 @@ const Ncc = () => {
       </div>
 
       <div className="nccachieve">
-        <Underline heading="Our Achievements"/>
-        <Accordion accord_data={nccachievements}/>
+        <Underline heading="Our Achievements" />
+        <Accordion accord_data={nccachievements} />
       </div>
-
     </div>
   );
 };
