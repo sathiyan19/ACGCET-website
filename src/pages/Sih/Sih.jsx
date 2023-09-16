@@ -15,7 +15,7 @@ const Sih = () => {
 
         <div className="sihabt">
          <div className="sihabttext">
-         <p>
+         <p className="sihabttextp">
             The Smart India Hackathon (SIH) is an annual nationwide competition
             held in India that aims to foster innovation and problem-solving
             among students. It is one of the largest hackathons in the world and
@@ -41,7 +41,7 @@ const Sih = () => {
           </p>
          </div>
           <div className="sih_logo_holder">
-            <img src={sihlogo} alt="sihlogo" />
+            <img className="sih_logo_img" src={sihlogo} alt="sihlogo" />
           </div>
         </div>
 
@@ -56,7 +56,7 @@ const Sih = () => {
           </div>
           <div className="sihsrjr">
             <Underline heading="SIH Senior (Sr)" />
-            <p>
+            <p className="sihsrjrp">
               Regular Students of HEI's pursuing "Graduate/Post-Graduate/Ph.D"
               will be able to showcase their talent and generate out-of-the-box
               open innovation ideas
