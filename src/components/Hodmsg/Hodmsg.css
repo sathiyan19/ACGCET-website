@@ -178,11 +178,10 @@
         padding-right: 10px;
     }
   
-    .quo{
-        >img{
+    .quo img{
             display: none;
         }
-    }
+    
   
   }
   
