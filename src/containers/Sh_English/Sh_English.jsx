@@ -2,18 +2,20 @@ import React from 'react'
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
 
 import { Radial_menu } from "../../components";
-import eng from "../../assets/pictures/eng.webp";
+// import eng from "../../assets/pictures/eng.webp";
 import {Sh_dept_fmenu,eng_mission,eng_vision} from '../../constants/Sh_dept_menu'
 
 import './Sh_English.css'
-import { FaMicrochip } from "react-icons/fa6";
+import { RiEnglishInput } from "react-icons/ri";
+
+const eng="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/eng.webp"
 
 const Sh_English = () => {
   return (
     <div>
       <section className="shengdark">
         <div className="shengdept_float_menu">
-          <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={RiEnglishInput} head="Menu" links={Sh_dept_fmenu} />
         </div>
         <Radial_menu menu_links={Sh_dept_fmenu} />
         <div className="sheng_abt_area">

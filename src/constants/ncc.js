@@ -1,14 +1,20 @@
 // Ncc_heroimage_carousalinfo
-import image1 from "../assets/pictures/ncc/ncc1.webp";
-import image2 from "../assets/pictures/ncc/ncc2.webp";
-import image3 from "../assets/pictures/ncc/ncc3.webp";
-import image4 from "../assets/pictures/ncc/pledg2-min.webp";
-import image5 from "../assets/pictures/ncc/ncc4.webp";
+// import image1 from "../assets/pictures/ncc/ncc1.webp";
+// import image2 from "../assets/pictures/ncc/ncc2.webp";
+// import image3 from "../assets/pictures/ncc/ncc3.webp";
+// import image4 from "../assets/pictures/ncc/pledg2-min.webp";
+// import image5 from "../assets/pictures/ncc/ncc4.webp";
 
 
 // profile_info
 import s1cover from '../assets/pictures/ncc/ncccover.webp'
 import s1 from '../assets/pictures/ncc/loki.webp'
+
+const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/ncc2.webp"
+const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/ncc3.webp"
+const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/ncc4.webp"
+const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/ncchero2.webp"
+const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/pledg2-min.webp"
 
 
 const Ncc_heroimage_carousalinfo = {

@@ -7,44 +7,53 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    .yrcabttext{
-        width: 68%;
-        >p{
-            line-height: 1.5rem;
-            color: black;
-            font-size: 18px;
-            text-align: justify;
-        }
-    }
-    .yrcabtimg{
-        width: 30%;
-        >img{
-            width: 100%;
-            height: auto;
-        }
-    }
+    
+    
+}
+.yrcabttext{
+    width: 68%;
+    
+}
+.yrcabttextp{
+    line-height: 1.5rem;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+}
+.yrcabtimg{
+    width: 30%;
+   
+}
+.yrcabtimgi{
+    width: 100%;
+    height: auto;
 }
 
 .yrclogo{
     display: flex;
     justify-content: space-evenly;
     /* align-items: center; */
-    .yrclogotext{
-        width: 80%;
-        >p{
-            line-height: 1.5rem;
-            color: black;
-            font-size: 18px;
-            text-align: justify;
-        }
-    }
-    .yrclogopic{
-        width: 15%;
-        >img{
-            width: 100%;
-            height: auto;
-        }
-    }
+    
+    
+    
+}
+.yrclogotext{
+    width: 80%;
+    
+}
+.yrclogotextp{
+    line-height: 1.5rem;
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+}
+.yrclogopic{
+    width: 15%;
+    
+}
+.yrclogopici{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -52,13 +61,15 @@
 @media (max-width:1200px){
     .yrcabt{
         flex-direction: column-reverse;
-        .yrcabttext{
-            width: 100%;
-        }
-        .yrcabtimg{
-            width: 40%;
-            margin-bottom: 15px;
-        }
+    
+    }
+    .yrcabttext{
+        width: 100%;
+    }
+        
+    .yrcabtimg{
+        width: 40%;
+        margin-bottom: 15px;
     }
 }
 
@@ -66,51 +77,45 @@
     .yrclogo{
         flex-direction: column-reverse;
         align-items: center;
-        .yrclogotext{
-            width: 100%;
-        }
-        .yrclogopic{
-            margin-bottom: 10px;
-        }
+       
+    }
+    .yrclogotext{
+        width: 100%;
+    }
+    .yrclogopic{
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width:768px){
-    .yrcabt{
+    
         .yrcabtimg{
             width: 50%;
         }
-    }
-    .yrclogo{
+    
+   
         .yrclogopic{
             width: 20%;
         }
-    }
+    
 }
 
 @media (max-width:600px){
     .yrcwhole{
         padding: 10px;
     }
-    .yrcabt{
-        .yrcabttext{
-            >p{
+    .yrcabttextp{
                 font-size: 16px;
             }
-        }
+        
         .yrcabtimg{
             width: 100%;
         }
+    .yrclogotextp{
+        font-size: 16px;
     }
-    .yrclogo{
-        .yrclogotext{
-            >p{
-                font-size: 16px;
-            }
-        }
-        .yrclogopic{
-            width: 50%;
-        }
+    .yrclogopic{
+        width: 50%;
     }
 }
 

@@ -5,6 +5,10 @@ import alumni2 from '../assets/pictures/alumni2.webp'
 import alumni3 from '../assets/pictures/alumni3.webp'
 
 import coral_reef from '../assets/pictures/alumni_pics/coral_reef_alumni.webp'
+import alumni_1982 from '../assets/pictures/alumni_pics/alumni_1982.webp'
+import silver_98 from '../assets/pictures/alumni_pics/silver_98.webp'
+import pre_gold_79 from '../assets/pictures/alumni_pics/pre_gold_79.webp'
+import diam_68 from '../assets/pictures/alumni_pics/diam_68.webp'
 
 export const contributions=[
     {
@@ -58,27 +62,35 @@ export const alumni_reunions=[
         date:"18th & 19th AUG 2023"
     },
     {
-        id:'1',
-        coverpic:cover,
-        batch:"1994-98",
-        name:"Harmony '98",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        date:"24th July 2023"
+        id:'2',
+        coverpic:alumni_1982,
+        batch:"1978-82",
+        name:"41st-Year Reunion Of Class 1982",
+        desc:"The 1982 batch celebrated their 41st-year reunion at Kolli Hills on August 12-13, reliving college memories joyfully.",
+        date:"12th & 13th AUG 2023"
     },
     {
-        id:'1',
-        coverpic:cover,
+        id:'3',
+        coverpic:silver_98,
         batch:"1994-98",
-        name:"Harmony '98",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        date:"24th July 2023"
+        name:"Silver Jubilee Celebrations",
+        desc:"Our heartfelt wishes to the Alumni of the 1994-98 Batch celebrating their Silver Jubilee on the ACCET Campus.!!",
+        date:"16th JUL 2023"
     },
     {
-        id:'1',
-        coverpic:cover,
-        batch:"1994-98",
-        name:"Harmony '98",
-        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-        date:"24th July 2023"
+        id:'4',
+        coverpic:pre_gold_79,
+        batch:"1974-79",
+        name:"Pre-Golden Jubilee Meet",
+        desc:"1974-79 ACCET alumni held a Pre-Golden Jubilee meet at Chennai, planning future events and skill development initiatives.",
+        date:"29th & 30th MAR 2023"
+    },
+    {
+        id:'5',
+        coverpic:diam_68,
+        batch:"1963-68",
+        name:"Diamond Jubilee Celebration",
+        desc:"The 1963 Freshmen held their Diamond Jubilee celebration on february 11, reliving college memories joyfully.",
+        date:"11th FEB 2023"
     },
 ]

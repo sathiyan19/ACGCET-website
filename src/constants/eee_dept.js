@@ -72,48 +72,48 @@ const eee_dept_menu = [
     link: "Lab Facilities",
     arl:'l'
   },
-  {
-    id: "8",
-    path: "#",
-    link: "Professional Socities",
-    arl:'l'
-  },
+  // {
+  //   id: "8",
+  //   path: "#",
+  //   link: "Professional Socities",
+  //   arl:'l'
+  // },
   {
     id: "9",
     path: "/eeedept/eee-research",
     link: "Research and Publications",
     arl:'l'
   },
-  {
-    id: "10",
-    path: "/eeedept/eee-dept-events",
-    link: "Department Events",
-    arl:'l'
-  },
-  {
-    id: "11",
-    path: "#",
-    link: "MoU",
-    arl:'l'
-  },
+  // {
+  //   id: "10",
+  //   path: "/eeedept/eee-dept-events",
+  //   link: "Department Events",
+  //   arl:'l'
+  // },
+  // {
+  //   id: "11",
+  //   path: "#",
+  //   link: "MoU",
+  //   arl:'l'
+  // },
   {
     id: "12",
     path: "/eeedept/eee-nextgen",
     link: "Next Gen Lab",
     arl:'l'
   },
-  {
-    id: "13",
-    path: "#",
-    link: "Modern Electric Drives System",
-    arl:'l'
-  },
-  {
-    id: "14",
-    path: "#",
-    link: "Students Corner",
-    arl:'l'
-  },
+  // {
+  //   id: "13",
+  //   path: "#",
+  //   link: "Modern Electric Drives System",
+  //   arl:'l'
+  // },
+  // {
+  //   id: "14",
+  //   path: "#",
+  //   link: "Students Corner",
+  //   arl:'l'
+  // },
 ];
 
 const eee_hod = {
@@ -967,7 +967,7 @@ const eee_fac_profiles = [
     name: "Mrs.E.Priyanka",
     Designation: "Assistant Professor (Part time)",
     mailid: "evspriya@gmail.com",
-    pdf: "https://drive.google.com/file/d/1Lz27nytpYp-4YBdPozz8BxL0SFPw_fhQ/view?usp=drive_link",
+    pdf: "https://drive.google.com/file/d/1GUx7nbxF9GCk5RftL-CyHKvUAqa2vWzL/view?usp=drive_link",
   },
   {
     id: "21",

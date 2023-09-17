@@ -1,8 +1,8 @@
 // Thiran_heroimage_carousalinfo
 
-import image1 from "../assets/pictures/thiran_grp.webp";
-import image2 from "../assets/pictures/thiran_grp1.webp";
-import image3 from "../assets/pictures/thiran_grp3.webp";
+// import image1 from "../assets/pictures/thiran_grp.JPG";
+// import image2 from "../assets/pictures/thiran_grp1.jpg";
+// import image3 from "../assets/pictures/thiran_grp3.webp";
 
 
 
@@ -14,10 +14,9 @@ import cover3 from "../assets/pictures/thiran_driver.webp";
 import cover4 from "../assets/pictures/compass.webp";
 import cover5 from "../assets/pictures/thiran_civil.webp";
 
-
-
-
-
+const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/thiran/thiran_grp.webp"
+const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/thiran/thiran_grp1.webp"
+const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/thiran/thiran_grp3.webp"
 
 
 

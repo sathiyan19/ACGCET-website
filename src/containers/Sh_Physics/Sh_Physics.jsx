@@ -4,18 +4,19 @@ import './Sh_Physics.css'
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } from "../../widgets";
 
 import { Radial_menu } from "../../components";
-import phy from "../../assets/pictures/phy.webp";
+// import phy from "../../assets/pictures/phy.webp";
 import {Sh_dept_fmenu,phy_mission,phy_vision} from '../../constants/Sh_dept_menu'
 
-import { FaMicrochip } from "react-icons/fa6";
+import { GiPendulumSwing } from "react-icons/gi";
 
+const phy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/phy.webp"
 
 const Sh_Physics = () => {
   return (
     <div>
        <section className="shphydark">
         <div className="shphydept_float_menu">
-          <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Sh_dept_fmenu} />
         </div>
         <Radial_menu menu_links={Sh_dept_fmenu} />
         <div className="shphy_abt_area">
