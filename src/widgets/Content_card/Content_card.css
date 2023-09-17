@@ -15,7 +15,7 @@
   }
   .card_body {
     display: block;
-    width: 300px;
+    /* width: 300px; */
     height: 240px;
     padding: 30px 20px;
     /* background-color: #d9edff; */
@@ -104,6 +104,7 @@
     color: #fff;
     text-decoration: none;
     padding: 10px;
+    margin-top: 5px;
     background-color: #00134d;
     border-radius: 5px;
   
@@ -151,20 +152,23 @@
 
   @media(max-width:400px){
     .card_bg{
-      top: -55px;
-      right: -55px;
+      top: -75px;
+      right: -75px;
     }
   }
 
   @media(max-width:375px){
     .card_bg{
-      top: -55px;
-      right: -35px;
+      top: -85px;
+      right: -45px;
     }
   }
-  @media(max-width:340px){
+  @media(max-width:345px){
     .card_bg{
-      top: -55px;
-      right: -15px;
+      top: -75px;
+      right: -35px;
+    }
+    .card_title{
+      font-size: 24px;
     }
   }

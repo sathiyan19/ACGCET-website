@@ -45,15 +45,15 @@ const Sih = () => {
           </div>
         </div>
 
-        <Underline heading="Who can participate" />
+        {/* <Underline heading="Who can participate" /> */}
         <div className="sihparticipate">
-          <div className="sihsrjr">
+          {/* <div className="sihsrjr">
             <Underline heading="SIH Junior (Jr)" />
             <p>
               School students from 6th to 12th class will be able to showcase
               their talent and generate out-of-the-box open innovation ideas
             </p>
-          </div>
+          </div> */}
           <div className="sihsrjr">
             <Underline heading="SIH Senior (Sr)" />
             <p className="sihsrjrp">
