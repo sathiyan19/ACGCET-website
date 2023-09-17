@@ -967,7 +967,7 @@ const eee_fac_profiles = [
     name: "Mrs.E.Priyanka",
     Designation: "Assistant Professor (Part time)",
     mailid: "evspriya@gmail.com",
-    pdf: "https://drive.google.com/file/d/1Lz27nytpYp-4YBdPozz8BxL0SFPw_fhQ/view?usp=drive_link",
+    pdf: "https://drive.google.com/file/d/1GUx7nbxF9GCk5RftL-CyHKvUAqa2vWzL/view?usp=drive_link",
   },
   {
     id: "21",

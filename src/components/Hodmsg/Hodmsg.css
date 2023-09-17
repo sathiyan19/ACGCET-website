@@ -130,9 +130,9 @@
         margin-top: 80px;
         margin-left: 290px;
         margin-bottom: 20px;
-        >h3,p{
-          color: black;
-        }
+    }
+    .hoddet1 .hoddet1h .hoddet1p{
+      color:black;
     }
     .hodmesg .hoddp{
         /* width: 140px;
@@ -179,9 +179,9 @@
     }
   
     .quo{
-        >img{
+        
             display: none;
-        }
+        
     }
   
   }
@@ -253,10 +253,10 @@
       top:5%;
       left:38%;
       /* right:60%; */
-      >img{
-        width: 170px;
-        height: 170px;
-      }
+    }
+    .hoddp .hoddpi{
+      width: 170px;
+      height: 170px;
     }
     .hoddet1{
       margin-top: 180px;
@@ -279,18 +279,15 @@
     .hodmesg .hoddp{
       top:5%;
       /* left:;x */
-     
       margin-left:auto;
       margin-right:auto;
+    }
+    .hoddp .hoddpi{
+      width: 150px;
+      height: 150px;
 
-      >img{
-        width: 150px;
-        height: 150px;
-
-        margin-left:auto;
-        margin-right:auto;
-
-      }
+      margin-left:auto;
+      margin-right:auto;
     }
   }
 
@@ -301,12 +298,12 @@
       /* right:60%; */
       margin-left:auto;
       margin-right:auto;
-      >img{
-        width: 150px;
-        height: 150px;
-        margin-left:auto;
-        margin-right:auto;
-      }
+    }
+    .hoddp .hoddpi{
+      width: 150px;
+      height: 150px;
+      margin-left:auto;
+      margin-right:auto;
     }
   }
   @media (max-width:475px){
@@ -316,12 +313,12 @@
       /* right:60%; */
       margin-left:auto;
       margin-right:auto;
-      >img{
-        width: 150px;
-        height: 150px;
-        margin-left:auto;
-        margin-right:auto;
-      }
+    }
+    .hoddp .hoddpi{
+      width: 150px;
+      height: 150px;
+      margin-left:auto;
+      margin-right:auto;
     }
   }
   @media (max-width:450px){
@@ -331,12 +328,12 @@
       /* right:60%; */
       margin-left:auto;
       margin-right:auto;
-      >img{
-        width: 150px;
-        height: 150px;
-        margin-left:auto;
-        margin-right:auto;
-      }
+    }
+    .hoddp .hoddpi{
+      width: 150px;
+      height: 150px;
+      margin-left:auto;
+      margin-right:auto;
     }
     .hhoodd{
       margin-top: 50px;
@@ -351,16 +348,16 @@
       align-items: center;
       margin-left:auto;
       margin-right:auto;
-      >img{
-        align-items: center;
-        justify-content: center;
-        right:auto;
-        left:auto;
-        width: 130px;
-        height: 130px;
-        margin-left:auto;
-        margin-right:auto;
-      }
+    }
+    .hoddp .hoddpi{
+      align-items: center;
+      justify-content: center;
+      right:auto;
+      left:auto;
+      width: 130px;
+      height: 130px;
+      margin-left:auto;
+      margin-right:auto;
     }
     .hoddet1{
       margin-top: 150px;
@@ -372,12 +369,12 @@
     .hodmesg .hoddp{
       top:3%;
       left:37%;
-      >img{
-        width: 115px;
-        height: 115px;
-        margin-left:auto;
-        margin-right:auto;
-      }
+    }
+    .hoddp .hoddpi{
+      width: 115px;
+      height: 115px;
+      margin-left:auto;
+      margin-right:auto;
     }
     .hoddet1{
       margin-top: 150px;
@@ -393,12 +390,12 @@
   .hodmesg .hoddp{
     top:3%;
     left:35%;
-    >img{
-      width: 115px;
-      height: 115px;
-      margin-left:auto;
-      margin-right:auto;
-    }
+  }
+  .hoddp .hoddpi{
+    width: 115px;
+    height: 115px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .hoddet1{
     margin-top: 150px;

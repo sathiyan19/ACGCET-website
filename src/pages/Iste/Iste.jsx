@@ -14,7 +14,7 @@ function Iste() {
         <Underline heading="Indian Society For Technical Education" />
         <div className="isteabt">
           <div className="isteabttext">
-            <p>
+            <p className="isteabttextp">
               The Indian Society for Technical Education (ISTE) is the leading
               National Professional non-profit making Society for the Technical
               Education System in our country with the motto of Career
@@ -43,7 +43,7 @@ function Iste() {
             </p>
           </div>
           <div className="isteabtpic">
-            <img src={istelogo} alt="istelogo" />
+            <img className="isteabtpici" src={istelogo} alt="istelogo" />
           </div>
         </div>
 

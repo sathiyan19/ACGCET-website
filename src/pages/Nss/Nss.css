@@ -1,7 +1,8 @@
 .nsspara {
   padding: 10px;
   margin-top:10px;
-  .nsstherila{
+}
+.nsstherila{
     display: flex;
     align-items: center;
     padding: 20px;
@@ -9,28 +10,22 @@
     justify-content: space-between;
     background-color: #f1f1f1;
   }
-  .nssparacont{
+.nssparacont{
     width: 78%;
-    >p{
-      line-height: 1.5rem;
-      font-size: 18px;
-      color: black;
-      text-align: justify;
-    }
   }
-  .nssparalogo {
+.nssparacont_p{
+    line-height: 1.5rem;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+  }
+.nssparalogo {
     width: 20%;
-    >img{
-      width: 100%;
-      height: auto;
-    }
   }
-}
-
-
-
-
-
+.nssflexlogo{
+    width: 100%;
+    height: auto;
+  }
 .mosec {
   display: flex;  
   margin: 30px;
@@ -38,32 +33,28 @@
   align-items: center;
   height: 350px;
 }
-
-.mottoimg img {
+.mottonss{
   height: 350px;
 }
-
-
 .mottotext {
   display: flex;
   flex-direction: column;
-  > h2 {
-    margin-left: 120px;
-    color: black;
-    margin-top: 10px;
-  }
-  > img {
-    height: 100px;
-    width: 100px;
-  }
-  .q1 {
-    margin-left: 10px;
-  }
-  .q2 {
-    margin-left: 400px;
-  }
 }
-
+.q1 {
+  margin-left: 10px;
+}
+.q2 {
+  margin-left: 400px;
+}
+.q1,.q2{
+  height: 100px;
+  width: 100px;
+}
+.mottotext_h2{
+  margin-left: 120px;
+  color: black;
+  margin-top: 10px;
+}
 .mottohead {
   margin-top: 28px;
   background-color: #00134d;
@@ -71,62 +62,63 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  > h1 {
-    color: white;
-  }
 }
-
-
-
+.mottohead_h1{
+    color: white;
+}
 
 
 .nssofficers {
   margin-top: 10px;
   padding: 20px;
-  .nsscardholder {
+}
+.nsscardholder {
     display: flex;
     justify-content: center;
   }
+
   .nsscards {
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
   }
-}
 
 .nssgallerysec{
   padding: 20px;
+}
+  .nssworkslide{
+    width: 70%;
+  }
   .nssworkflex{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .nssworkslide{
-      width: 70%;
-    }
+    
   }
-
+ 
   .nsstime{
     padding: 20px;
-    .nsstime1{
-      >h3{
-        color: #00134d;
-        /* font-size: large; */
-      }
-      >p{
-        line-height: 1.5rem;
-        color: black;
-        font-size: 18px;
-        text-align: justify;
-      }
-    }
+
+   }
+   .nsstime1_h3{
+    color: #00134d;
+    /* font-size: large; */
   }
+  .nsstime1_p{
+    line-height: 1.5rem;
+    color:black;
+    font-size: 18px;
+    text-align: justify;
+  }
+  
 
 
   
   .nssloga{
     padding: 20px;
-    >p{
+  }
+  .nssloga_p{
       color: black;
       line-height: 1.5rem;
       text-align: justify;
@@ -141,30 +133,30 @@
       justify-content:space-evenly;
       align-items: center;
       background-color: #f1f1f1;
-      .nssawardtext{
+      /* .nssawardtext{
         width: 50%;
         >h5{
           font-size: 70px;
           color: #00134d;
-          /* font-weight:; */
+         
         }
         >p{
-          /* margin-left: 30px; */
+          
           color: black;
           font-size: 20px;
           line-height: 1.5rem;
           text-align: center;
         }
-      }
+      } 
       .nssawardpics{
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-      }
+      }*/
     }
-  }
-}
+  
+
 
 .nssachieve{
   padding: 20px;
@@ -173,26 +165,25 @@
 
 
 @media (max-width:1050px){
-  .nssworkflex{
-    
+  
     .nsswork{
       display:none
     }
     .nssworkslide{
       width: 100% !important;
     }
-  }
+  
 }
 
 @media (max-width:950px){
-  .nsstherila{
+  
     .nssparacont{
       width: 72%;
     }
     .nssparalogo{
       width:25%;
     }
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -204,15 +195,15 @@
     height: 300px;
   }
 
-  .mottotext {
-    > img {
+  
+    .q1,.q2{
       width: 70px;
       height: 70px;
     }
     .q2 {
       margin-left: 380px;
     }
-  }
+  
 
   .mottohead {
     height: 60px;
@@ -222,13 +213,14 @@
   .nsstherila{
     flex-direction: column-reverse;
     padding: 0;
-    .nssparacont{
+    
+  }
+  .nssparacont{
       width: 100%;
     }
     .nssparalogo{
       padding-bottom: 10px;
     }
-  }
 
 
 
@@ -236,12 +228,11 @@
     width: 100% !important;
   }
 
-  .nssloga{
+  /* .nssloga{
     .nssawardtable{
       overflow-x: scroll;
     }
-  }
-
+  } */
 
 }
 
@@ -251,13 +242,16 @@
     height: 600px;
     margin: 0px 30px 30px 30px;
   }
+  .nssawardtable{
+    overflow-x: scroll;
+  }
 
-  .mottotext {
-    > img {
+
+    .q1,.q2{
       width: 30px;
       height: 30px;
     }
-    > h2 {
+    .mottotext_h2{
       margin-left: 40px;
     }
     .q1 {
@@ -267,33 +261,34 @@
     .q2 {
       margin-left: 250px;
     }
-  }
+  
 
-  .nsstherila{
+  
     .nssparalogo{
       width: 40%;
     }
-  }
+  
 
 
 
-  .nssofficers {
-    .pohead {
+ 
+    /* .pohead {
       > h1 {
         font-size: 30px;
       }
-    }
+    } */
     .nsscards {
       flex-direction: column;
     }
-  }
+  
 
   .nssgallerysec{
     padding: 10px;
-    .nsstime{
+    
+  }
+  .nsstime{
       padding: 0;
     }
-  }
 
 
   .nssloga{
@@ -301,51 +296,44 @@
   }
 
 
-  .achieve{
+  /* .nssachieve{
     overflow-x: scroll;
-  }
+  } */
 }
 
 @media (max-width:500px){
-  .nsspara{
-    .nsstherila{
-      .nssparacont{
-        >p{
+  
+
+  .nssparacont_p{
           font-size: 16px ;
-        }
-      }
-    }
   }
-  .nssgallerysec{
-    .nsstime{
-      .nsstime1{
-        >p{
-          font-size: 16px;
-        }
-      }
-    }
-    .nssloga{
-      >p{
+  
+    .nsstime.nsstime1_p{
         font-size: 16px;
       }
+    
+    .nssloga_p{
+        font-size: 16px;
     }
-  }
+  
 
 }
 
 
 
 @media (max-width: 405px){
-  .nsspara{
+  
     .nsstherila{
       padding: 10px;
-      .nssparalogo{
+      
+    }
+    .nssparalogo{
         width: 50%;
       }
-    }
-  }
+      .nssachieve{
+        padding: 5px;
+        width: 100%;
+      }
+  
 
 }
-
-
-

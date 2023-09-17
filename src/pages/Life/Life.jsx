@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 // import iv from "../../assets/pictures/iv.webp";
 // import sports from "../../assets/pictures/sports.webp";
 // import technical from "../../assets/pictures/technical.webp";
-// import culture_pic from "../../assets/pictures/culture_pic.webp";
+import gym from "../../assets/pictures/gym.webp";
 
 const karaikudi_palace="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/Chettinad-new.webp"
 const hostel_life="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/hostel_life.webp"
@@ -21,7 +21,7 @@ const iv="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at
 const sports="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/sports.webp"
 const technical="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/technical.webp"
 const culture_pic="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/culture_pic.webp"
-const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
+// const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
 
 const Life = () => {
   return (
@@ -167,14 +167,7 @@ const Life = () => {
           <div className="life_crd_content">
             <div className="life_head life_text_5">Industrial Visits</div>
             <div class="life_crd_writing life_text_5">
-              The college campus gym is a student haven for physical fitness and
-              well-being. Equipped with modern exercise machines, free weights,
-              and cardio equipment, it offers a convenient and motivating space
-              for students to maintain a healthy lifestyle. Beyond exercise, the
-              gym fosters a sense of community, with students working out
-              together and supporting one another's fitness goals. It serves as
-              a valuable resource, promoting not only physical health but also a
-              balanced, holistic approach to student life.
+            Industrial visits from college provide students with invaluable practical exposure to various industries, bridging the gap between theoretical learning and real-world applications. These visits offer a unique opportunity for students to witness firsthand how concepts taught in classrooms translate into actual industry practices. Beyond textbook knowledge, students gain insights into diverse sectors, technologies, and workflows, expanding their horizons and making them more informed about career choices. Additionally, industrial visits often involve interactions with industry professionals, creating networking opportunities that can lead to internships, job placements, and valuable mentorships. These visits can also ignite motivation and inspire students as they witness successful projects and professionals in action. Furthermore, by identifying real-world challenges faced by industries, students are encouraged to think critically and develop innovative solutions. Overall, industrial visits play a pivotal role in enhancing students' skills, knowledge, and confidence, equipping them with a well-rounded education that prepares them for future career success.
             </div>
             {/* <div className="life_read_more">
               <Link className="life_read_link read_link_5" to="#">
