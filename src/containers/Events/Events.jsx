@@ -11,7 +11,7 @@ import cal_link_maker from "../../Functions/cal_link_maker"
 const Events = () => {
   return (
     <div className="gapo1">
-      <div className="events">
+      <div className="events" id="home_events">
         <p className="head">Events</p>
       </div>
       <div className="row row-cols-lg-4 row-cols-2 g-3 ">

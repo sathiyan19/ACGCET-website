@@ -1,6 +1,22 @@
 //IMPORTANT:: Date Format: SEP 06 2023 
 export const events=[
     {
+        'id':'5',
+        'date':'SEP 24 2023',
+        'title':'Project Magizh Day 2 - by Rotaract club and Music Club',
+        'time':'05:30 pm',
+        'venue':'Soodamanipuram park',
+        'details':'A Musical fund raising event !'
+    },
+    {
+        'id':'4',
+        'date':'SEP 23 2023',
+        'title':'Project Magizh Day 1 - by Rotaract Club and Music Club',
+        'time':'05:30 pm',
+        'venue':'Soodamanipuram park',
+        'details':'A Musical fund raising event !'
+    },
+    {
         'id':'2',
         'date':'SEP 15 2023',
         'title':'Campus Tour for Freshers',

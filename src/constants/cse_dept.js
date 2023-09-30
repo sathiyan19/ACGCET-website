@@ -677,7 +677,32 @@ const cse_stud_data = [
           sno: "54",
           regno:"91762215058",
           name: "YOGA SATHYA RV",
-        }
+        },
+        {
+          sno: "55",
+          regno:"91762315201",
+          name: "ANNAMALAI M",
+        },
+        {
+          sno: "56",
+          regno:"91762315202",
+          name: "KAVIYA S",
+        },
+        {
+          sno: "57",
+          regno:"91762315203",
+          name: "MOHAMMED SHAJITH M I",
+        },
+        {
+          sno: "58",
+          regno:"91762315204",
+          name: "NANDHAKUMAR N",
+        },
+        {
+          sno: "59",
+          regno:"91762315205",
+          name: "SUBIKSHA M V",
+        },
       ],
       columns: [
         { field: "sno", header: "sno" },
