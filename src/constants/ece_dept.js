@@ -724,7 +724,7 @@ const ece_progs = [
     year: "2002",
     period: "2 Years",
     top_head: "M.E.",
-    program: "Microwave & Optical Communication",
+    program: "Microwave and Optical Communication",
     intake: "18",
   },
   {

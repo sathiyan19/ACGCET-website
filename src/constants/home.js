@@ -8,9 +8,9 @@ import whiteblue from "../assets/pictures/whiteblue.webp";
 
 export const reccarousal=[
   zoho,
-  hcl,
+  // hcl,
   lt,
   gofrugal,
-  wipro,
+  // wipro,
   whiteblue
 ]

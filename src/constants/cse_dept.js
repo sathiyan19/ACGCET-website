@@ -115,7 +115,7 @@ const cse_fac_profiles = [
     cover: cover,
     dp: uma_rani,
     name: "Dr. C.UmaRani",
-    Designation: "Associate professor",
+    Designation: "Head of the Department/ Associate professor",
     mailid: "drcumakkd@gmail.com",
     pdf: "#",
   },
