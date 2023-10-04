@@ -25,6 +25,7 @@ const Events = () => {
             time={event.time}
             venue={event.venue}
             cal_link={gcal_link}
+            status={event.status}
           />)
         })}
       </div>

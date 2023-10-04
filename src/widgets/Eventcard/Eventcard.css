@@ -47,6 +47,14 @@
     text-align: center;
     /* text-decoration: none; */
 }
+.status_up{
+    color:#ff6600;
+    font-size: 14px;
+}
+.status_com{
+    color:#bbb;
+    font-size: 14px;
+}
 
 @media (max-width:802px) {
     .date {

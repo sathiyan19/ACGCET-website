@@ -1,6 +1,15 @@
 //IMPORTANT:: Date Format: SEP 06 2023 
 export const events=[
     {
+        'id':'6',
+        'date':'OCT 05 2023',
+        'title':'Jumanji - by Rotaract club',
+        'time':'04:45 pm',
+        'venue':'Gallery Hall',
+        'details':'Fun team event for 1st year students',
+        'status':'due'
+    },
+    {
         'id':'5',
         'date':'SEP 24 2023',
         'title':'Project Magizh Day 2 - by Rotaract club and Music Club',
