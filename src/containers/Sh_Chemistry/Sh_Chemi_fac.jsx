@@ -7,15 +7,14 @@ import { Sh_dept_fmenu,chemi_fac_profiles,chemi_sup_profiles } from '../../const
 import { Radial_menu } from "../../components";
 
 
-import { FaMicrochip } from "react-icons/fa6";
-
+import { GrTest } from "react-icons/gr";
 
 const Sh_Chemi_fac = () => {
   return (
     <div>
       <section className="shengdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
             </div>
             <Radial_menu menu_links={Sh_dept_fmenu} />
             <div className="sheng_fac_area">

@@ -4,7 +4,7 @@ import { Table,Radial_menu } from '../../components'
 import { Sh_dept_fmenu,eng_prog } from '../../constants/Sh_dept_menu'
 import { Backtotop,Floatinmenu } from '../../widgets';
 
-import { FaMicrochip } from "react-icons/fa6";
+import { RiEnglishInput } from "react-icons/ri";
 
 
 const Sh_Eng_prog = () => {
@@ -19,7 +19,7 @@ const Sh_Eng_prog = () => {
     <div>
     <section className="shengdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={RiEnglishInput} head="Menu" links={Sh_dept_fmenu} />
             </div>
             <Radial_menu menu_links={Sh_dept_fmenu} />
       <div className='sh_eng'>
