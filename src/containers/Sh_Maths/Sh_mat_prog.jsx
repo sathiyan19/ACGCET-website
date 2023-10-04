@@ -4,7 +4,7 @@ import { Table,Radial_menu } from '../../components'
 import { Sh_dept_fmenu,mat_prog } from '../../constants/Sh_dept_menu'
 import { Backtotop,Floatinmenu } from '../../widgets';
 
-import { FaMicrochip } from "react-icons/fa6";
+import { VscSymbolOperator } from "react-icons/vsc";
 
 
 const Sh_mat_prog = () => {
@@ -20,7 +20,7 @@ const Sh_mat_prog = () => {
     <div>
     <section className="shmatdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Sh_dept_fmenu} />
             </div>
             <Radial_menu menu_links={Sh_dept_fmenu} />
       <div className='sh_mat'>

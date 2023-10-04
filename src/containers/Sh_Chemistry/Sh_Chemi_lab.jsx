@@ -5,7 +5,7 @@ import { Backtotop,Floatinmenu, Underline,Modal} from "../../widgets";
 import { Sh_dept_fmenu } from '../../constants/Sh_dept_menu';
 import { Radial_menu } from "../../components";
 
-import { FaMicrochip } from "react-icons/fa6";
+import { GrTest } from "react-icons/gr";
 import chemilab from "../../assets/pictures/chemilab.webp"
 
 const Sh_Chemi_lab = () => {
@@ -13,7 +13,7 @@ const Sh_Chemi_lab = () => {
     <div>
       <section className="shengdark">
         <div className="shengdept_float_menu">
-          <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
         </div>
         <Radial_menu menu_links={Sh_dept_fmenu} />
         <div className="sheng_abt_area">

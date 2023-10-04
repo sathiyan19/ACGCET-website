@@ -6,7 +6,7 @@ import {Profile_display} from '../../components'
 import { Sh_dept_fmenu,mat_fac_profiles } from '../../constants/Sh_dept_menu';
 import { Radial_menu } from "../../components";
 
-import { FaMicrochip } from "react-icons/fa6";
+import { VscSymbolOperator } from "react-icons/vsc";
 
 
 const Sh_mat_fac = () => {
@@ -14,7 +14,7 @@ const Sh_mat_fac = () => {
     <div>
       <section className="shmatdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Sh_dept_fmenu} />
             </div>
             <Radial_menu menu_links={Sh_dept_fmenu} />
             <div className="sheng_fac_area">

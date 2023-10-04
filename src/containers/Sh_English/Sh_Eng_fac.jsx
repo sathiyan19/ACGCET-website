@@ -7,7 +7,7 @@ import { Sh_dept_fmenu,eng_fac_profiles } from '../../constants/Sh_dept_menu';
 import { Radial_menu } from "../../components";
 
 
-import { FaMicrochip } from "react-icons/fa6";
+import { RiEnglishInput } from "react-icons/ri";
 
 
 const Sh_Eng_fac = () => {
@@ -15,7 +15,7 @@ const Sh_Eng_fac = () => {
     <div>
        <section className="shengdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={RiEnglishInput} head="Menu" links={Sh_dept_fmenu} />
             </div>
             <Radial_menu menu_links={Sh_dept_fmenu} />
             <div className="sheng_fac_area">

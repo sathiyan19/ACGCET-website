@@ -8,7 +8,7 @@ import { Sh_dept_fmenu,phy_fac_profiles,phy_sup_profiles } from '../../constants
 import { Radial_menu } from "../../components";
 
 
-import { FaMicrochip } from "react-icons/fa6";
+import { GiPendulumSwing } from "react-icons/gi";
 
 
 const Sh_Phy_fac = () => {
@@ -16,7 +16,7 @@ const Sh_Phy_fac = () => {
     <div>
       <section className="shphydark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Sh_dept_fmenu} />
             </div>
             <Radial_menu menu_links={Sh_dept_fmenu} />
             <div className="shphy_fac_area">

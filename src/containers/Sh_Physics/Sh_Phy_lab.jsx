@@ -4,8 +4,8 @@ import { Backtotop,Floatinmenu, Underline,Modal} from "../../widgets";
 
 import { Sh_dept_fmenu } from '../../constants/Sh_dept_menu';
 import { Radial_menu } from "../../components";
+import { GiPendulumSwing } from "react-icons/gi";
 
-import { FaMicrochip } from "react-icons/fa6";
 import phylab from '../../assets/pictures/phylab.webp'
 
 
@@ -14,7 +14,7 @@ const Sh_Phy_lab = () => {
     <div>
       <section className="shphydark">
         <div className="shphydept_float_menu">
-          <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Sh_dept_fmenu} />
         </div>
         <Radial_menu menu_links={Sh_dept_fmenu} />
         <div className="shphy_abt_area">

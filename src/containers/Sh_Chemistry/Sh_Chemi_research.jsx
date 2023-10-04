@@ -4,8 +4,7 @@ import { Radial_menu,Listformat } from '../../components'
 import { Sh_dept_fmenu,chemi_research_R,chemi_research_l } from '../../constants/Sh_dept_menu'
 import { Backtotop,Floatinmenu,Underline } from '../../widgets';
 
-import { FaMicrochip } from "react-icons/fa6";
-
+import { GrTest } from "react-icons/gr";
 
 const Sh_Chemi_research = () => {
     
@@ -14,7 +13,7 @@ const Sh_Chemi_research = () => {
       <div>
        <section className="shchemidark">
         <div className="shchemidept_float_menu">
-          <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
         </div>
         <Radial_menu menu_links={Sh_dept_fmenu} />
         <div className="shchemi_abt_area">
