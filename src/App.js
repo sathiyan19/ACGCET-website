@@ -92,7 +92,8 @@ import {
   Civil_placement,
   Civil_indus,
   Civil_internal,
-  Civil_research
+  Civil_research,
+  Eee_modern
 } from "./pages";
 import "./App.css";
 
@@ -149,6 +150,7 @@ const App = () => {
         {/* <Route path="/mechdept" element={<Under/>} /> */}
         <Route path="/mechdept" element={<Mechdept/>} />
         <Route path="/eeedept" element={<Eeedept/>} />
+        <Route path="/eeedept/eee_modern" element={<Eee_modern/>}/>
         <Route path="/sciencedept" element={<Sciencedept/>} />
         <Route path="/sciencedept/sh-faculty" element={<Sh_faculty />} />
         <Route path="/sciencedept/sh-lab-facility" element={<Sh_lab_facility />} />

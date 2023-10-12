@@ -9,7 +9,8 @@ import {
     Underline,
   } from "../../widgets";
   import {
-    eee_dept_menu, pub3,
+    eee_dept_menu,
+    pub3,
   } from "../../constants/eee_dept";
   
   import { Radial_menu,Table,Listformat } from "../../components";
