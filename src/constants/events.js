@@ -7,7 +7,7 @@ export const events=[
         'time':'04:45 pm',
         'venue':'Gallery Hall',
         'details':'Fun team event for 1st year students',
-        'status':'due'
+        // 'status':'due'
     },
     {
         'id':'5',
