@@ -63,7 +63,7 @@ const eee_dept_menu = [
   {
     id: "5",
     path: "/eeedept/eee-faculties",
-    link: "People",
+    link: "Faculties",
     arl:'l'
   },
   {
@@ -109,7 +109,7 @@ const eee_dept_menu = [
   {
     id: "16",
     path: "#",
-    link: "Department Association Activities",
+    link: "Department Activities",
     arl:'l'
   },
   {
