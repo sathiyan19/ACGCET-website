@@ -63,57 +63,68 @@ const eee_dept_menu = [
   {
     id: "5",
     path: "/eeedept/eee-faculties",
-    link: "Faculties",
+    link: "People",
     arl:'l'
   },
-  {
-    id: "7",
-    path: "/eeedept/eee-lab",
-    link: "Lab Facilities",
-    arl:'l'
-  },
-  // {
-  //   id: "8",
-  //   path: "#",
-  //   link: "Professional Socities",
-  //   arl:'l'
-  // },
   {
     id: "9",
     path: "/eeedept/eee-research",
     link: "Research and Publications",
     arl:'l'
   },
-  // {
-  //   id: "10",
-  //   path: "/eeedept/eee-dept-events",
-  //   link: "Department Events",
-  //   arl:'l'
-  // },
-  // {
-  //   id: "11",
-  //   path: "#",
-  //   link: "MoU",
-  //   arl:'l'
-  // },
+  
+  {
+    id: "7",
+    path: "/eeedept/eee-lab",
+    link: "Lab Facilities",
+    arl:'l'
+  },
+  {
+    id: "8",
+    path: "#",
+    link: "Student Placements",
+    arl:'l'
+  },
+  
+  
   {
     id: "12",
     path: "/eeedept/eee-nextgen",
-    link: "Next Gen Lab",
+    link: "Center of Excellence",
     arl:'l'
   },
-  // {
-  //   id: "13",
-  //   path: "#",
-  //   link: "Modern Electric Drives System",
-  //   arl:'l'
-  // },
-  // {
-  //   id: "14",
-  //   path: "#",
-  //   link: "Students Corner",
-  //   arl:'l'
-  // },
+  {
+    id: "13",
+    path: "#",
+    link: "Modern Electric Drives System",
+    arl:'l'
+  },
+  {
+    id: "15",
+    path: "#",
+    link: "Department Library",
+    arl:'l'
+  },
+  
+  {
+    id: "16",
+    path: "#",
+    link: "Department Association Activities",
+    arl:'l'
+  },
+  {
+    id: "17",
+    path: "#",
+    link: "Video Tour",
+    arl:'l'
+  },
+  
+  {
+    id: "14",
+    path: "#",
+    link: "Students Corner",
+    arl:'l'
+  },
 ];
 
 const eee_hod = {

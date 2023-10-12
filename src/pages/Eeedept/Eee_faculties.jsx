@@ -16,7 +16,7 @@ const Eee_faculties = () => {
         <div className="eeeheading">
           Department of Electrical and Electronics Engineering
         </div>
-        <div className="eee_sub_heading">Faculties</div>
+        <div className="eee_sub_heading">People</div>
       </div>
       <section className="eeedark">
         <div className="dept_float_menu">
@@ -25,11 +25,11 @@ const Eee_faculties = () => {
         <Radial_menu menu_links={eee_dept_menu} />
         <div className="eee_fac_area">
           <div className="eee_teach_fac">
-            <Underline heading="Teaching Faculties" />
+            <Underline heading="Faculty Members" />
             <Profile_display list_info={eee_fac_profiles} />
           </div>
           <div className="eee_teach_fac">
-            <Underline heading="Suporting Faculties" />
+            <Underline heading="Technical Staff" />
             <Profile_display list_info={eee_sup_profiles} />
           </div>
         </div>
