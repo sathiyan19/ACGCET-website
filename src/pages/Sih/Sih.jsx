@@ -39,6 +39,10 @@ const Sih = () => {
             various sectors in India, contributing to the country's development
             and technological advancement.
           </p>
+
+          <p className="sihabttextp">
+          Dr. C. Uma Rani, the Head of the Department of Computer Science and Engineering (CSE), plays a crucial role as the coordinator for the Smart India Hackathon (SIH) at our college. In this role, she leads and oversees the college's participation in the SIH, a nationwide innovation competition that challenges students to develop innovative solutions to real-world problems. Dr.C.Uma Rani's responsibilities likely include organizing teams, facilitating training and support, liaising with SIH organizers, and ensuring that our college's participants are well-prepared and have the resources they need to excel in the competition. Her leadership ensures our college's active engagement in this prestigious event and encourages students to showcase their problem-solving skills and creativity on a national platform.
+          </p>
          </div>
           <div className="sih_logo_holder">
             <img className="sih_logo_img" src={sihlogo} alt="sihlogo" />
