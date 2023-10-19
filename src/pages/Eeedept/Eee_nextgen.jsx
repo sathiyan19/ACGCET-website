@@ -22,7 +22,7 @@ const Eee_nextgen = () => {
         <div className="eeeheading">
           Department of Electrical and Electronics Engineering
         </div>
-        <div className='eee_sub_heading'>Next Gen Lab</div>
+        <div className='eee_sub_heading'>Center of Excellence</div>
       </div>
       <section className="eeedark">
         <div className="dept_float_menu">
