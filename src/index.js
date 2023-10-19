@@ -8,8 +8,6 @@ import ReactGA from 'react-ga4';
 
 ReactGA.initialize('G-0HLNW2W47S');
 
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <App/>
