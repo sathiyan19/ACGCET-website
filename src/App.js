@@ -92,7 +92,8 @@ import {
   Civil_placement,
   Civil_indus,
   Civil_internal,
-  Civil_research
+  Civil_research,
+  Facilities
 } from "./pages";
 import "./App.css";
 
@@ -196,7 +197,7 @@ const App = () => {
         <Route path="/webdev-team" element={<Devpage/>} />
         <Route path="/civildept/civil-library" element={<Civil_library/>} />
         <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
-
+        <Route path="/centers-and-facilities" element={<Facilities/>} />
       </Routes>
       <Footer />
     </div>
