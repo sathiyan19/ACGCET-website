@@ -139,7 +139,7 @@ const top_nav_paths = [
     id: "13",
     type: "2",
     title: "Centers & Facilities",
-    basepath: "/under",
+    basepath: "/centers-and-facilities",
     links: [
       // { path: "/under", link: "Link1" },
       //     {'path':'/under','link':"Link2"},
@@ -212,7 +212,7 @@ const bottom_nav_paths = [
     id: "19",
     type: "3",
     title: "Centers & Facilities",
-    basepath: "/under",
+    basepath: "/centers-and-facilities",
     links: [
       // { path: "/", link: "Link1" },
       // { path: "/", link: "Link2" },
