@@ -28,7 +28,7 @@ export const devteam=[
         id:"3",
         name:"Kaviya B",
         batch:"2021-2025 Batch",
-        linkedin:"#",
+        linkedin:"https://www.linkedin.com/in/kaviya-b-6270b9247",
         pic:kaviya,
         color:"#ffc400"
     },
