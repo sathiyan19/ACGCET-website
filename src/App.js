@@ -94,7 +94,9 @@ import {
   Civil_internal,
   Civil_research,
   Facilities,
-  Eee_modern
+  Eee_modern,
+  Eee_lib,
+  Eee_studcorner
 } from "./pages";
 import "./App.css";
 
@@ -151,7 +153,8 @@ const App = () => {
         {/* <Route path="/mechdept" element={<Under/>} /> */}
         <Route path="/mechdept" element={<Mechdept/>} />
         <Route path="/eeedept" element={<Eeedept/>} />
-        <Route path="/eeedept/eee_modern" element={<Eee_modern/>}/>
+        <Route path="/eeedept/eee-modern" element={<Eee_modern/>}/>
+        <Route path="/eeedept/eee-studcorner" element={<Eee_studcorner/>}/>
         <Route path="/sciencedept" element={<Sciencedept/>} />
         <Route path="/sciencedept/sh-faculty" element={<Sh_faculty />} />
         <Route path="/sciencedept/sh-lab-facility" element={<Sh_lab_facility />} />
@@ -179,7 +182,9 @@ const App = () => {
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
         <Route path="/eeedept/eee-research" element={<Eee_research/>} />
         <Route path="/eeedept/eee-nextgen" element={<Eee_nextgen/>}/>
-        <Route path="/eeedept/eee-dept-activities" element={<Eee_events/>} />
+        <Route path="/eeedept/eee-nextgen" element={<Eee_nextgen/>}/>
+        <Route path="/eeedept/eee-dept-lib" element={<Eee_lib/>} />
+        <Route path="/eeedept/eee-events" element={<Eee_events/>}/>
         <Route path="/uba" element={<Uba/>} />
         <Route path="/ecedept/ece-placement" element={<Ece_placement/>} />
         <Route path="/scholarship" element={<Scholarship/>} />

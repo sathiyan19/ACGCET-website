@@ -105,20 +105,20 @@ const eee_dept_menu = [
   },
   {
     id: "13",
-    path: "/eeedept/eee_modern",
+    path: "/eeedept/eee-modern",
     link: "Modern Electric Drives System",
     arl:'l'
   },
   {
     id: "15",
-    path: "#",
+    path: "/eeedept/eee-dept-lib",
     link: "Department Library",
     arl:'l'
   },
   
   {
     id: "16",
-    path: "#",
+    path: "/eeedept/eee-events",
     link: "Department Activities",
     arl:'l'
   },
@@ -131,7 +131,7 @@ const eee_dept_menu = [
   
   {
     id: "14",
-    path: "#",
+    path: "/eeedept/eee-studcorner",
     link: "Students Corner",
     arl:'l'
   },
@@ -673,6 +673,32 @@ const eee_progs = [
   },
 ];
 
+const studcorner=[
+  {
+    id:'1',
+    top_head:'B.E (2015-2019)',
+    program:"Arunasri K",
+    view:"https://drive.google.com/file/d/1qxIoCwBZk8A5mVuY-64k437mGIgjlS9G/view"
+  },
+  {
+    id:'2',
+    top_head:'B.E (2016-2020)',
+    program:"Aarthe B",
+    view:"https://drive.google.com/file/d/1PgAZeUhwelcgEuzA7r4enEyT5AT6zBQV/view"
+  },
+  {
+    id:'3',
+    top_head:'B.E (final yr)',
+    program:"Arnika P",
+    view:"https://drive.google.com/file/d/1zGXRf2fTZipHJJZcdf-uZWMfB2rCcAoh/view"
+  },
+  {
+    id:'4',
+    top_head:'B.E (final yr)',
+    program:"Indumathi V",
+    view:"https://drive.google.com/file/d/1dYWVNbKBlcTQCTNql0n7WjoS3WCcYwBL/view"
+  },
+]
 const eee_gen=[
   {
     id: "1",
@@ -1303,6 +1329,265 @@ const feedback=[
                     'content_2':"We also gain a hands-on experience by handling the industrial setup hardware. At last, we are exposed to real time signal acquisition using LabVIEW and DAQ. We thank our department for the wonderful opportunity. This project gave us more confident and better understanding."
                     },
 ]
+const events_info=[
+  {
+    id:"1",
+    point:"Alconesy – Inter College Technical Symposium"
+  },
+  {
+    id:"2",
+    point:"Think Quest – Intra College Technical Symposium"
+  }
+]
+const eee_staff=[
+  {
+    id:"1",
+    // coverpic:Ramadas,
+    name:"Prof K Ramadas",
+    batch:"Dept of EEE",
+    desc:"ACGCET, Karaikudi 03",
+    date:"Associate Professor(CAS)",
+  }
+]
+const eee_event=[
+  {
+    'sno':"1",
+    'title':"Think Quest 2K19",
+    'chiefguest':"Internal event",
+    'date':"13.02.2019"
+  },
+  {
+    'sno':"2",
+    'title':"ALCONESY’18",
+    'chiefguest':"Dr.M.L.Valarmathi (Principal, Government College of Engineering, Dharmapuri), G. Senthi Kumar (Deputy General Manager, Electrical, BGR Energy Systems Ltd, Chennai)",
+    'date':"12.09.2018"
+  },
+  {
+    'sno':"3",
+    'title':"Think Quest 2K18",
+    'chiefguest':"Internal event",
+    'date':"16.02.2018"
+  },
+  {
+    'sno':"4",
+    'title':"ALCONESY’17",
+    'chiefguest':"Er.Venkatesh Narasimhan (Director of KRIPYA Engineering Pte. Ltd. Chennai)",
+    'date':"12.10.2017"
+  },
+  {
+    'sno':"5",
+    'title':"Think Quest 2K16",
+    'chiefguest':"Internal event",
+    'date':"25.02.2016"
+  },
+  {
+    'sno':"6",
+    'title':"ALCONESY’15",
+    'chiefguest':"Mr.Thirugnana Sambandam Gurunathan (Chairman,iScottsbergPte. Ltd. Singapore)",
+    'date':"22.09.2015"
+  },
+]
+const eee_events_info1=[
+  {
+    id:"1",
+    point:"Paper Presentation"
+  },
+  {
+    id:"2",
+    point:"C Programming Event"
+  },
+  {
+    id:"3",
+    point:"Robo Soccer"
+  },
+  {
+    id:"4",
+    point:"Quiz"
+  },
+  {
+    id:"5",
+    point:"Faraday’s Friend"
+  },
+]
+const eee_events_info2=[
+  {
+    id:"1",
+    point:"Project Presentation"
+  },
+  {
+    id:"2",
+    point: "Do or Die"
+  },
+  {
+    id:"3",
+    point:"Technical Quiz"
+  },
+  {
+    id:"4",
+    point:"See Through C"
+  },
+  {
+    id:"5",
+    point:"Paper presentation"
+  },
+  {
+    id:"6",
+    point:"Robo soccer"
+  },
+  {
+    id:"7",
+    point:" Jerk it If You can"
+  },
+  {
+    id:"8",
+    point:"Unlock not with your Keys"
+  },
+  {
+    id:"9",
+    point:"Touch me not Challenge (Electric Fence)"
+  },
+  {
+    id:"10",
+    point:"Race but not on Wheels"
+  },
+  {
+    id:"11",
+    point:"Breath and blow to glow"
+  },
+  {
+    id:"12",
+    point:"Lighten the life"
+  },
+  {
+    id:"13",
+    point:"Blow with your breath"
+  },
+]
+const eee_events_info3=[
+  {
+    id:"1",
+    point:"Paper Presentation"
+  },
+  {
+    id:"2",
+    point:"C Programming Event"
+  },
+  {
+    id:"3",
+    point:"Robo Soccer"
+  },
+  {
+    id:"4",
+    point:"Quiz"
+  },
+  {
+    id:"5",
+    point:"Faraday’s Friend"
+  },
+  {
+    id:"6",
+    point:"C Chef"
+  },
+]
+const eee_events_info4=[
+  {
+    id:"1",
+    point:"Project Presentation"
+  },
+  {
+    id:"2",
+    point: "Paper presentation"
+  },
+  {
+    id:"3",
+    point:"See Through “c”"
+  },
+  {
+    id:"4",
+    point:"Technical Quiz"
+  },
+  {
+    id:"5",
+    point:"Faraday’s Friend"
+  },
+  {
+    id:"6",
+    point:"Robo soccer"
+  },
+  {
+    id:"7",
+    point:"Maze runner"
+  },
+  {
+    id:"8",
+    point:"Formation of pyramids"
+  },
+  {
+    id:"9",
+    point:" Workshop on IoT-LoRa"
+  },
+]
+const eee_events_info5=[
+  {
+    id:"1",
+    point:"Paper Presentation"
+  },
+  {
+    id:"2",
+    point:"Solar Car Race"
+  },
+  {
+    id:"3",
+    point:"C Chef",
+  },
+  {
+    id:"4",
+    point:"Quiz"
+  },
+  {
+    id:"5",
+    point:"Circuit Design"
+  },
+]
+const eee_events_info6=[
+  {
+    id:"1",
+    point:"Project Presentation"
+  },
+  {
+    id:"2",
+    point: "Paper presentation"
+  },
+  {
+    id:"3",
+    point:"See Through “c”"
+  },
+  {
+    id:"4",
+    point:"Technical Quiz"
+  },
+  {
+    id:"5",
+    point:"Circuitrix"
+  },
+  {
+    id:"6",
+    point:"Robo soccer"
+  },
+  {
+    id:"7",
+    point:"Maze runner"
+  },
+  {
+    id:"8",
+    point:"Formation of pyramids"
+  },
+  {
+    id:"9",
+    point:" Workshop on IoT-LoRa"
+  },
+]
+
 
 export {
   eee_dept_menu,
@@ -1329,5 +1614,15 @@ export {
   pub5,
   eee_gen,
   features,
-  feedback
+  feedback,
+  studcorner,
+  events_info,
+  eee_staff,
+  eee_event,
+  eee_events_info1,
+  eee_events_info2,
+  eee_events_info3,
+  eee_events_info4,
+  eee_events_info5,
+  eee_events_info6
 };

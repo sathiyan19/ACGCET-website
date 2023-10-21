@@ -43,7 +43,7 @@ const Civil_magazine = () => {
                 {mag_data.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
            </div>
               
-    
+    ={}
             </div>
           </section>
     
