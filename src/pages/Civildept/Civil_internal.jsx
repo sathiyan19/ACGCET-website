@@ -16,8 +16,8 @@ const Civil_internal = () => {
       <div className="civdept">
       <div className="civbg">
         <div className="civheading">Department of Civil Engineering</div>
+        <div className="civ_sub_heading">Internal Revenue Generation</div>
       </div>
-      <div className="civ_sub_heading">Internal Revenue Generation</div>
       <section className="civdark">
         <div className="dept_float_menu">
           <Floatinmenu
