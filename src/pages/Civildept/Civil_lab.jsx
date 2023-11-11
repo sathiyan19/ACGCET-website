@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import { Backtotop,Floatinmenu, Underline,Modal} from "../../widgets";
 import { civ_dept_menu,civ_labs} from "../../constants/civil_dept";
@@ -8,6 +8,9 @@ import { Radial_menu } from "../../components";
 import { BsFillBuildingsFill } from "react-icons/bs";
 
 const Civil_lab = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Laboratories';
+  }, []);
     return (
         <div className="civdept">
           <div className="civbg">

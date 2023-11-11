@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import { Backtotop,Floatinmenu, Underline,Modal} from "../../widgets";
 import { eee_dept_menu,eee_labs} from "../../constants/eee_dept";
@@ -8,6 +8,9 @@ import { Radial_menu } from "../../components";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const Eee_lab = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Laboratories';
+  }, []);
     return (
         <div className="eeedept">
           <div className="eeebg">

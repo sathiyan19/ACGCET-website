@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./T3_officials.css";
 
@@ -17,6 +17,9 @@ import { t3_off_depco } from '../../constants/teqip3';
 import { adstaff } from '../../constants/teqip3';
 
 const T3_officials = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Teqip 3 | Officials';
+  }, []);
 
   const columns = [
     { field: "sno",header:"sno"},
@@ -32,7 +35,7 @@ const T3_officials = () => {
     <Backtotop/>
     <div className='t3_off'>
     <div className="teqip3_heading">
-      <Underline heading="TEQIP-III"/>
+      <Underline heading="TEQIP-III Officials"/>
     </div>
       <div className='flt1'>
       <Floatinmenu head={teqip3_floater_menu.head} from_top={200} links={teqip3_floater_menu.links}/>

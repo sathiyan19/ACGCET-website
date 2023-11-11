@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Iqac_min.css"
 
@@ -9,6 +9,9 @@ import { Timeline } from "../../components";
 import { iqac_min,iqac_floater_menu } from "../../constants/iqac"
 
 const Iqac_min= () => {
+  useEffect(() => {
+    document.title = 'ACCET-IQAC | Minutes';
+  }, []);
   return (
     <div className='iqac_feed_whole'>
 

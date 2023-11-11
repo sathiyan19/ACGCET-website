@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Programs_offered.css'
 
@@ -7,6 +7,9 @@ import { Content_card,Backtotop,Underline } from '../../widgets'
 import {ug_programs ,pg_programs, pt_programs} from '../../constants/prog_offered'
 
 const Programs_offered = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Programs Offered';
+  }, []);
   return (
     <>
     <Backtotop/>

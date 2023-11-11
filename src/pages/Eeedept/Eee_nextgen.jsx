@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Radial_menu,Timeline } from "../../components";
 // import eee from "../../assets/pictures/eee_about.webp";
 
@@ -16,6 +16,9 @@ import {
 const technical="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/technical.webp"
 
 const Eee_nextgen = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Center of Excellence';
+  }, []);
   return (
     <div className="eeedept">
       <div className="eeebg">

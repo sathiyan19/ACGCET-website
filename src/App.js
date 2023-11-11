@@ -169,7 +169,7 @@ const App = () => {
         <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
         <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
         <Route path="/civildept/civil-research" element={<Civil_research/>} />
-        <Route path="/civildept/civil-dept-events" element={<Civil_events/>} />
+        {/* <Route path="/civildept/civil-dept-events" element={<Civil_events/>} /> */}
         <Route path="/civildept/civil-dept-magazine" element={<Civil_magazine/>} />
         <Route path="/civildept/civil-dept-indus" element={<Civil_indus/>} />
         <Route path="/civildept/civil-internal-revenue" element={<Civil_internal/>} />

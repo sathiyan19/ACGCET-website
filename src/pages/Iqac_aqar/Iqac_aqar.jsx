@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Iqac_aqar.css"
 
@@ -10,6 +10,9 @@ import { iqac_aqar,iqac_floater_menu } from "../../constants/iqac"
 
 
 const Iqac_aqar = () => {
+  useEffect(() => {
+    document.title = 'ACCET-IQAC | AQAR Reports';
+  }, []);
   return (
     <div className='iqac_aqar_whole'>
       

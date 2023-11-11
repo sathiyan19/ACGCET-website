@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Nss.css";
 import motto from "../../assets/pictures/nss/mottonss.webp";
@@ -25,6 +25,9 @@ import {
 } from "../../constants/Nss";
 
 const Nss = () => {
+  useEffect(() => {
+    document.title = 'ACCET-NSS';
+  }, []);
 
   const nsslogatab = [
     { field: "sno", header: "sno" },

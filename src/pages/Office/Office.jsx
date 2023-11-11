@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Office.css";
 
@@ -9,6 +9,9 @@ import { Backtotop,Underline } from "../../widgets";
 import { Profile_display } from "../../components";
 
 const Office = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Office';
+  }, []);
   return (
     <>
       <Backtotop />

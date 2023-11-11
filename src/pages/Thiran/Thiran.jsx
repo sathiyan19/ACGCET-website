@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import './Thiran.css'
 
@@ -11,7 +11,9 @@ import { Thiran_heroimage_carousalinfo,vision,mission_data,jury_awards} from "..
 import { Deptvision,Deptmission,Underline,Profilecard } from '../../widgets';
 
 const Thiran = () => {
-  
+  useEffect(() => {
+    document.title = 'ACCET-Thiran';
+  }, []);
   return (
     <div>
     

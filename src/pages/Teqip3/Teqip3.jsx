@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Teqip3.css";
 
@@ -12,6 +12,9 @@ import { Table } from "../../components";
 
 
 const Teqip3 = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Teqip 3';
+  }, []);
   const columns = [
     { field: "sno", header: "sno" },
     { field: "particulars", header: "particulars" },

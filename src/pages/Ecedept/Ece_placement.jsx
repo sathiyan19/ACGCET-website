@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Ece_placement.css'
 
@@ -10,6 +10,9 @@ import { Radial_menu } from "../../components";
 import { FaMicrochip } from "react-icons/fa6";
 
 const Ece_placement = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE | Placement Activities';
+  }, []);
     return (
         <div className="ecedept">
           <div className="ecebg">

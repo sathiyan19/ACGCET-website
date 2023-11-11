@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Ece_events.css";
 
@@ -11,6 +11,9 @@ import { Radial_menu } from "../../components";
 import { FaMicrochip } from "react-icons/fa6";
 
 const Ece_events = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE | Events';
+  }, []);
   return (
     <div className="ecedept">
       <div className="ecebg">

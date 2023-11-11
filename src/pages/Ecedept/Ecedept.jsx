@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Ecedept.css";
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card} from "../../widgets";
@@ -14,6 +14,9 @@ import { FaMicrochip } from "react-icons/fa6";
 const ece="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ece/group-pic.webp"
 
 const Ecedept = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE Department';
+  }, []);
   return (
     <div className="ecedept">
       <div className="ecebg">

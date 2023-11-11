@@ -11,6 +11,7 @@ import accetosa_logo from "../../assets/pictures/logo-cms.webp";
 
 const Alumni = () => {
   useEffect(() => {
+    document.title = 'ACCET-Alumni';
     window.addEventListener("resize", calwidth);
     var wid;
 

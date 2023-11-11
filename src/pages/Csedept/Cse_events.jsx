@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import { Backtotop, Floatinmenu, Underline, Reunion_card } from "../../widgets";
 import { cse_dept_menu, cse_asso_events } from "../../constants/cse_dept";
@@ -8,6 +8,9 @@ import { Radial_menu } from "../../components";
 import { FaComputer } from "react-icons/fa6";
 
 const Cse_events = () => {
+  useEffect(() => {
+    document.title = 'ACCET-CSE | Events';
+  }, []);
   return (
     <div className="csedept">
       <div className="csebg">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Civil_placement.css"
 import { Radial_menu,Listformat } from "../../components";
@@ -8,6 +8,9 @@ import { civ_dept_menu,civ_place_lt,civ_place_aarbee,civ_place_hexagon,civ_place
 
 
 const Civil_placement = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Placement';
+  }, []);
   return (
     <div className="civdept">
     <div className="civbg">

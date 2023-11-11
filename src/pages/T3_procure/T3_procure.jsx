@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./T3_procure.css";
 
@@ -12,6 +12,9 @@ import { t3_procure } from '../../constants/teqip3';
 
 
 const T3_procure = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Teqip 3 | Procurement';
+  }, []);
     const columns = [
         { field: "sno",header:"S.No"},
         { field: "dept",header:"department"},

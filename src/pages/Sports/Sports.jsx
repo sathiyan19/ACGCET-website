@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Sports.css";
 
@@ -14,6 +14,9 @@ import {
 } from "../../constants/sports";
 
 const Sports = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Sports';
+  }, []);
   return (
     <div>
       Sports
