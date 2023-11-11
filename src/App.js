@@ -165,7 +165,7 @@ const App = () => {
         <Route path="/csedept/cse-mou" element={<Cse_mou/>} />
         <Route path="/csedept/cse-dept-events" element={<Cse_events/>} />
         <Route path="/csedept/cse-prog" element={<Cse_prog_org/>} />
-        <Route path="/civildept/civil-peo" element={<Civil_peo/>} />
+        <Route path="/civildept/civil-peo" element={<Civil_peo/>} /> 
         <Route path="/civildept/civil-faculties" element={<Civil_faculties/>} />
         <Route path="/civildept/civil-lab" element={<Civil_lab/>} />
         <Route path="/civildept/civil-research" element={<Civil_research/>} />
