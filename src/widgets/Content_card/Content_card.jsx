@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Content_card.css";
 
-const Content_card = ({ top_head, heading, intake, pdf, period, year }) => {
+const Content_card = ({ top_head, heading, intake, pdf, period, year,view}) => {
   return (
     <div className="cont_card">
       <div className="card_body">
@@ -41,6 +41,18 @@ const Content_card = ({ top_head, heading, intake, pdf, period, year }) => {
             media="print"
           >
             View pdf&nbsp;&nbsp;&nbsp;
+            <span className="fa fa-angle-double-right double_arrow"></span>
+          </a>
+        )}
+        {view && (
+          <a
+          className="card_sub_link"
+            href={view}
+            target="blank"
+            rel="noopener noreferrer"
+            media="print"
+            >
+            View &nbsp;&nbsp;&nbsp;
             <span className="fa fa-angle-double-right double_arrow"></span>
           </a>
         )}

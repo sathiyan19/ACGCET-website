@@ -1,0 +1,33 @@
+
+.eee_event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eee_event_table{
+    margin-top: 40px;
+    width: 80%;
+    margin-bottom: 20px;
+    /* overflow-x: scroll; */
+    /* padding: 20px 30px; */
+}
+
+.eee_super{
+    color: #00134d;
+}
+@media (max-width:650px){
+    .eee_event_table{
+        width:90%;
+    }
+}
+@media (max-width:450px){
+    .eee_event_table{
+        width:100%;
+    }
+}
+@media (max-width:450px){
+    .eee_event_table{
+        overflow-x:scroll ;
+    }
+}
