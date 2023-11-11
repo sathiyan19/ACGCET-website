@@ -6,6 +6,7 @@ import { civ_dept_menu,internal } from '../../constants/civil_dept';
 
 import { BsFillBuildingsFill } from "react-icons/bs";
 
+import './Civil_internal.css'
 
 const Civil_internal = () => {
   useEffect(() => {
@@ -27,7 +28,7 @@ const Civil_internal = () => {
           />
         </div>
         <Radial_menu menu_links={civ_dept_menu} />
-        <div className="civ_prog_offered">
+        <div className="civ_internal_revenue">
           <Underline heading="Internal Revenue Generation" />
           <div className="civ_progs">
             {internal.map((item) => (
