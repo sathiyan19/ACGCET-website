@@ -15,7 +15,7 @@ const Eventcard = ({date,title,time,venue,cal_link,status}) => {
               {status && (<div className='status_up'>Upcoming !</div>)}
               {/* {!status && (<div className='status_com'>Completed</div>)} */}
             </div>
-            <a href={cal_link} className='event_cal_add' target='blank'>Add to Calendar</a>
+            {status && (<a href={cal_link} className='event_cal_add' target='blank'>Add to Calendar</a>)}
         </div>
     </div>
   )
