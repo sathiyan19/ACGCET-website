@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import { Backtotop,Floatinmenu, Underline,Modal} from "../../widgets";
 import { eee_dept_menu,eee_labs} from "../../constants/eee_dept";
@@ -7,7 +7,12 @@ import { Radial_menu } from "../../components";
 
 import { AiFillThunderbolt } from "react-icons/ai";
 
+import './Eee_lib.css'
+
 const Eee_lib = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Library';
+  }, []);
     return (
         <div className="eeedept">
           <div className="eeebg">
@@ -21,7 +26,7 @@ const Eee_lib = () => {
               <Floatinmenu logo={AiFillThunderbolt} head="Menu" links={eee_dept_menu} />
             </div>
             <Radial_menu menu_links={eee_dept_menu} />
-            <div className="eee_lab_area">
+            <div className="eee_lib_area">
           <Underline heading="Department Library"/>
           <p className="eee_dept_content indent"><br/>
           The department library is providing the technical resources to the students, research scholars and faculty members of the Electrical and Electronics Engineering department.

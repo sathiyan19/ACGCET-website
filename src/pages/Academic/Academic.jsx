@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Academic.css";
 
@@ -8,6 +8,9 @@ import { Backtotop,Underline } from "../../widgets";
 import { academic_cals } from "../../constants/academic_calendar";
 
 const Academic = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Academic Calendars';
+  }, []);
   return (
     <div>
       <Backtotop />

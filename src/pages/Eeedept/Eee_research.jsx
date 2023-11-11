@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Eee_research.css'
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -27,6 +27,9 @@ pub4,
 pub5 } from '../../constants/eee_dept';
 
 const Eee_research = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Research & Publications';
+  }, []);
     const columns=[
         {field:"name", header:"Name of the faculty"},
         {field:"area", header:"Area of Interest"}

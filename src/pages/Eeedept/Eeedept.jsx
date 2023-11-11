@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Eeedept.css";
 import {
@@ -25,6 +25,9 @@ import { AiFillThunderbolt } from "react-icons/ai";
 
 
 const Eeedept = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE Department';
+  }, []);
   return (
     <div className="eeedept">
       <div className="eeebg">

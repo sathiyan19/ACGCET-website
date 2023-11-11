@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Clubs.css";
 import { Clubscard,Backtotop } from "../../widgets";
@@ -6,6 +6,9 @@ import { Heroimagecarousal } from "../../components";
 import { Clubs_heroimage_carousalinfo,Clubs_info } from "../../constants/Clubs";
 
 const Clubs = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Clubs';
+  }, []);
   return (
     <div>
       <Backtotop/>

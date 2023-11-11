@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Ncc.css";
 import { Heroimagecarousal, Listformat, Accordion } from "../../components";
@@ -18,6 +18,9 @@ import mobpledge from "../../assets/pictures/ncc/pledge1.webp";
 
 const nccpledge="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/pledg2-min.webp"
 const Ncc = () => {
+  useEffect(() => {
+    document.title = 'ACCET-NCC';
+  }, []);
   return (
     <div>
       {/* hero image */}

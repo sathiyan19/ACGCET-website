@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Iqac_feed.css"
 
@@ -10,6 +10,9 @@ import { iqac_feed,iqac_floater_menu } from "../../constants/iqac"
 
 
 const Iqac_feed = () => {
+  useEffect(() => {
+    document.title = 'ACCET-IQAC | Feedback Reports';
+  }, []);
   return (
     <div className='iqac_min_whole'>
 

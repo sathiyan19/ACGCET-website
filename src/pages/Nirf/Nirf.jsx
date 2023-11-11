@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Nirf.css"
 
@@ -8,6 +8,9 @@ import { nirf } from '../../constants/nirf-float';
 
 
 const Nirf = () => {
+  useEffect(() => {
+    document.title = 'ACCET-NIRF';
+  }, []);
   return (
     <div className='nirf_content'>
         {/* <div className='aicte_head'>AICTE Attachments</div> */}

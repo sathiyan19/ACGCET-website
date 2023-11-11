@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import { Radial_menu, Table } from "../../components";
 import { BsFillBuildingsFill } from "react-icons/bs";
@@ -7,6 +7,9 @@ import { civ_dept_menu, civ_lib_data } from "../../constants/civil_dept";
 import lib from "../../assets/pictures/civil_dept/civil_library/civillib.webp";
 
 const Civil_library = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Library';
+  }, []);
   const columns = [
     { field: "S.No", header: "S.no" },
     { field: "ACCE.No", header: "ACCE.No" },

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import {
     Backtotop,
@@ -25,13 +25,16 @@ import {cse_prog_time} from '../../constants/cse_dept'
 
 
 const Cse_prog_org = () => {
+  useEffect(() => {
+    document.title = 'ACCET-CSE | Programs';
+  }, []);
     return (
         <div className="csedept">
           <div className="csebg">
             <div className="cseheading">
             Department of Computer Science and Engineering
             </div>
-            <div className="cse_sub_heading">Objectives & Outcomes</div>
+            <div className="cse_sub_heading">Programs</div>
           </div>
           <section className="csedark">
             <div className="dept_float_menu">
@@ -40,7 +43,7 @@ const Cse_prog_org = () => {
             <Radial_menu menu_links={cse_dept_menu} />
             <div className="cse_peo_area">
               <div className="cse_peo">
-                <Underline heading="Program Organized" />
+                <Underline heading="Programs Organized" />
                 {cse_prog_time.map((item) => (
                   <Timeline
                     key={item.id}

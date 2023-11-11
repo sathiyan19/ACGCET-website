@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Civildept.css";
 
@@ -24,6 +24,9 @@ import civil from "../../assets/pictures/civilabt.webp";
 import { BsFillBuildingsFill } from "react-icons/bs";
 
 const Civildept = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil Department';
+  }, []);
   return (
     <div className="civdept">
       <div className="civbg">

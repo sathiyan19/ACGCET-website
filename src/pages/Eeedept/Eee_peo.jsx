@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Eee_peo.css";
 
@@ -22,6 +22,9 @@ import { Radial_menu } from "../../components";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const Eee_peo = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Objectives & Outcomes';
+  }, []);
     return (
         <div className="eeedept">
           <div className="eeebg">

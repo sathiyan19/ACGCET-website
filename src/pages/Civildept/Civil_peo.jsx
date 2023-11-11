@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Civil_peo.css";
 
@@ -22,6 +22,9 @@ import { Radial_menu } from "../../components";
 import { BsFillBuildingsFill } from "react-icons/bs";
 
 const Civil_peo = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Objectives & Outcomes';
+  }, []);
     return (
         <div className="civdept">
           <div className="civbg">

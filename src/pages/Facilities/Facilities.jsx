@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Facilities.css";
 
@@ -34,6 +34,9 @@ const culture_pic =
 // const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
 
 const Facilities = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Centres & Facilities';
+  }, []);
   return (
     <div className="facility_holder">
       <Underline heading="Centres & Facilities" />

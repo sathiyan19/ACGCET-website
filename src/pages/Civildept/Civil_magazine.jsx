@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Civil_magazine.css";
 
@@ -21,6 +21,9 @@ import { BsFillBuildingsFill } from "react-icons/bs";
 
 
 const Civil_magazine = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Magazines & Newsletters';
+  }, []);
     return (
         <div className="civdept">
           <div className="civbg">

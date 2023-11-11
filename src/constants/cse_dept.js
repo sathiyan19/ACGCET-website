@@ -83,7 +83,7 @@ const cse_dept_menu = [
   
   {
     id: "11",
-    path: "cse-mou",
+    path: "/csedept/cse-mou",
     link: "MOU",
     arl:'l'
   },

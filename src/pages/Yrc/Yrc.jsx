@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Yrc.css";
 import { Underline } from "../../widgets";
@@ -8,6 +8,9 @@ import yrclogo from "../../assets/pictures/yrc/ll.webp";
 import { yrclist } from "../../constants/yrc";
 
 const Yrc = () => {
+  useEffect(() => {
+    document.title = 'ACCET-YRC';
+  }, []);
   return (
     <div className="yrcwhole">
       <Underline heading="Indian Red Cross Society" />

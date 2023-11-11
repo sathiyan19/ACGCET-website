@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./About.css";
 
@@ -27,6 +27,9 @@ const bus="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about_
 const kkdi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about_institute/kkdi.webp"
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'ACCET-About Institution';
+  }, []);
   return (
     <div className="whole_cont">
       <Backtotop />

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import { Backtotop, Floatinmenu, Underline, Modal } from "../../widgets";
 import { cse_dept_menu, cse_labs } from "../../constants/cse_dept";
@@ -11,6 +11,9 @@ import { FaComputer } from "react-icons/fa6";
 import cse_lab_cover from '../../assets/pictures/cse_dept/cse_labs/cse_lab_cover.webp'
 
 const Cse_lab = () => {
+  useEffect(() => {
+    document.title = 'ACCET-CSE | Laboratories';
+  }, []);
   return (
     <div className="csedept">
       <div className="csebg">

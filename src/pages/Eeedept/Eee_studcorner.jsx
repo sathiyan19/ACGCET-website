@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Backtotop,Floatinmenu, Underline,Content_card} from "../../widgets";
 import { eee_dept_menu,studcorner} from "../../constants/eee_dept";
 
@@ -7,6 +7,9 @@ import { Radial_menu } from "../../components";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const Eee_studcorner = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Students Corner';
+  }, []);
   return (
     <div className="eeedept">
           <div className="eeebg">

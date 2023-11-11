@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Ece_antenna.css";
 
@@ -18,6 +18,9 @@ import antenna1 from "../../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.
 // import antenna2 from '../../assets/pictures/ECE_Ant_Chamber_2.webp'
 
 const Ece_antenna = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE | Antenna Testing';
+  }, []);
   return (
     <div className="ecedept">
       <div className="ecebg">

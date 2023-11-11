@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Iqac.css"
 
@@ -11,6 +11,9 @@ import { iqac,iqac_func,iqac_aim, iqac_strategy,iqac_floater_menu } from '../../
 
 
 const Iqac = () => {
+  useEffect(() => {
+    document.title = 'ACCET-IQAC';
+  }, []);
 
   const columns = [
     { field: "sno",header:"sno"},

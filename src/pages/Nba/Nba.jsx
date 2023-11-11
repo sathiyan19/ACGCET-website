@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Nba.css";
 
@@ -10,6 +10,9 @@ import { Underline } from "../../widgets";
 
 
 const Nba = () => {
+  useEffect(() => {
+    document.title = 'ACCET-NBA';
+  }, []);
     const columns = [
         { field: "sno", header: "sno" },
         { field: "name", header: "Name of Programme" },

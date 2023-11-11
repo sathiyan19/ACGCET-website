@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import { Floatinmenu,Underline,Content_card } from '../../widgets';
 import { Radial_menu } from '../../components';
@@ -8,6 +8,9 @@ import { BsFillBuildingsFill } from "react-icons/bs";
 
 
 const Civil_internal = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Internal Revenue Generation';
+  }, []);
   return (
     <div>
       <div className="civdept">

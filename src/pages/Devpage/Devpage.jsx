@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Devpage.css'
 import { Devcard, Underline } from '../../widgets'
 import { devteam,guide_team } from '../../constants/devteam'
 
 const Devpage = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Web Development Team';
+  }, []);
   return (
     <div className='webdevpage'>
         <Underline heading="Development Team"/>
