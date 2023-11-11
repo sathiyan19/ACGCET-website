@@ -13,14 +13,22 @@ import { Link } from "react-router-dom";
 // import technical from "../../assets/pictures/technical.webp";
 import gym from "../../assets/pictures/gym.webp";
 
-const karaikudi_palace="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/Chettinad-new.webp"
-const hostel_life="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/hostel_life.webp"
-const crossyear="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/crossyear.webp"
-const library="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/library.webp"
-const iv="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/iv.webp"
-const sports="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/sports.webp"
-const technical="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/technical.webp"
-const culture_pic="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/culture_pic.webp"
+const karaikudi_palace =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/Chettinad-new.webp";
+const hostel_life =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/hostel_life.webp";
+const crossyear =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/crossyear.webp";
+const library =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/library.webp";
+const iv =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/iv.webp";
+const sports =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/sports.webp";
+const technical =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/technical.webp";
+const culture_pic =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/culture_pic.webp";
 // const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
 
 const Life = () => {
@@ -28,7 +36,6 @@ const Life = () => {
     <div className="life_at_acgcet_holder">
       <Underline heading="Life at ACGCET" />
       <div className="life_grid_holder">
-
         <div class="life_crd life_item1">
           <div class="life_head_image">
             <img class="life_image" src={karaikudi_palace} />
@@ -126,7 +133,18 @@ const Life = () => {
               that extend well beyond the college years.
             </div>
             <div class="life_crd_writing change_cross_text_900 life_text_4">
-            The existing senior-junior interaction in our college is characterized by a harmonious blend of mentorship and camaraderie. Seniors warmly welcome juniors, offering guidance, support, and friendship. This atmosphere of trust and respect encourages open communication, making it easy for juniors to seek advice and share their concerns. Seniors, in turn, share their experiences and insights, creating a strong support network. This interaction extends beyond academics, with seniors and juniors often collaborating on projects, participating in extracurricular activities, and organizing events together. The result is a college community that thrives on mutual respect, cooperation, and a shared commitment to personal and academic growth.
+              The existing senior-junior interaction in our college is
+              characterized by a harmonious blend of mentorship and camaraderie.
+              Seniors warmly welcome juniors, offering guidance, support, and
+              friendship. This atmosphere of trust and respect encourages open
+              communication, making it easy for juniors to seek advice and share
+              their concerns. Seniors, in turn, share their experiences and
+              insights, creating a strong support network. This interaction
+              extends beyond academics, with seniors and juniors often
+              collaborating on projects, participating in extracurricular
+              activities, and organizing events together. The result is a
+              college community that thrives on mutual respect, cooperation, and
+              a shared commitment to personal and academic growth.
             </div>
             {/* <div className="life_read_more">
               <Link className="life_read_link read_link_4" to="#">
@@ -167,7 +185,15 @@ const Life = () => {
           <div className="life_crd_content">
             <div className="life_head life_text_5">Industrial Visits</div>
             <div class="life_crd_writing life_text_5">
-            College industrial visits provide practical exposure, bridging theory and real-world applications. They let students see classroom concepts in action, broaden their horizons, and facilitate networking with professionals for potential internships and mentorships. Witnessing successful projects inspires motivation. Identifying industry challenges encourages critical thinking and innovation. Industrial visits enhance skills, knowledge, and confidence, preparing students for successful careers.
+              College industrial visits provide practical exposure, bridging
+              theory and real-world applications. They let students see
+              classroom concepts in action, broaden their horizons, and
+              facilitate networking with professionals for potential internships
+              and mentorships. Witnessing successful projects inspires
+              motivation. Identifying industry challenges encourages critical
+              thinking and innovation. Industrial visits enhance skills,
+              knowledge, and confidence, preparing students for successful
+              careers.
             </div>
             {/* <div className="life_read_more">
               <Link className="life_read_link read_link_5" to="#">
@@ -274,11 +300,25 @@ const Life = () => {
               competitive edge in their fields of study.
             </div>
             <div class="life_crd_writing change_cross_text_900 life_text_8">
-            The technical environment in our college is distinguished by its robust infrastructure and state-of-the-art facilities, creating an ideal ecosystem for cutting-edge education and research. The availability of high-speed Wi-Fi, well-equipped computer labs featuring the latest hardware and software, and smart classrooms greatly enhance the overall learning experience for students. These resources facilitate dynamic and interactive learning, enabling students to stay at the forefront of technology trends.
-
-Furthermore, the college frequently hosts a range of workshops, seminars, and technology-focused events. These gatherings not only supplement the curriculum but also encourage a culture of innovation and knowledge sharing among students and faculty. Students have access to online libraries, extensive research databases, and academic portals, which significantly aid their research endeavors and academic pursuits.
-
-In addition to advanced facilities, our college boasts a team of tech-savvy faculty members and dedicated technical support teams. They ensure that students have a seamless learning experience, providing guidance, troubleshooting assistance, and mentorship.
+              The technical environment in our college is distinguished by its
+              robust infrastructure and state-of-the-art facilities, creating an
+              ideal ecosystem for cutting-edge education and research. The
+              availability of high-speed Wi-Fi, well-equipped computer labs
+              featuring the latest hardware and software, and smart classrooms
+              greatly enhance the overall learning experience for students.
+              These resources facilitate dynamic and interactive learning,
+              enabling students to stay at the forefront of technology trends.
+              Furthermore, the college frequently hosts a range of workshops,
+              seminars, and technology-focused events. These gatherings not only
+              supplement the curriculum but also encourage a culture of
+              innovation and knowledge sharing among students and faculty.
+              Students have access to online libraries, extensive research
+              databases, and academic portals, which significantly aid their
+              research endeavors and academic pursuits. In addition to advanced
+              facilities, our college boasts a team of tech-savvy faculty
+              members and dedicated technical support teams. They ensure that
+              students have a seamless learning experience, providing guidance,
+              troubleshooting assistance, and mentorship.
             </div>
             {/* <div className="life_read_more">
               <Link className="life_read_link read_link_8" to="#">
@@ -315,7 +355,6 @@ In addition to advanced facilities, our college boasts a team of tech-savvy facu
             </div> */}
           </div>
         </div>
-
       </div>
     </div>
   );
