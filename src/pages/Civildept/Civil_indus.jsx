@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Civil_indus.css";
 
@@ -23,6 +23,9 @@ import { Radial_menu,Slideshow} from "../../components";
 import { BsFillBuildingsFill } from "react-icons/bs";
 
 const Civil_indus = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Industry Interaction';
+  }, []);
     return (
         <div className="civdept">
           <div className="civbg">

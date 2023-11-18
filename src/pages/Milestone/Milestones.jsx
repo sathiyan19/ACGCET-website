@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Milestones.css";
 
@@ -11,6 +11,9 @@ import { Backtotop } from "../../widgets";
 import mile from "../../assets/pictures/mile.webp";
 
 const Milestones = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Milestones';
+  }, []);
   const columns = [
     { field: "year", header: "year" },
     { field: "achieve", header: "achievement" },

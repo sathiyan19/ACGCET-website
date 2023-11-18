@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Eee_events.css'
 
 import { Backtotop, Floatinmenu, Underline } from "../../widgets";
@@ -9,6 +9,9 @@ import { Radial_menu,Listformat,Reunion_card_display,Table } from "../../compone
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const Eee_events = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Events';
+  }, []);
   const column=[
     {field:'sno',header:"Sno"},
     {field:'title',header:"Title of the Program"},

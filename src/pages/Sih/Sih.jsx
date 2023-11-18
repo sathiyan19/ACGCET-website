@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Sih.css";
 import { Underline, Modal,Backtotop } from "../../widgets";
@@ -7,6 +7,9 @@ import { sih22, sih20 } from "../../constants/sih";
 import sihlogo from "../../assets/pictures/sih/sih_logo.webp";
 
 const Sih = () => {
+  useEffect(() => {
+    document.title = 'ACCET-SIH';
+  }, []);
   return (
     <div>
       <Backtotop />

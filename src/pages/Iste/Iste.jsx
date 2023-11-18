@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Iste.css";
 import { Timeline, Listformat } from "../../components";
@@ -7,6 +7,9 @@ import { istepdf, istelist } from "../../constants/iste";
 import istelogo from "../../assets/pictures/istelogo.webp";
 
 function Iste() {
+  useEffect(() => {
+    document.title = 'ACCET-ISTE';
+  }, []);
   return (
     <div>
       <Backtotop />

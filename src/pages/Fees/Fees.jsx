@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Fees.css'
 
@@ -7,6 +7,9 @@ import { Content_card, Underline } from '../../widgets'
 import { fee_pdfs } from '../../constants/fee_structure'
 
 const Fees = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Fee Structure';
+  }, []);
   return (
     <div className='fee_content'>
         <div className='fee_head'><Underline heading="Fee Structure" /></div>

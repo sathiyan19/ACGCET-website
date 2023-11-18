@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Uba.css";
 import { Underline,Deptmission,Deptvision } from "../../widgets";
 import { Listformat } from "../../components";
@@ -7,6 +7,9 @@ import gandhi from "../../assets/pictures/Gandhiji.webp"
 import uba from "../../assets/pictures/uba.webp"
 
 const Uba = () => {
+  useEffect(() => {
+    document.title = 'ACCET-UBA';
+  }, []);
   return (
     <div className="ubaall">
       <Underline heading="Unnat Bharat Abhiyan" />

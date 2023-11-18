@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Annual_report.css";
 
@@ -8,6 +8,9 @@ import { Backtotop,Underline } from "../../widgets";
 import { annual_reps } from "../../constants/annual_reports";
 
 const Annual_report = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Annual Reports';
+  }, []);
   return (
     <div>
       <Backtotop />

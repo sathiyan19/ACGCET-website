@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import { Backtotop,Floatinmenu, Underline} from "../../widgets";
 import {Profile_display} from '../../components'
@@ -10,6 +10,9 @@ import { Radial_menu } from "../../components";
 import { FaMicrochip } from "react-icons/fa6";
 
 const Ece_faculties = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE | Faculties';
+  }, []);
     return (
         <div className="ecedept">
           <div className="ecebg">

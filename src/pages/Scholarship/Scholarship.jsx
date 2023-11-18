@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Scholarship.css'
 
@@ -6,6 +6,9 @@ import { Scholar_card,Underline } from '../../widgets'
 import { Scholar_info } from '../../constants/Scholar_card'
 
 const Scholarship = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Scholarships';
+  }, []);
   return (
     <div>
     <div className='Schtitle'>

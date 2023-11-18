@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Organisation.css'
 
@@ -7,6 +7,9 @@ import { Underline } from '../../widgets';
 import org_struc from "../../assets/pictures/org_str.webp";
 
 const Organisation = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Organisation Structure';
+  }, []);
   return (
     <div className="org_structure">
           <div className="org_heading ">

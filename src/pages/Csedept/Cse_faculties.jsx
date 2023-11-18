@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Csedept.css";
 import { Backtotop,Floatinmenu,Underline } from "../../widgets";
@@ -8,6 +8,9 @@ import { cse_dept_menu,cse_fac_profiles,cse_sup_profiles } from "../../constants
 import {FaComputer} from 'react-icons/fa6'
 
 const Cse_faculties = () => {
+  useEffect(() => {
+    document.title = 'ACCET-CSE | Faculties';
+  }, []);
     return (
         <div className="csedept">
           <div className="csebg">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import {
     Backtotop,
@@ -19,6 +19,9 @@ import { Radial_menu } from "../../components";
 import { BsFillBuildingsFill } from "react-icons/bs";
 
 const Civil_awards = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Achievements';
+  }, []);
     return (
         <div className="civdept">
           <div className="civbg">

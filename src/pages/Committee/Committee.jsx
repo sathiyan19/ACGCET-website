@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Committee.css";
 
@@ -7,6 +7,9 @@ import { commpdf } from "../../constants/committee";
 import { Timeline } from "../../components";
 
 const Committee = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Committee';
+  }, []);
   return (
     <div>
       <div className="commwhole">

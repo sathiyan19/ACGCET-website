@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Cse_mou.css'
 
@@ -19,6 +19,9 @@ import { Radial_menu,Table } from "../../components";
 
 
 const Cse_mou = () => {
+  useEffect(() => {
+    document.title = 'ACCET-CSE | MoUs';
+  }, []);
 
   const columns = [
     { field: "sno",header:"sno"},

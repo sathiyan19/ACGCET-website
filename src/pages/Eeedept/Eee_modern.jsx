@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Eeedept.css";
 import {
@@ -20,6 +20,9 @@ import { Radial_menu,Hodmsg, Listformat } from "../../components";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const Eee_modern = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Modern Electric Drives System';
+  }, []);
   return (
     <div className="eeedept">
       <div className="eeebg">

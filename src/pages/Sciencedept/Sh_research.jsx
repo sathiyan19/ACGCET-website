@@ -1,9 +1,12 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import { Backtotop } from '../../widgets'
 import { Sh_tab_research } from '../../components'
 
 const Sh_research = () => {
+  useEffect(() => {
+    document.title = 'ACCET-S&H | Research & Publications';
+  }, []);
   return (
     <div className="Sciencedept">
       <div className="Sciencebg">

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import { Backtotop,Floatinmenu, Underline} from "../../widgets";
 import {Profile_display} from '../../components'
@@ -10,6 +10,9 @@ import { Radial_menu } from "../../components";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const Eee_faculties = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Faculties';
+  }, []);
   return (
     <div className="eeedept">
       <div className="eeebg">

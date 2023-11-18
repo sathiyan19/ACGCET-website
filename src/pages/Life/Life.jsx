@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Life.css";
 
 import { Underline } from "../../widgets";
@@ -32,6 +32,9 @@ const culture_pic =
 // const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
 
 const Life = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Life at Campus';
+  }, []);
   return (
     <div className="life_at_acgcet_holder">
       <Underline heading="Life at ACGCET" />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Civil_research.css'
 
 import { Floatinmenu,Underline } from '../../widgets';
@@ -15,6 +15,9 @@ import { BsFillBuildingsFill } from "react-icons/bs";
 
 
 const Civil_research = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Research & Publications';
+  }, []);
   const column1=[
     {field:"sno",header:"Sno"},
     {field:"name",header:"Name of the Scholar"},
