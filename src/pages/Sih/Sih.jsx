@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Sih.css";
 import { Underline, Modal,Backtotop } from "../../widgets";
@@ -7,6 +7,9 @@ import { sih22, sih20 } from "../../constants/sih";
 import sihlogo from "../../assets/pictures/sih/sih_logo.webp";
 
 const Sih = () => {
+  useEffect(() => {
+    document.title = 'ACCET-SIH';
+  }, []);
   return (
     <div>
       <Backtotop />
@@ -15,7 +18,7 @@ const Sih = () => {
 
         <div className="sihabt">
          <div className="sihabttext">
-         <p>
+         <p className="sihabttextp">
             The Smart India Hackathon (SIH) is an annual nationwide competition
             held in India that aims to foster innovation and problem-solving
             among students. It is one of the largest hackathons in the world and
@@ -39,24 +42,28 @@ const Sih = () => {
             various sectors in India, contributing to the country's development
             and technological advancement.
           </p>
+
+          <p className="sihabttextp">
+          Dr. C. Uma Rani, the Head of the Department of Computer Science and Engineering (CSE), plays a crucial role as the coordinator for the Smart India Hackathon (SIH) at our college. In this role, she leads and oversees the college's participation in the SIH, a nationwide innovation competition that challenges students to develop innovative solutions to real-world problems. Dr.C.Uma Rani's responsibilities likely include organizing teams, facilitating training and support, liaising with SIH organizers, and ensuring that our college's participants are well-prepared and have the resources they need to excel in the competition. Her leadership ensures our college's active engagement in this prestigious event and encourages students to showcase their problem-solving skills and creativity on a national platform.
+          </p>
          </div>
           <div className="sih_logo_holder">
-            <img src={sihlogo} alt="sihlogo" />
+            <img className="sih_logo_img" src={sihlogo} alt="sihlogo" />
           </div>
         </div>
 
-        <Underline heading="Who can participate" />
+        {/* <Underline heading="Who can participate" /> */}
         <div className="sihparticipate">
-          <div className="sihsrjr">
+          {/* <div className="sihsrjr">
             <Underline heading="SIH Junior (Jr)" />
             <p>
               School students from 6th to 12th class will be able to showcase
               their talent and generate out-of-the-box open innovation ideas
             </p>
-          </div>
+          </div> */}
           <div className="sihsrjr">
             <Underline heading="SIH Senior (Sr)" />
-            <p>
+            <p className="sihsrjrp">
               Regular Students of HEI's pursuing "Graduate/Post-Graduate/Ph.D"
               will be able to showcase their talent and generate out-of-the-box
               open innovation ideas

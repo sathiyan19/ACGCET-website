@@ -47,6 +47,16 @@ import vlsi from '../assets/pictures/eee_dept/eee_labs/VLSI.webp'
 import pe from '../assets/pictures/eee_dept/eee_labs/pe.webp'
 import smart from '../assets/pictures/eee_dept/eee_labs/smart.webp'
 
+import s9 from '../assets/pictures/eee_dept/feedback/s9.webp'
+import s8 from '../assets/pictures/eee_dept/feedback/s8.webp'
+import s7 from '../assets/pictures/eee_dept/feedback/s7.webp'
+import s5 from '../assets/pictures/eee_dept/feedback/s6.webp'
+import s6 from '../assets/pictures/eee_dept/feedback/s5.webp'
+import s4 from '../assets/pictures/eee_dept/feedback/s4.webp'
+import s3 from '../assets/pictures/eee_dept/feedback/s3.webp'
+import s2 from '../assets/pictures/eee_dept/feedback/s2.webp'
+import s1 from '../assets/pictures/eee_dept/feedback/s1.webp'
+
 const eee_dept_menu = [
   {
     id: "1",
@@ -67,6 +77,13 @@ const eee_dept_menu = [
     arl:'l'
   },
   {
+    id: "9",
+    path: "/eeedept/eee-research",
+    link: "Research and Publications",
+    arl:'l'
+  },
+  
+  {
     id: "7",
     path: "/eeedept/eee-lab",
     link: "Lab Facilities",
@@ -75,42 +92,46 @@ const eee_dept_menu = [
   {
     id: "8",
     path: "#",
-    link: "Professional Socities",
+    link: "Student Placements",
     arl:'l'
   },
-  {
-    id: "9",
-    path: "/eeedept/eee-research",
-    link: "Research and Publications",
-    arl:'l'
-  },
-  {
-    id: "10",
-    path: "/eeedept/eee-dept-events",
-    link: "Department Events",
-    arl:'l'
-  },
-  {
-    id: "11",
-    path: "#",
-    link: "MoU",
-    arl:'l'
-  },
+  
+  
   {
     id: "12",
     path: "/eeedept/eee-nextgen",
-    link: "Next Gen Lab",
+    link: "Center of Excellence",
     arl:'l'
   },
   {
     id: "13",
-    path: "#",
+    path: "/eeedept/eee-modern",
     link: "Modern Electric Drives System",
     arl:'l'
   },
   {
-    id: "14",
+    id: "15",
+    path: "/eeedept/eee-dept-lib",
+    link: "Department Library",
+    arl:'l'
+  },
+  
+  {
+    id: "16",
+    path: "/eeedept/eee-events",
+    link: "Department Activities",
+    arl:'l'
+  },
+  {
+    id: "17",
     path: "#",
+    link: "Video Tour",
+    arl:'l'
+  },
+  
+  {
+    id: "14",
+    path: "/eeedept/eee-studcorner",
     link: "Students Corner",
     arl:'l'
   },
@@ -652,6 +673,32 @@ const eee_progs = [
   },
 ];
 
+const studcorner=[
+  {
+    id:'1',
+    top_head:'B.E (2015-2019)',
+    program:"Arunasri K",
+    view:"https://drive.google.com/file/d/1qxIoCwBZk8A5mVuY-64k437mGIgjlS9G/view"
+  },
+  {
+    id:'2',
+    top_head:'B.E (2016-2020)',
+    program:"Aarthe B",
+    view:"https://drive.google.com/file/d/1PgAZeUhwelcgEuzA7r4enEyT5AT6zBQV/view"
+  },
+  {
+    id:'3',
+    top_head:'B.E (final yr)',
+    program:"Arnika P",
+    view:"https://drive.google.com/file/d/1zGXRf2fTZipHJJZcdf-uZWMfB2rCcAoh/view"
+  },
+  {
+    id:'4',
+    top_head:'B.E (final yr)',
+    program:"Indumathi V",
+    view:"https://drive.google.com/file/d/1dYWVNbKBlcTQCTNql0n7WjoS3WCcYwBL/view"
+  },
+]
 const eee_gen=[
   {
     id: "1",
@@ -967,7 +1014,7 @@ const eee_fac_profiles = [
     name: "Mrs.E.Priyanka",
     Designation: "Assistant Professor (Part time)",
     mailid: "evspriya@gmail.com",
-    pdf: "https://drive.google.com/file/d/1Lz27nytpYp-4YBdPozz8BxL0SFPw_fhQ/view?usp=drive_link",
+    pdf: "https://drive.google.com/file/d/1GUx7nbxF9GCk5RftL-CyHKvUAqa2vWzL/view?usp=drive_link",
   },
   {
     id: "21",
@@ -1173,6 +1220,374 @@ const eee_dept_events=[
       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
   },
 ]
+const features=[
+  {
+    id:"1",
+    point:"Universal Machines Bed assembly where AC Motor, DC Motor, AC Generator and DC Generator aree coupled in one line shaft as a High Precisions Assembly"
+  },
+  {
+    id:"2",
+    point:"Programmable machine selection using an EM Clutch facilitates conducting all the required experiments of UG curriculum"
+  },
+  {
+    id:"3",
+    point:"Custom made table completely embedded with all required controls, Instrumentaion and Machine required"
+  },
+  {
+    id:"4",
+    point:"PC with Data Acquisition System Based Machines and Drives Lab"
+  },
+  {
+    id:"5",
+    point:"Drive System with thee provision for communication adapter for Drive networking"
+  },
+  {
+    id:"6",
+    point:"System with Centralized Automation Controller which facilitates high speed networking of all the drives in the tables"
+  },
+  {
+    id:"7",
+    point:"Automation Controller have Man-Machine Interface to view various operation screens and networking of drives"
+  },
+  {
+    id:"8",
+    point:"Since all required components are embedded over the table itself, saves resources in terms of space, staff and time"
+  },
+]
+
+const feedback=[
+  {
+    'id':'1',
+    'heading':'Mohamed Nawas',
+    'sub_text':'(2014 passed out BE EEE student)',
+    'pic':s1,
+    'content_1':'Greetings, As a UG student I am very much excited to have such an advanced Drives Laboratory in my college. I feel very pleased to see drives which we studied in Text books and I got an opportunity to study, research about those drives. I got an opportunity to do my final year project "MULTI VARIABLE SELF TUNING CONTROL OF ALTERNATOR" at the Modern Drives Laboratory. ',
+    'content_2':"It gave a good opportunity to learn advanced devices such as Transducers, HMI, DAQ card, programming these devices with LabVIEW which will be a future advancement in the field of Virtual instrumentation. I recommend that students who are eager to work in the field of industry can use this opportunity to learn about drives. So those who are really interested in our department should give 24x7 Laboratory support to them and more detailed training on Virtual instrumentation is needed for those who really deserve it. I thank my college for giving me this opportunity and for supporting me."
+    },
+  {
+      'id':'2',
+      'heading':'V. Arun',
+      'sub_text':'2016 passed out ME PED student',
+      'pic':s2,
+      'content_1':'During my PG study time, modern electric drive systems setup is helpful in learning soft starting, different types of braking, and various modes of operation and control of drives from remote places with graphical preview as in the practical aspects. To know the real time software LabVIEW, PLC which are incorporated with the setup.',
+      'content_2':"This drives the system with LabVIEW software, is more useful to do research work, and it is more user friendly to interface with the hardware. Now I‟m working as an Application Engineer in an Electrical Automation Company, here I worked with Phoenix Contact PLC Controllers & Compton Greaves (CG) Emotron VFX, FD Drives and Emotron soft starters, shaft power monitors. Modern Electric drive provides a platform for my career and getting a job."
+      },
+      {
+        'id':'3',
+        'heading':'D. Arunkumar',
+        'sub_text':'2015 passed out BE EEE student',
+        'pic':s3,
+        'content_1':'It‟s very helpful for my learning because in the early days we understood the concept of electrical machines based on our imagination only but now that all imagination concepts come true under modern electrical drives lab. I have done my final year project using a modern electric drives lab.',
+        'content_2':"Here I see the virtual representation (or) real time representation of each and every performance of motor, generator an transformer, Especially B-H curve analysis is one of our successful experiments in that drives lab. It's really useful for our ACCET students if they will use it in the future. It‟s very full for me while questions are raised about machines and their related parameters in job interviews. If we implement some of the electrical machine experiments in modern electric drives lab students get more knowledge because this LabVIEW is mainly real time signal processing software so based on that we will gain more knowledge."
+        },
+        {
+          'id':'4',
+          'heading':'B. Aaraamuthan',
+          'sub_text':'2016 passed out BE EEE student',
+          'pic':s4,
+          'content_1':'Myself, B. Aaraamuthan, 2013-2016 batch student of Electrical and Electronics engineering department, ACCET, Karaikudi. I did my final year project titled “Real-time monitoring and control of Electric drives”. I made use of the “Modern Electric drive system” setup in our department. I immensely thank my guide, the department head for  providing me such a wonderful opportunity to complete my final year project in such a prestigious electric drive.',
+          'content_2':"From my present point of view, the electric drive which I worked on was very well equipped and was very user friendly. This project could have been quite complicated in conventional methods but in this modern drive setup, it was very easy to obtain the dynamic characteristics of the system which was considered. In addition to that advantage mentioned, the electric drive can adapt to the LabVIEW-real time application software. On the whole the entire project is very useful for me and my batch mates. At present I am pursuing my master degree in Power System Engineering from College of Engineering-Guindy (Anna university-Chennai). I also found many applications for my drives project which I feel are much easier to understand. I once again thank all faculties for giving me permission to work on electric drives."
+          },
+          {
+            'id':'5',
+            'heading':'D. Ankith Mishra',
+            'sub_text':'2017 passed out BE EEE student',
+            'pic':s5,
+            'content_1':'I, along with project mates, did a project titled “Performance analysis of Induction motor with LabVIEW realized Space Vector Modulation”. Doing the project work was a really good experience but at the same time',
+            'content_2':"we faced a lot of difficulties such as designing the program for Space Vector modulation, interfacing of LabVIEW software with the NI 9067 module etcetera. We thank our department, for giving us the opportunity to work in the Drives Laboratory which has been incorporated with latest hardware and software along with other Drives related machines."
+            },
+            {
+              'id':'6',
+              'heading':'K.Vijaya Raghavan',
+              'sub_text':'2017 passed out BE EEE student',
+              'pic':s6,
+              'content_1':'I, along with my project mates, did a project on “Performance analysis of 3 phase induction motor using LabVIEW realized Space vector pulse width modulation”. In our project, we worked in the Electrical Drives Laboratory in our EEE department. In the Electrical Drives Laboratory, we used the 3 phase induction motor and monitored the parameters like voltage, current, speed using the drives setup.',
+              'content_2':"We generated pulses for the 3 phase induction motor using LabVIEW and interfaced with the inverter using CompactRIO. In our project, we faced a lot of problems which include generation of pulses for the inverter (which is a high frequency pulse). We also faced challenges in interfacing with CRIO. Our faculty members made it easy for us to work in the Drives laboratory. Everyone gave us freedom to experiment our technical thoughts."
+              },
+              {
+                'id':'7',
+                'heading':'Vishal Balaji P M',
+                'sub_text':'2017 passed out BE EEE student',
+                'pic':s7,
+                'content_1':'Greetings, During my Undergraduate final year, my team of four did our project on “Analysis of four Quadrant Operation of DC motor-based hoist drive using LabVIEW”. Four Quadrants of operation is a unique property in DC motor and it was yet to be implemented practically until then.',
+                'content_2':"Our team made use of LabVIEW - graphical programming language to provide input to the DC motor drive which was available in our department to demonstrate our project. Additionally, we implemented voice mode controlled operation of the project, aiding the visually impaired in operating the drive. Today I feel grateful to the faculty members of EEE for giving me an amazing opportunity to work on the DC motor drive using LabVIEW. The project played a pivotal role in helping me receive an internship opportunity in Danfoss Drives Ltd., after my graduation. Thanks,"
+                },
+                {
+                  'id':'8',
+                  'heading':'Deepak T',
+                  'sub_text':'B.E.,(EEE) - 2020 batch student',
+                  'pic':s8,
+                  'content_1':'Greetings, During my UG programme, utilizing the lab facilities in our department gave me practical exposure. The demonstration classes using LabVIEW software, real time data acquisition hardware and modern drive system for',
+                  'content_2':"virtual instrumentation and solid state drives‟ courses made better understanding for theory courses. I thank all my department faculty members and technical staff for giving me this opportunity to use the facilities."
+                  },
+                  {
+                    'id':'9',
+                    'heading':'SELVA KARUPPASAMY. M',
+                    'sub_text':'2022 Batch B.E. EEE student',
+                    'pic':s9,
+                    'content_1':'Me and my project mates did the mini project - "Real time Speed Control of DC motor using LabVIEW ". During this project, we faced lots of technical issues in acquiring real time signals initially but gain more practical knowledge.',
+                    'content_2':"We also gain a hands-on experience by handling the industrial setup hardware. At last, we are exposed to real time signal acquisition using LabVIEW and DAQ. We thank our department for the wonderful opportunity. This project gave us more confident and better understanding."
+                    },
+]
+const events_info=[
+  {
+    id:"1",
+    point:"Alconesy – Inter College Technical Symposium"
+  },
+  {
+    id:"2",
+    point:"Think Quest – Intra College Technical Symposium"
+  }
+]
+const eee_staff=[
+  {
+    id:"1",
+    // coverpic:Ramadas,
+    name:"Prof K Ramadas",
+    batch:"Dept of EEE",
+    desc:"ACGCET, Karaikudi 03",
+    date:"Associate Professor(CAS)",
+  }
+]
+const eee_event=[
+  {
+    'sno':"1",
+    'title':"Think Quest 2K19",
+    'chiefguest':"Internal event",
+    'date':"13.02.2019"
+  },
+  {
+    'sno':"2",
+    'title':"ALCONESY’18",
+    'chiefguest':"Dr.M.L.Valarmathi (Principal, Government College of Engineering, Dharmapuri), G. Senthi Kumar (Deputy General Manager, Electrical, BGR Energy Systems Ltd, Chennai)",
+    'date':"12.09.2018"
+  },
+  {
+    'sno':"3",
+    'title':"Think Quest 2K18",
+    'chiefguest':"Internal event",
+    'date':"16.02.2018"
+  },
+  {
+    'sno':"4",
+    'title':"ALCONESY’17",
+    'chiefguest':"Er.Venkatesh Narasimhan (Director of KRIPYA Engineering Pte. Ltd. Chennai)",
+    'date':"12.10.2017"
+  },
+  {
+    'sno':"5",
+    'title':"Think Quest 2K16",
+    'chiefguest':"Internal event",
+    'date':"25.02.2016"
+  },
+  {
+    'sno':"6",
+    'title':"ALCONESY’15",
+    'chiefguest':"Mr.Thirugnana Sambandam Gurunathan (Chairman,iScottsbergPte. Ltd. Singapore)",
+    'date':"22.09.2015"
+  },
+]
+const eee_events_info1=[
+  {
+    id:"1",
+    point:"Paper Presentation"
+  },
+  {
+    id:"2",
+    point:"C Programming Event"
+  },
+  {
+    id:"3",
+    point:"Robo Soccer"
+  },
+  {
+    id:"4",
+    point:"Quiz"
+  },
+  {
+    id:"5",
+    point:"Faraday’s Friend"
+  },
+]
+const eee_events_info2=[
+  {
+    id:"1",
+    point:"Project Presentation"
+  },
+  {
+    id:"2",
+    point: "Do or Die"
+  },
+  {
+    id:"3",
+    point:"Technical Quiz"
+  },
+  {
+    id:"4",
+    point:"See Through C"
+  },
+  {
+    id:"5",
+    point:"Paper presentation"
+  },
+  {
+    id:"6",
+    point:"Robo soccer"
+  },
+  {
+    id:"7",
+    point:" Jerk it If You can"
+  },
+  {
+    id:"8",
+    point:"Unlock not with your Keys"
+  },
+  {
+    id:"9",
+    point:"Touch me not Challenge (Electric Fence)"
+  },
+  {
+    id:"10",
+    point:"Race but not on Wheels"
+  },
+  {
+    id:"11",
+    point:"Breath and blow to glow"
+  },
+  {
+    id:"12",
+    point:"Lighten the life"
+  },
+  {
+    id:"13",
+    point:"Blow with your breath"
+  },
+]
+const eee_events_info3=[
+  {
+    id:"1",
+    point:"Paper Presentation"
+  },
+  {
+    id:"2",
+    point:"C Programming Event"
+  },
+  {
+    id:"3",
+    point:"Robo Soccer"
+  },
+  {
+    id:"4",
+    point:"Quiz"
+  },
+  {
+    id:"5",
+    point:"Faraday’s Friend"
+  },
+  {
+    id:"6",
+    point:"C Chef"
+  },
+]
+const eee_events_info4=[
+  {
+    id:"1",
+    point:"Project Presentation"
+  },
+  {
+    id:"2",
+    point: "Paper presentation"
+  },
+  {
+    id:"3",
+    point:"See Through “c”"
+  },
+  {
+    id:"4",
+    point:"Technical Quiz"
+  },
+  {
+    id:"5",
+    point:"Faraday’s Friend"
+  },
+  {
+    id:"6",
+    point:"Robo soccer"
+  },
+  {
+    id:"7",
+    point:"Maze runner"
+  },
+  {
+    id:"8",
+    point:"Formation of pyramids"
+  },
+  {
+    id:"9",
+    point:" Workshop on IoT-LoRa"
+  },
+]
+const eee_events_info5=[
+  {
+    id:"1",
+    point:"Paper Presentation"
+  },
+  {
+    id:"2",
+    point:"Solar Car Race"
+  },
+  {
+    id:"3",
+    point:"C Chef",
+  },
+  {
+    id:"4",
+    point:"Quiz"
+  },
+  {
+    id:"5",
+    point:"Circuit Design"
+  },
+]
+const eee_events_info6=[
+  {
+    id:"1",
+    point:"Project Presentation"
+  },
+  {
+    id:"2",
+    point: "Paper presentation"
+  },
+  {
+    id:"3",
+    point:"See Through “c”"
+  },
+  {
+    id:"4",
+    point:"Technical Quiz"
+  },
+  {
+    id:"5",
+    point:"Circuitrix"
+  },
+  {
+    id:"6",
+    point:"Robo soccer"
+  },
+  {
+    id:"7",
+    point:"Maze runner"
+  },
+  {
+    id:"8",
+    point:"Formation of pyramids"
+  },
+  {
+    id:"9",
+    point:" Workshop on IoT-LoRa"
+  },
+]
+
 
 export {
   eee_dept_menu,
@@ -1197,5 +1612,17 @@ export {
   pub3,
   pub4,
   pub5,
-  eee_gen
+  eee_gen,
+  features,
+  feedback,
+  studcorner,
+  events_info,
+  eee_staff,
+  eee_event,
+  eee_events_info1,
+  eee_events_info2,
+  eee_events_info3,
+  eee_events_info4,
+  eee_events_info5,
+  eee_events_info6
 };

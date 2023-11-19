@@ -15,6 +15,7 @@ import teamwork from '../../assets/pictures/teamwork.webp'
 const Vision = () => {
 
   useEffect(() => {
+    document.title = 'ACCET-Vision, Mission & Core values';
     const rows = document.querySelectorAll('.row');
 
     function setEqualHeight() {

@@ -13,8 +13,9 @@ import cse_grap_lab from '../assets/pictures/cse_dept/cse_labs/cse_grap_lab.webp
 import cse_dbms_lab from '../assets/pictures/cse_dept/cse_labs/cse_dbms_lab.webp'
 import cse_mpmc_lab from '../assets/pictures/cse_dept/cse_labs/cse_mpmc_lab.webp'
 
-import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
+import uma_rani_sq from '../assets/pictures/cse_dept/cse_faculties/umarani_square.webp'
 
+import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
 import suhaila from '../assets/pictures/cse_dept/cse_faculties/suhaila.webp'
 import sk from '../assets/pictures/cse_dept/cse_faculties/sk.webp'
 import hema from '../assets/pictures/cse_dept/cse_faculties/hema.webp'
@@ -67,22 +68,22 @@ const cse_dept_menu = [
     link: "Programme Organized",
     arl:'l'
   },
-  {
-    id: "8",
-    path: "#",
-    link: "Professional Socities",
-    arl:'l'
-  },
-  {
-    id: "9",
-    path: "#",
-    link: "Research and Publications",
-    arl:'l'
-  },
+  // {
+  //   id: "8",
+  //   path: "#",
+  //   link: "Professional Socities",
+  //   arl:'l'
+  // },
+  // {
+  //   id: "9",
+  //   path: "#",
+  //   link: "Research and Publications",
+  //   arl:'l'
+  // },
   
   {
     id: "11",
-    path: "cse-mou",
+    path: "/csedept/cse-mou",
     link: "MOU",
     arl:'l'
   },
@@ -91,7 +92,7 @@ const cse_dept_menu = [
 const cse_hod={
   name:"Dr.C.Uma Rani",
   designation:"Head of the Department, CSE",
-  pic:uma_rani,
+  pic:uma_rani_sq,
   content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
   "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
   "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
@@ -109,6 +110,15 @@ const cse_hod={
 }
 
 const cse_fac_profiles = [
+  {
+    id: "8",
+    cover: cover,
+    dp: uma_rani,
+    name: "Dr. C.UmaRani",
+    Designation: "Head of the Department/ Associate professor",
+    mailid: "drcumakkd@gmail.com",
+    pdf: "#",
+  },
   {
     id: "1",
     cover: cover,
@@ -197,7 +207,7 @@ const cse_sup_profiles = [
     cover: cover,
     dp: rajendran,
     name: "S.Rajendran",
-    Designation: "Cleaner",
+    Designation: "Mechanic Grade-II",
     mailid: "bhuvanagirirajendran@gmail.com",
     pdf: "https://drive.google.com/file/d/160eR2fkBXQKrWneCnac3Tjfz0nnnS34i/view?usp=drive_link",
   },
@@ -206,8 +216,8 @@ const cse_sup_profiles = [
     cover: cover,
     dp: raja,
     name: "R.Raja",
-    Designation: "Mechanic Grade-II",
-    mailid: "",
+    Designation: "Cleaner",
+    // mailid: "",
     pdf: "https://drive.google.com/file/d/1wUX-bfiQt9R4we_JICXi9LebyhG-7cBQ/view?usp=drive_link",
   },
 ];
@@ -663,10 +673,34 @@ const cse_stud_data = [
           regno:"91762215057",
           name: "VIMALRAJ V",
         },
-        {
+         {
           sno: "54",
           regno:"91762215058",
-          name: "YOGA SATHYA RV",
+          name: "YOGA SATHYA R",
+        },
+        {
+          sno: "55",
+          regno:"91762315201",
+          name: "ANNAMALAI M",
+        },
+        {
+          sno: "56",
+          regno:"91762315202",
+          name: "KAVIYA S",
+        },{
+          sno: "57",
+          regno:"91762315203",
+          name: "MOHAMMED SHAJITH M I",
+        },
+        {
+          sno: "58",
+          regno:"91762315204",
+          name: "NANDHAKUMAR N",
+        },
+        {
+          sno: "59",
+          regno:"91762315205",
+          name: "SUBIKSHA M V",
         }
       ],
       columns: [

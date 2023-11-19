@@ -1,6 +1,11 @@
 import dpm from "../assets/pictures/boy.webp";
 import dpf from "../assets/pictures/girl.webp";
-import cover from "../assets/pictures/microchip.webp";
+import cover from "../assets/pictures/adstaff.webp";
+
+
+
+
+
 
 export const office_admin_staffs = [
   {  

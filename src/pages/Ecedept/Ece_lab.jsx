@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import { Backtotop, Floatinmenu, Underline, Modal } from "../../widgets";
 import {
@@ -12,6 +12,9 @@ import { Radial_menu } from "../../components";
 import { FaMicrochip } from "react-icons/fa6";
 
 const Ece_lab = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE | Laboratories';
+  }, []);
   return (
     <div className="ecedept">
       <div className="ecebg">

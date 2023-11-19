@@ -7,11 +7,11 @@ import rotaract from "../assets/pictures/rotractlogo.webp";
 import build from "../assets/pictures/buildlogo.webp";
 
 // Clubs_heroimage_carousalinfo
-const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/rotracthero.webp"
-const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/freshershero.webp"
-const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/leo.webp"
-const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/MUTHAMIL.webp"
-const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Homepage_pics/music.webp"
+const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/rotracthero.webp"
+const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/freshershero.webp"
+const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/leo.webp"
+const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/MUTHAMIL.webp"
+const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/music.webp"
 const Clubs_heroimage_carousalinfo = {
   id: 1,
   title: "Clubs at ACGCET",
@@ -20,16 +20,41 @@ const Clubs_heroimage_carousalinfo = {
 
 const Clubs_info = [
   {
+    id: "6",
+    logoimg: build,
+    title: "Build Club",
+    maillink: "mailto:mailto:buildclubofficial@gmail.com",
+    instalink: "https://instagram.com/buildclub.acgcet?igshid=MzRlODBiNWFlZA==",
+    para: "A MoU between IIT MADRAS RESEARCH PARK (IITMRP) and ACCETOSA established the technical club named “Build Club” to help ACCET students advance their technical knowledge and implement creative ideas that can then be developed into working products under the direction of Build Club Associates from IITMRP and ACCET on July-2022 . It creates a culture of building using cross-disciplinary knowledge from which creativity originates. By promoting a culture of building and innovation, this initiative can help instill an entrepreneurial spirit among students. They can learn to think beyond textbooks and apply their knowledge to real-world problems. Build Club can span a wide range of technical projects, encompassing fields such as engineering, computer science, electronics, and more. This diversity ensures that students have the opportunity to explore their interests and develop skills in their chosen areas. Collaboration with IITMRP opens doors to cutting-edge research opportunities. ACCET students may have the chance to participate in conference’s led by IITMRP faculty and researchers, exposing them to the latest advancements in technology in their chosen areas and building a wide range of professional network with scholars and research faculty.",
+    staff: "Dr.S.M.Kavitha",
+    staffdesi: "Associate Professor/Civil",
+    student: "Mohammed Ishaq Khan R",
+    studentdesi: "3rd year Electrical",
+  },
+  {
     id: "1",
     logoimg: rotaract,
     title: "Rotaract Club",
-    maillink: "mailto:leoclubofacgcet@gmail.com",
+    maillink: "mailto:rotaractclubofacgcet@gmail.com",
     instalink: "https://www.instagram.com/rotaract_acgcet/",
     para: "The aim of our club is to bring out the service and leadership quality of individuals by involving them in various social activities and coordinating their fellow juniors.Our vision is to develop professional and leadership skills of every individuals.The mission of our club is to provide opportunities for the youth to enhance their personal development skills, to address the social needs of the society by creating better relationships and gaining knowledge in all aspects. The main obejective of our club is to advance the world with goodwill, providing quality education, improving the environment, and alleviating poverty and also to emphasize ethical standards with better leadership qualities.The planned activities include installation, treasure hunt, awareness program, orphanage visit, planting saplings, tutoring government school students, and participating in RYLA (Rotary Youth Leadership Awards).",
     staff: "Mr. V. Pradeep",
-    staffdesi: "Asst.Prof. EEE Dept",
-    student: "Anuraj",
+    staffdesi: "Asst.Prof. EEE Dept",
+    student: "Anuraj Kishore J",
     studentdesi: "4th year ECE",
+  },
+
+  {
+    id: "5",
+    logoimg: freshers,
+    title: "Freshers Asso",
+    maillink: "mailto:freshers.asso@gmail.com",
+    instalink: "https://www.instagram.com/freshers_association_of_accet/",
+    para: "ACGCET is dedicated to cultivating a sense of community, camaraderie, and innovation among incoming students, as evidenced by the Fresher's Association. This platform serves as a welcoming and integrative space, facilitating the seamless transition of new students into the dynamic college environment while offering avenues for personal growth, learning, and enjoyment. The mission of the Fresher's Association is rooted in creating an inclusive and inviting atmosphere for newcomers, aiding their smooth adjustment to college life. The goal is to nurture their innate talents, provide support for their aspirations, and empower them to evolve into holistic individuals capable of making positive contributions not only within the college community but also in broader contexts. The Association achieves this through initiatives like comprehensive campus tours, specialized workshops leading to valuable certifications spanning leadership and technical skills, and the vibrant Fresher's Day celebrated every Tuesday, replete with engaging events, competitions, and activities, fostering unity, mirth, and a well-deserved respite from academic pursuits.",
+    staff: "Dr.B.V.Bhuvaneshwari",
+    staffdesi: "Cheif faculty advisor/Physics",
+    student: "Sathyan S",
+    studentdesi: "4th year Mechanical",
   },
 
   {
@@ -39,10 +64,10 @@ const Clubs_info = [
     maillink: "mailto:leoclubofacgcet@gmail.com",
     instalink: "https://www.instagram.com/leo_club_of_acgcet/",
     para: "The primary aim of the club is to inspire young individuals to cultivate leadership traits through active engagement in various social service endeavors. The club envisions becoming a worldwide frontrunner in initiatives related to community and humanitarian assistance. Its mission is centered on equipping volunteers with the means to make impactful contributions to their communities, address humanitarian concerns, and promote the ideals of peace. The core objectives encompass affording youth the chance to evolve into responsible contributors within their local, national, and international spheres. The club's planned activities encompass a range of events such as treasure hunts and inaugurations, all aimed at fostering personal development and community involvement among its members.",
-    staff: "Prof.V.Jawahar",
-    staffdesi: "Ece",
-    student: "Harish Ashwathaman",
-    studentdesi: "4th year",
+    staff: "Mr. V. Jawahar",
+    staffdesi: "Asst.Prof. Mech Dept",
+    student: "P.Gokulavasan ",
+    studentdesi: "4th year Civil",
   },
 
   // {
@@ -69,32 +94,6 @@ const Clubs_info = [
     staffdesi: "Assistant Professor/Maths",
     student: "Dhanushree M",
     studentdesi: "4th year CSE",
-  },
-
-  {
-    id: "5",
-    logoimg: freshers,
-    title: "Freshers Asso",
-    maillink: "mailto:freshers.asso@gmail.com",
-    instalink: "https://www.instagram.com/freshers_association_of_accet/",
-    para: "ACGCET is dedicated to cultivating a sense of community, camaraderie, and innovation among incoming students, as evidenced by the Fresher's Association. This platform serves as a welcoming and integrative space, facilitating the seamless transition of new students into the dynamic college environment while offering avenues for personal growth, learning, and enjoyment. The mission of the Fresher's Association is rooted in creating an inclusive and inviting atmosphere for newcomers, aiding their smooth adjustment to college life. The goal is to nurture their innate talents, provide support for their aspirations, and empower them to evolve into holistic individuals capable of making positive contributions not only within the college community but also in broader contexts. The Association achieves this through initiatives like comprehensive campus tours, specialized workshops leading to valuable certifications spanning leadership and technical skills, and the vibrant Fresher's Day celebrated every Tuesday, replete with engaging events, competitions, and activities, fostering unity, mirth, and a well-deserved respite from academic pursuits.",
-    staff: "Dr.B.V.Bhuvaneshwari",
-    staffdesi: "Cheif faculty advisor/Physics",
-    student: "Sathyan S",
-    studentdesi: "4th year Mechanical",
-  },
-
-  {
-    id: "6",
-    logoimg: build,
-    title: "Build Club",
-    maillink: "mailto:mailto:buildclubofficial@gmail.com",
-    instalink: "https://instagram.com/buildclub.acgcet?igshid=MzRlODBiNWFlZA==",
-    para: "A MoU between IIT MADRAS RESEARCH PARK (IITMRP) and ACCETOSA established the technical club named “Build Club” to help ACCET students advance their technical knowledge and implement creative ideas that can then be developed into working products under the direction of Build Club Associates from IITMRP and ACCET on July-2022 . It creates a culture of building using cross-disciplinary knowledge from which creativity originates. By promoting a culture of building and innovation, this initiative can help instill an entrepreneurial spirit among students. They can learn to think beyond textbooks and apply their knowledge to real-world problems. Build Club can span a wide range of technical projects, encompassing fields such as engineering, computer science, electronics, and more. This diversity ensures that students have the opportunity to explore their interests and develop skills in their chosen areas. Collaboration with IITMRP opens doors to cutting-edge research opportunities. ACCET students may have the chance to participate in conference’s led by IITMRP faculty and researchers, exposing them to the latest advancements in technology in their chosen areas and building a wide range of professional network with scholars and research faculty.",
-    staff: "Dr.S.M.Kavitha",
-    staffdesi: "Associate Professor/Civil",
-    student: "Mohammed Ishaq Khan R",
-    studentdesi: "3rd year Electrical",
   },
 ];
 

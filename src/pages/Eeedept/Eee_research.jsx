@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Eee_research.css'
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -9,7 +9,8 @@ import {
     Underline,
   } from "../../widgets";
   import {
-    eee_dept_menu, pub3,
+    eee_dept_menu,
+    pub3,
   } from "../../constants/eee_dept";
   
   import { Radial_menu,Table,Listformat } from "../../components";
@@ -26,6 +27,9 @@ pub4,
 pub5 } from '../../constants/eee_dept';
 
 const Eee_research = () => {
+  useEffect(() => {
+    document.title = 'ACCET-EEE | Research & Publications';
+  }, []);
     const columns=[
         {field:"name", header:"Name of the faculty"},
         {field:"area", header:"Area of Interest"}

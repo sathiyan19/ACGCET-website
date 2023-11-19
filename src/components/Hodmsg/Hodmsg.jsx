@@ -20,12 +20,12 @@ const Hodmsg = ({pic,name,designation,content}) => {
             </div>
 
             <div className="hoddp">
-              <img src={pic} alt="Profile_pic" />
+              <img className='hoddpi' src={pic} alt="Profile_pic" />
             </div>
 
             <div className="hoddet1">
-              <h3>{name}</h3>
-              <p>{designation}</p>
+              <h3 className='hoddet1h'>{name}</h3>
+              <p className='hoddet1p'>{designation}</p>
             </div>
           </div>
 

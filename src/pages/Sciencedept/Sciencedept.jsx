@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Sciencedept.css'
 
@@ -6,6 +6,9 @@ import { Sh_tabs } from '../../components'
 import { Backtotop } from '../../widgets'
 
 const Sciencedept = () => {
+  useEffect(() => {
+    document.title = 'ACCET-S&H Department';
+  }, []);
   return (
       <div className="Sciencedept">
       <div className="Sciencebg">

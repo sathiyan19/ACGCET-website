@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Teqip1.css";
 
@@ -9,6 +9,9 @@ import { Table } from "../../components";
 import { Backtotop, Underline } from "../../widgets";
 
 const Teqip1 = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Teqip 1';
+  }, []);
   const columns = [
     { field: "sno", header: "sno" },
     { field: "detail", header: "detail" },

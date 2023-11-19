@@ -19,8 +19,8 @@ const Footer = () => {
                     <div className="sec quicklinks col-lg-3">
                         <p className="first">Disclosure</p>
                         <ul>
-                            <li><a href="#">NBA</a></li>
-                            <li><a href="#">NAAC</a></li>
+                            <li><a href="/nba">NBA</a></li>
+                            <li><a href="https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing" target='blank' rel='noopener noreferrer' media='print'>NAAC</a></li>
                             <li><a href="/aicte">AICTE</a></li>
                             <li><a href="https://drive.google.com/file/d/1ZwueQyjgqkqhmbY2-I2G972QQ7TY4urz/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Affliation</a></li>
                             <li><a href="https://drive.google.com/file/d/1s2O5gv3ZY_UFnatRDD-tI1OodPEEI864/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Autonomous</a></li>

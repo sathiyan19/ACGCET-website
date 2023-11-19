@@ -4,6 +4,9 @@ import harish from '../assets/pictures/devteam/harish.webp'
 import belcy from '../assets/pictures/devteam/belcy.webp'
 import kaviya from '../assets/pictures/devteam/kaviya.webp'
 
+import dhurika from '../assets/pictures/devteam/dhurika.webp'
+import stalin from '../assets/pictures/devteam/stalin.webp'
+
 export const devteam=[
     {
         id:"1",
@@ -11,6 +14,7 @@ export const devteam=[
         batch:"2021-2025 Batch",
         linkedin:"https://www.linkedin.com/in/arjun-prakash-sivakumar-ab1872240",
         pic:arjun,
+        color:"#ffc400"
     },
     {
         id:"2",
@@ -18,27 +22,49 @@ export const devteam=[
         batch:"2021-2025 Batch",
         linkedin:"http://www.linkedin.com/in/arockiya-belcy-vs",
         pic:belcy,
+        color:"#ffc400"
     },
     {
-        id:"1",
+        id:"3",
         name:"Kaviya B",
         batch:"2021-2025 Batch",
-        linkedin:"#",
+        linkedin:"https://www.linkedin.com/in/kaviya-b-6270b9247",
         pic:kaviya,
-        
+        color:"#ffc400"
     },
     {
-        id:"1",
+        id:"4",
         name:"Harish I",
         batch:"2021-2025 Batch",
         linkedin:"https://www.linkedin.com/in/harish-i-216000247/",
         pic:harish,
+        color:"#ffc400"
     },
     {
-        id:"1",
+        id:"5",
         name:"Sathiyan R",
         batch:"2021-2025 Batch",
         linkedin:"https://www.linkedin.com/in/sathiyan-r/",
-        pic:sathiyan
+        pic:sathiyan,
+        color:"#ffc400"
+    },
+]
+
+export const guide_team=[
+    {
+        id:"1",
+        name:"Dhurika V",
+        batch:"2020-2024 Batch",
+        linkedin:"https://www.linkedin.com/in/dhurika-vijay-anand/",
+        pic:dhurika,
+        color:"#cc66ff"
+    },
+    {
+        id:"2",
+        name:"Barath Stalin K",
+        batch:"2020-2024 Batch",
+        linkedin:"https://www.linkedin.com/in/barathstalin/",
+        pic:stalin,
+        color:"#cc66ff"
     },
 ]

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Civil_indus.css";
 
@@ -23,6 +23,9 @@ import { Radial_menu,Slideshow} from "../../components";
 import { BsFillBuildingsFill } from "react-icons/bs";
 
 const Civil_indus = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Civil | Industry Interaction';
+  }, []);
     return (
         <div className="civdept">
           <div className="civbg">
@@ -43,7 +46,7 @@ const Civil_indus = () => {
                <Underline heading="Internship"/>
                <div className='civ_intern'>
                 <div className='civ_intern_content'>
-                Internship is one of the mory garments for the Techuical Busin per the AICTE sons. Our BE final year malen will undergo DOTS-during J 1362822 Agu 100 2122 Tilly Four sumbers of fim were defendin were inde Inteship In this connect, the following faculty members rapped Meuter for students wandege ilgis diffi Fi The M monter their progressing the period of intent and to guide them the hip spot pepetion. Also, you are routed momplete dissipline, self- matory and by the rules & relations of otitution.
+                Internship is one of the mandatory requirements for the Technical Education students as per the AICTE norms. Our B.E final year students will undergo DOTE-Internship during July 13th 2022 to August 10th 2022. Totally Four members of firm were identified and permission were obtained for internship. In this connection, the following faculty members are appointed as Mentor for the students who undergone internship in different firms. The Mentors are requested to monitor their progress during the entire period of internship and to guide them for the internship report preparation. Also, you are requested to monitor complete discipline, self-mastery and abide by the rules and regulations of our Institution.
                 </div>
                 <div className='civ_intern_slide'>
                     <Slideshow images={civ_indus_slide} flag="true" />      

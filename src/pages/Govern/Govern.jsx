@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Govern.css";
 
@@ -10,6 +10,9 @@ import { govern_data } from "../../constants/govern";
 import { Underline } from '../../widgets';
 
 const Govern = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Governing Council';
+  }, []);
   const columns = [
     { field: "sno", header: "s.no" },
     { field: "name", header: "name of the members" },

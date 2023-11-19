@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Ece_peo.css";
 
@@ -22,6 +22,9 @@ import { Radial_menu } from "../../components";
 import { FaMicrochip } from "react-icons/fa6";
 
 const Ece_peo = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE | Objectives & Outcomes';
+  }, []);
   return (
     <div className="ecedept">
       <div className="ecebg">

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Uba.css";
 import { Underline,Deptmission,Deptvision } from "../../widgets";
 import { Listformat } from "../../components";
@@ -7,12 +7,15 @@ import gandhi from "../../assets/pictures/Gandhiji.webp"
 import uba from "../../assets/pictures/uba.webp"
 
 const Uba = () => {
+  useEffect(() => {
+    document.title = 'ACCET-UBA';
+  }, []);
   return (
     <div className="ubaall">
       <Underline heading="Unnat Bharat Abhiyan" />
       <div className="ubaabt">
         <div className="ubaabt1">
-        <p>
+        <p className="ubaabt1p">
           Unnat Bharat Abhiyan is inspired by the vision of transformational
           change in rural development processes by leveraging knowledge
           institutions.The conceptualization of Unnat Bharat Abhiyan started
@@ -30,7 +33,7 @@ const Uba = () => {
         </p>
         </div>
         <div className="ubaabt2">
-            <img src={gandhi} alt="gandhi"/>
+            <img className="ubaabt2i" src={gandhi} alt="gandhi"/>
         </div>
       </div>
       <Underline heading="Vision & Mission"/>
@@ -40,7 +43,7 @@ const Uba = () => {
       <Listformat points={ubagoal} />
       <Underline heading="Award"/>
       <div className="ubaaward">
-        <img src={uba} alt="uba"/>
+        <img className="ubaawardi" src={uba} alt="uba"/>
       </div>
       
     </div>

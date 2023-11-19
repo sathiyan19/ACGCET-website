@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Iic.css"
 
@@ -8,6 +8,9 @@ import { iic } from '../../constants/iic';
 
 
 const Iic = () => {
+  useEffect(() => {
+    document.title = 'ACCET-IIC';
+  }, []);
   return (
     <div className='iic_container'>
 

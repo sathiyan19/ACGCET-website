@@ -4,8 +4,7 @@ import { Table,Radial_menu } from '../../components'
 import { Sh_dept_fmenu,chemi_prog } from '../../constants/Sh_dept_menu'
 import { Backtotop,Floatinmenu } from '../../widgets';
 
-import { FaMicrochip } from "react-icons/fa6";
-
+import { GrTest } from "react-icons/gr";
 const Sh_Chemi_prog = () => {
     const columns = [
         { field: "sno", header: "sno" },
@@ -20,7 +19,7 @@ const Sh_Chemi_prog = () => {
       <div>
     <section className="shchemidark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={FaMicrochip} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
             </div>
             <Radial_menu menu_links={Sh_dept_fmenu} />
       <div className='sh_chemi'>

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Ecedept.css";
 import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card} from "../../widgets";
@@ -7,11 +7,16 @@ import { ece_dept_menu,ece_mission,ece_vision,ece_progs,ece_hod,ece_stud_data} f
 
 
 import { Radial_menu } from "../../components";
-import ece from "../../assets/pictures/group-pic.webp";
+// import ece from "../../assets/pictures/group-pic.webp";
 
 import { FaMicrochip } from "react-icons/fa6";
 
+const ece="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ece/group-pic.webp"
+
 const Ecedept = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE Department';
+  }, []);
   return (
     <div className="ecedept">
       <div className="ecebg">
@@ -32,10 +37,10 @@ const Ecedept = () => {
             The Department of Electronics and Communication Engineering was
             established during the year 1968 to produce competent engineers in
             the field of Electronics and Communication Engineering. At present,
-            the intake is 60 students and 12 students in addition through
+            the intake is 60 students and 6 students in addition through
             Lateral entry. The Department offers undergraduate degree programme
             of B.E (Electronics and Communication Engineering) and postgraduate
-            degree programme of M.E (Optical Communication).
+            degree programme of M.E (Microwave & Optical Communication).
           </p>
           <div className="dept_img_holder">
             <img className="dept_img" src={ece} />

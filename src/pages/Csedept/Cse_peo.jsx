@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import './Cse_peo.css'
 
@@ -22,6 +22,9 @@ import {
   import {FaComputer} from 'react-icons/fa6'
 
 const Cse_peo = () => {
+  useEffect(() => {
+    document.title = 'ACCET-CSE | Objectives & Outcomes';
+  }, []);
   return (
     <div className="csedept">
       <div className="csebg">

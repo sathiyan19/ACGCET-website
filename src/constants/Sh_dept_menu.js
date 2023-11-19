@@ -3,6 +3,34 @@ import cover from '../assets/pictures/microchip.webp'
 import dpm from '../assets/pictures/boy.webp'
 import dpf from '../assets/pictures/girl.webp'
 
+import gayathri from '../assets/pictures/eng_dept/Gayathri.webp'
+import sachin from '../assets/pictures/eng_dept/Sachin.webp'
+import ecover from '../assets/pictures/eng_dept/eng cover.webp'
+
+import anbukarasi from '../assets/pictures/maths_dept/anbukarasi.webp'
+import anitha from '../assets/pictures/maths_dept/anitha.webp'
+import mahalakshmi from '../assets/pictures/maths_dept/mahalakshmio.webp'
+import reegan from '../assets/pictures/maths_dept/reegan.webp'
+import vasanthi from '../assets/pictures/maths_dept/vasanthi.webp'
+import yamuna from '../assets/pictures/maths_dept/yamuna.webp'
+import balasundar from '../assets/pictures/nss/s1.webp'
+import mcover from '../assets/pictures/maths_dept/matcover.webp'
+
+import loki from '../assets/pictures/ncc/loki.webp'
+import rajaperumal from '../assets/pictures/chemi_dept/rajaperuma.webp'
+import thenraj from '../assets/pictures/chemi_dept/thenraj.webp'
+import vijayalakshmi from '../assets/pictures/chemi_dept/vijayalakshmi.webp'
+import ccover from '../assets/pictures/chemi_dept/chemi cover.webp'
+
+import cynthia from '../assets/pictures/phy_dept/cynthia (1).webp'
+import mariammal from '../assets/pictures/phy_dept/mariammal.webp'
+import parthiban from '../assets/pictures/phy_dept/parthiban.webp'
+import ponmudi from '../assets/pictures/phy_dept/ponmudi.webp'
+import sivaganesh from '../assets/pictures/phy_dept/sivaganesh.webp'
+import venkatrajan from '../assets/pictures/phy_dept/venkatrajan.webp'
+import vijayaragavan from '../assets/pictures/phy_dept/vijayaraghavan.webp'
+import pcover from '../assets/pictures/phy_dept/phy cover.webp'
+
 import englab from '../assets/pictures/englab.webp'
 
 const Sh_dept_fmenu = [
@@ -125,8 +153,8 @@ const phy_vision = {
 const eng_fac_profiles = [
     {
       id: "1",
-      cover: cover,
-      dp: dpm,
+      cover: ecover,
+      dp: sachin,
       name: "M.Sachin Sivakumar",
       Designation: "Assistant Professor",
       mailid: "sachinsivakumar94@gmail.com",
@@ -134,8 +162,8 @@ const eng_fac_profiles = [
     },
     {
       id: "2",
-      cover: cover,
-      dp: dpf,
+      cover: ecover,
+      dp: gayathri,
       name: "M.Gayathri",
       Designation: "Associate Professor (AD-HOC)",
       mailid: " gaya3muthusamy@gmail.com",
@@ -146,8 +174,8 @@ const eng_fac_profiles = [
 const mat_fac_profiles = [
     {
       id: "1",
-      cover: cover,
-      dp: dpf,
+      cover: mcover,
+      dp: vasanthi,
       name: "Dr.R.Vasanthi",
       Designation: "Assistant Professor and Head of the Department",
       mailid: "vasanthi2014accet@gmail.com",
@@ -155,8 +183,8 @@ const mat_fac_profiles = [
     },
     {
       id: "2",
-      cover: cover,
-      dp: dpm,
+      cover: mcover,
+      dp: balasundar,
       name: "S.Balasundar",
       Designation: "Assistant Professor",
       mailid: "balasundaraccet@gmail.com",
@@ -164,8 +192,8 @@ const mat_fac_profiles = [
     },
     {
         id: "3",
-        cover: cover,
-        dp: dpf,
+        cover: mcover,
+        dp: anitha,
         name: "Dr.T.Anitha",
         Designation: "Assistant Professor",
         mailid: " anitha81t@gmail.com",
@@ -173,8 +201,8 @@ const mat_fac_profiles = [
       },
       {
         id: "4",
-        cover: cover,
-        dp: dpf,
+        cover: mcover,
+        dp: yamuna,
         name: "S.Yamuna",
         Designation: "Assistant Professor (AD-HOC)",
         mailid: "bassyam1@gmail.com",
@@ -182,8 +210,8 @@ const mat_fac_profiles = [
       },  
       {
         id: "5",
-        cover: cover,
-        dp: dpf,
+        cover: mcover,
+        dp: mahalakshmi,
         name: "Ms.K.Mahalakshmi",
         Designation: "Assistant Professor (AD-HOC)",
         mailid: "mahukrishnan95@gmail.com",
@@ -191,8 +219,8 @@ const mat_fac_profiles = [
       },
       {
         id: "6",
-        cover: cover,
-        dp: dpm,
+        cover: mcover,
+        dp: reegan,
         name: "M.Reegan",
         Designation: "Assistant Professor (AD-HOC)",
         mailid: "amalanstar6@gmail.com",
@@ -200,8 +228,8 @@ const mat_fac_profiles = [
       },  
       {
         id: "7",
-        cover: cover,
-        dp: dpf,
+        cover: mcover,
+        dp: anbukarasi,
         name: "V.Anbukkarasi",
         Designation: "Assistant Professor",
         mailid: "anbuvelmath@gmail.com",
@@ -213,8 +241,8 @@ const mat_fac_profiles = [
 const chemi_fac_profiles = [
     {
       id: "1",
-      cover: cover,
-      dp: dpm,
+      cover: ccover,
+      dp: loki,
       name: "K.T.Loganathan",
       Designation: "Assistant Professor and Head of the Department",
       mailid: "logchem80@gmail.com",
@@ -222,8 +250,8 @@ const chemi_fac_profiles = [
     },
     {
       id: "2",
-      cover: cover,
-      dp: dpm,
+      cover: ccover,
+      dp: thenraj,
       name: "Dr.M.Thenraj",
       Designation: "Associate Professor",
       mailid: "mtr.iisc@gmail.com",
@@ -231,8 +259,8 @@ const chemi_fac_profiles = [
     },
     {
         id: "3",
-        cover: cover,
-        dp: dpm,
+        cover: ccover,
+        dp: rajaperumal,
         name: "M.Rajaperumal",
         Designation: "Associate Professor",
         mailid: "rajaperumalsjc@gmail.com",
@@ -240,8 +268,8 @@ const chemi_fac_profiles = [
       },
       {
         id: "4",
-        cover: cover,
-        dp: dpf,
+        cover: ccover,
+        dp: vijayalakshmi,
         name: "K.Vijayalakshmi",
         Designation: "Associate Professor",
         mailid: "vijayalakshmi2280@gmail.com",
@@ -252,7 +280,7 @@ const chemi_fac_profiles = [
 const chemi_sup_profiles = [
     {
       id: "1",
-      cover: cover,
+      cover: ccover,
       dp: dpm,
       name: "M.Mahamani",
       Designation: "Lab Assistant",
@@ -261,7 +289,7 @@ const chemi_sup_profiles = [
     },
     {
         id: "2",
-        cover: cover,
+        cover: ccover,
         dp: dpm,
         name: "K.Lakshmi Narayanan",
         Designation: "Cleaner",
@@ -272,7 +300,7 @@ const chemi_sup_profiles = [
 const phy_fac_profiles = [
     {
       id: "1",
-      cover: cover,
+      cover: pcover,
       dp: dpf,
       name: "Dr.B.V.Bhuvaneswari",
       Designation: "Professor and Head of the Department",
@@ -281,8 +309,8 @@ const phy_fac_profiles = [
         },
         {
             id: "2",
-            cover: cover,
-            dp: dpm,
+            cover: pcover,
+            dp: ponmudi,
             name: "Dr.S.Ponmudi",
             Designation: "Assistant Professor",
             mailid: "ponmudicdm1975@gmail.com",
@@ -290,8 +318,8 @@ const phy_fac_profiles = [
               },
               {
                 id: "3",
-                cover: cover,
-                dp: dpm,
+                cover: pcover,
+                dp: venkatrajan,
                 name: "Mr.S.Venkatrajan",
                 Designation: "Assistant Professor",
                 mailid: "venkatrajan69@gmail.com",
@@ -299,8 +327,8 @@ const phy_fac_profiles = [
                   },
                   {
                     id: "4",
-                    cover: cover,
-                    dp: dpf,
+                    cover: pcover,
+                    dp: cynthia,
                     name: "Dr.S.R.Cynthia",
                     Designation: "Assistant Professor",
                     mailid: "srcynthiasam@gmail.com",
@@ -308,8 +336,8 @@ const phy_fac_profiles = [
                       },
                       {
                         id: "5",
-                        cover: cover,
-                        dp: dpm,
+                        cover: pcover,
+                        dp: sivaganesh,
                         name: "Dr.G.Sivaganesh",
                         Designation: "Assistant Professor",
                         mailid: "gc_siva@yahoo.com",
@@ -317,8 +345,8 @@ const phy_fac_profiles = [
                           },
                           {
                             id: "6",
-                            cover: cover,
-                            dp: dpm,
+                            cover: pcover,
+                            dp: parthiban,
                             name: "Mr.R.Parthiban",
                             Designation: "Assistant Professor",
                             mailid: "parthirathinam@gmail.com",
@@ -326,8 +354,8 @@ const phy_fac_profiles = [
                               },
                               {
                                 id: "7",
-                                cover: cover,
-                                dp: dpm,
+                                cover: pcover,
+                                dp: vijayaragavan,
                                 name: "Dr.K.R.Vijayaraghavan",
                                 Designation: "Assistant Professor ",
                                 mailid: "vijayanphy@gmail.com",
@@ -335,8 +363,8 @@ const phy_fac_profiles = [
                                   },
                                   {
                                     id: "8",
-                                    cover: cover,
-                                    dp: dpf,
+                                    cover: pcover,
+                                    dp: mariammal,
                                     name: "Dr.R.N.Mariammal",
                                     Designation: "Assistant Professor ",
                                     mailid: "marigayathrirn@gmail.com",
@@ -347,7 +375,7 @@ const phy_fac_profiles = [
 const phy_sup_profiles = [
     {
       id: "1",
-      cover: cover,
+      cover: pcover,
       dp: dpm,
       name: "V.Rengarajan",
       Designation: "Lab Assistant",
@@ -355,7 +383,7 @@ const phy_sup_profiles = [
         },
         {
       id: "2",
-      cover: cover,
+      cover: pcover,
       dp: dpm,
       name: "R.Arumugam",
       Designation: "Cleaner",

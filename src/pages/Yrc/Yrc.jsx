@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Yrc.css";
 import { Underline } from "../../widgets";
@@ -8,12 +8,15 @@ import yrclogo from "../../assets/pictures/yrc/ll.webp";
 import { yrclist } from "../../constants/yrc";
 
 const Yrc = () => {
+  useEffect(() => {
+    document.title = 'ACCET-YRC';
+  }, []);
   return (
     <div className="yrcwhole">
       <Underline heading="Indian Red Cross Society" />
       <div className="yrcabt">
         <div className="yrcabttext">
-          <p>
+          <p className="yrcabttextp">
             The Indian Red Cross is a voluntary humanitarian organization having
             a network of over 1100 branches throughout the country, providing
             relief in times of disasters/emergencies and promotes health & care
@@ -30,7 +33,7 @@ const Yrc = () => {
           </p>
         </div>
         <div className="yrcabtimg">
-          <img src={abt} alt="abt" />
+          <img className="yrcabtimgi" src={abt} alt="abt" />
         </div>
       </div>
 
@@ -38,7 +41,7 @@ const Yrc = () => {
       <Underline heading="Red Cross Embelem"/>
       <div className="yrclogo">
         <div className="yrclogotext">
-          <p>
+          <p className="yrclogotextp">
             Red Cross on a white background, is the Emblem of Red Cross,
             recognized in 1864 as the distinctive sign for medical relief teams
             on the battle field. In the Russo-Turkish war the Ottoman empire
@@ -57,7 +60,7 @@ const Yrc = () => {
           </p>
         </div>
         <div className="yrclogopic">
-            <img src={yrclogo} alt="yrclogo"/>
+            <img className="yrclogopici" src={yrclogo} alt="yrclogo"/>
         </div>
       </div>
     </div>

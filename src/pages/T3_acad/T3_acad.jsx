@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./T3_acad.css";
 
@@ -14,6 +14,9 @@ import { t3_acad2 } from '../../constants/teqip3';
 import { t3_acad3 } from '../../constants/teqip3';
 
 const T3_acad = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Teqip 3 | Academic Activities';
+  }, []);
   const columns = [
     { field: "sno",header:"S.No"},
     { field: "fac_name",header:"Name of the faculty"},
@@ -33,7 +36,7 @@ const T3_acad = () => {
     <Backtotop/>
     <div className='acad_tot'>
     
-    <div className="teqip3_heading"><Underline heading="TEQIP-III"/></div>
+    <div className="teqip3_heading"><Underline heading="TEQIP-III Academic Activities"/></div>
 
 
        <Floatinmenu head={teqip3_floater_menu.head} links={teqip3_floater_menu.links}/>

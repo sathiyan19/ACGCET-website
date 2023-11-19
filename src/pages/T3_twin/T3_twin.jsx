@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./T3_twin.css";
 
@@ -11,6 +11,9 @@ import { Table } from "../../components";
 import { t3_twin } from '../../constants/teqip3';
 
 const T3_twin = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Teqip 3 | Twinning Activities';
+  }, []);
   const columns = [
     { field: "sno",header:"S.No"},
     { field: "name",header:"Name of the Programme"},

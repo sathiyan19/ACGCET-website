@@ -2,9 +2,13 @@ import React from 'react'
 
 import './Devcard.css'
 
-const Devcard = ({title,desc,link,pic}) => {
+const Devcard = ({title,desc,link,pic,color}) => {
+  const customStyle = {
+    '--brand-color': color || 'var(--brand-color)',
+  };
+
   return (
-    <article class="devcard">
+    <article class="devcard" style={customStyle}>
   <img
     class="devcard__background"
     // src="https://i.imgur.com/QYWAcXk.jpeg"

@@ -364,7 +364,7 @@ const ece_research_info=[
     'area':"Optical communication and networks"
   },
   {
-    'name':"G Renisha",
+    'name':"Dr. G Renisha",
     'area':"Signal processing"
   },
   {
@@ -380,11 +380,11 @@ const ece_research_info=[
     'area':"Polynomial Controllers, Stable Controllers"
   },
   {
-    'name':"Prof. C.Karthika Pragadeeswari",
+    'name':"Dr. C.Karthika Pragadeeswari",
     'area':"Video Surveilance"
   },
   {
-    'name':"Prof. G.Dhevanandhini",
+    'name':"Dr. G.Dhevanandhini",
     'area':"Digital Image Processing"
   },
   {
@@ -724,7 +724,7 @@ const ece_progs = [
     year: "2002",
     period: "2 Years",
     top_head: "M.E.",
-    program: "Microwave & Optical Communication",
+    program: "Microwave and Optical Communication",
     intake: "18",
   },
   {
@@ -1124,7 +1124,7 @@ const ece_stud_data = [
         {
           sno: "19",
           regno:"91762114026",
-          name: "DMONISH S",
+          name: "MONISH S",
         },
         {
           sno: "20",
@@ -2273,6 +2273,12 @@ const ece_placement_info = [
         perc: 69,
         symbol:"%"
       },
+      {
+        id: "2",
+        heading: "Higher Studies",
+        perc: 2,
+        symbol:""
+      },
     ],
   },
   {
@@ -2290,7 +2296,7 @@ const ece_placement_info = [
         id: "2",
         heading: "Higher Studies",
         perc: 3,
-        symbol:"%"
+        symbol:""
       },
       {
         id: "2",

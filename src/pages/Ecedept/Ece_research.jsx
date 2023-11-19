@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Ece_research.css'
 
@@ -10,6 +10,9 @@ import { ece_dept_menu,ece_research_info, patent_info,guide_info, scholar_info1,
 import { FaMicrochip } from "react-icons/fa6";
 
 const Ece_research = () => {
+  useEffect(() => {
+    document.title = 'ACCET-ECE | Research & Publications';
+  }, []);
     const columns=[
         {field:"name", header:"Name of the faculty"},
         {field:"area", header:"Area of Interest"}

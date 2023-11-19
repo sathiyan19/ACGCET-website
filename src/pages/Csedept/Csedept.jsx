@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Csedept.css";
 import { Backtotop,Floatinmenu,Underline,Deptvision,Deptmission } from "../../widgets";
@@ -6,11 +6,16 @@ import {Accordion,Hodmsg} from '../../components'
 import { cse_dept_menu,cse_mission,cse_vision,cse_hod,cse_stud_data } from "../../constants/cse_dept";
 
 import {Radial_menu } from "../../components";
-import cse from "../../assets/pictures/csecover.webp";
+// import cse from "../../assets/pictures/csecover.webp";
 
 import {FaComputer} from 'react-icons/fa6'
 
+const cse="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cse/csecover.webp"
+
 const Csedept = () => {
+  useEffect(() => {
+    document.title = 'ACCET-CSE Department';
+  }, []);
   return (
     <div className="csedept">
       <div className="csebg">

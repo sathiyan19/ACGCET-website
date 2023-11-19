@@ -8,7 +8,7 @@ const Underline = ({ heading }) => {
       <div>
         {heading && (
           <div className="alltitle">
-            <p>{heading}</p>
+            <p className="alltitlep">{heading}</p>
           </div>
         )}
         <div className="l1"></div>
