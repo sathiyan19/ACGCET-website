@@ -57,10 +57,10 @@ const Csedept = () => {
           </p>
         </div>
         </div>
-        <div className="cse_hod">
+        {/* <div className="cse_hod">
         <Underline heading="HOD's Message"/>
         <Hodmsg name={cse_hod.name} designation={cse_hod.designation} pic={cse_hod.pic} content={cse_hod.content}/>
-        </div>
+        </div> */}
         <div className="cse_vision_mission">
           <Underline heading="Our Vision & Mission"/>
         <Deptvision visiondata={cse_vision.visiondata} />

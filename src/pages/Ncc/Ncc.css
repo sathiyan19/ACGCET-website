@@ -1,72 +1,94 @@
 .nccabt {
   padding: 20px;
-  > p {
-    /* padding: 10px; */
-    line-height: 1.5rem;
-    font-size: 18px;
-    color: black;
-    text-align: justify;
-  }
-  .nccabt1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .nccabt1text {
-      width: 60%;
-      > p {
-        line-height: 1.5rem;
-        font-size: 18px;
-        color: black;
-        text-align: justify;
-        /* padding: 10px; */
-      }
-    }
-    .nccabt1img {
-      width: 40%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      > img {
-        padding: 10px;
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
+}
+
+.nccabtp {
+  line-height: 1.5rem;
+  font-size: 18px;
+  color: black;
+  text-align: justify;
+}
+
+.nccabt1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nccabt1text {
+  width: 60%;
+}
+
+.nccabt1textp {
+  line-height: 1.5rem;
+  font-size: 18px;
+  color: black;
+  text-align: justify;
+}
+
+.nccabt1img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nccabt1imgi {
+  padding: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .nccam {
   padding: 20px;
 }
 
-.nccflagsec {
+.nccofficers {
+  margin-top: 10px;
   padding: 20px;
-  .nccflag {
-    display: flex;
-    .nccflagtext {
-      width: 80%;
-      padding: 10px;
-      > p {
-        line-height: 1.5rem;
-        color: black;
-        text-align: justify;
-        font-size: 18px;
-      }
-    }
-    .nccflagpic {
-      width: 20%;
-      display: flex;
-      align-items: center;
-      > img {
-        width: 100%;
-        height: auto;
-      }
-    }
-  }
 }
 
-.ncccore {
+.ncccardholder {
+  display: flex;
+  justify-content: center;
+}
+
+.ncccards {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nccflagsec {
   padding: 20px;
+}
+
+.nccflag {
+  display: flex;
+}
+
+.nccflagtext {
+  width: 80%;
+  padding: 10px;
+}
+
+.nccflagtextp {
+  line-height: 1.5rem;
+  color: black;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.nccflagpic {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.nccflagpici {
+  width: 100%;
+  height: auto;
 }
 
 .nccpledge {
@@ -74,224 +96,189 @@
   justify-content: center;
   position: relative;
   margin: 0 auto;
-  > img {
-    width: 95%;
-    vertical-align: middle;
-    height: auto;
-  }
-  .mobpledgeimg{
-    display: none;
-  }
-  .nccpledgetext {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    background: rgba(0, 0, 0, 0.6);
-    width: 95%;
-    /* border-radius: 20px; */
-    padding: 20px;
-    >h1{
-      color: white;
-      text-align: center;
-    }
-    >p{
-      color: white;
-      line-height: 1.5rem;
-      font-size: 18px;
-      text-align: center;
-    }
-  }
 }
 
-.nccofficers {
-  margin-top: 10px;
+.lappledgeimg {
+  width: 95%;
+  vertical-align: middle;
+  height: auto;
+}
+
+.mobpledgeimg {
+  display: none;
+  width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+.nccpledgetext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 95%;
   padding: 20px;
-  .ncccardholder {
-    display: flex;
-    justify-content: center;
-  }
-  .ncccards {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
 }
 
-.nccachieve{
+.nccpledgetexth1 {
+  color: white;
+  text-align: center;
+}
+
+.nccpledgetextp {
+  color: white;
+  line-height: 1.5rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+.ncccore {
+  padding: 20px;
+}
+
+.nccachieve {
   margin-bottom: 10px;
   padding: 20px;
 }
 
 @media (max-width: 1200px) {
-  .nccabt {
-    .nccabt1 {
-      flex-direction: column-reverse;
-      .nccabt1text {
-        width: 100%;
-      }
-      .nccabt1img {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        > img {
-          width: 40%;
-        }
-      }
-    }
+  .nccabt1 {
+    flex-direction: column-reverse;
   }
 
-  .nccflagsec {
-    .nccflag {
-      .nccflagtext {
-        width: 70%;
-      }
-      .nccflagpic {
-        width: 30%;
-      }
-    }
+  .nccabt1text {
+    width: 100%;
+  }
+
+  .nccabt1img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nccabt1imgi {
+    width: 40%;
+  }
+
+  .nccflagtext {
+    width: 70%;
+  }
+
+  .nccflagpic {
+    width: 30%;
   }
 }
 
 @media (max-width: 980px) {
-  .nccabt {
-    .nccabt1 {
-      .nccabt1img {
-        > img {
-          width: 50%;
-        }
-      }
-    }
+  .nccabt1imgi {
+    width: 50%;
   }
 
-  .nccflagsec {
-    .nccflag {
-      flex-direction: column-reverse;
-      .nccflagtext {
-        width: 100%;
-      }
-      .nccflagpic {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        > img {
-          width: 40%;
-        }
-      }
-    }
+  .nccflag {
+    flex-direction: column-reverse;
   }
 
-  .nccpledge{
-    >img{
-      width: 100%;
-    }
-    .nccpledgetext{
-      width: 100%;
-      border-radius: 0;
-    }
+  .nccflagtext {
+    width: 100%;
   }
 
+  .nccflagpic {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
+  .nccflagpici {
+    width: 40%;
+  }
+
+  .lappledgeimg {
+    width: 100%;
+  }
+
+  .nccpledgetext {
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 @media (max-width: 768px) {
-  .nccabt {
-    .nccabt1 {
-      .nccabt1img {
-        > img {
-          width: 60%;
-        }
-      }
-    }
+  .nccabt1imgi {
+    width: 60%;
   }
 
-  .nccpledge{
-    .nccpledgetext{
-      bottom: 0;
-      top:0;
-    }
+  .nccpledgetext {
+    bottom: 0;
+    top: 0;
   }
-
 }
 
 @media (max-width: 600px) {
-  .nccofficers {
-    .ncccards {
-      width: 100%;
-    }
-  }
-  .nccabt {
-    .nccabt1 {
-      .nccabt1img {
-        > img {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .nccflagsec {
-    .nccflag {
-      .nccflagpic {
-        > img {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .nccpledge{
-    .lappledgeimg{
-      display: none;
-    }
-    .mobpledgeimg{
-      display: block;
-    }
-    .nccpledgetext{
-      top:100px;  
-      bottom:100px;
-    }
-  }
-}
-
-@media (max-width:500px){
   .nccabt{
-    >p{
-      font-size: 16px ;
-    }
-    .nccabt1{
-      .nccabt1{
-        >p{
-          font-size: 16px;
-        }
-      }
-    }
+    padding: 10px;
+  }
+  .nccabt1imgi {
+    width: 100%;
+    padding: 0;
+  }
+  .nccam{
+    padding: 10px;
+  }
+  .nccofficers{
+    padding: 10px;
+  }
+  .ncccards {
+    width: 100%;
   }
   .nccflagsec{
-    .nccflag{
-      .nccflagtext{
-        >p{
-          font-size: 16px;
-        }
-      }
-    }
+    padding: 10px;
   }
-  .nccpledge{
-    .nccpledgetext{
-      top:80px;  
-      bottom:80px;
-    }
+  .nccflagtext{
+    padding: 0;
+  }
+  .nccflagpici {
+    width: 100%;
+  }
+  .lappledgeimg {
+    display: none;
+  }
+  .mobpledgeimg {
+    display: block;
+  }
+  .nccpledgetext {
+    top: 100px;
+    bottom: 100px;
+  }
+  .ncccore{
+    padding: 10px;
+  }
+  .nccachieve{
+    padding: 10px;
   }
 }
 
-@media (max-width:450px){
-  .nccpledge{
-    .nccpledgetext{
-      padding: 10px;
-      top:0;  
-      bottom:0;
-    }
+@media (max-width: 500px) {
+
+  .nccabtp,
+  .nccabt1textp,
+  .nccflagtextp {
+    font-size: 16px;
+  }
+  .nccpledgetext {
+    top: 80px;
+    bottom: 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nccpledgetext {
+    padding: 10px;
+    top: 0;
+    bottom: 0;
+  }
+  .nccpledgetextp{
+    margin-bottom: 0;
   }
 }
