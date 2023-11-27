@@ -2,7 +2,7 @@
 export const events=[
     {
         'id':'11',
-        'date':'NOV 24 2023',
+        'date':'NOV 25 2023',
         'title':"Deftera'23",
         'time':'09:30 am',
         'venue':'CSE Department ',
