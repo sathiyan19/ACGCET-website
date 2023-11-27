@@ -210,7 +210,7 @@ const cse_sup_profiles = [
     cover: cover,
     dp: rajendran,
     name: "S.Rajendran",
-    Designation: "Mechanical Grade-II",
+    Designation: "Mechanic Grade-II",
     mailid: "bhuvanagirirajendran@gmail.com",
     pdf: "https://drive.google.com/file/d/160eR2fkBXQKrWneCnac3Tjfz0nnnS34i/view?usp=drive_link",
   },
@@ -220,7 +220,7 @@ const cse_sup_profiles = [
     dp: raja,
     name: "R.Raja",
     Designation: "Cleaner",
-    mailid: "",
+    // mailid: "",
     pdf: "https://drive.google.com/file/d/1wUX-bfiQt9R4we_JICXi9LebyhG-7cBQ/view?usp=drive_link",
   },
 ];
