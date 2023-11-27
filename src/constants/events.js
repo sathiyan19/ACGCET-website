@@ -1,6 +1,15 @@
 //IMPORTANT:: Date Format: SEP 06 2023 
 export const events=[
     {
+        'id':'11',
+        'date':'NOV 24 2023',
+        'title':"Deftera'23",
+        'time':'09:30 am',
+        'venue':'CSE Department ',
+        'details':'We cordially invite you for Deftera\'23',
+        // 'status':'due'
+    },
+    {
         'id':'10',
         'date':'NOV 08 2023',
         'title':'16th Rotaract Club Installation',
