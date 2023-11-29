@@ -159,7 +159,7 @@ const bottom_nav_paths = [
       { path: "/csedept", link: "Computer Science Engineering" },
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
-      { path: "/under", link: "Mechanical Engineering" },
+      { path: "/mechdept", link: "Mechanical Engineering" },
       { path: "/civildept", link: "Civil Engineering" },
       { path: "/sciencedept", link: "Science & Humanities" },
     ],
