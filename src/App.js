@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 import { Routes, Route,useLocation } from "react-router-dom";
 
-import { Navigation, Footer } from "./components";
+import { Navigation, Footer,Chatbot } from "./components";
 
 import {
   Home,
@@ -206,6 +206,7 @@ const App = () => {
         <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
         <Route path="/centers-and-facilities" element={<Facilities/>} />
       </Routes>
+      <Chatbot/>
       <Footer />
     </div>
   );
