@@ -13,34 +13,34 @@ const mech_dept_menu = [
     arl:'l'
   },
   {
-    id: "3",
+    id: "2",
     path: "/mechdept/mech-peo",
     link: "Programme Objectives & Outcomes",
     arl:'l'
   },
   {
-    id: "5",
+    id: "3",
     path: "/mechdept/mech-faculties",
     link: "Faculties",
     arl:'l'
   },
   {
-    id: "7",
+    id: "4",
     path: "/mechdept/mech-lab",
     link: "Lab Facilities",
     arl:'l'
   },
   {
     id: "8",
-    path: "#",
-    link: "Professional Socities",
-    arl:'l'
+    path: "/ecedept/ece-placement",
+    link: "Placement Activites",
+    arl: "l",
   },
   {
     id: "9",
-    path: "#",
-    link: "Research and Publications",
-    arl:'l'
+    path: "/ecedept/ece-rankers",
+    link: "Elite Rankers",
+    arl: "l",
   },
   {
     id: "10",
@@ -50,15 +50,15 @@ const mech_dept_menu = [
   },
   {
     id: "11",
-    path: "#",
-    link: "MoU",
-    arl:'l'
+    path: "/ecedept/ece-projects",
+    link: "Best Projects",
+    arl: "l",
   },
   {
     id: "12",
-    path: "#",
-    link: "Centre of Excellence",
-    arl:'l'
+    path: "/ecedept/ece-antenna-testing",
+    link: "Antenna Testing",
+    arl: "l",
   },
 ];
 
