@@ -81,6 +81,7 @@ const Chatbot = () => {
           <input
             type="text"
             id="chat-input1"
+            // placeholder="Hi, How can I help you?"
             placeholder="Ask a question..."
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}

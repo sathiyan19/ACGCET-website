@@ -1343,6 +1343,16 @@ const civ_place_pinnacle=[
 
 const mag_data=[
   {
+    'id':'3',
+    'program':'Newsletter Oct 2023',
+    'pdf':'https://drive.google.com/file/d/1cD33AhRGQoBjQH9S1ned3_SPaS-r95ez/view?usp=drive_link'
+  },
+  {
+    'id':'4',
+    'program':'Newsletter Sep 2023',
+    'pdf':'https://drive.google.com/file/d/1wTGRTZwAF987HStZL-uPCkeJ3vOrJrcY/view?usp=drive_link'
+  },
+  {
     'id':'1',
     'program':'Cesar Magazine 2021',
     'pdf':'https://drive.google.com/file/d/103v3bTK5ynXUzOxk5hzzr_upcQLJKJcc/view?usp=sharing'
