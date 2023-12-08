@@ -26,8 +26,8 @@ const Chatbot = () => {
     setUserInput('');
 
     // Send the user message to the server
-    fetch('/chat', {
-    // fetch('http://13.232.210.8', {
+    // fetch('/chat', {
+    fetch('http://13.232.210.8', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
