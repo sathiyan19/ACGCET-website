@@ -278,6 +278,6 @@
   }
   .chat-messages1{
     /* max-height: 120vh; */
-    h
+    height: 200px;
   }
 }
