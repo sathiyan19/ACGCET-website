@@ -21,7 +21,7 @@ const Chatbot = () => {
 
     // Add user message to the messages state
     setMessages([...messages, { text: message, sender: 'user' }]);
-    console.log(messages)
+    // console.log(messages)
 
     setUserInput('');
 
@@ -35,10 +35,10 @@ const Chatbot = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         // Add bot's response to the messages state
         setMessages([...messages,  { text: message, sender: 'user' },{ text: data.response, sender: 'bot' }]);
-        console.log(messages)
+        // console.log(messages)
       })
       .catch((error) => console.error('Error sending message:', error));
   };
@@ -71,11 +71,11 @@ const Chatbot = () => {
           ))}
         </div>
         <div className='chat-bottom'>
-        <div id="dev-message1">
+        {/* <div id="dev-message1">
           <a className="dev-link1" href="https://accet.ac.in/webdev-team">
             Created and maintained by cse students
           </a>
-        </div>
+        </div> */}
 
         <div className="chat-input1">
           <input
