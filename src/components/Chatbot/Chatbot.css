@@ -116,7 +116,7 @@
   width: 100%;
   background: #f1f1f1;
   border-radius: 0px 0px 10px 10px;
-  height: 90px;
+  height: 60px;
 }
 
 .chat-input1 {
@@ -132,7 +132,7 @@
   overflow-y: scroll;
   position: relative;
   z-index: 11; 
-  max-height: 300px; /* Adjust the max height as needed */
+  max-height: 330px; /* Adjust the max height as needed */
 }
 
 #chat-input1 {
@@ -278,6 +278,6 @@
   }
   .chat-messages1{
     /* max-height: 120vh; */
-    height: 200px;
+    height: 230px;
   }
 }

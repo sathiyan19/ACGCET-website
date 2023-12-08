@@ -71,11 +71,7 @@ const Chatbot = () => {
           ))}
         </div>
         <div className='chat-bottom'>
-        <div id="dev-message1">
-          <a className="dev-link1" href="https://accet.ac.in/webdev-team">
-            Created and maintained by cse students
-          </a>
-        </div>
+       
 
         <div className="chat-input1">
           <input
