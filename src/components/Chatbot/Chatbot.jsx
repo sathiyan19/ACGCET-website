@@ -21,12 +21,13 @@ const Chatbot = () => {
 
     // Add user message to the messages state
     setMessages([...messages, { text: message, sender: 'user' }]);
-    console.log(messages)
+    // console.log(messages)
 
     setUserInput('');
 
     // Send the user message to the server
-    fetch('http://13.232.210.8/ask', {
+    fetch('/chat', {
+    // fetch('http://13.232.210.8', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
@@ -35,10 +36,10 @@ const Chatbot = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
+        // console.log(data)
         // Add bot's response to the messages state
         setMessages([...messages,  { text: message, sender: 'user' },{ text: data.response, sender: 'bot' }]);
-        console.log(messages)
+        // console.log(messages)
       })
       .catch((error) => console.error('Error sending message:', error));
   };
@@ -71,11 +72,11 @@ const Chatbot = () => {
           ))}
         </div>
         <div className='chat-bottom'>
-        <div id="dev-message1">
+        {/* <div id="dev-message1">
           <a className="dev-link1" href="https://accet.ac.in/webdev-team">
             Created and maintained by cse students
           </a>
-        </div>
+        </div> */}
 
         <div className="chat-input1">
           <input
