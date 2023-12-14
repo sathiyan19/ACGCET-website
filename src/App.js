@@ -99,6 +99,7 @@ import {
   Mech_lib,
   Mech_phd,
   Eee_studcorner,
+  Mech_rankers,
   Mech_org,
   Placement,
 } from "./pages";
@@ -148,14 +149,13 @@ const App = () => {
         <Route path="/ecedept/ece-lab" element={<Ece_lab />} />
         <Route path="/ecedept/ece-research" element={<Ece_research />} />
         <Route path="/ecedept/ece-rankers" element={<Ece_rankers/>} />
+        <Route path="/mechdept/mech-rankers" element={<Mech_rankers/>} />
         <Route path="/ecedept/ece-dept-events" element={<Ece_events/>} />
         <Route path="/ecedept/ece-projects" element={<Ece_projects/>} />
         <Route path="/ecedept/ece-student-activity" element={<Ece_stud_activity/>} />
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
-       
-       
         <Route path="/mechdept" element={<Mechdept/>} />
         <Route path="/eeedept" element={<Eeedept/>} />
         <Route path="/eeedept/eee-modern" element={<Eee_modern/>}/>
