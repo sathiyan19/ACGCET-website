@@ -1,0 +1,15 @@
+.orgcontent {
+    font-family: 'Arial', sans-serif; /* Set your preferred font family */
+}
+
+.content, .content1,.content2 {
+    font-size: 16px; /* Set your preferred font size */
+    line-height: 1.5rem;
+    text-align: justify;
+
+}
+.organised{
+    overflow-x: scroll;
+}
+
+

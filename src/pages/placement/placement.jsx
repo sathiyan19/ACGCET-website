@@ -1,12 +1,10 @@
 import React from 'react'
-import palani from '../../assets/pictures/principal.webp'
-
-
+import {
+    placement_menu
+}from "../../constants/placement_part";
 const placement = () => {
   return (
-    <div>
-      
-    </div>
+    <div>placement</div>
   )
 }
 
