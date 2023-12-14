@@ -1,4 +1,6 @@
 import dp from "../assets/pictures/dp.jpg";
+import dpm from "../assets/pictures/boy.webp";
+import dpf from "../assets/pictures/girl.webp";
 import cover from "../assets/pictures/mech_banner.webp";
 
 import swayam from '../assets/pictures/swayam.webp'
@@ -246,18 +248,105 @@ const mech_fac_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dp,
-    name: "Arjun",
-    Designation: "Assistant professor",
-    mailid: "e",
-    pdf: "#",
+    dp: dpm,
+    name: "Dr.K.RAMANATHAN",
+    Designation: "Professor (CAS)",
+    mailid: "ramsananthi@gmail.com",
+    pdf: "https://drive.google.com/file/d/1RRcE1m8PZoikgh1IO1c7rJey75LKnRSm/view?usp=sharing",
+
   },
+  {
+    id: "3",
+    cover: cover,
+    dp: dpf,
+    name: "Dr.S.GEETHA",
+    Designation: "Associate Professor ",
+    mailid: "gitskumaresh@gmail.com",
+    pdf: "https://drive.google.com/file/d/1CGoWXRb2pFeQoL4EvHqkbWo5QNtAWYIR/view?usp=sharing",
+
+  },
+  {
+    id: "4",
+    cover: cover,
+    dp: dpf,
+    name: "Dr.R.SARALA",
+    Designation: "Associate Professor",
+    mailid: "r.sarala@accetedu.in",
+    pdf: "https://drive.google.com/file/d/1aEGWxeQ_g2LDrMI8aoEX3Fvlp4gnQG8o/view?usp=sharing",
+  },
+  {
+    id: "5",
+    cover: cover,
+    dp: dpf,
+    name: "Dr. S. M. SIVAGAMI",
+    Designation: "AssociateProfessor",
+    mailid: "smshivagami@gmail.com",
+    pdf: "https://drive.google.com/file/d/1BNytYW_hcXud6m6Z5RYlqWSZz1RsWuf1/view?usp=sharing",
+  },
+  {
+    id: "6",
+    cover: cover,
+    dp: dpm,
+    name: "S.SELVARAJ",
+    Designation: "Assistant Professor",
+    mailid: "selvamraj1@gmail.com",
+    pdf: "https://drive.google.com/file/d/16mekXJbyIwTyaleioUDC0xYc9shTLdkS/view?usp=sharing",
+  },
+  {
+    id: "7",
+    cover: cover,
+    dp: dpm,
+    name: "Thiru.V.JAWAHAR",
+    Designation: "Assistant Professor",
+    mailid: "vjawahar06@gmail.com",
+    pdf: "https://drive.google.com/file/d/1qNT9JG3rhLWi5aLZp6qIfWw8AwfbYB7C/view?usp=sharing",
+  },
+  {
+    id: "9",
+    cover: cover,
+    dp: dpm,
+    name: "AProf.P.PERUMAL",
+    Designation: "Assistant Professor",
+    mailid: "perumalaccet@gmail.com",
+    pdf: "https://drive.google.com/file/d/1_YIkWFOA2iam7I3gF1pm5t-moMyrvB88/view?usp=sharing",
+  },
+  {
+    id: "10",
+    cover: cover,
+    dp: dpm,
+    name: "T. RAJA VIJAY",
+    Designation: "Assistant Professor",
+    mailid: "kingsvijay1503@gmail.com",
+    pdf: "#https://drive.google.com/file/d/1JP325kv0uZcgAFufRa9oajgMf7yqiL8N/view?usp=sharing",
+  },
+
+  {
+    id: "12",
+    cover: cover,
+    dp: dpm,
+    name: "Dr. P. RAVEENDIRAN",
+    Designation: "Associate Professor",
+    mailid: "praveendiran@gmail.com",
+    pdf: "https://drive.google.com/file/d/1cz8L9qzPFqF6Rjs-KiOEPaHZO1HqS5ae/view?usp=sharing",
+  },
+  {
+    id: "13",
+    cover: cover,
+    dp: dp,
+    name: "Dr.J.PRABAKARAN",
+    Designation: "Associate Professor",
+    mailid: "jp_au@yahoo.com ,",
+    pdf: "https://drive.google.com/file/d/1CHaWoR-zK1TBAReBv8n7OCG1TKVyu3k0/view?usp=sharing",
+  },
+ 
+
+  
 ];
 const mech_sup_profiles = [
   {
     id: "1",
     cover: cover,
-    dp: dp,
+    dp: dpf,
     name: "Arjun",
     Designation: "Foreman Instructor",
     mailid: "e",

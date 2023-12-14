@@ -5,7 +5,6 @@ import cover from "../assets/pictures/eee-cover.webp";
 import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
-
 import baskaran from '../assets/pictures/eee_dept/eee_faculties/1-Baskaran-_3_.webp'
 import arunya from '../assets/pictures/eee_dept/eee_faculties/2-Arunya-Revathi.webp'
 import Nageswari from '../assets/pictures/eee_dept/eee_faculties/3-Nageswari.webp'
