@@ -150,7 +150,7 @@ const App = () => {
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
-        {/* <Route path="/mechdept" element={<Under/>} /> */}
+        
         <Route path="/mechdept" element={<Mechdept/>} />
         <Route path="/eeedept" element={<Eeedept/>} />
         <Route path="/eeedept/eee-modern" element={<Eee_modern/>}/>
@@ -204,6 +204,7 @@ const App = () => {
         <Route path="/webdev-team" element={<Devpage/>} />
         <Route path="/civildept/civil-library" element={<Civil_library/>} />
         <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
+        <Route path="/centers-and-facilities" element={<Facilities/>} />
         <Route path="/centers-and-facilities" element={<Facilities/>} />
       </Routes>
       <Footer />
