@@ -96,8 +96,12 @@ import {
   Facilities,
   Eee_modern,
   Eee_lib,
+  Mech_lib,
+  Mech_phd,
   Eee_studcorner,
-  Mech_rankers
+  Mech_rankers,
+  Mech_org,
+  Placement,
 } from "./pages";
 import "./App.css";
 
@@ -206,7 +210,11 @@ const App = () => {
         <Route path="/civildept/civil-library" element={<Civil_library/>} />
         <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
         <Route path="/centers-and-facilities" element={<Facilities/>} />
-        <Route path="/placement" element={<placement/>} />
+        <Route path="/mechdept/mech-library" element={<Mech_lib/>}/>
+        <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
+        <Route path="/mechdept/mech-org"element={<Mech_org/>}/>
+        <Route path="/placement"element={<Placement/>}/>
+
       </Routes>
       <Footer />
     </div>
