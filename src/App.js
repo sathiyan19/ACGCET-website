@@ -96,7 +96,8 @@ import {
   Facilities,
   Eee_modern,
   Eee_lib,
-  Eee_studcorner
+  Eee_studcorner,
+  Placement,
 } from "./pages";
 import "./App.css";
 
@@ -205,6 +206,7 @@ const App = () => {
         <Route path="/civildept/civil-library" element={<Civil_library/>} />
         <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
         <Route path="/centers-and-facilities" element={<Facilities/>} />
+
       </Routes>
       <Footer />
     </div>

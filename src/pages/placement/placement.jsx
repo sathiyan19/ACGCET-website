@@ -1,8 +1,6 @@
 import React from 'react'
-import palani from '../../assets/pictures/principal.webp'
 
-
-const placement = () => {
+const Placement = () => {
   return (
     <div>
       
@@ -10,4 +8,4 @@ const placement = () => {
   )
 }
 
-export default placement
+export default Placement
