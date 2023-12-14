@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect}from "react";
 
 import { Backtotop, Floatinmenu, Underline, Modal } from "../../widgets";
 import { mech_dept_menu, mech_dept_events } from "../../constants/mech_dept";
@@ -8,6 +8,9 @@ import { Radial_menu } from "../../components";
 import { BsFillGearFill } from "react-icons/bs";
 
 const Mech_events = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Mech | Events';
+  }, []);
   return (
     <div className="mechdept">
       <div className="mechbg">
