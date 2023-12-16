@@ -695,10 +695,15 @@ const cse_stud_data = [
         {
           sno: "58",
           regno:"TBD",
-          name: "VIGNESH A",
+          name: "RITHIKA S",
         },
         {
           sno: "59",
+          regno:"TBD",
+          name: "VIGNESH A",
+        },
+        {
+          sno: "60",
           regno:"TBD",
           name: "VIMALRAJAN S",
         }
