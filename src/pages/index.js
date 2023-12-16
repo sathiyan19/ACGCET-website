@@ -95,4 +95,7 @@ export {default as Eee_studcorner} from './Eeedept/Eee_studcorner'
 export{default as Mech_lib} from './Mechdept/Mech_lib'
 export{default as Mech_phd} from'./Mechdept/Mech_phd'
 export{default as Mech_org} from'./Mechdept/Mech_org'
+<<<<<<< HEAD
 export{default as Placement} from'./Placement/placement'
+=======
+>>>>>>> f675d7c3e3efd29451ce87a430f44daf84fe0f44
