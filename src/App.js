@@ -156,6 +156,7 @@ const App = () => {
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
+        {/* <Route path="/mechdept" element={<Under/>} /> */}
         <Route path="/mechdept" element={<Mechdept/>} />
         <Route path="/eeedept" element={<Eeedept/>} />
         <Route path="/eeedept/eee-modern" element={<Eee_modern/>}/>
@@ -210,10 +211,11 @@ const App = () => {
         <Route path="/civildept/civil-library" element={<Civil_library/>} />
         <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
         <Route path="/centers-and-facilities" element={<Facilities/>} />
+        <Route path="/centers-and-facilities" element={<Facilities/>} />
         <Route path="/mechdept/mech-library" element={<Mech_lib/>}/>
         <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
         <Route path="/mechdept/mech-org"element={<Mech_org/>}/>
-        <Route path="/placement"element={<Placement/>}/>
+
 
       </Routes>
       <Footer />
