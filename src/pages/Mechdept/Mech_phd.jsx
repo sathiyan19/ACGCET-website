@@ -56,8 +56,10 @@ const Mech_phd = () => {
 
               
 </div>
-<div className="phd produced">
-    <Underline heading="Phd produced"/>
+<Underline heading="Phd produced"/>
+<div className="phdproduced">
+
+    
     <Table data={mech_research_phd} columns={columns}/>
 </div>
              </div>
