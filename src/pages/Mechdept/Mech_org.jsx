@@ -62,8 +62,9 @@ The department's focus extends beyond routine academic events to encompass natio
 
         </p>
       </div>
+      <Underline heading ="Events organised"/>
       <div className="organised">
-        <Underline heading ="Events organised"/>
+
         <Table data={mech_organised} columns={columns}/>
       </div>
       </section>

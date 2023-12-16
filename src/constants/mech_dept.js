@@ -937,7 +937,7 @@ const mech_lib_profiles=[
      'sno':"3",
      'title':"Inter college Technical Symposium “ SHACKLES 2022”",
      'Date':"10.05.2022",
-     'resource':"",
+     'resource':"-",
      'beneficiary':"UG students",
      'co-ordinator':"Dr.S.Sankarapandian"
    },
@@ -1092,7 +1092,7 @@ const mech_lib_profiles=[
      'sno':"21",
      'title':"AICTE-QIP FDP on “Modelling and Optimization Techniques for Engineering Applications”",
      'Date':"11.11.2018-25.11.2018",
-     'resource':"",
+     'resource':"-",
      'beneficiary':"Faculty Members",
      'co-ordinator':"Prof. T. Raja Vijay Dr. C.R. Senthil Kumar"
      
@@ -1140,7 +1140,7 @@ const mech_lib_profiles=[
      'sno':"26",
      'title':"TEQIP Sponsored National Conference on “Contemporary Approaches in Design and Manufacturing”",
      'Date':"26.04.2018",
-     'resource':"",
+     'resource':"-",
      'beneficiary':"PG students and Faculty’s",
      'co-ordinator':"Prof. V. Jawahar Prof. T. Raja Vijay"
      
@@ -1394,16 +1394,9 @@ const mech_lib_profiles=[
      'beneficiary':"Public ( Service to the community)",
      'co-ordinator':"S.Jayabal"
    },
+  
    {
      'sno':"55",
-     'title':"",
-     'Date':"",
-     'resource':"",
-     'beneficiary':"",
-     'co-ordinator':""
-   },
-   {
-     'sno':"56",
      'title':"TEQIP sponsored training on Arc Welding Practice",
      'Date':"07-11, Nov 2005",
      'resource':"Faculty and Technical staffs of ACCET,Karaikudi",
