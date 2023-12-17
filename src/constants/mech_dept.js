@@ -62,7 +62,7 @@ import Elumalai from '../assets/pictures/mech_dept/mech_fac_profiles/19.Mr.P.Elu
 import  Sathishkumar from '../assets/pictures/mech_dept/mech_fac_profiles/20.Mr.C.Sathishkumar AP(Adhoc).webp'
 import Rajakumar from '../assets/pictures/mech_dept/mech_fac_profiles/21.Mr.N.Rajakumar AP(Adhoc).webp'
 import Karthikeyan from '../assets/pictures/mech_dept/mech_fac_profiles/22.Mr.K.Karthikeyan AP(Adhoc).webp'
-import Sakthi from '../assets/pictures/mech_dept/mech_fac_profiles/22.Mr.K.Karthikeyan AP(Adhoc).webp'
+import Sakthi from '../assets/pictures/mech_dept/mech_fac_profiles/23.Dr.RM.SakthiSadhasivam AP(Adhoc).webp'
 
 
 const mech_dept_menu = [
@@ -522,14 +522,14 @@ const mech_fac_profiles = [
     dp: Syed,
     name: "Mr.A.SYED ABDULLAH",
     Designation: "Assistant Professor (Contract)",
-    mailid: ":abdullahh50@gmail.com",
+    mailid: "abdullahh50@gmail.com",
     pdf: "https://drive.google.com/file/d/190M9ingHxoihRh8-NW-8yGDze4rmbR2B/view?usp=sharing",
   },
   {
     id: "18",
     cover: cover,
     dp: Muruganandham,
-    name: "K.Muruganandham",
+    name: "K.MURUGANANDHAM",
     Designation: "Assistant Professor",
     mailid: "muruganandham.k90@gmail.com",
     pdf: "https://drive.google.com/file/d/1AuE98PlE5mo0NDADT8sELqjf0vfr0BGc/view?usp=sharing",
@@ -538,7 +538,7 @@ const mech_fac_profiles = [
     id: "19",
     cover: cover,
     dp: Elumalai,
-    name: ".Elumalai P",
+    name: "P.ELUMALAI",
     Designation: "Assistant Professor",
     mailid: "thiyakuelumalai582@gmail.com",
     pdf: "https://drive.google.com/file/d/1-DcEN3CWc_eONmgs86Beax11IGYE7Beu/view?usp=sharing",
@@ -547,7 +547,7 @@ const mech_fac_profiles = [
     id: "20",
     cover: cover,
     dp: Sathishkumar,
-    name: "C. Sathishkumar",
+    name: "C. SATHISHKUMAR",
     Designation: "Assistant Professor",
     mailid: "sathishkumarcsk94@gmail.com",
     pdf: "https://drive.google.com/file/d/1ZBb747JVT16bs2Tlmu4UlcdtFHExXJIF/view?usp=sharing",
@@ -556,7 +556,7 @@ const mech_fac_profiles = [
     id: "21",
     cover: cover,
     dp: Rajakumar,
-    name: "N.Rajakumar",
+    name: "N.RAJAKUMAR",
     Designation: "Assistant Professor",
     mailid: "rajvalli74@gmail.com",
     pdf: "https://drive.google.com/file/d/1SMWmKWWoYAPNPufp3VowcZR-VPpaPTBd/view?usp=sharing",
@@ -565,7 +565,7 @@ const mech_fac_profiles = [
     id: "22",
     cover: cover,
     dp: Karthikeyan,
-    name: "Mr.K.Karthikeyan",
+    name: "Mr.K.KARTHIKEYAN",
     Designation: "Assistant Professor",
     mailid: "kkshare2020@gmail.com",
     pdf: "https://drive.google.com/file/d/13AAP4pt4tSa2zDAxg5gLV0E_PMP6xFK4/view?usp=sharing",
