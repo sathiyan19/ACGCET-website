@@ -213,7 +213,7 @@ const App = () => {
         <Route path="/mechdept/mech-library" element={<Mech_lib/>}/>
         <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
         <Route path="/mechdept/mech-org"element={<Mech_org/>}/>
-        <Route path="/placement"element={<Placement/>}/>
+
 
       </Routes>
       <Footer />

@@ -1,12 +1,27 @@
 import dp from "../assets/pictures/dp.jpg";
 import dpm from "../assets/pictures/boy.webp";
 import dpf from "../assets/pictures/girl.webp";
-import dpm from '../assets/pictures/boy.webp'
 import cover from "../assets/pictures/mech_banner.webp";
 
 import swayam from '../assets/pictures/swayam.webp'
 import robotics from '../assets/pictures/robotics.webp'
 import placement from '../assets/pictures/placement.webp'
+import baja from '../assets/pictures/mechdept/mech_event/BAJA-2014.webp'
+import bicycle from '../assets/pictures/mechdept/mech_event/bicycle.webp'
+import efficar from '../assets/pictures/mechdept/mech_event/EFFICAR-2015.webp'
+import efficycle from '../assets/pictures/mechdept/mech_event/efficycle.webp'
+import gokart from '../assets/pictures/mechdept/mech_event/GO Kart-2016.webp'
+import solar15 from '../assets/pictures/mechdept/mech_event/solar-2015.webp'
+import solar18 from '../assets/pictures/mechdept/mech_event/solar-2018.webp'
+import supra from '../assets/pictures/mechdept/mech_event/SUPRA -2014.webp'
+import tractor from '../assets/pictures/mechdept/mech_event/tractor-2018.webp'
+
+
+import akhilesh_22 from '../assets/pictures/mechdept/mech_rankers/akhilesh_22.webp'
+import pooja_23 from '../assets/pictures/mechdept/mech_rankers/pooja_23.webp'
+import Rakshana_21 from '../assets/pictures/mechdept/mech_rankers/Rakshana_21.webp'
+import santhosh_23 from '../assets/pictures/mechdept/mech_rankers/santhosh_23.webp'
+import satheysh_22 from '../assets/pictures/mechdept/mech_rankers/satheysh_22.webp'
 
 
 
