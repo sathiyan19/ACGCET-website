@@ -522,7 +522,7 @@ const mech_fac_profiles = [
     dp: Syed,
     name: "Mr.A.SYED ABDULLAH",
     Designation: "Assistant Professor (Contract)",
-    mailid: ":abdullahh50@gmail.com",
+    mailid: "abdullahh50@gmail.com",
     pdf: "https://drive.google.com/file/d/190M9ingHxoihRh8-NW-8yGDze4rmbR2B/view?usp=sharing",
   },
   {
