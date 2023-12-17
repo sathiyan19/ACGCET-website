@@ -62,7 +62,7 @@ import Elumalai from '../assets/pictures/mech_dept/mech_fac_profiles/19.Mr.P.Elu
 import  Sathishkumar from '../assets/pictures/mech_dept/mech_fac_profiles/20.Mr.C.Sathishkumar AP(Adhoc).webp'
 import Rajakumar from '../assets/pictures/mech_dept/mech_fac_profiles/21.Mr.N.Rajakumar AP(Adhoc).webp'
 import Karthikeyan from '../assets/pictures/mech_dept/mech_fac_profiles/22.Mr.K.Karthikeyan AP(Adhoc).webp'
-import Sakthi from '../assets/pictures/mech_dept/mech_fac_profiles/22.Mr.K.Karthikeyan AP(Adhoc).webp'
+import Sakthi from '../assets/pictures/mech_dept/mech_fac_profiles/23.Dr.RM.SakthiSadhasivam AP(Adhoc).webp'
 
 
 const mech_dept_menu = [
