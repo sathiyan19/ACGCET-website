@@ -31,6 +31,12 @@ const post_office =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/postoffice.webp";
 const coop_store =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/store.webp";
+const staff_quarters =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/staff_quarters.webp";
+const dispensary =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/dispensary.webp";
+const zonal =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/zonal.webp";
 // const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
 
 const Facilities = () => {
@@ -98,7 +104,7 @@ const Facilities = () => {
 
         <div class="facility_crd facility_item3">
           <div class="facility_head_image">
-            <img class="facility_image" src={murugappa} />
+            <img class="facility_image" src={dispensary} />
           </div>
           <div className="facility_crd_content">
             <div className="facility_head facility_text_3">
@@ -293,7 +299,7 @@ This versatile venue doesn't merely serve as a physical space but rather as a ba
 
         <div class="facility_crd facility_item11">
           <div class="facility_head_image">
-            <img class="facility_image" src={murugappa} />
+            <img class="facility_image" src={zonal} />
           </div>
           <div className="facility_crd_content">
             <div className="facility_head facility_text_11">
@@ -317,7 +323,7 @@ This versatile venue doesn't merely serve as a physical space but rather as a ba
 
         <div class="facility_crd facility_item12">
           <div class="facility_head_image">
-            <img class="facility_image" src={murugappa} />
+            <img class="facility_image" src={staff_quarters} />
           </div>
           <div className="facility_crd_content">
             <div className="facility_head facility_text_12">
