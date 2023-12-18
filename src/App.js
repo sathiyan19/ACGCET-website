@@ -102,6 +102,7 @@ import {
   Mech_rankers,
   Mech_org,
   Placement,
+  Mech_coe,
 } from "./pages";
 import "./App.css";
 
@@ -215,7 +216,8 @@ const App = () => {
         <Route path="/mechdept/mech-library" element={<Mech_lib/>}/>
         <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
         <Route path="/mechdept/mech-org"element={<Mech_org/>}/>
-
+        <Route path="/placement" element={<Placement />} />
+        <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
 
       </Routes>
       <Footer />

@@ -103,7 +103,7 @@ const mech_dept_menu = [
   },
   {
     id: "12",
-    path: "#",
+    path: "/mechdept/mech-centre-of-excellance",
     link: "Centre of Excellence",
     arl:'l'
   },
@@ -1539,8 +1539,62 @@ const mech_lib_profiles=[
      'beneficiary':"Public ( Service to the community)",
      'co-ordinator':"A.Elango"
    },
-   
  ]
+
+ const mech_objectives_of_coe=[
+  {
+    id: "1",
+    point:
+      "To make Additive Technologies",
+  },
+  {
+    id: "2",
+    point:
+      "To fabricate light nano structured alloys based on Aluminium,Copper and Shape memory alloys",
+  },
+  {
+    id: "3",
+    point:
+      "To model and forecast the properties of new materials and their technologies",
+  },
+  {
+    id: "4",
+    point:
+      "To fabricate thin film and coating technologies",
+  },
+ ];
+const mech_coe_researches = [
+  {
+    id: "1",
+    point:
+      "Integrated WAAM Robotic Cell",
+  },
+  {
+    id: "2",
+    point:
+      "Manual MIG Welding Machine",
+  },
+  {
+    id: "3",
+    point:
+      "Double Disc polishing Lapping and metallurgical microscope testing facility for macro study",
+  },
+  {
+    id: "4",
+    point:
+      "Welding Simulator",
+  },
+  {
+    id: "5",
+    point:
+      "Laser and Rotary Measurement system ( Laser Interferometer)",
+  },
+  {
+    id: "6",
+    point:
+      "Thermal Evaporation Set-up for Thin film Deposition",
+  },
+];
  const mech_phd_facilities=[
    {
      'id':"1",
@@ -1604,5 +1658,7 @@ export {
   mech_phd_facilities,
   mech_research_phd,
   mech_organised,
+  mech_objectives_of_coe,
+  mech_coe_researches,
   
 };
