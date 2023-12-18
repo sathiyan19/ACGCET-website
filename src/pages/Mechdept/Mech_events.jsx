@@ -9,7 +9,7 @@ import { BsFillGearFill } from "react-icons/bs";
 
 const Mech_events = () => {
   useEffect(() => {
-    document.title = 'ACCET-Mech | Events';
+    document.title = 'ACCET-Mech | Sae ';
   }, []);
   return (
     <div className="mechdept">
@@ -17,7 +17,7 @@ const Mech_events = () => {
         <div className="mechheading">
           Department of Mechanical Engineering
         </div>
-        <div className="mech_sub_heading">Events</div>
+        <div className="mech_sub_heading">SAE EVENTS</div>
       </div>
       <section className="mechdark">
         <div className="dept_float_menu">
