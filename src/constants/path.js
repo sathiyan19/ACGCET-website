@@ -17,7 +17,7 @@ const top_nav_paths = [
     title: "Administration",
     basepath: "javascript:void(0);",
     links: [
-      { path: "/govern", link: "Governing council" },
+      { path: "/under", link: "Governing council" },
       { path: "/office", link: "Principal Office" },
       { path: "/organisation", link: "Organization Structure" },
       { path: "/committee", link: "Committee/Cell" },
