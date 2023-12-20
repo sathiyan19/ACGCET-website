@@ -8,7 +8,7 @@ import {
 
 import { Radial_menu } from "../../components";
 
-import { FaMicrochip } from "react-icons/fa6";
+import { BsFillGearFill } from "react-icons/bs";
 
 const Mech_lab = () => {
   useEffect(()=> {
@@ -24,7 +24,7 @@ const Mech_lab = () => {
           </div>
           <section className="mechdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={FaMicrochip} head="Menu" links={mech_dept_menu} />
+              <Floatinmenu logo={BsFillGearFill} head="Menu" links={mech_dept_menu} />
             </div>
             <Radial_menu menu_links={mech_dept_menu} />
             <div className="mech_lab_area">
