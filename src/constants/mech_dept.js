@@ -405,7 +405,7 @@ const mech_fac_profiles = [
     cover: cover,
     dp: Ramanathan,
     name: "Dr.K.RAMANATHAN",
-    Designation: "Professor (CAS)",
+    Designation: "Professor and HOD",
     mailid: "ramsananthi@gmail.com",
     pdf: "https://drive.google.com/file/d/1RRcE1m8PZoikgh1IO1c7rJey75LKnRSm/view?usp=sharing",
 
