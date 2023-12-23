@@ -9,7 +9,7 @@ import { BsFillGearFill } from "react-icons/bs";
 
 const Mech_events = () => {
   useEffect(() => {
-    document.title = 'ACCET-Mech | Sae ';
+    document.title = 'ACCET-Mech | SAE Participation ';
   }, []);
   return (
     <div className="mechdept">
@@ -26,7 +26,7 @@ const Mech_events = () => {
         <Radial_menu menu_links={mech_dept_menu} />
         <div className="mech_event_area">
           <div className="mech_events">
-            <Underline heading="Department Events" />
+            <Underline heading="SAE Participation" />
             <div className="lab_cards row">
               {mech_dept_events.map((item) => (
                 <Modal

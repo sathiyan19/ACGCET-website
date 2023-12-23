@@ -24,7 +24,7 @@ const Mech_org = () => {
       <div className="mechheading">
         Department of Mechanical Engineering
       </div>
-      <div className="mech_sub_heading">Events Organised</div>
+      <div className="mech_sub_heading">Events</div>
     </div>
     <section className="mechdark">
       <div className="dept_float_menu">
