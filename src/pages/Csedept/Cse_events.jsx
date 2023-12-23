@@ -7,6 +7,8 @@ import { Radial_menu } from "../../components";
 
 import { FaComputer } from "react-icons/fa6";
 
+import './Cse_events.css';
+
 const Cse_events = () => {
   useEffect(() => {
     document.title = 'ACCET-CSE | Events';
@@ -28,7 +30,7 @@ const Cse_events = () => {
           <div className="cse_events">
             <Underline heading="Department Events" />
             
-            <div className=' row'>
+            <div className=' row cse_events_holder'>
               {cse_asso_events.map((item)=><Reunion_card margin_bw={20} cover={item.pic}  name={item.heading} date={item["sub-head"]}/>)}
             </div>
 

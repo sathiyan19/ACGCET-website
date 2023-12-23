@@ -73,19 +73,19 @@ const mech_dept_menu = [
     arl:'l'
   },
   {
-    id: "3",
+    id: "2",
     path: "/mechdept/mech-peo",
     link: "Programme Objectives & Outcomes",
     arl:'l'
   },
   {
-    id: "5",
+    id: "3",
     path: "/mechdept/mech-faculties",
     link: "Faculties",
     arl:'l'
   },
   {
-    id: "7",
+    id: "4",
     path: "/mechdept/mech-lab",
     link: "Lab Facilities",
     arl:'l'

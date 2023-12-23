@@ -93,20 +93,23 @@ const cse_hod={
   name:"Dr.C.Uma Rani",
   designation:"Head of the Department, CSE",
   pic:uma_rani_sq,
-  content:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
-  "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
-  "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
-  "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"+
-  "in reprehenderit in voluptate velit esse cillum dolore eu fugiat"+
-  "nulla pariatur. Excepteur sint occaecat cupidatat non proident,"+
-  "sunt in culpa qui officia deserunt mollit anim id est laborum."+
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"+
-  "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut"+
-  "enim ad minim veniam, quis nostrud exercitation ullamco laboris"+
-  "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor"+
-  "in reprehenderit in voluptate velit esse cillum dolore eu fugiat"+
-  "nulla pariatur. Excepteur sint occaecat cupidatat non proident,"+
-  "sunt in culpa qui officia deserunt mollit anim id est laborum."
+  content:"The Department of Computer Science and Engineering welcomes you to be a part of the"+
+  "thriving computer science community and become visionaries and change makers of the future."+
+  "Computing has become inseparable from human life. It has found a prominent place in our day"+
+  "to day life and we are struggling to cope with it. Computer Science serves as the foundation for"+
+  "various technological advancements that the world sees today. The field has grown by leaps"+
+  "and bounds. The future innovations that it brings along never seem to slow down."+
+  "The department of Computer Science and Engineering was established in the year of"+
+  "2001. The department is equipped with well qualified and experienced faculty members. The"+
+  "department has good laboratory facilities. Students are regularly monitored and mentored by"+
+  "an experienced team of faculty advisors. Students are motivated to work on industry/academia"+
+  "research problems and are guided by the faculty members. They are exposed to various"+
+  "opportunities such as inplant training, internships, and workshops during their course of study."+
+  "A National level technical symposium will be conducted by the department. This will"+
+  "improve many qualities of our students in excelling their profession like updation, upskilling,"+
+  "reskilling, team work and leadership skills with time bound targets. Some of our Alumni have"+
+  "grown to great heights and they constantly interact with the department. They also guide our"+
+  "students in various academic, placement and extra curricular activities."
 }
 
 const cse_fac_profiles = [
@@ -117,7 +120,7 @@ const cse_fac_profiles = [
     name: "Dr. C.UmaRani",
     Designation: "Head of the Department/ Associate professor",
     mailid: "drcumakkd@gmail.com",
-    pdf: "#",
+    pdf: "https://drive.google.com/file/d/1rmAwrw8Wl5g43x93TvtOK3Yl952hEDnt/view?usp=drive_link",
   },
   {
     id: "1",
