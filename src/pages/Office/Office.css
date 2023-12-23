@@ -31,7 +31,7 @@
 }
 
 .princ_msg_content_img{
-    width: 31%;
+    width: 35%;
     /* background-color: yellow; */
     display: flex;
     flex-direction: column;
@@ -45,18 +45,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0px 20px 70px;
+    margin: 20px 0px 20px 0px;
     >div{
         color: #01134d;
         font-weight: 600;
     }
 }
 .princ_msg_content_text{
-    width: 50%;
+    width: 55%;
     text-align: justify;
     color: black;
-    line-height: 1.8rem;
-    font-size: 19px;
+    line-height: 1.6rem;
+    font-size: 18px;
     align-items: center;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .princ_pic{
-    width: 118%;
+    width: 100%;
 }
 .admin_staff{
     /* padding: 20px; */
@@ -75,9 +75,19 @@
 @media(max-width:1023px){
     .princ_msg_content{
         flex-direction: column;
+        align-items: center;
     }
     .princ_msg_content_img{
-        width: 85%;
+        width: 50%;
+    }
+    .princ_msg_content_text{
+        width: 100%;
+    }
+}
+
+@media(max-width:768px){
+    .princ_msg_content_img{
+        width: 70%;
     }
     .princ_msg_content_text{
         width: 100%;
@@ -114,7 +124,7 @@
 
 @media(max-width:375px){
     .princ_msg_content_text,.org_text{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .princ_msg_content_desig{
