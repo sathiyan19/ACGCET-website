@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import "./Mech_peo.css";
 
@@ -22,6 +22,9 @@ import { Radial_menu } from "../../components";
 import { BsFillGearFill } from "react-icons/bs";
 
 const Mech_peo = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Mech | Objectives & Outcomes';
+  }, []);
     return (
         <div className="mechdept">
           <div className="mechbg">

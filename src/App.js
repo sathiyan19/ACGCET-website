@@ -96,7 +96,13 @@ import {
   Facilities,
   Eee_modern,
   Eee_lib,
-  Eee_studcorner
+  Mech_lib,
+  Mech_phd,
+  Eee_studcorner,
+  Mech_rankers,
+  Mech_org,
+  Placement,
+  Mech_coe,
 } from "./pages";
 import "./App.css";
 
@@ -144,6 +150,7 @@ const App = () => {
         <Route path="/ecedept/ece-lab" element={<Ece_lab />} />
         <Route path="/ecedept/ece-research" element={<Ece_research />} />
         <Route path="/ecedept/ece-rankers" element={<Ece_rankers/>} />
+        <Route path="/mechdept/mech-rankers" element={<Mech_rankers/>} />
         <Route path="/ecedept/ece-dept-events" element={<Ece_events/>} />
         <Route path="/ecedept/ece-projects" element={<Ece_projects/>} />
         <Route path="/ecedept/ece-student-activity" element={<Ece_stud_activity/>} />
@@ -205,6 +212,13 @@ const App = () => {
         <Route path="/civildept/civil-library" element={<Civil_library/>} />
         <Route path="/civildept/civil-placement" element={<Civil_placement/>} />
         <Route path="/centers-and-facilities" element={<Facilities/>} />
+        <Route path="/centers-and-facilities" element={<Facilities/>} />
+        <Route path="/mechdept/mech-library" element={<Mech_lib/>}/>
+        <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
+        <Route path="/mechdept/mech-org"element={<Mech_org/>}/>
+        <Route path="/placement" element={<Placement />} />
+        <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
+
       </Routes>
       <Chatbot/>
       <Footer />
