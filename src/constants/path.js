@@ -17,7 +17,7 @@ const top_nav_paths = [
     title: "Administration",
     basepath: "javascript:void(0);",
     links: [
-      { path: "/govern", link: "Governing council" },
+      { path: "/under", link: "Governing council" },
       { path: "/office", link: "Principal Office" },
       { path: "/organisation", link: "Organization Structure" },
       { path: "/committee", link: "Committee/Cell" },
@@ -52,6 +52,7 @@ const top_nav_paths = [
     type: "1",
     title: "Placement",
     basepath: "/under",
+    // basepath: "/placement",
     links: [],
   },
 
@@ -82,7 +83,7 @@ const top_nav_paths = [
     title: "Departments",
     basepath: "javascript:void(0);",
     links: [
-      { path: "/under", link: "Mechanical Engineering" },
+      { path: "/mechdept", link: "Mechanical Engineering" },
       { path: "/civildept", link: "Civil Engineering" },
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
@@ -156,7 +157,7 @@ const bottom_nav_paths = [
     title: "Departments",
     basepath: "javascript:void(0);",
     links: [
-      { path: "/under", link: "Mechanical Engineering" },
+      { path: "/mechdept", link: "Mechanical Engineering" },
       { path: "/civildept", link: "Civil Engineering" },
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },

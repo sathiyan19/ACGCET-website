@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Mechdept.css";
 
@@ -18,11 +18,17 @@ import {
 } from "../../constants/mech_dept";
 
 import { Radial_menu } from "../../components";
-import cse from "../../assets/pictures/csecover.webp";
+//import cse from "../../assets/pictures/csecover.webp";
+
+
 
 import { BsFillGearFill } from "react-icons/bs";
+const mech="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/mech/mech_cover.webp"
 
 const Mechdept = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Mech Department';
+  }, []);
   return (
     <div className="mechdept">
       <div className="mechbg">
@@ -51,26 +57,21 @@ const Mechdept = () => {
               2002.
             </p>
             <div className="dept_img_holder">
-              <img className="dept_img" src={cse} />
+              <img className="dept_img" src={mech} />
             </div>
           </div>
           <div className="mechtwo-col1">
             <p className="mech_dept_content">
-              The Department is a recognized research centre of Anna University
-              from the academic year 2002. So far the Department has produced 50
-              Ph.D’s in various areas such as Composite materials, Heat
-              transfer, Manufacturing, Robotics and Automation and Additive
-              Manufacturing. Presently Eight full time Research Scholars and
-              Thirty Part-Time scholar doing research in the department. NBA
-              accorded accreditation for six years on 2004 and provisionally
-              accredited for 2 years on 2013. To cater the need of industry and
-              Research, the department laboratories are equipped with modern
-              facilities.
+            Since the academic year 2002, the Department has been recognized as a research centre by Anna University. So far the Department has produced more than 50 Ph.D’s in various fields such as Composite materials, Heat transfer, Manufacturing, Robotics and Automation and Additive Manufacturing etc. 
+To cater the need of industry and Research, the department laboratories are equipped with modern facilities. Centre of Excellence in Additive Manufacturing was established with financial aid of Government of Tamilnadu in the year 2019. 
+Faculty development programmes and technical workshops are regularly organized by the department in emerging areas. The department arranges guest lectures, industrial visit and industrial internships to enhance the employability skill of the students. The students are actively participating in professional society activities like SAE and participated in the National and International technical contests like BAJA, GO-KART, Solar Car, Bicycle and Effi-Cycle.
+The Department was accredited by NBA in 2004, subsequently accredited in 2013 and currently retaining its accreditation for 2021-22 to 2023-24. 
+
             </p>
           </div>
         </div>
         <div className="mech_hod">
-          <Underline heading="HOD's Message" />
+          {/* <Underline heading="HOD's Message" /> */}
         </div>
         <div className="mech_vision_mission">
           <Underline heading="Our Vision & Mission" />
