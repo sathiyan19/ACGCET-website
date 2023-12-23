@@ -73,39 +73,21 @@ const mech_dept_menu = [
     arl:'l'
   },
   {
-    id: "3",
+    id: "2",
     path: "/mechdept/mech-peo",
     link: "Programme Objectives & Outcomes",
     arl:'l'
   },
   {
-    id: "5",
+    id: "3",
     path: "/mechdept/mech-faculties",
     link: "Faculties",
     arl:'l'
   },
   {
-    id: "7",
+    id: "4",
     path: "/mechdept/mech-lab",
     link: "Lab Facilities",
-    arl:'l'
-  },
-  {
-    id: "8",
-    path: "#",
-    link: "Professional Socities",
-    arl:'l'
-  },
-  {
-    id: "9",
-    path: "/mechdept/mech-phd",
-    link: "Research and Publications",
-    arl:'l'
-  },
-  {
-    id: "10",
-    path: "/mechdept/mech-dept-events",
-    link: "Department Events",
     arl:'l'
   },
   {
@@ -114,30 +96,52 @@ const mech_dept_menu = [
     link: "Department Library",
     arl: "l",
   },
+  
+  // {
+  //   id: "8",
+  //   path: "#",
+  //   link: "Professional Socities",
+  //   arl:'l'
+  // },
+  {
+    id: "9",
+    path: "/mechdept/mech-phd",
+    link: "Research and Publications",
+    arl:'l'
+  },
   {
     id:"12",
     path:"/mechdept/mech-org",
-    link:"Event organised",
+    link:"Department Events",
     arl:"1",
-  },
-  {
-    id: "11",
-    path: "#",
-    link: "MoU",
-    arl:'l'
-  },
-  {
-    id: "12",
-    path: "/mechdept/mech-centre-of-excellance",
-    link: "Centre of Excellence",
-    arl:'l'
   },
   {
     id: "13",
     path: "/mechdept/mech-rankers",
     link: "Elite Rankers",
     arl: 'l',
-  }
+  },
+  {
+    id: "10",
+    path: "/mechdept/mech-dept-events",
+    link: "SAE Participation",
+    arl:'l'
+  },
+  
+  
+  // {
+  //   id: "11",
+  //   path: "#",
+  //   link: "MoU",
+  //   arl:'l'
+  // },
+  {
+    id: "12",
+    path: "/mechdept/mech-centre-of-excellance",
+    link: "Centre of Excellence",
+    arl:'l'
+  },
+  
 ];
 
 const mech_vision = {
@@ -483,7 +487,7 @@ const mech_fac_profiles = [
   {
     id: "13",
     cover: cover,
-    dp: dpm,
+    dp: Pravakaran,
     name: "Dr.J.PRABAKARAN",
     Designation: "Associate Professor",
     mailid: "jp_au@yahoo.com ,",

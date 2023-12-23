@@ -1041,22 +1041,22 @@ const ece_stud_data = [
           },
           {
             sno: "55",
-            regno:"TBD",
+            regno:"91762214301",
             name: "HARISH RAJ S",
           },
           {
             sno: "56",
-            regno:"TBD",
+            regno:"91762214302",
             name: "LAKSHMI SRI L",
           },
           {
             sno: "57",
-            regno:"TBD",
+            regno:"91762214303",
             name: "PREETHI S",
           },
           {
             sno: "58",
-            regno:"TBD",
+            regno:"91762214304",
             name: "SHYAM A",
           },
       ],

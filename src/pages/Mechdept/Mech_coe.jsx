@@ -22,7 +22,7 @@ import Centre_of_Excellence from '../../assets/pictures/mechdept/mech_labs/Centr
 
 const Mech_coe = () => {
   useEffect(() => {
-    document.title = 'ACCET-MECH | CoE';
+    document.title = 'ACCET-MECH | Centre of Excellence';
   }, []);
   return (
     <div className="mechdept">

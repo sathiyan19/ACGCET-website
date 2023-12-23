@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 
 import "./Office.css";
 
-import principal from "../../assets/pictures/principal.webp";
+import principal from "../../assets/pictures/eee-hod.webp";
 import {office_admin_staffs} from '../../constants/office.js';
 
 import { Backtotop,Underline } from "../../widgets";
@@ -26,7 +26,7 @@ const Office = () => {
                 <img className="princ_pic" src={principal} alt="Principal" />
               </div>
               <div className="princ_msg_content_desig">
-                <div className="princ_name">Dr.P.K.Palani M.E. Ph.D.</div>
+                <div className="princ_name">Dr.K.Baskaran M.E. Ph.D.</div>
                 <div className="princ_desig">Principal</div>
               </div>
             </div>

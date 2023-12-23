@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./Mechdept.css";
 
@@ -26,6 +26,9 @@ import { BsFillGearFill } from "react-icons/bs";
 const mech="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/mech/mech_cover.webp"
 
 const Mechdept = () => {
+  useEffect(() => {
+    document.title = 'ACCET-Mech Department';
+  }, []);
   return (
     <div className="mechdept">
       <div className="mechbg">
