@@ -53,6 +53,7 @@ import Jawahar from '../assets/pictures/mechdept/mech_fac_profiles/7.Prof.V.Jawa
 import Senthilkumar from '../assets/pictures/mechdept/mech_fac_profiles/8.Prof.S.Senthilkumar AP.webp'
 import Perumal from '../assets/pictures/mechdept/mech_fac_profiles/9.Prof.P.Perumal AP.webp'
 import Rajavijay from '../assets/pictures/mechdept/mech_fac_profiles/10.Prof.T.Rajavijay AP.webp'
+import Prema from '../assets/pictures/mechdept/mech_fac_profiles/11.Prof.P.Prema.webp'
 import Raveendran from '../assets/pictures/mechdept/mech_fac_profiles/12.Dr.P.Raveendran Asso Prof(CAS).webp'
 import Pravakaran from '../assets/pictures/mechdept/mech_fac_profiles/13.Dr.J.Prabakaran Asso Prof(CAS).webp'
 import Senthil from '../assets/pictures/mechdept/mech_fac_profiles/14.Dr.C.R.Senthilkumar AP.webp'
@@ -495,7 +496,15 @@ const mech_fac_profiles = [
     mailid: "kingsvijay1503@gmail.com",
     pdf: "#https://drive.google.com/file/d/1JP325kv0uZcgAFufRa9oajgMf7yqiL8N/view?usp=sharing",
   },
-
+  {
+    id: "11",
+    cover: cover,
+    dp: Prema,
+    name: "Prof.P.Prema",
+    Designation: "Assistant Professor",
+    mailid: "paulrajprema7@gmail.com",
+    pdf: "https://drive.google.com/file/d/1E2DlfH_I9PA7F9MGt7U2tSOB-7Ty6cWa/view?usp=sharing",
+  },
   {
     id: "12",
     cover: cover,

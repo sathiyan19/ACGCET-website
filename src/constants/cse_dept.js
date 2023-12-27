@@ -687,27 +687,32 @@ const cse_stud_data = [
         },
         {
           sno: "56",
-          regno:"TBD",
+          regno:"91762215301",
           name: "INDIRA R",
         },
         {
           sno: "57",
-          regno:"TBD",
+          regno:"91762215302",
           name: "MANIRAJ S",
         },
         {
           sno: "58",
-          regno:"TBD",
+          regno:"91762215303",
           name: "RITHIKA S",
         },
         {
           sno: "59",
-          regno:"TBD",
-          name: "VIGNESH A",
+          regno:"91762215304",
+          name: "SANJAYKUMAR A",
         },
         {
           sno: "60",
-          regno:"TBD",
+          regno:"91762215305",
+          name: "VIGNESH A",
+        },
+        {
+          sno: "61",
+          regno:"91762215306",
           name: "VIMALRAJAN S",
         }
       ],
