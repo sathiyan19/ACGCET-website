@@ -47,7 +47,7 @@ const About = () => {
 
         <div className="div_content">
           <div className="flex_1">
-            <p className="content">
+            <p className="about_content">
               <span className="big_text">A</span>s one of the oldest and most
               esteemed institutions, ACGCET take pride in fostering a legacy of
               academic excellence and holistic development. Our college campus
@@ -66,7 +66,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="content">
+          <div className="about_content">
             Our experienced faculty members are dedicated to shaping
             well-rounded individuals by imparting knowledge and skills that
             extend beyond the curriculum. Our institution proudly carries
@@ -76,7 +76,7 @@ const About = () => {
             their readiness for the ever-evolving professional landscape.
           </div>
 
-          <div className="content">
+          <div className="about_content">
             Associations and clubs are an integral part of campus life,
             promoting friendship, leadership, and skill enhancement. Students
             have the opportunity to engage in diverse extracurricular activities
@@ -93,7 +93,7 @@ const About = () => {
 
           <div className="flex_2">
             <div>
-              <p className="content">
+              <p className="about_content">
                 One of our strongest pillars is the robust support from our
                 extensive alumni network. Our alumni's achievements and
                 contributions across various industries are the proof to the
@@ -104,7 +104,7 @@ const About = () => {
                 Hence, we strive to offer greater placement opportunities,
                 connecting students with leading companies and organizations.
               </p>
-              <p className="content lap_text">
+              <p className="about_content lap_text">
                 Our consistent track record of high placement rates speaks
                 volumes about the competence of our graduates. With a rich
                 history spanning 70 years and more, Alagappa Chettiar Government
@@ -123,7 +123,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="content responsive_text">
+          <div className="about_content responsive_text">
             Our consistent track record of high placement rates speaks volumes
             about the competence of our graduates. With a rich history spanning
             70 years and more, Alagappa Chettiar Government College of
@@ -139,7 +139,7 @@ const About = () => {
         <div className="div_heading">History</div>
         <div className="div_content">
           <div className="flex_1">
-            <p className="content">
+            <p className="about_content">
               <span className="big_text">A</span>lagappa Chettiar Government
               College of Engineering and Technology (ACGCET Karaikudi) is an
               autonomous (with effect from 2009) college in Karaikudi, Tamil
@@ -157,7 +157,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="content">
+          <div className="about_content">
             In 1952, Dr. Alagappa Chettiar’s dream came true. Alagappa Chettiar
             College of Engineering and Technology started functioning from 21st
             July 1952 with three faculties – Civil Engineering, Mechanical
@@ -166,7 +166,7 @@ const About = () => {
             Prasad, the then President of India on 19th February 1953.
           </div>
 
-          <div className="content">
+          <div className="about_content">
             The institution was handed over to Government of TamilNadu in the
             year 1966, since then institution has been administered by the
             Government through Directorate of Technical Education, Tamilnadu. In
@@ -186,7 +186,7 @@ const About = () => {
           </div>
 
           <div className="flex_3">
-            <p className="content">
+            <p className="about_content">
               The institution has been awarded the status of the best
               engineering college of 2006-07 in Tamil Nadu. Chief Minister M.
               Karunanidhi honored the Principal in a function at Anna
@@ -215,7 +215,7 @@ const About = () => {
             </div>
 
             <div className="flex_1">
-              <p className="content">
+              <p className="about_content">
                 In terms of train connectivity, Karaikudi has a railway station
                 known as "Karaikkudi Junction" (Station code: KKDI), which is an
                 essential transportation hub connecting the town to various
@@ -229,7 +229,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="content">
+            <div className="about_content">
               Karaikudi is well connected with the capital city Chennai. Most of
               the trains bound to Chennai, Manamadurai, Rameswaram and
               Kanyakumari from Tiruchirappalli pass through this station, with
@@ -238,7 +238,7 @@ const About = () => {
               including Thanjavur, Rameswaram, Sengotai, Trichy, and Coimbatore.
             </div>
 
-            <div className="content">
+            <div className="about_content">
               The distance between Karaikudi Junction railway station and
               Alagappa Chettiar Government College of Engineering and Technology
               (ACGCET) is approximately 2.5 kilometers. This distance can be
@@ -254,7 +254,7 @@ const About = () => {
             </div>
 
             <div className="flex_1">
-              <p className="content">
+              <p className="about_content">
                 Karaikudi New Bus Stand is a major transportation hub located in
                 Karaikudi. It serves as a central point for various intercity
                 and intracity bus routes, facilitating the movement of
@@ -268,7 +268,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="content">
+            <div className="about_content">
               At the bus stand, you can find buses traveling to and from nearby
               towns and cities, as well as longer-distance routes connecting
               Karaikudi to various other parts of Tamil Nadu. The bus stand's
@@ -278,7 +278,7 @@ const About = () => {
               transportation options for those traveling by bus.
             </div>
 
-            <div className="content">
+            <div className="about_content">
               From the karaikudi bus stop, local buses run frequently to
               Alagappa chettiar government college of engineering and
               technology. The Alagappa Chettiar Government College of

@@ -45,7 +45,7 @@ Dr. N. Babu, in his capacity as the Faculty In-charge, plays a pivotal role in m
 In essence, the department library, guided by Dr. N. Babu, stands as a cornerstone in fostering a conducive learning environment. It not only provides students with the necessary tools for academic exploration but also instills a sense of responsibility, recognizing that the collective care of these resources ensures their enduring availability for generations to come.
 </p>
             </div>   
-            <div className="content">
+            <div className="content_card_holder">
               {mech_lib_profiles.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
          </div>
       </div>
