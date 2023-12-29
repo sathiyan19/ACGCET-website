@@ -15,7 +15,7 @@
 .mech_lib em {
     font-style: italic;
 }
-.content {
+.content_card_holder {
     display: flex;
     justify-content: center;
     align-items: center;
