@@ -32,8 +32,8 @@ const Mech_faculties = () => {
                     <Profile_display list_info={mech_fac_profiles}/>
                 </div>
                 <div className='mech_teach_fac'>
-                    {/* <Underline heading="Suporting Faculties"/>
-                    <Profile_display list_info={mech_sup_profiles}/> */}
+                     <Underline heading="Suporting Faculties"/>
+                    <Profile_display list_info={mech_sup_profiles}/> 
                 </div>
             </div>
           </section>
@@ -41,6 +41,6 @@ const Mech_faculties = () => {
           <Backtotop />
         </div>
       );
-}
+    }
 
 export default Mech_faculties
