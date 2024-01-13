@@ -30,7 +30,7 @@ const Cse_faculties = () => {
                     <Profile_display list_info={cse_fac_profiles}/>
                 </div>
                 <div className='cse_teach_fac'>
-                    <Underline heading="Suporting Faculties"/>
+                    <Underline heading="Supporting Faculties"/>
                     <Profile_display list_info={cse_sup_profiles}/>
                 </div>
             </div>

@@ -32,7 +32,7 @@ const Ece_faculties = () => {
                     <Profile_display list_info={ece_fac_profiles}/>
                 </div>
                 <div className='ece_teach_fac'>
-                    <Underline heading="Suporting Faculties"/>
+                    <Underline heading="Supporting Faculties"/>
                     <Profile_display list_info={ece_sup_profiles}/>
                 </div>
             </div>

@@ -250,4 +250,18 @@
     .facility_item13{
         grid-column: span 6;
     }
+
+    .facility_holder{
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .facility_grid_holder{
+        margin: 10px;
+    }
+}
+
+@media(max-width:350px){
+    .facility_holder{
+        padding: 10px;
+    }
 }
