@@ -661,6 +661,7 @@ const mech_sup_profiles = [
     name: "N.Ramanadhan",
     Designation: "junior drafiting officer",
     mailid: "ramanathan.nachiyappan35@gmail.com",
+    email_text_overflow:"yes",
     pdf: "",
   },
   {
@@ -793,7 +794,7 @@ const mech_sup_profiles = [
     id: "17",
     cover: cover,
     dp:PRABH ,
-    name: "a.Prabhu",
+    name: "A.Prabhu",
     Designation: "Cleaner",
     mailid: "prabu250586@gmail.com",
     pdf: "",

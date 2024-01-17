@@ -58,6 +58,10 @@
     font-size: 14px;
 }
 
+.profile_overflow_mail{
+    font-size: 12px !important;
+}
+
 .view-btn:hover{
     background: #FF6600;
     color: #00134d;
