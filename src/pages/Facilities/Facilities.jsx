@@ -31,6 +31,14 @@ const post_office =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/postoffice.webp";
 const coop_store =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/store.webp";
+const staff_quarters =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/staff_quarters.webp";
+const dispensary =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/dispensary.webp";
+const zonal =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/zonal.webp";
+const parking =
+  "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/parking.webp";
 // const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
 
 const Facilities = () => {
@@ -58,11 +66,11 @@ const Facilities = () => {
               contributing to a robust technological infrastructure for the
               institution.
             </div>
-            <div className="facility_read_more">
+            {/* <div className="facility_read_more">
               <Link className="facility_read_link read_link_1" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -89,16 +97,16 @@ const Facilities = () => {
               harmonious community for all residents.
             </div>
             <div className="facility_read_more">
-              <Link className="facility_read_link read_link_2" to="#">
+              {/* <Link className="facility_read_link read_link_2" to="#">
                 Read more
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
 
         <div class="facility_crd facility_item3">
           <div class="facility_head_image">
-            <img class="facility_image" src={murugappa} />
+            <img class="facility_image" src={dispensary} />
           </div>
           <div className="facility_crd_content">
             <div className="facility_head facility_text_3">
@@ -212,11 +220,11 @@ This versatile venue doesn't merely serve as a physical space but rather as a ba
               this central library stands as a cornerstone for learning,
               research, and intellectual growth within the academic community.</span>
             </div>
-            <div className="facility_read_more">
+            {/* <div className="facility_read_more">
               <Link className="facility_read_link read_link_7" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -264,11 +272,11 @@ This versatile venue doesn't merely serve as a physical space but rather as a ba
               football pitches, hockey and tennis grounds, a gym room, table
               tennis, and a kho kho court.
             </div>
-            <div className="facility_read_more">
+            {/* <div className="facility_read_more">
               <Link className="facility_read_link read_link_9" to="#">
                 Read more
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -293,7 +301,7 @@ This versatile venue doesn't merely serve as a physical space but rather as a ba
 
         <div class="facility_crd facility_item11">
           <div class="facility_head_image">
-            <img class="facility_image" src={murugappa} />
+            <img class="facility_image" src={zonal} />
           </div>
           <div className="facility_crd_content">
             <div className="facility_head facility_text_11">
@@ -317,7 +325,7 @@ This versatile venue doesn't merely serve as a physical space but rather as a ba
 
         <div class="facility_crd facility_item12">
           <div class="facility_head_image">
-            <img class="facility_image" src={murugappa} />
+            <img class="facility_image" src={staff_quarters} />
           </div>
           <div className="facility_crd_content">
             <div className="facility_head facility_text_12">
@@ -339,7 +347,7 @@ This versatile venue doesn't merely serve as a physical space but rather as a ba
 
         <div class="facility_crd facility_item13">
           <div class="facility_head_image">
-            <img class="facility_image" src={murugappa} />
+            <img class="facility_image" src={parking} />
           </div>
           <div className="facility_crd_content">
             <div className="facility_head facility_text_13">

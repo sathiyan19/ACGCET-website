@@ -520,7 +520,7 @@ const mech_fac_profiles = [
     name: "Prof.T.Rajavijay",
     Designation: "Assistant Professor",
     mailid: "kingsvijay1503@gmail.com",
-    pdf: "#https://drive.google.com/file/d/1JP325kv0uZcgAFufRa9oajgMf7yqiL8N/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/1JP325kv0uZcgAFufRa9oajgMf7yqiL8N/view?usp=sharing",
   },
   {
     id: "11",

@@ -11,7 +11,7 @@ const clgpic="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Hom
 
 const Home = () => {
   useEffect(() => {
-    document.title = 'ACCET-Karaikudi';
+    document.title = 'ACCET-Karaikudi | Alagappa Chettiar Government College of Engineering and Technology';
   }, []);
   return (
     <>

@@ -11,7 +11,7 @@ import { BsFillGearFill } from "react-icons/bs";
 
 const Mech_faculties = () => {
   useEffect(() => {
-    document.title = 'ACCET-CSE | Faculties';
+    document.title = 'ACCET-MECH | Faculties';
   }, []);
     return (
         <div className="mechdept">

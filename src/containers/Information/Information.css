@@ -17,13 +17,13 @@
 }
 
 .msg {
-    margin: 17px 0;
+    margin: 15px 0;
     /* animation: marquee 10s linear infinite; */
     /* animation: marquee 5s steps(20) infinite; */
     /* animation-play-state: running;  */
-    height: 1.8rem;
+    height: fit-content;
     /* display: flex; */
-    align-items: center;
+    align-items: center
 }
 
 .list:hover .msg {
