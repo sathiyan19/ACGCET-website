@@ -66,6 +66,32 @@ import  Sathishkumar from '../assets/pictures/mechdept/mech_fac_profiles/20.Mr.C
 import Rajakumar from '../assets/pictures/mechdept/mech_fac_profiles/21.Mr.N.Rajakumar AP(Adhoc).webp'
 import Karthikeyan from '../assets/pictures/mechdept/mech_fac_profiles/22.Mr.K.Karthikeyan AP(Adhoc).webp'
 import Sakthi from '../assets/pictures/mechdept/mech_fac_profiles/23.Dr.RM.SakthiSadhasivam AP(Adhoc).webp'
+import MUTHU from '../assets/pictures/mechdept/mech_supporting_staffs/A.MUTHU.webp'
+import PRABH from '../assets/pictures/mechdept/mech_supporting_staffs/A.PRABH.webp'
+import UNNIKRISHNAN from '../assets/pictures/mechdept/mech_supporting_staffs/B.UNNIKRISHNAN.webp'
+import SOLAIYAN from '../assets/pictures/mechdept/mech_supporting_staffs/L.SOLAIYAN.webp'
+import KALAIYARASAN from '../assets/pictures/mechdept/mech_supporting_staffs/M.KALAIYARASAN.webp'
+import NAGARAJAN from '../assets/pictures/mechdept/mech_supporting_staffs/M.NAGARAJAN.webp'
+import SATHISHKUMAR from '../assets/pictures/mechdept/mech_supporting_staffs/M.SATHISH KUMAR.webp'
+import RAMANATHAN from '../assets/pictures/mechdept/mech_supporting_staffs/N.RAMANATHAN.webp'
+
+import PRAKASH from '../assets/pictures/mechdept/mech_supporting_staffs/P.PRAKASH.webp'
+import Kannan from '../assets/pictures/mechdept/mech_supporting_staffs/R.KANNAN.webp'
+import THIRUGNANAM from '../assets/pictures/mechdept/mech_supporting_staffs/R.THIRUGNANAM.webp'
+import VANMIGIVASUDEV from '../assets/pictures/mechdept/mech_supporting_staffs/R.VANMIGI VASUDEV.webp'
+
+import VEERAMOHAN from '../assets/pictures/mechdept/mech_supporting_staffs/R.VEERAMOHAN.webp'
+
+import VELPANDI from '../assets/pictures/mechdept/mech_supporting_staffs/R.VELPANDI.webp'
+
+import VENKATRAMAN from '../assets/pictures/mechdept/mech_supporting_staffs/R.VENKATRAMAN.webp'
+
+import SARAVANAN from '../assets/pictures/mechdept/mech_supporting_staffs/S.SARAVANAN.webp'
+import MURUGAN from '../assets/pictures/mechdept/mech_supporting_staffs/T.MURUGAN.webp'
+import  RAVICHANDRAN from '../assets/pictures/mechdept/mech_supporting_staffs/V.RAVICHANDRAN.webp'
+
+
+
 
 
 const mech_dept_menu = [
@@ -620,13 +646,185 @@ const mech_fac_profiles = [
 ];
 const mech_sup_profiles = [
   {
+    id: "1",
+    cover: cover,
+    dp: MURUGAN,
+    name: "T.Murugan",
+    Designation: "Foreman Instructor",
+    mailid: "anilmuru.accet@gmail.com",
+    pdf: "",
+  },
+  {
     id: "2",
     cover: cover,
-    dp: dpf,
-    name: "Arjun",
-    Designation: "Foreman Instructor",
-    mailid: "e",
-    pdf: "#",
+    dp: RAMANATHAN,
+    name: "N.Ramanadhan",
+    Designation: "junior drafiting officer",
+    mailid: "ramanathan.nachiyappan35@gmail.com",
+    email_text_overflow:"yes",
+    pdf: "",
+  },
+  {
+    id: "3",
+    cover: cover,
+    dp: SARAVANAN,
+    name: "S.Sravanan",
+    Designation: " Instructor",
+    mailid: "accet123saravanan@gamil.com",
+    pdf: "",
+  },
+  {
+    id: "4",
+    cover: cover,
+    dp:VELPANDI ,
+    name: "R.Velpandi",
+    Designation: " Instructor",
+    mailid: "rvelpandi02@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "5",
+    cover: cover,
+    dp: RAVICHANDRAN,
+    name: "V.Ravichandran",
+    Designation: "Lab Assitant",
+    mailid: "ravichandranv50@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "6",
+    cover: cover,
+    dp:KALAIYARASAN ,
+    name: "M.Kalaiyarasan",
+    Designation: "Artisan gr-II",
+    mailid: "",
+    pdf: "",
+  },
+  {
+    id: "7",
+    cover: cover,
+    dp: NAGARAJAN,
+    name: "M.Nagarajan",
+    Designation: "Driver",
+    mailid: "nagarajan27246@gmailcom",
+    pdf: "",
+  },
+  {
+    id: "8",
+    cover: cover,
+    dp: UNNIKRISHNAN,
+    name: "B.Unnikrishnan",
+    Designation: "Lab Assitant",
+    mailid: "unnikrishnan.b.mdu@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "9",
+    cover: cover,
+    dp: Kannan,
+    name: "R.Kannan",
+    Designation: "Lab Assitant",
+    mailid: "kannr1048@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "10",
+    cover: cover,
+    dp:PRAKASH ,
+    name: "P.Prakash",
+    Designation: "Machine maistry",
+    mailid: "prakash.kavery@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "11",
+    cover: cover,
+    dp: VANMIGIVASUDEV,
+    name: "R.Vanmigi vasudev",
+    Designation: "ARTISAN GR II ",
+    mailid: "vanmigivasudev@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "12",
+    cover: cover,
+    dp: VENKATRAMAN,
+    name: "R.Venkatraman",
+    Designation: "foundry maistry",
+    mailid: "venkatraman6380@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "13",
+    cover: cover,
+    dp:SATHISHKUMAR ,
+    name: "M.Sathish kumar",
+    Designation: "Steam engine Driver",
+    mailid: "sathishautmech@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "14",
+    cover: cover,
+    dp: THIRUGNANAM,
+    name: "R.Thirugnanam",
+    Designation: "ARTISAN GR II",
+    mailid: "smartthiru1989@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "15",
+    cover: cover,
+    dp: VEERAMOHAN,
+    name: "R.Veeramohan",
+    Designation: "Lab Assitant",
+    mailid: "veeramohan01@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "16",
+    cover: cover,
+    dp:MUTHU ,
+    name: "A.Muthu",
+    Designation: "Cleaner",
+    mailid: "aathimoolammuthu79@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "17",
+    cover: cover,
+    dp:PRABH ,
+    name: "A.Prabhu",
+    Designation: "Cleaner",
+    mailid: "prabu250586@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "18",
+    cover: cover,
+    dp:SOLAIYAN ,
+    name: "L.Solaiyan",
+    Designation: "Lab Assitant (T)",
+    mailid: "solaiyan95@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "19",
+    cover: cover,
+    dp:dpm ,
+    name: "V.prabhu",
+    Designation: "Lab Assitant(T)",
+    mailid: "meetprabhu09@gmail.com",
+    pdf: "",
+  },
+  {
+    id: "20",
+    cover: cover,
+    dp: dpm,
+    name: "M.Rajeshkannan",
+    Designation: "Lab Assitant(T)",
+    mailid: "87rajeshkannan@gmail.com",
+    pdf: "",
   },
 ];
 

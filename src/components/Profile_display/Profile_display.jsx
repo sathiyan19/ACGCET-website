@@ -34,6 +34,7 @@ const Profile_display = ({list_info}) => {
             Designation={item.Designation}
             mailid={item.mailid}
             pdf={item.pdf}
+            email_overflow={item.email_text_overflow}
           />
         ))}
       </div>

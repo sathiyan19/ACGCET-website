@@ -2,7 +2,7 @@ import React from 'react'
 
 import './profilecard.css'
 
-const Profilecard = ({cover,dp,name,Designation,mailid,pdf}) => {
+const Profilecard = ({cover,dp,name,Designation,mailid,pdf,email_overflow}) => {
   return (    
     
       <div className="profile-card">
@@ -16,7 +16,7 @@ const Profilecard = ({cover,dp,name,Designation,mailid,pdf}) => {
         
         
         <p>{Designation}</p>
-        <p className='profile_mail'>{mailid}</p>
+        <p className={`profile_mail ${email_overflow? "profile_overflow_mail":""}`}>{mailid}</p>
         
         {pdf && (
         <a href={pdf} target='blank' className="view-btn">More Details</a>
