@@ -32,7 +32,7 @@ const Mech_faculties = () => {
                     <Profile_display list_info={mech_fac_profiles}/>
                 </div>
                 <div className='mech_teach_fac'>
-                     <Underline heading="Suporting Faculties"/>
+                     <Underline heading="Supporting Faculties"/>
                     <Profile_display list_info={mech_sup_profiles}/> 
                 </div>
             </div>
