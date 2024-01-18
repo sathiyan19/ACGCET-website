@@ -1,0 +1,261 @@
+.teqip3_heading{
+  font-weight: 500;
+  color:#00134d;
+  margin-top: 50px;
+  margin-left:20px;
+  font-size: 40px;
+}
+
+.off_head{
+    font-weight: 500;
+    font-size: 26px;
+    /* text-align: left; */
+    color:#00134d;
+    margin:50px 0px 20px 120px;
+}
+
+
+.off {
+  margin:40px 160px 40px 120px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  padding: 10px;
+}
+.off_row:nth-child(even){
+    background-color:#ECF6FF;
+}
+.off_row:nth-child(odd){
+    background-color:#D9EDFF;
+}
+ 
+.off td{
+    border: 1px solid #ddd;
+    padding: 15px;
+    color:black;
+}
+
+.off td:nth-child(2) {
+    font-weight: bold;
+  } 
+
+  /* nodal officer */
+
+.off_nodal{
+    width:70%;
+    margin:60px 0px 50px 50px;
+    overflow-x:scroll;
+  }
+
+.off_head_nodal{
+    color:#00134d;
+    font-weight: 500;
+    font-size: 26px;
+    margin:50px 0px 20px 60px;
+}
+
+ 
+  /* cell officers */
+
+.off_head_cell{
+    color:#00134d;
+    font-weight: 500;
+    font-size: 26px;
+    margin:50px 0px 20px 60px;
+}
+ 
+.off_cell{
+    width:70%;
+    margin:60px 0px 50px 50px;
+    overflow-x:scroll;
+  }
+
+  /* department coordinators */
+
+.off_head_depco{
+    color:#00134d;
+    font-weight: 500;
+    font-size: 26px;
+    margin:50px 0px 20px 60px;
+}
+
+.off_depco{
+  width:70%;
+  margin:60px 0px 50px 50px;
+  overflow-x:scroll;
+}
+
+/* administrative staff */
+
+.off_head_adstaff{
+  color:#00134d;
+  font-weight: 500;
+  font-size: 26px;
+  margin:50px 0px 20px 60px;
+}
+
+.off_adstaff{
+width:70%;
+margin:60px 0px 50px 50px;
+overflow-x:scroll;
+/* scrollbar-width: 2px !important; */
+}
+::-webkit-scrollbar  {
+  width: 5px !important;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 1px #152029 !important;
+  border-radius: 1px;
+}
+
+
+@media (max-width:1100px) {
+  .flt1{
+    width:90%;
+    margin:20px auto 10px auto;
+  }
+  .off{
+    width:70%;
+    margin-bottom: 20px;
+  }
+  .off_nodal,.off_cell,.off_depco,.off_adstaff{
+    width:90%;
+  }
+  .off_head_nodal,.off_head_cell,.off_head_depco,.off_head_adstaff{
+    font-weight: 500;
+    font-size: 26px;
+    margin:50px 0px 20px 60px;
+  }
+  .off {
+    margin:40px 160px 40px 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    padding: 10px;
+  }
+}
+
+@media (max-width:768px) {
+  .off{
+    margin:50px auto 10px auto;
+    width:90%;
+  }
+  .off_head{
+    margin:50px auto 10px 60px;
+  }
+  .t3_off{
+    width:90%;
+    margin:50px auto 10px auto;
+  }
+  .off_head_nodal,.off_head_adstaff,.off_head_cell,.off_head_depco{
+    margin:30px auto 10px 60px;
+  }
+  .off_nodal{
+    width:90%;
+    margin:30px auto 10px auto;
+  }
+
+  .off_cell{
+    width:90%;
+    margin:30px auto 10px auto;
+  }
+
+  .off_depco{
+    width:90%;
+    margin:30px auto 10px auto;
+  }
+  
+  .off_adstaff{
+    width:90%;
+    margin:30px auto 10px auto;
+  }
+  ::-webkit-scrollbar  {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #152029;
+    border-radius: 15px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background:#00134d ;
+    border-radius: 15px;
+    width:2px; /* width of the thumb */
+    height: 10px; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+}
+@media (max-width:600px) {
+
+  .off_head{
+    margin:50px auto 10px 30px;
+  }
+  .t3_off{
+    width:90%;
+    margin:50px auto 10px auto;
+  }
+  .off_nodal{
+    width:90%;
+    margin:40px auto 10px auto;
+  }
+  
+  .off_cell{
+    width:90%;
+    margin:40px auto 10px auto;
+  }
+  .off_head_depco,.off_head_adstaff,.off_head_cell,.off_head_nodal{
+    margin:40px auto 10px 20px;
+  }
+  .off_depco{
+    width:90%;
+    margin:40px auto 10px auto;
+  }
+  
+  .off_adstaff{
+    width:90%;
+    margin:40px auto 10px auto;
+  }
+  ::-webkit-scrollbar  {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #152029;
+    border-radius: 15px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background:#00134d ;
+    border-radius: 15px;
+    width:2px; /* width of the thumb */
+    height: 10px; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+  /* .off td:nth-child(2) {
+    font-weight: bold;
+    width:60%;
+  } 
+ .off td:nth-child(1) {
+    width:10%;
+ }  */
+.off{
+    width:90%;
+ }
+
+}
+
+@media (max-width:380px) {
+  /* .off{
+    width:50%;
+    overflow-x:scroll;
+    margin:10px auto 10px auto;
+ } */
+ .off_tot{
+  width:93%;
+  margin:10px 5px 10px 5px;
+  overflow-x:scroll;
+
+
+ }
+}
