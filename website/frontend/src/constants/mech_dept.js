@@ -140,7 +140,7 @@ const mech_dept_menu = [
   },
   {
     id:"12",
-    path:"/mechdept/mech-org",
+    path: "/mechdept/mech-dept-events",
     link:"Department Events",
     arl:"1",
   },
@@ -152,7 +152,7 @@ const mech_dept_menu = [
   },
   {
     id: "10",
-    path: "/mechdept/mech-dept-events",
+    path:"/mechdept/mech-sae",
     link: "SAE Participation",
     arl:'l'
   },

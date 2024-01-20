@@ -88,12 +88,12 @@ const eee_dept_menu = [
     link: "Lab Facilities",
     arl:'l'
   },
-  {
-    id: "8",
-    path: "#",
-    link: "Student Placements",
-    arl:'l'
-  },
+  // {
+  //   id: "8",
+  //   path: "#",
+  //   link: "Student Placements",
+  //   arl:'l'
+  // },
   
   
   {
@@ -121,12 +121,12 @@ const eee_dept_menu = [
     link: "Department Activities",
     arl:'l'
   },
-  {
-    id: "17",
-    path: "#",
-    link: "Video Tour",
-    arl:'l'
-  },
+  // {
+  //   id: "17",
+  //   path: "#",
+  //   link: "Video Tour",
+  //   arl:'l'
+  // },
   
   {
     id: "14",

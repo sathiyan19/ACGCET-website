@@ -258,6 +258,11 @@ const iqac_floater_menu={
     'head':'IQAC',
     'links':[
         {
+            'id':'5',
+            'link':'Overview',
+            'path':'/iqac'
+        },
+        {
             'id':'1',
             'link':'IQAC Minutes',
             'path':'/iqac_min'

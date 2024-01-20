@@ -183,7 +183,7 @@ const App = () => {
         <Route path="/mechdept/mech-peo" element={<Mech_peo/>} />
         <Route path="/mechdept/mech-faculties" element={<Mech_faculties/>} />
         <Route path="/mechdept/mech-lab" element={<Mech_lab/>} />
-        <Route path="/mechdept/mech-dept-events" element={<Mech_events/>} />
+        <Route path="/mechdept/mech-dept-events" element={<Mech_org/>} />
         <Route path="/eeedept/eee-peo" element={<Eee_peo/>} />
         <Route path="/eeedept/eee-faculties" element={<Eee_faculties/>} />
         <Route path="/eeedept/eee-lab" element={<Eee_lab/>} />
@@ -215,7 +215,7 @@ const App = () => {
         <Route path="/centers-and-facilities" element={<Facilities/>} />
         <Route path="/mechdept/mech-library" element={<Mech_lib/>}/>
         <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
-        <Route path="/mechdept/mech-org"element={<Mech_org/>}/>
+        <Route path="/mechdept/mech-sae"element={<Mech_events/>}/>
         <Route path="/placement" element={<Placement />} />
         <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
 
