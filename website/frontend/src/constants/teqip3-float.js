@@ -2,6 +2,11 @@ export const teqip3_floater_menu={
     'head':'TEQIP-III',
     'links':[
         {
+            'id':'6',
+            'link':'Overview',
+            'path':'/teqip3'
+        },
+        {
             'id':'1',
             'link':'TEQIP III – Officials',
             'path':'/t3_officials'
