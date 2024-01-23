@@ -1,7 +1,6 @@
 import React from 'react';
 import './Login.css';
 import svg from '../../assets/pictures/login_svg.svg'
-import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const Login = () => {
