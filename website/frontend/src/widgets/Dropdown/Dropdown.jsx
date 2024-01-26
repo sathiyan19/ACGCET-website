@@ -7,9 +7,11 @@ const Dropdown = ({type,title,base,links,func}) => {
   if(type==="1"){
     class_name="nav-link"
   }else if(type==="2"){
-    class_name="nav-link idiot"
+    class_name="nav-link"
   }else if(type==="3"){
     class_name="nav-link link"
+  }else if(type==="4"){
+    class_name="nav-link login_button"
   }
 
 
