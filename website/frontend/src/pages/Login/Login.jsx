@@ -31,6 +31,7 @@ const Login = () => {
 
             <button className="login-submit">Login</button>
           </form>
+          <a href='#' className='forgot'>Forgot password?</a>
         </div>
       </section>
     </div>
