@@ -85,7 +85,7 @@ nav.navbar-static-top {
 .navbar-nav {
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     float: right;
 }
 
@@ -140,11 +140,11 @@ nav.navbar-static-top {
     font-family: "Gotham A", "Gotham B", sans-serif;
 }
 
-img[Attributes Style] {
+/* img[Attributes Style] {
     width: 302px;
     aspect-ratio: auto 302 / 416;
     height: 416px;
-}
+} */
 
 .responsive {
     width: 100%;

@@ -1,14 +1,9 @@
-import csecover from '../assets/pictures/cse_banner.webp'
-import eleccover from '../assets/pictures/elec_banner.webp'
-import civilcover from '../assets/pictures/civil_banner.webp'
-import mechcover from '../assets/pictures/mech_banner.webp'
-import ececover from '../assets/pictures/microchip.webp'
-import cover from '../assets/pictures/cover pic.jpg'
 
-import edc from '../assets/pictures/news_img/edc.webp'
 import ga from '../assets/pictures/news_img/ga.webp'
 import nlp from '../assets/pictures/news_img/nlp.webp'
 import stnd_day from '../assets/pictures/news_img/stnd_day.webp'
+import sih from '../assets/pictures/news_img/sih.webp'
+import envision from '../assets/pictures/news_img/envision_2024.webp'
 
 export const news_info=[
     {
@@ -30,7 +25,7 @@ export const news_info=[
     {
         'id':'6',
         'heading':"General Aptitude Training",
-        'sub-head':'Specialized weekend aptitude program for 60 third-year students for academic and career success.',
+        'sub-head':'Specialized weekend aptitude program for 60 third year students for academic & career success.',
         'pic':ga,
         'content_1':'',
         'content_2':"Commencing on the 9th of September, a specialized general aptitude training program has been organized for 60 third-year students over the weekends. Taking place on both Saturdays and Sundays, this initiative seeks to nurture the students' problem-solving skills and overall aptitude. By dedicating their weekends to this training, participants are preparing themselves for a competitive edge in their academic pursuits and future career endeavors. This comprehensive program is designed to instill valuable knowledge and capabilities, enabling these students to excel academically and navigate the complexities of the professional world with confidence. It serves as a valuable investment in their personal and intellectual growth."
@@ -43,6 +38,24 @@ export const news_info=[
         'content_1':'Alagappa Chettiar Government College of Engineering and Technology, Sivaganga, hosts diverse events: writing, essay competitions, quizzes, debates, and nukkad natak. Winners eagerly await felicitation on World Standards Day in Madurai, a celebration of academic excellence and achievement.',
         'content_2':"A shared vision for a better world embodies the collective aspirations of individuals, communities, and nations to create a more equitable, sustainable, and harmonious global society. It is a beacon of hope that unites people across diverse backgrounds, inspiring collaboration and action. This vision encompasses ideals such as social justice, environmental stewardship, and peace, fostering a sense of responsibility to leave a lasting positive impact for future generations. It is a powerful force that drives humanity toward a brighter and more inclusive future."
     },
+    {
+        'id':'1',
+        'heading':"Envision Energy Conference at IITMRP",
+        'sub-head':'Empowering Tomorrow\'s Leaders: Insights from the Envision Energy Conference at IITMRP',
+        'pic':envision,
+        // 'content_1':'A set of nine 2nd year students of our college recently had the opportunity to attend a dynamic conference themed "Envision Energy Conference" at IITMRP, on the dates 4th and 5th January, 2024, through the build club, which is being a great source of immense opportunities for our students. The conference proved to be an enlightening experience, that brought together professionals from diverse fields to exchange insights and ideas. The keynote sessions were particularly captivating, featuring industrial and educational delegates who shared their captivating and futuristic ideas. The interactive panel discussions were a highlight, allowing experts to engage in thought-provoking conversations. This groundbreaking conference not only provided valuable exposure to visionary ideas but also served as a platform for our students to broaden their understanding of the dynamic world around them',
+        'content_2':'A set of nine 2nd year students of our college recently had the opportunity to attend a dynamic conference themed "Envision Energy Conference" at IITMRP, on the dates 4th and 5th January, 2024, through the build club, which is being a great source of immense opportunities for our students. The conference proved to be an enlightening experience, that brought together professionals from diverse fields to exchange insights and ideas. The keynote sessions were particularly captivating, featuring industrial and educational delegates who shared their captivating and futuristic ideas. The interactive panel discussions were a highlight, allowing experts to engage in thought-provoking conversations. This groundbreaking conference not only provided valuable exposure to visionary ideas but also served as a platform for our students to broaden their understanding of the dynamic world around them.'
+    },
+    {
+        'id':'1',
+        'heading':" SIH winner",
+        'sub-head':'Engineering Excellence: Triumph at Smart India Hackathon Hardware Edition 2023',
+        'pic':sih,
+        'content_1':'From our college , 5 students of mechanical engineering and 1 student of Electrical and Electronics Engineering ,3 rd years  won   prize in Smart India hackathon hardware edition 2023 conducted at  Nalla malla Reddy Engineering College , Hyderabad  from dec 19 to 23 ,2023 .',
+        'content_2':'The 14.6 km long cable belt conveyor is supported on pulleys. A steel rope runs over these pulleys while the belt sits over them. The conveyor is operated by pulling the steel ropes with a drive motor. The rope gets elongated due to pulling force leading to breakage of its strands. Similarly, the belt also gets worn out causing stoppage of conveyor operation unpredictably. Solution Desired: By capturing the past reasons for wear and tear including visuals and using a suitable ML application, try to predict the condition of the Rope and belt well in advance such that corrective and preventive actions can be taken before its failure preventing loss of production.'
+    },
+
+
     // {
     //     'id':'2',
     //     'heading':'Placement Activities',

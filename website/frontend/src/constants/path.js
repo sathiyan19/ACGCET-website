@@ -56,8 +56,6 @@ const top_nav_paths = [
     links: [],
   },
 
-  { id: "6", type: "1", title: "Alumni", basepath: "/alumni", links: [] },
-
   {
     id: "7",
     type: "1",
@@ -76,9 +74,85 @@ const top_nav_paths = [
       { path: "/under", link: "Xprez" },
     ],
   },
+  
+  { id: "6", type: "1", title: "Alumni", basepath: "/alumni", links: [] },
 
+  // {
+  //   id: "8",
+  //   type: "2",
+  //   title: "Departments",
+  //   basepath: "javascript:void(0);",
+  //   links: [
+  //     { path: "/mechdept", link: "Mechanical Engineering" },
+  //     { path: "/civildept", link: "Civil Engineering" },
+  //     { path: "/eeedept", link: "Electrical & Electronics Engineering" },
+  //     { path: "/ecedept", link: "Electronics & Communication Engineering" },
+  //     { path: "/csedept", link: "Computer Science Engineering" },
+  //     { path: "/sciencedept", link: "Science & Humanities" },
+  //   ],
+  // },
+
+  // {
+  //   id: "9",
+  //   type: "2",
+  //   title: "Life at ACGCET",
+  //   basepath: "/life-at-acgcet",
+  //   links: [],
+  // },
+
+  // {
+  //   id: "10",
+  //   type: "2",
+  //   title: "Accreditation",
+  //   basepath: "javascript:void(0);",
+  //   links: [
+  //     {
+  //       path: "https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing",
+  //       link: "NAAC",
+  //     },
+  //     { path: "/nba", link: "NBA" },
+  //     { path: "/iqac", link: "IQAC" },
+  //     { path: "/nirf", link: "NIRF" },
+  //     { path: "/annual_reports", link: "Annual Reports" },
+  //   ],
+  // },
+
+  // {
+  //   id: "11",
+  //   type: "2",
+  //   title: "TEQIP & QIP",
+  //   basepath: "javascript:void(0);",
+  //   links: [
+  //     { path: "/teqip1", link: "Teqip I" },
+  //     { path: "/teqip2", link: "Teqip II" },
+  //     { path: "/teqip3", link: "Teqip III" },
+  //   ],
+  // },
+
+  //   {"id":'12',
+  //   "type":"2",
+  //   'title':'IIC and I&E Policies',
+  //   'basepath':'/iic',
+  //   'links':[ ]
+  //   },
+
+  // {
+  //   id: "13",
+  //   type: "2",
+  //   title: "Centers & Facilities",
+  //   basepath: "/centers-and-facilities",
+  //   // basepath: "/under",
+  //   links: [
+  //     // { path: "/under", link: "Link1" },
+  //     //     {'path':'/under','link':"Link2"},
+  //     //     {'path':'/under','link':"Link3"}]
+  //   ],
+  // },
+];
+
+const hidden_nav_paths = [
   {
-    id: "8",
+    id: "14",
     type: "2",
     title: "Departments",
     basepath: "javascript:void(0);",
@@ -93,7 +167,7 @@ const top_nav_paths = [
   },
 
   {
-    id: "9",
+    id: "15",
     type: "2",
     title: "Life at ACGCET",
     basepath: "/life-at-acgcet",
@@ -101,7 +175,7 @@ const top_nav_paths = [
   },
 
   {
-    id: "10",
+    id: "16",
     type: "2",
     title: "Accreditation",
     basepath: "javascript:void(0);",
@@ -110,18 +184,17 @@ const top_nav_paths = [
         path: "https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing",
         link: "NAAC",
       },
-      { path: "/nba", link: "NBA" },
       { path: "/iqac", link: "IQAC" },
+      { path: "/nba", link: "NBA" },
       { path: "/nirf", link: "NIRF" },
       { path: "/annual_reports", link: "Annual Reports" },
     ],
   },
 
   {
-    id: "11",
+    id: "17",
     type: "2",
     title: "TEQIP & QIP",
-    basepath: "javascript:void(0);",
     links: [
       { path: "/teqip1", link: "Teqip I" },
       { path: "/teqip2", link: "Teqip II" },
@@ -129,27 +202,27 @@ const top_nav_paths = [
     ],
   },
 
-    {"id":'12',
-    "type":"2",
-    'title':'IIC and I&E Policies',
-    'basepath':'/iic',
-    'links':[ ]
-    },
+  {
+    id: "18",
+    type: "2",
+    title: "IIC and I&E Policies",
+    basepath: "/iic",
+    links: [],
+  },
 
   {
-    id: "13",
+    id: "19",
     type: "2",
     title: "Centers & Facilities",
     basepath: "/centers-and-facilities",
     // basepath: "/under",
     links: [
-      // { path: "/under", link: "Link1" },
-      //     {'path':'/under','link':"Link2"},
-      //     {'path':'/under','link':"Link3"}]
+      // { path: "/", link: "Link1" },
+      // { path: "/", link: "Link2" },
+      // { path: "/", link: "Link3" },
     ],
   },
 ];
-
 const bottom_nav_paths = [
   {
     id: "14",
@@ -195,6 +268,7 @@ const bottom_nav_paths = [
     id: "17",
     type: "3",
     title: "TEQIP & QIP",
+    basepath: "javascript:void(0);",
     links: [
       { path: "/teqip1", link: "Teqip I" },
       { path: "/teqip2", link: "Teqip II" },
@@ -223,5 +297,14 @@ const bottom_nav_paths = [
     ],
   },
 ];
+const login_nav_paths = [
+  // {
+  //   id: "20",
+  //   type: "4",
+  //   title: "Login",
+  //   basepath: "/login",
+  //   links: [],
+  // },
+];
 
-export { top_nav_paths, bottom_nav_paths };
+export { top_nav_paths, bottom_nav_paths, hidden_nav_paths, login_nav_paths };
