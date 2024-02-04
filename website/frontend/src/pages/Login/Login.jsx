@@ -1,8 +1,10 @@
 import React,{useState} from 'react';
+import {useNavigate} from 'react-router-dom'
 import './Login.css';
 import svg from '../../assets/pictures/login_svg.svg'
 import axios from 'axios'
 
+axios.defaults.withCredentials = true;
 
 const Login = () => {
 
@@ -10,6 +12,8 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [usrerror, setUsrerror] = useState("");
   const [pswderror, setPswderror] = useState("");
+
+  const navigate=useNavigate()
 
   const form_submit=async (e)=>{
     e.preventDefault();
@@ -32,9 +36,11 @@ const Login = () => {
       }
       if( uflag===1 && pflag===1){
       const res=await axios.post('http://localhost:5002/api/login',{username,password})
-      if(res.data.pswd_status===1){
-        window.location.pathname='/'
-      }else if(res.data.pswd_status===2){
+      console.log(res.data.pswd_status)
+      if(res.data.pswd_status){
+        console.log("Matched")
+        navigate('/dashboard')
+      }else{
         setPassword("")
         setPswderror("Incorrect password")
       }}
