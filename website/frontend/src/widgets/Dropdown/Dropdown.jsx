@@ -11,7 +11,7 @@ const Dropdown = ({type,title,base,links,func}) => {
   }else if(type==="3"){
     class_name="nav-link link"
   }else if(type==="4"){
-    class_name="nav-link login_button"
+    class_name="nav-link login_button fa fa-user-alt"
   }
 
 
@@ -23,7 +23,6 @@ const Dropdown = ({type,title,base,links,func}) => {
         </li>
          <div className="dropdown-content">
             {links.map((item)=><Link onClick={func} key={item.link} to={item.path}>{item.link}</Link>)}
-            
         </div>
     </div>
   )

@@ -298,13 +298,13 @@ const bottom_nav_paths = [
   },
 ];
 const login_nav_paths = [
-  // {
-  //   id: "20",
-  //   type: "4",
-  //   title: "Login",
-  //   basepath: "/login",
-  //   links: [],
-  // },
+  {
+    id: "20",
+    type: "4",
+    title: "",
+    basepath: "/dashboard",
+    links: [],
+  },
 ];
 
 export { top_nav_paths, bottom_nav_paths, hidden_nav_paths, login_nav_paths };
