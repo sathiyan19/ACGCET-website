@@ -48,6 +48,7 @@ const reset = async (req, res) => {
         `,
       [hash_pswd, username]
     );
+    console.log(trial)
     res.status(200).json({ message: "password-reset" });
   } catch (error) {
     console.log(error);

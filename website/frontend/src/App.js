@@ -105,7 +105,10 @@ import {
   Mech_coe,
   Login,
   Dashboard,
-  Logout
+  Logout,
+  Passreset,
+  Otp,
+  Newpass
 } from "./pages";
 import "./App.css";
 
@@ -224,6 +227,9 @@ const App = () => {
         <Route path="/login-page" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/logout" element={<Logout />} />
+        <Route path="/password-reset" element={<Passreset/>}/>
+        <Route path="/password-otp" element={<Otp/>}/>
+        <Route path="/password-create" element={<Newpass/>}/>
 
       </Routes>
       <Chatbot/>
