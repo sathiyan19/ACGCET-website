@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import svg from "../../assets/pictures/forgetpassword_svg.svg";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import axios from "axios";
 const Newpass = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const regno = location.state && location.state.regno;
-
+  const [loading,setLoading]=useState('');
   const resetPassword = async (e) => {
     e.preventDefault();
 
@@ -57,7 +57,7 @@ const Newpass = () => {
                 </div>
 
                 <button type="submit" className="pass-submit">
-                  Change Password
+                {loading?'Changing password....':'Change password'}
                 </button>
               </form>
               <Link to="/login-page" className="forgot">
