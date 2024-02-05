@@ -1,10 +1,8 @@
 import React,{useState} from 'react';
-import {useNavigate} from 'react-router-dom'
 import './Login.css';
-import svg from '../../assets/pictures/login_svg.svg'
+import svg from '../../assets/pictures/login_svg1.svg'
 import axios from 'axios'
-
-axios.defaults.withCredentials = true;
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -12,8 +10,22 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [usrerror, setUsrerror] = useState("");
   const [pswderror, setPswderror] = useState("");
-
-  const navigate=useNavigate()
+ 
+  const find_dept= (code)=>{
+    let dept
+    if(code==='11'){
+      dept='civil'
+    }else if(code==='12'){
+      dept='mech'
+    }else if(code==='13'){
+      dept='eee'
+    }else if(code==='14'){
+      dept='ece'
+    }else if(code==='15'){
+      dept='cse'
+    }
+    return dept
+  }
 
   const form_submit=async (e)=>{
     e.preventDefault();
@@ -35,12 +47,20 @@ const Login = () => {
         setPswderror("")
       }
       if( uflag===1 && pflag===1){
+        setUsername(username.trim())
+        setPassword(password.trim())
+
+        let code
+        if(username.length===7){
+          code=username.substring(2,4)
+        }else if(username.length===11){
+          code=username.substring(6,8)
+        }
+        console.log(find_dept(code))
       const res=await axios.post('http://localhost:5002/api/login',{username,password})
-      console.log(res.data.pswd_status)
-      if(res.data.pswd_status){
-        console.log("Matched")
-        navigate('/dashboard')
-      }else{
+      if(res.data.pswd_status===1){
+        window.location.pathname='/'
+      }else if(res.data.pswd_status===2){
         setPassword("")
         setPswderror("Incorrect password")
       }}
@@ -68,18 +88,19 @@ const Login = () => {
 
           {usrerror && <div className='login_err_msg'>{usrerror}</div>}
             <div className="form-control">
-              <input className='login-input' autoComplete="username" value={username} type="text" placeholder="Username" onChange={(e)=>setUsername(e.target.value)}/>
+              <input className='login-input' autoComplete="username" value={username} type="text" placeholder="Register No." onChange={(e)=>setUsername(e.target.value)} required/>
               <i className="fa fa-user"></i>
             </div>
             
             {pswderror && <div className='login_err_msg'>{pswderror}</div>}
             <div className="form-control">
-              <input className='login-input' autoComplete='current-password' value={password} type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)}/>
+              <input className='login-input' autoComplete='current-password' value={password} type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} required/>
               <i className="fa fa-lock"></i>
             </div>
 
             <button type='submit' className="login-submit">Login</button>
           </form>
+          <Link to="/password-reset" className='forgot'>Forgot password?</Link>
         </div>
       </section>
     </div>

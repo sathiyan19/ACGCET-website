@@ -1,7 +1,6 @@
 const express = require('express');
 const body_parser=require('body-parser');
 const cookieParser = require('cookie-parser');
-
 const cors=require('cors')
 
 // const app_utils = express();
