@@ -7,15 +7,21 @@ const login = async (req, res) => {
     const { username, password } = req.body;
     const [[fetched_pswd]] = await pool.query(
       `
-        select pswd 
+        select pswd, p_flag
         from login_cred 
         where reg_no=?
         `,
       [username]
     );
     const hashed_pswd = fetched_pswd.pswd;
+    const pswd_flag = fetched_pswd.p_flag;
     let token
-    const ispswd = await compareHash(hashed_pswd, password);
+    let ispswd
+    if(pswd_flag===1){
+      ispswd=(hashed_pswd===password);
+    }else{
+      ispswd = await compareHash(hashed_pswd, password);
+    }
 
     //--------------changes-----------------
     // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
@@ -36,17 +42,18 @@ const login = async (req, res) => {
 
 const reset = async (req, res) => {
   try {
-    const { username, password } = req.body;
+    const { regno, password } = req.body;
     const hash_pswd = await hashPassword(password);
     console.log(hash_pswd);
+    console.log(regno);
 
     const trial = await pool.query(
       `
         update login_cred
-        set pswd=? 
+        set pswd=?, p_flag=? 
         where reg_no=?
         `,
-      [hash_pswd, username]
+      [hash_pswd, 2, regno]
     );
     console.log(trial)
     res.status(200).json({ message: "password-reset" });
