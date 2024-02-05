@@ -1,0 +1,16 @@
+.trial_dash{
+    margin: 100px auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+.logout_button{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log_link{
+    text-decoration: none;
+}

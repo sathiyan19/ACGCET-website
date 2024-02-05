@@ -1,0 +1,46 @@
+.log-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log-input{
+    width: 80px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    /* color: black; */
+    background: #e6e6e6;
+  color: #333;
+  /* letter-spacing: 0.5px; */
+  padding: 10px ;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  /* outline: none; */
+  border-radius: 30px;
+  font-size: 1.1em;
+}
+.log-input:focus{
+    border-bottom: 3px solid #ff6600;
+    outline: none;
+}
+.log-input:nth-child(1){
+    cursor: pointer;
+    pointer-events: all;
+}
+.log-input[type=number]{
+    appearance: textfield;
+}
+
+.otp_err_msg{
+    color: red;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0.75rem 0.75rem 0 0.75rem;
+}
+
+@media(max-width:896px){
+    .log-input{
+        width: 60px;
+    }
+}

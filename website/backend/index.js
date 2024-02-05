@@ -1,6 +1,6 @@
 const express = require('express');
 const body_parser=require('body-parser');
-
+const cookieParser = require('cookie-parser');
 const cors=require('cors')
 
 // const app_utils = express();
@@ -9,8 +9,16 @@ const cors=require('cors')
 // const port_utils = 5001;
 
 const app_main = express();
+app_main.use(cookieParser());
 app_main.use(body_parser.json());
-app_main.use(cors())
+
+//--------------changes-----------------
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    credentials: true,
+  };
+app_main.use(cors(corsOptions))
+//--------------changes-----------------
 const port_main = 5002;
 
 // const app_utils_Routes = require('./utils_app/routes.js');
