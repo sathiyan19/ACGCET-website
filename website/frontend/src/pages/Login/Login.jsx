@@ -11,6 +11,8 @@ const Login = () => {
   const [usrerror, setUsrerror] = useState("");
   const [pswderror, setPswderror] = useState("");
 
+  axios.defaults.withCredentials=true;
+
   const form_submit=async (e)=>{
     e.preventDefault();
     console.log(username,password)
@@ -31,9 +33,10 @@ const Login = () => {
         setPswderror("")
       }
       if( uflag===1 && pflag===1){
-      const res=await axios.post('http://localhost:5002/api/login',{username,password})
+      const res=await axios.post('http://localhost:5002/login',{username,password})
       if(res.data.pswd_status===1){
-        window.location.pathname='/'
+        window.location.pathname='./Logout'
+        
       }else if(res.data.pswd_status===2){
         setPassword("")
         setPswderror("Incorrect password")

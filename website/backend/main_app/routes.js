@@ -7,7 +7,7 @@ const mysql2 = require('mysql2');
 const dbConfig = {
     host: 'localhost',
     user: 'root',
-    password: 'Badminton19@',
+    password: 'kint',
     database: 'clgdata'
   };
 
@@ -17,7 +17,7 @@ const dbConfig = {
 //   connection.connect()
   
 
-router.post('/api/login',async (req,res)=>{
+router.post('/login',async (req,res)=>{
     const {username,password}=req.body
     // console.log(username,password)
 

@@ -220,7 +220,6 @@ const App = () => {
         <Route path="/placement" element={<Placement />} />
         <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
         <Route path="/login-page" element={<Login />} />
-
       </Routes>
       <Chatbot/>
       <Footer />
