@@ -125,6 +125,11 @@ button.login-submit:hover {
   color: white;
   text-transform: lowercase;
 }
+.forgot{
+}
+.forgot:hover{
+  color: #ff6600;
+}
 @media (max-width: 780px) {
 
   .login-page {
