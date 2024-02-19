@@ -164,6 +164,10 @@
     font-weight: 400;
   }
   
+  .dept_menu1{
+    width: 55%;
+  }
+
   .detail_item_1{
       grid-column:span 4;
       grid-row:1;

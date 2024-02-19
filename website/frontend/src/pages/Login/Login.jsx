@@ -33,18 +33,22 @@ const Login = () => {
   const form_submit = async (e) => {
     e.preventDefault();
     console.log(username, password);
+    setUsername(username.trim());
+    setPassword(password.trim());
 
     let uflag = 0,
       pflag = 0;
     try {
-      if (username.trim().length === 0) {
-        setUsrerror("Enter Register number");
+      console.log(username.length)
+      if (username.length !=7 && username.length !=11) {
+        console.log("inside")
+        setUsrerror("Enter valid register number");
       } else {
         uflag = 1;
         setUsrerror("");
       }
 
-      if (password.trim().length === 0) {
+      if (password.length === 0) {
         setPswderror("Enter Password");
       } else {
         pflag = 1;
