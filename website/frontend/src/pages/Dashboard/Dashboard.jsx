@@ -30,6 +30,15 @@ const Dashboard = () => {
       .catch((err) => console.log(err));
   }, [navigate]);
 
+  useEffect(()=>{
+    const handleRadialdis = () => {
+      if(window.innerWidth>800){
+        setmenu_open(false)
+      }
+    };
+    window.addEventListener('resize', handleRadialdis);
+  },[]);
+
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
@@ -73,7 +82,7 @@ const Dashboard = () => {
           onClick={toggle_menu}
         ></div>
         <div className={`radial_bg1 ${menu_open ? "scaled1" : ""}`}>
-          <div className="dept_menu">
+          <div className="dept_menu1">
             <div className="dept_link_head1">MENU</div>
             <div className="dept_link_holder1">
               <Link
@@ -104,7 +113,7 @@ const Dashboard = () => {
               <Underline heading={"Profile Details"} />
               <div className="dash_detail_grid_holder">
                 <div className="trial_dash detail_grid detail_item_1 bgcolour_var_3">
-                  <div className="detail_body txcolour_var_3">
+                  <div className="detail_body txcolour_var_3 ">
                     {stud_details.studentname}
                   </div>
                   <div className="detail_head">Name</div>
