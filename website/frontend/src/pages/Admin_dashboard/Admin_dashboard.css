@@ -1,0 +1,51 @@
+.admin-page,.admin-upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.admin-select {
+    width: 100%;
+    background: #e6e6e6;
+    color: #333;
+    letter-spacing: 0.5px;
+    padding: 14px 64px;
+    font-family: 'Montserrat', sans-serif;
+  }
+.admin-submit {
+    color: #fff;
+    padding: 14px 64px;
+    margin: 32px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: #ff6600;
+    cursor: pointer;
+    transition: opacity 0.4s;
+  }
+.admin-select,.admin-input,
+.admin-submit {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+}
+.admin-input[type="file"]{
+    color: #fff;
+    padding: 14px 64px;
+    margin: 32px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: #ff6600;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+.admin-submit:hover {
+    opacity: 0.9;
+    /* background-image: linear-gradient(to right, #ff6600, #00134d); */
+    background: #00134d;
+    color: white;
+    text-transform: lowercase;
+  }
