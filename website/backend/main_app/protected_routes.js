@@ -11,15 +11,17 @@ const dashboard=async(req,res)=>{
           } else if (reg_no.length === 11) {
             code = reg_no.substring(6, 8);
           }
-          let dept=find_dept(code)+"_stud_details";
+          let dept=find_dept(code)
+          let dept_table=find_dept(code)+"_stud_details";
     const [[dash]]= await pool.query(
         `
         select *
         from ??
         where regno=?
         `,
-      [dept,reg_no]
+      [dept_table,reg_no]
     );
+    dash.department=dept.toUpperCase()
     // console.log(dash)
     return res.json({Status:"Success",stud_details:dash})
 

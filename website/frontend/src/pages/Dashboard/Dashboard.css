@@ -4,11 +4,14 @@
     text-align: center;
 } */
 
-.logout_button{
-    /* margin: 20px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logout_button {
+  /* margin: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  
+  /* margin-bottom: 200px; */
 
 }
 
