@@ -4,7 +4,7 @@ const {find_dept}=require('./support_functions.js')
 const dashboard=async(req,res)=>{
     try{  
         const reg_no=req.reg_no;
-        // console.log(reg_no);
+        console.log(reg_no);
         let code;
           if (reg_no.length === 7) {
             code = reg_no.substring(2, 4);
@@ -20,7 +20,7 @@ const dashboard=async(req,res)=>{
         `,
       [dept,reg_no]
     );
-    // console.log(dash)
+    console.log(dash)
     return res.json({Status:"Success",stud_details:dash})
 
 }catch(error){
