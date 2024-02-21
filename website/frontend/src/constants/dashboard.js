@@ -1,17 +1,32 @@
-export const dashboard_floater_menu={
-    'head':'In this Section:',
-    'links':[
-        {
-            'id':'1',
-            'link':'Profile',
-            'path':'#',
-            'arl':'a'
-        },
-        {
-            'id':'2',
-            'link':'Results',
-            'path':'#',
-            'arl':'a'
-        },
-    ]
-}
+
+export const result=[
+    {sno:"1",
+    sem:"05",
+    subcode:"19ha002",
+    subject:"compiler design",
+    grade:"P"},
+    {sno:"2",
+    sem:"05",
+    subcode:"19ha002",
+    subject:"compiler design",
+    grade:"P"},
+    {sno:"3",
+    sem:"05",
+    subcode:"19ha002",
+    subject:"compiler design",
+    grade:"P"},
+    {sno:"4",
+    sem:"05",
+    subcode:"19ha002",
+    subject:"compiler design",
+    grade:"P"},
+]
+
+export const admin_menu=[
+    {
+        id:"1",
+        path: "/admin-panel",
+        link: "excel to database",
+        arl:'l'
+    }
+]
