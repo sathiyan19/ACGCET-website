@@ -37,7 +37,7 @@ const excel_to_SQL=async(req, res) => {
   
         // Insert rows into MySQL database
         const sql = 'INSERT into ?? VALUES ?';
-        const trial=await connection.query(sql, [req.body.table_name,rows],);
+        const trial=await pool.query(sql, [req.body.table_name,rows],);
         console.log(trial)
         res.status(200).send("successful")
       })

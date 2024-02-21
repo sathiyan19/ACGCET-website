@@ -49,3 +49,19 @@
     color: white;
     text-transform: lowercase;
   }
+
+  .dropdown_holder {
+    position: absolute;
+  }
+
+  .dropdowns{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .dropdowns:hover{
+    font-weight: 900;
+  }
