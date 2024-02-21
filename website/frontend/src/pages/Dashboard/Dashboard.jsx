@@ -37,7 +37,7 @@ const Dashboard = () => {
       }
     };
     window.addEventListener('resize', handleRadialdis);
-  },[]);
+  },[]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
