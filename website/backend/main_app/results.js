@@ -28,9 +28,9 @@ const res_result= async (req,res)=>{
         const res_result_table=dept+"_results"
         const [res_res]= await pool.query(
             `
-            select * 
+            select *
             from ??
-            where regno=? , sem=?
+            where regno=? and sem=?
             `,
             [res_result_table,regno,sem]
         )

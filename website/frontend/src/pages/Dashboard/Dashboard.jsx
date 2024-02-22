@@ -8,33 +8,23 @@ import { cse_sub } from "../../constants/dashboard";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
-  const [auth, setAuth] = useState(false);
   const [sem_opt_flag, setSem_opt_flag] = useState(false);
-  const [message, setMessage] = useState("");
   const [stud_details, setStud_details] = useState({});
   const [results,setResults]=useState([]);
   const [sem_list,setSem_list]=useState([]);
   const [sem,setSem]=useState("");
   const navigate = useNavigate();
 
-  // const sem_list=[1,2,3,4,5,6,7,8]
-
   useEffect(() => {
     axios
       .get("http://localhost:5002/api/dashboard")
       .then((res) => {
         if (res.data.Status === "Success") {
-          console.log("hi")
-          setAuth(true);
-          console.log(res.data.stud_details.regno)
           if(res.data.stud_details.regno==='91762115000'){
             navigate("/admin-panel")
           }
           setStud_details(res.data.stud_details);
-          // console.log(stud_details);
         } else {
-          setAuth(false);
-          setMessage(res.data.Error);
           navigate("/login-page");
         }
       })
@@ -61,39 +51,57 @@ const Dashboard = () => {
   };
 
   const fetch_publish_results=async (regno,dept)=>{
-    const res_pub=await axios.post("http://localhost:5002/api/respublish",{
-      regno: regno,
-      dept:dept
-    })
-    console.log(res_pub.data)
-    res_pub.data.map((item) => {
-      item.subjectname = cse_sub[item.subcode];
-      return item; // Don't forget to return the modified item
-    });
-    setSem(res_pub.data[0].sem)
-    setResults(res_pub.data)
+    try {
+      const res_pub=await axios.post("http://localhost:5002/api/respublish",{
+        regno: regno,
+        dept:dept
+      })
+      res_pub.data.map((item) => {
+        item.subjectname = cse_sub[item.subcode].subname;
+        return item; // Don't forget to return the modified item
+      });
+      setSem(res_pub.data[0].sem)
+      setResults(res_pub.data)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  const fetch_all_results=async (regno,dept,sem)=>{
+    try {
+      setSem(sem); 
+      setSem_opt_flag(false);
+      const all_res=await axios.post("http://localhost:5002/api/resresult",{
+        regno: regno,
+        dept:dept,
+        sem:sem
+      })
+      all_res.data.map((item)=>{
+        item.subjectname=cse_sub[item.subcode].subname;
+        return item
+      })
+      setResults(all_res.data)
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   const get_sem_list=async (regno,dept)=>{
-    const sems=await axios.post("http://localhost:5002/api/getsemlist",{
-      regno:regno,
-      dept:dept
-    })
-    let list=[]
-    for(let i=sems.data.min;i<=sems.data.max;i++){
-      console.log(i)
-      list.push(i)
+    try {
+      const sems=await axios.post("http://localhost:5002/api/getsemlist",{
+        regno:regno,
+        dept:dept
+      })
+      let list=[]
+      for(let i=sems.data.min;i<=sems.data.max;i++){
+        list.push(i)
+      }
+      setSem_list(list)
+    } catch (error) {
+      console.error(error)
     }
-    console.log(list)
-    setSem_list(list)
     // console.log(sems.data)
   }
-
-  // const toggle_sem_drop=()=>{
-  //   if(sem_opt_flag){
-
-  //   }
-  // }
 
   const column=[
     // {field:'sno',header:"Sno"},
@@ -102,8 +110,6 @@ const Dashboard = () => {
     {field:'subjectname',header:"Subject Name"},
     {field:'grade',header:"Grade"},
     {field:'result',header:"Result"},
-
-    //cse_sub["19CSC51"]
 ];
 
   return (
@@ -278,7 +284,7 @@ const Dashboard = () => {
                         <div className="fa fa fa-chevron-circle-down"></div>
                       </div>
                       <div className="sem_options">
-                        {sem_opt_flag && sem_list.map((item)=>(<div className="sem_dropdown" onMouseDown={(e)=>{setSem(item); setSem_opt_flag(false)}}>Sem {item}</div>))}
+                        {sem_opt_flag && sem_list.map((item)=>(<div className="sem_dropdown" onMouseDown={(e)=>{fetch_all_results(stud_details.regno,stud_details.department,item)}}>Sem {item}</div>))}
                       </div>
                     </div>
                     <div className="dash-result-table-head">Semester {sem}</div>
