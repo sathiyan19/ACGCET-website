@@ -110,7 +110,7 @@ const Admin_dashboard = () => {
         </div>
 
         <form className="admin-upload" onSubmit={excel_submit}>
-          <input
+         <input
             className="admin-input"
             type="file"
             onChange={handleFileChange}
@@ -121,7 +121,13 @@ const Admin_dashboard = () => {
             Upload
           </button>
         </form>
+        
       </div>
+      <div className="logout_button">
+            <a className="log_link" href="/logout">
+              Logout
+            </a>
+            </div>
     </div>
   );
 };
