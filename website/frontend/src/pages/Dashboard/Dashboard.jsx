@@ -13,10 +13,11 @@ const Dashboard = () => {
   const [message, setMessage] = useState("");
   const [stud_details, setStud_details] = useState({});
   const [results,setResults]=useState([]);
+  const [sem_list,setSem_list]=useState([]);
   const [sem,setSem]=useState("");
   const navigate = useNavigate();
 
-  const sem_list=[1,2,3,4,5,6,7,8]
+  // const sem_list=[1,2,3,4,5,6,7,8]
 
   useEffect(() => {
     axios
@@ -73,6 +74,21 @@ const Dashboard = () => {
     setResults(res_pub.data)
   }
 
+  const get_sem_list=async (regno,dept)=>{
+    const sems=await axios.post("http://localhost:5002/api/getsemlist",{
+      regno:regno,
+      dept:dept
+    })
+    let list=[]
+    for(let i=sems.data.min;i<=sems.data.max;i++){
+      console.log(i)
+      list.push(i)
+    }
+    console.log(list)
+    setSem_list(list)
+    // console.log(sems.data)
+  }
+
   // const toggle_sem_drop=()=>{
   //   if(sem_opt_flag){
 
@@ -111,6 +127,7 @@ const Dashboard = () => {
             }`}
             onClick={() => {
               fetch_publish_results(stud_details.regno,stud_details.department)
+              get_sem_list(stud_details.regno,stud_details.department)
               handleTabClick("result");
           }}
           >
