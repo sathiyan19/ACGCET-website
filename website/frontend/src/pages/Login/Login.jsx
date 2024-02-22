@@ -69,7 +69,7 @@ const Login = () => {
         console.log(res.data.pswd_status);
         if(username==='91762115000'&& res.data.pswd_status){
           console.log("admin pass matched");
-        navigate("/admin-panel");
+          navigate("/admin-panel");
         }
        
         else if (res.data.pswd_status) {
