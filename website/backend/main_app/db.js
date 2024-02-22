@@ -3,7 +3,7 @@ const mysql2 = require('mysql2');
 const dbConfig = {
     host: 'localhost',
     user: 'root',
-    password: 'root',
+    password: 'kaviya',
     database: 'clgdata'
   };
 

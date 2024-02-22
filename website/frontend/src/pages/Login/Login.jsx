@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import "./Login.css";
 import svg from "../../assets/pictures/login_svg.svg";
 import axios from "axios";
+import ReCaptcha from "../../components/Recaptcha/Recaptcha";
 
 axios.defaults.withCredentials = true;
 
@@ -11,6 +12,16 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [usrerror, setUsrerror] = useState("");
   const [pswderror, setPswderror] = useState("");
+
+//   // recaptcha
+  const [token, setToken] = useState('');
+  const [submitEnabled, setSubmitEnabled] = useState(false);
+
+  useEffect(() => {
+    if (token.length) {
+        setSubmitEnabled(true)
+    }
+}, [token])
 
   const navigate = useNavigate();
 
@@ -80,6 +91,11 @@ const Login = () => {
     }
   };
 
+//   // recaptcha
+  const handleToken = (token) => {
+    setToken(token)
+}
+
   return (
     <div className="login-pagef">
       <div className="login-page">
@@ -122,7 +138,14 @@ const Login = () => {
                 <i className="fa fa-lock"></i>
               </div>
 
-              <button type="submit" className="login-submit">
+              {/* recaptcha className="login-submit"     className={`${submitEnabled ? 'bg-blue-600 hover:bg-blue-900' : 'bg-gray-600 cursor-not-allowed'} px-6 py-2 mt-4 text-white  rounded-lg `*/}
+
+              <div className="captcha">
+                        <ReCaptcha siteKey="6LeVmXspAAAAALzBmc0UOI3jAxeZznEcF40aRNn8" callback={handleToken} />
+              </div>
+
+              <button disabled={!submitEnabled} type="submit" className={`${submitEnabled ? 'login-submit enabled' : 'login-submit disabled'}`}
+              >
                 Login
               </button>
             </form>
