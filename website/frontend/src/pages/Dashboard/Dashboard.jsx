@@ -19,8 +19,13 @@ const Dashboard = () => {
       .get("http://localhost:5002/api/dashboard")
       .then((res) => {
         if (res.data.Status === "Success") {
+          console.log("hi")
           setAuth(true);
           setReg(res.data.stud_details.regno);
+          console.log(res.data.stud_details.regno)
+          if(res.data.stud_details.regno==='91762115000'){
+            navigate("/admin-panel")
+          }
           setStud_details(res.data.stud_details);
           // console.log(stud_details);
         } else {
