@@ -21,7 +21,28 @@ const res_publish= async (req,res)=>{
     }
 }
 
+const res_result= async (req,res)=>{
+    try {
+        const {regno,dept,sem}=req.body;
+        console.log(regno,dept,sem)
+        const res_result_table=dept+"_results"
+        const [res_res]= await pool.query(
+            `
+            select * 
+            from ??
+            where regno=? , sem=?
+            `,
+            [res_result_table,regno,sem]
+        )
+        console.log(res_res)
+        res.status(200).send(res_res)
+    } catch (error) {
+        console.log(error)
+        res.status(500).send({error:error})
+    }
+}
+
 
 module.exports={
-    res_publish
+    res_publish,res_result
 }
