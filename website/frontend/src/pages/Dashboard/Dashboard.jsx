@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Dashboard.css";
 import { Progressbar, Underline } from "../../widgets";
+import { Table } from "../../components";
+import { result } from "../../constants/dashboard";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
@@ -17,8 +19,13 @@ const Dashboard = () => {
       .get("http://localhost:5002/api/dashboard")
       .then((res) => {
         if (res.data.Status === "Success") {
+          console.log("hi")
           setAuth(true);
           setReg(res.data.stud_details.regno);
+          console.log(res.data.stud_details.regno)
+          if(res.data.stud_details.regno==='91762115000'){
+            navigate("/admin-panel")
+          }
           setStud_details(res.data.stud_details);
           // console.log(stud_details);
         } else {
@@ -37,7 +44,7 @@ const Dashboard = () => {
       }
     };
     window.addEventListener('resize', handleRadialdis);
-  },[]);
+  },[]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -48,6 +55,14 @@ const Dashboard = () => {
   const toggle_menu = () => {
     setmenu_open(!menu_open);
   };
+
+  const column=[
+    {field:'sno',header:"Sno"},
+    {field:'sem',header:"sem"},
+    {field:'subcode',header:"subject code"},
+    {field:'subject',header:"Subject Name"},
+    {field:'grade',header:"Grade"},
+];
 
   return (
     <div>
@@ -188,6 +203,30 @@ const Dashboard = () => {
               {/* <div className="trial_dash">{reg}</div> */}
             </div>
           )}
+
+{/* result page */}
+          <div className="dash-result">
+            {activeTab === "result" &&(
+              <div>
+                <div className="dash-result-head">
+                  <Underline heading={"Result"}/>
+                  <div className="dash-personal">
+                    <div className="dash-res1">
+                    <p className="dash-personal1"><div className="dash-head">Name:</div> {stud_details.studentname}</p>
+                    <p className="dash-personal1"><div className="dash-head">Register number:</div>{stud_details.regno}</p>
+                    </div>
+                    <div className="dash-res2">
+                    <p className="dash-personal2"><div className="dash-head">Batch:</div>{stud_details.batch}</p>
+                    <p className="dash-personal2"><div className="dash-head">Department:</div>{stud_details.department}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="dash-result-table">
+                  <Table data={result} columns={column}/>
+                </div>
+              </div>
+            )}
+          </div>
 
           <div className="logout_button">
             <a className="log_link" href="/logout">
