@@ -4,15 +4,19 @@ import axios from "axios";
 import "./Dashboard.css";
 import { Progressbar, Underline } from "../../widgets";
 import { Table } from "../../components";
-import { result } from "../../constants/dashboard";
+import { cse_sub } from "../../constants/dashboard";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
   const [auth, setAuth] = useState(false);
+  const [sem_opt_flag, setSem_opt_flag] = useState(false);
   const [message, setMessage] = useState("");
-  const [reg, setReg] = useState("");
   const [stud_details, setStud_details] = useState({});
+  const [results,setResults]=useState([]);
+  const [sem,setSem]=useState("");
   const navigate = useNavigate();
+
+  const sem_list=[1,2,3,4,5,6,7,8]
 
   useEffect(() => {
     axios
@@ -21,7 +25,6 @@ const Dashboard = () => {
         if (res.data.Status === "Success") {
           console.log("hi")
           setAuth(true);
-          setReg(res.data.stud_details.regno);
           console.log(res.data.stud_details.regno)
           if(res.data.stud_details.regno==='91762115000'){
             navigate("/admin-panel")
@@ -56,12 +59,35 @@ const Dashboard = () => {
     setmenu_open(!menu_open);
   };
 
+  const fetch_publish_results=async (regno,dept)=>{
+    const res_pub=await axios.post("http://localhost:5002/api/respublish",{
+      regno: regno,
+      dept:dept
+    })
+    console.log(res_pub.data)
+    res_pub.data.map((item) => {
+      item.subjectname = cse_sub[item.subcode];
+      return item; // Don't forget to return the modified item
+    });
+    setSem(res_pub.data[0].sem)
+    setResults(res_pub.data)
+  }
+
+  // const toggle_sem_drop=()=>{
+  //   if(sem_opt_flag){
+
+  //   }
+  // }
+
   const column=[
-    {field:'sno',header:"Sno"},
-    {field:'sem',header:"sem"},
+    // {field:'sno',header:"Sno"},
+    // {field:'sem',header:"sem"},
     {field:'subcode',header:"subject code"},
-    {field:'subject',header:"Subject Name"},
+    {field:'subjectname',header:"Subject Name"},
     {field:'grade',header:"Grade"},
+    {field:'result',header:"Result"},
+
+    //cse_sub["19CSC51"]
 ];
 
   return (
@@ -83,7 +109,10 @@ const Dashboard = () => {
             className={`dash-side-nav-items ${
               activeTab === "result" ? "active" : ""
             }`}
-            onClick={() => handleTabClick("result")}
+            onClick={() => {
+              fetch_publish_results(stud_details.regno,stud_details.department)
+              handleTabClick("result");
+          }}
           >
             Result
           </Link>
@@ -114,7 +143,10 @@ const Dashboard = () => {
                 className={`dept_links1 ${
                   activeTab === "result" ? "active1" : ""
                 }`}
-                onClick={() => handleTabClick("result")}
+                onClick={() => {
+                  fetch_publish_results(stud_details.regno,stud_details.department)
+                  handleTabClick("result");
+              }}
               >
                 Result
               </Link>
@@ -222,7 +254,19 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className="dash-result-table">
-                  <Table data={result} columns={column}/>
+                  <div className="dash-table-header">
+                    <div className="sem_options_holder">
+                      <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
+                        <div className="sem_input">Sem {sem}</div>
+                        <div className="fa fa fa-chevron-circle-down"></div>
+                      </div>
+                      <div className="sem_options">
+                        {sem_opt_flag && sem_list.map((item)=>(<div className="sem_dropdown" onMouseDown={(e)=>{setSem(item); setSem_opt_flag(false)}}>Sem {item}</div>))}
+                      </div>
+                    </div>
+                    <div className="dash-result-table-head">Semester {sem}</div>
+                  </div>
+                  <Table data={results} columns={column}/>
                 </div>
               </div>
             )}
