@@ -23,6 +23,16 @@
     color: black;
 }
 
+.ece_intern_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 30px 0px;
+ } 
+ .ece_intern_container{
+    padding: 20px;
+ }
+
 @media(max-width:600px){
     .ece_place_chart_holder{
         padding: 10px 0px;
