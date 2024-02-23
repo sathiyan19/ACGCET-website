@@ -1,38 +1,9 @@
-export const result = [
-  {
-    sno: "1",
-    sem: "05",
-    subcode: "19ha002",
-    subject: "compiler design",
-    grade: "P",
-  },
-  {
-    sno: "2",
-    sem: "05",
-    subcode: "19ha002",
-    subject: "compiler design",
-    grade: "P",
-  },
-  {
-    sno: "3",
-    sem: "05",
-    subcode: "19ha002",
-    subject: "compiler design",
-    grade: "P",
-  },
-  {
-    sno: "4",
-    sem: "05",
-    subcode: "19ha002",
-    subject: "compiler design",
-    grade: "P",
-  },
-];
-
 export const cse_sub = {
-    "19CSC51":"Software Engineering",
-    "19CSC52":"Compiler Design",
-    "19CSC53":"Computer Networks",
+    "19CSC51":{credits:3,subname:"Software Engineering"},
+    "19CSC52":{credits:3,subname:"Compiler Design"},
+    "19CSC53":{credits:3,subname:"Computer Networks"},
+    "19CSC41":{credits:3,subname:"Advanced Data Structres"},
+    "19CSC31":{credits:3,subname:"Programming & Data Structres"},
 }
 
 export const admin_menu = [
