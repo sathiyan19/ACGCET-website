@@ -305,6 +305,33 @@
   margin-top: 25px;
   text-align: center;
 }
+.dash-result-table-head{
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00134d;
+}
+
+.sem_input_holder{
+  display: flex;
+  cursor: pointer;
+}
+
+.sem_input{
+  margin: 0 5px;
+}
+
+.sem_options{
+  position: absolute;
+}
+
+.sem_dropdown{
+  position: relative;
+  z-index: 5;
+  background-color: #f1f1f1;
+  padding: 3px;
+  cursor: pointer;
+  /* display: none; */
+}
 
 @media (max-width:1025px){
   .d-emis{

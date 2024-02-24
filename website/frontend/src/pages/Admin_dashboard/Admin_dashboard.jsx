@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Admin_dashboard.css";
-import { Underline } from "../../widgets";
-import Floatingmenu from "../../widgets/Floatingmenu/Floatingmenu";
+import { Underline,Floatinmenu } from "../../widgets";
+import {useNavigate } from "react-router-dom";
 import { admin_menu } from "../../constants/dashboard";
 import axios from "axios";
 const Admin_dashboard = () => {
@@ -10,6 +10,7 @@ const Admin_dashboard = () => {
   const [tables, setTables] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [Dropflag, setDropflag] = useState(false);
+  const navigate = useNavigate();
 
   const filteredOptions = tables.filter((option) =>
     option.toLowerCase().includes(inputValue.toLowerCase())
@@ -60,12 +61,26 @@ const Admin_dashboard = () => {
 
   useEffect(() => {
     gettables();
-  }, []);
+    axios
+    .get("http://localhost:5002/api/dashboard")
+    .then((res) => {
+      if (res.data.Status === "Success") {
+        console.log("hi")
+        if(res.data.stud_details.regno==='91762115000'){
+          navigate("/admin-panel")
+        }
+        // console.log(stud_details);
+      } else {
+        navigate("/login-page");
+      }
+    })
+    .catch((err) => console.log(err));
+}, [navigate]);
 
   return (
     <div>
       <Underline heading={"Admin Panel"} />
-      <Floatingmenu head="Menu" links={admin_menu} />
+      <Floatinmenu head="Menu" links={admin_menu} />
       <div className="admin-page">
         <div className="admin-drop">
           <input
