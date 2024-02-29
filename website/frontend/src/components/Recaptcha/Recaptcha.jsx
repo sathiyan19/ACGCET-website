@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import "./Recaptcha.css";
+
 
 const ReCaptcha = ({ siteKey, callback }) => {
     const recaptchaRef = useRef(null);
