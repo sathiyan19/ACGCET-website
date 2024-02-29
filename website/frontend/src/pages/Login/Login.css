@@ -105,7 +105,7 @@ section.login-side {
   color: #ff6600;
 }
 
-button.login-submit {
+button.login-submit.enabled{
   color: #fff;
   padding: 14px 64px;
   margin: 32px auto;
@@ -118,15 +118,31 @@ button.login-submit {
   transition: opacity 0.4s;
 }
 
-button.login-submit:hover {
+button.login-submit.enabled:hover {
   opacity: 0.9;
   /* background-image: linear-gradient(to right, #ff6600, #00134d); */
   background: #00134d;
   color: white;
   text-transform: lowercase;
 }
-.forgot{
+button.login-submit.disabled {
+  color: #fff;
+  padding: 14px 64px;
+  margin: 32px auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background: #ff6600;
+  transition: opacity 0.4s;
+  /* Define styles for disabled state */
+  /* Example: Add opacity and change cursor */
+  opacity: 0.5;
+  cursor: not-allowed;
 }
+.captcha{
+  margin-left: 50px;
+}
+
 .forgot:hover{
   color: #ff6600;
 }
