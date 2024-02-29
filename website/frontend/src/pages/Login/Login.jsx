@@ -51,7 +51,7 @@ const Login = () => {
       pflag = 0;
     try {
       console.log(username.length)
-      if (username.length !=7 && username.length !=11) {
+      if (username.length !==7 && username.length !==11) {
         console.log("inside")
         setUsrerror("Enter valid register number");
       } else {
@@ -78,10 +78,18 @@ const Login = () => {
           password,
         });
         console.log(res.data.pswd_status);
-        if (res.data.pswd_status) {
+        if(username==='91762115000'&& res.data.pswd_status){
+          console.log("admin pass matched");
+          navigate("/admin-panel");
+        }
+       
+        else if (res.data.pswd_status) {
           console.log("Matched");
+          console.log(res.data.reg_no);
           navigate("/dashboard");
-        } else {
+        }
+        
+         else {
           setPassword("");
           setPswderror("Incorrect password");
         }
