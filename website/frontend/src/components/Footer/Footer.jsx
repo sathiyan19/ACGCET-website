@@ -40,6 +40,7 @@ const Footer = () => {
                             <li><a href="https://drive.google.com/file/d/1Ggm8mRvSuUHSruJek2aE3sbJqv5VIDVl/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Audit Statement</a></li>
                             <li><a href="https://drive.google.com/file/d/1LpmkLiKlGX6ZI1dQ_g_Z2N19G34U3kqY/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Code of Conduct</a></li>
                             <li><a href="https://drive.google.com/file/d/1tJM-F8JBMAuM2Z4XFIT4y9dvMX3BgQ10/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Employees Service rules</a></li>
+                            <li><a href="https://drive.google.com/file/d/1KpmEBZJpcjcCSGQFWnZ09wM7hnSzpoxV/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Women's Helpline Number</a></li>
                         </ul>
                     </div>
                     <div className="col-lg-3 sec-contact">

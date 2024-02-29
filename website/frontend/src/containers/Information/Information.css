@@ -1,3 +1,13 @@
+.newContent {
+    color: #ff6600 !important;
+    font-weight: bold;
+    /* Add any additional styling as needed */
+}
+
+.insideNewContent{
+    color: white;
+}
+
 @keyframes marquee {
     0% {
         transform: translateY(100%);
