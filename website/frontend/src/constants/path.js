@@ -5,6 +5,7 @@ const top_nav_paths = [
     title: "About",
     basepath: "javascript:void(0);",
     links: [
+      { path: "/", link:"Home"},
       { path: "/about-institution", link: "Institution" },
       { path: "/vision", link: "Vision, Mission & Core values" },
       { path: "/milestones", link: "Milestones" },

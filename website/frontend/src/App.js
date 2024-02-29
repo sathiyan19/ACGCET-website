@@ -234,7 +234,7 @@ const App = () => {
         <Route path="/admin-panel" element={<Admin_dashboard/>}/>
 
       </Routes>
-      <Chatbot/>
+      {/* <Chatbot/> */}
       <Footer />
     </div>
   );
