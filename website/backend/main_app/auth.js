@@ -1,10 +1,19 @@
 const pool = require("./db.js");
 const { hashPassword, compareHash } = require("./hashing");
 const jwt = require("jsonwebtoken");
+const axios = require('axios')  //for recaptcha
 
 const login = async (req, res) => {
+  
   try {
-    const { username, password } = req.body;
+    const { username, password, retoken} = req.body; //for recaptcha token only
+    
+      let success = false      
+      const SECRET_KEY_v2 = '6LfdMIUpAAAAAIWvkfqc7d-wLd1UBGWd9i1wLpVH'      
+      const recaptchaResponse = await axios.post(`https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY_v2}&response=${retoken}`);
+      if (recaptchaResponse.data.success) {
+        success = true
+      }
     const [[fetched_pswd]] = await pool.query(
       `
         select pswd, p_flag

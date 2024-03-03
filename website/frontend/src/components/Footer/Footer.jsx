@@ -1,5 +1,7 @@
 import React from 'react'
 
+import qr from "../../assets/pictures/Home page/qr_online_grievance.webp"
+
 import './Footer.css'
 import { Link } from 'react-router-dom';
 const Footer = () => {
@@ -15,6 +17,7 @@ const Footer = () => {
                             <li><a href="https://www.facebook.com/accet/"><i className="fa fa-facebook icons" aria-hidden="true"></i></a></li>
                             <li><a href="https://www.google.com/maps/place/Alagappa+Chettiar+Government+College+of+Engineering+%26+Technology./@10.089863,78.7939322,16.43z/data=!4m5!3m4!1s0x3b0067a028f8a8f9:0x9c2484c6df0fb26!8m2!3d10.090038!4d78.794712"><i className="fa fa-map-marker icons" aria-hidden="true" ></i></a></li>
                         </ul>
+                        <Link to="/webdev-team" className="maintained">Developed & Maintained by CSE students</Link>
                     </div>
                     <div className="sec quicklinks col-lg-3">
                         <p className="first">Disclosure</p>
@@ -62,8 +65,19 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copyrights">
-                    <p className="copy">&#169; 2022 ACGCET, Karaikudi, All rights are reserved</p>
-                    <Link to="/webdev-team" className="maintained">Developed & Maintained by CSE students</Link>
+                    <div className='rights'>
+                      <p className="copy">&#169; 2022 ACGCET, Karaikudi, All rights are reserved</p>
+                    </div>
+                    <div className='qr_sec'>
+                        <div className='qr_pic'>
+                            <span><a  href="https://forms.gle/A32S18s8EhCoHrz77"><img className='footer_qr' src={qr} alt="Online Grievance QR Code"/></a></span>
+                        </div>
+                        <div className='qrtext'>
+                           <p><a href="https://forms.gle/A32S18s8EhCoHrz77"> Online Grievance</a></p>
+                        </div> 
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
