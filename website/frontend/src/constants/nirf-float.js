@@ -1,4 +1,14 @@
 export const nirf=[
+    {
+        'id':'5',
+        'program':'NIRF 2024 Innovation',
+        'pdf':'https://drive.google.com/file/d/1wVcvUtBVo69lSiso-TyRU_TBwIEVUWnS/view?usp=sharing'
+    },
+    {
+        'id':'6',
+        'program':'NIRF 2024 Engineering',
+        'pdf':'https://drive.google.com/file/d/1tclI4_ZHeJFalkcJ6FYsNJYDSfqlqt_O/view?usp=sharing'
+    },
         {
             'id':'1',
             'program':'NIRF Innovation Rank',
@@ -18,5 +28,6 @@ export const nirf=[
             'id':'4',
             'program':'NIRF-2023',
             'pdf':'https://drive.google.com/file/d/1Bk1ZeYkZNCqtrINlxjpoSNq4EL3y9Nvd/view?usp=sharing'
-        }
+        },
+        
     ]
