@@ -66,7 +66,7 @@ const top_nav_paths = [
       { path: "/iste", link: "ISTE" },
       { path: "/sih", link: "SIH" },
       { path: "/clubs", link: "Clubs" },
-      { path: "/under", link: "Sports" },
+      { path: "/sports", link: "Sports" },
       { path: "/nss", link: "NSS" },
       { path: "/ncc", link: "NCC" },
       { path: "/yrc", link: "YRC" },
@@ -299,13 +299,13 @@ const bottom_nav_paths = [
   },
 ];
 const login_nav_paths = [
-  {
-    id: "20",
-    type: "4",
-    title: "",
-    basepath: "/dashboard",
-    links: [],
-  },
+  // {
+  //   id: "20",
+  //   type: "4",
+  //   title: "",
+  //   basepath: "/dashboard",
+  //   links: [],
+  // },
 ];
 
 export { top_nav_paths, bottom_nav_paths, hidden_nav_paths, login_nav_paths };

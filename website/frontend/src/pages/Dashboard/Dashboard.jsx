@@ -4,7 +4,7 @@ import axios from "axios";
 import "./Dashboard.css";
 import { Progressbar, Underline } from "../../widgets";
 import { Table } from "../../components";
-import { cse_sub } from "../../constants/dashboard";
+import { subjects } from "../../constants/dashboard";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
@@ -56,8 +56,9 @@ const Dashboard = () => {
         regno: regno,
         dept:dept
       })
+      const dept_sub=dept+"_subs"
       res_pub.data.map((item) => {
-        item.subjectname = cse_sub[item.subcode].subname;
+        item.subjectname = subjects[dept_sub][item.subcode].subname;
         return item; // Don't forget to return the modified item
       });
       setSem(res_pub.data[0].sem)
@@ -76,8 +77,10 @@ const Dashboard = () => {
         dept:dept,
         sem:sem
       })
+      console.log(all_res.data)
+      const dept_sub=dept+"_subs"
       all_res.data.map((item)=>{
-        item.subjectname=cse_sub[item.subcode].subname;
+        item.subjectname=subjects[dept_sub][item.subcode].subname;
         return item
       })
       setResults(all_res.data)
@@ -93,9 +96,8 @@ const Dashboard = () => {
         dept:dept
       })
       let list=[]
-      for(let i=sems.data.min;i<=sems.data.max;i++){
-        list.push(i)
-      }
+      sems.data.map((item)=>list.push(item.sem))
+      list.sort((a, b) => b - a)
       setSem_list(list)
     } catch (error) {
       console.error(error)
