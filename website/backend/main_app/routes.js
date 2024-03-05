@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const {login,verifyUser,logout,reset}=require("./auth.js")
+const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP}=require("./otp.js")
 const {dashboard}=require("./protected_routes.js")
 const {res_publish, res_result,get_sem_list}=require("./results.js")
@@ -11,6 +11,8 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 router.post('/api/login',login)
+
+router.get('/api/login_verification',login_verify)
 
 router.get('/api/logout',verifyUser,logout)
 

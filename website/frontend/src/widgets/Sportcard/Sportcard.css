@@ -1,0 +1,47 @@
+.sport_card_frame {
+  height: 374px;
+  width: 280px;
+  border-radius: 50px;
+  border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  18px 18px 36px #bebebe,
+             -18px -18px 36px #ffffff;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sport_card_topsec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sport_card_team_head{
+    font-size: 26px;
+    color: #01134d;
+}
+
+.sport_card_img_holder {
+  width: 100%;
+}
+
+.sport_card_img {
+  width: 100%;
+  height: auto;
+}
+
+.sport_card_point_sec{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:500px){
+    .sport_card_frame {
+        height: 367px;
+        width: 275px;
+    }
+}
