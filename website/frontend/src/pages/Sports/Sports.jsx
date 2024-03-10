@@ -40,7 +40,7 @@ const Sports = () => {
 
         <p className="sports_top_head">ACMARA RIVALRY'24</p>
         <p className="sports_head">Team Standings</p>
-        <p className="sports_notification"></p>
+        <p className="sports_notification">After Men's Hockey matches.</p>
 
         <div className="sports_cards_holder">
           {sport_cards.map((team) => {
@@ -50,12 +50,17 @@ const Sports = () => {
                 img={team.img}
                 head={team.head}
                 points={team.points}
+                wins={team.wins}
               />
             );
           })}
         </div>
 
-        <p className="sports_head sports_page_anamoly">Sports Meet Games</p>
+        <a className="sports_insta_link" href="https://www.instagram.com/actech_sports/">
+          <p className="sports_insta_desc">For faster updates, follow our instagram page here!</p>
+        </a>
+
+        <p className="sports_head sports_page_anamoly">Sports Meet Schedule</p>
 
         <Events events={sports_meet_2k24_schedule} />
 

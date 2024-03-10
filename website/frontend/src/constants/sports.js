@@ -40,32 +40,12 @@ const sportstime = [
   }
 ]
 
-const sport_cards=[
-    {
-        id:4,
-        img: typhonz,
-        head:"Typhonz",
-        points:0
-    },
-    {
-        id:3,
-        img: ignatz,
-        head:"Ignatz",
-        points:0
-    },
-    {
-        id:2,
-        img: rising,
-        head:"Rising Phoenix",
-        points:0
-    },
-    {
-        id:1,
-        img: akkadians,
-        head:"Akkadians",
-        points:0
-    },
-]
+const akkadians_wins={
+    winners:[],
+    runners:[
+        "Women's Badminton"
+    ]
+}
 
 const sportslist = [
   {
@@ -96,60 +76,6 @@ const sportsmission =[
 
 
 const sports_meet_2k24_schedule=[
-    {
-        'id':'1',
-        'date':'MAR 05 2024',
-        'title':"Ball Badminton (Men)",
-        'time':'06:30 am',
-        'venue':'Ball Badminton Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
-        'id':'2',
-        'date':'MAR 05 2024',
-        'title':"Badminton (Women)",
-        'time':'06:30 am',
-        'venue':'Indoor Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
-        'id':'3',
-        'date':'MAR 06 2024',
-        'title':"Ball Badminton (Women)",
-        'time':'06:30 am',
-        'venue':'Ball Badminton Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
-        'id':'4',
-        'date':'MAR 08 2024',
-        'title':"Basketball (Men)",
-        'time':'06:30 am',
-        'venue':'Basketball Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
-        'id':'5',
-        'date':'MAR 09 2024',
-        'title':"Badminton (Men)",
-        'time':'06:30 am',
-        'venue':'Indoor Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
-        'id':'6',
-        'date':'MAR 09 2024',
-        'title':"Hockey (Men)",
-        'time':'06:30 am',
-        'venue':'Playground',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
     {
         'id':'7',
         'date':'MAR 10 2024',
@@ -249,8 +175,122 @@ const sports_meet_2k24_schedule=[
         'details':'Witness ACMARA RIVALRY\'24',
         'status':'due'
     },
+    {
+        'id':'1',
+        'date':'MAR 05 2024',
+        'title':"Ball Badminton (Men)",
+        'time':'06:30 am',
+        'venue':'Ball Badminton Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
+    {
+        'id':'2',
+        'date':'MAR 05 2024',
+        'title':"Badminton (Women)",
+        'time':'06:30 am',
+        'venue':'Indoor Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
+    {
+        'id':'3',
+        'date':'MAR 06 2024',
+        'title':"Ball Badminton (Women)",
+        'time':'06:30 am',
+        'venue':'Ball Badminton Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
+    {
+        'id':'4',
+        'date':'MAR 08 2024',
+        'title':"Basketball (Men)",
+        'time':'06:30 am',
+        'venue':'Basketball Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
+    {
+        'id':'5',
+        'date':'MAR 09 2024',
+        'title':"Badminton (Men)",
+        'time':'06:30 am',
+        'venue':'Indoor Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
+    {
+        'id':'6',
+        'date':'MAR 09 2024',
+        'title':"Hockey (Men)",
+        'time':'06:30 am',
+        'venue':'Playground',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
     
 ]
 
+const sport_cards=[
+    {
+        id:4,
+        img: typhonz,
+        head:"Typhonz",
+        points:30,
+        wins:{
+            winners:[
+                "Men's Ball Badminton",
+                "Men's Basketball"
+            ],
+            runners:[
+                "Men's Badminton",
+                "Men's Hockey"
+            ]
+        }
+    },
+    {
+        id:3,
+        img: ignatz,
+        head:"Ignatz",
+        points:45,
+        wins:{
+            winners:[
+                "Women's Badminton",
+                "Women's Ball Badminton",
+                "Men's Badminton",
+                "Men's Hockey"
+            ],
+            runners:[
+                "Men's Ball Badminton"
+            ]
+        }
+    },
+    {
+        id:2,
+        img: rising,
+        head:"Rising Phoenix",
+        points:10,
+        wins:{
+            // winners:[],
+            runners:[
+                "Women's Ball Badminton",
+                "Men's Basketball"
+            ]
+        }
+    },
+    {
+        id:1,
+        img: akkadians,
+        head:"Akkadians",
+        points:5,
+        wins:{
+            // winners:[],
+            runners:[
+                "Women's Badminton"
+            ]
+        }
+    },
+]
 
-export { sport_cards,sports_slideshow,sportstime,sportslist,sportsvision,sportsmission,sports_meet_2k24_schedule}
+export {sport_cards,sports_slideshow,sportstime,sportslist,sportsvision,sportsmission,sports_meet_2k24_schedule}
