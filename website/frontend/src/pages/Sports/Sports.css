@@ -35,6 +35,20 @@
   margin-bottom: -40px;
 }
 
+.sports_insta_link{
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.sports_insta_desc{
+  color: #01134d;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 18px
+}
+
 @media(max-width:500px){
   .sports_top_head{
     font-size: 28px;
