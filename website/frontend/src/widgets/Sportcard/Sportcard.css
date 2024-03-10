@@ -1,4 +1,5 @@
 .sport_card_frame {
+  text-decoration: none;
   height: 374px;
   width: 280px;
   border-radius: 50px;
@@ -12,6 +13,25 @@ box-shadow:  18px 18px 36px #bebebe,
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.sport_content{
+  height: 80%;
+  display: grid;
+  place-items: center;
+}
+
+.sport_content_head{
+  color: #01134d;
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+
+.sports_win_list_item{
+  margin: 10px 0;
+  color: bl;
 }
 
 .sport_card_topsec{
