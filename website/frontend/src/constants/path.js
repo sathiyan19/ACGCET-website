@@ -66,7 +66,7 @@ const top_nav_paths = [
       { path: "/iste", link: "ISTE" },
       { path: "/sih", link: "SIH" },
       { path: "/clubs", link: "Clubs" },
-      { path: "/under", link: "Sports" },
+      { path: "/sports", link: "Sports" },
       { path: "/nss", link: "NSS" },
       { path: "/ncc", link: "NCC" },
       { path: "/yrc", link: "YRC" },

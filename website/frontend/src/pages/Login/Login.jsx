@@ -102,7 +102,18 @@ const Login = () => {
 //   // recaptcha
   const handleToken = (retoken) => {
     setreToken(retoken)
-}
+  }
+
+  useEffect(()=>{
+    console.log("started!")
+    axios.get("http://localhost:5002/api/login_verification")
+    .then((res)=>{
+      console.log(res)
+      if(res.data.token_status==="okay"){
+        navigate("/dashboard")
+      }
+    })
+  },[])
 
   return (
     <div className="login-pagef">
