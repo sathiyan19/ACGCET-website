@@ -154,21 +154,21 @@ const eng_fac_profiles = [
   {
     id: "1",
     cover: ecover,
-    dp: sachin,
-    name: "M.Sachin Sivakumar",
-    Designation: "Assistant Professor",
-    mailid: "sachinsivakumar94@gmail.com",
-    pdf: "https://drive.google.com/file/d/1v-8N4EkjLwNnrniRh8eSNLfoy0VpEDLw/view?usp=drive_link",
+    dp: "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/rajina.webp",
+    name: "Rajina Banu A",
+    Designation: "Assistant Professor (AD-HOC)",
+    mailid: "a.rajinabanu@gmail.com",
+    pdf: "https://drive.google.com/file/d/1mVVV7yFO3o4W4Y73DDliTlyIwCajkb_5/view?usp=drive_link",
   },
-  {
-    id: "2",
-    cover: ecover,
-    dp: gayathri,
-    name: "M.Gayathri",
-    Designation: "Associate Professor (AD-HOC)",
-    mailid: " gaya3muthusamy@gmail.com",
-    pdf: "https://drive.google.com/file/d/1qhwBuJzeyEwU2_eTYUpFKFLyU8kO6Syk/view?usp=drive_link",
-  },
+  // {
+  //   id: "2",
+  //   cover: ecover,
+  //   dp: "",
+  //   name: "A Rajamani",
+  //   Designation: "Assistant Professor",
+  //   mailid: "rajamani9428@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1jASz1IzrRwjTpw9zV8A1i61ffdqhKWqv/view?usp=drive_link",
+  // },
 ];
 
 const mat_fac_profiles = [
