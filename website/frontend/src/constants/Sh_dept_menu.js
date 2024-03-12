@@ -38,6 +38,8 @@ import dpf from "../assets/pictures/girl.webp";
 const ecover = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/eng+cover.webp";
 const englab = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/englab.webp";
 const rajina = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/rajina.webp"
+const rajamani = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/rajamani.webp";
+
 
 // maths
 const mcover ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/matcover.webp";
@@ -55,6 +57,7 @@ const loki = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/sci
 const thenraj = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/thenraj.webp";
 const rajaperumal = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/rajaperuma.webp"; 
 const vijayalakshmi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/vijayalakshmi.webp";
+const lakshmi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/lakshmi_narayanan.webp";
 
 // physics
 const pcover = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/phy+cover.webp";
@@ -189,21 +192,21 @@ const eng_fac_profiles = [
   {
     id: "1",
     cover: ecover,
+    dp: rajamani,
+    name: "A Rajamani",
+    Designation: "Assistant Professor",
+    mailid: "rajamani9428@gmail.com",
+    pdf: "https://drive.google.com/file/d/1jASz1IzrRwjTpw9zV8A1i61ffdqhKWqv/view?usp=drive_link",
+  },
+  {
+    id: "2",
+    cover: ecover,
     dp: rajina,
     name: "Rajina Banu A",
     Designation: "Assistant Professor (AD-HOC)",
     mailid: "a.rajinabanu@gmail.com",
     pdf: "https://drive.google.com/file/d/1mVVV7yFO3o4W4Y73DDliTlyIwCajkb_5/view?usp=drive_link",
-  },
-  // {
-  //   id: "2",
-  //   cover: ecover,
-  //   dp: "",
-  //   name: "A Rajamani",
-  //   Designation: "Assistant Professor",
-  //   mailid: "rajamani9428@gmail.com",
-  //   pdf: "https://drive.google.com/file/d/1jASz1IzrRwjTpw9zV8A1i61ffdqhKWqv/view?usp=drive_link",
-  // },
+  }
 ];
 
 const mat_fac_profiles = [
@@ -287,7 +290,7 @@ const chemi_fac_profiles = [
     cover: ccover,
     dp: thenraj,
     name: "Dr.M.Thenraj",
-    Designation: "Associate Professor",
+    Designation: "Assistant Professor",
     mailid: "mtr.iisc@gmail.com",
     pdf: "https://drive.google.com/file/d/1r-WWKM3kXRz6NNzafirdn9LoZHHF7CYQ/view?usp=drive_link",
   },
@@ -296,7 +299,7 @@ const chemi_fac_profiles = [
     cover: ccover,
     dp: rajaperumal,
     name: "M.Rajaperumal",
-    Designation: "Associate Professor",
+    Designation: "Assistant Professor",
     mailid: "rajaperumalsjc@gmail.com",
     pdf: "https://drive.google.com/file/d/1jQ0lSaFxDO5pTyFQJT0KGQg7P7Zgx_fu/view?usp=drive_link",
   },
@@ -305,7 +308,7 @@ const chemi_fac_profiles = [
     cover: ccover,
     dp: vijayalakshmi,
     name: "K.Vijayalakshmi",
-    Designation: "Associate Professor",
+    Designation: "Assistant Professor(Adhoc)(On contract basis)",
     mailid: "vijayalakshmi2280@gmail.com",
     pdf: "https://drive.google.com/file/d/1qcVYRilzusVWm9GLx2keEPOQa4lAagnM/view?usp=drive_link",
   },
@@ -324,7 +327,7 @@ const chemi_sup_profiles = [
   {
     id: "2",
     cover: ccover,
-    dp: dpm,
+    dp: lakshmi,
     name: "K.Lakshmi Narayanan",
     Designation: "Cleaner",
     mailid: "klakshminarayanan121@gmail.com",
