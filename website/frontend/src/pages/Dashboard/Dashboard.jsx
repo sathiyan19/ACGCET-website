@@ -17,7 +17,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5002/api/dashboard")
+      .get("/backend/dashboard")
       .then((res) => {
         if (res.data.Status === "Success") {
           if(res.data.stud_details.regno==='91762115000'){
@@ -52,7 +52,7 @@ const Dashboard = () => {
 
   const fetch_publish_results=async (regno,dept)=>{
     try {
-      const res_pub=await axios.post("http://localhost:5002/api/respublish",{
+      const res_pub=await axios.post("/backend/respublish",{
         regno: regno,
         dept:dept
       })
@@ -72,7 +72,7 @@ const Dashboard = () => {
     try {
       setSem(sem); 
       setSem_opt_flag(false);
-      const all_res=await axios.post("http://localhost:5002/api/resresult",{
+      const all_res=await axios.post("/backend/resresult",{
         regno: regno,
         dept:dept,
         sem:sem
@@ -91,7 +91,7 @@ const Dashboard = () => {
 
   const get_sem_list=async (regno,dept)=>{
     try {
-      const sems=await axios.post("http://localhost:5002/api/getsemlist",{
+      const sems=await axios.post("/backend/getsemlist",{
         regno:regno,
         dept:dept
       })

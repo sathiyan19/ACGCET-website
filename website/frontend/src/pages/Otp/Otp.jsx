@@ -36,7 +36,7 @@ const Otp = () => {
         setOtp_error("");
         try{
           setLoading(true)
-          const response=await axios.post("http://localhost:5002/api/validate-otp",{mailid,otp});
+          const response=await axios.post("/backend/validate-otp",{mailid,otp});
           if(response.data.success){
             console.log('Otp is valid');
             navigate('/password-create',{state:{regno:regno}})
