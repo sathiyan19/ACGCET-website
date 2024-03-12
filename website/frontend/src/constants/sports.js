@@ -77,24 +77,6 @@ const sportsmission =[
 
 const sports_meet_2k24_schedule=[
     {
-        'id':'10',
-        'date':'MAR 12 2024',
-        'title':"Volleyball (Women)",
-        'time':'06:30 am',
-        'venue':'Volleyball Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
-        'id':'13',
-        'date':'MAR 12 2024',
-        'title':"Kho-Kho (Men)",
-        'time':'06:30 am',
-        'venue':'Kho-Kho Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
         'id':'11',
         'date':'MAR 13 2024',
         'title':"Handball (Men)",
@@ -228,6 +210,24 @@ const sports_meet_2k24_schedule=[
         'venue':'Basketball Court',
         'details':'Witness ACMARA RIVALRY\'24',
         // 'status':'due'
+    },
+    {
+        'id':'10',
+        'date':'MAR 12 2024',
+        'title':"Volleyball (Women)",
+        'time':'06:30 am',
+        'venue':'Volleyball Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
+    {
+        'id':'13',
+        'date':'MAR 12 2024',
+        'title':"Kho-Kho (Men)",
+        'time':'06:30 am',
+        'venue':'Kho-Kho Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
     }
 ]
 
@@ -236,7 +236,7 @@ const sport_cards=[
         id:4,
         img: typhonz,
         head:"Typhonz",
-        points:40,
+        points:50,
         wins:{
             winners:[
                 "Men's Ball Badminton",
@@ -245,7 +245,9 @@ const sport_cards=[
             ],
             runners:[
                 "Men's Badminton",
-                "Men's Hockey"
+                "Men's Hockey",
+                "Women's Volley Ball",
+                "Men's Kho-Kho"
             ]
         }
     },
@@ -253,7 +255,7 @@ const sport_cards=[
         id:3,
         img: ignatz,
         head:"Ignatz",
-        points:65,
+        points:85,
         wins:{
             winners:[
                 "Women's Badminton",
@@ -261,7 +263,9 @@ const sport_cards=[
                 "Men's Badminton",
                 "Men's Hockey",
                 "Men's Volley Ball",
-                "Women's Basket Ball"
+                "Women's Basket Ball",
+                "Women's Volley Ball",
+                "Men's Kho-Kho"
             ],
             runners:[
                 "Men's Ball Badminton"
