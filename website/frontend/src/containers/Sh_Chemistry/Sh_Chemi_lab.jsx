@@ -6,7 +6,8 @@ import { Sh_dept_fmenu } from '../../constants/Sh_dept_menu';
 import { Radial_menu } from "../../components";
 
 import { GrTest } from "react-icons/gr";
-import chemilab from "../../assets/pictures/chemilab.webp"
+// import chemilab from "../../assets/pictures/chemilab.webp"
+const chemilab ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/chemilab.webp"
 
 const Sh_Chemi_lab = () => {
   return (

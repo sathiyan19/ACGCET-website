@@ -9,7 +9,7 @@ import {Sh_dept_fmenu,chemi_mission,chemi_vision} from '../../constants/Sh_dept_
 
 import { GrTest } from "react-icons/gr";
 
-const chem="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/chem.webp"
+const chem="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/chem.webp"
 
 
 const Sh_Chemistry = () => {
