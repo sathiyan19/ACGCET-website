@@ -77,33 +77,6 @@ const sportsmission =[
 
 const sports_meet_2k24_schedule=[
     {
-        'id':'7',
-        'date':'MAR 10 2024',
-        'title':"Cricket (Men)",
-        'time':'06:30 am',
-        'venue':'Playground',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
-        'id':'8',
-        'date':'MAR 11 2024',
-        'title':"Volleyball (Men)",
-        'time':'06:30 am',
-        'venue':'Volleyball Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
-        'id':'9',
-        'date':'MAR 11 2024',
-        'title':"Basketball (Women)",
-        'time':'06:30 am',
-        'venue':'Basketball Court',
-        'details':'Witness ACMARA RIVALRY\'24',
-        'status':'due'
-    },
-    {
         'id':'10',
         'date':'MAR 12 2024',
         'title':"Volleyball (Women)",
@@ -229,7 +202,33 @@ const sports_meet_2k24_schedule=[
         'details':'Witness ACMARA RIVALRY\'24',
         // 'status':'due'
     },
-    
+    {
+        'id':'7',
+        'date':'MAR 10 2024',
+        'title':"Cricket (Men)",
+        'time':'06:30 am',
+        'venue':'Playground',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
+    {
+        'id':'8',
+        'date':'MAR 11 2024',
+        'title':"Volleyball (Men)",
+        'time':'06:30 am',
+        'venue':'Volleyball Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    },
+    {
+        'id':'9',
+        'date':'MAR 11 2024',
+        'title':"Basketball (Women)",
+        'time':'06:30 am',
+        'venue':'Basketball Court',
+        'details':'Witness ACMARA RIVALRY\'24',
+        // 'status':'due'
+    }
 ]
 
 const sport_cards=[
@@ -237,11 +236,12 @@ const sport_cards=[
         id:4,
         img: typhonz,
         head:"Typhonz",
-        points:30,
+        points:40,
         wins:{
             winners:[
                 "Men's Ball Badminton",
-                "Men's Basketball"
+                "Men's Basketball",
+                "Men's Cricket"
             ],
             runners:[
                 "Men's Badminton",
@@ -253,13 +253,15 @@ const sport_cards=[
         id:3,
         img: ignatz,
         head:"Ignatz",
-        points:45,
+        points:65,
         wins:{
             winners:[
                 "Women's Badminton",
                 "Women's Ball Badminton",
                 "Men's Badminton",
-                "Men's Hockey"
+                "Men's Hockey",
+                "Men's Volley Ball",
+                "Women's Basket Ball"
             ],
             runners:[
                 "Men's Ball Badminton"
@@ -270,12 +272,14 @@ const sport_cards=[
         id:2,
         img: rising,
         head:"Rising Phoenix",
-        points:10,
+        points:20,
         wins:{
             // winners:[],
             runners:[
                 "Women's Ball Badminton",
-                "Men's Basketball"
+                "Men's Basketball",
+                "Men's Volley Ball",
+                "Women's Basket Ball"
             ]
         }
     },
@@ -283,11 +287,12 @@ const sport_cards=[
         id:1,
         img: akkadians,
         head:"Akkadians",
-        points:5,
+        points:10,
         wins:{
             // winners:[],
             runners:[
-                "Women's Badminton"
+                "Women's Badminton",
+                "Men's Cricket"
             ]
         }
     },

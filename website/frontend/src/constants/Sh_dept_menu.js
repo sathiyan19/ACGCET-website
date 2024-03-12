@@ -2,35 +2,70 @@ import cover from "../assets/pictures/microchip.webp";
 import dpm from "../assets/pictures/boy.webp";
 import dpf from "../assets/pictures/girl.webp";
 
-import gayathri from "../assets/pictures/eng_dept/Gayathri.webp";
-import sachin from "../assets/pictures/eng_dept/Sachin.webp";
-import ecover from "../assets/pictures/eng_dept/eng cover.webp";
+// import gayathri from "../assets/pictures/eng_dept/Gayathri.webp";
+// import sachin from "../assets/pictures/eng_dept/Sachin.webp";
+// import ecover from "../assets/pictures/eng_dept/eng cover.webp";
 
-import anbukarasi from "../assets/pictures/maths_dept/anbukarasi.webp";
-import anitha from "../assets/pictures/maths_dept/anitha.webp";
-import mahalakshmi from "../assets/pictures/maths_dept/mahalakshmio.webp";
-import reegan from "../assets/pictures/maths_dept/reegan.webp";
-import vasanthi from "../assets/pictures/maths_dept/vasanthi.webp";
-import yamuna from "../assets/pictures/maths_dept/yamuna.webp";
-import balasundar from "../assets/pictures/nss/s1.webp";
-import mcover from "../assets/pictures/maths_dept/matcover.webp";
+// import anbukarasi from "../assets/pictures/maths_dept/anbukarasi.webp";
+// import anitha from "../assets/pictures/maths_dept/anitha.webp";
+// import mahalakshmi from "../assets/pictures/maths_dept/mahalakshmio.webp";
+// import reegan from "../assets/pictures/maths_dept/reegan.webp";
+// import vasanthi from "../assets/pictures/maths_dept/vasanthi.webp";
+// import yamuna from "../assets/pictures/maths_dept/yamuna.webp";
+// import balasundar from "../assets/pictures/nss/s1.webp";
+// import mcover from "../assets/pictures/maths_dept/matcover.webp";
 
-import loki from "../assets/pictures/ncc/loki.webp";
-import rajaperumal from "../assets/pictures/chemi_dept/rajaperuma.webp";
-import thenraj from "../assets/pictures/chemi_dept/thenraj.webp";
-import vijayalakshmi from "../assets/pictures/chemi_dept/vijayalakshmi.webp";
-import ccover from "../assets/pictures/chemi_dept/chemi cover.webp";
 
-import cynthia from "../assets/pictures/phy_dept/cynthia (1).webp";
-import mariammal from "../assets/pictures/phy_dept/mariammal.webp";
-import parthiban from "../assets/pictures/phy_dept/parthiban.webp";
-import ponmudi from "../assets/pictures/phy_dept/ponmudi.webp";
-import sivaganesh from "../assets/pictures/phy_dept/sivaganesh.webp";
-import venkatrajan from "../assets/pictures/phy_dept/venkatrajan.webp";
-import vijayaragavan from "../assets/pictures/phy_dept/vijayaraghavan.webp";
-import pcover from "../assets/pictures/phy_dept/phy cover.webp";
+// import loki from "../assets/pictures/ncc/loki.webp";
+// import rajaperumal from "../assets/pictures/chemi_dept/rajaperuma.webp";
+// import thenraj from "../assets/pictures/chemi_dept/thenraj.webp";
+// import vijayalakshmi from "../assets/pictures/chemi_dept/vijayalakshmi.webp";
+// import ccover from "../assets/pictures/chemi_dept/chemi cover.webp";
 
-import englab from "../assets/pictures/englab.webp";
+// import cynthia from "../assets/pictures/phy_dept/cynthia (1).webp";
+// import mariammal from "../assets/pictures/phy_dept/mariammal.webp";
+// import parthiban from "../assets/pictures/phy_dept/parthiban.webp";
+// import ponmudi from "../assets/pictures/phy_dept/ponmudi.webp";
+// import sivaganesh from "../assets/pictures/phy_dept/sivaganesh.webp";
+// import venkatrajan from "../assets/pictures/phy_dept/venkatrajan.webp";
+// import vijayaragavan from "../assets/pictures/phy_dept/vijayaraghavan.webp";
+// import pcover from "../assets/pictures/phy_dept/phy cover.webp";
+
+
+// import englab from "../assets/pictures/englab.webp";
+
+// english
+const ecover = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/eng+cover.webp";
+const englab = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/englab.webp";
+const rajina = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/rajina.webp"
+
+// maths
+const mcover ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/matcover.webp";
+const anbukarasi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/anbukarasi.webp";
+const anitha = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/anitha.webp";
+const mahalakshmi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/mahalakshmi.webp";
+const reegan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/reegan.webp";
+const vasanthi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/vasanthi.webp";
+const yamuna = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/yamuna.webp";
+const balasundar = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Maths/Mat_faculties/balasundar.webp";
+
+// chemistry
+const ccover = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/chemi+cover.webp";
+const loki = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/loki.webp";
+const thenraj = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/thenraj.webp";
+const rajaperumal = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/rajaperuma.webp"; 
+const vijayalakshmi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/Chem_faculties/vijayalakshmi.webp";
+
+// physics
+const pcover = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/phy+cover.webp";
+const cynthia = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/cynthia.webp";
+const mariammal = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/mariammal.webp";
+const parthiban = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/parthiban.webp";
+const ponmudi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/ponmudi.webp";
+const sivaganesh = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/sivaganesh.webp";
+const venkatrajan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/venkatrajan.webp";
+const vijayaragavan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/vijayaraghavan.webp";
+
 
 const Sh_dept_fmenu = [
   {
@@ -154,21 +189,21 @@ const eng_fac_profiles = [
   {
     id: "1",
     cover: ecover,
-    dp: sachin,
-    name: "M.Sachin Sivakumar",
-    Designation: "Assistant Professor",
-    mailid: "sachinsivakumar94@gmail.com",
-    pdf: "https://drive.google.com/file/d/1v-8N4EkjLwNnrniRh8eSNLfoy0VpEDLw/view?usp=drive_link",
+    dp: rajina,
+    name: "Rajina Banu A",
+    Designation: "Assistant Professor (AD-HOC)",
+    mailid: "a.rajinabanu@gmail.com",
+    pdf: "https://drive.google.com/file/d/1mVVV7yFO3o4W4Y73DDliTlyIwCajkb_5/view?usp=drive_link",
   },
-  {
-    id: "2",
-    cover: ecover,
-    dp: gayathri,
-    name: "M.Gayathri",
-    Designation: "Associate Professor (AD-HOC)",
-    mailid: " gaya3muthusamy@gmail.com",
-    pdf: "https://drive.google.com/file/d/1qhwBuJzeyEwU2_eTYUpFKFLyU8kO6Syk/view?usp=drive_link",
-  },
+  // {
+  //   id: "2",
+  //   cover: ecover,
+  //   dp: "",
+  //   name: "A Rajamani",
+  //   Designation: "Assistant Professor",
+  //   mailid: "rajamani9428@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1jASz1IzrRwjTpw9zV8A1i61ffdqhKWqv/view?usp=drive_link",
+  // },
 ];
 
 const mat_fac_profiles = [
