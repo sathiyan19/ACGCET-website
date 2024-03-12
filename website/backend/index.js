@@ -10,7 +10,7 @@ app_main.use(body_parser.json());
 
 //--------------changes-----------------
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: '*',
     credentials: true,
   };
 app_main.use(cors(corsOptions))

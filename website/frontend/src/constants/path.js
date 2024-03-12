@@ -302,7 +302,7 @@ const login_nav_paths = [
   {
     id: "20",
     type: "4",
-    title: "",
+    title: "Login",
     basepath: "/dashboard",
     links: [],
   },
