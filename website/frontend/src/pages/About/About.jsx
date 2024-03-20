@@ -43,7 +43,7 @@ const About = () => {
       />
 
       <div className="why_acgcet sect" id="why_acgcet">
-        <div className="div_heading">Wh ACGCET?</div>
+        <div className="div_heading">Why ACGCET?</div>
 
         <div className="div_content">
           <div className="flex_1">
