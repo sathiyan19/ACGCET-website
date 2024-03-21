@@ -1,4 +1,6 @@
 const nodemailer = require("nodemailer");
+const pool=require("./db.js");
+const {find_dept}=require('./support_functions.js');
 
 let otpData = {};
 
@@ -10,10 +12,30 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+let email;
 // app.post('/send-otp', cors(), async(req, res) => {
 const sendOTP = async (req, res) => {
-  console.log("Request received:", req.body);
-  const { email } = req.body;
+  try{
+    const username=req.body.regno;
+    console.log(username);
+    let code;
+          if (username.length === 7) {
+            code = username.substring(2, 4);
+          } else if (username.length === 11) {
+            code = username.substring(6, 8);
+          }
+          let dept=find_dept(code)+"_stud_details";
+  // console.log("Request received:", req.body);
+  // const { email } = req.body;
+  const [[db_email]]=await pool.query(
+    `select mailid
+    from ??
+    where regno=?
+    `,
+    [dept,username]
+  );
+  email=db_email.mailid;
+  console.log(email);
   const otp = generateOTP();
   console.log("Generated OTP:", otp);
   otpData[email] = otp;
@@ -39,21 +61,25 @@ const sendOTP = async (req, res) => {
       }
     }
   );
+}catch(error){
+  console.log(error);
+}
 };
 // );
 
 // app.post('/validate-otp', cors(), async (req, res) => {
-const validateOTP = async (req, res) => {
-  const { email, otp } = req.body;
-  console.log("email:", email, "otp:", otp);
-  if (otpData.hasOwnProperty(email) && otpData[email] === otp) {
-    res.status(200).json({ success: true, message: "valid otp" });
-    console.log("Otp is validated");
-  } else {
-    res.status(500).json({ success: false, error: "Invalid OTP" });
-    console.log("otp is not valid");
-  }
-};
+  const validateOTP = async (req, res) => {
+    console.log(email);
+    const { otp } = req.body;
+    console.log("email:", email, "otp:", otp);
+    if (otpData.hasOwnProperty(email) && otpData[email] === otp) {
+      res.status(200).json({ success: true, message: "valid otp" });
+      console.log("Otp is validated");
+    } else {
+      res.status(500).json({ success: false, error: "Invalid OTP" });
+      console.log("otp is not valid");
+    }
+  };
 //   );
 
 function generateOTP() {

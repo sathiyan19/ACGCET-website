@@ -3,13 +3,16 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Dashboard.css";
 import { Progressbar, Underline } from "../../widgets";
+import { Table } from "../../components";
+import { subjects } from "../../constants/dashboard";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
-  const [auth, setAuth] = useState(false);
-  const [message, setMessage] = useState("");
-  const [reg, setReg] = useState("");
+  const [sem_opt_flag, setSem_opt_flag] = useState(false);
   const [stud_details, setStud_details] = useState({});
+  const [results,setResults]=useState([]);
+  const [sem_list,setSem_list]=useState([]);
+  const [sem,setSem]=useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -17,18 +20,25 @@ const Dashboard = () => {
       .get("http://localhost:5002/api/dashboard")
       .then((res) => {
         if (res.data.Status === "Success") {
-          setAuth(true);
-          setReg(res.data.stud_details.regno);
+          if(res.data.stud_details.regno==='91762115000'){
+            navigate("/admin-panel")
+          }
           setStud_details(res.data.stud_details);
-          // console.log(stud_details);
         } else {
-          setAuth(false);
-          setMessage(res.data.Error);
           navigate("/login-page");
         }
       })
       .catch((err) => console.log(err));
   }, [navigate]);
+
+  useEffect(()=>{
+    const handleRadialdis = () => {
+      if(window.innerWidth>800){
+        setmenu_open(false)
+      }
+    };
+    window.addEventListener('resize', handleRadialdis);
+  },[]);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -39,6 +49,70 @@ const Dashboard = () => {
   const toggle_menu = () => {
     setmenu_open(!menu_open);
   };
+
+  const fetch_publish_results=async (regno,dept)=>{
+    try {
+      const res_pub=await axios.post("http://localhost:5002/api/respublish",{
+        regno: regno,
+        dept:dept
+      })
+      const dept_sub=dept+"_subs"
+      res_pub.data.map((item) => {
+        item.subjectname = subjects[dept_sub][item.subcode].subname;
+        return item; // Don't forget to return the modified item
+      });
+      setSem(res_pub.data[0].sem)
+      setResults(res_pub.data)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  const fetch_all_results=async (regno,dept,sem)=>{
+    try {
+      setSem(sem); 
+      setSem_opt_flag(false);
+      const all_res=await axios.post("http://localhost:5002/api/resresult",{
+        regno: regno,
+        dept:dept,
+        sem:sem
+      })
+      console.log(all_res.data)
+      const dept_sub=dept+"_subs"
+      all_res.data.map((item)=>{
+        item.subjectname=subjects[dept_sub][item.subcode].subname;
+        return item
+      })
+      setResults(all_res.data)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+
+  const get_sem_list=async (regno,dept)=>{
+    try {
+      const sems=await axios.post("http://localhost:5002/api/getsemlist",{
+        regno:regno,
+        dept:dept
+      })
+      let list=[]
+      sems.data.map((item)=>list.push(item.sem))
+      list.sort((a, b) => b - a)
+      setSem_list(list)
+    } catch (error) {
+      console.error(error)
+    }
+    // console.log(sems.data)
+  }
+
+  const column=[
+    // {field:'sno',header:"Sno"},
+    // {field:'sem',header:"sem"},
+    {field:'subcode',header:"subject code"},
+    {field:'subjectname',header:"Subject Name"},
+    {field:'grade',header:"Grade"},
+    {field:'result',header:"Result"},
+];
 
   return (
     <div>
@@ -59,7 +133,11 @@ const Dashboard = () => {
             className={`dash-side-nav-items ${
               activeTab === "result" ? "active" : ""
             }`}
-            onClick={() => handleTabClick("result")}
+            onClick={() => {
+              fetch_publish_results(stud_details.regno,stud_details.department)
+              get_sem_list(stud_details.regno,stud_details.department)
+              handleTabClick("result");
+          }}
           >
             Result
           </Link>
@@ -73,7 +151,7 @@ const Dashboard = () => {
           onClick={toggle_menu}
         ></div>
         <div className={`radial_bg1 ${menu_open ? "scaled1" : ""}`}>
-          <div className="dept_menu">
+          <div className="dept_menu1">
             <div className="dept_link_head1">MENU</div>
             <div className="dept_link_holder1">
               <Link
@@ -90,7 +168,10 @@ const Dashboard = () => {
                 className={`dept_links1 ${
                   activeTab === "result" ? "active1" : ""
                 }`}
-                onClick={() => handleTabClick("result")}
+                onClick={() => {
+                  fetch_publish_results(stud_details.regno,stud_details.department)
+                  handleTabClick("result");
+              }}
               >
                 Result
               </Link>
@@ -104,7 +185,7 @@ const Dashboard = () => {
               <Underline heading={"Profile Details"} />
               <div className="dash_detail_grid_holder">
                 <div className="trial_dash detail_grid detail_item_1 bgcolour_var_3">
-                  <div className="detail_body txcolour_var_3">
+                  <div className="detail_body txcolour_var_3 ">
                     {stud_details.studentname}
                   </div>
                   <div className="detail_head">Name</div>
@@ -179,6 +260,42 @@ const Dashboard = () => {
               {/* <div className="trial_dash">{reg}</div> */}
             </div>
           )}
+
+{/* result page */}
+          <div className="dash-result">
+            {activeTab === "result" &&(
+              <div>
+                <div className="dash-result-head">
+                  <Underline heading={"Result"}/>
+                  <div className="dash-personal">
+                    <div className="dash-res1">
+                    <p className="dash-personal1"><div className="dash-head">Name:</div> {stud_details.studentname}</p>
+                    <p className="dash-personal1"><div className="dash-head">Register number:</div>{stud_details.regno}</p>
+                    </div>
+                    <div className="dash-res2">
+                    <p className="dash-personal2"><div className="dash-head">Batch:</div>{stud_details.batch}</p>
+                    <p className="dash-personal2"><div className="dash-head">Department:</div>{stud_details.department}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="dash-result-table">
+                  <div className="dash-table-header">
+                    <div className="sem_options_holder">
+                      <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
+                        <div className="sem_input">Sem {sem}</div>
+                        <div className="fa fa fa-chevron-circle-down"></div>
+                      </div>
+                      <div className="sem_options">
+                        {sem_opt_flag && sem_list.map((item)=>(<div className="sem_dropdown" onMouseDown={(e)=>{fetch_all_results(stud_details.regno,stud_details.department,item)}}>Sem {item}</div>))}
+                      </div>
+                    </div>
+                    <div className="dash-result-table-head">Semester {sem}</div>
+                  </div>
+                  <Table data={results} columns={column}/>
+                </div>
+              </div>
+            )}
+          </div>
 
           <div className="logout_button">
             <a className="log_link" href="/logout">

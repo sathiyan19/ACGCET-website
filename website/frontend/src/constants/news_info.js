@@ -1,4 +1,4 @@
-
+import oracle from '../assets/pictures/news_img/oracle.webp'
 import ga from '../assets/pictures/news_img/ga.webp'
 import nlp from '../assets/pictures/news_img/nlp.webp'
 import stnd_day from '../assets/pictures/news_img/stnd_day.webp'
@@ -6,14 +6,16 @@ import sih from '../assets/pictures/news_img/sih.webp'
 import envision from '../assets/pictures/news_img/envision_2024.webp'
 
 export const news_info=[
+
     {
-        'id':'4',
-        'heading':"NLP For 3rd years",
-        'sub-head':"College's 3rd-year students benefited from 3-week NLP program sponsored by 1998 Alumni.",
-        'pic':nlp,
-        'content_1':'',
-        'content_2':"The 3rd year students of our college attended a program called the Neuro- Linguistic Programming for three weeks on weekends from August 18,2023 to September 2,2023. This program consisted six engaging sessions and is related to communication and personality development. Our Alumni of 1998 batch sponsored for this program. A set of 32 students attended the program which was referred to as the 'Pilot Batch'. The students were greatly benefited by this program and a big thanks to our Alumni for arranging such a productive program for the students."
+        'id':'9',
+        'heading':"Oracle's AI/ML Mastery Session",
+        'sub-head':'Oracle AI/ML Orientation Program: Navigating the Frontiers of Artificial Intelligence and Machine Learning',
+        'pic':oracle,
+        'content_1':'On January 27, 2024, Oracle, with a decade of expertise, conducted an immersive orientation program at our campus. The team from Oracle, Bangalore, led the session, delving into Artificial Intelligence and Machine Learning, providing hands-on practical sessions from 9:30 am to 6:00 pm. This firsthand experience allowed students to explore technology\'s forefront and gain insights from industry experts.',
+        'content_2':'The Oracle orientation program not only immersed our students in the intricacies of Artificial Intelligence and Machine Learning but also provided them with hands-on practical sessions. This groundbreaking initiative, steered by the 1999 batch alumni, served as a transformative platform for our students to gain invaluable exposure to cutting-edge technologies.This Program includes informative lectures on Java, Oracle databases, and offers valuable insights for career development, providing participants with a holistic learning experience.It went beyond theoretical concepts, allowing them to delve into real-world applications and fostering a deeper understanding of the dynamic landscape of technology. A seamless blend of industry expertise and interactive sessions, this program opened new horizons for career growth and technological prowess.'
     },
+   
     // {
     //     'id':'5',
     //     'heading':"EDC Coordinator Selection",
@@ -53,6 +55,15 @@ export const news_info=[
         'pic':stnd_day,
         'content_1':'Alagappa Chettiar Government College of Engineering and Technology, Sivaganga, hosts diverse events: writing, essay competitions, quizzes, debates, and nukkad natak. Winners eagerly await felicitation on World Standards Day in Madurai, a celebration of academic excellence and achievement.',
         'content_2':"A shared vision for a better world embodies the collective aspirations of individuals, communities, and nations to create a more equitable, sustainable, and harmonious global society. It is a beacon of hope that unites people across diverse backgrounds, inspiring collaboration and action. This vision encompasses ideals such as social justice, environmental stewardship, and peace, fostering a sense of responsibility to leave a lasting positive impact for future generations. It is a powerful force that drives humanity toward a brighter and more inclusive future."
+    },
+
+    {
+        'id':'4',
+        'heading':"NLP For 3rd years",
+        'sub-head':"College's 3rd-year students benefited from 3-week NLP program sponsored by 1998 Alumni.",
+        'pic':nlp,
+        'content_1':'',
+        'content_2':"The 3rd year students of our college attended a program called the Neuro- Linguistic Programming for three weeks on weekends from August 18,2023 to September 2,2023. This program consisted six engaging sessions and is related to communication and personality development. Our Alumni of 1998 batch sponsored for this program. A set of 32 students attended the program which was referred to as the 'Pilot Batch'. The students were greatly benefited by this program and a big thanks to our Alumni for arranging such a productive program for the students."
     },
     
 ]

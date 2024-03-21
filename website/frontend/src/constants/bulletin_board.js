@@ -1,4 +1,70 @@
 export const bulletin_info=[
+    // {
+    //     id:'17',
+    //     link:"https://drive.google.com/file/d/1_aHOLV5dNjT2yAjPmTETJ6xh83GbjILm/view?usp=sharing",
+    //     content:(
+    //         <span>
+    //             <span className="newContent">New</span> <span className="insideNewContent">Temporary Assistant Professor recruitment process update</span>
+    //         </span>
+    //     ),
+    // },
+    // {
+    //     id:'18',
+    //     link:"https://drive.google.com/file/d/17RX_8RPOO-iiaYEauYChQ4IWnT9BYude/view?usp=drive_link",
+    //     content:(
+    //         <span>
+    //             <span className="newContent">New</span> <span className="insideNewContent">Written & Interview - Notification of Temporary Assistant Professors</span>
+    //         </span>
+    //     ),
+    // },
+    {
+        id:'16',
+        link:"https://drive.google.com/file/d/1V9itpzM-S1GPo2UQy5DWkrazGMzFzOKg/view",
+        content:(
+            <span>
+                <span className="newContent">New</span> <span className="insideNewContent">BC/MBC/DNC/BCM Fresh Scholarship-Circular AY 2023-24
+</span>
+            </span>
+        ),
+    },
+    {
+        id:'15',
+        link:"https://drive.google.com/file/d/1iNyLJvzBgqfnxND3sJFHtFhRkPuArqqc/view",
+        content:(
+            <span>
+                <span className="newContent">New</span> <span className="insideNewContent">BC/MBC/DNC/BCM Fresh Scholarship-Guidelines AY 2023-24</span>
+            </span>
+        ),
+    },
+    {
+        id:'14',
+        link:"https://drive.google.com/file/d/1-9pVnTJ3g1P_EJ1Zx1vIGEzKaHV0ag3o/view",
+        content:(
+            <span>
+                <span className="newContent">New</span> <span className="insideNewContent">SC ST Scholarship - Circular AY 2023-24
+</span>
+            </span>
+        ),
+    },
+    {
+        id:'13',
+        link:"https://drive.google.com/file/d/1Yqep4TBUBHSDrIxzLoqGV-Pp5UdWMTHI/view",
+        content:(
+            <span>
+                <span className="newContent">New</span> <span className="insideNewContent">Guidelines for SC ST Scholarship application
+</span>
+            </span>
+        ),
+    },
+    // {
+    //     id:'12',
+    //     link:"https://drive.google.com/file/d/1jcVfOZsJMr8uW1d1ukcUTCPpQ9FRePwa/view?usp=drive_link",
+    //     content:(
+    //         <span>
+    //             <span className="newContent">New</span> <span className="insideNewContent">Notification-Application for the post of temporary assistant professor on consolidated pay.</span>
+    //         </span>
+    //     ),
+    // },
     {
         id:'1',
         link:"https://drive.google.com/file/d/1gC3L0wIAykwASWiL63-N_E_dJNj1xhO0/view?usp=drive_link",
@@ -54,4 +120,5 @@ export const bulletin_info=[
         link:"https://drive.google.com/file/d/1Sg9z3VAq8OIs8MkPIvepqYEv51SNbJd9/view?usp=sharing",
         content:"Anti Ragging Committee",
     },
+
 ]

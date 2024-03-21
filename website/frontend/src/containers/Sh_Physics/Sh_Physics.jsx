@@ -9,7 +9,7 @@ import {Sh_dept_fmenu,phy_mission,phy_vision} from '../../constants/Sh_dept_menu
 
 import { GiPendulumSwing } from "react-icons/gi";
 
-const phy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/phy.webp"
+const phy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/phy.webp"
 
 const Sh_Physics = () => {
   return (

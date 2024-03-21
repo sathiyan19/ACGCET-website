@@ -219,38 +219,45 @@ const iqac_feed=[
 
 const iqac_aqar=[
     {
-        'id':"1",
-        "head":"2019-2020",
+        'id':"3",
+        "head":"2021-2022",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1hMUs4sZ5zs31hzs98AvB7_sYxFrjMs3_/view?usp=sharing"
+        "pdf":"https://drive.google.com/file/d/1oCJd3MPmdWSYFsmi1Bi7oFez6Svz6N5l/view?usp=drive_link"
     },
     {
         'id':"2",
         "head":"2020-2021",
         "house":"right",
         "pdf":"https://drive.google.com/file/d/1hSrjWRvgKoAXN_KciLxrVJ43vfeQOba1/view?usp=sharing"
+    },
+    {
+        'id':"1",
+        "head":"2019-2020",
+        "house":"left",
+        "pdf":"https://drive.google.com/file/d/1hMUs4sZ5zs31hzs98AvB7_sYxFrjMs3_/view?usp=sharing"
     }
 ]
 
 const iqac_min=[
     {
         'id':"1",
+        "head":"2022-2023",
+        "house":"left",
+        "pdf":"https://drive.google.com/file/d/1yVLm5uboQNFRn7hbdfQkDCy8xv107oTE/view?usp=drive_link"
+    },
+    {
+        'id':"2",
+        "head":"2021-2022",
+        "house":"right",
+        "pdf":"https://drive.google.com/file/d/1Zm5pXNd18iL-msALg8QaEgXZaLfAuE8J/view?usp=sharing"
+    },
+    {
+        'id':"1",
         "head":"2019-2020",
         "house":"left",
         "pdf":"https://drive.google.com/file/d/1hh5q6FFtUblw5qhRJ9D7b0WNpqOaeLxb/view?usp=sharing"
     },
-    {
-        'id':"2",
-        "head":"2020-2021",
-        "house":"right",
-        "pdf":""
-    },
-    {
-        'id':"3",
-        "head":"2021-2022",
-        "house":"left",
-        "pdf":"https://drive.google.com/file/d/1Zm5pXNd18iL-msALg8QaEgXZaLfAuE8J/view?usp=sharing"
-    },
+
     
 ]
 

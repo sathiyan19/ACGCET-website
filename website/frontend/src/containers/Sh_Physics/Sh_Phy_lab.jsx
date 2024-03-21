@@ -6,7 +6,8 @@ import { Sh_dept_fmenu } from '../../constants/Sh_dept_menu';
 import { Radial_menu } from "../../components";
 import { GiPendulumSwing } from "react-icons/gi";
 
-import phylab from '../../assets/pictures/phylab.webp'
+// import phylab from '../../assets/pictures/phylab.webp'
+const phylab = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/phylab.webp"
 
 
 const Sh_Phy_lab = () => {

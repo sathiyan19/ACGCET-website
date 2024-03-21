@@ -3,6 +3,7 @@ import React,{useEffect} from 'react'
 import {Heroimage} from '../../components'
 import {Backtotop} from '../../widgets'
 import {Information,Founder,Companies,Events,Paralax,News} from '../../containers'
+import { events } from "../../constants/events";
 
 
 // import clgpic from '../../assets/pictures/clgpicfinal.webp'
@@ -27,7 +28,7 @@ const Home = () => {
 
         <Companies/>
 
-        <Events/>
+        <Events events={events} head="Events"/>
         
         <Backtotop/>
 
