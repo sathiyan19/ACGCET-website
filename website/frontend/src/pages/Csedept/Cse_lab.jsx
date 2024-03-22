@@ -4,11 +4,10 @@ import { Backtotop, Floatinmenu, Underline, Modal } from "../../widgets";
 import { cse_dept_menu, cse_labs } from "../../constants/cse_dept";
 
 import { Radial_menu } from "../../components";
-import cse from "../../assets/pictures/csecover.webp";
 
 import { FaComputer } from "react-icons/fa6";
 
-import cse_lab_cover from '../../assets/pictures/cse_dept/cse_labs/cse_lab_cover.webp'
+const cse_lab_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Lab_Facilities/cse_lab_cover.webp"
 
 const Cse_lab = () => {
   useEffect(() => {

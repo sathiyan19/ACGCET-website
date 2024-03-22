@@ -1,10 +1,7 @@
-import dpm from "../assets/pictures/boy.webp";
-import dpf from "../assets/pictures/girl.webp";
-import cover from "../assets/pictures/adstaff.webp";
+const dpm ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/boy.webp"
+const dpf ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/girl.webp"
 
-
-
-
+const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Administration/Principal_office/adstaff.webp"
 
 
 export const office_admin_staffs = [
