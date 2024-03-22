@@ -6,11 +6,11 @@ import {Accordion,Hodmsg} from '../../components'
 import { cse_dept_menu,cse_mission,cse_vision,cse_hod,cse_stud_data } from "../../constants/cse_dept";
 
 import {Radial_menu } from "../../components";
-import cse from "../../assets/pictures/cse grp1.webp";
 
 import {FaComputer} from 'react-icons/fa6'
+const cse ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/cse+grp1.webp";
 
-// const cse="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cse/csecover.webp"
+
 
 
 const Csedept = () => {
