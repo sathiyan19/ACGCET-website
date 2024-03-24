@@ -4,7 +4,7 @@ import { Radial_menu, Table } from "../../components";
 import { BsFillBuildingsFill } from "react-icons/bs";
 import { Backtotop, Floatinmenu, Underline } from "../../widgets";
 import { civ_dept_menu, civ_lib_data } from "../../constants/civil_dept";
-import lib from "../../assets/pictures/civil_dept/civil_library/civillib.webp";
+const lib ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Library/civillib.webp"
 
 const Civil_library = () => {
   useEffect(() => {
