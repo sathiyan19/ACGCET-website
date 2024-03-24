@@ -73,7 +73,7 @@ const Login = () => {
           code = username.substring(6, 8);
         }
         console.log(find_dept(code));
-        const res = await axios.post("http://localhost:5002/api/login", {
+        const res = await axios.post("/backend/login", {
           username,
           password,
         });
@@ -85,8 +85,9 @@ const Login = () => {
        
         else if (res.data.pswd_status) {
           console.log("Matched");
+          console.log("p_flag:", res.data.p_flag); 
           console.log(res.data.reg_no);
-          navigate("/dashboard");
+          navigate("/dashboard", { state: { pflag: res.data.p_flag , regno : res.data.regno } });
         }
         
          else {
@@ -106,7 +107,7 @@ const Login = () => {
 
   useEffect(()=>{
     console.log("started!")
-    axios.get("http://localhost:5002/api/login_verification")
+    axios.get("/backend/login_verification")
     .then((res)=>{
       console.log(res)
       if(res.data.token_status==="okay"){
