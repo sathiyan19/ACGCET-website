@@ -13,7 +13,7 @@ const Passreset = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5002/api/send-otp', { regno:username,});
+      const response = await axios.post('/backend/send-otp', { regno:username,});
       console.log(response.data); 
       navigate('/password-otp',{state:{regno:username,}});
     } catch (error) {
