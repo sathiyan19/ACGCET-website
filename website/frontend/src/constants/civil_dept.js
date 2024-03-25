@@ -1,45 +1,46 @@
-import dp from "../assets/pictures/dp.jpg";
-import dpm from "../assets/pictures/boy.webp";
-import dpf from "../assets/pictures/girl.webp";
-import cover from "../assets/pictures/civil_banner.webp";
-import slide1 from "../assets/pictures/civil_dept/civil_industry/intern1.webp";
-import slide2 from "../assets/pictures/civil_dept/civil_industry/inter2.webp";
-import slide3 from "../assets/pictures/civil_dept/civil_industry/intern3.webp";
+const swayam ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
+const robotics ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/robotics.webp"
+const placement="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/placement.webp"
+
+const dpm ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/boy.webp"
+const dpf ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/girl.webp"
+const cover ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Cover/civil_banner.webp"
+const slide1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/intern1.webp"
+const slide2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/inter2.webp"
+const slide3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/intern3.webp"
 
 
 
+const leela ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/leela.webp"
+const subramani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+C.Subramanian-1.webp"
+const vijaya="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+C.Vijayaprabha-1.webp"
+const vinoth="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+R.Vinothkumar-1.webp"
+const kavitha="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+S.M.Kavitha-1.webp"
+const sumathy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+SR+Sumathy-1.webp"
+const venkat="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Venkatesh+Baskaran-1.webp"
+const mani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Prof.R.MANIGANDAN.webp"
+const tamizh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Senthamizhan+(1)-1.webp"
 
-import swayam from '../assets/pictures/swayam.webp'
-import robotics from '../assets/pictures/robotics.webp'
-import placement from '../assets/pictures/placement.webp'
 
-import leela from '../assets/pictures/civil_dept/civil_faculties/leela.webp'
-import subramani from '../assets/pictures/civil_dept/civil_faculties/Civil C.Subramanian-1.webp'
-import vijaya from '../assets/pictures/civil_dept/civil_faculties/Civil C.Vijayaprabha-1.webp'
-import vinoth from '../assets/pictures/civil_dept/civil_faculties/Civil R.Vinothkumar-1.webp'
-import kavitha from '../assets/pictures/civil_dept/civil_faculties/Civil S.M.Kavitha-1.webp'
-import sumathy from '../assets/pictures/civil_dept/civil_faculties/Civil SR Sumathy-1.webp'
-import venkat from '../assets/pictures/civil_dept/civil_faculties/Civil Venkatesh Baskaran-1.webp'
-import mani from '../assets/pictures/civil_dept/civil_faculties/Prof.R.MANIGANDAN.webp'
-import tamizh from '../assets/pictures/civil_dept/civil_faculties/Civil Senthamizhan (1)-1.webp'
+const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_rajasekar.webp"
+const kathir="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_kathiresan.webp"
+const thyagu="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_thyagarajan.webp"
+const selva="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_selvaraj.webp"
+const muthu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_muthuramalingam.webp"
+const murugesan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_murugesan.webp"
+const veenus="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_veenusrani.webp"
 
-import raja from '../assets/pictures/civil_dept/civil_faculties/civil_rajasekar.webp'
-import kathir from '../assets/pictures/civil_dept/civil_faculties/civil_kathiresan.webp'
-import thyagu from '../assets/pictures/civil_dept/civil_faculties/civil_thyagarajan.webp'
-import selva from '../assets/pictures/civil_dept/civil_faculties/civil_selvaraj.webp'
-import muthu from '../assets/pictures/civil_dept/civil_faculties/civil_muthuramalingam.webp'
-import murugesan from '../assets/pictures/civil_dept/civil_faculties/civil_murugesan.webp'
-import veenus from '../assets/pictures/civil_dept/civil_faculties/civil_veenusrani.webp'
 
-import computer from '../assets/pictures/civil_dept/civil_labs/Computer Lab.webp'
-import concrete from '../assets/pictures/civil_dept/civil_labs/Concrete lab.webp'
-import corrosion from '../assets/pictures/civil_dept/civil_labs/Corrosion Lab.webp'
-import ug from '../assets/pictures/civil_dept/civil_labs/Environmental Engg Lab.webp'
-import pg from '../assets/pictures/civil_dept/civil_labs/PG Environmental Lab.webp'
-import sm from '../assets/pictures/civil_dept/civil_labs/SM Lab.webp'
-import soil from '../assets/pictures/civil_dept/civil_labs/Soil Lab.webp'
-import structure from '../assets/pictures/civil_dept/civil_labs/Structural Lab.webp'
-import survey from '../assets/pictures/civil_dept/civil_labs/Survey Lab.webp'
+const computer ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Computer+Lab.webp" 
+const concrete  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Concrete+lab.webp"
+const corrosion ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Corrosion+Lab.webp"
+const ug ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Environmental+Engg+Lab.webp"
+const pg ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/PG+Environmental+Lab.webp"
+const sm  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/SM+Lab.webp"
+const soil ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Soil+Lab.webp"
+const structure ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Structural+Lab.webp"
+const survey ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Survey+Lab.webp" 
+
 
 const civ_dept_menu = [
   {

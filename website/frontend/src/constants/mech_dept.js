@@ -1,98 +1,92 @@
-import dp from "../assets/pictures/dp.jpg";
-import dpm from "../assets/pictures/boy.webp";
-import dpf from "../assets/pictures/girl.webp";
-import cover from "../assets/pictures/mech_banner.webp";
+const dpm ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/boy.webp"
+const dpf ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/girl.webp"
 
-import swayam from '../assets/pictures/swayam.webp'
-import robotics from '../assets/pictures/robotics.webp'
-import placement from '../assets/pictures/placement.webp'
+const swayam ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
+const robotics ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/robotics.webp"
+const placement="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/placement.webp"
+const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Cover/mech_banner.webp"
 
-import baja from '../assets/pictures/mechdept/mech_event/BAJA-2014.webp'
-import bicycle from '../assets/pictures/mechdept/mech_event/bicycle.webp'
-import efficar from '../assets/pictures/mechdept/mech_event/EFFICAR-2015.webp'
-import efficycle from '../assets/pictures/mechdept/mech_event/efficycle.webp'
-import gokart from '../assets/pictures/mechdept/mech_event/GO Kart-2016.webp'
-import solar15 from '../assets/pictures/mechdept/mech_event/solar-2015.webp'
-import solar18 from '../assets/pictures/mechdept/mech_event/solar-2018.webp'
-import supra from '../assets/pictures/mechdept/mech_event/SUPRA -2014.webp'
-import tractor from '../assets/pictures/mechdept/mech_event/tractor-2018.webp'
+//     SAE Participation
+const baja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/BAJA-2014.webp"
+const bicycle="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/bicycle.webp"
+const efficar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/EFFICAR-2015.webp"
+const efficycle="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/efficycle.webp"
+const gokart="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/GO+Kart-2016.webp"
+const solar15="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/solar-2015.webp"
+const solar18="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/solar-2018.webp"
+const supra="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/SUPRA+-2014.webp"
+const tractor="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/tractor-2018.webp"
 
-import Air_Machinery from '../assets/pictures/mechdept/mech_labs/Air_Machinery_lab.webp'
-import CAD_lab from '../assets/pictures/mechdept/mech_labs/CAD_lab.webp'
-import CAM_lab from '../assets/pictures/mechdept/mech_labs/CAM_lab.webp'
-import Dynamics_Machinery_lab from '../assets/pictures/mechdept/mech_labs/Dynamics_Machinery_lab.webp'
-import EP_lab from '../assets/pictures/mechdept/mech_labs/EP_lab.webp'
-import Centre_of_Excellence from '../assets/pictures/mechdept/mech_labs/Centre_of_Excellence.webp'
-import Eyantra from '../assets/pictures/mechdept/mech_labs/Eyantra.webp'
-import Fuels_lab from '../assets/pictures/mechdept/mech_labs/Fuels_lab.webp'
-import Heat_Transfer_lab from '../assets/pictures/mechdept/mech_labs/Heat_Transfer_lab.webp'
-import K_M_lab from '../assets/pictures/mechdept/mech_labs/K_M_lab.webp'
-import Mechatronics_lab from '../assets/pictures/mechdept/mech_labs/Mechatronics_lab.webp'
-import Metrology_lab from '../assets/pictures/mechdept/mech_labs/Metrology_lab.webp'
-import MT_I from '../assets/pictures/mechdept/mech_labs/MT_I.webp'
-import MT_II from '../assets/pictures/mechdept/mech_labs/MT_II.webp'
-import Solar_Power_lab from '../assets/pictures/mechdept/mech_labs/Solar_Power_lab.webp'
-import Thermal_lab from '../assets/pictures/mechdept/mech_labs/Thermal_lab.webp'
-import Fluid_Mechanics from '../assets/pictures/mechdept/mech_labs/Fluid_Mechanics.webp'
+//    Elite Rankers
+const akhilesh_22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Elite_rankers/akhilesh_22.webp"
+const pooja_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Elite_rankers/pooja_23.webp"
+const Rakshana_21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Elite_rankers/Rakshana_21.webp"
+const santhosh_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Elite_rankers/santhosh_23.webp"
+const satheysh_22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Elite_rankers/satheysh_22.webp"
 
-import akhilesh_22 from '../assets/pictures/mechdept/mech_rankers/akhilesh_22.webp'
-import pooja_23 from '../assets/pictures/mechdept/mech_rankers/pooja_23.webp'
-import Rakshana_21 from '../assets/pictures/mechdept/mech_rankers/Rakshana_21.webp'
-import santhosh_23 from '../assets/pictures/mechdept/mech_rankers/santhosh_23.webp'
-import satheysh_22 from '../assets/pictures/mechdept/mech_rankers/satheysh_22.webp'
+//    Lab Facilities
+const Air_Machinery="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Air_Machinery_lab.webp"
+const CAD_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/CAD_lab.webp"
+const CAM_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/CAM_lab.webp"
+const Dynamics_Machinery_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Dynamics_Machinery_lab.webp"
+const EP_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/EP_lab.webp"
+const Centre_of_Excellence="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Centre_of_Excellence.webp"
+const Eyantra="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Eyantra.webp"
+const Fuels_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Fuels_lab.webp"
+const Heat_Transfer_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Heat_Transfer_lab.webp"
+const K_M_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/K_M_lab.webp"
+const Mechatronics_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Mechatronics_lab.webp"
+const Metrology_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Metrology_lab.webp"
+const MT_I="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/MT_I.webp"
+const MT_II="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/MT_II.webp"
+const Solar_Power_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Solar_Power_lab.webp"
+const Thermal_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Thermal_lab.webp"
+const Fluid_Mechanics="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Lab_facilities/Thermal_lab.webp"
 
+//    Teaching Faclties
+const Ramanathan ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/1.Dr.K.Ramanathan+Prof+%26+Head.webp"
+const Sankarapandian="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/2.Dr.S.Sankarapandian+Asso+Prof+%26+Head.webp"
+const Geetha="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/3.Dr.S.GEETHA.webp"
+const Sarala="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/4.Dr.R.Sarala.webp"
+const Sivagami="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/5.Dr.S.M.SIVAGAMI.webp"
+const Selvaraj="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/6.Prof.S.Selvaraj+AP(Sr.Gr).webp"
+const Jawahar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/7.Prof.V.Jawahar+AP.webp"
+const Senthilkumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/14.Dr.C.R.Senthilkumar+AP.webp"
+const Perumal="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/9.Prof.P.Perumal+AP.webp"
+const Rajavijay="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/10.Prof.T.Rajavijay+AP.webp"
+const Prema="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/11.Prof.P.Prema.webp"
+const Raveendran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/12.Dr.P.Raveendran+Asso+Prof(CAS).webp"
+const Senthil="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/8.Prof.S.Senthilkumar+AP.webp"
+const Guruprasad="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/15.Dr.B.Guruprasad+AP(Sl.Gr).webp"
+const Babu="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/16.Dr.N.Babu+AP.webp"
+const Syed="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/17.Mr.A.Syed+Abdulla+AP(Contract).webp"
+const Muruganandham="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/18.Mr.K.Muruganandham+AP(Contract).webp"
+const Elumalai="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/19.Mr.P.Elumalai+AP(Contract).webp"
+const Sathishkumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/20.Mr.C.Sathishkumar+AP(Adhoc).webp"
+const Rajakumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/21.Mr.N.Rajakumar+AP(Adhoc).webp"
+const Karthikeyan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/22.Mr.K.Karthikeyan+AP(Adhoc).webp"
+const Sakthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/23.Dr.RM.SakthiSadhasivam+AP(Adhoc).webp"
+const PRABH="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/13.Dr.J.Prabakaran+Asso+Prof(CAS).webp"
 
-
-import Ramanathan from '../assets/pictures/mechdept/mech_fac_profiles/1.Dr.K.Ramanathan Prof & Head.webp'
-import Sankarapandian from '../assets/pictures/mechdept/mech_fac_profiles/2.Dr.S.Sankarapandian Asso Prof & Head.webp'
-import Geetha  from '../assets/pictures/mechdept/mech_fac_profiles/3.Dr.S.GEETHA.webp'
-import  Sarala from '../assets/pictures/mechdept/mech_fac_profiles/4.Dr.R.Sarala.webp'
-import Sivagami from '../assets/pictures/mechdept/mech_fac_profiles/5.Dr.S.M.SIVAGAMI.webp'
-import Selvaraj from '../assets/pictures/mechdept/mech_fac_profiles/6.Prof.S.Selvaraj AP(Sr.Gr).webp'
-import Jawahar from '../assets/pictures/mechdept/mech_fac_profiles/7.Prof.V.Jawahar AP.webp'
-import Senthilkumar from '../assets/pictures/mechdept/mech_fac_profiles/8.Prof.S.Senthilkumar AP.webp'
-import Perumal from '../assets/pictures/mechdept/mech_fac_profiles/9.Prof.P.Perumal AP.webp'
-import Rajavijay from '../assets/pictures/mechdept/mech_fac_profiles/10.Prof.T.Rajavijay AP.webp'
-import Prema from '../assets/pictures/mechdept/mech_fac_profiles/11.Prof.P.Prema.webp'
-import Raveendran from '../assets/pictures/mechdept/mech_fac_profiles/12.Dr.P.Raveendran Asso Prof(CAS).webp'
-import Pravakaran from '../assets/pictures/mechdept/mech_fac_profiles/13.Dr.J.Prabakaran Asso Prof(CAS).webp'
-import Senthil from '../assets/pictures/mechdept/mech_fac_profiles/14.Dr.C.R.Senthilkumar AP.webp'
-import Guruprasad from '../assets/pictures/mechdept/mech_fac_profiles/15.Dr.B.Guruprasad AP(Sl.Gr).webp'
-import Babu from '../assets/pictures/mechdept/mech_fac_profiles/16.Dr.N.Babu AP.webp'
-import Syed from '../assets/pictures/mechdept/mech_fac_profiles/17.Mr.A.Syed Abdulla AP(Contract).webp'
-import Muruganandham from '../assets/pictures/mechdept/mech_fac_profiles/18.Mr.K.Muruganandham AP(Contract).webp'
-import Elumalai from '../assets/pictures/mechdept/mech_fac_profiles/19.Mr.P.Elumalai AP(Contract).webp'
-import  Sathishkumar from '../assets/pictures/mechdept/mech_fac_profiles/20.Mr.C.Sathishkumar AP(Adhoc).webp'
-import Rajakumar from '../assets/pictures/mechdept/mech_fac_profiles/21.Mr.N.Rajakumar AP(Adhoc).webp'
-import Karthikeyan from '../assets/pictures/mechdept/mech_fac_profiles/22.Mr.K.Karthikeyan AP(Adhoc).webp'
-import Sakthi from '../assets/pictures/mechdept/mech_fac_profiles/23.Dr.RM.SakthiSadhasivam AP(Adhoc).webp'
-import MUTHU from '../assets/pictures/mechdept/mech_supporting_staffs/A.MUTHU.webp'
-import PRABH from '../assets/pictures/mechdept/mech_supporting_staffs/A.PRABH.webp'
-import UNNIKRISHNAN from '../assets/pictures/mechdept/mech_supporting_staffs/B.UNNIKRISHNAN.webp'
-import SOLAIYAN from '../assets/pictures/mechdept/mech_supporting_staffs/L.SOLAIYAN.webp'
-import KALAIYARASAN from '../assets/pictures/mechdept/mech_supporting_staffs/M.KALAIYARASAN.webp'
-import NAGARAJAN from '../assets/pictures/mechdept/mech_supporting_staffs/M.NAGARAJAN.webp'
-import SATHISHKUMAR from '../assets/pictures/mechdept/mech_supporting_staffs/M.SATHISH KUMAR.webp'
-import RAMANATHAN from '../assets/pictures/mechdept/mech_supporting_staffs/N.RAMANATHAN.webp'
-
-import PRAKASH from '../assets/pictures/mechdept/mech_supporting_staffs/P.PRAKASH.webp'
-import Kannan from '../assets/pictures/mechdept/mech_supporting_staffs/R.KANNAN.webp'
-import THIRUGNANAM from '../assets/pictures/mechdept/mech_supporting_staffs/R.THIRUGNANAM.webp'
-import VANMIGIVASUDEV from '../assets/pictures/mechdept/mech_supporting_staffs/R.VANMIGI VASUDEV.webp'
-
-import VEERAMOHAN from '../assets/pictures/mechdept/mech_supporting_staffs/R.VEERAMOHAN.webp'
-
-import VELPANDI from '../assets/pictures/mechdept/mech_supporting_staffs/R.VELPANDI.webp'
-
-import VENKATRAMAN from '../assets/pictures/mechdept/mech_supporting_staffs/R.VENKATRAMAN.webp'
-
-import SARAVANAN from '../assets/pictures/mechdept/mech_supporting_staffs/S.SARAVANAN.webp'
-import MURUGAN from '../assets/pictures/mechdept/mech_supporting_staffs/T.MURUGAN.webp'
-import  RAVICHANDRAN from '../assets/pictures/mechdept/mech_supporting_staffs/V.RAVICHANDRAN.webp'
-
-
-
-
+//    Supporting Faclties
+const Pravakaran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/A.PRABH.webp"
+const MUTHU="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/A.MUTHU.webp"
+const UNNIKRISHNAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/B.UNNIKRISHNAN.webp"
+const SOLAIYAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/L.SOLAIYAN.webp"
+const KALAIYARASAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/M.KALAIYARASAN.webp"
+const NAGARAJAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/M.NAGARAJAN.webp"
+const SATHISHKUMAR="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/M.SATHISH+KUMAR.webp"
+const RAMANATHAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/N.RAMANATHAN.webp"
+const PRAKASH="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/P.PRAKASH.webp"
+const Kannan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/R.KANNAN.webp"
+const THIRUGNANAM="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/R.THIRUGNANAM.webp"
+const VANMIGIVASUDEV="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/R.VANMIGI+VASUDEV.webp"
+const VEERAMOHAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/R.VEERAMOHAN.webp"
+const VELPANDI="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/R.VELPANDI.webp"
+const VENKATRAMAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/R.VENKATRAMAN.webp"
+const SARAVANAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/S.SARAVANAN.webp"
+const MURUGAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/T.MURUGAN.webp"
+const RAVICHANDRAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/V.RAVICHANDRAN.webp"
 
 const mech_dept_menu = [
   {
@@ -565,7 +559,7 @@ const mech_fac_profiles = [
     name: "Dr.B.Guruprasad",
     Designation: "Assistant Professor(Sl.Gr)",
     mailid: "tellprasadcdm@gmail.com ",
-    pdf: "https://drive.google.com/file/d/1xclysKmlZJqPlxQefSjfgD3r017kJtMV/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/18aUYs0pssl7CMF6pFvGLWnZBA8kbWg1R/view?usp=sharing",
   },
   {
     id: "16",

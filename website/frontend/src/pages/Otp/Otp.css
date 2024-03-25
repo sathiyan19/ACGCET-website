@@ -39,6 +39,31 @@
   padding: 0.75rem 0.75rem 0 0.75rem;
 }
 
+.login-submit_passwdrec{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 14px 64px;
+    margin: 32px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: #ff6600;
+    /* background-image: linear-gradient(to right, #ff6600, #fff); */
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+.login-submit_passwdrec:hover{
+    opacity: 0.9;
+    /* background-image: linear-gradient(to right, #ff6600, #00134d); */
+    background: #00134d;
+    color: white;
+    text-transform: lowercase;
+}
+
 @media(max-width:896px){
     .log-input{
         width: 60px;
