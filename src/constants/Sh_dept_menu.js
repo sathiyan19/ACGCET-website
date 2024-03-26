@@ -1,5 +1,5 @@
 
-import cover from '../assets/pictures/microchip.webp'
+// import cover from '../assets/pictures/microchip.webp'
 import dpm from '../assets/pictures/boy.webp'
 import dpf from '../assets/pictures/girl.webp'
 
@@ -13,10 +13,10 @@ import mahalakshmi from '../assets/pictures/maths_dept/mahalakshmio.webp'
 import reegan from '../assets/pictures/maths_dept/reegan.webp'
 import vasanthi from '../assets/pictures/maths_dept/vasanthi.webp'
 import yamuna from '../assets/pictures/maths_dept/yamuna.webp'
-import balasundar from '../assets/pictures/nss/s1.webp'
+// import balasundar from '../assets/pictures/nss/s1.webp'
 import mcover from '../assets/pictures/maths_dept/matcover.webp'
 
-import loki from '../assets/pictures/ncc/loki.webp'
+// import loki from '../assets/pictures/ncc/loki.webp'
 import rajaperumal from '../assets/pictures/chemi_dept/rajaperuma.webp'
 import thenraj from '../assets/pictures/chemi_dept/thenraj.webp'
 import vijayalakshmi from '../assets/pictures/chemi_dept/vijayalakshmi.webp'
@@ -32,6 +32,11 @@ import vijayaragavan from '../assets/pictures/phy_dept/vijayaraghavan.webp'
 import pcover from '../assets/pictures/phy_dept/phy cover.webp'
 
 import englab from '../assets/pictures/englab.webp'
+const balasundar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/s1.webp"
+const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/microchip.webp"
+const loki="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/ncc/ncc/loki.webp"
+
+
 
 const Sh_dept_fmenu = [
     {

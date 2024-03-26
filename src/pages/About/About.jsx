@@ -10,16 +10,18 @@ import { campus_map_keys } from "../../constants/campus_map";
 import { Backtotop,Underline } from "../../widgets";
 
 // import basketball from "../../assets/pictures/basketball.webp";
-import clg_mainbuild from "../../assets/pictures/clg_mainbuild.webp";
-import nehru from "../../assets/pictures/nehru.webp";
-import prasad from "../../assets/pictures/prasad.webp";
+// import clg_mainbuild from "../../assets/pictures/clg_mainbuild.webp";
+// import nehru from "../../assets/pictures/nehru.webp";
+// import prasad from "../../assets/pictures/prasad.webp";
 // import kkdi from "../../assets/pictures/kkdi.webp";
 // import bus from "../../assets/pictures/bus.jpg"
 
 import {IoHome} from 'react-icons/io5'
 
 // import campusmap from '../../assets/pictures/campus map.webp'
-
+const clg_mainbuild="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/institution/clg_mainbuild.webp"
+const nehru="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/institution/nehru.webp"
+const prasad="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/institution/prasad.webp"
 const campusmap="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about_institute/campus+map.webp"
 
 const basketball = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about_institute/basketball.webp"

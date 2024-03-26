@@ -7,7 +7,7 @@ export const events=[
         'time':'09:30 am',
         'venue':'CSE Department ',
         'details':'We cordially invite you for Deftera\'23',
-        // 'status':'due'
+         'status':'due'
     },
     {
         'id':'10',
@@ -16,7 +16,7 @@ export const events=[
         'time':'04:45 pm',
         'venue':'Sangamam Hall ',
         'details':'We cordially invite you for the 16th Installation of our Club',
-        // 'status':'due'
+        'status':'due'
     },
     {
         'id':'9',

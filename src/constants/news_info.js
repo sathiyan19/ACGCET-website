@@ -2,13 +2,19 @@ import csecover from '../assets/pictures/cse_banner.webp'
 import eleccover from '../assets/pictures/elec_banner.webp'
 import civilcover from '../assets/pictures/civil_banner.webp'
 import mechcover from '../assets/pictures/mech_banner.webp'
-import ececover from '../assets/pictures/microchip.webp'
-import cover from '../assets/pictures/cover pic.jpg'
+// import ececover from '../assets/pictures/microchip.webp'
+// import cover from '../assets/pictures/cover pic.jpg'
 
-import edc from '../assets/pictures/news_img/edc.webp'
-import ga from '../assets/pictures/news_img/ga.webp'
-import nlp from '../assets/pictures/news_img/nlp.webp'
-import stnd_day from '../assets/pictures/news_img/stnd_day.webp'
+// import edc from '../assets/pictures/news_img/edc.webp'
+// import ga from '../assets/pictures/news_img/ga.webp'
+// import nlp from '../assets/pictures/news_img/nlp.webp'
+// import stnd_day from '../assets/pictures/news_img/stnd_day.webp'
+
+const edc="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/edc.webp"
+const ga="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/ga.webp"
+const nlp="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/nlp.webp"
+const stnd_day="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/stnd_day.webp"
+const ececover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/microchip.webp"
 
 export const news_info=[
     {

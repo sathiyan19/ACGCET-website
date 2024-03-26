@@ -1,76 +1,152 @@
 // import dp from "../assets/pictures/dp.jpg";
-import dpm from "../assets/pictures/boy.webp";
-import dpf from "../assets/pictures/girl.webp";
-import cover from "../assets/pictures/microchip.webp";
+// import dpm from "../assets/pictures/boy.webp";
+// import dpf from "../assets/pictures/girl.webp";
+// import cover from "../assets/pictures/microchip.webp";
 
-import swayam from "../assets/pictures/swayam.webp";
-import robotics from "../assets/pictures/robotics.webp";
-import placement from "../assets/pictures/placement.webp";
+// import swayam from "../assets/pictures/swayam.webp";
+// import robotics from "../assets/pictures/robotics.webp";
+// import placement from "../assets/pictures/placement.webp";
 
-import ece_adc_lab from "../assets/pictures/ece_dept/ece_labs/ece_adc_lab-c.webp"
-import ece_rfs_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfs_lab-c.webp"
-import ece_fo_lab from "../assets/pictures/ece_dept/ece_labs/ece_fo_lab.webp"
-import ece_cn_lab from "../assets/pictures/ece_dept/ece_labs/ece_cn_lab.webp"
-import ece_vlsi_lab from "../assets/pictures/ece_dept/ece_labs/ece_vlsi_lab.webp"
-import ece_ic_lab from "../assets/pictures/ece_dept/ece_labs/ece_ic_lab.webp"
-import ece_sig_lab from "../assets/pictures/ece_dept/ece_labs/ece_sig_lab.webp"
-import ece_edc_lab from "../assets/pictures/ece_dept/ece_labs/ece_edc_lab.webp"
-import ece_rfm_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfm_lab.webp"
-import ece_opt_lab from "../assets/pictures/ece_dept/ece_labs/ece_opt_lab.webp"
-import ece_pcb_lab from "../assets/pictures/ece_dept/ece_labs/PCB_Fabrication_Station.webp"
-import ece_antenna_lab from "../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.webp";
+// import ece_adc_lab from "../assets/pictures/ece_dept/ece_labs/ece_adc_lab-c.webp"
+// import ece_rfs_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfs_lab-c.webp"
+// import ece_fo_lab from "../assets/pictures/ece_dept/ece_labs/ece_fo_lab.webp"
+// import ece_cn_lab from "../assets/pictures/ece_dept/ece_labs/ece_cn_lab.webp"
+// import ece_vlsi_lab from "../assets/pictures/ece_dept/ece_labs/ece_vlsi_lab.webp"
+// import ece_ic_lab from "../assets/pictures/ece_dept/ece_labs/ece_ic_lab.webp"
+// import ece_sig_lab from "../assets/pictures/ece_dept/ece_labs/ece_sig_lab.webp"
+// import ece_edc_lab from "../assets/pictures/ece_dept/ece_labs/ece_edc_lab.webp"
+// import ece_rfm_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfm_lab.webp"
+// import ece_opt_lab from "../assets/pictures/ece_dept/ece_labs/ece_opt_lab.webp"
+// import ece_pcb_lab from "../assets/pictures/ece_dept/ece_labs/PCB_Fabrication_Station.webp"
+// import ece_antenna_lab from "../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.webp";
+
+// import thiran_2k22 from "../assets/pictures/ece_dept/stud_activities/Thiran 2k22.webp";
+// import circuit_debug from "../assets/pictures/ece_dept/stud_activities/Circuit Debugging.webp";
+// import best_manager from "../assets/pictures/ece_dept/stud_activities/best_manager.webp";
+// import tech_quiz from "../assets/pictures/ece_dept/stud_activities/tech_quiz.webp";
+// import paper_presentation from "../assets/pictures/ece_dept/stud_activities/paper_presentation.webp";
+// import circuit_designers from "../assets/pictures/ece_dept/stud_activities/circuit_designers.webp";
+// import top_design1 from "../assets/pictures/ece_dept/stud_activities/top_design1.webp";
+// import top_design2 from "../assets/pictures/ece_dept/stud_activities/top_designer2.webp";
+// import hrk_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/hrk_topdesign_2k22.webp";
+// import sow_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/sow_topdesign_2k22.webp";
+// import anu_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/anu_topdesign_2k22.webp";
+// import asw_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/asw_topdesign_2k22.webp";
+// import malai_thiran_23 from "../assets/pictures/ece_dept/stud_activities/malai_thiran_23.webp";
+// import mm_thiran_23 from "../assets/pictures/ece_dept/stud_activities/mm_thiran_23.webp";
+// import gok_thiran_23 from "../assets/pictures/ece_dept/stud_activities/gok_thiran_23.webp";
+// import jos_thiran_23 from "../assets/pictures/ece_dept/stud_activities/jos_thiran_23.webp";
+
+ 
+
+// import ncmoc19 from '../assets/pictures/ece_dept/ece_events/ncmoc19.webp'
+// import stal21 from '../assets/pictures/ece_dept/ece_events/stalwartz21.webp'
+// import prag21 from '../assets/pictures/ece_dept/ece_events/pragyanz21.webp'
+// import prag22 from '../assets/pictures/ece_dept/ece_events/pragyanz22.webp'
+// import unknown from '../assets/pictures/ece_dept/ece_events/unkown.webp'
+
+// import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
+
+// import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
+// import aruna from "../assets/pictures/ece_dept/ece_faculties/Ece_Aruna Rani M-1.webp"
+// import helena from "../assets/pictures/ece_dept/ece_faculties/Ece_HelenaD-1.webp"
+// import rajesh from "../assets/pictures/ece_dept/ece_faculties/Ece_KarpagarajeshG-1.webp"
+// import keerthana from "../assets/pictures/ece_dept/ece_faculties/Ece_KeerthanaP-1.webp"
+// import mahendran from "../assets/pictures/ece_dept/ece_faculties/Ece_Mahendran C-1.webp"
+// import merlin from "../assets/pictures/ece_dept/ece_faculties/Ece_Merlin sheeba X-1.webp"
+// import khanna from "../assets/pictures/ece_dept/ece_faculties/Ece_Rajesh kanna B-1.webp"
+// import ramya from "../assets/pictures/ece_dept/ece_faculties/Ece_Ramya SP-1.webp"
+// import renisha from "../assets/pictures/ece_dept/ece_faculties/Ece_RenishaG-1.webp"
+// import sindhu from "../assets/pictures/ece_dept/ece_faculties/Ece_SindujaC-1.webp"
+// import sezhina from "../assets/pictures/ece_dept/ece_faculties/sezhina.webp"
+// import karthika from "../assets/pictures/ece_dept/ece_faculties/karthika.webp"
+// import nandhini from "../assets/pictures/ece_dept/ece_faculties/dhevanandhini.webp"
+
+// import akila from "../assets/pictures/ece_dept/ece_faculties/akila.webp"
+// import chandrasekar from "../assets/pictures/ece_dept/ece_faculties/chandrasekaran.webp"
+// import selvi from "../assets/pictures/ece_dept/ece_faculties/tamilselvi.webp"
+// import vasanthi from "../assets/pictures/ece_dept/ece_faculties/vasanthi.webp"
+// import karthi from "../assets/pictures/ece_dept/ece_faculties/karthikeyan.webp"
+// import sankar from "../assets/pictures/ece_dept/ece_faculties/sankar.webp"
+
+// import priya_21 from '../assets/pictures/ece_dept/ece_rankers/priya_21.webp'
+// import navin_21 from '../assets/pictures/ece_dept/ece_rankers/navin_21.webp'
+// import aish_20 from '../assets/pictures/ece_dept/ece_rankers/aishwarya_20.webp'
+// import sujitha_20 from '../assets/pictures/ece_dept/ece_rankers/sujitha_20.webp'
+
+const dpm="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/boy.webp"
+const dpf="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/girl.webp"
+const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/microchip.webp"
 
 
-import thiran_2k22 from "../assets/pictures/ece_dept/stud_activities/Thiran 2k22.webp";
-import circuit_debug from "../assets/pictures/ece_dept/stud_activities/Circuit Debugging.webp";
-import best_manager from "../assets/pictures/ece_dept/stud_activities/best_manager.webp";
-import tech_quiz from "../assets/pictures/ece_dept/stud_activities/tech_quiz.webp";
-import paper_presentation from "../assets/pictures/ece_dept/stud_activities/paper_presentation.webp";
-import circuit_designers from "../assets/pictures/ece_dept/stud_activities/circuit_designers.webp";
-import top_design1 from "../assets/pictures/ece_dept/stud_activities/top_design1.webp";
-import top_design2 from "../assets/pictures/ece_dept/stud_activities/top_designer2.webp";
-import hrk_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/hrk_topdesign_2k22.webp";
-import sow_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/sow_topdesign_2k22.webp";
-import anu_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/anu_topdesign_2k22.webp";
-import asw_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/asw_topdesign_2k22.webp";
-import malai_thiran_23 from "../assets/pictures/ece_dept/stud_activities/malai_thiran_23.webp";
-import mm_thiran_23 from "../assets/pictures/ece_dept/stud_activities/mm_thiran_23.webp";
-import gok_thiran_23 from "../assets/pictures/ece_dept/stud_activities/gok_thiran_23.webp";
-import jos_thiran_23 from "../assets/pictures/ece_dept/stud_activities/jos_thiran_23.webp";
+const swayam="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
+const robotics="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/robotics.webp"
+const placement="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/placement.webp"
 
-import ncmoc19 from '../assets/pictures/ece_dept/ece_events/ncmoc19.webp'
-import stal21 from '../assets/pictures/ece_dept/ece_events/stalwartz21.webp'
-import prag21 from '../assets/pictures/ece_dept/ece_events/pragyanz21.webp'
-import prag22 from '../assets/pictures/ece_dept/ece_events/pragyanz22.webp'
-import unknown from '../assets/pictures/ece_dept/ece_events/unkown.webp'
+const priya_21  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/priya_21.webp"
+const navin_21 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/navin_21.webp"
+const aish_20 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/aishwarya_20.webp"
+const sujitha_20="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/sujitha_20.webp"
+const somasundaram = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Somasundaram.webp"
+const asr= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/ASR.webp"
+const aruna = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Aruna+Rani+M-1.webp"
+const helena = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_HelenaD-1.webp"
+const  rajesh= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Rajesh+kanna+B-1.webp"
+const keerthana = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_KeerthanaP-1.webp"
+const mahendran = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Mahendran+C-1.webp"
+const merlin = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Merlin+sheeba+X-1.webp"
+const khanna = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Rajesh+kanna+B-1.webp"
+const ramya = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Ramya+SP-1.webp"
+const  renisha= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_RenishaG-1.webp"
+const sindhu = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_SindujaC-1.webp"
+const  sezhina= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/sezhina.webp"
+const karthika = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/karthika.webp"
+const  nandhini= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/dhevanandhini.webp"
+const akila="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/akila.webp"
+const chandrasekar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/chandrasekaran.webp"
+const selvi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/tamilselvi.webp"
+const vasanthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/vasanthi.webp"
+const karthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/karthikeyan.webp"
+const sankar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/sankar.webp"
 
-import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
-import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
-import aruna from "../assets/pictures/ece_dept/ece_faculties/Ece_Aruna Rani M-1.webp"
-import helena from "../assets/pictures/ece_dept/ece_faculties/Ece_HelenaD-1.webp"
-import rajesh from "../assets/pictures/ece_dept/ece_faculties/Ece_KarpagarajeshG-1.webp"
-import keerthana from "../assets/pictures/ece_dept/ece_faculties/Ece_KeerthanaP-1.webp"
-import mahendran from "../assets/pictures/ece_dept/ece_faculties/Ece_Mahendran C-1.webp"
-import merlin from "../assets/pictures/ece_dept/ece_faculties/Ece_Merlin sheeba X-1.webp"
-import khanna from "../assets/pictures/ece_dept/ece_faculties/Ece_Rajesh kanna B-1.webp"
-import ramya from "../assets/pictures/ece_dept/ece_faculties/Ece_Ramya SP-1.webp"
-import renisha from "../assets/pictures/ece_dept/ece_faculties/Ece_RenishaG-1.webp"
-import sindhu from "../assets/pictures/ece_dept/ece_faculties/Ece_SindujaC-1.webp"
-import sezhina from "../assets/pictures/ece_dept/ece_faculties/sezhina.webp"
-import karthika from "../assets/pictures/ece_dept/ece_faculties/karthika.webp"
-import nandhini from "../assets/pictures/ece_dept/ece_faculties/dhevanandhini.webp"
+const ece_adc_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_adc_lab-c.webp"
+const ece_rfs_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_rfs_lab-c.webp"
+const ece_fo_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_fo_lab.webp"
+const ece_opt_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_opt_lab.webp"
+const ece_vlsi_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_vlsi_lab.webp"
+const ece_sig_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_sig_lab.webp"
+const ece_edc_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_edc_lab.webp"
+const ece_cn_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_cn_lab.webp"
+const ece_rfm_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_rfm_lab.webp"
 
-import akila from "../assets/pictures/ece_dept/ece_faculties/akila.webp"
-import chandrasekar from "../assets/pictures/ece_dept/ece_faculties/chandrasekaran.webp"
-import selvi from "../assets/pictures/ece_dept/ece_faculties/tamilselvi.webp"
-import vasanthi from "../assets/pictures/ece_dept/ece_faculties/vasanthi.webp"
-import karthi from "../assets/pictures/ece_dept/ece_faculties/karthikeyan.webp"
-import sankar from "../assets/pictures/ece_dept/ece_faculties/sankar.webp"
+const ece_ic_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/ece_ic_lab.webp"
+const ece_pcb_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/PCB_Fabrication_Station.webp"
+const ece_antenna_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/ECE_Ant_Chamber_1.webp"
 
-import priya_21 from '../assets/pictures/ece_dept/ece_rankers/priya_21.webp'
-import navin_21 from '../assets/pictures/ece_dept/ece_rankers/navin_21.webp'
-import aish_20 from '../assets/pictures/ece_dept/ece_rankers/aishwarya_20.webp'
-import sujitha_20 from '../assets/pictures/ece_dept/ece_rankers/sujitha_20.webp'
+const ncmoc19 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/ncmoc19.webp"
+const stal21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/stalwartz21.webp"
+const prag21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/pragyanz21.webp"
+const prag22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/pragyanz22.webp"
+const unknown="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/unkown.webp"
+
+const thiran_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/Thiran+2k22.webp"
+const circuit_debug="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/Circuit+Debugging.webp"
+const best_manager="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/best_manager.webp"
+const tech_quiz="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/tech_quiz.webp"
+const paper_presentation="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/paper_presentation.webp"
+const circuit_designers="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/circuit_designers.webp"
+const top_design1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/top_design1.webp"
+const top_design2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/top_designer2.webp"
+const hrk_top_design_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/hrk_topdesign_2k22.webp"
+const sow_top_design_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/sow_topdesign_2k22.webp"
+const anu_top_design_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/anu_topdesign_2k22.webp"
+const asw_top_design_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/asw_topdesign_2k22.webp"
+const malai_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/malai_thiran_23.webp"
+const gok_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/gok_thiran_23.webp"
+const jos_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/jos_thiran_23.webp"
+const mm_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/mm_thiran_23.webp"
+
+
 
 const ece_dept_menu = [
   {

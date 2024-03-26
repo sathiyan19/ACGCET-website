@@ -32,6 +32,7 @@ const top_nav_paths = [
     links: [
       { path: "/programs", link: "Programs offered" },
       { path: "/academic-calendar", link: "Academic Calendar" },
+      {path:"/coe",link:"Autonomous Office"},
     ],
   },
 
@@ -73,7 +74,7 @@ const top_nav_paths = [
       { path: "/yrc", link: "YRC" },
       { path: "/uba", link: "UBA" },
       { path: "/thiran", link: "Thiran" },
-      { path: "/under", link: "Xprez" },
+      { path: "/Xprez", link: "Xprez" },
     ],
   },
 
