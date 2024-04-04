@@ -1,0 +1,157 @@
+.pass-page {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .pass_err_msg{
+    color: red;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 0.75rem;
+  }
+  
+  section.pass-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section.pass-side {
+    background: url(../../assets/pictures/pass_bg.png) no-repeat;
+    background-size: 100% 102%;
+  }
+  
+  .pass-side img {
+    width: 70%;
+    max-width: 70%;
+    margin-top: 70px;
+  }
+  
+  .pass-container {
+    max-width: 450px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pass-title {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #00134d;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .pass-separator {
+    width: 150px;
+    height: 4px;
+    background-color: #ff6600;
+    margin: 24px;
+  }
+  
+  .pass-welcome-message {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: #696969;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .pass-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+    border: none;
+  }
+  
+  .pass-input,
+  .pass-submit {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+  }
+  
+  .pass-input {
+    width: 100%;
+    background: #e6e6e6;
+    color: #333;
+    letter-spacing: 0.5px;
+    padding: 14px 64px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .pass-input ~ i {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    transition: color   0.4s;
+  }
+  
+  .pass-input:focus ~ i {
+    color: #ff6600;
+  }
+.pass-submit {
+    color: #fff;
+    padding: 14px 64px;
+    margin: 32px auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: #ff6600;
+    /* background-image: linear-gradient(to right, #ff6600, #fff); */
+    cursor: pointer;
+    transition: opacity 0.4s;
+    text-decoration: none;
+  }
+  
+  .pass-submit:hover {
+    opacity: 0.9;
+    /* background-image: linear-gradient(to right, #ff6600, #00134d); */
+    background: #00134d;
+    color: white;
+    text-transform: lowercase;
+  }
+  .forgot{
+  }
+  .forgot:hover{
+    color: #ff6600;
+  }
+  @media (max-width: 780px) {
+  
+    .pass-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .pass-side {
+        display: none;
+    }
+  }
+  @media (max-width: 400px){
+    .pass-title{
+      font-size: 2.5em;
+    }
+    .pass-input{
+      font-size: 15px;
+    }
+    .pass-container{
+      padding: 10px;
+    }
+    
+  }
