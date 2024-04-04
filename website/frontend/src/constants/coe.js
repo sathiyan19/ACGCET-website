@@ -2,13 +2,14 @@ import dpm from "../assets/pictures/boy.webp";
 import dpf from "../assets/pictures/girl.webp";
 import cover from "../assets/pictures/cover.webp";
 
-import venkatrajan from '../assets/pictures/phy_dept/venkatrajan.webp';
+// import venkatrajan from '../assets/pictures/phy_dept/venkatrajan.webp';
 import Coe_syllabuss from "../pages/coe/Coe_syllabuss";
 const asr= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/ASR.webp"
 const baskaran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/1-Baskaran-_3_.webp"
 const Ramadas="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/6-Ramadas.webp"
 
 
+const venkatrajan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/venkatrajan.webp";
 
 const coe_menu =[
     {
