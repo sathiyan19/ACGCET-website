@@ -2428,6 +2428,24 @@ const ece_placement_info = [
   },
 ];
 
+const ece_intern=[
+  {
+      'id':'1',
+      'program':'Internship 2021-2022',
+      'pdf':'https://drive.google.com/file/d/13e9q9mAH0vHu5UIrB2SA_sZSZlFHDo8Q/view?usp=drive_link '
+  },
+  {
+      'id':'2',
+      'program':'Internship 2022-2023',
+      'pdf':'https://drive.google.com/file/d/18k11n_gx0ECOts0JPUwKKyFuLab3uLYz/view?usp=drive_link '
+  },
+  {
+      'id':'3',
+      'program':'Implant Training Details',
+      'pdf':'https://drive.google.com/file/d/1PBZXDsAeY1cloa90xuBkya9aPumOdm8w/view?usp=drivesdk'
+  },
+]
+
 export {
   ece_dept_menu,
   ece_fac_profiles,
@@ -2461,5 +2479,6 @@ export {
   ece_stud_data,
   ece_dept_lib,
   ece_events,
-  ece_spec_outcomes
+  ece_spec_outcomes,
+  ece_intern
 };

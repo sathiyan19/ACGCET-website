@@ -12,7 +12,7 @@ const Information = () => {
             <div className="line"></div>
             {/* <ul className="list"> */}
             <marquee  className="list" loop="infinite" direction="up" scrollamount="2">
-              {bulletin_info.map((item)=><li className='msg'><a className='impmsg' href={item.link}>{item.content}</a></li>)}
+              {bulletin_info.map((item)=><li className='msg'><a className='impmsg' target='blank' href={item.link}>{item.content}</a></li>)}
             </marquee>
             {/* </ul> */}
         </div>

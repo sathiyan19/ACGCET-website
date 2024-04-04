@@ -35,8 +35,8 @@ const slideshowInterval = setInterval(plus, 5000); // Change the interval as nee
     <div className="slideshow">
       <div className="slideshow-container">
         {images.map((image, index) => (
-          <div key={index} className={`mslide fades ${index === currentIndex ? 'active' : ''}`}>
-            <img src={image} style={{ width: '100%' }} alt={`Slide ${index}`} />
+          <div key={index} className={`mslide fades ${index === currentIndex ? 'slide_active' : ''}`}>
+            <img src={image} style={{ width: '100%', height:'auto' }} alt={`Slide ${index}`} />
           </div>
         ))}
         {!flag && (<>

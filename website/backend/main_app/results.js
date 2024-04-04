@@ -1,0 +1,66 @@
+const pool = require("./db.js");
+
+const res_publish= async (req,res)=>{
+    try {
+        const {regno,dept}=req.body;
+        const res_publish_table=dept+"_publish"
+        const [res_pub]= await pool.query(
+            `
+            select * 
+            from ??
+            where regno=?
+            `,
+            [res_publish_table,regno]
+        )
+        res.status(200).send(res_pub)
+    } catch (error) {
+        console.log(error)
+        res.status(500).send({error:error})
+    }
+}
+
+const res_result= async (req,res)=>{
+    try {
+        const {regno,dept,sem}=req.body;
+        console.log(regno,dept,sem)
+        const res_result_table=dept+"_results"
+        const [res_res]= await pool.query(
+            `
+            select *
+            from ??
+            where regno=? and sem=?
+            `,
+            [res_result_table,regno,sem]
+        )
+        console.log(res_res)
+        res.status(200).send(res_res)
+    } catch (error) {
+        console.log(error)
+        res.status(500).send({error:error})
+    }
+}
+
+const get_sem_list= async(req,res)=>{
+    try {
+        const {regno,dept}=req.body;
+        const res_table=dept+"_results"
+        const [sems]= await pool.query(
+            `
+            select distinct(sem)
+            from ??
+            where regno=?
+            `,
+            [res_table,regno]
+        )
+        res.status(200).send(sems)
+    } catch (error) {
+        console.log(error)
+        res.status(500).send({error:error})
+    }
+}
+
+
+module.exports={
+    res_publish,
+    get_sem_list,res_result
+}

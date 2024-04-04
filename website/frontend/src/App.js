@@ -122,7 +122,8 @@ import {
   Logout,
   Passreset,
   Otp,
-  Newpass
+  Newpass,
+  Admin_dashboard
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -252,6 +253,7 @@ const App = () => {
         <Route path="/password-reset" element={<Passreset/>}/>
         <Route path="/password-otp" element={<Otp/>}/>
         <Route path="/password-create" element={<Newpass/>}/>
+        <Route path="/admin-panel" element={<Admin_dashboard/>}/>
 
          <Route path="/coe/coe_application"element={<Coe_Application/>}/>
          <Route path="/coe/coe_claim"element={<Coe_Claim/>}/>
@@ -260,7 +262,7 @@ const App = () => {
          <Route path="/coe/coe_syllabus1"element={<Coe_syllabus1/>}/>
          <Route path="/coe/coe_committiee"element={<Coe_Committiee/>}/>
       </Routes>
-      <Chatbot/>
+      {/* <Chatbot/> */}
       <Footer />
     </div>
   );

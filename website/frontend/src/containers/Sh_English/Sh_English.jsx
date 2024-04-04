@@ -8,7 +8,7 @@ import {Sh_dept_fmenu,eng_mission,eng_vision} from '../../constants/Sh_dept_menu
 import './Sh_English.css'
 import { RiEnglishInput } from "react-icons/ri";
 
-const eng="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/eng.webp"
+const eng="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/eng.webp"
 
 const Sh_English = () => {
   return (

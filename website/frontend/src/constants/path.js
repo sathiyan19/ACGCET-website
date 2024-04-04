@@ -5,6 +5,7 @@ const top_nav_paths = [
     title: "About",
     basepath: "javascript:void(0);",
     links: [
+      { path: "/", link:"Home"},
       { path: "/about-institution", link: "Institution" },
       { path: "/vision", link: "Vision, Mission & Core values" },
       { path: "/milestones", link: "Milestones" },
@@ -17,7 +18,7 @@ const top_nav_paths = [
     title: "Administration",
     basepath: "javascript:void(0);",
     links: [
-      { path: "/under", link: "Governing council" },
+      // { path: "/under", link: "Governing council" },
       { path: "/office", link: "Principal Office" },
       { path: "/organisation", link: "Organization Structure" },
       { path: "/committee", link: "Committee/Cell" },
@@ -66,7 +67,7 @@ const top_nav_paths = [
       { path: "/iste", link: "ISTE" },
       { path: "/sih", link: "SIH" },
       { path: "/clubs", link: "Clubs" },
-      { path: "/under", link: "Sports" },
+      { path: "/sports", link: "Sports" },
       { path: "/nss", link: "NSS" },
       { path: "/ncc", link: "NCC" },
       { path: "/yrc", link: "YRC" },
@@ -299,13 +300,13 @@ const bottom_nav_paths = [
   },
 ];
 const login_nav_paths = [
-  {
-    id: "20",
-    type: "4",
-    title: "",
-    basepath: "/dashboard",
-    links: [],
-  },
+  // {
+  //   id: "20",
+  //   type: "4",
+  //   title: "",
+  //   basepath: "/dashboard",
+  //   links: [],
+  // },
 ];
 
 export { top_nav_paths, bottom_nav_paths, hidden_nav_paths, login_nav_paths };

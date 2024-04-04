@@ -94,7 +94,7 @@ const About = () => {
           </div>
 
           <div className="flex_2">
-            <div>
+            <div className="flex_2_div">
               <p className="about_content">
                 One of our strongest pillars is the robust support from our
                 extensive alumni network. Our alumni's achievements and
