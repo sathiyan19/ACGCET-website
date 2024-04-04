@@ -14,8 +14,9 @@ import { Radial_menu, Listformat } from "../../components";
 
 import { FaMicrochip } from "react-icons/fa6";
 
-import antenna1 from "../../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.webp";
 // import antenna2 from '../../assets/pictures/ECE_Ant_Chamber_2.webp'
+const ece_antenna_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/ECE_Ant_Chamber_1.webp"
+
 
 const Ece_antenna = () => {
   useEffect(() => {
@@ -62,7 +63,7 @@ const Ece_antenna = () => {
                   </div>
                 </div>
                 <div className="antenna_flex1_img">
-                  <img className="ant_img" src={antenna1} />
+                  <img className="ant_img" src={ece_antenna_lab} />
                 </div>
               </div>
               <div className="antenna_second_content antenna_content">

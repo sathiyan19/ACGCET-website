@@ -4,12 +4,12 @@ import './Thiran.css'
 
 import { Heroimagecarousal,Reunion_card_display} from "../../components";
 
-import thiran_logo from "../../assets/pictures/thiran.webp";
+// import thiran_logo from "../../assets/pictures/thiran.webp";
 
 import { Thiran_heroimage_carousalinfo,vision,mission_data,jury_awards} from "../../constants/thiran";
 
 import { Deptvision,Deptmission,Underline,Profilecard } from '../../widgets';
-
+const thiran_logo="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/thiran/thiran.webp"
 const Thiran = () => {
   useEffect(() => {
     document.title = 'ACCET-Thiran';

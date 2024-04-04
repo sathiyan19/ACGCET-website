@@ -1,10 +1,10 @@
 import React,{useEffect} from "react";
 
 import "./Nss.css";
-import motto from "../../assets/pictures/nss/mottonss.webp";
-import q1 from "../../assets/pictures/quote1.webp";
-import q2 from "../../assets/pictures/quote2.webp";
-import nsslogo from "../../assets/pictures/nss/nsslogo.webp";
+// import motto from "../../assets/pictures/nss/mottonss.webp";
+// import q1 from "../../assets/pictures/quote1.webp";
+// import q2 from "../../assets/pictures/quote2.webp";
+// import nsslogo from "../../assets/pictures/nss/nsslogo.webp";
 
 import {
   Heroimagecarousal,
@@ -23,6 +23,10 @@ import {
   activitylist,
   nssachievements
 } from "../../constants/Nss";
+const motto="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/mottonss.webp"
+const nsslogo="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/nsslogo.webp"
+const q1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/quote1.webp"
+const q2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/quote2.webp"
 
 const Nss = () => {
   useEffect(() => {
