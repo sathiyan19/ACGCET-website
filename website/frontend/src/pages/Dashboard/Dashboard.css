@@ -3,19 +3,126 @@
     font-size: 40px;
     text-align: center;
 } */
-/* .dash-table-header{
-  display: flex;
-  justify-content: center;
+
+.password_dialog_outer{
+  display:flex;
   align-items: center;
-  flex-direction: column;
-} */
-.dash-tbd{
-  font-size: 18px;
-  padding: 10px;
-  color: black;
-  font-weight: 600;
-  margin-top: 20px;
+  justify-content: center;
+  position: fixed; 
+  z-index: 1000; 
+  width: 100% !important;
+  height: 100vh !important;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8); 
 }
+
+.password_change_dialog{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.password_change_dialog h2{
+  color:#01134d;
+  /* font-weight:600; */
+  margin-bottom: 30px;
+}
+
+
+
+.pswdboxsubmit{
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  color: #fff;
+  padding: 14px 64px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background: #ff6600;
+  /* background-image: linear-gradient(to right, #ff6600, #fff); */
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+.pswdboxsubmit:hover{
+  opacity: 0.9;
+  background: #00134d;
+  color: white;
+  text-transform: lowercase;
+}
+
+.login_err_msg{
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 0.75rem;
+}
+
+.dashboard_pass_strength{
+  padding: 0 0.75rem;
+  margin-bottom: 10px;
+  /* padding: 2px 30px; */
+  font-size: 14px;
+  font-weight: 700;
+}
+.password_str{
+  color: green;
+  /* padding: 2px 30px; */
+}
+.password_med{
+  color: #f8c33a;
+  /* padding: 2px 30px; */
+}
+.password_weak{
+  color: red;
+  /* padding: 2px 30px; */
+}
+
+.pswdbox {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #e6e6e6;
+  color: #333;
+  letter-spacing: 0.5px;
+  padding: 14px 64px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dashboard_form-control {
+  width: 100%;
+  position: relative;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.pswdbox ~ i {
+  position: absolute;
+  left: 32px;
+  top: 38%;
+  /* left: 38%;
+  top: 46%; */
+  transform: translateY(-50%);
+  color: #888;
+  transition: color   0.4s;
+}
+
+.pswdbox:focus ~ i {
+  color: #ff6600;
+}
+
+
 .logout_button {
   /* margin: 20px; */
   display: flex;
@@ -622,5 +729,14 @@
   }
   .sem_res_table_holder{
     width: 73%;
+  }
+}
+
+@media (max-width:400px) {
+  .password_change_dialog{
+    width: 95%;
+  }
+  .pswdbox{
+    padding:14px 30px 14px 64px;
   }
 }

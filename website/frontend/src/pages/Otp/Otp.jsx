@@ -95,7 +95,7 @@ const Otp = () => {
           </div>
         </div>
         {otp_error && <div className="otp_err_msg">{otp_error}</div>}
-        <button className="login-submit" type="submit" onClick={handleOtpSubmit}>
+        <button className="login-submit_passwdrec" type="submit" onClick={handleOtpSubmit}>
           {loading ?'Verifying otp....': 'Verify OTP'}
         </button>
       </form>
