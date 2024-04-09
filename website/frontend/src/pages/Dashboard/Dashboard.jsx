@@ -95,6 +95,10 @@ const Dashboard = () => {
   }, [navigate]);
 
   useEffect(() => {
+    document.title = "ACCET-Student Dashboard";
+  }, []);
+
+  useEffect(() => {
     const handleRadialdis = () => {
       if (window.innerWidth > 800) {
         setmenu_open(false);
@@ -407,12 +411,7 @@ const Dashboard = () => {
                 <div className="dash-result-table">
                   <div className="dash-table-header">
                     <div className="sem_options_holder">
-                      <div
-                        className="sem_input_holder"
-                        tabIndex={0}
-                        onFocus={(e) => setSem_opt_flag(true)}
-                        onBlur={(e) => setSem_opt_flag(false)}
-                      >
+                      <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
                         <div className="sem_input">Sem {sem}</div>
                         <div className="fa fa fa-chevron-circle-down"></div>
                       </div>
@@ -433,23 +432,10 @@ const Dashboard = () => {
                             </div>
                           ))}
                       </div>
-                    </div> */}
+                    </div> 
                     <div className="dash-result-table-head">Semester {sem}</div>
                   </div>
-                  <div className="sem_res_table_holder">
-                    <Table
-                      className="sem_res_table_data"
-                      data={results}
-                      columns={column}
-                    />
-                  </div>
-                  <div className="dash-tbd">Tbd-To Be Displayed
-                </div>
-                  <div className="logout_button-res">
-                    <a className="log_link" href="/logout">
-                      Logout
-                    </a>
-                  </div>
+                  <Table data={results} columns={column}/>
                 </div>
               </div>
             )}
