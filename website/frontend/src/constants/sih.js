@@ -1,8 +1,13 @@
 // sih22
-import sih1 from "../assets/pictures/sih/SIH-1.webp"
-import sih2 from "../assets/pictures/sih/SIH-2.webp"
-import sih3 from "../assets/pictures/sih/SIH-3.webp"
-import sih4 from "../assets/pictures/sih/SIH-4.webp"
+// import sih1 from "../assets/pictures/sih/SIH-1.webp"
+// import sih2 from "../assets/pictures/sih/SIH-2.webp"
+// import sih3 from "../assets/pictures/sih/SIH-3.webp"
+// import sih4 from "../assets/pictures/sih/SIH-4.webp"
+const sih1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/sih/sih/SIH-1.webp"
+const sih2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/sih/sih/SIH-2.webp"
+const sih3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/sih/sih/SIH-3.webp"
+const sih4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/sih/sih/SIH-4.webp"
+
 
 export const sih22=[
     {

@@ -11,10 +11,13 @@ import {
   nccachievements,
 } from "../../constants/ncc";
 import { Profilecard, Underline, Deptmission, Deptvision } from "../../widgets";
-import abt1 from "../../assets/pictures/ncc/abt.webp";
-import nccflag from "../../assets/pictures/ncc/nccflag.webp";
+// import abt1 from "../../assets/pictures/ncc/abt.webp";
+// import nccflag from "../../assets/pictures/ncc/nccflag.webp";
 // import nccpledge from "../../assets/pictures/ncc/pledg2-min.webp";
-import mobpledge from "../../assets/pictures/ncc/pledge1.webp";
+// import mobpledge from "../../assets/pictures/ncc/pledge1.webp";
+const abt1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/ncc/ncc/abt.webp"
+const nccflag="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/ncc/ncc/nccflag.webp"
+const mobpledge="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/ncc/ncc/pledge1.webp"
 
 const nccpledge="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/pledg2-min.webp"
 const Ncc = () => {

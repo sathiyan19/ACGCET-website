@@ -166,7 +166,7 @@
 .dash-sidenav{
     width: 20%;
     background-color: #00134d;
-    height: 110vh;
+    /* height: 110vh; */
     /* position: fixed; */
     /* top: 0; */
     /* background-size: 100% 102%; */

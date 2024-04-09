@@ -103,6 +103,20 @@ import {
   Mech_org,
   Placement,
   Mech_coe,
+
+  Coe,
+  Coe_Adminstration,
+  Coe_Academic,
+  Coe_link,
+  
+  Coe_Contact,
+  Coe_Application,
+  Coe_Claim,
+  Coe_FeeStruct,
+  Coe_syllabuss,
+  Coe_syllabus1,
+  Coe_Committiee,
+  
   Login,
   Dashboard,
   Logout,
@@ -117,6 +131,8 @@ import {
   Akkadians
 } from "./pages";
 import "./App.css";
+import Coe_syllabus from "./pages/coe/Coe_syllabuss";
+/*import Coe_Adminstration from "./pages/Coe/Coe_Adminstration";*/
 
 
 const App = () => {
@@ -230,6 +246,12 @@ const App = () => {
         <Route path="/mechdept/mech-sae"element={<Mech_events/>}/>
         <Route path="/placement" element={<Placement />} />
         <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
+         
+         <Route path="/coe"element={<Coe/>}/>
+         <Route path="/coe/coe_adminstration"element={<Coe_Adminstration/>}/>
+         <Route path="/coe/coe_academic"element={<Coe_Academic/>}/>
+         <Route path="/coe/coe_link"element={<Coe_link/>}/>
+         <Route path="/coe/coe_contact"element={<Coe_Contact/>}/>
         <Route path="/login-page" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/logout" element={<Logout />} />
@@ -242,6 +264,12 @@ const App = () => {
         <Route path="/typhonz" element={<Typhonz_page/>}/>
         <Route path="/phoenix" element={<Phoenix/>}/>
         <Route path="/akkadians" element={<Akkadians/>}/>
+         <Route path="/coe/coe_application"element={<Coe_Application/>}/>
+         <Route path="/coe/coe_claim"element={<Coe_Claim/>}/>
+         <Route path="/coe/coe_feestruct"element={<Coe_FeeStruct/>}/>
+         <Route path="/coe/coe_syllabuss"element={<Coe_syllabuss/>}/>
+         <Route path="/coe/coe_syllabus1"element={<Coe_syllabus1/>}/>
+         <Route path="/coe/coe_committiee"element={<Coe_Committiee/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

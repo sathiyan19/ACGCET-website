@@ -1,0 +1,136 @@
+.coe-contactform {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #d9edff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.coe-sir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+.coe-sir-img {
+  border-radius: 50%;
+  width: 75%;
+  margin-bottom: 20px;
+  margin-top: 30%;
+}
+
+.coe-textbox {
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.coe-textbox-p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #00134d;
+  text-align: center;
+}
+
+.coe-name,
+.coe-designation,
+.coe-sir .coe-textbox-p:last-child {
+  color: #00134d;
+  font-size: 1em;
+  white-space: nowrap;
+  margin-bottom: 5%;
+  text-align: left;
+  padding-left: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.coe-name {
+  margin-top: 10px;
+}
+
+.coe-textbox form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coe-input,
+.coe-textarea {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+
+
+.coe-textarea {
+  height: 120px;
+}
+
+.coe-submit {
+  width: 150px;
+  height: 40px;
+  background-color: #00134d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.coe-submit:hover{
+  background-color: #ff6600;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .coe-contactform {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coe-sir {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .coe-sir-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .coe-textbox {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .coe-name,
+  .coe-designation,
+  .coe-sir-p:last-child {
+    color: #00134d;
+    font-size: 1em;
+    white-space: nowrap;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  .coe-input
+  .coe-textarea {
+    width: 90%;
+  }
+
+  .coe-submit {
+    width: 100%;
+  }
+}

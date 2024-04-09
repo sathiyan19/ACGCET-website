@@ -4,7 +4,9 @@ import "./Iste.css";
 import { Timeline, Listformat } from "../../components";
 import { Underline, Backtotop } from "../../widgets";
 import { istepdf, istelist } from "../../constants/iste";
-import istelogo from "../../assets/pictures/istelogo.webp";
+// import istelogo from "../../assets/pictures/istelogo.webp";
+const istelogo ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/iste/istelogo.webp"
+
 
 function Iste() {
   useEffect(() => {
