@@ -1,11 +1,12 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 
 import "./Coe_Contact.css";
 import { Backtotop, Floatinmenu, Underline } from "../../widgets";
 import { coe_menu, query } from "../../constants/coe";
 import { Radial_menu } from "../../components";
 import { FaEmpire } from "react-icons/fa6";
+import axios from 'axios';
 
 const asr= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/ASR.webp"
 
@@ -13,6 +14,24 @@ const Contact = () => {
   useEffect(() => {
     document.title = 'Accet-COE | Contact';
   }, []);
+  const [loading, setLoading]=useState(false);
+  const [coename, setCoename]=useState();
+  const [coeemail, setcoeemail]=useState();
+  const [coephno, setcoephno]=useState();
+  const [coequery, setcoequery]=useState();
+  const sendQuery = async (e) => {
+    e.preventDefault();
+
+    try {
+      setLoading(true);
+      const response = await axios.post('/backend/sendquery', { coename:coename,coeemail:coeemail,coephno:coephno,coequery:coequery,});
+      console.log(response.data); 
+    } catch (error) {
+      console.error('Error:', error);
+    }finally{
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="coe_dept">
@@ -35,12 +54,12 @@ const Contact = () => {
         <div className="heading">
           <Underline heading="Post your queries" />
         </div>
-        <div className="contactform">
-        <div className="sir">
-  <img src={asr} alt="Dr. A. Sivanantha Raja" />
+        <div className="coe-contactform">
+        <div className="coe-sir">
+  <img className='coe-sir-img' src={asr} alt="Dr. A. Sivanantha Raja" />
  
-  <p className="name">Dr. A. Sivanantha Raja,</p>
-  <p className="designation">Controller of Examination,</p>
+  <p className="coe-sir-name">Dr. A. Sivanantha Raja,</p>
+  <p className="coe-sir-designation">Controller of Examination,</p>
   <p>ACGCET, Karaikudi.</p>
  
  
@@ -51,14 +70,16 @@ const Contact = () => {
          
        
        
-          <div className="textbox">
-            <p>Leave Your Query Here</p>
-            <form>
-              <input type="text" id="name" placeholder="Your Name" required />
-              <input type="email" id="email" placeholder="Email Id" required />
-              <input type="text" id="Phone" placeholder="Phone no" required />
-              <textarea id="message"rows="4"  placeholder="How can we help you"></textarea>
-              <button type="submit">Send Message</button>
+          <div className="coe-textbox">
+            <p className='coe-textbox-p'>Leave Your Query Here</p>
+            <form onSubmit={sendQuery}>
+              <input className='coe-input' value={coename} type="text" id="name" placeholder="Your Name" required onChange={(e)=> setCoename(e.target.value.trim())}/>
+              <input className='coe-input' value={coeemail} type="email" id="email" placeholder="Email Id" required onChange={(e)=> setcoeemail(e.target.value.trim())}/>
+              <input className='coe-input' value={coephno} type="text" id="Phone" placeholder="Phone no" required onChange={(e)=> setcoephno(e.target.value.trim())}/>
+              <textarea className='coe-textarea' value={coequery} id="message"rows="4"  placeholder="How can we help you" onChange={(e)=>setcoequery(e.target.value.replace(/ /g, ' '))}></textarea>
+              <button className='coe-submit' type="submit" disabled={loading}>
+              {loading ? 'Sending Query...' : 'Send Message'}
+              </button>
             </form>
           </div>
         </div>

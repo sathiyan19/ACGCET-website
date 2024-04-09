@@ -51,7 +51,7 @@ const coe_menu =[
     },
     {
       id:"8",
-      path:"/coe/coe_committiee",
+      path:"/under",
       link:"Committiess",
       arl:'1'
     },
