@@ -22,6 +22,7 @@ const Information = () => {
             <a href="https://www.accet.co.in" target='blank' className="quick-link">Controller of Examination</a>
             <a href="/scholarship" className="quick-link">Scholarships</a>
             <a href="/fee-structure" className="quick-link">Fee Structure</a>
+            
         </div>
     </div>
   )

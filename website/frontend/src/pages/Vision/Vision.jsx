@@ -3,14 +3,22 @@ import {useEffect} from 'react'
 
 import './Vision.css'
 
-import integrity from '../../assets/pictures/integrity.webp'
-import ethics from '../../assets/pictures/ethics.webp'
-import respect from '../../assets/pictures/aaaa.png'
-import responsibility from '../../assets/pictures/responsibility.webp'
-import trust from '../../assets/pictures/trust.webp'
-import diversity from '../../assets/pictures/diversity.webp'
-import ie from '../../assets/pictures/ie.webp'
-import teamwork from '../../assets/pictures/teamwork.webp'
+// import integrity from '../../assets/pictures/integrity.webp'
+// import ethics from '../../assets/pictures/ethics.webp'
+// import respect from '../../assets/pictures/aaaa.png'
+// import responsibility from '../../assets/pictures/responsibility.webp'
+// import trust from '../../assets/pictures/trust.webp'
+// import diversity from '../../assets/pictures/diversity.webp'
+// import ie from '../../assets/pictures/ie.webp'
+// import teamwork from '../../assets/pictures/teamwork.webp'
+const integrity="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/vission_mission/integrity.webp"
+const ethics="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/vission_mission/ethics.webp"
+const respect="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/vission_mission/respect.webp"
+const responsibility="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/vission_mission/responsibility.webp"
+const trust="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/vission_mission/trust.webp"
+const diversity="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/vission_mission/diversity.webp"
+const ie="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/vission_mission/ie.webp"
+const teamwork="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/vission_mission/teamwork.webp"
 
 const Vision = () => {
 

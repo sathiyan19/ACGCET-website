@@ -7,12 +7,19 @@
 
 
 
-import cover from "../assets/pictures/pangu auto.webp";
-import cover1 from "../assets/pictures/thiran_water.webp";
-import cover2 from "../assets/pictures/thiran_home.webp";
-import cover3 from "../assets/pictures/thiran_driver.webp";
-import cover4 from "../assets/pictures/compass.webp";
-import cover5 from "../assets/pictures/thiran_civil.webp";
+// import cover from "../assets/pictures/pangu auto.webp";
+// import cover1 from "../assets/pictures/thiran_water.webp";
+// import cover2 from "../assets/pictures/thiran_home.webp";
+// import cover3 from "../assets/pictures/thiran_driver.webp";
+// import cover4 from "../assets/pictures/compass.webp";
+// import cover5 from "../assets/pictures/thiran_civil.webp";
+const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/thiran/pangu+auto.webp"
+const cover1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/thiran/thiran_water.webp"
+const cover2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/thiran/thiran_home.webp"
+const cover3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/thiran/thiran_driver.webp"
+const cover4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/thiran/compass.webp"
+const cover5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/thiran/thiran_civil.webp"
+
 
 const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/thiran/thiran_grp.webp"
 const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/thiran/thiran_grp1.webp"

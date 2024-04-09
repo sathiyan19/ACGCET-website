@@ -9,7 +9,7 @@ import { Radial_menu } from "../../components";
 
 import { BsFillGearFill } from "react-icons/bs";
 const Mech_lib = () => {
-  useEffect(() => {
+  useEffect(() => { 
     document.title = 'ACCET-Mech | Library';
   }, []);
   return (

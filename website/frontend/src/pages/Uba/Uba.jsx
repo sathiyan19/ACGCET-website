@@ -3,9 +3,10 @@ import "./Uba.css";
 import { Underline,Deptmission,Deptvision } from "../../widgets";
 import { Listformat } from "../../components";
 import {ubavis,ubamis,ubagoal} from "../../constants/Uba";
-import gandhi from "../../assets/pictures/Gandhiji.webp"
-import uba from "../../assets/pictures/uba.webp"
-
+// import gandhi from "../../assets/pictures/Gandhiji.webp"
+// import uba from "../../assets/pictures/uba.webp"
+const gandhi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/uba/Gandhiji.webp"
+const uba="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/uba/uba.webp"
 const Uba = () => {
   useEffect(() => {
     document.title = 'ACCET-UBA';
