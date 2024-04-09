@@ -77,6 +77,10 @@ const Admin_dashboard = () => {
     .catch((err) => console.log(err));
 }, [navigate]);
 
+useEffect(() => {
+  document.title = "ACCET-Admin";
+}, []);
+
   return (
     <div>
       <Underline heading={"Admin Panel"} />

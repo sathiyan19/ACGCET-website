@@ -139,7 +139,7 @@ const Login = () => {
                   autoComplete="username"
                   value={username}
                   type="text"
-                  placeholder="Username"
+                  placeholder="Register Number"
                   onChange={(e) => setUsername(e.target.value)}
                 />
                 <i className="fa fa-user"></i>

@@ -255,14 +255,23 @@ const bottom_nav_paths = [
     basepath: "javascript:void(0);",
     links: [
       {
-        path: "https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing",
+        // path: "https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing",
+        path: "/naac",
         link: "NAAC",
       },
       { path: "/iqac", link: "IQAC" },
       { path: "/nba", link: "NBA" },
-      { path: "/nirf", link: "NIRF" },
+      // { path: "/nirf", link: "NIRF" },
       { path: "/annual_reports", link: "Annual Reports" },
     ],
+  },
+
+  {
+    id: "21",
+    type: "3",
+    title: "NIRF",
+    basepath: "/nirf",
+    links: [],
   },
 
   {
@@ -302,7 +311,7 @@ const login_nav_paths = [
   {
     id: "20",
     type: "4",
-    title: "",
+    title: "Login",
     basepath: "/dashboard",
     links: [],
   },
