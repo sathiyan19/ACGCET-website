@@ -9,6 +9,7 @@ const res_publish= async (req,res)=>{
             select * 
             from ??
             where regno=?
+            order by sem desc
             `,
             [res_publish_table,regno]
         )

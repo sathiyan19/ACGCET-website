@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./Sportcard.css";
 
-const Sportcard = ({ img, head, points,wins }) => {
+const Sportcard = ({ img, head, points,wins,link }) => {
   const [modal_flag, setmodal_flag] = useState(false);
   const displaymodal = () => {
     setmodal_flag(true);
@@ -19,7 +19,7 @@ const Sportcard = ({ img, head, points,wins }) => {
   };
   return (
     <>
-      <div className="sport_card_frame" onClick={displaymodal}>
+      <a href={link} className="sport_card_frame">
         <div className="sport_card_topsec">
           <div className="sport_card_img_holder">
             <img className="sport_card_img" src={img} />
@@ -28,7 +28,8 @@ const Sportcard = ({ img, head, points,wins }) => {
         </div>
 
         <div className="sport_card_point_sec">{points}pts</div>
-      </div>
+        <div className="sport_card_click">Click for images!</div>
+      </a>
 
       {modal_flag && (
         <div

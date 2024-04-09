@@ -74,6 +74,7 @@ const Login = () => {
         }
         console.log(find_dept(code));
         const res = await axios.post("/backend/login", {
+        // const res = await axios.post("http://localhost:5002/api/login", {
           username,
           password,
         });
@@ -107,6 +108,7 @@ const Login = () => {
   useEffect(()=>{
     console.log("started!")
     axios.get("/backend/login_verification")
+    // axios.get("http://localhost:5002/api/login_verification")
     .then((res)=>{
       console.log(res)
       if(res.data.token_status==="okay"){
@@ -138,7 +140,7 @@ const Login = () => {
                   autoComplete="username"
                   value={username}
                   type="text"
-                  placeholder="Username"
+                  placeholder="Register Number"
                   onChange={(e) => setUsername(e.target.value)}
                 />
                 <i className="fa fa-user"></i>
