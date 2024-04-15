@@ -25,7 +25,6 @@ const dashboard=async(req,res)=>{
       [dept_table,reg_no]
     );
     dash.department=dept.toUpperCase()
-    // console.log(dash)
     return res.json({Status:"Success",stud_details:dash})
 
 }catch(error){

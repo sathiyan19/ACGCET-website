@@ -4,7 +4,7 @@ const multer = require('multer');
 const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP}=require("./otp.js")
 const {dashboard}=require("./protected_routes.js")
-const {res_publish, res_result,get_sem_list}=require("./results.js")
+const {res_publish, res_result,get_sem_list,download_prov_marksheet}=require("./results.js")
 const {get_Tables,excel_to_SQL}=require("./admin.js")
 
 const storage = multer.memoryStorage();
@@ -31,6 +31,8 @@ router.post('/api/respublish',res_publish)
 router.post('/api/resresult',res_result)
 
 router.post('/api/getsemlist',get_sem_list)
+
+router.post('/api/download_marksheet',download_prov_marksheet)
 
 router.post('/api/exceltosql', upload.single('file'),excel_to_SQL);
 

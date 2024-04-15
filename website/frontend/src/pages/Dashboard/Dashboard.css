@@ -163,12 +163,17 @@
     text-transform: lowercase;
 }
 
+.dash_complete_div{
+  width: 100%;
+  display: flex;
+}
+
 .dash-sidenav{
     width: 20%;
     background-color: #00134d;
-    height: 110vh;
+    height: 100%;
     /* position: fixed; */
-    /* top: 0; */
+    /* top: 100; */
     /* background-size: 100% 102%; */
     padding-top: 40px;
     margin: 0;
@@ -221,9 +226,10 @@
   display: flex;
 }
 .profile-sec{
-    flex: 1;
+    /* flex:1; */
     padding: 20px;
-    
+    /* margin-left: 20%; */
+    width: 80% !important;
 }
 .sem_res_table_holder{
   width: 100%;
@@ -506,6 +512,11 @@
 @media(max-width:800px){
   .dash-sidenav{
     display: none;
+  }
+  .profile-sec{
+    width: 100%;
+    margin-left: 0;
+    flex: 1;
   }
   .d-emis{
     font-size: 20px !important;
