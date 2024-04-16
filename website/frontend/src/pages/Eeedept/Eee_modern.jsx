@@ -13,11 +13,12 @@ import {
     feedback
   } from "../../constants/eee_dept";
   
-  import drives from '../../assets/pictures/eee_dept/eee_labs/drives.webp'
 import { Radial_menu,Hodmsg, Listformat } from "../../components";
 // import eee from "../../assets/pictures/eee_about.webp";
 
 import { AiFillThunderbolt } from "react-icons/ai";
+const drives="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/drives.webp"
+
 
 const Eee_modern = () => {
   useEffect(() => {

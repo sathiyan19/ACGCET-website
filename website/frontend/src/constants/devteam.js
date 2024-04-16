@@ -1,11 +1,18 @@
-import sathiyan from '../assets/pictures/devteam/sathiyan.webp'
-import arjun from '../assets/pictures/devteam/arjun.webp'
-import harish from '../assets/pictures/devteam/harish.webp'
-import belcy from '../assets/pictures/devteam/belcy.webp'
-import kaviya from '../assets/pictures/devteam/kaviya.webp'
+// import sathiyan from '../assets/pictures/devteam/sathiyan.webp'
+// import arjun from '../assets/pictures/devteam/arjun.webp'
+// import harish from '../assets/pictures/devteam/harish.webp'
+// import belcy from '../assets/pictures/devteam/belcy.webp'
+// import kaviya from '../assets/pictures/devteam/kaviya.webp'
 
-import dhurika from '../assets/pictures/devteam/dhurika.webp'
-import stalin from '../assets/pictures/devteam/stalin.webp'
+// import dhurika from '../assets/pictures/devteam/dhurika.webp'
+// import stalin from '../assets/pictures/devteam/stalin.webp'
+const dhurika="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/devteam/dhurika.webp"
+const stalin="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/devteam/stalin.webp"
+const kaviya="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/devteam/kaviya.webp"
+const belcy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/devteam/belcy.webp"
+const harish="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/devteam/harish.webp"
+const arjun="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/devteam/arjun.webp"
+const sathiyan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/devteam/sathiyan.webp"
 
 export const devteam=[
     {

@@ -5,6 +5,7 @@ const dbConfig = {
     user: 'root',
     password: 'Sep14@23',
     // password: 'Badminton19@',
+    // password: 'root',
     database: 'clgdata'
   };
 

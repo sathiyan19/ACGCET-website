@@ -1,9 +1,26 @@
 import oracle from '../assets/pictures/news_img/oracle.webp'
-import ga from '../assets/pictures/news_img/ga.webp'
-import nlp from '../assets/pictures/news_img/nlp.webp'
-import stnd_day from '../assets/pictures/news_img/stnd_day.webp'
+// import ga from '../assets/pictures/news_img/ga.webp'
+// import nlp from '../assets/pictures/news_img/nlp.webp'
+// import stnd_day from '../assets/pictures/news_img/stnd_day.webp'
 import sih from '../assets/pictures/news_img/sih.webp'
-import envision from '../assets/pictures/news_img/envision_2024.webp'
+ import envision from '../assets/pictures/news_img/envision_2024.webp'
+// import ececover from '../assets/pictures/microchip.webp'
+// import cover from '../assets/pictures/cover pic.jpg'
+// import edc from '../assets/pictures/news_img/edc.webp'
+// import ga from '../assets/pictures/news_img/ga.webp'
+// import nlp from '../assets/pictures/news_img/nlp.webp'
+// import stnd_day from '../assets/pictures/news_img/stnd_day.webp'
+
+const edc="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/edc.webp"
+const ga="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/ga.webp"
+const nlp="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/nlp.webp"
+const stnd_day="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/stnd_day.webp"
+const ececover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/microchip.webp"
+
+// import ga from '../assets/pictures/news_img/ga.webp'
+// import nlp from '../assets/pictures/news_img/nlp.webp'
+// import stnd_day from '../assets/pictures/news_img/stnd_day.webp'
+ 
 
 export const news_info=[
 

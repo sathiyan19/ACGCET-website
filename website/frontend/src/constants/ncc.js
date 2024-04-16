@@ -7,8 +7,10 @@
 
 
 // profile_info
-import s1cover from '../assets/pictures/ncc/ncccover.webp'
-import s1 from '../assets/pictures/ncc/loki.webp'
+// import s1cover from '../assets/pictures/ncc/ncccover.webp'
+// import s1 from '../assets/pictures/ncc/loki.webp'
+const s1cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/ncc/ncc/ncccover.webp"
+const s1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/ncc/ncc/loki.webp"
 
 const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/ncc2.webp"
 const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/ncc/ncc3.webp"
