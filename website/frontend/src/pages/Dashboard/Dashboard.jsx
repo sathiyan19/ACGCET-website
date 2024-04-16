@@ -397,7 +397,7 @@ const Dashboard = () => {
                 </div>
                 <div className="dash-result-table">
                   <div className="dash-table-header">
-                    <div className="sem_options_holder">
+                    {/* <div className="sem_options_holder">
                       <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
                         <div className="sem_input">Sem {sem}</div>
                         <div className="fa fa fa-chevron-circle-down"></div>
@@ -419,11 +419,11 @@ const Dashboard = () => {
                             </div>
                           ))}
                       </div>
-                    </div> 
+                    </div>  */}
                     <div className="dash-result-table-head">Semester {sem}</div>
                   </div>
                   <Table data={results} columns={column}/>
-                  <button onClick={download_marksheet}>Download</button>
+                  {/* <button onClick={download_marksheet}>Download</button> */}
                 </div>
               </div>
             )}
