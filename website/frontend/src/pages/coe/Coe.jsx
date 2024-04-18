@@ -37,7 +37,7 @@ const Coe = () => {
     </div>
     <Radial_menu menu_links={coe_menu} />
     <div className="coe_abt">
-      <Underline heading ="About coe"/>
+      <Underline heading ="About COE"/>
       <div className="coe_two-col">
         <p className="coe_dept_content">
       The Office of the Controller of Examinations is responsible in the conduct of scheduled examinations of Alagappa Chettiar Government college of Engineering and Technology (ACGCET), Karaikudi which is permanently affiliated to the Anna University, Chennai. 
@@ -60,15 +60,21 @@ const Coe = () => {
 
             </p>
       </div>
+      <div className="exam_heading">
+      <Underline heading ="Examination Automation"/>
+      </div>
       <div className="examination">
-        <Underline heading ="Examination Automation"/>
+       
+        {/* <Underline heading ="Examination Automation"/> */}
+       
         <p className="exam">
-        The autonomous office is equipped with10 Computers, 06 laser printers, High-End servers, High-End scanners, High-End printers, line printers, UPS (5 KVA) units, 2 AC machines, LCD projector, CCTV set up, and LAN set up. With these ICT and physical infrastructure facilities, the autonomous office has implemented a fully automated examination processes.
+        The autonomous office is equipped with 10 Computers, 06 laser printers, High-End servers, High-End scanners, High-End printers, line printers, UPS (5 KVA) units, 2 AC machines, LCD projector, CCTV set up, and LAN set up. With these ICT and physical infrastructure facilities, the autonomous office has implemented a fully automated examination processes.
 
 
         </p>
         
-      </div><Underline heading=" Automation processes "/>
+      </div>
+      <Underline heading=" Automation processes "/>
       <div className="process">
        
         
