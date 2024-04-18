@@ -16,3 +16,5 @@ export {default as Devcard} from './Devcard/Devcard';
 export {default as Sportcard} from './Sportcard/Sportcard';
 export {default as Opening } from './Opening/Opening';
 export {default as Syllabuscard } from './Syllabuscard/Syllabuscard';
+
+export {default as Successful_dialog} from './Successful_dialog/Successful_dialog';

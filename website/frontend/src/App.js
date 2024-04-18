@@ -128,7 +128,8 @@ import {
   Ignatz,
   Typhonz_page,
   Phoenix,
-  Akkadians
+  Akkadians,
+  Audit_stmt
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -269,7 +270,7 @@ const App = () => {
          <Route path="/coe/coe_feestruct"element={<Coe_FeeStruct/>}/>
          <Route path="/coe/coe_syllabuss"element={<Coe_syllabuss/>}/>
          <Route path="/coe/coe_syllabus1"element={<Coe_syllabus1/>}/>
-         <Route path="/coe/coe_committiee"element={<Coe_Committiee/>}/>
+         <Route path="/coe/coe_committiee"element={<Coe_Committiee/>}/>        <Route path="/audit_stmt" element={<Audit_stmt/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
