@@ -5,22 +5,35 @@
 // import image4 from "../assets/pictures/nss/nsshero4.webp";
 
 // profile_info
-import s1cover from "../assets/pictures/nss/s1cover.webp";
-import s2cover from "../assets/pictures/nss/s2cover.webp";
-import s3cover from "../assets/pictures/nss/s3cover.webp";
-import s1 from "../assets/pictures/nss/s1.webp";
-import s2 from "../assets/pictures/nss/s2.webp";
-import s3 from "../assets/pictures/nss/s3.webp";
+// import s1cover from "../assets/pictures/nss/s1cover.webp"; 
+// import s2cover from "../assets/pictures/nss/s2cover.webp";
+// import s3cover from "../assets/pictures/nss/s3cover.webp"; 
+// import s1 from "../assets/pictures/nss/s1.webp"; 
+// import s2 from "../assets/pictures/nss/s2.webp"; 
+// import s3 from "../assets/pictures/nss/s3.webp"; 
 
+const s1cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/s1cover.webp"
+const s2cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/s2cover.webp"
+const s3cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/s3cover.webp"
+const s1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/s1.webp"
+const s2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/s2.webp"
+const s3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/s3.webp"
 
 // nssactivity
-import gal1 from "../assets/pictures/nss/gal1.webp";
-import gal2 from "../assets/pictures/nss/gal2.webp";
-import gal3 from "../assets/pictures/nss/gal3.webp";
-import gal4 from "../assets/pictures/nss/gal4.webp";
-import gal5 from "../assets/pictures/nss/gal5.webp";
-import gal6 from "../assets/pictures/nss/gal6.webp";
-import gal7 from "../assets/pictures/nss/gal7.webp";
+// import gal1 from "../assets/pictures/nss/gal1.webp"; 
+// import gal2 from "../assets/pictures/nss/gal2.webp"; 
+// import gal3 from "../assets/pictures/nss/gal3.webp";
+// import gal4 from "../assets/pictures/nss/gal4.webp";
+// import gal5 from "../assets/pictures/nss/gal5.webp"; 
+// import gal6 from "../assets/pictures/nss/gal6.webp";
+// import gal7 from "../assets/pictures/nss/gal7.webp"; 
+const gal1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/gal1.webp"
+const gal2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/gal2.webp"
+const gal3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/gal3.webp"
+const gal4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/gal4.webp"
+const gal5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/gal5.webp"
+const gal6="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/gal6.webp"
+const gal7="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/gal7.webp"
 
 const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/nss/nsshero1.webp"
 const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/nss/nsshero2.webp"

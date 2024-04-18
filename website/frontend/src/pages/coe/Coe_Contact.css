@@ -1,0 +1,136 @@
+.contactform {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #d9edff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+.sir img {
+  border-radius: 50%;
+  width: 75%;
+  margin-bottom: 20px;
+  margin-top: 30%;
+}
+
+.textbox {
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+.textbox p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #00134d;
+  text-align: center;
+}
+
+.name,
+.designation,
+.sir p:last-child {
+  color: #00134d;
+  font-size: 1em;
+  white-space: nowrap;
+  margin-bottom: 5%;
+  text-align: left;
+  padding-left: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.textbox form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textbox input[type="text"],
+.textbox input[type="email"],
+.textbox input[type="tel"],
+.textbox textarea {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+
+
+.textbox textarea {
+  height: 120px;
+}
+
+.textbox button[type="submit"] {
+  width: 150px;
+  height: 40px;
+  background-color: #00134d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contactform {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sir {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .sir img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .textbox {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .name,
+  .designation,
+  .sir p:last-child {
+    color: #00134d;
+    font-size: 1em;
+    white-space: nowrap;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  .textbox input[type="text"],
+  .textbox input[type="email"],
+  .textbox input[type="tel"],
+  .textbox textarea {
+    width: 100%;
+  }
+
+  .textbox button[type="submit"] {
+    width: 100%;
+  }
+}
