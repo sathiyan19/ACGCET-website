@@ -869,7 +869,7 @@ const eee_fac_profiles = [
     name: "Dr.C.Vennila",
     Designation: "Associate Professor",
     mailid: "vennila@accetedu.in",
-    pdf: "https://drive.google.com/file/d/1hwItDOCeoFC1Tch5xhuZ4okuI72u1XTI/view?usp=drive_link",
+    pdf: "https://drive.google.com/file/d/1YRcDbOlr58hbclvZTbunPAAnPrnnXfoV/view?usp=sharing",
   },
   {
     id: "5",

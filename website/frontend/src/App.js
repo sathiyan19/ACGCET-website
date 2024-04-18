@@ -109,7 +109,8 @@ import {
   Passreset,
   Otp,
   Newpass,
-  Admin_dashboard
+  Admin_dashboard,
+  Audit_stmt
 } from "./pages";
 import "./App.css";
 
@@ -232,7 +233,7 @@ const App = () => {
         <Route path="/password-otp" element={<Otp/>}/>
         <Route path="/password-create" element={<Newpass/>}/>
         <Route path="/admin-panel" element={<Admin_dashboard/>}/>
-
+        <Route path="/audit_stmt" element={<Audit_stmt/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

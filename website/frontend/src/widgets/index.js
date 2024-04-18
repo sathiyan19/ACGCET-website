@@ -14,3 +14,4 @@ export {default as Reunion_card} from './Reunion_card/Reunion_card';
 export {default as Scholar_card} from './Scholar_card/Scholar_card'
 export {default as Devcard} from './Devcard/Devcard';
 export {default as Sportcard} from './Sportcard/Sportcard';
+export {default as Successful_dialog} from './Successful_dialog/Successful_dialog';
