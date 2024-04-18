@@ -3,6 +3,7 @@
     height: auto;
     padding: 50px 70px;
     background: #00134d;
+    position: relative;
     z-index: 1;
 }
 

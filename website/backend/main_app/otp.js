@@ -22,7 +22,7 @@ const sendquery = async (req,res) => {
     transporter.sendMail(
       {
         from: "acgcet25@gmail.com",
-        to: "arjunprakashas03@gmail.com",
+        to: "sivanantharaja@gmail.com",
         subject: `Query from ${coename} through COE site`,
         text: `Mail id: ${coeemail},\n Phone no: ${coephno},\n Query: ${coequery}`,
       },

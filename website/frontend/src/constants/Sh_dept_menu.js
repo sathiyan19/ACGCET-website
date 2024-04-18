@@ -215,7 +215,7 @@ const mat_fac_profiles = [
     cover: mcover,
     dp: vasanthi,
     name: "Dr.R.Vasanthi",
-    Designation: "Assistant Professor and Head of the Department",
+    Designation: "Head of the Department/ Associate professor",
     mailid: "vasanthi2014accet@gmail.com",
     pdf: "https://drive.google.com/file/d/1nlNp_XBns6MCn8QgWf_-OpFsWCSFOwyH/view?usp=drive_link",
   },

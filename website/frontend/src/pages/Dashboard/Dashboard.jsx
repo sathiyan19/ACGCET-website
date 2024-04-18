@@ -6,6 +6,7 @@ import { Progressbar, Underline } from "../../widgets";
 import { Table } from "../../components";
 import { subjects } from "../../constants/dashboard";
 
+
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
   const [sem_opt_flag, setSem_opt_flag] = useState(false);
@@ -128,7 +129,7 @@ const Dashboard = () => {
         item.subjectname = subjects[dept_sub][item.subcode].subname;
         return item; // Don't forget to return the modified item
       });
-      setSem(res_pub.data[0].sem);
+      setSem(res_pub.data[0].current_sem);
       setResults(res_pub.data);
     } catch (error) {
       console.error(error);
@@ -171,6 +172,28 @@ const Dashboard = () => {
     }
     // console.log(sems.data)
   };
+
+  const download_marksheet =async()=>{
+    try {
+      const marksheet = await axios.post("/backend/download_marksheet", {},{
+        responseType: 'blob' // Specify responseType as 'blob' to receive binary data
+      });
+      const url = window.URL.createObjectURL(new Blob([marksheet.data]));
+      
+      // Create a link element and trigger download
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${stud_details.regno}_Sem${sem}.pdf`; // Specify the filename
+      document.body.appendChild(a);
+      a.click();
+      
+      // Clean up the temporary URL
+      window.URL.revokeObjectURL(url);
+      console.log(marksheet)
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   const column = [
     // {field:'sno',header:"Sno"},
@@ -224,6 +247,7 @@ const Dashboard = () => {
           </div>
         )}
         {/* sidenavbar */}
+        <div className="dash_complete_div">
         <section className="dash-sidenav">
           <Link
             to={"/dashboard"}
@@ -252,44 +276,7 @@ const Dashboard = () => {
           </Link>
         </section>
 
-        {/* radialmenu */}
-        <div
-          className={`radial_menu1 fa ${
-            menu_open ? "fa-close radial_float_menu1" : "fa-bars"
-          }`}
-          onClick={toggle_menu}
-        ></div>
-        <div className={`radial_bg1 ${menu_open ? "scaled1" : ""}`}>
-          <div className="dept_menu1">
-            <div className="dept_link_head1">MENU</div>
-            <div className="dept_link_holder1">
-              <Link
-                to={"/dashboard"}
-                className={`dept_links1 ${
-                  activeTab === "profile" ? "active1" : ""
-                }`}
-                onClick={() => handleTabClick("profile")}
-              >
-                Profile
-              </Link>
-              <Link
-                to={"/dashboard"}
-                className={`dept_links1 ${
-                  activeTab === "result" ? "active1" : ""
-                }`}
-                onClick={() => {
-                  fetch_publish_results(
-                    stud_details.regno,
-                    stud_details.department
-                  );
-                  handleTabClick("result");
-                }}
-              >
-                Result
-              </Link>
-            </div>
-          </div>
-        </div>
+        
 
         <div className="profile-sec">
           {activeTab === "profile" && (
@@ -410,7 +397,7 @@ const Dashboard = () => {
                 </div>
                 <div className="dash-result-table">
                   <div className="dash-table-header">
-                    <div className="sem_options_holder">
+                    {/* <div className="sem_options_holder">
                       <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
                         <div className="sem_input">Sem {sem}</div>
                         <div className="fa fa fa-chevron-circle-down"></div>
@@ -432,16 +419,57 @@ const Dashboard = () => {
                             </div>
                           ))}
                       </div>
-                    </div> 
+                    </div>  */}
                     <div className="dash-result-table-head">Semester {sem}</div>
                   </div>
                   <Table data={results} columns={column}/>
+                  {/* <button onClick={download_marksheet}>Download</button> */}
                 </div>
               </div>
             )}
           </div>
         </div>
+        </div>
       </div>
+
+      {/* radialmenu */}
+      <div
+          className={`radial_menu1 fa ${
+            menu_open ? "fa-close radial_float_menu1" : "fa-bars"
+          }`}
+          onClick={toggle_menu}
+        ></div>
+        <div className={`radial_bg1 ${menu_open ? "scaled1" : ""}`}>
+          <div className="dept_menu1">
+            <div className="dept_link_head1">MENU</div>
+            <div className="dept_link_holder1">
+              <Link
+                to={"/dashboard"}
+                className={`dept_links1 ${
+                  activeTab === "profile" ? "active1" : ""
+                }`}
+                onClick={() => handleTabClick("profile")}
+              >
+                Profile
+              </Link>
+              <Link
+                to={"/dashboard"}
+                className={`dept_links1 ${
+                  activeTab === "result" ? "active1" : ""
+                }`}
+                onClick={() => {
+                  fetch_publish_results(
+                    stud_details.regno,
+                    stud_details.department
+                  );
+                  handleTabClick("result");
+                }}
+              >
+                Result
+              </Link>
+            </div>
+          </div>
+        </div>
       {/* <Radial_menu menu_links={dashboard_dept_menu}/> */}
     </div>
   );
