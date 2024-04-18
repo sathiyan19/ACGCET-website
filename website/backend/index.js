@@ -15,7 +15,7 @@ app_main.use('/backend', createProxyMiddleware({
 }));
 console.log("Proxy middleware configured for '/backend' requests.");
 
-app_main.use(cookieParser());
+app_main.use(cookieParser());         
 app_main.use(body_parser.json());
 
 //--------------changes-----------------

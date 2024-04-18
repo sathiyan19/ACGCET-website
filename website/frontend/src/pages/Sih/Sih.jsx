@@ -1,7 +1,7 @@
 import React,{useEffect} from "react";
 
 import "./Sih.css";
-import { Underline, Modal,Backtotop } from "../../widgets";
+import { Underline, Modal,Backtotop, Successful_dialog } from "../../widgets";
 import { sih22, sih20 } from "../../constants/sih";
 
 // import sihlogo from "../../assets/pictures/sih/sih_logo.webp";
@@ -16,6 +16,7 @@ const Sih = () => {
       <Backtotop />
       <div className="sihwhole">
         <Underline heading="Smart India Hackathon" />
+        {/* <Successful_dialog heading="Password set successfully"/> */}
 
         <div className="sihabt">
          <div className="sihabttext">

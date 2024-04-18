@@ -37,7 +37,7 @@ const Footer = () => {
                         <ul>
                             <li><a href="https://drive.google.com/file/d/15Qmckh-4q0tH5kPdludd8HNTp5BdNYaZ/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>TEQIP</a></li>
                             <li><a href="https://drive.google.com/file/d/1-DdofEfKjhRdTFNcbrYHbHP7LtdCOcek/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>ARIIA</a></li>
-                            <li><a href="https://drive.google.com/file/d/1Ggm8mRvSuUHSruJek2aE3sbJqv5VIDVl/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Audit Statement</a></li>
+                            <li><a href="/audit_stmt"  rel='noopener noreferrer' media='print'>Audit Statement</a></li>
                             <li><a href="https://drive.google.com/file/d/1LpmkLiKlGX6ZI1dQ_g_Z2N19G34U3kqY/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Code of Conduct</a></li>
                             <li><a href="https://drive.google.com/file/d/1tJM-F8JBMAuM2Z4XFIT4y9dvMX3BgQ10/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Employees Service rules</a></li>
                             <li><a href="https://drive.google.com/file/d/1KpmEBZJpcjcCSGQFWnZ09wM7hnSzpoxV/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Women's Helpline Number</a></li>
@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
                 <div className="copyrights">
                     <div className='rights'>
-                      <p className="copy">&#169; 2022 ACGCET, Karaikudi, All rights are reserved</p>
+                      <p className="copy">&#169; 2022-2024 ACGCET, Karaikudi, All rights are reserved</p>
                     </div>
                     <div className='qr_sec'>
                         <div className='qr_pic'>
