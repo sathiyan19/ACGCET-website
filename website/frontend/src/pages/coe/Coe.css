@@ -20,7 +20,7 @@
   text-align: center;
   position: absolute;
   color: #fff;
-  font-size: 250%;
+  font-size: 18px;
   top: 48%;
   width: 100%;
   text-transform: uppercase;
@@ -39,7 +39,7 @@
   text-align: center;
   position: absolute;
   color: #ff6600;
-  font-size: 150%;
+  font-size: 18px;
   top: 75%;
   width: 100%;
   text-transform: uppercase;
@@ -59,7 +59,7 @@
   /* border-radius: 5px 0 5px 0; */
 }
 .coe_sub_head {
-  font-size: 40px;
+  font-size: 18px;
   font-weight: 500;
   /* width: 100%;  */
   /* text-align: left;  */
@@ -85,6 +85,9 @@
 .dept_img {
   width: 100%;
   height: auto;
+}
+.examination{
+  font-size: 18px;
 }
 .exam{
   text-align: justify;
@@ -120,11 +123,11 @@
 @media (max-width: 1024px) {
   .coe_heading {
     top: 35%;
-    font-size: 150%;
+    font-size: 18px;
     font-weight: 500;
   }
   .coe_sub_heading {
-    font-size: 100%;
+    font-size: 18px;
     font-weight: 500;
   }
   .coe_bg {
@@ -145,7 +148,7 @@
 
 @media (max-width: 500px) {
   .coe_sub_head {
-    font-size: 28px;
+    font-size: 16px;
   }
   .coe_dept_content {
     
@@ -182,8 +185,37 @@
   }
 }
 
+
 @media (max-width: 321px) {
   .coe_sub_head {
-    font-size: 26px;
+    font-size: 16px;
   }
 }
+.exam {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: black;
+}
+
+@media (max-width: 424px) {
+  .exam {
+    padding-left: 5px; /* Adjust padding-left */
+    line-height: 1.5rem;
+  }
+  .process{
+    padding-left: 5px;
+  }
+}
+@media (min-width: 501px) {
+  .coe_sub_head,
+  .coe_dept_content,
+  .exam {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
