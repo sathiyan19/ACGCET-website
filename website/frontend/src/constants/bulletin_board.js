@@ -19,7 +19,7 @@ export const bulletin_info=[
     // },
     {
         id:'18',
-        link:"https://drive.google.com/file/d/1sZc_aG4XlgZ42sZXvfeagV5P9YpWlwHr/view?usp=sharing",
+        link:"https://drive.google.com/file/d/1c2uJ7w2EEFF2eGogbvEeb7or1inLqAmp/view?usp=sharing",
         content:(
             <span>
                 <span className="newContent">New</span> <span className="insideNewContent">Advertisement for Recruitment of Junior Research Fellow under DST-SERB-SURE Research Project
@@ -29,7 +29,7 @@ export const bulletin_info=[
     },
     {
         id:'17',
-        link:"https://drive.google.com/file/d/1gSk-chLFzZM4J1R8cVgJPa8pTzX6AQUu/view?usp=sharing",
+        link:"https://drive.google.com/file/d/1uR9k_Iy0aSRKKL1dlFN8TTtlTu38jUhE/view?usp=sharing",
         content:(
             <span>
                 <span className="newContent">New</span> <span className="insideNewContent">Application for Recruitment of Junior Research Fellow under DST-SERB-SURE Research Project
