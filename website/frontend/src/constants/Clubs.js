@@ -1,10 +1,16 @@
 // Clubs_info
-import freshers from "../assets/pictures/fresherslogo.webp";
-import music from "../assets/pictures/musiclogo.webp";
-import muthamizh from "../assets/pictures/muthamizhlogo.webp";
-import leo from "../assets/pictures/leologo.webp";
-import rotaract from "../assets/pictures/rotractlogo.webp";
-import build from "../assets/pictures/buildlogo.webp";
+// import freshers from "../assets/pictures/fresherslogo.webp";
+// import music from "../assets/pictures/musiclogo.webp";
+// import muthamizh from "../assets/pictures/muthamizhlogo.webp";
+// import leo from "../assets/pictures/leologo.webp";
+// import rotaract from "../assets/pictures/rotractlogo.webp";
+// import build from "../assets/pictures/buildlogo.webp";
+const freshers="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/clubs/fresherslogo.webp"
+const music="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/clubs/musiclogo.webp"
+const muthamizh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/clubs/muthamizhlogo.webp"
+const leo="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/clubs/leologo.webp"
+const rotaract="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/clubs/rotractlogo.webp"
+const build="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/clubs/buildlogo.webp"
 
 // Clubs_heroimage_carousalinfo
 const image1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/rotracthero.webp"
@@ -22,7 +28,7 @@ const Clubs_info = [
   {
     id: "6",
     logoimg: build,
-    title: "Build Club",
+    title: "Build Club ",
     maillink: "mailto:mailto:buildclubofficial@gmail.com",
     instalink: "https://instagram.com/buildclub.acgcet?igshid=MzRlODBiNWFlZA==",
     para: "A MoU between IIT MADRAS RESEARCH PARK (IITMRP) and ACCETOSA established the technical club named “Build Club” to help ACCET students advance their technical knowledge and implement creative ideas that can then be developed into working products under the direction of Build Club Associates from IITMRP and ACCET on July-2022 . It creates a culture of building using cross-disciplinary knowledge from which creativity originates. By promoting a culture of building and innovation, this initiative can help instill an entrepreneurial spirit among students. They can learn to think beyond textbooks and apply their knowledge to real-world problems. Build Club can span a wide range of technical projects, encompassing fields such as engineering, computer science, electronics, and more. This diversity ensures that students have the opportunity to explore their interests and develop skills in their chosen areas. Collaboration with IITMRP opens doors to cutting-edge research opportunities. ACCET students may have the chance to participate in conference’s led by IITMRP faculty and researchers, exposing them to the latest advancements in technology in their chosen areas and building a wide range of professional network with scholars and research faculty.",

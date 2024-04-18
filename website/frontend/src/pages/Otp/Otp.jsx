@@ -25,6 +25,10 @@ const Otp = () => {
     }
   }, [location.state, navigate]);
 
+  useEffect(() => {
+    document.title = "Enter OTP";
+  }, []);
+
   const handleOtpSubmit = async(e) => {
     e.preventDefault();
     const otp = otpValues.join("");

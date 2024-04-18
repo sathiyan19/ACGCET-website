@@ -8,7 +8,9 @@ import { Table } from "../../components";
 
 import { Backtotop } from "../../widgets";
 
-import mile from "../../assets/pictures/mile.webp";
+// import mile from "../../assets/pictures/mile.webp";
+const mile="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/milestones/mile.webp"
+
 
 const Milestones = () => {
   useEffect(() => {

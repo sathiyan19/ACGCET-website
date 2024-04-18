@@ -33,6 +33,7 @@ const top_nav_paths = [
     links: [
       { path: "/programs", link: "Programs offered" },
       { path: "/academic-calendar", link: "Academic Calendar" },
+      {path:"/coe",link:"Autonomous Office"},
     ],
   },
 
@@ -72,7 +73,7 @@ const top_nav_paths = [
       { path: "/yrc", link: "YRC" },
       { path: "/uba", link: "UBA" },
       { path: "/thiran", link: "Thiran" },
-      { path: "/under", link: "Xprez" },
+      { path: "/Xprez", link: "Xprez" },
     ],
   },
   
@@ -255,14 +256,23 @@ const bottom_nav_paths = [
     basepath: "javascript:void(0);",
     links: [
       {
-        path: "https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing",
+        // path: "https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing",
+        path: "/naac",
         link: "NAAC",
       },
       { path: "/iqac", link: "IQAC" },
       { path: "/nba", link: "NBA" },
-      { path: "/nirf", link: "NIRF" },
+      // { path: "/nirf", link: "NIRF" },
       { path: "/annual_reports", link: "Annual Reports" },
     ],
+  },
+
+  {
+    id: "21",
+    type: "3",
+    title: "NIRF",
+    basepath: "/nirf",
+    links: [],
   },
 
   {
@@ -302,8 +312,9 @@ const login_nav_paths = [
   {
     id: "20",
     type: "4",
-    title: "",
-    basepath: "/dashboard",
+    title: "Login",
+    // basepath: "/dashboard",
+    basepath: "/login-page",
     links: [],
   },
 ];
