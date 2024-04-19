@@ -1,5 +1,5 @@
 // const pdf=require('html-pdf');
-const puppeteer= require('puppeteer');
+const puppeteer = require('puppeteer');
 const pdftemplate= require("./marksheet_template.js")
 const pool = require("./db.js");
 
