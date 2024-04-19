@@ -1,20 +1,20 @@
 const pool = require("./db.js");
 const { hashPassword, compareHash } = require("./hashing");
 const jwt = require("jsonwebtoken");
-const axios = require('axios'); //for recaptcha
+const axios = require("axios"); //for recaptcha
 
 const login = async (req, res) => {
-  
   try {
-    const { username, password, retoken} = req.body; //for recaptcha - retoken only {
-    
-      let success = false      
-      const SECRET_KEY_v2 = '6LfdMIUpAAAAAIWvkfqc7d-wLd1UBGWd9i1wLpVH'      
-      const recaptchaResponse = await axios.post(`https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY_v2}&response=${retoken}`);
-      if (recaptchaResponse.data.success) {
-        success = true
-      }// } for recaptcha
-      
+    const { username, password, retoken } = req.body; //for recaptcha token only
+
+    let success = false;
+    const SECRET_KEY_v2 = "6LfdMIUpAAAAAIWvkfqc7d-wLd1UBGWd9i1wLpVH";
+    const recaptchaResponse = await axios.post(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY_v2}&response=${retoken}`
+    );
+    if (recaptchaResponse.data.success) {
+      success = true;
+    }
     const [[fetched_pswd]] = await pool.query(
       `
         select pswd, p_flag
@@ -26,11 +26,11 @@ const login = async (req, res) => {
 
     const hashed_pswd = fetched_pswd.pswd;
     const pswd_flag = fetched_pswd.p_flag;
-    let token
-    let ispswd
-    if(pswd_flag===1){
-      ispswd=(hashed_pswd===password);
-    }else{
+    let token;
+    let ispswd;
+    if (pswd_flag === 1) {
+      ispswd = hashed_pswd === password;
+    } else {
       ispswd = await compareHash(hashed_pswd, password);
     }
 
@@ -41,23 +41,41 @@ const login = async (req, res) => {
 
     if (ispswd) {
       token = jwt.sign({ user: username }, "acgcet25", {});
-      res.status(200).cookie("token", token,{ httpOnly: true }).json({ pswd_status: ispswd});
-    }else{
+      res
+        .status(200)
+        .cookie("token", token, { httpOnly: true })
+        .json({ pswd_status: ispswd, p_flag: pswd_flag ,regno :username});
+    } else {
       res.status(200).json({ pswd_status: ispswd });
     }
-
-    return {
-      valid: success
-    };
-    
-  } 
-  catch (error) {
+  } catch (error) {
     console.log(error);
     console.error("Error calling function: ", error);
     throw new functions.https.HttpsError(
       "internal",
       "Internal server error."
     );
+  }
+};
+
+
+const login_verify = async (req, res) => {
+  console.log("jii")
+  const token = req.cookies.token;
+  if (!token) {
+    console.log("No Token!")
+    return res.json({ token_status: "not authenticated" });
+  } else {
+    jwt.verify(token, "acgcet25", (err, decoded) => {
+      if (err) {
+        console.log("Error!")
+        return res.json({ token_status: "token not okay" });
+      } else {
+        console.log("Okay!")
+        res.reg_no = decoded.user;
+        return res.json({token_status: "okay"});
+      }
+    });
   }
 };
 
@@ -76,36 +94,40 @@ const reset = async (req, res) => {
         `,
       [hash_pswd, 2, regno]
     );
-    console.log(trial)
+    console.log(trial);
     res.status(200).json({ message: "password-reset" });
   } catch (error) {
     console.log(error);
   }
 };
 
-const verifyUser = (req,res,next)=>{
-  const token = req.cookies.token
-  if(!token){
-      return res.json({Error:"not authenticated"})
-  }
-  else{
-      jwt.verify(token,"acgcet25",(err,decoded)=>{
-          if(err){
-              return res.json({Error:"token not okay"});
-          }
-          else{
-              req.reg_no=decoded.user;
-              next();
-          }
-      })
-  }
-}
 
-const logout=(req,res)=>{
-  res.clearCookie('token')
-  return res.json({Status:"Success",reg_no:req.reg_no})
-}
+
+const verifyUser = (req, res, next) => {
+  const token = req.cookies.token;
+  if (!token) {
+    return res.json({ Error: "not authenticated" });
+  } else {
+    jwt.verify(token, "acgcet25", (err, decoded) => {
+      if (err) {
+        return res.json({ Error: "token not okay" });
+      } else {
+        req.reg_no = decoded.user;
+        next();
+      }
+    });
+  }
+};
+
+const logout = (req, res) => {
+  res.clearCookie("token");
+  return res.json({ Status: "Success", reg_no: req.reg_no });
+};
 
 module.exports = {
-  login,reset,verifyUser,logout
+  login,
+  login_verify,
+  reset,
+  verifyUser,
+  logout
 };

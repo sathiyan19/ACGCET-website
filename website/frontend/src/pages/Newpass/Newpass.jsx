@@ -50,7 +50,7 @@ useEffect(() => {
       if (pswd_match(new_password,rep_password) && (strength === "Strong" || strength==="Medium")) {
         console.log("Reset")
         const response = await axios.post(
-          "http://localhost:5002/api/reset-pswd",
+          "/backend/reset-pswd",
           {
             regno: regno,
             password: new_password

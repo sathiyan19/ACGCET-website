@@ -1,35 +1,29 @@
-import dp from "../assets/pictures/dp.jpg";
-import dpm from '../assets/pictures/boy.webp'
-import dpf from '../assets/pictures/girl.webp'
-import cover from "../assets/pictures/cse_banner.webp";
+const dpm ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/boy.webp"
+const dpf ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/girl.webp"
+const cover ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Cover/cse_banner.webp"
 
-import swayam from '../assets/pictures/swayam.webp'
-import robotics from '../assets/pictures/robotics.webp'
-import placement from '../assets/pictures/placement.webp'
+const cse_com_lab ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Lab_Facilities/cse_com_lab.webp"
+const cse_case_lab ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Lab_Facilities/cse_case_lab.webp"
+const cse_grap_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Lab_Facilities/cse_grap_lab.webp"
+const cse_dbms_lab ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Lab_Facilities/cse_dbms_lab.webp"
+const cse_mpmc_lab ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Lab_Facilities/cse_mpmc_lab.webp"
 
-import cse_com_lab from '../assets/pictures/cse_dept/cse_labs/cse_com_lab.webp'
-import cse_case_lab from '../assets/pictures/cse_dept/cse_labs/cse_case_lab.webp'
-import cse_grap_lab from '../assets/pictures/cse_dept/cse_labs/cse_grap_lab.webp'
-import cse_dbms_lab from '../assets/pictures/cse_dept/cse_labs/cse_dbms_lab.webp'
-import cse_mpmc_lab from '../assets/pictures/cse_dept/cse_labs/cse_mpmc_lab.webp'
+const uma_rani_sq ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/umarani_square.webp"
 
-import uma_rani_sq from '../assets/pictures/cse_dept/cse_faculties/umarani_square.webp'
+const uma_rani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cse/Faculties/Teaching_fac/umarani.webp"
+const suhaila ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/suhaila.webp"
+const sk ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/sk.webp"
+const hema ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/hema.webp"
+const anbu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/anbuselvi.webp" 
+const karthiga ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/karthiga.webp"
+const rajanandhini ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/rajanandini.webp"
+const vijay ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Supporting_fac/Vijay+Profile+2023.webp"
+const chandraprabha ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/chandraprabha.webp"
+const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Supporting_fac/raja.webp"
+const rajendran ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Supporting_fac/rajendran.webp"
 
-import uma_rani from '../assets/pictures/cse_dept/cse_faculties/umarani.webp'
-import suhaila from '../assets/pictures/cse_dept/cse_faculties/suhaila.webp'
-import sk from '../assets/pictures/cse_dept/cse_faculties/sk.webp'
-import hema from '../assets/pictures/cse_dept/cse_faculties/hema.webp'
-import anbu from '../assets/pictures/cse_dept/cse_faculties/anbuselvi.webp'
-import karthiga from '../assets/pictures/cse_dept/cse_faculties/karthiga.webp'
-import rajanandhini from '../assets/pictures/cse_dept/cse_faculties/rajanandini.webp'
-import vijay from '../assets/pictures/cse_dept/cse_faculties/Vijay Profile 2023.webp'
-import chandraprabha from '../assets/pictures/cse_dept/cse_faculties/chandraprabha.webp'
-import raja from '../assets/pictures/cse_dept/cse_faculties/raja.webp'
-import rajendran from '../assets/pictures/cse_dept/cse_faculties/rajendran.webp'
-
-import cogno from '../assets/pictures/cse_dept/cse_dept_events/cognoblaze.webp'
-import deftra from '../assets/pictures/cse_dept/cse_dept_events/deftra.webp'
-
+const cogno = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Department_event/cognoblaze.webp"
+const deftra ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Department_event/deftra.webp"
 
 const cse_dept_menu = [
   {

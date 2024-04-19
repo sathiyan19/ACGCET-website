@@ -73,7 +73,7 @@ const Login = () => {
           code = username.substring(6, 8);
         }
         console.log(find_dept(code));
-        const res = await axios.post("http://localhost:5002/api/login", {
+        const res = await axios.post("/backend/login", {
           username,
           password,
           retoken  //recaptcha
@@ -89,8 +89,9 @@ const Login = () => {
        
         else if (res.data.pswd_status) {
           console.log("Matched");
+          console.log("p_flag:", res.data.p_flag); 
           console.log(res.data.reg_no);
-          navigate("/dashboard");
+          navigate("/dashboard", { state: { pflag: res.data.p_flag , regno : res.data.regno } });
         }
         
          else {
@@ -106,7 +107,18 @@ const Login = () => {
 //   // recaptcha
   const handleToken = (retoken) => {
     setreToken(retoken)
-}
+  }
+
+  useEffect(()=>{
+    console.log("started!")
+    axios.get("/backend/login_verification")
+    .then((res)=>{
+      console.log(res)
+      if(res.data.token_status==="okay"){
+        navigate("/dashboard")
+      }
+    })
+  },[])
 
   return (
     <div className="login-pagef">
@@ -131,7 +143,7 @@ const Login = () => {
                   autoComplete="username"
                   value={username}
                   type="text"
-                  placeholder="Username"
+                  placeholder="Register Number"
                   onChange={(e) => setUsername(e.target.value)}
                 />
                 <i className="fa fa-user"></i>

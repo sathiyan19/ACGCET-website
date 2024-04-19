@@ -1,0 +1,65 @@
+.opening_card {
+  width: 300px;
+  /* height: 220px; */
+  margin: 15px 20px;
+  border-radius: 15px;
+   box-shadow:  -10px 10px 5px  #00134d;;
+}
+
+.opening_title {
+  min-height: 87px;
+  margin: 10px 0px 10px 0;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 28px;
+  color: #00134d;
+  z-index: 2;
+  position: relative;
+}
+
+.opening_body {
+  display: block;
+  height: 240px;
+  padding: 30px 20px;
+  background-color: #d9edff;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.opening_top_head {
+  font-size: 20px;
+  color: #00134d;
+  z-index: 2;
+  position: relative;
+}
+
+.opening_title {
+  color: #00134d; /* Example text color */
+}
+
+.opening_sub_link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 15px;
+  color: #00134d;
+  background: #00134d;
+ 
+}
+
+
+
+.opening_sub_link:active {
+  background-color: #ff6600; 
+  color: black; 
+}
+
+
+
+
+.heading {
+  color: white;
+  
+}

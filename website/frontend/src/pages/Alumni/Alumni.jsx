@@ -6,7 +6,8 @@ import { Modal, Backtotop, Underline} from "../../widgets";
 import { Slideshow,Reunion_card_display } from "../../components";
 import { contributions, slideshow_imgs,alumni_reunions } from "../../constants/alumni_info";
 
-import accetosa_logo from "../../assets/pictures/logo-cms.webp";
+// import accetosa_logo from "../../assets/pictures/logo-cms.webp";
+const accetosa_logo=" https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/about/logo-cms.webp"
 
 
 const Alumni = () => {

@@ -2,7 +2,8 @@ import React from "react";
 
 import "./Founder.css";
 
-import Found from "../../assets/pictures/alagappa.webp";
+// import Found from "../../assets/pictures/alagappa.webp";
+const Found=" https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/founder/alagappa.webp"
 
 const Founder = () => {
   return (

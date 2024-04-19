@@ -1,13 +1,22 @@
 //IMPORTANT:: Date Format: SEP 06 2023 
 export const events=[
     {
+        'id':'12',
+        'date':'MAR 27 2024',
+        'title':"ACMARA RIVALRY'24",
+        'time':'03:30 pm',
+        'venue':'Acgcet Ground',
+        'details':'We cordially invite you for ACMARA RIVALRY\'24, 68th intra level sports day',
+        // 'status':'due'
+    },
+    {
         'id':'11',
         'date':'NOV 24 2023',
         'title':"Deftera'23",
         'time':'09:30 am',
         'venue':'CSE Department ',
         'details':'We cordially invite you for Deftera\'23',
-        // 'status':'due'
+         'status':'due'
     },
     {
         'id':'10',
@@ -16,7 +25,7 @@ export const events=[
         'time':'04:45 pm',
         'venue':'Sangamam Hall ',
         'details':'We cordially invite you for the 16th Installation of our Club',
-        // 'status':'due'
+        'status':'due'
     },
     {
         'id':'9',

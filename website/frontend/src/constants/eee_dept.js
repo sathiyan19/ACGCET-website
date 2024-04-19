@@ -1,60 +1,126 @@
-import dpm from "../assets/pictures/boy.webp";
-import dpf from "../assets/pictures/girl.webp"
-import cover from "../assets/pictures/eee-cover.webp";
+// import dpm from "../assets/pictures/boy.webp";
+// import dpf from "../assets/pictures/girl.webp"
+// import cover from "../assets/pictures/eee-cover.webp";
 
-import swayam from '../assets/pictures/swayam.webp'
-import robotics from '../assets/pictures/robotics.webp'
-import placement from '../assets/pictures/placement.webp'
-import baskaran from '../assets/pictures/eee_dept/eee_faculties/1-Baskaran-_3_.webp'
-import arunya from '../assets/pictures/eee_dept/eee_faculties/2-Arunya-Revathi.webp'
-import Nageswari from '../assets/pictures/eee_dept/eee_faculties/3-Nageswari.webp'
-import Vennila from '../assets/pictures/eee_dept/eee_faculties/4-Vennila.webp'
-import Madasamy from '../assets/pictures/eee_dept/eee_faculties/5-Madasamy.webp'
-import Ramadas from '../assets/pictures/eee_dept/eee_faculties/6-Ramadas.webp'
-import arun from '../assets/pictures/eee_dept/eee_faculties/7 Arun.webp'
-import amuthan from '../assets/pictures/eee_dept/eee_faculties/8 Amuthan.webp'
-import pradeep from '../assets/pictures/eee_dept/eee_faculties/11 PRADEEP.webp'
-import Padmanaban from '../assets/pictures/eee_dept/eee_faculties/12 Padmanaban (1).webp'
-import ida from '../assets/pictures/eee_dept/eee_faculties/13 Ida Evangeline.webp'
-import asaimani from '../assets/pictures/eee_dept/eee_faculties/14 Asaimani.webp'
-import dhivya from '../assets/pictures/eee_dept/eee_faculties/15 Dhivya.webp'
-import saranya from '../assets/pictures/eee_dept/eee_faculties/17 Saranya.webp'
-import preethi from '../assets/pictures/eee_dept/eee_faculties/18 Preethi.webp'
-import abarna from '../assets/pictures/eee_dept/eee_faculties/19 Abarna.webp'
-import mansoor from '../assets/pictures/eee_dept/eee_faculties/21-Mansoore.webp'
-import abinesh from '../assets/pictures/eee_dept/eee_faculties/22-Abinesh.webp'
-import akbar from '../assets/pictures/eee_dept/eee_faculties/Akbar-_2_.webp'
-import ananthi from '../assets/pictures/eee_dept/eee_faculties/Ananthii-_1_.webp'
-import arulmani from '../assets/pictures/eee_dept/eee_faculties/Arulmani-_1_.webp'
-import chockalingam from '../assets/pictures/eee_dept/eee_faculties/Chokalingam-_1_.webp'
-import natchiappan from '../assets/pictures/eee_dept/eee_faculties/Natchiappan-_1_.webp'
-import peter from '../assets/pictures/eee_dept/eee_faculties/Peter-_1_.webp'
-import raja from '../assets/pictures/eee_dept/eee_faculties/Raja-_1_.webp'
-import suresh from '../assets/pictures/eee_dept/eee_faculties/Suresh-kumar-_1_.webp'
-import mani from '../assets/pictures/eee_dept/eee_faculties/manimaran-_1_.webp'
-import sakthi from '../assets/pictures/eee_dept/eee_faculties/Sakthivel-_1_.webp'
-import priyanka from '../assets/pictures/eee_dept/eee_faculties/priyanka.webp'
+// import swayam from '../assets/pictures/swayam.webp'
+// import robotics from '../assets/pictures/robotics.webp'
+// import placement from '../assets/pictures/placement.webp'
+// import baskaran from '../assets/pictures/eee_dept/eee_faculties/1-Baskaran-_3_.webp'
+// import arunya from '../assets/pictures/eee_dept/eee_faculties/2-Arunya-Revathi.webp'
+// import Nageswari from '../assets/pictures/eee_dept/eee_faculties/3-Nageswari.webp'
+// import Vennila from '../assets/pictures/eee_dept/eee_faculties/4-Vennila.webp'
+// import Madasamy from '../assets/pictures/eee_dept/eee_faculties/5-Madasamy.webp'
+// import Ramadas from '../assets/pictures/eee_dept/eee_faculties/6-Ramadas.webp'
+// import arun from '../assets/pictures/eee_dept/eee_faculties/7 Arun.webp'
+// import amuthan from '../assets/pictures/eee_dept/eee_faculties/8 Amuthan.webp'
+// import pradeep from '../assets/pictures/eee_dept/eee_faculties/11 PRADEEP.webp'
+// import Padmanaban from '../assets/pictures/eee_dept/eee_faculties/12 Padmanaban (1).webp'
+// import ida from '../assets/pictures/eee_dept/eee_faculties/13 Ida Evangeline.webp'
+// import asaimani from '../assets/pictures/eee_dept/eee_faculties/14 Asaimani.webp'
+// import dhivya from '../assets/pictures/eee_dept/eee_faculties/15 Dhivya.webp'
+// import saranya from '../assets/pictures/eee_dept/eee_faculties/17 Saranya.webp'
+// import preethi from '../assets/pictures/eee_dept/eee_faculties/18 Preethi.webp'
+// import abarna from '../assets/pictures/eee_dept/eee_faculties/19 Abarna.webp'
+// import mansoor from '../assets/pictures/eee_dept/eee_faculties/21-Mansoore.webp'
+// import abinesh from '../assets/pictures/eee_dept/eee_faculties/22-Abinesh.webp'
+//  import akbar from '../assets/pictures/eee_dept/eee_faculties/Akbar-_2_.webp'
+//  import ananthi from '../assets/pictures/eee_dept/eee_faculties/Ananthii-_1_.webp'
+//  import arulmani from '../assets/pictures/eee_dept/eee_faculties/Arulmani-_1_.webp'
+//  import chockalingam from '../assets/pictures/eee_dept/eee_faculties/Chokalingam-_1_.webp'
+//  import natchiappan from '../assets/pictures/eee_dept/eee_faculties/Natchiappan-_1_.webp'
+//  import peter from '../assets/pictures/eee_dept/eee_faculties/Peter-_1_.webp'
+//  import raja from '../assets/pictures/eee_dept/eee_faculties/Raja-_1_.webp'
+ //import suresh from '../assets/pictures/eee_dept/eee_faculties/Suresh-kumar-_1_.webp'
+//  import mani from '../assets/pictures/eee_dept/eee_faculties/manimaran-_1_.webp'
+//  import sakthi from '../assets/pictures/eee_dept/eee_faculties/Sakthivel-_1_.webp'
+//  import priyanka from '../assets/pictures/eee_dept/eee_faculties/priyanka.webp'
 
-import AC from '../assets/pictures/eee_dept/eee_labs/AC.webp'
-import DC from '../assets/pictures/eee_dept/eee_labs/DC.webp'
-import comp from '../assets/pictures/eee_dept/eee_labs/computer.webp'
-import drives from '../assets/pictures/eee_dept/eee_labs/drives.webp'
-import electro from '../assets/pictures/eee_dept/eee_labs/electronics.webp'
-import ped from '../assets/pictures/eee_dept/eee_labs/PED.webp'
-import ecl from '../assets/pictures/eee_dept/eee_labs/ECL.webp'
-import vlsi from '../assets/pictures/eee_dept/eee_labs/VLSI.webp'
-import pe from '../assets/pictures/eee_dept/eee_labs/pe.webp'
-import smart from '../assets/pictures/eee_dept/eee_labs/smart.webp'
 
-import s9 from '../assets/pictures/eee_dept/feedback/s9.webp'
-import s8 from '../assets/pictures/eee_dept/feedback/s8.webp'
-import s7 from '../assets/pictures/eee_dept/feedback/s7.webp'
-import s5 from '../assets/pictures/eee_dept/feedback/s6.webp'
-import s6 from '../assets/pictures/eee_dept/feedback/s5.webp'
-import s4 from '../assets/pictures/eee_dept/feedback/s4.webp'
-import s3 from '../assets/pictures/eee_dept/feedback/s3.webp'
-import s2 from '../assets/pictures/eee_dept/feedback/s2.webp'
-import s1 from '../assets/pictures/eee_dept/feedback/s1.webp'
+
+// import AC from '../assets/pictures/eee_dept/eee_labs/AC.webp'
+// import DC from '../assets/pictures/eee_dept/eee_labs/DC.webp'
+// import comp from '../assets/pictures/eee_dept/eee_labs/computer.webp'
+// import drives from '../assets/pictures/eee_dept/eee_labs/drives.webp'
+// import electro from '../assets/pictures/eee_dept/eee_labs/electronics.webp'
+// import ped from '../assets/pictures/eee_dept/eee_labs/PED.webp'
+// import ecl from '../assets/pictures/eee_dept/eee_labs/ECL.webp'
+// import vlsi from '../assets/pictures/eee_dept/eee_labs/VLSI.webp'
+// import pe from '../assets/pictures/eee_dept/eee_labs/pe.webp'
+// import smart from '../assets/pictures/eee_dept/eee_labs/smart.webp'
+
+// import s9 from '../assets/pictures/eee_dept/feedback/s9.webp'
+// import s8 from '../assets/pictures/eee_dept/feedback/s8.webp'
+// import s7 from '../assets/pictures/eee_dept/feedback/s7.webp'
+// import s5 from '../assets/pictures/eee_dept/feedback/s6.webp'
+// import s6 from '../assets/pictures/eee_dept/feedback/s5.webp'
+// import s4 from '../assets/pictures/eee_dept/feedback/s4.webp'
+// import s3 from '../assets/pictures/eee_dept/feedback/s3.webp'
+// import s2 from '../assets/pictures/eee_dept/feedback/s2.webp'
+// import s1 from '../assets/pictures/eee_dept/feedback/s1.webp'
+const swayam="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
+const robotics="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/robotics.webp"
+const placement="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/placement.webp"
+const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/eee-cover.webp"
+const dpm="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/boy.webp"
+const dpf="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/girl.webp"
+
+const baskaran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/1-Baskaran-_3_.webp"
+
+const arunya="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/2-Arunya-Revathi.webp"
+const Nageswari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/3-Nageswari.webp"
+const Vennila="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/4-Vennila.webp"
+const Madasamy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/5-Madasamy.webp"
+const Ramadas="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/6-Ramadas.webp"
+const arun="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/7+Arun.webp"
+const amuthan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/8+Amuthan.webp"
+const pradeep="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/11+PRADEEP.webp"
+const Padmanaban="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/12+Padmanaban+(1).webp"
+const ida="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/13+Ida+Evangeline.webp"
+const asaimani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/14+Asaimani.webp"
+const dhivya="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/15+Dhivya.webp"
+const saranya="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/17+Saranya.webp"
+const preethi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/18+Preethi.webp"
+const abarna="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/19+Abarna.webp"
+const  mansoor="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/21-Mansoore.webp"
+const abinesh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/22-Abinesh.webp"
+const priyanka="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/20-Priyanka.webp"
+
+
+const  akbar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Akbar-_2_.webp"
+const ananthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Ananthii-_1_.webp"
+const arulmani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Arulmani-_1_.webp"
+const chockalingam="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Chokalingam-_1_.webp"
+const natchiappan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Natchiappan-_1_.webp"
+const peter="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Peter-_1_.webp"
+const raja="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Natchiappan-_1_.webp"
+const mani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/manimaran-_1_.webp"
+const sakthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Sakthivel-_1_.webp"
+
+const AC="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/AC.webp"
+const DC="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/DC.webp"
+const  comp="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/computer.webp"
+const drives="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/drives.webp"
+const  electro="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/electronics.webp"
+const ped="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/PED.webp"
+const ecl="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/ECL.webp"
+
+const vlsi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/VLSI.webp"
+const  pe="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/pe.webp"
+const  smart="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/smart.webp"
+
+const s1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s1.webp"
+const s2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s2.webp"
+const s3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s3.webp"
+const s4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s4.webp"
+const s5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s5.webp"
+const s6="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s6.webp"
+const s7="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s7.webp"
+const s8="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s8.webp"
+const s9="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/modernelectric/s9.webp"
+
+
+
+
 
 const eee_dept_menu = [
   {
@@ -869,7 +935,7 @@ const eee_fac_profiles = [
     name: "Dr.C.Vennila",
     Designation: "Associate Professor",
     mailid: "vennila@accetedu.in",
-    pdf: "https://drive.google.com/file/d/1hwItDOCeoFC1Tch5xhuZ4okuI72u1XTI/view?usp=drive_link",
+    pdf: "https://drive.google.com/file/d/1YRcDbOlr58hbclvZTbunPAAnPrnnXfoV/view?usp=sharing",
   },
   {
     id: "5",
