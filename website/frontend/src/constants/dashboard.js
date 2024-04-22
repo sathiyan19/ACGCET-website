@@ -90,6 +90,30 @@ export const subjects = {
     "19CSC43": { credits: 3, subname: "Computer Organization & Architecture" },
     "19CSC31": { credits: 3, subname: "Programming & Data Structres" },
   },
+  "ECE_subs":{
+    "22MAB33": { credits: 4, subname: "Random Processes and Linear Algebra "},
+    "22ECC31": { credits: 4, subname: "Signals and Systems"},
+    "22ECC32": { credits: 4, subname: "Digital Systems Design"},
+    "22ECC34": { credits: 3, subname: "Electron Devices and Circuits"},
+    "22ECC35": { credits: 3, subname: "Electromagnetic Field Theory"},
+    "22ECG36": { credits: 3, subname: "C Programming and Data Structures"},
+    "22ECL37": { credits: 1.5, subname: "Electron Devices and Circuits Laboratory"},
+    "22ECL38": { credits: 1.5, subname: "C Programming and Data Structures  Laboratory"},
+    "22ECZ39": { credits: 1, subname: "Professional Development"},
+
+    "19ECC51": { credits: 4, subname: "Digital  Signal  Processing"},
+    "19ECC52": { credits: 3, subname: "Linear Integrated Circuits"},
+    "19ECC53": { credits: 3, subname: "Communication Theory"},
+    "19ECC54": { credits: 3, subname: "Antennas and Wave Propagation"},
+    "19MEH41": { credits: 3, subname: "Total Quality Management"},
+    "19ECE01": { credits: 3, subname: "Network Analysis & Synthesis"},
+    "19ECE03": { credits: 3, subname: "Measurements and Instrumentation"},
+    "19ECE04": { credits: 3, subname: "Image Processing"},
+    "19ECE06": { credits: 3, subname: "Medical  Electronics"},
+    "19ECL51": { credits: 1, subname: "Digital  Signal  Processing Laboratory"},
+    "19ECL52": { credits: 1, subname: "Linear Integrated Circuits Laboratory"},
+    "19ECZ51": { credits: 1, subname: "Technical Seminar I"},
+  },
 };
 
 export const admin_menu = [
