@@ -94,6 +94,14 @@ const Login = () => {
           navigate("/dashboard", { state: { pflag: res.data.p_flag , regno : res.data.regno } });
         }
         
+
+        //regno not found
+        
+        else if (res.data.username_not_found) {
+          setUsrerror("Register no. not found");
+        }
+        //--
+
          else {
           setPassword("");
           setPswderror("Incorrect password");
