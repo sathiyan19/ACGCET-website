@@ -49,12 +49,12 @@ const coe_menu =[
         link:"Claim bills",
         arl:'1'
     },
-    {
-      id:"8",
-      path:"/coe/coe_committiee",
-      link:"Committiess",
-      arl:'1'
-    },
+    // {
+    //   id:"8",
+    //   path:"/coe/coe_committiee",
+    //   link:"Committee",
+    //   arl:'1'
+    // },
     {
         id:"9",
         path:"/coe/coe_feestruct",

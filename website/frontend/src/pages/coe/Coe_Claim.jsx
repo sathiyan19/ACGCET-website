@@ -36,7 +36,7 @@ const Claim = () => {
   
       </div>
       <Radial_menu menu_links={coe_menu} />
-      <Underline heading="Claim bills"/>
+      <Underline heading="Claim Bills"/>
     <div className="content_card_holder">
               {claim.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
     </div>
