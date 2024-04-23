@@ -95,7 +95,7 @@ const peter="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const raja="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Natchiappan-_1_.webp"
 const mani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/manimaran-_1_.webp"
 const sakthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Sakthivel-_1_.webp"
-
+const nkr ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/NKR_0442.webp"
 const AC="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/AC.webp"
 const DC="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/DC.webp"
 const  comp="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/computer.webp"
@@ -976,7 +976,7 @@ const eee_fac_profiles = [
   {
     id: "9",
     cover: cover,
-    dp: dpm,
+    dp: nkr,
     name: "Prof.M.L.Ramamoorthy",
     Designation: "Assistant Professor",
     mailid: "ramamoorthyml@gmail.com",
