@@ -1,5 +1,4 @@
-const path=require('path');
-const imgpath=path.join(__dirname,'./images/clglogo1.png');
+
 const subjects_list=require('./subjects')
 const pdftemplate=({studentname,stud_dept,dob,reg_no,batch,gender,cgpa,sem_no,sem_subs,bg})=>{
     const today= new Date();
