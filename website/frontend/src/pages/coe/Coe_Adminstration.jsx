@@ -13,6 +13,7 @@ const Coe_Adminstration = () => {
   }, []);
 
   return (
+    //coe changes
     <div className="coe_dept">
       <div className="coe_bg">
         <div className="coe_heading">Controller of Examination</div>
