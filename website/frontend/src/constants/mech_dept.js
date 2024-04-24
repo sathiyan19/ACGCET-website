@@ -67,6 +67,9 @@ const Rajakumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/
 const Karthikeyan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/22.Mr.K.Karthikeyan+AP(Adhoc).webp"
 const Sakthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/23.Dr.RM.SakthiSadhasivam+AP(Adhoc).webp"
 const PRABH="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/13.Dr.J.Prabakaran+Asso+Prof(CAS).webp"
+const karthik_raja="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/karthikraja.webp"
+const muthu_raja="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/muthuraja.webp"
+const senthil_raja="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/senthilraja.webp"
 
 //    Supporting Faclties
 const Pravakaran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/A.PRABH.webp"
@@ -637,7 +640,7 @@ const mech_fac_profiles = [
   {
     id: "24",
     cover: cover,
-    dp: dpm,
+    dp: muthu_raja,
     name: "Dr.R.Muthuraja",
     Designation: "Assistant Professor (Contract)",
     mailid: "muthu.maha92@gmail.com",
@@ -646,7 +649,7 @@ const mech_fac_profiles = [
   {
     id: "25",
     cover: cover,
-    dp: dpm,
+    dp: senthil_raja,
     name: "Dr. R. Senthilraja",
     Designation: "Assistant Professor (Contract)",
     mailid: "drrsenthilraja@gmail.com",
@@ -655,7 +658,7 @@ const mech_fac_profiles = [
   {
     id: "26",
     cover: cover,
-    dp: dpm,
+    dp: karthik_raja,
     name: "Dr.M.Karthikraja",
     Designation: "Assistant Professor (Consolidated Pay)",
     mailid: "mkraja0095@gmail.com",
