@@ -168,7 +168,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .coe_bg {
     /* background: url("../../assets/pictures/mechbgm-tinted.webp"); */
     background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/coe/Coemobimg-01-01.jpeg.webp");
