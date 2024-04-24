@@ -13,6 +13,7 @@ const Coe_Adminstration = () => {
   }, []);
 
   return (
+    //coe changes
     <div className="coe_dept">
       <div className="coe_bg">
         <div className="coe_heading">Controller of Examination</div>
@@ -36,7 +37,13 @@ const Coe_Adminstration = () => {
         <div className="coe">
           <div className="coe-heading">
             <Underline heading="COE Supporting Staff" />
-            <Listformat points={Coe_adminstration1} className="reduced-width" />
+            <div className="coe_admin_staff_outer">
+            <div className="coe_admin_staff_inner">
+            <div className="coe_list">
+            <Listformat points={Coe_adminstration1}  />
+            </div>
+            </div>
+            </div>
           </div>
         </div>
       </section>
