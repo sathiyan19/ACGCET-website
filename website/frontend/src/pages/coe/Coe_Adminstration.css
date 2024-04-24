@@ -93,6 +93,14 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  .coe_admin_staff_outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .coe_admin_staff_inner{
+    width: 40%;
+  }
   
   @media(max-width:1100px){
     .coe_two-col {
