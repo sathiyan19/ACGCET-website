@@ -100,7 +100,7 @@ const download_prov_marksheet=async(req,res)=>{
         await page.setContent(htmlContent);
 
         // Generate the PDF file
-        const pdfBuffer = await page.pdf();
+        const pdfBuffer = await page.pdf({printBackground:true, format:'A4'});
 
         // Set HTTP headers for download
         const filename = `${reg_no}_Sem${sem_no}.pdf`;
