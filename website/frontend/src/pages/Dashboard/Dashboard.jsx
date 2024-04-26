@@ -321,7 +321,7 @@ const Dashboard = () => {
                   <div className="detail_body txcolour_var_3 d-emis">
                     {stud_details.emis_no}
                   </div>
-                  <div className="detail_head">EMIS Number</div>
+                  <div className="detail_head">UMIS Number</div>
                 </div>
 
                 <div className="trial_dash detail_grid detail_item_6 bgcolour_var_2">
@@ -422,7 +422,9 @@ const Dashboard = () => {
                     </div>  */}
                     <div className="dash-result-table-head">Semester {sem}</div>
                   </div>
-                  <Table data={results} columns={column}/>
+                  <div className="dash_res_table_holder">
+                    <Table data={results} columns={column}/>
+                  </div>
                   {/* <button onClick={download_marksheet}>Download</button> */}
                 </div>
               </div>
