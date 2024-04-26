@@ -23,6 +23,9 @@ const login = async (req, res) => {
         `,
       [username]
     );
+    if (!fetched_pswd) {
+      return res.status(200).json({ username_not_found: true });
+    }
     const hashed_pswd = fetched_pswd.pswd;
     const pswd_flag = fetched_pswd.p_flag;
     let token;

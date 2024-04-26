@@ -484,6 +484,131 @@
   cursor: pointer;
   /* display: none; */
 }
+/* .marksheet-down-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+.marksheet-icon{
+  width: 30px;
+  color: #fff;
+  fill:#fff;
+  /* background-color: white; */
+}
+.marksheet-download-btn {
+  display: flex;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #00134d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.coolass_button{
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  /* margin: auto; */
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+button:focus {outline:0;}
+.coolass_button{
+  width: 150px;
+  height: 40px;
+  background: #00134d;
+  background-size: 200%;
+  border-radius: 10px;
+  border:none;
+  display: block;
+  /* margin: auto; */
+  position: relative;
+  transition: all .5s;
+  overflow: hidden;
+    color: #00134d;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 0px;
+  will-change:all;
+  transition-timing-function:ease;
+}
+.coolass_button:hover{
+  box-shadow: 0px 6px 10px
+}
+.coolass_button_first{
+  background-position: 100%;
+  height: 10px;
+  /* transform:translateY(50px); */
+    color:transparent;
+}
+.coolass_button_bridge1{
+  background: #fff;
+  background-position: 0%;
+  transition: none; 
+}
+.coolass_button_second{
+  background: linear-gradient(to right, #FF8000 0%,#FF8000 50%,#FF8000 50%,#D60000 50%,#D60000 50%,#D60000 100%);
+  background-size: 200%;
+  transition: all 1.2s;
+}
+.coolass_button_third{
+  background-position: -100%;
+}
+.coolass_button_final{
+  transition: all .5s;
+    margin-top: 0px;
+  height: 40px;
+  transform:translateY(0px);
+    color:#ff6600;
+}
+.coolass_button:after{
+  content: 'Completed..!';
+  position: absolute;
+  right: -100%;
+  opacity: 0;
+  width: 100%;
+  top:35%;
+  /* margin: 0px; */
+  color: white;
+  font-size: 15px;
+  transition: all .5s;
+}
+.coolass_button_final:after{
+  right: 0%;
+  opacity: 1;
+}
+.coolass_button:before{
+  content: 'Download PDF';
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  top:35%;
+  /* margin: 0px; */
+  color: white;
+  font-size: 15px;
+  transition: all .5s;
+}
+.coolass_button_first:before{
+  left: -100%;
+  opacity: 0;
+}
+
+.cool_holder{
+/* height:100px; */
+margin-top: 20px;
+}
+.logout-btn{
+  margin-top: 30px;
+}
+
 
 @media (max-width:1025px){
   .d-emis{

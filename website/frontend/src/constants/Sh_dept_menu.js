@@ -68,7 +68,7 @@ const ponmudi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/
 const sivaganesh = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/sivaganesh.webp";
 const venkatrajan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/venkatrajan.webp";
 const vijayaragavan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/vijayaraghavan.webp";
-
+const buvaneswari = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/Dr.+BVB+photo.webp";
 
 const Sh_dept_fmenu = [
   {
@@ -215,7 +215,7 @@ const mat_fac_profiles = [
     cover: mcover,
     dp: vasanthi,
     name: "Dr.R.Vasanthi",
-    Designation: "Head of the Department/ Associate professor",
+    Designation: "Associate Professor and Head",
     mailid: "vasanthi2014accet@gmail.com",
     pdf: "https://drive.google.com/file/d/1nlNp_XBns6MCn8QgWf_-OpFsWCSFOwyH/view?usp=drive_link",
   },
@@ -339,10 +339,11 @@ const phy_fac_profiles = [
   {
     id: "1",
     cover: pcover,
-    dp: dpf,
+    dp: buvaneswari,
     name: "Dr.B.V.Bhuvaneswari",
     Designation: "Professor and Head of the Department",
     mailid: "bhuvanavisaro@gmail.com",
+    pdf: "https://drive.google.com/file/d/13n9By0mhIdayRoKWo-ocspLa6s2W5GCi/view?usp=drive_link",
   },
   {
     id: "2",

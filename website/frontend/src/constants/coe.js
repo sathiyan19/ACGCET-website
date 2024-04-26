@@ -49,18 +49,24 @@ const coe_menu =[
         link:"Claim bills",
         arl:'1'
     },
-    {
-      id:"8",
-      path:"/under",
-      link:"Committiess",
-      arl:'1'
-    },
+    // {
+    //   id:"8",
+    //   path:"/under",
+    //   link:"Committiess",
+    //   arl:'1'
+    // },
     {
         id:"9",
         path:"/coe/coe_feestruct",
         link:"Fees Structure ",
         arl:'1'
     },
+    {
+      id:"11",
+      path:"https://drive.google.com/drive/folders/1Ov9SmTy17q-PljCSszAB8sa_fmYrWIRX",
+      link:"Question Bank ",
+      arl:'1'
+  },
 
 
     {
