@@ -125,3 +125,4 @@ export{default as Phoenix} from './Sports/Phoenix'
 export{default as Akkadians} from './Sports/Akkadians'
 
 export{default as Audit_stmt} from './Audit_stmt/Audit_stmt'
+export{default as Verification} from './Verification/Verification'
