@@ -93,6 +93,10 @@ const Login = () => {
           console.log(res.data.reg_no);
           navigate("/dashboard", { state: { pflag: res.data.p_flag , regno : res.data.regno } });
         }
+
+        else if(res.data.username_not_found){
+          setUsrerror("Register number not found")
+        }
         
 
         //regno not found

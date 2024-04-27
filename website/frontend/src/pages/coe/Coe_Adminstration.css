@@ -5,7 +5,7 @@
   }
   .coe_bg {
     /* background: url("../../assets/pictures/mechbg-tinted.webp"); */
-    background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/dept_bgs/mechbg-tinted.webp");
+    background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/coe/CoeLapImg-01-01.jpeg.webp");
     min-height: 550px;
     background-color: #00134d;
     position: relative;
@@ -92,6 +92,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .coe_admin_staff_outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .coe_admin_staff_inner{
+    width: 40%;
   }
   
   @media(max-width:1100px){
