@@ -2,6 +2,7 @@
 const puppeteer = require('puppeteer');
 const pdftemplate= require("./marksheet_template.js")
 const pool = require("./db.js");
+const {encryptString} = require("./encyption.js")
 
 var reg_no,sem_no,sem_subs,stud_dept;
 
@@ -88,13 +89,15 @@ const download_prov_marksheet=async(req,res)=>{
             [dept_table, reg_no]
         );
         const { studentname, dob, gender, batch, cgpa } = student_details;
+        let encrypted_regno=encryptString(reg_no)
+        let verification_link="https://accet.ac.in/verification?regno="+encrypted_regno+"&sem="+sem_no
 
         // Launch a headless browser instance using Puppeteer
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
 
         // Generate the HTML content using the template function
-        const htmlContent = pdftemplate({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs,bg });
+        const htmlContent = pdftemplate({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs,bg,verification_link });
 
         // Set the HTML content on the Puppeteer page
         await page.setContent(htmlContent);

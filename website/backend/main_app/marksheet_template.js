@@ -3,13 +3,15 @@ const path = require('path');
 global.appRoot = path.resolve(__dirname);
 
 
-
+const {generate_QR}= require("./qr_gen.js")
 const subjects_list = require('./subjects');
 
-const pdftemplate = ({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs, bg }) => {
+const pdftemplate = ({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs, bg,verification_link }) => {
   const today = new Date();
   const sub_dept = stud_dept + '_subs';
   var tableRows = '';
+  var QR_base64=generate_QR(verification_link)
+  const dataUri = `data:image/png;base64,${QR_base64}`
   sem_subs.forEach(subject => {
     tableRows += `
           <tr class="cert-tr">
@@ -209,6 +211,10 @@ const pdftemplate = ({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa,
   font-size:12px;
   background-color:#f1f1f1;
 }
+.cert_qr_code{
+  width:80px;
+  height:80px;
+}
             </style>
         </head>
         <body>
@@ -266,7 +272,9 @@ const pdftemplate = ({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa,
 </div>
 
 <table class="cert-table2">
-<div class="cert-disclaimer">**********<p>Please be aware that this document is a provisional gradesheet and does not confer any official status. It is issued temporarily until the original certificate is issued. Users are advised to exercise caution and verify the marks with the respective board or institution.</p>**********</div>
+<div class="cert-disclaimer">**********<p>Please be aware that this document is a provisional gradesheet and does not confer any official status. It is issued temporarily until the original certificate is issued. Users are advised to exercise caution and verify the marks by scanning the QR code.</p>**********
+<img class="cert_qr_code" src="${dataUri}" alt="Base64 Image">
+</div>
     <tr>
         <td class="cert-td-foot">Date:${today.getDate()}-${today.getMonth()+1}-${today.getFullYear()}</td>
         <td class="cert-td-foot">Signature of the Candidate</td>
