@@ -6,7 +6,7 @@ global.appRoot = path.resolve(__dirname);
 
 const subjects_list = require('./subjects');
 
-const pdftemplate = ({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs, bg }) => {
+const pdftemplate = ({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs }) => {
   const today = new Date();
   const sub_dept = stud_dept + '_subs';
   var tableRows = '';
