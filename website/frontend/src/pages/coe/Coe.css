@@ -28,11 +28,11 @@
   text-shadow: 0px 0px 10px #000;
 }
 .process{
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 
 .exam{
-  padding-left: 35px;
+  /* padding-left: 35px; */
   line-height: 1.5rem;
 }
 .coe_sub_heading {
@@ -50,11 +50,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .coe_dark {
   /* display: flex;
     flex-direction: column; */
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   width: 75%;
   /* border-radius: 5px 0 5px 0; */
 }
@@ -68,13 +69,15 @@
 .coe_two-col p {
   margin-top: 20px;
   width: 100%;
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 .coe_dept_content {
   text-align: justify;
   font-size: 18px;
   line-height: 1.5rem;
   color: black;
+  /* padding-left: 30px; */
+
 }
 .coe_two-col .dept_img_holder {
   width: 50%;
@@ -86,15 +89,18 @@
   width: 100%;
   height: auto;
 }
-.exam{
+/* .examination{
   text-align: justify;
   font-size: 18px;
   line-height: 1.5rem;
   color: black;
-}
+
+
+} */
+
 .coe_two-col1 p {
   width: 100%;
-  padding: 20px 30px;
+  /* padding: 20px 30px; */
 }
 .coe_progs{
   display: flex;
@@ -162,7 +168,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .coe_bg {
     /* background: url("../../assets/pictures/mechbgm-tinted.webp"); */
     background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/coe/Coemobimg-01-01.jpeg.webp");
