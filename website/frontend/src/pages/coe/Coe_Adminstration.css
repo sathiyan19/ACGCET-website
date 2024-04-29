@@ -101,90 +101,90 @@
   .coe_admin_staff_inner{
     width: 40%;
   }
-  
-  @media(max-width:1100px){
-    .coe_two-col {
-      
-      flex-direction: column;
-    }
-    .coe_two-col p {
-      width: 100%;
-    }
-    .coe_two-col .dept_img_holder {
-      width: 90%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+}
+@media(max-width:350px){
+  .coe_admin_staff_inner{
+    width:100%;
   }
-  
-  @media (max-width: 1024px) {
-    .coe_heading {
-      top: 35%;
-      font-size: 150%;
-      font-weight: 500;
-    }
-    .coe_sub_heading {
-      font-size: 100%;
-      font-weight: 500;
-    }
-    .coe_bg {
-      width: 100%;
-      height: 700px;
-    }
+}
+
+@media(max-width:1100px) {
+  .coe_two-col {
+    flex-direction: column;
   }
-  @media (max-width: 768px) {
-    .coe_bg {
-      width: 100%;
-      height: 500px;
-    }
-    .coe_dark {
-      width: 100%;
-    }
-    
+  .coe_two-col p {
+    width: 100%;
   }
-  
-  @media (max-width: 500px) {
-    .coe_sub_head {
-      font-size: 28px;
-    }
-    .coe_dept_content {
-      
-      text-align: justify;
+  .coe_two-col .dept_img_holder {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .coe_heading {
+    top: 35%;
+    font-size: 150%;
+    font-weight: 500;
+  }
+  .coe_sub_heading {
+    font-size: 100%;
+    font-weight: 500;
+  }
+  .coe_bg {
+    width: 100%;
+    height: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coe_bg {
+    width: 100%;
+    height: 500px;
+  }
+  .coe_dark {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .coe_sub_head {
+    font-size: 28px;
+  }
+  .coe_dept_content {
+    text-align: justify;
     font-size: 16px; /* Adjusted font size */
     line-height: 1.5rem;
     color: black;
-  
-      
-    }
-   
-    .dept_float_menu {
-      display: none;
-    }
   }
-  
-  @media (max-width: 425px) {
-    .coe_bg {
-      /* background: url("../../assets/pictures/mechbgm-tinted.webp"); */
-      background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/dept_bgs/mechbgm-tinted.webp");
-      min-height: 550px;
-      width: 100%;
-      height: 750px;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-    .coe_two-col p {
-      padding: 0 5px;
-    }
-    .coe_two-col1 p {
-      padding: 0 5px;
-    }
+  .dept_float_menu {
+    display: none;
   }
-  
-  @media (max-width: 321px) {
-    .coe_sub_head {
-      font-size: 26px;
-    }
+}
+
+@media (max-width: 425px) {
+  .coe_bg {
+    /* background: url("../../assets/pictures/mechbgm-tinted.webp"); */
+    /* background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/dept_bgs/mechbgm-tinted.webp"); */
+    min-height: 550px;
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-  
+  .coe_two-col p {
+    padding: 0 5px;
+  }
+  .coe_two-col1 p {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 321px) {
+  .coe_sub_head {
+    font-size: 26px;
+  }
+}
