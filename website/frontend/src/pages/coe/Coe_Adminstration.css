@@ -1,107 +1,105 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.coe_bg {
-  /* background: url("../../assets/pictures/mechbg-tinted.webp"); */
-  /* background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/dept_bgs/mechbg-tinted.webp"); */
-  min-height: 550px;
-  background-color: #00134d;
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.coe_heading {
-  text-align: center;
-  position: absolute;
-  color: #fff;
-  font-size: 250%;
-  top: 48%;
-  width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  text-shadow: 0px 0px 10px #000;
-}
-.coe_sub_heading {
-  text-align: center;
-  position: absolute;
-  color: #ff6600;
-  font-size: 150%;
-  top: 75%;
-  width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  text-shadow: 0px 0px 10px #000;
-}
-.coe_two-col {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.coe_dark {
-  /* display: flex;
-    flex-direction: column; */
-  padding: 40px 20px;
-  width: 75%;
-  /* border-radius: 5px 0 5px 0; */
-}
-.coe_sub_head {
-  font-size: 40px;
-  font-weight: 500;
-  /* width: 100%;  */
-  /* text-align: left;  */
-  color: #00134d;
-}
-.coe_two-col p {
-  margin-top: 20px;
-  width: 50%;
-  padding: 0 30px;
-}
-.coe_dept_content {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 1.5rem;
-  color: black;
-}
-.coe_two-col .dept_img_holder {
-  width: 50%;
-  height: auto;
-}
-.dept_img {
-  width: 100%;
-  height: auto;
-}
-.exam {
-  text-align: justify;
-  font-size: 18px;
-  line-height: 1.5rem;
-  color: black;
-}
-.coe_two-col1 p {
-  width: 100%;
-  padding: 20px 30px;
-}
-.coe_progs {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.coe_admin_staff_outer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.coe_admin_staff_inner{
-  width:50%;
-}
-@media(max-width:535px){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .coe_bg {
+    /* background: url("../../assets/pictures/mechbg-tinted.webp"); */
+    background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/coe/CoeLapImg-01-01.jpeg.webp");
+    min-height: 550px;
+    background-color: #00134d;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .coe_heading {
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    font-size: 250%;
+    top: 48%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000;
+  }
+  .coe_sub_heading {
+    text-align: center;
+    position: absolute;
+    color: #ff6600;
+    font-size: 150%;
+    top: 75%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000;
+  }
+  .coe_two-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .coe_dark {
+    /* display: flex;
+      flex-direction: column; */
+    padding: 40px 20px;
+    width: 75%;
+    /* border-radius: 5px 0 5px 0; */
+  }
+  .coe_sub_head {
+    font-size: 40px;
+    font-weight: 500;
+    /* width: 100%;  */
+    /* text-align: left;  */
+    color: #00134d;
+  }
+  .coe_two-col p {
+    margin-top: 20px;
+    width: 50%;
+    padding: 0 30px;
+  }
+  .coe_dept_content {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: black;
+  }
+  .coe_two-col .dept_img_holder {
+    width: 50%;
+     height: auto; 
+     /*align-items: center;
+      justify-content: center; */
+  }
+  .dept_img {
+    width: 100%;
+    height: auto;
+  }
+  .exam{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: black;
+  }
+  .coe_two-col1 p {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .coe_progs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .coe_admin_staff_outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .coe_admin_staff_inner{
-    width:80%;
+    width: 40%;
   }
 }
 @media(max-width:350px){

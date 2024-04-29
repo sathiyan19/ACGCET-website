@@ -649,6 +649,9 @@ margin-top: 20px;
   .detail_body{
     font-size: 28px;
   }
+  .dash_res_table_holder{
+    overflow-x:scroll
+  }
 }
 @media(max-width:600px){
   .d-emis{
