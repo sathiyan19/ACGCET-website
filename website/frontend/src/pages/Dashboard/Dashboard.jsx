@@ -455,7 +455,7 @@ const Dashboard = () => {
                   </div>
                   <div class="marksheet-container">
     <div className="cool_holder">
-    {/* <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button> */}
+    <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button>
   </div>
   </div>
                   

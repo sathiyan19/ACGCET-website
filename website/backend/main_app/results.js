@@ -96,7 +96,7 @@ const download_prov_marksheet=async(req,res)=>{
         const page = await browser.newPage();
 
         // Generate the HTML content using the template function
-        const htmlContent = pdftemplate({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs,bg,verification_link });
+        const htmlContent = pdftemplate({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs,verification_link });
 
         // Set the HTML content on the Puppeteer page
         await page.setContent(htmlContent);

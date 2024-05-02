@@ -101,7 +101,7 @@
   .coe_admin_staff_inner{
     width: 40%;
   }
-}
+
 @media(max-width:350px){
   .coe_admin_staff_inner{
     width:100%;

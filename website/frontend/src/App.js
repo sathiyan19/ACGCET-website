@@ -124,6 +124,8 @@ import {
   Otp,
   Newpass,
   Admin_dashboard,
+  Research,
+  
   Naac,
   Ignatz,
   Typhonz_page,
@@ -272,6 +274,8 @@ const App = () => {
          <Route path="/coe/coe_syllabuss"element={<Coe_syllabuss/>}/>
          <Route path="/coe/coe_syllabus1"element={<Coe_syllabus1/>}/>
          <Route path="/coe/coe_committiee"element={<Coe_Committiee/>}/>
+         <Route path="/Research"element={<Research/>}/>
+         
          <Route path="/audit_stmt" element={<Audit_stmt/>}/>
          <Route path="/Verification" element={<Verification/>}/>
       </Routes>
