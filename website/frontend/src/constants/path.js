@@ -233,8 +233,8 @@ const bottom_nav_paths = [
     title: "Departments",
     basepath: "javascript:void(0);",
     links: [
-      { path: "/mechdept", link: "Mechanical Engineering" },
       { path: "/civildept", link: "Civil Engineering" },
+      { path: "/mechdept", link: "Mechanical Engineering" },   
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
       { path: "/csedept", link: "Computer Science Engineering" },

@@ -164,13 +164,13 @@ const ece_dept_menu = [
   {
     id: "3",
     path: "/ecedept/ece-faculties",
-    link: "Faculties",
+    link: "Faculty",
     arl: "l",
   },
   {
     id: "4",
     path: "/ecedept/ece-lab",
-    link: "Lab Facilities",
+    link: "Laboratory Facilities",
     arl: "l",
   },
   {

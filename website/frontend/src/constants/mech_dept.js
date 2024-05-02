@@ -107,13 +107,13 @@ const mech_dept_menu = [
   {
     id: "3",
     path: "/mechdept/mech-faculties",
-    link: "Faculties",
+    link: "Faculty",
     arl:'l'
   },
   {
     id: "4",
     path: "/mechdept/mech-lab",
-    link: "Lab Facilities",
+    link: "Laboratory Facilities",
     arl:'l'
   },
   {
@@ -519,15 +519,15 @@ const mech_fac_profiles = [
     mailid: "kingsvijay1503@gmail.com",
     pdf: "https://drive.google.com/file/d/1JP325kv0uZcgAFufRa9oajgMf7yqiL8N/view?usp=sharing",
   },
-  {
-    id: "11",
-    cover: cover,
-    dp: Prema,
-    name: "Prof.P.Prema",
-    Designation: "Assistant Professor",
-    mailid: "paulrajprema7@gmail.com",
-    pdf: "https://drive.google.com/file/d/1E2DlfH_I9PA7F9MGt7U2tSOB-7Ty6cWa/view?usp=sharing",
-  },
+  // {
+  //   id: "11",
+  //   cover: cover,
+  //   dp: Prema,
+  //   name: "Prof.P.Prema",
+  //   Designation: "Assistant Professor",
+  //   mailid: "paulrajprema7@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1E2DlfH_I9PA7F9MGt7U2tSOB-7Ty6cWa/view?usp=sharing",
+  // },
   {
     id: "12",
     cover: cover,
@@ -628,15 +628,15 @@ const mech_fac_profiles = [
     pdf: "https://drive.google.com/file/d/13AAP4pt4tSa2zDAxg5gLV0E_PMP6xFK4/view?usp=sharing",
   },
  
-  {
-    id: "23",
-    cover: cover,
-    dp: Sakthi,
-    name: "Dr.RM.Sakthi Sadhasivam",
-    Designation: "Assistant Professor(Adhoc)",
-    mailid: "sakthi211193@gmail.com",
-    pdf: "https://drive.google.com/file/d/1tJZVd1B0DYM2PyKGi7pfmPonrI1lqMpA/view?usp=sharing",
-  },
+  // {
+  //   id: "23",
+  //   cover: cover,
+  //   dp: Sakthi,
+  //   name: "Dr.RM.Sakthi Sadhasivam",
+  //   Designation: "Assistant Professor(Adhoc)",
+  //   mailid: "sakthi211193@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1tJZVd1B0DYM2PyKGi7pfmPonrI1lqMpA/view?usp=sharing",
+  // },
   {
     id: "24",
     cover: cover,
