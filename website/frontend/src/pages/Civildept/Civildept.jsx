@@ -19,9 +19,10 @@ import {
 } from "../../constants/civil_dept";
 
 import { Radial_menu,Listformat } from "../../components";
-import civil from "../../assets/pictures/civilabt.webp";
+// import civil from "../../assets/pictures/civilabt.webp";
 
 import { BsFillBuildingsFill } from "react-icons/bs";
+const civil ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/About/civilabt.webp";
 
 const Civildept = () => {
   useEffect(() => {

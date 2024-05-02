@@ -18,7 +18,7 @@ import { Radial_menu } from "../../components";
 
 import { BsFillGearFill } from "react-icons/bs";
 
-import Centre_of_Excellence from '../../assets/pictures/mechdept/mech_labs/Centre_of_Excellence.webp'
+const Centre_of_Excellence="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Center_Of_Excellence/Centre_of_Excellence.webp"
 
 const Mech_coe = () => {
   useEffect(() => {

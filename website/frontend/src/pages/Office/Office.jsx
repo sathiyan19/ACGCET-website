@@ -2,11 +2,11 @@ import React,{useEffect} from "react";
 
 import "./Office.css";
 
-import principal from "../../assets/pictures/eee-hod.webp";
 import {office_admin_staffs} from '../../constants/office.js';
 
 import { Backtotop,Underline } from "../../widgets";
 import { Profile_display } from "../../components";
+const principal="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Administration/Principal_office/eee-hod.webp"
 
 const Office = () => {
   useEffect(() => {

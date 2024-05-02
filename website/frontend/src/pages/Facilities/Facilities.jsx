@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 // import iv from "../../assets/pictures/iv.webp";
 // import sports from "../../assets/pictures/sports.webp";
 // import technical from "../../assets/pictures/technical.webp";
-import gym from "../../assets/pictures/gym.webp";
+// import gym from "../../assets/pictures/gym.webp";
 import murugappa from "../../assets/pictures/facilities/Murugappa-hall.webp";
 
 const tholkapiyar_hostel =
@@ -39,7 +39,7 @@ const zonal =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/zonal.webp";
 const parking =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/centers_and_facilities/parking.webp";
-// const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
+const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp";
 
 const Facilities = () => {
   useEffect(() => {
