@@ -8,7 +8,7 @@ const asr= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depar
 const baskaran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/1-Baskaran-_3_.webp"
 const Ramadas="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/6-Ramadas.webp"
 
-
+ const nkr ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/coe/NKR_0442.webp"
 const venkatrajan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/venkatrajan.webp";
 
 const coe_menu =[
@@ -49,12 +49,12 @@ const coe_menu =[
         link:"Claim bills",
         arl:'1'
     },
-    {
-      id:"8",
-      path:"/under",
-      link:"Committiess",
-      arl:'1'
-    },
+    // {
+    //   id:"8",
+    //   path:"/coe/coe_committiee",
+    //   link:"Committee",
+    //   arl:'1'
+    // },
     {
         id:"9",
         path:"/coe/coe_feestruct",
@@ -162,7 +162,7 @@ const Coe_adminstration=[
   {
     id: "9",
     cover: cover,
-    dp: dpm,
+    dp: nkr,
     name: "Prof.M.L.Ramamoorthy",
     Designation: "Assistant Controller of Examination",
 

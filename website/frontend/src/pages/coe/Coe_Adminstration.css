@@ -153,38 +153,34 @@
     font-size: 16px; /* Adjusted font size */
     line-height: 1.5rem;
     color: black;
-  
-      
-    }
-   
-    .dept_float_menu {
-      display: none;
-    }
   }
-  
-  @media (max-width: 425px) {
-    .coe_bg {
-      /* background: url("../../assets/pictures/mechbgm-tinted.webp"); */
-      background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/dept_bgs/mechbgm-tinted.webp");
-      min-height: 550px;
-      width: 100%;
-      height: 750px;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-    }
-    .coe_two-col p {
-      padding: 0 5px;
-    }
-    .coe_two-col1 p {
-      padding: 0 5px;
-    }
+  .dept_float_menu {
+    display: none;
   }
-  
-  @media (max-width: 321px) {
-    .coe_sub_head {
-      font-size: 26px;
-    }
+}
+
+@media (max-width: 425px) {
+  .coe_bg {
+    /* background: url("../../assets/pictures/mechbgm-tinted.webp"); */
+    /* background: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/dept_bgs/mechbgm-tinted.webp"); */
+    min-height: 550px;
+    width: 100%;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-  
+  .coe_two-col p {
+    padding: 0 5px;
+  }
+  .coe_two-col1 p {
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 321px) {
+  .coe_sub_head {
+    font-size: 26px;
+  }
+}
