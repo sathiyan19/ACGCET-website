@@ -4,6 +4,7 @@ const multer = require('multer');
 const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP, sendquery}=require("./otp.js")
 const {dashboard}=require("./protected_routes.js")
+const {cv_details}=require("./cert_verify.js")
 const {res_publish, res_result,get_sem_list,download_prov_marksheet}=require("./results.js")
 const {get_Tables,excel_to_SQL}=require("./admin.js")
 
@@ -17,6 +18,8 @@ router.get('/api/login_verification',login_verify)
 router.get('/api/logout',verifyUser,logout)
 
 router.get('/api/dashboard',verifyUser,dashboard)
+
+router.post('/api/cv_details',cv_details)
 
 router.post('/api/send-otp',sendOTP)
 
