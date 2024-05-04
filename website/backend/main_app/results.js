@@ -78,7 +78,6 @@ const get_sem_list= async(req,res)=>{
 
 const download_prov_marksheet=async(req,res)=>{
     try {
-        const bg=req.body.bgimage;
         let dept_table = stud_dept + "_stud_details";
         const [[student_details]] = await pool.query(
             `
