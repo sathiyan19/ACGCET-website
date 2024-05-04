@@ -97,6 +97,7 @@ const mani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depar
 const sakthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/supportingfac/Sakthivel-_1_.webp"
 const nkr ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/NKR_0442.webp"
 const AC="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/AC.webp"
+
 const DC="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/DC.webp"
 const  comp="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/computer.webp"
 const drives="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/labfacilities/drives.webp"
@@ -964,15 +965,15 @@ const eee_fac_profiles = [
     mailid: "arunmano80@gmail.com",
     pdf: "#",
   },
-  {
-    id: "8",
-    cover: cover,
-    dp: amuthan,
-    name: "Prof.G.Amuthan",
-    Designation: "Assistant Professor",
-    mailid: "amuthan@accetedu.in",
-    pdf: "https://drive.google.com/file/d/1hRTZiBIRMz5uSjgxjG1qqZ31BeXVP--_/view?usp=drive_link",
-  },
+  // {
+  //   id: "8",
+  //   cover: cover,
+  //   dp: amuthan,
+  //   name: "Prof.G.Amuthan",
+  //   Designation: "Assistant Professor",
+  //   mailid: "amuthan@accetedu.in",
+  //   pdf: "https://drive.google.com/file/d/1hRTZiBIRMz5uSjgxjG1qqZ31BeXVP--_/view?usp=drive_link",
+  // },
   {
     id: "9",
     cover: cover,
@@ -982,15 +983,15 @@ const eee_fac_profiles = [
     mailid: "ramamoorthyml@gmail.com",
     pdf: "https://drive.google.com/file/d/1TDYW0Jlk76GKtapo-fZVtlgbn91eUaV1/view?usp=drive_link",
   },
-  {
-    id: "10",
-    cover: cover,
-    dp: dpm,
-    name: "Dr.S.Balamurugan",
-    Designation: "Assistant Professor",
-    mailid: "balamurugan@accetedu.in",
-    pdf: "https://drive.google.com/file/d/1v5dDO-5JuPdU7Hd7upXXPDJ2s9XP9kHG/view?usp=drive_link",
-  },
+  // {
+  //   id: "10",
+  //   cover: cover,
+  //   dp: dpm,
+  //   name: "Dr.S.Balamurugan",
+  //   Designation: "Assistant Professor",
+  //   mailid: "balamurugan@accetedu.in",
+  //   pdf: "https://drive.google.com/file/d/1v5dDO-5JuPdU7Hd7upXXPDJ2s9XP9kHG/view?usp=drive_link",
+  // },
   {
     id: "11",
     cover: cover,
@@ -1009,15 +1010,15 @@ const eee_fac_profiles = [
     mailid: "padupoi@gmail.com",
     pdf: "https://drive.google.com/file/d/1LPeLnjYS3YyPGIc01u1HdiiRJUc3Z5xJ/view?usp=drive_link",
   },
-  {
-    id: "13",
-    cover: cover,
-    dp: ida,
-    name: "Dr.S.Ida Evangeline",
-    Designation: "Assistant Professor",
-    mailid: "ida.fragi@gmail.com",
-    pdf: "https://drive.google.com/file/d/1PcBZXj5XygaQGojKwCZWLn4o9SykS9J5/view?usp=drive_link",
-  },
+  // {
+  //   id: "13",
+  //   cover: cover,
+  //   dp: ida,
+  //   name: "Dr.S.Ida Evangeline",
+  //   Designation: "Assistant Professor",
+  //   mailid: "ida.fragi@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1PcBZXj5XygaQGojKwCZWLn4o9SykS9J5/view?usp=drive_link",
+  // },
   {
     id: "14",
     cover: cover,
@@ -1027,15 +1028,15 @@ const eee_fac_profiles = [
     mailid: "aasaimani.be.eee@gmail.com",
     pdf: "https://drive.google.com/file/d/1I_TzxbSMu6Kja_8XgtEV-S36HcqaWkbt/view?usp=drive_link",
   },
-  {
-    id: "15",
-    cover: cover,
-    dp: dhivya,
-    name: "Ms.K.Dhivya",
-    Designation: "Assistant Professor (Contract Basis)",
-    mailid: "dhivyaacgcet@gmail.com",
-    pdf: "https://drive.google.com/file/d/15LGkH7mXJXN7jTLQyB5PImy7NYtR9B_W/view?usp=drive_link",
-  },
+  // {
+  //   id: "15",
+  //   cover: cover,
+  //   dp: dhivya,
+  //   name: "Ms.K.Dhivya",
+  //   Designation: "Assistant Professor (Contract Basis)",
+  //   mailid: "dhivyaacgcet@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/15LGkH7mXJXN7jTLQyB5PImy7NYtR9B_W/view?usp=drive_link",
+  // },
   {
     id: "16",
     cover: cover,
@@ -1054,15 +1055,15 @@ const eee_fac_profiles = [
     mailid: "sharanyam105@gmail.com",
     pdf: "https://drive.google.com/file/d/1gLf-Plr7M_wHqoTKvj2ZrU3VdPKoVmRR/view?usp=drive_link",
   },
-  {
-    id: "18",
-    cover: cover,
-    dp: preethi,
-    name: "Ms.M.Preethi",
-    Designation: "Assistant Professor (Part time)",
-    mailid: "mpreethi890@gmail.com",
-    pdf: "https://drive.google.com/file/d/1DNv-vi7I1A2NGiZf_LOj0bkD-spSm66k/view?usp=drive_link",
-  },
+  // {
+  //   id: "18",
+  //   cover: cover,
+  //   dp: preethi,
+  //   name: "Ms.M.Preethi",
+  //   Designation: "Assistant Professor (Part time)",
+  //   mailid: "mpreethi890@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1DNv-vi7I1A2NGiZf_LOj0bkD-spSm66k/view?usp=drive_link",
+  // },
   {
     id: "19",
     cover: cover,
@@ -1072,24 +1073,24 @@ const eee_fac_profiles = [
     mailid: "cabarna97@gmail.com",
     pdf: "https://drive.google.com/file/d/1IXsTDmJhYnarMU1H-LTsbNp4YDRBiNj8/view?usp=drive_link",
   },
-  {
-    id: "20",
-    cover: cover,
-    dp: priyanka,
-    name: "Mrs.E.Priyanka",
-    Designation: "Assistant Professor (Part time)",
-    mailid: "evspriya@gmail.com",
-    pdf: "https://drive.google.com/file/d/1GUx7nbxF9GCk5RftL-CyHKvUAqa2vWzL/view?usp=drive_link",
-  },
-  {
-    id: "21",
-    cover: cover,
-    dp: mansoor,
-    name: "Mr.S.Mohamed Jaidu Mansoor",
-    Designation: "Assistant Professor (Part time)",
-    mailid: "mohamedjaidumansoor@gmail.com",
-    pdf: "https://drive.google.com/file/d/1WjKK-NvxihJQeJ0l-vOCrtHmPtMmd6R_/view?usp=drive_link",
-  },
+  // {
+  //   id: "20",
+  //   cover: cover,
+  //   dp: priyanka,
+  //   name: "Mrs.E.Priyanka",
+  //   Designation: "Assistant Professor (Part time)",
+  //   mailid: "evspriya@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1GUx7nbxF9GCk5RftL-CyHKvUAqa2vWzL/view?usp=drive_link",
+  // },
+  // {
+  //   id: "21",
+  //   cover: cover,
+  //   dp: mansoor,
+  //   name: "Mr.S.Mohamed Jaidu Mansoor",
+  //   Designation: "Assistant Professor (Part time)",
+  //   mailid: "mohamedjaidumansoor@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1WjKK-NvxihJQeJ0l-vOCrtHmPtMmd6R_/view?usp=drive_link",
+  // },
   {
     id: "22",
     cover: cover,
@@ -1101,14 +1102,14 @@ const eee_fac_profiles = [
   },
 ];
 const eee_sup_profiles = [
-  {
-    id: "1",
-    cover: cover,
-    dp: natchiappan,
-    name: "P.Nachiappan",
-    Designation: "Junior Draughting Officer",
-    mailid: "nachiappan.perumal@gmail.com",
-  },
+  // {
+  //   id: "1",
+  //   cover: cover,
+  //   dp: natchiappan,
+  //   name: "P.Nachiappan",
+  //   Designation: "Junior Draughting Officer",
+  //   mailid: "nachiappan.perumal@gmail.com",
+  // },
   {
     id: "2",
     cover: cover,
@@ -1160,7 +1161,7 @@ const eee_sup_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: raja,
+    dp: dpm,
     name: "M.Raja",
     Designation: "Cleaner",
     mailid: "rajanivi167@gmail.com",
@@ -1238,13 +1239,13 @@ const eee_labs=[
 'content_1':'Spanning 80.1 square meters, our VLSI and DSP Lab is a hub for advanced digital system design. Its well-equipped with 19 computers and an array of specialized equipment, including VLSI Trainer kits and Spartan Trainer kits.',
 'content_2':"These tools empower students to delve into VLSI design. The lab also features Spartan 3E Trainer kits for hands-on FPGA development. Additionally, it includes DSP kits like TMS3202407, TMS320C5416, and TMS320V6713, enabling students to explore the intricacies of digital signal processing, ensuring a comprehensive understanding of these vital technologies.",
 },
-{
-'id':'10',
-'heading':'Measurements Control and Instrumentation Lab',
-'pic':placement,
-'content_1':'Spanning an area of 160.2 square meters, our Measurements Control and Instrumentation Lab is a pivotal space for practical learning.',
-'content_2':"Equipped with a range of major instruments, including LVDTs, Synchronous AC and DC Bridges, Hall Effect Transducer Modules, Pressure and Temperature Transducers, Load cell Transducers, Dual Tracking Power Supplies, Instrumentation Amplifiers, A/D & D/A Converters, Current Transformers, and AC & DC Servomotors, this lab provides students with hands-on experience in precision measurement, control, and instrumentation techniques, preparing them for diverse applications in engineering and technology."
-},
+// {
+// 'id':'10',
+// 'heading':'Measurements Control and Instrumentation Lab',
+// 'pic':placement,
+// 'content_1':'Spanning an area of 160.2 square meters, our Measurements Control and Instrumentation Lab is a pivotal space for practical learning.',
+// 'content_2':"Equipped with a range of major instruments, including LVDTs, Synchronous AC and DC Bridges, Hall Effect Transducer Modules, Pressure and Temperature Transducers, Load cell Transducers, Dual Tracking Power Supplies, Instrumentation Amplifiers, A/D & D/A Converters, Current Transformers, and AC & DC Servomotors, this lab provides students with hands-on experience in precision measurement, control, and instrumentation techniques, preparing them for diverse applications in engineering and technology."
+// },
 {
 'id':'11',
 'heading':'Smart Grid Lab',
