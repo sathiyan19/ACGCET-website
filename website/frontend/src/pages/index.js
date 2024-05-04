@@ -118,6 +118,9 @@ export{default as Passreset} from './Passreset/Passreset'
 export{default as Otp} from './Otp/Otp'
 export{default as Newpass} from './Newpass/Newpass'
 export{default as Admin_dashboard} from './Admin_dashboard/Admin_dashboard'
+
+export{default as Research} from './Research/Research'
+
 export{default as Naac} from './Naac/Naac'
 export{default as Ignatz} from './Sports/Ignatz'
 export{default as Typhonz_page} from './Sports/Typhonz_page'
