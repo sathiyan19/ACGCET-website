@@ -2,8 +2,9 @@ import React from 'react'
 
 import './Hodmsg.css'
 
-import q1 from "../../assets/pictures/quote1.webp";
-import dp from "../../assets/pictures/dp.jpg";
+// import q1 from "../../assets/pictures/quote1.webp";
+const q1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/quote1.webp"
+// import dp from "../../assets/pictures/dp.jpg";
 
 const Hodmsg = ({pic,name,designation,content}) => {
   return (
