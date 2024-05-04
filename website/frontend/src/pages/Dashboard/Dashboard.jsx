@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (location.state && location.state.pflag) {
-      console.log("pflag value:", location.state.pflag);
+      // console.log("pflag value:", location.state.pflag);
       if (location.state.pflag === 1) {
         setShowChangePasswordDialog(true);
       }
@@ -217,7 +217,7 @@ const Dashboard = () => {
       
       // Clean up the temporary URL
       window.URL.revokeObjectURL(url);
-      console.log(marksheet)
+      // console.log(marksheet)
     } catch (error) {
       console.error(error);
     }
@@ -455,7 +455,7 @@ const Dashboard = () => {
                   </div>
                   <div class="marksheet-container">
     <div className="cool_holder">
-    <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button>
+    {/* <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button> */}
   </div>
   </div>
                   

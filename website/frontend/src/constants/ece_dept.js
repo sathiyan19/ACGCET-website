@@ -362,15 +362,15 @@ const ece_fac_profiles = [
     mailid: "keerthiperumal@gmail.com",
     pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
   },
-  {
-    id: "15",
-    cover: cover,
-    dp: merlin,
-    name: "Mrs.X.Merlin Sheeba",
-    Designation: "Assistant Professor",
-    mailid: "renachristina@gmail.com",
-    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
-  },
+  // {
+  //   id: "15",
+  //   cover: cover,
+  //   dp: merlin,
+  //   name: "Mrs.X.Merlin Sheeba",
+  //   Designation: "Assistant Professor",
+  //   mailid: "renachristina@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
+  // },
 ];
 
 const ece_sup_profiles = [

@@ -39,6 +39,36 @@
     width: auto;
     height: 50%;
 }
+.founder_know_more_holder{
+    display: flex;
+    justify-content: end;
+}
+.founder_know_more{
+    margin: 0 10px;
+    color: #4d4d4d;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    /* font-weight: 600; */
+    padding: 5px;
+}
+.founder_know_more::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6600;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .founder_know_more:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
 
 @media (max-width:700px) {
     .foun {
