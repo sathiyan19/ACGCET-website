@@ -122,6 +122,7 @@ export{default as Admin_dashboard} from './Admin_dashboard/Admin_dashboard'
 export{default as Research} from './Research/Research'
 
 export{default as Naac} from './Naac/Naac'
+export{default as Rti} from './Rti/Rti'
 export{default as Ignatz} from './Sports/Ignatz'
 export{default as Typhonz_page} from './Sports/Typhonz_page'
 export{default as Phoenix} from './Sports/Phoenix'
