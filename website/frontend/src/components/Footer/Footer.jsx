@@ -22,6 +22,7 @@ const Footer = () => {
                     <div className="sec quicklinks col-lg-3">
                         <p className="first">Disclosure</p>
                         <ul>
+                            <li><a href="/rti">RTI</a></li>
                             <li><a href="/nba">NBA</a></li>
                             <li><a href="/naac" target='blank' rel='noopener noreferrer' media='print'>NAAC</a></li>
                             <li><a href="/aicte">AICTE</a></li>
