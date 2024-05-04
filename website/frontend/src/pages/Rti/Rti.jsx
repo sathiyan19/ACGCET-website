@@ -18,6 +18,7 @@ const Rti = () => {
               {rti_data.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
             </div>
         </div>
+        <div className='rti_officer_holder'>
         <Underline heading="RTI Officer"/>
         <div className='rtiofficer'>
             <div className='rtiofficer_bg'>
@@ -28,6 +29,7 @@ const Rti = () => {
                 <p className='rtiofficer_mail'>sivanantharaja@gmail.com</p>
                 </div>
             </div>
+        </div>
         </div>
         </>
     )

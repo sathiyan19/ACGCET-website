@@ -29,7 +29,8 @@ const Founder = () => {
             region. His unwavering commitment to education and philanthropy
             earned him recognition and honors, and his legacy continues to
             inspire those dedicated to advancing education and societal progress
-            in Tamil Nadu and beyond  <a href="https://drive.google.com/file/d/177ja4Ie16f3u1xwzuQIg-NDe6BFubYR-/view?usp=sharing">know more</a>
+            in Tamil Nadu and beyond  
+            <a href="https://drive.google.com/file/d/177ja4Ie16f3u1xwzuQIg-NDe6BFubYR-/view?usp=sharing" target='blank'>know more</a>
             {/* In 1952, Dr. Alagappa Chettiar’s dream
             came true. Alagappa Chettiar College of Engineering and Technology
             functioning from 21st July 1952 with three faculties – Civil

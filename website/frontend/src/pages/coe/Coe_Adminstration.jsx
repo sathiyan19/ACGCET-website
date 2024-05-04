@@ -1,16 +1,11 @@
-import React, { useEffect } from "react";
-import "./Coe_Adminstration.css";
+import React, { useEffect } from 'react';
+import "./Coe_Adminstration.css"; // Assuming this is your CSS file
 import { Backtotop, Floatinmenu, Underline } from "../../widgets";
 import { Listformat } from "../../components";
-import {
-  coe_menu,
-  Coe_adminstration,
-  Coe_adminstration1,
-} from "../../constants/coe";
-import { Profile_display } from "../../components";
+import { coe_menu, Coe_adminstration, Coe_adminstration1 } from "../../constants/coe";
+import { Profile_display } from '../../components';
 import { Radial_menu } from "../../components";
 import { FaEmpire } from "react-icons/fa6";
-const mech="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/mech/mech_cover.webp"
 
 const Coe_Adminstration = () => {
   useEffect(() => {
