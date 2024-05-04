@@ -127,6 +127,7 @@ import {
   Research,
   
   Naac,
+  Rti,
   Ignatz,
   Typhonz_page,
   Phoenix,
@@ -275,6 +276,7 @@ const App = () => {
          <Route path="/coe/coe_syllabus1"element={<Coe_syllabus1/>}/>
          <Route path="/coe/coe_committiee"element={<Coe_Committiee/>}/>
          <Route path="/Research"element={<Research/>}/>
+         <Route path="/rti" element={<Rti/>}/>
          
          <Route path="/audit_stmt" element={<Audit_stmt/>}/>
          <Route path="/Verification" element={<Verification/>}/>
