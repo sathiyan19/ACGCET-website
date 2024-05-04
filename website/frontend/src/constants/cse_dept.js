@@ -41,13 +41,13 @@ const cse_dept_menu = [
   {
     id: "5",
     path: "/csedept/cse-faculties",
-    link: "Faculties",
+    link: "Faculty",
     arl:'l'
   },
   {
     id: "7",
     path: "/csedept/cse-lab",
-    link: "Lab Facilities",
+    link: "Laboratory Facilities",
     arl:'l'
   },
   {

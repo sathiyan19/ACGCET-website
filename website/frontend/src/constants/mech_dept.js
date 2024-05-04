@@ -107,13 +107,13 @@ const mech_dept_menu = [
   {
     id: "3",
     path: "/mechdept/mech-faculties",
-    link: "Faculties",
+    link: "Faculty",
     arl:'l'
   },
   {
     id: "4",
     path: "/mechdept/mech-lab",
-    link: "Lab Facilities",
+    link: "Laboratory Facilities",
     arl:'l'
   },
   {
