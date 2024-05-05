@@ -17,7 +17,7 @@ const Maths_dept_fmenu = [
     {
       id: "2",
       path: "/mathsdept/maths-faculty",
-      link: "Faculties",
+      link: "Faculty",
       arl: "1",
     },
     // {

@@ -17,13 +17,13 @@ const Chemistry_dept_fmenu = [
     {
       id: "2",
       path: "/chemistrydept/chemistry-faculty",
-      link: "Faculties",
+      link: "Faculty",
       arl: "1",
     },
     {
       id: "3",
       path: "/chemistrydept/chemistry-lab-facility",
-      link: "Lab Facilities",
+      link: "Laboratory Facilities",
       arl: "1",
     },
     {

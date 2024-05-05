@@ -13,13 +13,13 @@ const English_dept_fmenu = [
     {
       id: "2",
       path: "/englishdept/english-faculty",
-      link: "Faculties",
+      link: "Faculty",
       arl: "1",
     },
     {
       id: "3",
       path: "/englishdept/english-lab-facility",
-      link: "Lab Facilities",
+      link: "Laboratory Facilities",
       arl: "1",
     },
     // {
