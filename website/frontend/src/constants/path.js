@@ -165,7 +165,11 @@ const hidden_nav_paths = [
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
       { path: "/csedept", link: "Computer Science Engineering" },
-      { path: "/sciencedept", link: "Science & Humanities" },
+      { path: "/Physicsdept", link: "Physics" },
+      { path: "/Chemistrydept", link: "Chemistry" },
+      { path: "/Mathsdept", link: "Mathematics" },
+      { path: "/Englishdept", link: "English" },
+
     ],
   },
 
@@ -239,7 +243,12 @@ const bottom_nav_paths = [
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
       { path: "/csedept", link: "Computer Science Engineering" },
-      { path: "/sciencedept", link: "Science & Humanities" },
+      { path: "/Physicsdept", link: "Physics" },
+      { path: "/Chemistrydept", link: "Chemistry" },
+      { path: "/Mathsdept", link: "Mathematics" },
+      { path: "/Englishdept", link: "English" },
+
+
     ],
   },
 

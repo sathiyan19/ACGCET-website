@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Table,Radial_menu } from '../../components'
-import { Sh_dept_fmenu,eng_prog } from '../../constants/Sh_dept_menu'
+import { English_dept_fmenu,eng_prog } from '../../constants/english_dept'
 import { Backtotop,Floatinmenu } from '../../widgets';
 
 import { RiEnglishInput } from "react-icons/ri";
@@ -19,9 +19,9 @@ const Sh_Eng_prog = () => {
     <div>
     <section className="shengdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={RiEnglishInput} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={RiEnglishInput} head="Menu" links={English_dept_fmenu} />
             </div>
-            <Radial_menu menu_links={Sh_dept_fmenu} />
+            <Radial_menu menu_links={English_dept_fmenu} />
       <div className='sh_eng'>
       <Table data={eng_prog} columns={columns} />
       </div> 
