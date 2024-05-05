@@ -5,7 +5,7 @@ import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } f
 
 import { Radial_menu } from "../../components";
 // import chem from "../../assets/pictures/chem.webp";
-import {Sh_dept_fmenu,chemi_mission,chemi_vision} from '../../constants/Sh_dept_menu'
+import {Chemistry_dept_fmenu,chemi_mission,chemi_vision} from '../../constants/chemistry_dept'
 
 import { GrTest } from "react-icons/gr";
 
@@ -17,9 +17,9 @@ const Sh_Chemistry = () => {
     <div>
       <section className="shchemidark">
         <div className="shchemidept_float_menu">
-          <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GrTest} head="Menu" links={Chemistry_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={Chemistry_dept_fmenu} />
         <div className="shchemi_abt_area">
         <div className="shchemi_abt">
         <Underline heading="About the Department"/>
