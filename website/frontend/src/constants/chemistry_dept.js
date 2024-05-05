@@ -10,31 +10,31 @@ const lakshmi = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/
 const Chemistry_dept_fmenu = [
     {
       id: "1",
-      path: "/Chemistrydept",
+      path: "/chemistrydept",
       link: "About the Department",
       arl: "l",
     },
     {
       id: "2",
-      path: "/Chemistrydept/Chemistry-faculty",
+      path: "/chemistrydept/chemistry-faculty",
       link: "Faculties",
       arl: "1",
     },
     {
       id: "3",
-      path: "/Chemistrydept/Chemistry-lab-facility",
+      path: "/chemistrydept/chemistry-lab-facility",
       link: "Lab Facilities",
       arl: "1",
     },
     {
       id: "4",
-      path: "/Chemistrydept/Chemistry-research",
+      path: "/chemistrydept/chemistry-research",
       link: "Research and Publications",
       arl: "1",
     },
     {
       id: "5",
-      path: "/Chemistrydept/Chemistry-programme",
+      path: "/chemistrydept/chemistry-programme",
       link: "Programme Organized",
       arl: "1",
     },

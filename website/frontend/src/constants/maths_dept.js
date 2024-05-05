@@ -10,31 +10,31 @@ const balasundar = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.c
 const Maths_dept_fmenu = [
     {
       id: "1",
-      path: "/Mathsdept",
+      path: "/mathsdept",
       link: "About the Department",
       arl: "l",
     },
     {
       id: "2",
-      path: "/Mathsdept/Maths-faculty",
+      path: "/mathsdept/maths-faculty",
       link: "Faculties",
       arl: "1",
     },
-    {
-      id: "3",
-      path: "/Mathsdept/Maths-lab-facility",
-      link: "Lab Facilities",
-      arl: "1",
-    },
+    // {
+    //   id: "3",
+    //   path: "/Mathsdept/Maths-lab-facility",
+    //   link: "Lab Facilities",
+    //   arl: "1",
+    // },
     {
       id: "4",
-      path: "/Mathsdept/Maths-research",
+      path: "/mathsdept/maths-research",
       link: "Research and Publications",
       arl: "1",
     },
     {
       id: "5",
-      path: "/Mathsdept/Maths-programme",
+      path: "/mathsdept/maths-programme",
       link: "Programme Organized",
       arl: "1",
     },

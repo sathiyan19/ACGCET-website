@@ -185,29 +185,30 @@ const App = () => {
         <Route path="/organisation" element={<Organisation />} />
         <Route path="/under" element={<Under />} />
         <Route path="/csedept" element={<Csedept />} />
+
         <Route path="/physicsdept" element={<Physicsdept />} />
         <Route path="/physicsdept/physics-faculty" element={<Physics_faculty />} />
         <Route path="/physicsdept/physics-lab-facility" element={<Physics_lab_facility />} />
         <Route path="/physicsdept/physics-programme" element={<Physics_programme />} />
         <Route path="/physicsdept/physics-research" element={<Physics_research />} />
 
-        <Route path="/Chemistrydept" element={<Chemistrydept />} />
-        <Route path="/Chemistrydept/Chemistry-faculty" element={<Chemistry_faculty />} />
-        <Route path="/Chemistrydept/Chemistry-lab-facility" element={<Chemistry_lab_facility />} />
-        <Route path="/Chemistrydept/Chemistry-programme" element={<Chemistry_programme />} />
-        <Route path="/Chemistrydept/Chemistry-research" element={<Chemistry_research />} />
+        <Route path="/chemistrydept" element={<Chemistrydept />} />
+        <Route path="/chemistrydept/chemistry-faculty" element={<Chemistry_faculty />} />
+        <Route path="/chemistrydept/chemistry-lab-facility" element={<Chemistry_lab_facility />} />
+        <Route path="/chemistrydept/chemistry-programme" element={<Chemistry_programme />} />
+        <Route path="/chemistrydept/chemistry-research" element={<Chemistry_research />} />
         
-        <Route path="/Mathsdept" element={<Mathsdept />} />
-        <Route path="/Mathsdept/Maths-faculty" element={<Maths_faculty />} />
-        <Route path="/Mathsdept/Maths-lab-facility" element={<Maths_lab_facility />} />
-        <Route path="/Mathsdept/Maths-programme" element={<Maths_programme />} />
-        <Route path="/Mathsdept/Maths-research" element={<Maths_research />} />
+        <Route path="/mathsdept" element={<Mathsdept />} />
+        <Route path="/mathsdept/maths-faculty" element={<Maths_faculty />} />
+        {/* <Route path="/mathsdept/maths-lab-facility" element={<Maths_lab_facility />} /> */}
+        <Route path="/mathsdept/maths-programme" element={<Maths_programme />} />
+        <Route path="/mathsdept/maths-research" element={<Maths_research />} />
 
-        <Route path="/Englishdept" element={<Englishdept />} />
-        <Route path="/Englishdept/English-faculty" element={<English_faculty />} />
-        <Route path="/Englishdept/English-lab-facility" element={<English_lab_facility />} />
-        <Route path="/Englishdept/English-programme" element={<English_programme />} />
-        <Route path="/Englishdept/English-research" element={<English_research />} />
+        <Route path="/englishdept" element={<Englishdept />} />
+        <Route path="/englishdept/english-faculty" element={<English_faculty />} />
+        <Route path="/englishdept/english-lab-facility" element={<English_lab_facility />} />
+        <Route path="/englishdept/english-programme" element={<English_programme />} />
+        {/* <Route path="/englishdept/english-research" element={<English_research />} /> */}
 
         <Route path="/govern" element={<Govern />} />
         <Route path="/ncc" element={<Ncc />} />
@@ -313,7 +314,7 @@ const App = () => {
          <Route path="/rti" element={<Rti/>}/>
          
          <Route path="/audit_stmt" element={<Audit_stmt/>}/>
-         <Route path="/Verification" element={<Verification/>}/>
+         <Route path="/verification" element={<Verification/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

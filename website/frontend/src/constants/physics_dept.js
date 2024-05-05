@@ -58,7 +58,7 @@ const Physics_dept_fmenu = [
     },
     {
       id: "5",
-      path: "/Physicsdept/Physics-programme",
+      path: "/physicsdept/physics-programme",
       link: "Programme Organized",
       arl: "1",
     },

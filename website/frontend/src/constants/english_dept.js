@@ -6,31 +6,31 @@ const rajamani = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com
 const English_dept_fmenu = [
     {
       id: "1",
-      path: "/Englishdept",
+      path: "/englishdept",
       link: "About the Department",
       arl: "l",
     },
     {
       id: "2",
-      path: "/Englishdept/English-faculty",
+      path: "/englishdept/english-faculty",
       link: "Faculties",
       arl: "1",
     },
     {
       id: "3",
-      path: "/Englishdept/English-lab-facility",
+      path: "/englishdept/english-lab-facility",
       link: "Lab Facilities",
       arl: "1",
     },
-    {
-      id: "4",
-      path: "/Englishdept/English-research",
-      link: "Research and Publications",
-      arl: "1",
-    },
+    // {
+    //   id: "4",
+    //   path: "/Englishdept/English-research",
+    //   link: "Research and Publications",
+    //   arl: "1",
+    // },
     {
       id: "5",
-      path: "/Englishdept/English-programme",
+      path: "/englishdept/english-programme",
       link: "Programme Organized",
       arl: "1",
     },
