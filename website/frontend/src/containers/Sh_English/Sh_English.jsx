@@ -3,7 +3,7 @@ import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } f
 
 import { Radial_menu } from "../../components";
 // import eng from "../../assets/pictures/eng.webp";
-import {Sh_dept_fmenu,eng_mission,eng_vision} from '../../constants/Sh_dept_menu'
+import {English_dept_fmenu,eng_mission,eng_vision} from '../../constants/english_dept'
 
 import './Sh_English.css'
 import { RiEnglishInput } from "react-icons/ri";
@@ -15,9 +15,9 @@ const Sh_English = () => {
     <div>
       <section className="shengdark">
         <div className="shengdept_float_menu">
-          <Floatinmenu logo={RiEnglishInput} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={RiEnglishInput} head="Menu" links={English_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={English_dept_fmenu} />
         <div className="sheng_abt_area">
         <div className="sheng_abt">
         <Underline heading="About the Department"/>
