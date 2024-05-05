@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Table,Radial_menu } from '../../components'
-import { Sh_dept_fmenu,mat_prog } from '../../constants/Sh_dept_menu'
+import { Maths_dept_fmenu,mat_prog } from '../../constants/maths_dept'
 import { Backtotop,Floatinmenu } from '../../widgets';
 
 import { VscSymbolOperator } from "react-icons/vsc";
@@ -20,9 +20,9 @@ const Sh_mat_prog = () => {
     <div>
     <section className="shmatdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Maths_dept_fmenu} />
             </div>
-            <Radial_menu menu_links={Sh_dept_fmenu} />
+            <Radial_menu menu_links={Maths_dept_fmenu} />
       <div className='sh_mat'>
       <Table data={mat_prog} columns={columns} />
       </div> 

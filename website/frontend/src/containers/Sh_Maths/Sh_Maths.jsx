@@ -4,7 +4,7 @@ import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } f
 import { Radial_menu } from "../../components";
 // import maths from "../../assets/pictures/maths.webp";
 
-import { Sh_dept_fmenu,mat_vision,mat_mission } from '../../constants/Sh_dept_menu';
+import { Maths_dept_fmenu,mat_vision,mat_mission } from '../../constants/maths_dept';
 import './Sh_Maths.css'
 import { VscSymbolOperator } from "react-icons/vsc";
 
@@ -15,9 +15,9 @@ const Sh_Maths = () => {
     <div>
        <section className="shmatdark">
         <div className="shmatdept_float_menu">
-          <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Maths_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={Maths_dept_fmenu} />
         <div className="shmat_abt_area">
         <div className="shmat_abt">
         <Underline heading="About the Department"/>

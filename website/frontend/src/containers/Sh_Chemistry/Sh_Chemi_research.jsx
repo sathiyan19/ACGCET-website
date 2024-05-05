@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Radial_menu,Listformat } from '../../components'
-import { Sh_dept_fmenu,chemi_research_R,chemi_research_l } from '../../constants/Sh_dept_menu'
+import { Chemistry_dept_fmenu,chemi_research_R,chemi_research_l } from '../../constants/chemistry_dept'
 import { Backtotop,Floatinmenu,Underline } from '../../widgets';
 
 import { GrTest } from "react-icons/gr";
@@ -13,9 +13,9 @@ const Sh_Chemi_research = () => {
       <div>
        <section className="shchemidark">
         <div className="shchemidept_float_menu">
-          <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GrTest} head="Menu" links={Chemistry_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={Chemistry_dept_fmenu} />
         <div className="shchemi_abt_area">
         <div className="shchemi_abt">
         <Underline heading="Research and Publications"/>
