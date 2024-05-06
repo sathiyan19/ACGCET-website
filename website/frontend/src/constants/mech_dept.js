@@ -562,7 +562,7 @@ const mech_fac_profiles = [
     name: "Dr.B.Guruprasad",
     Designation: "Assistant Professor(Sl.Gr)",
     mailid: "tellprasadcdm@gmail.com ",
-    pdf: "https://drive.google.com/file/d/18aUYs0pssl7CMF6pFvGLWnZBA8kbWg1R/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/18aUYs0pssl7CMF6pFvGLWnZBA8kbWg1R/view?usp=drive_link",
   },
   {
     id: "16",
