@@ -121,6 +121,7 @@ export {default as Physics_faculty} from './Physicsdept/Physics_faculty'
 export {default as Physics_lab_facility} from './Physicsdept/Physics_lab_facility'
 export {default as Physics_research} from './Physicsdept/Physics_research'
 export {default as Physics_programme} from './Physicsdept/Physics_programme'
+export {default as Physics_former_prof} from './Physicsdept/Physics_former_prof'
 
 export{default as Chemistrydept} from './Chemistrydept/Chemistrydept'
 export {default as Chemistry_faculty} from './Chemistrydept/Chemistry_faculty'
