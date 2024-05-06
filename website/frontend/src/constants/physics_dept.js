@@ -62,17 +62,15 @@ const Physics_dept_fmenu = [
       link: "Programme Organized",
       arl: "1",
     },
+    {
+      id: "6",
+      path: "/Physicsdept/physics-former-prof",
+      link: "Former Professors",
+      arl: "1",
+    },
   ];
   const phy_fac_profiles = [
-    // {
-    //   id: "1",
-    //   cover: pcover,
-    //   dp: buvaneswari,
-    //   name: "Dr.B.V.Bhuvaneswari",
-    //   Designation: "Professor and Head of the Department",
-    //   mailid: "bhuvanavisaro@gmail.com",
-    //   pdf: "https://drive.google.com/file/d/13n9By0mhIdayRoKWo-ocspLa6s2W5GCi/view?usp=drive_link",
-    // },
+    
     {
       id: "2",
       cover: pcover,
@@ -389,6 +387,18 @@ const Physics_dept_fmenu = [
     },
   ];
 
+const phy_former_prof = [
+  {
+    id: "1",
+    cover: pcover,
+    dp: buvaneswari,
+    name: "Dr.B.V.Bhuvaneswari",
+    Designation: "Former Head of the Department",
+    mailid: "bhuvanavisaro@gmail.com",
+    pdf: "https://drive.google.com/file/d/13n9By0mhIdayRoKWo-ocspLa6s2W5GCi/view?usp=drive_link",
+  },
+];
+
 
   export {
     phy_vision,
@@ -403,5 +413,6 @@ const Physics_dept_fmenu = [
     Phy_research_S,
     Phy_research_Vj,
     Phy_research_M,
-    phy_prog
+    phy_prog,
+    phy_former_prof
   }

@@ -31,6 +31,7 @@ import {
   Physics_lab_facility,
   Physics_research,
   Physics_programme,
+  Physics_former_prof,
   Chemistrydept,
   Chemistry_faculty,
   Chemistry_lab_facility,
@@ -190,6 +191,7 @@ const App = () => {
         <Route path="/physicsdept/physics-lab-facility" element={<Physics_lab_facility />} />
         <Route path="/physicsdept/physics-programme" element={<Physics_programme />} />
         <Route path="/physicsdept/physics-research" element={<Physics_research />} />
+        <Route path="/physicsdept/physics-former-prof" element={<Physics_former_prof />} />
 
         <Route path="/Chemistrydept" element={<Chemistrydept />} />
         <Route path="/Chemistrydept/Chemistry-faculty" element={<Chemistry_faculty />} />
