@@ -41,13 +41,13 @@ const Physics_dept_fmenu = [
     {
       id: "2",
       path: "/physicsdept/physics-faculty",
-      link: "Faculties",
+      link: "Faculty",
       arl: "1",
     },
     {
       id: "3",
       path: "/physicsdept/physics-lab-facility",
-      link: "Lab Facilities",
+      link: "Laboratory Facilities",
       arl: "1",
     },
     {
