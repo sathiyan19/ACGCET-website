@@ -114,6 +114,7 @@ export{default as Otp} from './Otp/Otp'
 export{default as Newpass} from './Newpass/Newpass'
 export{default as Admin_dashboard} from './Admin_dashboard/Admin_dashboard'
 
+
 export{default as Research} from './Research/Research'
 
 export{default as Physicsdept} from './Physicsdept/Physicsdept'
