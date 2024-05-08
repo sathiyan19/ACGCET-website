@@ -123,7 +123,9 @@ import {
   Passreset,
   Otp,
   Newpass,
-  Admin_dashboard
+  Admin_dashboard,
+  Cgpa_cal,
+  Computer_cgpa
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -261,6 +263,9 @@ const App = () => {
          <Route path="/coe/coe_syllabuss"element={<Coe_syllabuss/>}/>
          <Route path="/coe/coe_syllabus1"element={<Coe_syllabus1/>}/>
          <Route path="/coe/coe_committiee"element={<Coe_Committiee/>}/>
+         <Route path="/cgpa_cal"element={<Cgpa_cal/>}/>
+         <Route path="/cgpa_cal/computer_cgpa"element={<Computer_cgpa/>}/>
+
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
