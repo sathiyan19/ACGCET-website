@@ -8,11 +8,15 @@ import { subjects } from "../../constants/dashboard";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
-  const [sem_opt_flag, setSem_opt_flag] = useState(false);
   const [stud_details, setStud_details] = useState({});
+
+  //result states start
+  const [sem_opt_flag, setSem_opt_flag] = useState(false);
   const [results, setResults] = useState([]);
   const [sem_list, setSem_list] = useState([]);
   const [sem, setSem] = useState("");
+  //result states end
+
   const [pflag, setPFlag] = useState(null);
   const [showChangePasswordDialog, setShowChangePasswordDialog] =
     useState(false);
@@ -117,19 +121,30 @@ const Dashboard = () => {
     setmenu_open(!menu_open);
   };
 
+  //result functions start
+
   const fetch_publish_results = async (regno, dept) => {
     try {
-      const res_pub = await axios.post("/backend/respublish", {
-        regno: regno,
-        dept: dept,
-      });
-      const dept_sub = dept + "_subs";
-      res_pub.data.map((item) => {
-        item.subjectname = subjects[dept_sub][item.subcode].subname;
-        return item; // Don't forget to return the modified item
-      });
-      setSem(res_pub.data[0].current_sem);
-      setResults(res_pub.data);
+      // const res_pub = await axios.post("/backend/respublish");
+      const results_data = await axios.post("/backend/respublish");
+      const result_status=results_data.data.Status
+      const result_regno=results_data.data.regno
+      const result_dept=results_data.data.dept
+      if (result_status==="Success"){
+        const res_pub=results_data.data.results
+        const dept_sub = dept + "_subs";
+        console.log(dept_sub)
+        res_pub.map((item) => {
+          item.subjectname = subjects[dept_sub][item.subcode].subname;
+          return item; // Don't forget to return the modified item
+        });
+        setSem(res_pub[0].current_sem);
+        setResults(res_pub);
+      }
+      else{
+        navigate("/login-page")
+      }
+      
     } catch (error) {
       console.error(error);
     }
@@ -231,6 +246,8 @@ const Dashboard = () => {
     { field: "grade", header: "Grade" },
     { field: "result", header: "Result" },
   ];
+
+  //result functions end
 
   return (
     <div>
@@ -468,6 +485,7 @@ const Dashboard = () => {
               </div>
             )}
           </div>
+          {/* result page*/}
         </div>
         </div>
       </div>
