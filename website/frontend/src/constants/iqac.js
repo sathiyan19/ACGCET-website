@@ -214,7 +214,13 @@ const iqac_feed=[
         "head":"2021-2022",
         "house":"right",
         "pdf":"https://drive.google.com/file/d/1L8makTfisdAAXqetJve4xyCbbtWp1SKg/view?usp=sharing"
-    }
+    },
+    {
+        'id':"3",
+        "head":"2022-2023",
+        "house":"left",
+        "pdf":"https://drive.google.com/file/d/1WTNTbCsdl6R2elYfnmUKXlGgmWqr0rwJ/view?usp=sharing"
+    },
 ]
 
 const iqac_aqar=[
