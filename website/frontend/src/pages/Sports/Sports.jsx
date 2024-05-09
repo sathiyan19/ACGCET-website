@@ -40,7 +40,7 @@ const Sports = () => {
 
         <p className="sports_top_head">ACMARA RIVALRY'24</p>
         <p className="sports_head">Team Standings</p>
-        <p className="sports_notification">After Men's Kho-Kho matches...</p>
+        <p className="sports_notification">After Men's Football matches...</p>
 
         <div className="sports_cards_holder">
           {sport_cards.map((team) => {
@@ -51,6 +51,7 @@ const Sports = () => {
                 head={team.head}
                 points={team.points}
                 wins={team.wins}
+                link={team.link}
               />
             );
           })}

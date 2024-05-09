@@ -67,6 +67,9 @@ const Rajakumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/
 const Karthikeyan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/22.Mr.K.Karthikeyan+AP(Adhoc).webp"
 const Sakthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/23.Dr.RM.SakthiSadhasivam+AP(Adhoc).webp"
 const PRABH="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/13.Dr.J.Prabakaran+Asso+Prof(CAS).webp"
+const karthik_raja="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/karthikraja.webp"
+const muthu_raja="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/muthuraja.webp"
+const senthil_raja="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Teaching_fac/senthilraja.webp"
 
 //    Supporting Faclties
 const Pravakaran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/A.PRABH.webp"
@@ -104,13 +107,13 @@ const mech_dept_menu = [
   {
     id: "3",
     path: "/mechdept/mech-faculties",
-    link: "Faculties",
+    link: "Faculty",
     arl:'l'
   },
   {
     id: "4",
     path: "/mechdept/mech-lab",
-    link: "Lab Facilities",
+    link: "Laboratory Facilities",
     arl:'l'
   },
   {
@@ -492,7 +495,7 @@ const mech_fac_profiles = [
   {
     id: "8",
     cover: cover,
-    dp: Senthilkumar,
+    dp: Senthil,
     name: "Prof.S.Senthilkumar",
     Designation: "Assistant Professor",
     mailid: "s.senthilkumar@accetedu.in",
@@ -516,15 +519,15 @@ const mech_fac_profiles = [
     mailid: "kingsvijay1503@gmail.com",
     pdf: "https://drive.google.com/file/d/1JP325kv0uZcgAFufRa9oajgMf7yqiL8N/view?usp=sharing",
   },
-  {
-    id: "11",
-    cover: cover,
-    dp: Prema,
-    name: "Prof.P.Prema",
-    Designation: "Assistant Professor",
-    mailid: "paulrajprema7@gmail.com",
-    pdf: "https://drive.google.com/file/d/1E2DlfH_I9PA7F9MGt7U2tSOB-7Ty6cWa/view?usp=sharing",
-  },
+  // {
+  //   id: "11",
+  //   cover: cover,
+  //   dp: Prema,
+  //   name: "Prof.P.Prema",
+  //   Designation: "Assistant Professor",
+  //   mailid: "paulrajprema7@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1E2DlfH_I9PA7F9MGt7U2tSOB-7Ty6cWa/view?usp=sharing",
+  // },
   {
     id: "12",
     cover: cover,
@@ -537,7 +540,7 @@ const mech_fac_profiles = [
   {
     id: "13",
     cover: cover,
-    dp: Pravakaran,
+    dp: PRABH,
     name: "Dr.J.Prabakaran",
     Designation: "Associate Professor(CAS)",
     mailid: "jp_au@yahoo.com ,",
@@ -546,7 +549,7 @@ const mech_fac_profiles = [
   {
     id: "14",
     cover: cover,
-    dp: Senthil,
+    dp: Senthilkumar,
     name: "Dr.C.R.Senthilkumar",
     Designation: "Assistant Professor",
     mailid: "ausenthilkumar@gmail.com",
@@ -559,7 +562,7 @@ const mech_fac_profiles = [
     name: "Dr.B.Guruprasad",
     Designation: "Assistant Professor(Sl.Gr)",
     mailid: "tellprasadcdm@gmail.com ",
-    pdf: "https://drive.google.com/file/d/18aUYs0pssl7CMF6pFvGLWnZBA8kbWg1R/view?usp=sharing",
+    pdf: "https://drive.google.com/file/d/18aUYs0pssl7CMF6pFvGLWnZBA8kbWg1R/view?usp=drive_link",
   },
   {
     id: "16",
@@ -602,7 +605,7 @@ const mech_fac_profiles = [
     cover: cover,
     dp: Sathishkumar,
     name: "Mr.C.Sathiskumar",
-    Designation: "Assistant Professor(Adhoc)",
+    Designation: "Assistant Professor (Consolidated Pay)",
     mailid: "sathishkumarcsk94@gmail.com",
     pdf: "https://drive.google.com/file/d/1ZBb747JVT16bs2Tlmu4UlcdtFHExXJIF/view?usp=sharing",
   },
@@ -611,7 +614,7 @@ const mech_fac_profiles = [
     cover: cover,
     dp: Rajakumar,
     name: "Mr.N.Rajakumar",
-    Designation: "Assistant Professor(Adhoc)",
+    Designation: "Assistant Professor (Consolidated Pay)",
     mailid: "rajvalli74@gmail.com",
     pdf: "https://drive.google.com/file/d/1SMWmKWWoYAPNPufp3VowcZR-VPpaPTBd/view?usp=sharing",
   },
@@ -620,19 +623,46 @@ const mech_fac_profiles = [
     cover: cover,
     dp: Karthikeyan,
     name: "Mr.K.Karthikeyan",
-    Designation: "Assistant Professor(Adhoc)",
+    Designation: "Assistant Professor (Consolidated Pay)",
     mailid: "kkshare2020@gmail.com",
     pdf: "https://drive.google.com/file/d/13AAP4pt4tSa2zDAxg5gLV0E_PMP6xFK4/view?usp=sharing",
   },
  
+  // {
+  //   id: "23",
+  //   cover: cover,
+  //   dp: Sakthi,
+  //   name: "Dr.RM.Sakthi Sadhasivam",
+  //   Designation: "Assistant Professor(Adhoc)",
+  //   mailid: "sakthi211193@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/1tJZVd1B0DYM2PyKGi7pfmPonrI1lqMpA/view?usp=sharing",
+  // },
   {
-    id: "23",
+    id: "24",
     cover: cover,
-    dp: Sakthi,
-    name: "Dr.RM.Sakthi Sadhasivam",
-    Designation: "Assistant Professor(Adhoc)",
-    mailid: "sakthi211193@gmail.com",
-    pdf: "https://drive.google.com/file/d/1tJZVd1B0DYM2PyKGi7pfmPonrI1lqMpA/view?usp=sharing",
+    dp: muthu_raja,
+    name: "Dr.R.Muthuraja",
+    Designation: "Assistant Professor (Contract)",
+    mailid: "muthu.maha92@gmail.com",
+    pdf: "https://drive.google.com/file/d/1WeHrnY7V_LCpePhuXphovmIYHeBgJZDa/view?usp=sharing",
+  },
+  {
+    id: "25",
+    cover: cover,
+    dp: senthil_raja,
+    name: "Dr. R. Senthilraja",
+    Designation: "Assistant Professor (Contract)",
+    mailid: "drrsenthilraja@gmail.com",
+    pdf: "https://drive.google.com/file/d/1c4iTkzCiFiCGF_gLOl9ax9reuexOlnrt/view?usp=sharing",
+  },
+  {
+    id: "26",
+    cover: cover,
+    dp: karthik_raja,
+    name: "Dr.M.Karthikraja",
+    Designation: "Assistant Professor (Consolidated Pay)",
+    mailid: "mkraja0095@gmail.com",
+    pdf: "https://drive.google.com/file/d/1t4RGolUIwi1vqMIKM54hgkPL9Rq9ypqi/view?usp=sharing",
   },
  
 
@@ -662,7 +692,7 @@ const mech_sup_profiles = [
     id: "3",
     cover: cover,
     dp: SARAVANAN,
-    name: "S.Sravanan",
+    name: "S.Saravanan",
     Designation: " Instructor",
     mailid: "accet123saravanan@gamil.com",
     pdf: "",
@@ -787,7 +817,7 @@ const mech_sup_profiles = [
   {
     id: "17",
     cover: cover,
-    dp:PRABH ,
+    dp:Pravakaran ,
     name: "A.Prabhu",
     Designation: "Cleaner",
     mailid: "prabu250586@gmail.com",

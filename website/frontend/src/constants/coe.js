@@ -61,6 +61,12 @@ const coe_menu =[
         link:"Fees Structure ",
         arl:'1'
     },
+    {
+      id:"11",
+      path:"https://drive.google.com/drive/folders/1Ov9SmTy17q-PljCSszAB8sa_fmYrWIRX",
+      link:"Question Bank ",
+      arl:'1'
+  },
 
 
     {

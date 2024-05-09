@@ -3,7 +3,7 @@ import React from 'react'
 import { Backtotop,Floatinmenu,Underline } from "../../widgets";
 
 import { Radial_menu,Listformat } from "../../components";
-import { Sh_dept_fmenu,mat_res_vas,mat_res_ani } from '../../constants/Sh_dept_menu';
+import { Maths_dept_fmenu,mat_res_vas,mat_res_ani } from '../../constants/maths_dept';
 
 import { VscSymbolOperator } from "react-icons/vsc";
 
@@ -13,9 +13,9 @@ const Sh_mat_research = () => {
       <div>
        <section className="shmatdark">
         <div className="shmatdept_float_menu">
-          <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={VscSymbolOperator} head="Menu" links={Maths_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={Maths_dept_fmenu} />
         <div className="shmat_abt_area">
         <div className="shmat_abt">
         <Underline heading="Research and Publications"/>

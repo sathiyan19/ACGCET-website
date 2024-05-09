@@ -3,7 +3,7 @@ import React from 'react'
 import { Backtotop,Floatinmenu, Underline} from "../../widgets";
 import {Profile_display} from '../../components'
 // import { ece_dept_menu,ece_fac_profiles,ece_sup_profiles} from "../../constants/ece_dept";
-import { Sh_dept_fmenu,eng_fac_profiles } from '../../constants/Sh_dept_menu';
+import { English_dept_fmenu,eng_fac_profiles } from '../../constants/english_dept';
 import { Radial_menu } from "../../components";
 
 
@@ -15,9 +15,9 @@ const Sh_Eng_fac = () => {
     <div>
        <section className="shengdark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={RiEnglishInput} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={RiEnglishInput} head="Menu" links={English_dept_fmenu} />
             </div>
-            <Radial_menu menu_links={Sh_dept_fmenu} />
+            <Radial_menu menu_links={English_dept_fmenu} />
             <div className="sheng_fac_area">
                 <div className='sheng_teach_fac'>
                     <Underline heading="Teaching Faculties"/>

@@ -158,7 +158,7 @@ INSERT INTO `login_cred` (`reg_no`, `pswd`, `p_flag`) VALUES
 -- Indexes for table `cse_results`
 --
 ALTER TABLE `cse_results`
-  ADD KEY `idx_cse_results` (`regno`,`subcode`,`sem`);
+  ADD KEY `idx_cse_results` (`regno`,`subcode`,`current_sem`);
 
 --
 -- Indexes for table `cse_stud_details`

@@ -228,7 +228,7 @@ const iqac_aqar=[
         'id':"3",
         "head":"2021-2022",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1oCJd3MPmdWSYFsmi1Bi7oFez6Svz6N5l/view?usp=drive_link"
+        "pdf":"https://drive.google.com/file/d/1oCJd3MPmdWSYFsmi1Bi7oFez6Svz6N5l/view?usp=sharing"
     },
     {
         'id':"2",

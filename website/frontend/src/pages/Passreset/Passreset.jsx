@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Passreset.css';
 import svg from '../../assets/pictures/forgetpassword_svg.svg';
 import { Link, useNavigate } from 'react-router-dom';
@@ -13,7 +13,7 @@ const Passreset = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5002/api/send-otp', { regno:username,});
+      const response = await axios.post('/backend/send-otp', { regno:username,});
       console.log(response.data); 
       navigate('/password-otp',{state:{regno:username,}});
     } catch (error) {
@@ -22,6 +22,9 @@ const Passreset = () => {
       setLoading(false);
     }
   };
+  useEffect(() => {
+    document.title = "ACCET-Password Reset";
+  }, []);
 
   return (
     <div>

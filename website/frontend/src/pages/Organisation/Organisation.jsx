@@ -3,8 +3,9 @@ import React,{useEffect} from 'react'
 import './Organisation.css'
 
 import { Underline } from '../../widgets';
+import org_struc from '../../assets/pictures/org_str.webp'
+// const org_struc ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/cse+grp1.webp";
 
-const org_struc ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/cse+grp1.webp";
 
 const Organisation = () => {
   useEffect(() => {

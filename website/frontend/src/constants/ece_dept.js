@@ -91,7 +91,7 @@ const somasundaram = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws
 const asr= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/ASR.webp"
 const aruna = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Aruna+Rani+M-1.webp"
 const helena = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_HelenaD-1.webp"
-const  rajesh= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Rajesh+kanna+B-1.webp"
+// const  rajesh= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Rajesh+kanna+B-1.webp"
 const keerthana = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_KeerthanaP-1.webp"
 const mahendran = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Mahendran+C-1.webp"
 const merlin = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Merlin+sheeba+X-1.webp"
@@ -108,7 +108,7 @@ const selvi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const vasanthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/vasanthi.webp"
 const karthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/karthikeyan.webp"
 const sankar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/sankar.webp"
-
+const karpagagrajesh = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/Ece_KarpagarajeshG.webp"
 const ece_adc_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_adc_lab-c.webp"
 const ece_rfs_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_rfs_lab-c.webp"
 const ece_fo_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_fo_lab.webp"
@@ -164,13 +164,13 @@ const ece_dept_menu = [
   {
     id: "3",
     path: "/ecedept/ece-faculties",
-    link: "Faculties",
+    link: "Faculty",
     arl: "l",
   },
   {
     id: "4",
     path: "/ecedept/ece-lab",
-    link: "Lab Facilities",
+    link: "Laboratory Facilities",
     arl: "l",
   },
   {
@@ -248,7 +248,7 @@ const ece_fac_profiles = [
   {
     id: "2",
     cover: cover,
-    dp: rajesh,
+    dp: karpagagrajesh,
     name: "Dr.G.Karpagarajesh",
     Designation: "Associate Professor",
     mailid: "gkrajesh1@gmail.com",
@@ -362,15 +362,15 @@ const ece_fac_profiles = [
     mailid: "keerthiperumal@gmail.com",
     pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
   },
-  {
-    id: "15",
-    cover: cover,
-    dp: merlin,
-    name: "Mrs.X.Merlin Sheeba",
-    Designation: "Assistant Professor",
-    mailid: "renachristina@gmail.com",
-    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
-  },
+  // {
+  //   id: "15",
+  //   cover: cover,
+  //   dp: merlin,
+  //   name: "Mrs.X.Merlin Sheeba",
+  //   Designation: "Assistant Professor",
+  //   mailid: "renachristina@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
+  // },
 ];
 
 const ece_sup_profiles = [

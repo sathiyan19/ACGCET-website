@@ -43,16 +43,16 @@ const Login = () => {
 
   const form_submit = async (e) => {
     e.preventDefault();
-    console.log(username, password);
+    // console.log(username, password);
     setUsername(username.trim());
     setPassword(password.trim());
 
     let uflag = 0,
       pflag = 0;
     try {
-      console.log(username.length)
+      // console.log(username.length)
       if (username.length !==7 && username.length !==11) {
-        console.log("inside")
+        // console.log("inside")
         setUsrerror("Enter valid register number");
       } else {
         uflag = 1;
@@ -72,21 +72,26 @@ const Login = () => {
         } else if (username.length === 11) {
           code = username.substring(6, 8);
         }
-        console.log(find_dept(code));
-        const res = await axios.post("http://localhost:5002/api/login", {
+        // console.log(find_dept(code));
+        const res = await axios.post("/backend/login", {
           username,
           password,
         });
-        console.log(res.data.pswd_status);
+        // console.log(res.data.pswd_status);
         if(username==='91762115000'&& res.data.pswd_status){
           console.log("admin pass matched");
           navigate("/admin-panel");
         }
        
         else if (res.data.pswd_status) {
-          console.log("Matched");
-          console.log(res.data.reg_no);
-          navigate("/dashboard");
+          // console.log("Matched");
+          // console.log("p_flag:", res.data.p_flag); 
+          // console.log(res.data.reg_no);
+          navigate("/dashboard", { state: { pflag: res.data.p_flag , regno : res.data.regno } });
+        }
+
+        else if(res.data.username_not_found){
+          setUsrerror("Register number not found")
         }
         
          else {
@@ -105,10 +110,10 @@ const Login = () => {
   }
 
   useEffect(()=>{
-    console.log("started!")
-    axios.get("http://localhost:5002/api/login_verification")
+    // console.log("started!")
+    axios.get("/backend/login_verification")
     .then((res)=>{
-      console.log(res)
+      // console.log(res)
       if(res.data.token_status==="okay"){
         navigate("/dashboard")
       }
@@ -138,7 +143,7 @@ const Login = () => {
                   autoComplete="username"
                   value={username}
                   type="text"
-                  placeholder="Username"
+                  placeholder="Register Number"
                   onChange={(e) => setUsername(e.target.value)}
                 />
                 <i className="fa fa-user"></i>

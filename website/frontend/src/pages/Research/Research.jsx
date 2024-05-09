@@ -18,13 +18,13 @@ const Research = () => {
         <div className="content_card_holder">
               {/* {Main_Research_cse.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)} */}
 
-              {Main_Research_ece.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+              {Main_Research_ece.map((item)=><Content_card key={item.id} heading={item.program} view={item.pdf}/>)}
 
-              {Main_Research_eee.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+              {Main_Research_eee.map((item)=><Content_card key={item.id} heading={item.program} view={item.pdf}/>)}
 
-              {Main_Research_mech.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+              {Main_Research_mech.map((item)=><Content_card key={item.id} heading={item.program} view={item.pdf}/>)}
 
-              {Main_Research_civil.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+              {Main_Research_civil.map((item)=><Content_card key={item.id} heading={item.program} view={item.pdf}/>)}
 
          </div>
 

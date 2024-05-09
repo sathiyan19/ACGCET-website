@@ -4,7 +4,7 @@ import React from 'react'
 import { Backtotop,Floatinmenu, Underline} from "../../widgets";
 import {Profile_display} from '../../components'
 
-import { Sh_dept_fmenu,phy_fac_profiles,phy_sup_profiles } from '../../constants/Sh_dept_menu';
+import { Physics_dept_fmenu,phy_fac_profiles,phy_sup_profiles } from '../../constants/physics_dept';
 import { Radial_menu } from "../../components";
 
 
@@ -16,9 +16,9 @@ const Sh_Phy_fac = () => {
     <div>
       <section className="shphydark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Physics_dept_fmenu} />
             </div>
-            <Radial_menu menu_links={Sh_dept_fmenu} />
+            <Radial_menu menu_links={Physics_dept_fmenu} />
             <div className="shphy_fac_area">
                 <div className='shphy_teach_fac'>
                     <Underline heading="Teaching Faculties"/>

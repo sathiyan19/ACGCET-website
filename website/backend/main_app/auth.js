@@ -23,6 +23,9 @@ const login = async (req, res) => {
         `,
       [username]
     );
+    if (!fetched_pswd) {
+      return res.status(200).json({ username_not_found: true });
+    }
     const hashed_pswd = fetched_pswd.pswd;
     const pswd_flag = fetched_pswd.p_flag;
     let token;
@@ -43,7 +46,7 @@ const login = async (req, res) => {
       res
         .status(200)
         .cookie("token", token, { httpOnly: true })
-        .json({ pswd_status: ispswd });
+        .json({ pswd_status: ispswd, p_flag: pswd_flag ,regno :username});
     } else {
       res.status(200).json({ pswd_status: ispswd });
     }
@@ -94,6 +97,8 @@ const reset = async (req, res) => {
   }
 };
 
+
+
 const verifyUser = (req, res, next) => {
   const token = req.cookies.token;
   if (!token) {
@@ -120,5 +125,5 @@ module.exports = {
   login_verify,
   reset,
   verifyUser,
-  logout,
+  logout
 };

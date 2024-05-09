@@ -1,4 +1,4 @@
-.contactform {
+.coe-contactform {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.sir {
+.coe-sir {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,29 +17,29 @@
   margin-right: 50px;
 }
 
-.sir img {
+.coe-sir-img {
   border-radius: 50%;
   width: 75%;
   margin-bottom: 20px;
   margin-top: 30%;
 }
 
-.textbox {
+.coe-textbox {
   padding: 20px;
   color: white;
   margin-top: 20px;
 }
 
-.textbox p {
+.coe-textbox-p {
   font-size: 1.5em;
   margin-bottom: 20px;
   color: #00134d;
   text-align: center;
 }
 
-.name,
-.designation,
-.sir p:last-child {
+.coe-name,
+.coe-designation,
+.coe-sir .coe-textbox-p:last-child {
   color: #00134d;
   font-size: 1em;
   white-space: nowrap;
@@ -50,21 +50,19 @@
   text-align: center;
 }
 
-.name {
+.coe-name {
   margin-top: 10px;
 }
 
-.textbox form {
+.coe-textbox form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.textbox input[type="text"],
-.textbox input[type="email"],
-.textbox input[type="tel"],
-.textbox textarea {
+.coe-input,
+.coe-textarea {
   width: 300px;
   height: 40px;
   margin-bottom: 20px;
@@ -76,11 +74,11 @@
 
 
 
-.textbox textarea {
+.coe-textarea {
   height: 120px;
 }
 
-.textbox button[type="submit"] {
+.coe-submit {
   width: 150px;
   height: 40px;
   background-color: #00134d;
@@ -90,30 +88,34 @@
   font-size: 1em;
   cursor: pointer;
 }
+.coe-submit:hover{
+  background-color: #ff6600;
+  color: white;
+}
 
 @media (max-width: 768px) {
-  .contactform {
+  .coe-contactform {
     flex-direction: column;
     align-items: center;
   }
 
-  .sir {
+  .coe-sir {
     width: 80%;
     margin: 20px auto;
   }
 
-  .sir img {
-    width: 100px;
-    height: 100px;
+  .coe-sir-img {
+    width: 50%;
+    height: auto;
   }
 
-  .textbox {
+  .coe-textbox {
     width: 80%;
     margin-top: 20px;
   }
-  .name,
-  .designation,
-  .sir p:last-child {
+  .coe-name,
+  .coe-designation,
+  .coe-sir-p:last-child {
     color: #00134d;
     font-size: 1em;
     white-space: nowrap;
@@ -123,14 +125,12 @@
     justify-content: center;
     text-align: center;
   }
-  .textbox input[type="text"],
-  .textbox input[type="email"],
-  .textbox input[type="tel"],
-  .textbox textarea {
-    width: 100%;
+  .coe-input
+  .coe-textarea {
+    width: 90%;
   }
 
-  .textbox button[type="submit"] {
+  .coe-submit {
     width: 100%;
   }
 }
