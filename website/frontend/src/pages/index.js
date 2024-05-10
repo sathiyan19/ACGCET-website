@@ -118,5 +118,4 @@ export{default as Passreset} from './Passreset/Passreset'
 export{default as Otp} from './Otp/Otp'
 export{default as Newpass} from './Newpass/Newpass'
 export{default as Admin_dashboard} from './Admin_dashboard/Admin_dashboard'
-export {default as Cgpa_cal} from './Cgpa_cal/Cgpa_cal'
-export {default as Computer_cgpa} from './Cgpa_cal/Computer_cgpa'
+
