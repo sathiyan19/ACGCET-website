@@ -89,6 +89,9 @@ import {
   Iqac_min,
   Iqac_aqar,
   Iqac_feed,
+  Iqac_practices,
+  Iqac_distinctiveness,
+
   Nba,
   Nirf,
   Iic,
@@ -271,6 +274,9 @@ const App = () => {
         <Route path="/iqac_aqar" element={<Iqac_aqar/>} />
         <Route path="/iqac" element={<Iqac/>} />
         <Route path="/iqac_feed" element={<Iqac_feed/>} />
+        <Route path="/iqac_practices" element={<Iqac_practices/>} />
+        <Route path="/iqac_distinctiveness" element={<Iqac_distinctiveness/>} />
+        
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
