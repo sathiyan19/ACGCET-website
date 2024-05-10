@@ -3,8 +3,8 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import "./Dashboard.css";
 import { Progressbar, Underline } from "../../widgets";
-import { Table } from "../../components";
-import { subjects } from "../../constants/dashboard";
+import { Table,Sidenavbar } from "../../components";
+import { sidenav, subjects } from "../../constants/dashboard";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
@@ -293,7 +293,8 @@ const Dashboard = () => {
         )}
         {/* sidenavbar */}
         <div className="dash_complete_div">
-        <section className="dash-sidenav">
+          <Sidenavbar links={sidenav}/>
+        {/* <section className="dash-sidenav">
           <Link
             to={"/dashboard"}
             className={`dash-side-nav-items ${
@@ -319,7 +320,7 @@ const Dashboard = () => {
           >
             Result
           </Link>
-        </section>
+        </section> */}
 
         
 
