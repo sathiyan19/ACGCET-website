@@ -117,7 +117,6 @@ const verifyUser = (req, res, next) => {
             code = decoded.user.substring(6, 8);
           }
           let dept=find_dept(code)
-          console.log("VERIFY USER: ",dept)
           req.dept = dept;
         next();
       }

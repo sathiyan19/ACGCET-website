@@ -32,7 +32,7 @@ const res_publish= async (req,res)=>{
             `,
             [stud_data_table,regno]
         )
-        stud_dept=dept
+        stud_dept=dept.toUpperCase()
         reg_no=regno
         sem_no=res_pub[0].current_sem
         sem_subs=res_pub

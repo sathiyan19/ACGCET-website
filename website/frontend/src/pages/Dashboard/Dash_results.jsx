@@ -26,9 +26,9 @@ const Dash_results = () => {
     .post("/backend/respublish")
     .then((res)=>{
         if(res.data.Status === "Success"){
-            const result_dept=res.data.dept
+            const result_dept=res.data.dept.toUpperCase()
             const res_pub=res.data.results
-            const dept_sub = result_dept.toUpperCase() + "_subs";
+            const dept_sub = result_dept + "_subs";
             console.log(subjects['cse_subs'])
             res_pub.map((item) => {
                 item.subjectname = subjects[dept_sub][item.subcode].subname;
@@ -39,6 +39,7 @@ const Dash_results = () => {
             setRes_dept(result_dept)
             setRes_reg_no(res.data.regno)
             setRes_stud_data(res.data.stud_data)
+            get_sem_list(res.data.regno,result_dept)
         }else{
             navigate("/login-page");
         }
@@ -56,7 +57,6 @@ const Dash_results = () => {
         dept: dept,
         sem: sem,
       });
-      console.log(all_res.data);
       const dept_sub = dept + "_subs";
       all_res.data.map((item) => {
         item.subjectname = subjects[dept_sub][item.subcode].subname;
@@ -75,7 +75,7 @@ const Dash_results = () => {
         dept: dept,
       });
       let list = [];
-      sems.data.map((item) => list.push(item.sem));
+      sems.data.map((item) => list.push(item.current_sem));
       list.sort((a, b) => b - a);
       setSem_list(list);
     } catch (error) {
@@ -185,8 +185,8 @@ const Dash_results = () => {
                               className="sem_dropdown"
                               onMouseDown={(e) => {
                                 fetch_all_results(
-                                  stud_details.regno,
-                                  stud_details.department,
+                                  res_reg_no,
+                                  res_dept,
                                   item
                                 );
                               }}
