@@ -34,7 +34,7 @@ const top_nav_paths = [
       { path: "/programs", link: "Programs offered" },
       { path: "/academic-calendar", link: "Academic Calendar" },
       {path:"/coe",link:"Autonomous Office"},
-      
+      {path:"/research",link:"Research"}
     ],
   },
 
@@ -165,7 +165,11 @@ const hidden_nav_paths = [
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
       { path: "/csedept", link: "Computer Science Engineering" },
-      { path: "/sciencedept", link: "Science & Humanities" },
+      { path: "/Physicsdept", link: "Physics" },
+      { path: "/Chemistrydept", link: "Chemistry" },
+      { path: "/Mathsdept", link: "Mathematics" },
+      { path: "/Englishdept", link: "English" },
+
     ],
   },
 
@@ -190,6 +194,7 @@ const hidden_nav_paths = [
       { path: "/iqac", link: "IQAC" },
       { path: "/nba", link: "NBA" },
       { path: "/nirf", link: "NIRF" },
+      { path: "/rti", link: "RTI" },
       { path: "/annual_reports", link: "Annual Reports" },
     ],
   },
@@ -233,12 +238,17 @@ const bottom_nav_paths = [
     title: "Departments",
     basepath: "javascript:void(0);",
     links: [
-      { path: "/mechdept", link: "Mechanical Engineering" },
       { path: "/civildept", link: "Civil Engineering" },
+      { path: "/mechdept", link: "Mechanical Engineering" },   
       { path: "/eeedept", link: "Electrical & Electronics Engineering" },
       { path: "/ecedept", link: "Electronics & Communication Engineering" },
       { path: "/csedept", link: "Computer Science Engineering" },
-      { path: "/sciencedept", link: "Science & Humanities" },
+      { path: "/Physicsdept", link: "Physics" },
+      { path: "/Chemistrydept", link: "Chemistry" },
+      { path: "/Mathsdept", link: "Mathematics" },
+      { path: "/Englishdept", link: "English" },
+
+
     ],
   },
 
@@ -257,14 +267,24 @@ const bottom_nav_paths = [
     basepath: "javascript:void(0);",
     links: [
       {
-        path: "https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing",
+        // path: "https://drive.google.com/file/d/16mZkLmHrTUkolXDtJS8mQLO3GAcgXuhC/view?usp=sharing",
+        path: "/naac",
         link: "NAAC",
       },
       { path: "/iqac", link: "IQAC" },
       { path: "/nba", link: "NBA" },
-      { path: "/nirf", link: "NIRF" },
+      { path: "/rti", link: "RTI" },
+      // { path: "/nirf", link: "NIRF" },
       { path: "/annual_reports", link: "Annual Reports" },
     ],
+  },
+
+  {
+    id: "21",
+    type: "3",
+    title: "NIRF",
+    basepath: "/nirf",
+    links: [],
   },
 
   {
@@ -301,13 +321,14 @@ const bottom_nav_paths = [
   },
 ];
 const login_nav_paths = [
-  // {
-  //   id: "20",
-  //   type: "4",
-  //   title: "",
-  //   basepath: "/dashboard",
-  //   links: [],
-  // },
+  {
+    id: "20",
+    type: "4",
+    title: "Login",
+    // basepath: "/dashboard",
+    basepath: "/login-page",
+    links: [],
+  },
 ];
 
 export { top_nav_paths, bottom_nav_paths, hidden_nav_paths, login_nav_paths };

@@ -28,6 +28,7 @@
 
 .msg {
     margin: 15px 0;
+    color: white;
     /* animation: marquee 10s linear infinite; */
     /* animation: marquee 5s steps(20) infinite; */
     /* animation-play-state: running;  */
@@ -74,7 +75,7 @@
     width: 80%;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px;
     margin: 7px 0px;
     border: 2px solid white;
@@ -90,7 +91,7 @@
 .board {
     text-align: center;
     /* text-decoration: underline; */
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     font-weight: 600;
 }
@@ -98,7 +99,7 @@
 .line {
     height: 2px;
     background-color: white;
-    width: 210px;
+    width: 170px;
     margin: 5px 0;
 }
 
@@ -106,17 +107,17 @@
     line-height: 1.2rem;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .impmsg:hover {
     text-decoration: underline;
     color: white;
 }
-
+/* 
 .msg {
     color: white;
-}
+} */
 
 @keyframes slide-up {
     from {
@@ -146,6 +147,9 @@
 @media(max-width:550px) {
     .board {
         font-size: 20px;
+    }
+    .line{
+        width: 145px;
     }
     .impmsg {
         font-size: 15px;

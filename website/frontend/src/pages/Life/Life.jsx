@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 // import iv from "../../assets/pictures/iv.webp";
 // import sports from "../../assets/pictures/sports.webp";
 // import technical from "../../assets/pictures/technical.webp";
-import gym from "../../assets/pictures/gym.webp";
+// import gym from "../../assets/pictures/gym.webp";
 
 const karaikudi_palace =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/Chettinad-new.webp";
@@ -29,7 +29,8 @@ const technical =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/technical.webp";
 const culture_pic =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/culture_pic.webp";
-// const gym="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp"
+
+const gym = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym1.webp";
 
 const Life = () => {
   useEffect(() => {

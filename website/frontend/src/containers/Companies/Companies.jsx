@@ -10,8 +10,10 @@ import { reccarousal } from '../../constants/home';
 import { Slideshow } from '../../components';
 
 
-import q1 from "../../assets/pictures/quote1.webp";
-import q2 from "../../assets/pictures/quote2.webp";
+// import q1 from "../../assets/pictures/quote1.webp";
+const q1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/quote1.webp"
+// import q2 from "../../assets/pictures/quote2.webp";
+const q2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/quote2.webp"
 
 const Companies = () => {
   return (

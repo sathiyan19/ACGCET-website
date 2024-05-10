@@ -18,7 +18,7 @@ const Admin_dashboard = () => {
 
   const gettables = async () => {
     try {
-      const tabs = await axios.post("http://localhost:5002/api/gettables", {});
+      const tabs = await axios.post("/backend/gettables", {});
       console.log(tabs.data);
       setTables(tabs.data);
     } catch (error) {
@@ -42,7 +42,7 @@ const Admin_dashboard = () => {
         formData.append("file", file);
         formData.append("table_name", inputValue);
         const response = await axios.post(
-          "http://localhost:5002/api/exceltosql",
+          "/backend/exceltosql",
           formData,
           {
             headers: {
@@ -62,7 +62,7 @@ const Admin_dashboard = () => {
   useEffect(() => {
     gettables();
     axios
-    .get("http://localhost:5002/api/dashboard")
+    .get("/backend/dashboard")
     .then((res) => {
       if (res.data.Status === "Success") {
         console.log("hi")
@@ -76,6 +76,10 @@ const Admin_dashboard = () => {
     })
     .catch((err) => console.log(err));
 }, [navigate]);
+
+useEffect(() => {
+  document.title = "ACCET-Admin";
+}, []);
 
   return (
     <div>

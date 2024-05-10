@@ -9,7 +9,7 @@ import { FaEmpire } from "react-icons/fa6";
 
 const Coe_Adminstration = () => {
   useEffect(() => {
-    document.title = 'ACCET-COE | Administration';
+    document.title = "ACCET-COE | Administration";
   }, []);
 
   return (
@@ -50,6 +50,8 @@ const Coe_Adminstration = () => {
       <Backtotop />
     </div>
   );
-}
+};
 
 export default Coe_Adminstration;
+
+

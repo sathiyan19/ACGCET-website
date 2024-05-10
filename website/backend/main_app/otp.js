@@ -12,6 +12,38 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+const sendquery = async (req,res) => {
+  try{
+    const coename= req.body.coename;
+    const coeemail=req.body.coeemail;
+    const coephno=req.body.coephno;
+    const coequery=req.body.coequery;
+    console.log(req.body.coename);
+    transporter.sendMail(
+      {
+        from: "acgcet25@gmail.com",
+        to: "sivanantharaja@gmail.com",
+        subject: `Query from ${coename} through COE site`,
+        text: `Mail id: ${coeemail},\n Phone no: ${coephno},\n Query: ${coequery}`,
+      },
+      (error, info) => {
+        if (error) {
+          console.log("error:", error);
+          res
+            .status(500)
+            .json({ success: false, message: "Error sending email" });
+        } else {
+          console.log("email sent", info.response);
+          res
+            .status(200)
+            .json({ success: true, message: "Email sent successfully", coeemail });
+        }
+      }
+    );
+  }catch(error){
+    console.log(error);
+  }
+};
 let email;
 // app.post('/send-otp', cors(), async(req, res) => {
 const sendOTP = async (req, res) => {
@@ -90,4 +122,5 @@ module.exports = {
   generateOTP,
   sendOTP,
   validateOTP,
+  sendquery
 };

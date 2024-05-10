@@ -59,7 +59,7 @@ NPTEL's user-friendly interface and flexible learning options make it accessible
 
       </div>
       <div className="content_card_holder">
-      {coe_link.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+      {coe_link.map((item)=><Content_card key={item.id} heading={item.program} view={item.pdf}/>)}
       </div>
 <div className="udemy">
   <Underline heading="Udemy"/>
@@ -68,7 +68,7 @@ NPTEL's user-friendly interface and flexible learning options make it accessible
   </p>
 </div>
 <div className="content_card_holder">
-{coe_link1.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+{coe_link1.map((item)=><Content_card key={item.id} heading={item.program} view={item.pdf}/>)}
 </div>
 <div className="coursera">
   <Underline heading="Coursera"/>
@@ -77,7 +77,7 @@ NPTEL's user-friendly interface and flexible learning options make it accessible
   </p>
 </div>
 <div className="content_card_holder">
-{coe_link2.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+{coe_link2.map((item)=><Content_card key={item.id} heading={item.program} view={item.pdf}/>)}
 </div>
       </section>
   <Backtotop/>

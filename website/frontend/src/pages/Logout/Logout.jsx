@@ -11,7 +11,7 @@ function Logout() {
     axios.defaults.withCredentials=true;
 
     useEffect(()=>{
-        axios.get("http://localhost:5002/api/logout")
+        axios.get("/backend/logout")
         .then(res=>{
             if(res.data.Status==="Success"){
                 setAuth(true)

@@ -25,6 +25,10 @@ const Otp = () => {
     }
   }, [location.state, navigate]);
 
+  useEffect(() => {
+    document.title = "Enter OTP";
+  }, []);
+
   const handleOtpSubmit = async(e) => {
     e.preventDefault();
     const otp = otpValues.join("");
@@ -36,7 +40,7 @@ const Otp = () => {
         setOtp_error("");
         try{
           setLoading(true)
-          const response=await axios.post("http://localhost:5002/api/validate-otp",{mailid,otp});
+          const response=await axios.post("/backend/validate-otp",{mailid,otp});
           if(response.data.success){
             console.log('Otp is valid');
             navigate('/password-create',{state:{regno:regno}})
@@ -95,7 +99,7 @@ const Otp = () => {
           </div>
         </div>
         {otp_error && <div className="otp_err_msg">{otp_error}</div>}
-        <button className="login-submit" type="submit" onClick={handleOtpSubmit}>
+        <button className="login-submit_passwdrec" type="submit" onClick={handleOtpSubmit}>
           {loading ?'Verifying otp....': 'Verify OTP'}
         </button>
       </form>
