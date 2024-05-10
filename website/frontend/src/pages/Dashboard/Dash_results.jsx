@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
-import { Table } from "../../components";
-import { subjects } from "../../constants/dashboard";
+import { Table, Sidenavbar,Dash_radialmenu } from "../../components";
+import { radmenu, subjects } from "../../constants/dashboard";
 import "./Dashboard.css";
 import { Progressbar, Underline } from "../../widgets";
+import { sidenav } from "../../constants/dashboard";
 
 const Dash_results = () => {
   const [sem_opt_flag, setSem_opt_flag] = useState(false);
   const [results, setResults] = useState([]);
   const [sem_list, setSem_list] = useState([]);
   const [sem, setSem] = useState("");
-  const [res_reg_no,setRes_reg_no]=useState("")
-  const [res_stud_data,setRes_stud_data]=useState({})
-  const [res_dept,setRes_dept]=useState("")
+  const [res_reg_no, setRes_reg_no] = useState("");
+  const [res_stud_data, setRes_stud_data] = useState({});
+  const [res_dept, setRes_dept] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -21,31 +22,31 @@ const Dash_results = () => {
     document.title = "ACCET-Student Results";
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     axios
-    .post("/backend/respublish")
-    .then((res)=>{
-        if(res.data.Status === "Success"){
-            const result_dept=res.data.dept.toUpperCase()
-            const res_pub=res.data.results
-            const dept_sub = result_dept + "_subs";
-            console.log(subjects['cse_subs'])
-            res_pub.map((item) => {
-                item.subjectname = subjects[dept_sub][item.subcode].subname;
-                return item; // Don't forget to return the modified item
-            });
-            setSem(res_pub[0].current_sem);
-            setResults(res_pub);
-            setRes_dept(result_dept)
-            setRes_reg_no(res.data.regno)
-            setRes_stud_data(res.data.stud_data)
-            get_sem_list(res.data.regno,result_dept)
-        }else{
-            navigate("/login-page");
+      .post("/backend/respublish")
+      .then((res) => {
+        if (res.data.Status === "Success") {
+          const result_dept = res.data.dept.toUpperCase();
+          const res_pub = res.data.results;
+          const dept_sub = result_dept + "_subs";
+          console.log(subjects["cse_subs"]);
+          res_pub.map((item) => {
+            item.subjectname = subjects[dept_sub][item.subcode].subname;
+            return item; // Don't forget to return the modified item
+          });
+          setSem(res_pub[0].current_sem);
+          setResults(res_pub);
+          setRes_dept(result_dept);
+          setRes_reg_no(res.data.regno);
+          setRes_stud_data(res.data.stud_data);
+          get_sem_list(res.data.regno, result_dept);
+        } else {
+          navigate("/login-page");
         }
-    })
-    .catch((err) => console.log(err));
-    console.log(sem)
+      })
+      .catch((err) => console.log(err));
+    console.log(sem);
   }, [navigate]);
 
   const fetch_all_results = async (regno, dept, sem) => {
@@ -84,56 +85,60 @@ const Dash_results = () => {
     // console.log(sems.data)
   };
 
-  const download_marksheet =async()=>{
+  const download_marksheet = async () => {
     try {
-      var coolbutton = document.getElementById('coolbutton');
-  var inprogress = false;
-  coolbutton.onclick = function(){
-    if (inprogress) {
-      return false;
-    }
-    inprogress = true
-    coolbutton.classList.add('coolass_button_first');
-    setTimeout(function(){
-    coolbutton.classList.add('coolass_button_bridge1');
-    },500);
-    setTimeout(function(){
-    coolbutton.classList.add('coolass_button_second');
-    },600);
-    setTimeout(function(){
-    coolbutton.classList.add('coolass_button_third');
-    },700);
-    setTimeout(function(){
-    coolbutton.classList.add('coolass_button_final');
-    },1800);
-    setTimeout(function(){
-      coolbutton.classList.remove('coolass_button_final');
-      coolbutton.classList.remove('coolass_button_third');
-      coolbutton.classList.remove('coolass_button_second');
-      coolbutton.classList.remove('coolass_button_bridge1');
-      coolbutton.classList.remove('coolass_button_first');
-      inprogress = false;
-    },3200)
-  };
-      const marksheet = await axios.post("/backend/download_marksheet", {},{
-        responseType: 'blob' // Specify responseType as 'blob' to receive binary data
-      });
+      var coolbutton = document.getElementById("coolbutton");
+      var inprogress = false;
+      coolbutton.onclick = function () {
+        if (inprogress) {
+          return false;
+        }
+        inprogress = true;
+        coolbutton.classList.add("coolass_button_first");
+        setTimeout(function () {
+          coolbutton.classList.add("coolass_button_bridge1");
+        }, 500);
+        setTimeout(function () {
+          coolbutton.classList.add("coolass_button_second");
+        }, 600);
+        setTimeout(function () {
+          coolbutton.classList.add("coolass_button_third");
+        }, 700);
+        setTimeout(function () {
+          coolbutton.classList.add("coolass_button_final");
+        }, 1800);
+        setTimeout(function () {
+          coolbutton.classList.remove("coolass_button_final");
+          coolbutton.classList.remove("coolass_button_third");
+          coolbutton.classList.remove("coolass_button_second");
+          coolbutton.classList.remove("coolass_button_bridge1");
+          coolbutton.classList.remove("coolass_button_first");
+          inprogress = false;
+        }, 3200);
+      };
+      const marksheet = await axios.post(
+        "/backend/download_marksheet",
+        {},
+        {
+          responseType: "blob", // Specify responseType as 'blob' to receive binary data
+        }
+      );
       const url = window.URL.createObjectURL(new Blob([marksheet.data]));
-      
+
       // Create a link element and trigger download
-      const a = document.createElement('a');
+      const a = document.createElement("a");
       a.href = url;
       a.download = `${res_reg_no}_Sem${sem}.pdf`; // Specify the filename
       document.body.appendChild(a);
       a.click();
-      
+
       // Clean up the temporary URL
       window.URL.revokeObjectURL(url);
       // console.log(marksheet)
     } catch (error) {
       console.error(error);
     }
-  }
+  };
 
   const column = [
     // {field:'sno',header:"Sno"},
@@ -146,6 +151,13 @@ const Dash_results = () => {
 
   return (
     <div>
+      <div className="dashboar-container">
+        <div className="dash_complete_div">
+          <Sidenavbar links={sidenav} dash_state={1} />
+          <Dash_radialmenu menu_links={radmenu}/>
+          <div className="profile-sec">
+            <div className="dash-result">
+              <div>
                 <div className="dash-result-head">
                   <Underline heading={"Result"} />
                   <div className="dash-personal">
@@ -199,22 +211,27 @@ const Dash_results = () => {
                     <div className="dash-result-table-head">Semester {sem}</div>
                   </div>
                   <div className="dash_res_table_holder">
-                    <Table data={results} columns={column}/>
+                    <Table data={results} columns={column} />
                   </div>
                   <div class="marksheet-container">
-    <div className="cool_holder">
-    {/* <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button> */}
-  </div>
-  </div>
+                    <div className="cool_holder">
+                      {/* <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button> */}
+                    </div>
+                  </div>
                   
                   <div className="logout_button logout-btn">
-            <a className="log_link" href="/logout">
-              Logout
-            </a>
-          </div>
+                    <a className="log_link" href="/logout">
+                      Logout
+                    </a>
+                  </div>
                 </div>
               </div>
-  )
-}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Dash_results
+export default Dash_results;
