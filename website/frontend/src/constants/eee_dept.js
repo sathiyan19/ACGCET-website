@@ -1112,31 +1112,22 @@ const eee_fac_profiles = [
     id: "24",
     cover: cover,
     dp: dpm,
-    name: "Mr.N.Suresh",
-    Designation: "Assistant Professor(Adhoc) ",
-    mailid: "suresh067@gmail.com",
-    pdf: "https://drive.google.com/file/d/1lMJLivOI8x7Yxgb2q9BuDeqzodCkUU7A/view?usp=sharing",
-  },
-  {
-    id: "25",
-    cover: cover,
-    dp: dpm,
     name: "Mr.S.Janakiraman",
     Designation: "Assistant Professor ",
     mailid: "janakiramanttl@gmail.com",
     pdf: "https://drive.google.com/file/d/1XDzghaIeiSjXoTisYHMBdBYGLnIyImY5/view?usp=sharing",
   },
   {
-    id: "26",
+    id: "25",
     cover: cover,
     dp: dpm,
-    name: "Mr.T.Meganathan",
-    Designation: "Assistant Professor ",
-    mailid: "megapkyeee@gmail.com",
-    pdf: "https://drive.google.com/file/d/1vNDTaA270FXjXE7ziQn4QA1eJ8SCbybR/view?usp=sharing",
+    name: "Mr.N.Suresh",
+    Designation: "Assistant Professor(Adhoc) ",
+    mailid: "suresh067@gmail.com",
+    pdf: "https://drive.google.com/file/d/1lMJLivOI8x7Yxgb2q9BuDeqzodCkUU7A/view?usp=sharing",
   },
   {
-    id: "27",
+    id: "26",
     cover: cover,
     dp: dpf,
     name: "Ms.S.SelvaPrabha",
@@ -1144,6 +1135,17 @@ const eee_fac_profiles = [
     mailid: "selvaprabha3797@gmail.com",
     pdf: "https://drive.google.com/file/d/1abDoTChieZGBq1hkHmZtGo9eOxHsVwtW/view?usp=sharing",
   },
+ 
+  {
+    id: "27",
+    cover: cover,
+    dp: dpm,
+    name: "Mr.T.Meganathan",
+    Designation: "Assistant Professor ",
+    mailid: "megapkyeee@gmail.com",
+    pdf: "https://drive.google.com/file/d/1vNDTaA270FXjXE7ziQn4QA1eJ8SCbybR/view?usp=sharing",
+  },
+  
 ];
 const eee_sup_profiles = [
   {
