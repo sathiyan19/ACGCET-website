@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidenavbar.css';
 
-const Sidenavbar = ({ links }) => {
-  const [activeIndex, setActiveIndex] = useState(0); // Initialize activeIndex to 0 (first item)
+const Sidenavbar = ({ links,dash_state }) => {
+  const [activeIndex, setActiveIndex] = useState(dash_state); 
 
   const handleItemClick = (index) => {
     setActiveIndex(index);

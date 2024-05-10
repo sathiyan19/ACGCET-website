@@ -152,7 +152,8 @@ import {
   Phoenix,
   Akkadians,
   Audit_stmt,
-  Verification
+  Verification,
+  Dash_results
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -302,6 +303,7 @@ const App = () => {
          <Route path="/coe/coe_contact"element={<Coe_Contact/>}/>
         <Route path="/login-page" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/results" element={<Dash_results/>}/>
         <Route path="/logout" element={<Logout />} />
         <Route path="/password-reset" element={<Passreset/>}/>
         <Route path="/password-otp" element={<Otp/>}/>

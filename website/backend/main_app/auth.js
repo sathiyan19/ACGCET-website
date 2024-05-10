@@ -2,6 +2,7 @@ const pool = require("./db.js");
 const { hashPassword, compareHash } = require("./hashing");
 const jwt = require("jsonwebtoken");
 const axios = require("axios"); //for recaptcha
+const {find_dept}=require('./support_functions.js')
 
 const login = async (req, res) => {
   try {
@@ -109,6 +110,14 @@ const verifyUser = (req, res, next) => {
         return res.json({ Error: "token not okay" });
       } else {
         req.reg_no = decoded.user;
+        let code;
+          if (decoded.user.length === 7) {
+            code = decoded.user.substring(2, 4);
+          } else if (decoded.user.length === 11) {
+            code = decoded.user.substring(6, 8);
+          }
+          let dept=find_dept(code)
+          req.dept = dept;
         next();
       }
     });

@@ -4,9 +4,9 @@ const dbConfig = {
     host: 'localhost',
     user: 'root',
     // password: 'kint',
-    // password: 'Sep14@23',
+    password: 'Sep14@23',
     // password: 'Badminton19@',
-    password: 'root',
+    // password: 'root',
     database: 'clgdata'
   };
 

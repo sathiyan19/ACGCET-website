@@ -10,8 +10,10 @@ var reg_no,sem_no,sem_subs,stud_dept;
 
 const res_publish= async (req,res)=>{
     try {
-        const {regno,dept}=req.body;
+        const regno=req.reg_no;
+        const dept=req.dept;
         const res_publish_table=dept+"_publish"
+        const stud_data_table=dept+"_stud_details"
         const [res_pub]= await pool.query(
             `
             select * 
@@ -21,11 +23,21 @@ const res_publish= async (req,res)=>{
             `,
             [res_publish_table,regno]
         )
-        stud_dept=dept
+
+        const [[name_batch]]=await pool.query(
+            `
+            select studentname,batch
+            from ??
+            where regno=?
+            `,
+            [stud_data_table,regno]
+        )
+        stud_dept=dept.toUpperCase()
         reg_no=regno
         sem_no=res_pub[0].current_sem
         sem_subs=res_pub
-        res.status(200).send(res_pub)
+        // res.status(200).send(res_pub)
+        res.status(200).send({results:res_pub,stud_data:name_batch,regno:regno,dept:dept,Status:"Success"})
     } catch (error) {
         console.log(error)
         res.status(500).send({error:error})
