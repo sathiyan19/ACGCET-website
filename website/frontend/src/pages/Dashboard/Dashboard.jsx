@@ -3,8 +3,8 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import "./Dashboard.css";
 import { Progressbar, Underline } from "../../widgets";
-import { Table,Sidenavbar } from "../../components";
-import { sidenav, subjects } from "../../constants/dashboard";
+import { Table, Sidenavbar,Dash_radialmenu } from "../../components";
+import { radmenu, sidenav, subjects } from "../../constants/dashboard";
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("profile");
@@ -62,13 +62,10 @@ const Dashboard = () => {
       }
 
       if (pflag === 1 && strength === "Strong") {
-        const response = await axios.post(
-          "/backend/reset-pswd",
-          {
-            regno: location.state.regno,
-            password: newPassword,
-          }
-        );
+        const response = await axios.post("/backend/reset-pswd", {
+          regno: location.state.regno,
+          password: newPassword,
+        });
 
         if (response.data.message === "password-reset") {
           setShowChangePasswordDialog(false);
@@ -127,24 +124,22 @@ const Dashboard = () => {
     try {
       // const res_pub = await axios.post("/backend/respublish");
       const results_data = await axios.post("/backend/respublish");
-      const result_status=results_data.data.Status
-      const result_regno=results_data.data.regno
-      const result_dept=results_data.data.dept
-      if (result_status==="Success"){
-        const res_pub=results_data.data.results
+      const result_status = results_data.data.Status;
+      const result_regno = results_data.data.regno;
+      const result_dept = results_data.data.dept;
+      if (result_status === "Success") {
+        const res_pub = results_data.data.results;
         const dept_sub = dept + "_subs";
-        console.log(dept_sub)
+        console.log(dept_sub);
         res_pub.map((item) => {
           item.subjectname = subjects[dept_sub][item.subcode].subname;
           return item; // Don't forget to return the modified item
         });
         setSem(res_pub[0].current_sem);
         setResults(res_pub);
+      } else {
+        navigate("/login-page");
       }
-      else{
-        navigate("/login-page")
-      }
-      
     } catch (error) {
       console.error(error);
     }
@@ -187,56 +182,60 @@ const Dashboard = () => {
     // console.log(sems.data)
   };
 
-  const download_marksheet =async()=>{
+  const download_marksheet = async () => {
     try {
-      var coolbutton = document.getElementById('coolbutton');
-  var inprogress = false;
-  coolbutton.onclick = function(){
-    if (inprogress) {
-      return false;
-    }
-    inprogress = true
-    coolbutton.classList.add('coolass_button_first');
-    setTimeout(function(){
-    coolbutton.classList.add('coolass_button_bridge1');
-    },500);
-    setTimeout(function(){
-    coolbutton.classList.add('coolass_button_second');
-    },600);
-    setTimeout(function(){
-    coolbutton.classList.add('coolass_button_third');
-    },700);
-    setTimeout(function(){
-    coolbutton.classList.add('coolass_button_final');
-    },1800);
-    setTimeout(function(){
-      coolbutton.classList.remove('coolass_button_final');
-      coolbutton.classList.remove('coolass_button_third');
-      coolbutton.classList.remove('coolass_button_second');
-      coolbutton.classList.remove('coolass_button_bridge1');
-      coolbutton.classList.remove('coolass_button_first');
-      inprogress = false;
-    },3200)
-  };
-      const marksheet = await axios.post("/backend/download_marksheet", {},{
-        responseType: 'blob' // Specify responseType as 'blob' to receive binary data
-      });
+      var coolbutton = document.getElementById("coolbutton");
+      var inprogress = false;
+      coolbutton.onclick = function () {
+        if (inprogress) {
+          return false;
+        }
+        inprogress = true;
+        coolbutton.classList.add("coolass_button_first");
+        setTimeout(function () {
+          coolbutton.classList.add("coolass_button_bridge1");
+        }, 500);
+        setTimeout(function () {
+          coolbutton.classList.add("coolass_button_second");
+        }, 600);
+        setTimeout(function () {
+          coolbutton.classList.add("coolass_button_third");
+        }, 700);
+        setTimeout(function () {
+          coolbutton.classList.add("coolass_button_final");
+        }, 1800);
+        setTimeout(function () {
+          coolbutton.classList.remove("coolass_button_final");
+          coolbutton.classList.remove("coolass_button_third");
+          coolbutton.classList.remove("coolass_button_second");
+          coolbutton.classList.remove("coolass_button_bridge1");
+          coolbutton.classList.remove("coolass_button_first");
+          inprogress = false;
+        }, 3200);
+      };
+      const marksheet = await axios.post(
+        "/backend/download_marksheet",
+        {},
+        {
+          responseType: "blob", // Specify responseType as 'blob' to receive binary data
+        }
+      );
       const url = window.URL.createObjectURL(new Blob([marksheet.data]));
-      
+
       // Create a link element and trigger download
-      const a = document.createElement('a');
+      const a = document.createElement("a");
       a.href = url;
       a.download = `${stud_details.regno}_Sem${sem}.pdf`; // Specify the filename
       document.body.appendChild(a);
       a.click();
-      
+
       // Clean up the temporary URL
       window.URL.revokeObjectURL(url);
       // console.log(marksheet)
     } catch (error) {
       console.error(error);
     }
-  }
+  };
 
   const column = [
     // {field:'sno',header:"Sno"},
@@ -293,243 +292,102 @@ const Dashboard = () => {
         )}
         {/* sidenavbar */}
         <div className="dash_complete_div">
-          <Sidenavbar links={sidenav}/>
-        {/* <section className="dash-sidenav">
-          <Link
-            to={"/dashboard"}
-            className={`dash-side-nav-items ${
-              activeTab === "profile" ? "active" : ""
-            }`}
-            onClick={() => handleTabClick("profile")}
-          >
-            Profile
-          </Link>
-          <Link
-            to={"/dashboard"}
-            className={`dash-side-nav-items ${
-              activeTab === "result" ? "active" : ""
-            }`}
-            onClick={() => {
-              fetch_publish_results(
-                stud_details.regno,
-                stud_details.department
-              );
-              get_sem_list(stud_details.regno, stud_details.department);
-              handleTabClick("result");
-            }}
-          >
-            Result
-          </Link>
-        </section> */}
+          <Sidenavbar links={sidenav} dash_state={0} />
 
-        
-
-        <div className="profile-sec">
-          {activeTab === "profile" && (
-            <div>
-              <Underline heading={"Profile Details"} />
-              <div className="dash_detail_grid_holder">
-                <div className="trial_dash detail_grid detail_item_1 bgcolour_var_3">
-                  <div className="detail_body txcolour_var_3 ">
-                    {stud_details.studentname}
-                  </div>
-                  <div className="detail_head">Name</div>
-                </div>
-
-                <div className="trial_dash detail_grid detail_item_2 bgcolour_var_5">
-                  <div className="detail_body txcolour_var_2 dash-bar">
-                    <Progressbar
-                      key={1}
-                      percent1={stud_details.cgpa * 10}
-                      display1={stud_details.cgpa}
-                      symbol={""}
-                      heading={"CGPA"}
-                    />
-                  </div>
-                  <div className="detail_head">CGPA</div>
-                </div>
-
-                <div className="trial_dash detail_grid detail_item_3 bgcolour_var_2">
-                  <div className="detail_body txcolour_var_2">
-                    {stud_details.department} {stud_details.batch}
-                  </div>
-                  <div className="detail_head">Department</div>
-                </div>
-
-                <div className="trial_dash detail_grid detail_item_4 bgcolour_var_3">
-                  <div className="detail_body txcolour_var_3">
-                    {stud_details.regno}
-                  </div>
-                  <div className="detail_head">Register Number</div>
-                </div>
-
-                <div className="trial_dash detail_grid detail_item_5 bgcolour_var_3">
-                  <div className="detail_body txcolour_var_3 d-emis">
-                    {stud_details.emis_no}
-                  </div>
-                  <div className="detail_head">UMIS Number</div>
-                </div>
-
-                <div className="trial_dash detail_grid detail_item_6 bgcolour_var_2">
-                  <div className="detail_body ">{stud_details.gender}</div>
-                  <div className="detail_head">Gender</div>
-                </div>
-
-                <div className="trial_dash detail_grid detail_item_7 bgcolour_var_3">
-                  <div className="detail_body txcolour_var_3">
-                    {stud_details.blood_grp}
-                  </div>
-                  <div className="detail_head">Blood Group</div>
-                </div>
-
-                <div className="trial_dash detail_grid detail_item_8 bgcolour_var_2">
-                  <div className="detail_body txcolour_var_2">
-                    {stud_details.dob}
-                  </div>
-                  <div className="detail_head">DOB</div>
-                </div>
-
-                <div className="trial_dash detail_grid detail_item_9 bgcolour_var_2">
-                  <div className="detail_body txcolour_var_2">
-                    {stud_details.phoneno}
-                  </div>
-                  <div className="detail_head">Mobile Number</div>
-                </div>
-                <div className="trial_dash detail_grid detail_item_10 bgcolour_var_3">
-                  <div className="detail_body txcolour_var_3">
-                    {stud_details.mailid}
-                  </div>
-                  <div className="detail_head">Email</div>
-                </div>
-              </div>
-              <div className="logout_button">
-            <a className="log_link" href="/logout">
-              Logout
-            </a>
-          </div>
-              {/* <div className="trial_dash">{reg}</div> */}
-            </div>
-          )}
-          
-
-          {/* result page */}
-          <div className="dash-result">
-            {activeTab === "result" && (
+          <div className="profile-sec">
+            {activeTab === "profile" && (
               <div>
-                <div className="dash-result-head">
-                  <Underline heading={"Result"} />
-                  <div className="dash-personal">
-                    <div className="dash-res1">
-                      <p className="dash-personal1">
-                        <div className="dash-head">Name:</div>{" "}
-                        {stud_details.studentname}
-                      </p>
-                      <p className="dash-personal1">
-                        <div className="dash-head">Register number:</div>
-                        {stud_details.regno}
-                      </p>
+                <Underline heading={"Profile Details"} />
+                <div className="dash_detail_grid_holder">
+                  <div className="trial_dash detail_grid detail_item_1 bgcolour_var_3">
+                    <div className="detail_body txcolour_var_3 ">
+                      {stud_details.studentname}
                     </div>
-                    <div className="dash-res2">
-                      <p className="dash-personal2">
-                        <div className="dash-head">Batch:</div>
-                        {stud_details.batch}
-                      </p>
-                      <p className="dash-personal2">
-                        <div className="dash-head">Department:</div>
-                        {stud_details.department}
-                      </p>
+                    <div className="detail_head">Name</div>
+                  </div>
+
+                  <div className="trial_dash detail_grid detail_item_2 bgcolour_var_5">
+                    <div className="detail_body txcolour_var_2 dash-bar">
+                      <Progressbar
+                        key={1}
+                        percent1={stud_details.cgpa * 10}
+                        display1={stud_details.cgpa}
+                        symbol={""}
+                        heading={"CGPA"}
+                      />
                     </div>
+                    <div className="detail_head">CGPA</div>
+                  </div>
+
+                  <div className="trial_dash detail_grid detail_item_3 bgcolour_var_2">
+                    <div className="detail_body txcolour_var_2">
+                      {stud_details.department} {stud_details.batch}
+                    </div>
+                    <div className="detail_head">Department</div>
+                  </div>
+
+                  <div className="trial_dash detail_grid detail_item_4 bgcolour_var_3">
+                    <div className="detail_body txcolour_var_3">
+                      {stud_details.regno}
+                    </div>
+                    <div className="detail_head">Register Number</div>
+                  </div>
+
+                  <div className="trial_dash detail_grid detail_item_5 bgcolour_var_3">
+                    <div className="detail_body txcolour_var_3 d-emis">
+                      {stud_details.emis_no}
+                    </div>
+                    <div className="detail_head">UMIS Number</div>
+                  </div>
+
+                  <div className="trial_dash detail_grid detail_item_6 bgcolour_var_2">
+                    <div className="detail_body ">{stud_details.gender}</div>
+                    <div className="detail_head">Gender</div>
+                  </div>
+
+                  <div className="trial_dash detail_grid detail_item_7 bgcolour_var_3">
+                    <div className="detail_body txcolour_var_3">
+                      {stud_details.blood_grp}
+                    </div>
+                    <div className="detail_head">Blood Group</div>
+                  </div>
+
+                  <div className="trial_dash detail_grid detail_item_8 bgcolour_var_2">
+                    <div className="detail_body txcolour_var_2">
+                      {stud_details.dob}
+                    </div>
+                    <div className="detail_head">DOB</div>
+                  </div>
+
+                  <div className="trial_dash detail_grid detail_item_9 bgcolour_var_2">
+                    <div className="detail_body txcolour_var_2">
+                      {stud_details.phoneno}
+                    </div>
+                    <div className="detail_head">Mobile Number</div>
+                  </div>
+                  <div className="trial_dash detail_grid detail_item_10 bgcolour_var_3">
+                    <div className="detail_body txcolour_var_3">
+                      {stud_details.mailid}
+                    </div>
+                    <div className="detail_head">Email</div>
                   </div>
                 </div>
-                <div className="dash-result-table">
-                  <div className="dash-table-header">
-                    {/* <div className="sem_options_holder">
-                      <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
-                        <div className="sem_input">Sem {sem}</div>
-                        <div className="fa fa fa-chevron-circle-down"></div>
-                      </div>
-                      <div className="sem_options">
-                        {sem_opt_flag &&
-                          sem_list.map((item) => (
-                            <div
-                              className="sem_dropdown"
-                              onMouseDown={(e) => {
-                                fetch_all_results(
-                                  stud_details.regno,
-                                  stud_details.department,
-                                  item
-                                );
-                              }}
-                            >
-                              Sem {item}
-                            </div>
-                          ))}
-                      </div>
-                    </div>  */}
-                    <div className="dash-result-table-head">Semester {sem}</div>
-                  </div>
-                  <div className="dash_res_table_holder">
-                    <Table data={results} columns={column}/>
-                  </div>
-                  <div class="marksheet-container">
-    <div className="cool_holder">
-    {/* <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button> */}
-  </div>
-  </div>
-                  
-                  <div className="logout_button logout-btn">
-            <a className="log_link" href="/logout">
-              Logout
-            </a>
-          </div>
+                <div className="logout_button">
+                  <a className="log_link" href="/logout">
+                    Logout
+                  </a>
                 </div>
+                {/* <div className="trial_dash">{reg}</div> */}
               </div>
             )}
+
+            
           </div>
-          {/* result page*/}
-        </div>
         </div>
       </div>
 
-      {/* radialmenu */}
-      <div
-          className={`radial_menu1 fa ${
-            menu_open ? "fa-close radial_float_menu1" : "fa-bars"
-          }`}
-          onClick={toggle_menu}
-        ></div>
-        <div className={`radial_bg1 ${menu_open ? "scaled1" : ""}`}>
-          <div className="dept_menu1">
-            <div className="dept_link_head1">MENU</div>
-            <div className="dept_link_holder1">
-              <Link
-                to={"/dashboard"}
-                className={`dept_links1 ${
-                  activeTab === "profile" ? "active1" : ""
-                }`}
-                onClick={() => handleTabClick("profile")}
-              >
-                Profile
-              </Link>
-              <Link
-                to={"/dashboard"}
-                className={`dept_links1 ${
-                  activeTab === "result" ? "active1" : ""
-                }`}
-                onClick={() => {
-                  fetch_publish_results(
-                    stud_details.regno,
-                    stud_details.department
-                  );
-                  handleTabClick("result");
-                }}
-              >
-                Result
-              </Link>
-            </div>
-          </div>
-        </div>
-      {/* <Radial_menu menu_links={dashboard_dept_menu}/> */}
+      
+      <Dash_radialmenu menu_links={radmenu}/>
     </div>
   );
 };

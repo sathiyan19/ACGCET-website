@@ -9,8 +9,21 @@ export const sidenav=[
   dashboard_path1:"/results",
   dashboard_name1:"Result",
 },
+]
 
-
+export const radmenu=[
+  {
+    id: "1",
+    path: "/dashboard",
+    link: "Profile",
+    arl: "l",
+  },
+  {
+    id: "2",
+    path: "/results",
+    link: "Result",
+    arl: "l",
+  },
 ]
 
 export const subjects = {
