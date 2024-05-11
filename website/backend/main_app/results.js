@@ -12,7 +12,7 @@ const res_publish= async (req,res)=>{
     try {
         const regno=req.reg_no;
         const dept=req.dept;
-        const res_publish_table=dept+"_publish"
+        const res_publish_table=dept.toUpperCase()+"_publish"
         const stud_data_table=dept+"_stud_details"
         const [res_pub]= await pool.query(
             `
