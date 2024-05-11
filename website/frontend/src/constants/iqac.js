@@ -295,8 +295,27 @@ const iqac_floater_menu={
             'link':'IQAC Cell',
             'path':'https://drive.google.com/file/d/1lSZrWnGYEd6P9qNV8oVT2axqGA4JSdu2/view?usp=sharing'
         },
+        {
+            'id':'6',
+            'link':'Best Practices of the Institute',
+            'path':'/iqac_practices'
+        },
+        {
+            'id':'6',
+            'link':'Institutional Distinctiveness',
+            'path':'/iqac_distinctiveness'
+        },
     ]
 }
+const distinctiveness_data=[
+    {
+        'id':'1',
+        'program':'Institutional Distinctiveness',
+        'pdf':'https://drive.google.com/file/d/12VMESkpN9HWosZ60-k3AVCAnRii1Ss5D/view?usp=sharing'
+      },
+
+
+]
 
 export {
     iqac,
@@ -306,5 +325,6 @@ export {
     iqac_feed,
     iqac_aqar,
     iqac_min,
-    iqac_floater_menu
+    iqac_floater_menu,
+    distinctiveness_data,
 };

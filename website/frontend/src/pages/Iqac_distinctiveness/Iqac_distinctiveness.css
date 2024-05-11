@@ -1,0 +1,17 @@
+.iqac_dis_whole{
+    width: 75%;
+    padding: 20px;
+}
+.iqac_dis_content_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 20px 0px;
+
+}
+
+@media (max-width:768px) {
+    .iqac_aqar_whole{
+        width:100%;
+    }
+}
