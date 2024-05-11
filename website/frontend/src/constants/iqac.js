@@ -219,7 +219,7 @@ const iqac_feed=[
         'id':"3",
         "head":"2022-2023",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1WTNTbCsdl6R2elYfnmUKXlGgmWqr0rwJ/view?usp=sharing"
+        "pdf":"https://drive.google.com/file/d/1eXwp-FCLU-uKrKd5JfUlGg4q3sKon8Xu/view?usp=sharing"
     },
 ]
 

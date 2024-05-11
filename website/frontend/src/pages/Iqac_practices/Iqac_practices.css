@@ -1,7 +1,7 @@
-.heading{
+.iqac-heading{
     padding-left: 2%;
 }
-.subhead{
+.iqac-subheading{
     color:#00134d;
     line-height: 1.5rem;
    
@@ -18,12 +18,13 @@
   29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
   70px 70px 80px rgba(0, 0, 0, 0.02);
 }
-.content{
+.iqac-content{
     line-height: 1.5rem;
     color: black;
     width:60%;
     text-align: justify;
     border-radius:5px ;
+    padding: 20px;
   margin-top:30px;
   margin-left: 70px ;
   margin-right: 70px;
@@ -35,7 +36,7 @@
   70px 70px 80px rgba(0, 0, 0, 0.02);
 }
 
- .content1{
+ .iqac-content1{
     line-height: 1.5rem;
     color: black;
     width:60%;
@@ -45,7 +46,9 @@
   margin-top:30px;
   margin-left: 70px ;
   margin-right: 70px;
+  margin-bottom: 30px;
   background-color:#D9EDFF ;
+  padding: 20px;
   box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
   4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
   15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
@@ -53,7 +56,7 @@
   70px 70px 80px rgba(0, 0, 0, 0.02);
 } 
 
-       .subheading1{
+       .iqac-subheading1{
         color: #00134d ;
         font-weight: bold; 
         font-size: 18px;
