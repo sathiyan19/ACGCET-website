@@ -10,15 +10,15 @@ const Iqac_practices = () => {
   return (
     <div className="Iqac_practices">
       <Floatinmenu head={iqac_floater_menu.head}  links={iqac_floater_menu.links}/>
-      <div className="heading">
+      <div className="iqac-heading">
         <Underline heading ="Best Practices Of The Institute
 "></Underline>
 </div>
-<div className="content">
+<div className="iqac-content">
 In-house Design and Development of IT Services for the Institute :
 </div>
-<div  className="content">
-  { <p className='subheading1'>
+<div  className="iqac-content">
+  { <p className='iqac-subheading1'>
 Objectives of the Practice
 </p> }
 <p>
@@ -30,8 +30,8 @@ To bring out industry-ready students.
 {/* <div className="subheading1">
 The Context
 </div> */}
-<div  className="content">
-< p className="subheading1">
+<div  className="iqac-content">
+< p className="iqac-subheading1">
 The Context
 </p>
 <p>
@@ -41,8 +41,8 @@ The institute depends on third parties for its IT needs.This practice intends to
 {/* <div className="subheading1">
 The Practice
 </div> */}
-<div  className="content">
-<p className="subheading1">
+<div  className="iqac-content">
+<p className="iqac-subheading1">
 The Practice
 </p>
 <p>
@@ -52,8 +52,8 @@ A group of students from the Computer Science and Engineering department, along 
 {/* <div className="subheading1">
 Evidence of Success
 </div> */}
-<div  className="content">
-  <p  className="subheading1">
+<div  className="iqac-content">
+  <p  className="iqac-subheading1">
 Evidence of Success</p>
 <p>
 The students and faculty have successfully designed and developed a bunch of real-time IT services. The institute's own website is created by our students. They have also built software for the Tamil Nadu Government's Lateral Entry Admission, which has seamlessly handled thousands of applications without a single snag
@@ -63,8 +63,8 @@ The students and faculty have successfully designed and developed a bunch of rea
 Problems Encountered and Resources Required
 
 </div> */}
-<div  className="content1">
-  <p className="subheading1">
+<div  className="iqac-content1">
+  <p className="iqac-subheading1">
 Problems Encountered and Resources Required
 </p>
 <p>
