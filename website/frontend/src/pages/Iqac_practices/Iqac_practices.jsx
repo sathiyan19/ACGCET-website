@@ -17,9 +17,9 @@ const Iqac_practices = () => {
       
            <div className="Iqac_practices_heading">
        <Underline heading ="Best Practices of the Institute"/>
-</div>
 <div className='Iqac_practices_subhead'>
 In-house Design and Development of IT Services for the Institute 
+</div>
 </div>
 <div  className="Iqac_practices_content">
   { <p className='Iqac_practices_subheading1'>

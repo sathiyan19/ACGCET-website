@@ -24,6 +24,7 @@
 }
 .Iqac_practices{
   justify-content: center;
+  margin: 20px;
   /* text-align: justify; */
 }
 .content {
@@ -88,35 +89,28 @@
   text-align: center; /* Center the content */
 }
 
-@media (min-width: 320px) and (max-width: 350px) {
-  .Iqac_practices_subhead {
-    font-size: 14px; /* Adjust the font size as needed */
-    padding-left: 5px; /* Adjust padding as needed */
-    padding-right: 5px; /* Adjust padding as needed */
-  }
-}
 
-
-@media (min-width: 501px) and (max-width: 539px) {
-  .Iqac_practices_heading {
-     /* text-wrap: nowrap;  */
-    font-size: 12px;
-    font-weight: bold;
-    /* text-align: center;
-    justify-content: center; */
-    word-spacing: 1px;
-  }
-}
 @media (min-width: 501px) and (max-width: 529px) {
   .Iqac_practices_heading {
-     /* text-wrap: nowrap;  */
+    /* text-wrap: nowrap;  */
+    
+    /* @media (min-width: 501px) and (max-width: 519px) {
+      .Iqac_practices_heading {
+        
+        font-size: 12px;
+        
+
+        word-spacing: -1px;
+      }
+    } */
     font-size: 12px;
     /* padding: 0px; */
     /* width: 60px; */
- 
+    
     word-spacing: -1px;
   }
 }
+
 @media (min-width: 501px) and (max-width: 519px) {
   .Iqac_practices_heading {
 
@@ -134,13 +128,15 @@
   }
 }
 
-@media (max-width: 360px) {
-  .Iqac_practices_subhead {
-    font-size: 12px; /* Adjust the font size as needed */
-    padding-right: 0; /* Remove or reduce padding as needed */
-  }
-}
 
+
+/* @media (min-width: 320px) and (max-width: 350px) {
+  .Iqac_practices_subhead {
+    font-size: 14px; /* Adjust the font size as needed */
+    /* padding-left: 5px; Adjust padding as needed */
+    /* padding-right: 5px; Adjust padding as needed */
+  /* } */
+/* } */ 
 
 
 
@@ -172,18 +168,30 @@
       
       }
   }
-  @media(min-width:501px){
+  @media (max-width: 415px) {
+    .Iqac_practices_subhead {
+      text-wrap: wrap;
+      font-size: 12px; 
+      justify-content: center;
+
+
+      /* Adjust the font size as needed */
+      /* padding-right: 0; Remove or reduce padding as needed */
+    }
+  }
+  /* @media(min-width:501px){
     .Iqac_practices_{
       font-size:12px ;
     }
-  }
-  @media(max-width:500px){
+  } */
+  /* @media(max-width:500px){
     .Iqac_practices_subhead{
       font-size: 12px;
+      word-wrap: wrap;
      
-    }
+    } */
 
-  }
+  /* } */
   @media(max-width:500px){
     .Iqac_practices_content,
     .Iqac_practices_content1{
@@ -228,7 +236,7 @@
     }
   }
     
-    @media (max-width: 840px) {
+    /* @media (max-width: 840px) {
       .Iqac_practices_subhead {
         font-size: 16px;
         text-align: justify;
@@ -237,8 +245,8 @@
      
 
       }
-    }
-    
+    } */
+/*     
     @media (max-width: 763px) {
       .Iqac_practices_subhead {
         font-size: 16px;
@@ -249,7 +257,7 @@
         line-height: 1.5rem;
        
       }
-    }
+    } */
     @media(max-width:360px){
       .Iqac_practices_subhead{
         padding: 0px;
