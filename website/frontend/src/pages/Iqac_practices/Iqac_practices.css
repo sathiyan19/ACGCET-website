@@ -1,11 +1,23 @@
+<<<<<<< HEAD
+.Iqac_practices_heading{
+  padding: 10px;
+}
+
+.Iqac_practices_content{
+=======
 .iqac-heading{
     padding-left: 2%;
 }
 .iqac-subheading{
     color:#00134d;
+>>>>>>> 89bcd2a12355a8c09ba57f63a42e45f5b3e2725e
     line-height: 1.5rem;
-   
+    color: black;
     width:60%;
+    padding: 10px;
+    /* height: 50%; */
+    /* padding-left: 30px; */
+    /* justify-content: center; */
     text-align: justify;
     border-radius:5px ;
   margin-top:30px;
@@ -18,10 +30,20 @@
   29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
   70px 70px 80px rgba(0, 0, 0, 0.02);
 }
+<<<<<<< HEAD
+.Iqac_practices{
+  justify-content: center;
+  /* text-align: justify; */
+}
+.content {
+  line-height: 1.5rem;
+=======
 .iqac-content{
     line-height: 1.5rem;
+>>>>>>> 89bcd2a12355a8c09ba57f63a42e45f5b3e2725e
     color: black;
     width:60%;
+    padding: 20px;
     text-align: justify;
     border-radius:5px ;
     padding: 20px;
@@ -36,11 +58,25 @@
   70px 70px 80px rgba(0, 0, 0, 0.02);
 }
 
+<<<<<<< HEAD
+.Iqac_practices_subhead{
+  text-align: center;
+  padding-right: 30%;
+  font-size: 18px;
+  color: black;
+  /* font-weight: bold; */
+  text-wrap: nowrap;
+}
+
+
+ .Iqac_practices_content1{
+=======
  .iqac-content1{
+>>>>>>> 89bcd2a12355a8c09ba57f63a42e45f5b3e2725e
     line-height: 1.5rem;
     color: black;
     width:60%;
-  
+    padding: 20px;
     text-align: justify;
     border-radius:5px ;
   margin-top:30px;
@@ -56,8 +92,200 @@
   70px 70px 80px rgba(0, 0, 0, 0.02);
 } 
 
+<<<<<<< HEAD
+.Iqac_practices_subheading1 {
+  color: #00134d;
+  font-weight: bold; 
+  font-size: 18px;
+  padding-top: 2%;
+  text-align: center; /* Center the content */
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+  .Iqac_practices_subhead {
+    font-size: 14px; /* Adjust the font size as needed */
+    padding-left: 5px; /* Adjust padding as needed */
+    padding-right: 5px; /* Adjust padding as needed */
+  }
+}
+
+
+@media (min-width: 501px) and (max-width: 539px) {
+  .Iqac_practices_heading {
+     /* text-wrap: nowrap;  */
+    font-size: 12px;
+    font-weight: bold;
+    /* text-align: center;
+    justify-content: center; */
+    word-spacing: 1px;
+  }
+}
+@media (min-width: 501px) and (max-width: 529px) {
+  .Iqac_practices_heading {
+     /* text-wrap: nowrap;  */
+    font-size: 12px;
+    /* padding: 0px; */
+    /* width: 60px; */
+ 
+    word-spacing: -1px;
+  }
+}
+@media (min-width: 501px) and (max-width: 519px) {
+  .Iqac_practices_heading {
+
+    font-size: 12px;
+   
+ /* text-wrap: nowrap; */
+    word-spacing: -1px;
+  }
+}
+@media (min-width: 320px) and (max-width: 382px) {
+  .Iqac_practices_heading {
+    word-spacing:1.5px; /* Adjust the word spacing as needed */
+    /* text-wrap: nowrap; */
+    /* padding: 0px; */
+  }
+}
+
+@media (max-width: 360px) {
+  .Iqac_practices_subhead {
+    font-size: 12px; /* Adjust the font size as needed */
+    padding-right: 0; /* Remove or reduce padding as needed */
+  }
+}
+
+
+
+
+@media(max-width:930px){
+  .Iqac_practices_subhead{
+  font-size: 16px;
+  justify-content: center;
+  }
+
+}
+@media(max-width:840px){
+  .Iqac_practices_subhead{
+    font-size: 16px;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 10%;
+    line-height: 1.5rem;
+    }
+  }
+  @media(max-width:763px){
+    .Iqac_practices_subhead{
+      font-size: 16px;
+      justify-content: center;
+      text-align: justify;
+      padding-left: 5%;
+      
+      height: 35px;
+      line-height: 1.5rem;
+      
+      }
+  }
+  @media(min-width:501px){
+    .Iqac_practices_{
+      font-size:12px ;
+    }
+  }
+  @media(max-width:500px){
+    .Iqac_practices_subhead{
+      font-size: 12px;
+     
+    }
+
+  }
+  @media(max-width:500px){
+    .Iqac_practices_content,
+    .Iqac_practices_content1{
+      font-size: 12px;
+      width: 80%;
+    }
+  }
+  @media(max-width:765px){
+    .Iqac_practices_content,
+    .Iqac_practices_content1{
+      font-size: 16px;
+      width: 90%;
+    }
+  }
+  @media(max-width:500px){
+    .Iqac_practices_subheading1{
+      font-size: 12px;
+    }
+
+    }
+@media(min-width:769px){
+  .Iqac_practices_content,
+    
+    .Iqac_practices_content1,
+    .Iqac_practices_subheading1{
+      text-align: center; /* Center the content and subheading */
+      /* margin-left: auto; /* Center the content horizontally */
+      /* margin-right: auto;  */ 
+    }
+}
+   
+    @media(max-width:768px){
+
+    
+    .Iqac_practices_content,
+    .content,
+    .Iqac_practices_content1,
+    .Iqac_practices_subheading1 {
+      text-align: center; /* Center the content and subheading */
+      margin-left: auto; /* Center the content horizontally */
+      margin-right: auto; /* Center the content horizontally */
+    }
+  }
+    
+    @media (max-width: 840px) {
+      .Iqac_practices_subhead {
+        font-size: 16px;
+        text-align: justify;
+        padding-left: 10%;
+        line-height: 1.5rem;
+     
+
+      }
+    }
+    
+    @media (max-width: 763px) {
+      .Iqac_practices_subhead {
+        font-size: 16px;
+        text-align: justify;
+        padding-left: 5%;
+     
+        height: 35px;
+        line-height: 1.5rem;
+       
+      }
+    }
+    @media(max-width:360px){
+      .Iqac_practices_subhead{
+        padding: 0px;
+        /* text-wrap: nowrap; */
+      }
+    }
+    
+    
+    
+    @media (max-width: 500px) {
+      .Iqac_practices_subhead,
+      .Iqac_practices_content,
+      .Iqac_practices_content1,
+
+      .Iqac_practices_subheading1 {
+        font-size: 12px;
+      }
+    }
+     
+=======
        .iqac-subheading1{
         color: #00134d ;
         font-weight: bold; 
         font-size: 18px;
        }
+>>>>>>> 89bcd2a12355a8c09ba57f63a42e45f5b3e2725e
