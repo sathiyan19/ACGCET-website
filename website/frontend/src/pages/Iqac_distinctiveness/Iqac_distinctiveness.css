@@ -7,11 +7,12 @@
     flex-wrap: wrap;
     justify-content: center; 
     padding: 20px 0px;
+    /* align-items: center; */
 
 }
 
 @media (max-width:768px) {
-    .iqac_aqar_whole{
+    .iqac_dis_whole{
         width:100%;
     }
 }
