@@ -155,3 +155,4 @@ export{default as Akkadians} from './Sports/Akkadians'
 
 export{default as Audit_stmt} from './Audit_stmt/Audit_stmt'
 export{default as Verification} from './Verification/Verification'
+export{default as Iqac_strategic} from './Iqac_strategic/Iqac_strategic'

@@ -280,6 +280,7 @@ const iqac_floater_menu={
             'link':'IQAC Minutes',
             'path':'/iqac_min'
         },
+     
         {
             'id':'2',
             'link':'AQAR Report',
@@ -305,13 +306,27 @@ const iqac_floater_menu={
             'link':'Institutional Distinctiveness',
             'path':'/iqac_distinctiveness'
         },
+        {
+            'id':'7',
+            'link':'Strategic Plan',
+            'path':'/iqac_strategic'
+        },
     ]
 }
 const distinctiveness_data=[
     {
         'id':'1',
         'program':'Institutional Distinctiveness',
-        'pdf':'https://drive.google.com/file/d/12VMESkpN9HWosZ60-k3AVCAnRii1Ss5D/view?usp=sharing'
+        'pdf':'https://drive.google.com/file/d/1E9iOGjcK2oQopvEk0k6K-ba3tAmuEtk3/view?usp=sharing'
+      },
+
+
+]
+const Strategic_data=[
+    {
+        'id':'1',
+        'program':'Strategic Plan',
+        'pdf':'https://drive.google.com/file/d/1G6JfbrB5kPsdsVEtr-ka98FB0KwyGVSW/view?usp=sharing'
       },
 
 
@@ -327,4 +342,5 @@ export {
     iqac_min,
     iqac_floater_menu,
     distinctiveness_data,
+    Strategic_data,
 };
