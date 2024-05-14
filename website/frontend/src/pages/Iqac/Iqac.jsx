@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 
 import "./Iqac.css"
 
-import { Floatinmenu,Underline,Deptvision,Deptmission } from '../../widgets'
+import { Floatinmenu,Underline,Deptvision,Deptmission,Backtotop } from '../../widgets'
 
 import { Listformat,Table } from "../../components";
 
@@ -42,6 +42,7 @@ const Iqac = () => {
 
       <Underline heading="Functions"/>
       <Listformat points={iqac_func}/>
+      <Backtotop/>
 
 
     </div>
