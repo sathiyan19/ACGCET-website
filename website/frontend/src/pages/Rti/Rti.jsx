@@ -25,8 +25,8 @@ const Rti = () => {
                 <img className='rtiofficer_img' src={asr} alt="Dr. A. Sivanantha Raja" />
                 <div className='rtiofficer_des'>
                 <p className="rtiofficer_name">Dr. A. Sivanantha Raja,</p>
-                <p className="rtiofficer_designation">Professor,</p>
-                <p className='rtiofficer_mail'>sivanantharaja@gmail.com</p>
+                <p className="rtiofficer_designation">Professor & Head of the Department ECE</p>
+                <p className='rtiofficer_mail'>sivanantharaja@accet.ac.in</p>
                 </div>
             </div>
         </div>

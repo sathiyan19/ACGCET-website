@@ -19,6 +19,12 @@ const EOA_reports=[
         "program":"EOA Report 2023-24",
         "pdf":"https://drive.google.com/file/d/1j7kfr-vY-FCDqSxeNo4rgtglgcjSSGPP/view?usp=drive_link"
     },
+    {
+        'id':"5",
+        "program":"EOA Report 2024-25",
+        "pdf":"https://drive.google.com/file/d/1S4UTKKWvhpfkICe5lf5cofg9fLHXdxv0/view?usp=sharing"
+    },
+   
 ]
 
 export {EOA_reports}

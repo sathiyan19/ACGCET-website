@@ -242,7 +242,7 @@ const ece_fac_profiles = [
     dp: asr,
     name: "Dr.A.Sivanantha Raja",
     Designation: "Head of the Department",
-    mailid: "sivanantharaja@gmail.com",
+    mailid: "sivanantharaja@accet.ac.in",
     pdf: "https://drive.google.com/file/d/1R9A7ul9goH87qnMYhIZQvI8qFCNcR2iX/view?usp=drive_link",
   },
   {
