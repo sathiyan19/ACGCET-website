@@ -311,6 +311,11 @@ const iqac_floater_menu={
             'link':'Strategic Plan',
             'path':'/iqac_strategic'
         },
+        {
+            'id':'8',
+            'link':'Student Satisfaction Survey',
+            'path':'/iqac_std_statisfy'
+        },
     ]
 }
 const distinctiveness_data=[
@@ -331,6 +336,14 @@ const Strategic_data=[
 
 
 ]
+const Iqac_std_statisfy_data=[
+    {
+        'id':'1',
+        'program':'Student Satisfaction Survey',
+        'pdf':'https://drive.google.com/drive/folders/1eY3Vo_V-k-xQLjWi7ECEYGf2S3yE3SoT?usp=sharing'
+
+    }
+]
 
 export {
     iqac,
@@ -343,4 +356,5 @@ export {
     iqac_floater_menu,
     distinctiveness_data,
     Strategic_data,
+    Iqac_std_statisfy_data
 };
