@@ -68,6 +68,7 @@ export {default as Iqac_aqar} from './Iqac_aqar/Iqac_aqar'
 export {default as Iqac_feed} from './Iqac_feed/Iqac_feed'
 export {default as Iqac_distinctiveness} from './Iqac_distinctiveness/Iqac_distinctiveness'
 export {default as Iqac_practices} from './Iqac_practices/Iqac_practices'
+export {default as Iqac_std_statisfy} from './Iqac_std_statisfy/Iqac_std_statisfy'
 
 export {default as Nba} from './Nba/Nba'
 export {default as Nirf} from './Nirf/Nirf'

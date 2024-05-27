@@ -655,59 +655,60 @@ const cse_stud_data = [
           regno:"91762215058",
           name: "YOGA SATHYA R",
         },
+     
         {
           sno: "51",
-          regno:"91762315201",
-          name: "ANNAMALAI M",
-        },
-        {
-          sno: "52",
           regno:"91762315202",
           name: "KAVIYA S",
         },{
-          sno: "53",
+          sno: "52",
           regno:"91762315203",
           name: "MOHAMMED SHAJITH M I",
         },
         {
-          sno: "54",
+          sno: "53",
           regno:"91762315204",
           name: "NANDHAKUMAR N",
         },
         {
-          sno: "55",
+          sno: "54",
           regno:"91762315205",
           name: "SUBIKSHA M V",
         },
         {
-          sno: "56",
+          sno: "55",
           regno:"91762215301",
           name: "INDIRA R",
         },
         {
-          sno: "57",
+          sno: "56",
           regno:"91762215302",
           name: "MANIRAJ S",
         },
         {
-          sno: "58",
+          sno: "57",
           regno:"91762215303",
           name: "RITHIKA S",
         },
         {
-          sno: "59",
+          sno: "58",
           regno:"91762215304",
           name: "SANJAYKUMAR A",
         },
         {
-          sno: "60",
+          sno: "59",
           regno:"91762215305",
           name: "VIGNESH A",
         },
         {
-          sno: "61",
+          sno: "60",
           regno:"91762215306",
           name: "VIMALRAJAN S",
+        },
+        {
+          sno: "61",
+          regno:"91762115304",
+          name: "KEERTHANA S",
         }
       ],
       columns: [
