@@ -37,7 +37,7 @@ const iqac=[
     {
         sno:'8',
         rep:'Faculty',
-        name:'Dr.A.Arunya Revathy,\nASP/EEE'
+        name:'Dr.A.Arunya Revathy,\nProfessor/EEE'
     },
     {
         sno:'9',

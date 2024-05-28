@@ -7,7 +7,7 @@ let otpData = {};
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "acgcet25@gmail.com",
+    user: "coe@accet.ac.in",
     pass: "aimykdsvzkgbkqag",
   },
 });
