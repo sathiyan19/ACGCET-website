@@ -5,7 +5,7 @@ import { Backtotop,Floatinmenu,Deptvision,Deptmission,Underline,Content_card } f
 
 import { Radial_menu } from "../../components";
 // import phy from "../../assets/pictures/phy.webp";
-import {Sh_dept_fmenu,phy_mission,phy_vision} from '../../constants/Sh_dept_menu'
+import {Physics_dept_fmenu,phy_mission,phy_vision} from '../../constants/physics_dept'
 
 import { GiPendulumSwing } from "react-icons/gi";
 
@@ -16,9 +16,9 @@ const Sh_Physics = () => {
     <div>
        <section className="shphydark">
         <div className="shphydept_float_menu">
-          <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Physics_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={Physics_dept_fmenu} />
         <div className="shphy_abt_area">
         <div className="shphy_abt">
         <Underline heading="About the Department"/>

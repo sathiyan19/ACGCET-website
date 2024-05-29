@@ -1,3 +1,31 @@
+export const sidenav=[
+  {
+  id:"1",
+  dashboard_path1:"/dashboard",
+  dashboard_name1:"Profile",
+},
+{
+  id:"2",
+  dashboard_path1:"/results",
+  dashboard_name1:"Result",
+},
+]
+
+export const radmenu=[
+  {
+    id: "1",
+    path: "/dashboard",
+    link: "Profile",
+    arl: "l",
+  },
+  {
+    id: "2",
+    path: "/results",
+    link: "Result",
+    arl: "l",
+  },
+]
+
 export const subjects = {
   "CSE_subs": {
     "19CMG15": {credits: 4,subname:"Basic Civil and Mechanical Engineering"},

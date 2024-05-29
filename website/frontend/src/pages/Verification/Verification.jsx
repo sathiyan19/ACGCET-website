@@ -17,57 +17,32 @@ const Verification = () => {
     const [personals,setPersonals]= useState({})
   
     useEffect(() => {
-      const find_dept = (code) => {
-        let dept;
-        if (code === "11") {
-          dept = "civil";
-        } else if (code === "12") {
-          dept = "mech";
-        } else if (code === "13") {
-          dept = "eee";
-        } else if (code === "14") {
-          dept = "ece";
-        } else if (code === "15") {
-          dept = "cse";
-        }
-        return dept;
-      };
-
       const fetchData = async () => {
         try {
           // Extracting regno and sem from the URL query parameters
           const searchParams = new URLSearchParams(location.search);
           const regno = searchParams.get("regno");
-          setRegno(regno)
-          const sem = searchParams.get("sem");
-          let code
-          if (regno.length === 7) {
-            code = regno.substring(2, 4);
-          } else if (regno.length === 11) {
-            code = regno.substring(6, 8);
-          }
-          let department=find_dept(code).toUpperCase()
-          setdept(department)
-          setSem(sem);
           
-          const ver_response = await axios.post("/backend/resresult", {
-            regno: regno,
-            dept: department,
-            sem: sem,
-          });
-
-          const cv_dept_sub = department + "_subs";
-          ver_response.data.map((item) => {
-            item.subjectname = subjects[cv_dept_sub][item.subcode].subname;
-            return item;
-          });
-          setResults(ver_response.data);
-          // Setting sem and results state
+          const sem = searchParams.get("sem");
+          setSem(sem);
 
           const personal_details=await axios.post("/backend/cv_details",{
             regno: regno,
-            dept: department,
+            sem: sem,
           })
+          
+          let department=personal_details.data.department
+          setdept(department)
+          setRegno(personal_details.data.reg_no)
+
+          const cv_dept_sub = "CSE" + "_subs";
+          personal_details.data.stud_results.map((item) => {
+            item.subjectname = subjects[cv_dept_sub][item.subcode].subname;
+            return item;
+          });
+
+          setResults(personal_details.data.stud_results);
+          // Setting sem and results state
           setPersonals(personal_details.data.stud_details)
 
         } catch (error) {

@@ -37,8 +37,8 @@ const Coe = () => {
     </div>
     <Radial_menu menu_links={coe_menu} />
     <div className="coe_abt">
-      <Underline heading ="About coe"/>
-      <div className="coe_two-col">
+      <Underline heading ="About COE"/>
+      
         <p className="coe_dept_content">
       The Office of the Controller of Examinations is responsible in the conduct of scheduled examinations of Alagappa Chettiar Government college of Engineering and Technology (ACGCET), Karaikudi which is permanently affiliated to the Anna University, Chennai. 
         Examinations are conducted every year in the months of April/May and November/December for the students of ACGCET and the results of the examinations are published in the subsequent months.
@@ -47,8 +47,8 @@ const Coe = () => {
 
         </p>
         
-      </div>
-      <div className="coe_two-col1">
+      
+      
       <p className="coe_dept_content">
       The COE ensures the smooth conduct of exams and timely declaration of results. Upholding academic standards, the COE implements measures to prevent malpractices and maintains transparent evaluation processes. Serving as a point of contact for students regarding examination-related queries, the COE provides support to ensure a fair and conducive examination environment. By promoting academic excellence through rigorous assessment practices, the COE plays a vital role in nurturing the intellectual growth and development of students, contributing to the overall success and reputation of ACGCET.
 
@@ -59,16 +59,22 @@ const Coe = () => {
 
 
             </p>
+    
+      <div className="exam_heading">
+      <Underline heading ="Examination Automation"/>
       </div>
       <div className="examination">
-        <Underline heading ="Examination Automation"/>
+       
+       
+       
         <p className="exam">
-        The autonomous office is equipped with10 Computers, 06 laser printers, High-End servers, High-End scanners, High-End printers, line printers, UPS (5 KVA) units, 2 AC machines, LCD projector, CCTV set up, and LAN set up. With these ICT and physical infrastructure facilities, the autonomous office has implemented a fully automated examination processes.
+        The autonomous office is equipped with 10 Computers, 06 laser printers, High-End servers, High-End scanners, High-End printers, line printers, UPS (5 KVA) units, 2 AC machines, LCD projector, CCTV set up, and LAN set up. With these ICT and physical infrastructure facilities, the autonomous office has implemented a fully automated examination processes.
 
 
         </p>
         
-      </div><Underline heading=" Automation processes "/>
+      </div>
+      <Underline heading=" Automation processes "/>
       <div className="process">
        
         

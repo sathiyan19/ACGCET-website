@@ -17,64 +17,51 @@ export const bulletin_info=[
     //         </span>
     //     ),
     // },
-    {
-        id:'18',
-        link:"https://drive.google.com/file/d/1c2uJ7w2EEFF2eGogbvEeb7or1inLqAmp/view?usp=sharing",
-        content:(
-            <span>
-                <span className="newContent">New</span> <span className="insideNewContent">Advertisement for Recruitment of Junior Research Fellow under DST-SERB-SURE Research Project
-</span>
-            </span>
-        ),
-    },
-    {
-        id:'17',
-        link:"https://drive.google.com/file/d/1uR9k_Iy0aSRKKL1dlFN8TTtlTu38jUhE/view?usp=sharing",
-        content:(
-            <span>
-                <span className="newContent">New</span> <span className="insideNewContent">Application for Recruitment of Junior Research Fellow under DST-SERB-SURE Research Project
-</span>
-            </span>
-        ),
-    },
+//     {
+//         id:'18',
+//         link:"https://drive.google.com/file/d/1c2uJ7w2EEFF2eGogbvEeb7or1inLqAmp/view?usp=sharing",
+//         content:(
+//             <span>
+//                 <span className="newContent">New</span> <span className="insideNewContent">Advertisement for Recruitment of Junior Research Fellow under DST-SERB-SURE Research Project
+// </span>
+//             </span>
+//         ),
+//     },
+//     {
+//         id:'17',
+//         link:"https://drive.google.com/file/d/1uR9k_Iy0aSRKKL1dlFN8TTtlTu38jUhE/view?usp=sharing",
+//         content:(
+//             <span>
+//                 <span className="newContent">New</span> <span className="insideNewContent">Application for Recruitment of Junior Research Fellow under DST-SERB-SURE Research Project
+// </span>
+//             </span>
+//         ),
+//     },
     {
         id:'16',
         link:"https://drive.google.com/file/d/1V9itpzM-S1GPo2UQy5DWkrazGMzFzOKg/view",
-        content:(
-            <span>
-                <span className="newContent">New</span> <span className="insideNewContent">BC/MBC/DNC/BCM Fresh Scholarship-Circular AY 2023-24
-</span>
-            </span>
-        ),
+        content:"BC/MBC/DNC/BCM Fresh Scholarship-Circular AY 2023-24",
     },
     {
         id:'15',
         link:"https://drive.google.com/file/d/1iNyLJvzBgqfnxND3sJFHtFhRkPuArqqc/view",
-        content:(
-            <span>
-                <span className="newContent">New</span> <span className="insideNewContent">BC/MBC/DNC/BCM Fresh Scholarship-Guidelines AY 2023-24</span>
-            </span>
-        ),
+        content:"BC/MBC/DNC/BCM Fresh Scholarship-Guidelines AY 2023-24",
+       
     },
     {
         id:'14',
         link:"https://drive.google.com/file/d/1-9pVnTJ3g1P_EJ1Zx1vIGEzKaHV0ag3o/view",
-        content:(
-            <span>
-                <span className="newContent">New</span> <span className="insideNewContent">SC ST Scholarship - Circular AY 2023-24
-</span>
-            </span>
-        ),
+        content:"SC ST Scholarship - Circular AY 2023-24",
+ 
+
+
     },
     {
         id:'13',
         link:"https://drive.google.com/file/d/1Yqep4TBUBHSDrIxzLoqGV-Pp5UdWMTHI/view",
-        content:(
-            <span>
-                <span className="newContent">New</span> <span className="insideNewContent">Guidelines for SC ST Scholarship application
-</span>
-            </span>
-        ),
+        content:" Guidelines for SC ST Scholarship application",
+           
+
     },
     // {
     //     id:'12',

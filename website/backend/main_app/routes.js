@@ -29,7 +29,7 @@ router.post('/api/reset-pswd',reset)
 
 router.post('/api/gettables',get_Tables)
 
-router.post('/api/respublish',res_publish)
+router.post('/api/respublish',verifyUser,res_publish)
 
 router.post('/api/resresult',res_result)
 

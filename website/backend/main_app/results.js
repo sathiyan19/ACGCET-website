@@ -2,6 +2,7 @@
 const puppeteer = require('puppeteer');
 const pdftemplate= require("./marksheet_template.js")
 const pool = require("./db.js");
+const {encryptString} = require("./encyption.js")
 
 var reg_no,sem_no,sem_subs,stud_dept;
 
@@ -9,8 +10,10 @@ var reg_no,sem_no,sem_subs,stud_dept;
 
 const res_publish= async (req,res)=>{
     try {
-        const {regno,dept}=req.body;
-        const res_publish_table=dept+"_publish"
+        const regno=req.reg_no;
+        const dept=req.dept;
+        const res_publish_table=dept.toUpperCase()+"_publish"
+        const stud_data_table=dept+"_stud_details"
         const [res_pub]= await pool.query(
             `
             select * 
@@ -20,11 +23,21 @@ const res_publish= async (req,res)=>{
             `,
             [res_publish_table,regno]
         )
-        stud_dept=dept
+
+        const [[name_batch]]=await pool.query(
+            `
+            select studentname,batch
+            from ??
+            where regno=?
+            `,
+            [stud_data_table,regno]
+        )
+        stud_dept=dept.toUpperCase()
         reg_no=regno
         sem_no=res_pub[0].current_sem
         sem_subs=res_pub
-        res.status(200).send(res_pub)
+        // res.status(200).send(res_pub)
+        res.status(200).send({results:res_pub,stud_data:name_batch,regno:regno,dept:dept,Status:"Success"})
     } catch (error) {
         console.log(error)
         res.status(500).send({error:error})
@@ -77,7 +90,6 @@ const get_sem_list= async(req,res)=>{
 
 const download_prov_marksheet=async(req,res)=>{
     try {
-        const bg=req.body.bgimage;
         let dept_table = stud_dept + "_stud_details";
         const [[student_details]] = await pool.query(
             `
@@ -88,13 +100,15 @@ const download_prov_marksheet=async(req,res)=>{
             [dept_table, reg_no]
         );
         const { studentname, dob, gender, batch, cgpa } = student_details;
+        let encrypted_regno=encryptString(reg_no)
+        let verification_link="https://accet.ac.in/verification?regno="+encrypted_regno+"&sem="+sem_no
 
         // Launch a headless browser instance using Puppeteer
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
 
         // Generate the HTML content using the template function
-        const htmlContent = pdftemplate({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs,bg });
+        const htmlContent = pdftemplate({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa, sem_no, sem_subs,verification_link });
 
         // Set the HTML content on the Puppeteer page
         await page.setContent(htmlContent);

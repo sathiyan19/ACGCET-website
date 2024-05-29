@@ -1,46 +1,41 @@
-  const pool = require("./db.js");
-  const { hashPassword, compareHash } = require("./hashing");
-  const jwt = require("jsonwebtoken");
-  const axios = require("axios"); //for recaptcha
+const pool = require("./db.js");
+const { hashPassword, compareHash } = require("./hashing");
+const jwt = require("jsonwebtoken");
+const axios = require("axios"); //for recaptcha
+const {find_dept}=require('./support_functions.js')
 
   const login = async (req, res) => {
     try {
       const { username, password, retoken } = req.body; //for recaptcha token only
 
-      let success = false;
-      const SECRET_KEY_v2 = "6LfdMIUpAAAAAIWvkfqc7d-wLd1UBGWd9i1wLpVH";
-      const recaptchaResponse = await axios.post(
-        `https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY_v2}&response=${retoken}`
-      );
-      if (recaptchaResponse.data.success) {
-        success = true;
-      }
-      const [[fetched_pswd]] = await pool.query(
-        `
-          select pswd, p_flag
-          from login_cred 
-          where reg_no=?
-          `,
-        [username]
-      );
-
-      //regno not found
-     
-      if (!fetched_pswd) {
-        return res.status(200).json({ username_not_found: true });
-      }
-
-      //---
-
-      const hashed_pswd = fetched_pswd.pswd;
-      const pswd_flag = fetched_pswd.p_flag;
-      let token;
-      let ispswd;
-      if (pswd_flag === 1) {
-        ispswd = hashed_pswd === password;
-      } else {
-        ispswd = await compareHash(hashed_pswd, password);
-      }
+    let success = false;
+    const SECRET_KEY_v2 = "6LfdMIUpAAAAAIWvkfqc7d-wLd1UBGWd9i1wLpVH";
+    const recaptchaResponse = await axios.post(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${SECRET_KEY_v2}&response=${retoken}`
+    );
+    if (recaptchaResponse.data.success) {
+      success = true;
+    }
+    const [[fetched_pswd]] = await pool.query(
+      `
+        select pswd, p_flag
+        from login_cred 
+        where reg_no=?
+        `,
+      [username]
+    );
+    if (!fetched_pswd) {
+      return res.status(200).json({ username_not_found: true });
+    }
+    const hashed_pswd = fetched_pswd.pswd;
+    const pswd_flag = fetched_pswd.p_flag;
+    let token;
+    let ispswd;
+    if (pswd_flag === 1) {
+      ispswd = hashed_pswd === password;
+    } else {
+      ispswd = await compareHash(hashed_pswd, password);
+    }
 
       //--------------changes-----------------for recaptcha
       res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
@@ -111,21 +106,29 @@
 
 
 
-  const verifyUser = (req, res, next) => {
-    const token = req.cookies.token;
-    if (!token) {
-      return res.json({ Error: "not authenticated" });
-    } else {
-      jwt.verify(token, "acgcet25", (err, decoded) => {
-        if (err) {
-          return res.json({ Error: "token not okay" });
-        } else {
-          req.reg_no = decoded.user;
-          next();
-        }
-      });
-    }
-  };
+const verifyUser = (req, res, next) => {
+  const token = req.cookies.token;
+  if (!token) {
+    return res.json({ Error: "not authenticated" });
+  } else {
+    jwt.verify(token, "acgcet25", (err, decoded) => {
+      if (err) {
+        return res.json({ Error: "token not okay" });
+      } else {
+        req.reg_no = decoded.user;
+        let code;
+          if (decoded.user.length === 7) {
+            code = decoded.user.substring(2, 4);
+          } else if (decoded.user.length === 11) {
+            code = decoded.user.substring(6, 8);
+          }
+          let dept=find_dept(code)
+          req.dept = dept;
+        next();
+      }
+    });
+  }
+};
 
   const logout = (req, res) => {
     res.clearCookie("token");

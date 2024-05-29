@@ -1,0 +1,17 @@
+.Iqac_std_statisfy_whole{
+    width: 75%;
+    padding: 20px;
+}
+.Iqac_std_statisfy_content_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 20px 0px;
+
+}
+
+@media (max-width:768px) {
+    .Iqac_std_statisfy_whole{
+        width:100%;
+    }
+}

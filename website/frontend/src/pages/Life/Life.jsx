@@ -30,7 +30,7 @@ const technical =
 const culture_pic =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/culture_pic.webp";
 
-const gym = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym.webp";
+const gym = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/life_at_acgcet/gym1.webp";
 
 const Life = () => {
   useEffect(() => {

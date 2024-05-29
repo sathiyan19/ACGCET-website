@@ -1,93 +1,98 @@
 const iqac=[
     {
        sno:'1',
-       rep:'Chair Person-Principal\n(Ex- Officio)',
-       name:'Dr.A.Elango'
+       rep:'Chair Person\n(Ex- Officio)',
+       name:'Dr.K.Baskaran\nPrincipal'
     },
     {
         sno:'2',
         rep:'Coordinator',
-        name:'Dr.K.Ramanathan\nAsso.Prof/Mechanical'
+        name:'Dr.G.Renisha\nASP/ECE'
     },
     {
         sno:'3',
-        rep:'Faculty',
-        name:' Prof.G.Pannerselvam,\nHOD/Civil'
+        rep:'Co-coordinator',
+        name:'Prof.S.Syed Suhaia,\nAP/CSE'
     },
     {
         sno:'4',
-        rep:'Faculty',
-        name:'Dr.R.Malayalamurthi,\nHOD/ Mechanical'
+        rep:'Co-coordinator',
+        name:'Dr.R.N.Mariammal,\nAP/Physics'
     },
     {
         sno:'5',
         rep:'Faculty',
-        name:'Dr.K.Baskaran,\nHOD/EEE'
+        name:'Dr.A.Sivanantharaja,\nProfessor/ECE and NAAC Coordinator'
     },
     {
         sno:'6',
         rep:'Faculty',
-        name:'Dr.A.Sivanantharaja,\nHOD/ECE'
+        name:'Dr.K.Ramanathan,\nProfessor/ Mechanical Engineering'
     },
     {
         sno:'7',
         rep:'Faculty',
-        name:'Dr.L.Ganesan,\nHOD/CSE'
+        name:'Dr.C.Subramanian,\nProfessor/Civil Engineering'
     },
     {
         sno:'8',
         rep:'Faculty',
-        name:'Dr.B.V.Bhuvaneswari,\nHOD/Physics'
+        name:'Dr.A.Arunya Revathy,\nProfessor/EEE'
     },
     {
         sno:'9',
         rep:'Faculty',
-        name:' Dr.R.Vasanthi,\nHOD/Maths'
+        name:'Dr.C.Umarani,\nASP/CSE'
     },
     {
         sno:'10',
         rep:'Faculty',
-        name:'Dr.M.Athimoolam,\nPhysical Director'
+        name:'Dr.S.Ponmudi,\nASP/Physics'
     },
     {
         sno:'11',
+        rep:'Faculty',
+        name:' Dr.C.Vijayaprabha,\nASP/Civil and NBA Coordinator'
+    },
+    {
+        sno:'12',
         rep:'Administration',
         name:'Mrs.S.Manohari,\nPA to Principal'
     },
     {
-        sno:'12',
-        rep:'Alumni',
-        name:'Mr.M.Balasubramanian,\nGM-BHEL'
-    },
-    {
         sno:'13',
-        rep:'Students',
-        name:' Mr.N.Akilan,\nIII B.E (Mechanical)'
+        rep:'Alumni',
+        name:'Dr.G.Sozhan,\nChief Scientist(Rtd),CSIR-CECRI'
     },
     {
         sno:'14',
         rep:'Students',
-        name:'Ms.B.Ishwarya,\nIII B.E (ECE)'
+        name:'Ms.S.Swetha,(Reg.No. 91762115041)\nIII year (CSE)'
     },
     {
         sno:'15',
-        rep:'Society',
-        name:'Mr.VR.Vellaisamy,\nLIC Agent,\nKaraikudi'
+        rep:'Students',
+        name:'Mr.S.Barath Raj,(Reg.No. 91762211010)\nII year (Civil)'
     },
     {
         sno:'16',
-        rep:'Employer',
-        name:'Mr.Vembu kumar\n,Gofrugal Technologies,Velacherry,\nChennai'
+        rep:'Society',
+        name:'Mr.A.R.Narayanan,\nBusiness man,\nKaraikudi'
     },
     {
         sno:'17',
-        rep:'Industrialist',
-        name:'Mr.K.Prabu and Mr.R.Sampath\nScientific Metal Engineers,\nKaraikudi'
+        rep:'Employer',
+        name:'Dr.R.Vijaya Rajeshwaran\nVI Microsystems,Pvt.Ltd'
     },
     {
         sno:'18',
+        rep:'Industrialist',
+        name:'Dr.R.Kalidoss\nManaging Director, Protech Anodes & Alloy Engineers, SIDCO Industrial Estates\nKaraikudi'
+    },
+    {
+        sno:'19',
         rep:'Stake Holders',
-        name:'Mr.A.Rajamathava Kalanithi,\nAnnamaliyar Metals,\nKaraikudi'
+        name:'Mrs.T.Kalaivani,\nParent,HOD/IT,Sri Sai Niketan College for Women\nAmaravathipudur'
     }
 ]
 
@@ -205,16 +210,22 @@ const iqac_strategy=[
 const iqac_feed=[
     {
         'id':"1",
-        "head":"2020-2021",
+        "head":"2022-2023",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1U7selJmYywgb7CTOxTtTG3xtvri6sLvn/view?usp=sharing"
+        "pdf":"https://drive.google.com/file/d/1eXwp-FCLU-uKrKd5JfUlGg4q3sKon8Xu/view?usp=sharing"
     },
     {
         'id':"2",
         "head":"2021-2022",
         "house":"right",
         "pdf":"https://drive.google.com/file/d/1L8makTfisdAAXqetJve4xyCbbtWp1SKg/view?usp=sharing"
-    }
+    },
+    {
+        'id':"3",
+        "head":"2020-2021",
+        "house":"left",
+        "pdf":"https://drive.google.com/file/d/1U7selJmYywgb7CTOxTtTG3xtvri6sLvn/view?usp=sharing"
+    },
 ]
 
 const iqac_aqar=[
@@ -222,7 +233,7 @@ const iqac_aqar=[
         'id':"3",
         "head":"2021-2022",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1oCJd3MPmdWSYFsmi1Bi7oFez6Svz6N5l/view?usp=drive_link"
+        "pdf":"https://drive.google.com/file/d/1oCJd3MPmdWSYFsmi1Bi7oFez6Svz6N5l/view?usp=sharing"
     },
     {
         'id':"2",
@@ -274,6 +285,7 @@ const iqac_floater_menu={
             'link':'IQAC Minutes',
             'path':'/iqac_min'
         },
+     
         {
             'id':'2',
             'link':'AQAR Report',
@@ -289,8 +301,54 @@ const iqac_floater_menu={
             'link':'IQAC Cell',
             'path':'https://drive.google.com/file/d/1lSZrWnGYEd6P9qNV8oVT2axqGA4JSdu2/view?usp=sharing'
         },
+        {
+            'id':'6',
+            'link':'Best Practices of the Institute',
+            'path':'/iqac_practices'
+        },
+        {
+            'id':'6',
+            'link':'Institutional Distinctiveness',
+            'path':'/iqac_distinctiveness'
+        },
+        {
+            'id':'7',
+            'link':'Strategic Plan',
+            'path':'/iqac_strategic'
+        },
+        {
+            'id':'8',
+            'link':'Student Satisfaction Survey',
+            'path':'/iqac_std_statisfy'
+        },
     ]
 }
+const distinctiveness_data=[
+    {
+        'id':'1',
+        'program':'Institutional Distinctiveness',
+        'pdf':'https://drive.google.com/file/d/1IsCr0m2dQfR0I2wBrXboBGgOz5PAT3DL/view?usp=sharing'
+      },
+
+
+]
+const Strategic_data=[
+    {
+        'id':'1',
+        'program':'Strategic Plan',
+        'pdf':'https://drive.google.com/file/d/1G6JfbrB5kPsdsVEtr-ka98FB0KwyGVSW/view?usp=sharing'
+      },
+
+
+]
+const Iqac_std_statisfy_data=[
+    {
+        'id':'1',
+        'program':'Student Satisfaction Survey',
+        'pdf':'https://drive.google.com/drive/folders/1eY3Vo_V-k-xQLjWi7ECEYGf2S3yE3SoT?usp=sharing'
+
+    }
+]
 
 export {
     iqac,
@@ -300,5 +358,8 @@ export {
     iqac_feed,
     iqac_aqar,
     iqac_min,
-    iqac_floater_menu
+    iqac_floater_menu,
+    distinctiveness_data,
+    Strategic_data,
+    Iqac_std_statisfy_data
 };

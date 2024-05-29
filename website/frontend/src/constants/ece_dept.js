@@ -164,13 +164,13 @@ const ece_dept_menu = [
   {
     id: "3",
     path: "/ecedept/ece-faculties",
-    link: "Faculties",
+    link: "Faculty",
     arl: "l",
   },
   {
     id: "4",
     path: "/ecedept/ece-lab",
-    link: "Lab Facilities",
+    link: "Laboratory Facilities",
     arl: "l",
   },
   {
@@ -242,7 +242,7 @@ const ece_fac_profiles = [
     dp: asr,
     name: "Dr.A.Sivanantha Raja",
     Designation: "Head of the Department",
-    mailid: "sivanantharaja@gmail.com",
+    mailid: "sivanantharaja@accet.ac.in",
     pdf: "https://drive.google.com/file/d/1R9A7ul9goH87qnMYhIZQvI8qFCNcR2iX/view?usp=drive_link",
   },
   {
@@ -362,15 +362,15 @@ const ece_fac_profiles = [
     mailid: "keerthiperumal@gmail.com",
     pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
   },
-  {
-    id: "15",
-    cover: cover,
-    dp: merlin,
-    name: "Mrs.X.Merlin Sheeba",
-    Designation: "Assistant Professor",
-    mailid: "renachristina@gmail.com",
-    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
-  },
+  // {
+  //   id: "15",
+  //   cover: cover,
+  //   dp: merlin,
+  //   name: "Mrs.X.Merlin Sheeba",
+  //   Designation: "Assistant Professor",
+  //   mailid: "renachristina@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
+  // },
 ];
 
 const ece_sup_profiles = [
