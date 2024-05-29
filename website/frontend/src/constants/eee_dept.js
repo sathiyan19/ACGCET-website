@@ -1,7 +1,7 @@
 // import dpm from "../assets/pictures/boy.webp";
 // import dpf from "../assets/pictures/girl.webp"
 // import cover from "../assets/pictures/eee-cover.webp";
-
+import venkatesan from "../assets/pictures/Dr.S.Venkatesan.webp"
 // import swayam from '../assets/pictures/swayam.webp'
 // import robotics from '../assets/pictures/robotics.webp'
 // import placement from '../assets/pictures/placement.webp'
@@ -964,6 +964,15 @@ const eee_fac_profiles = [
     Designation: "Associate Professor(CAS)",
     mailid: "arunmano80@gmail.com",
     pdf: "#",
+  },
+  {
+    id: "8",
+    cover: cover,
+    dp: venkatesan,
+    name: "Dr.S.Venkatesan",
+    Designation: "Associate Professor",
+    mailid: "venkateee10@gmail.com",
+    pdf: "https://drive.google.com/file/d/1eZSVL3SFjGKy7l_Wk68By4njyYb6nCkq/view?usp=sharing",
   },
   // {
   //   id: "8",
