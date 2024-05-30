@@ -152,7 +152,7 @@ const civ_fac_profiles = [
     name: "Dr.S.M.Kavitha",
     Designation: "Associate Professor",
     mailid: "smkavitha@accetedu.in",
-    pdf: "https://drive.google.com/file/d/1jZ2CmroavW3pQ7e75-GZM7VYaYiacLdt/view?usp=drive_link",
+    pdf: "https://drive.google.com/file/d/1CN75Jy44sBNcD3zovqYjKMTT-nAT8yqj/view?usp=sharing",
   },
   {
     id: "1",
