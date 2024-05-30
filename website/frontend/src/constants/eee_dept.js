@@ -938,6 +938,7 @@ const eee_fac_profiles = [
     mailid: "vennila@accetedu.in",
     pdf: "https://drive.google.com/file/d/1YRcDbOlr58hbclvZTbunPAAnPrnnXfoV/view?usp=sharing",
   },
+  
   {
     id: "5",
     cover: cover,
