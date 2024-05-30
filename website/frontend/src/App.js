@@ -155,7 +155,8 @@ import {
   Audit_stmt,
   Verification,
   Dash_results,
-  Iqac_strategic
+  Iqac_strategic,
+  Autonomus
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -329,6 +330,7 @@ const App = () => {
          <Route path="/audit_stmt" element={<Audit_stmt/>}/>
          <Route path="/verification" element={<Verification/>}/>
          <Route path="/iqac_strategic" element={<Iqac_strategic/>}/>
+         <Route path="/autonomus" element={<Autonomus/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
