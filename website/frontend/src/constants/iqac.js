@@ -254,7 +254,7 @@ const iqac_min=[
         'id':"1",
         "head":"2022-2023",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1yVLm5uboQNFRn7hbdfQkDCy8xv107oTE/view?usp=drive_link"
+        "pdf":"https://drive.google.com/file/d/1yVLm5uboQNFRn7hbdfQkDCy8xv107oTE/view?usp=sharing"
     },
     {
         'id':"2",

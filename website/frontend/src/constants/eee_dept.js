@@ -938,8 +938,18 @@ const eee_fac_profiles = [
     mailid: "vennila@accetedu.in",
     pdf: "https://drive.google.com/file/d/1YRcDbOlr58hbclvZTbunPAAnPrnnXfoV/view?usp=sharing",
   },
+  
   {
     id: "5",
+    cover: cover,
+    dp: venkatesan,
+    name: "Dr.S.Venkatesan",
+    Designation: "Associate Professor",
+    mailid: "venkateee10@gmail.com",
+    pdf: "https://drive.google.com/file/d/1eZSVL3SFjGKy7l_Wk68By4njyYb6nCkq/view?usp=sharing",
+  },
+  {
+    id: "6",
     cover: cover,
     dp: Madasamy,
     name: "Prof.P.Madasamy",
@@ -948,7 +958,7 @@ const eee_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1zk2vQddK_B9d3XtbwoLXDIfIWhlEKMWL/view?usp=drive_link",
   },
   {
-    id: "6",
+    id: "7",
     cover: cover,
     dp: Ramadas,
     name: "Prof.K.Ramadas",
@@ -957,7 +967,7 @@ const eee_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1a60IrGfnpHU23Uj0a54mEuo4Iopi2ffE/view?usp=drive_link",
   },
   {
-    id: "7",
+    id: "8",
     cover: cover,
     dp: arun,
     name: "Dr.M.Arun",
@@ -965,15 +975,7 @@ const eee_fac_profiles = [
     mailid: "arunmano80@gmail.com",
     pdf: "#",
   },
-  {
-    id: "8",
-    cover: cover,
-    dp: venkatesan,
-    name: "Dr.S.Venkatesan",
-    Designation: "Associate Professor",
-    mailid: "venkateee10@gmail.com",
-    pdf: "https://drive.google.com/file/d/1eZSVL3SFjGKy7l_Wk68By4njyYb6nCkq/view?usp=sharing",
-  },
+  
   // {
   //   id: "8",
   //   cover: cover,
