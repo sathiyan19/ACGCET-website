@@ -29,4 +29,9 @@ export const nirf=[
             'program':'NIRF-2022',
             'pdf':'https://drive.google.com/file/d/1E1WT5zTR4iWcUbO8vx36zmPXGerB3ayv/view?usp=sharing'
         },
+        {
+            'id':'5',
+            'program':'NIRF-2021',
+            'pdf':'https://drive.google.com/file/d/1-DdofEfKjhRdTFNcbrYHbHP7LtdCOcek/view?usp=drive_link'
+        },
     ]
