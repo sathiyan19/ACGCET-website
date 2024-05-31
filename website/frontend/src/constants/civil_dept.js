@@ -20,7 +20,9 @@ const sumathy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/De
 const venkat="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Venkatesh+Baskaran-1.webp"
 const mani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Prof.R.MANIGANDAN.webp"
 const tamizh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Senthamizhan+(1)-1.webp"
-
+const ambikapathi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Ambikapathi.A-1.jpg"
+const appusriram="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Appu+Sriram-1.jpg"
+const arune="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+ARUN.E-1.jpg"
 
 const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_rajasekar.webp"
 const kathir="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_kathiresan.webp"
@@ -198,6 +200,33 @@ const civ_fac_profiles = [
     Designation: "Assistant Professor",
     mailid: "venkatesh@gcetly.ac.in",
     pdf: "https://drive.google.com/file/d/1mepcWTb4EsJf7fFTMs7S4QBf1t9yDJ-f/view?usp=drive_link",
+  },
+  {
+    id: "10",
+    cover: cover,
+    dp: ambikapathi,
+    name: "A. Ambikapathi",
+    Designation: "Assistant Professor",
+    mailid: "ambipathi@gmail.com",
+    pdf: "https://drive.google.com/file/d/1tbL1tvVV1YI-OD3Ql-f7a2XVXXl8jYQ5/view?usp=drive_link",
+  },
+  {
+    id: "11",
+    cover: cover,
+    dp: arune,
+    name: "Arun E",
+    Designation: "Assistant Professor",
+    mailid: "arune1811@gmail.com",
+    pdf: "https://drive.google.com/file/d/1ERZGvFwBjop_gfe8li4y14FR9rxQD1bu/view?usp=drive_link",
+  },
+  {
+    id: "12",
+    cover: cover,
+    dp: appusriram,
+    name: "Appu Sriram M",
+    Designation: "Assistant Professor",
+    mailid: "appusriramm@accet.ac.in",
+    pdf: "https://drive.google.com/file/d/1hRLU2SCEJj0rc7SHgafsYvIQL5u0fKSQ/view?usp=drive_link",
   },
 ];
 const civ_sup_profiles = [
