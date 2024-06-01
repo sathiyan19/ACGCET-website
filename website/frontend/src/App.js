@@ -89,6 +89,10 @@ import {
   Iqac_min,
   Iqac_aqar,
   Iqac_feed,
+  Iqac_practices,
+  Iqac_distinctiveness,
+  Iqac_std_statisfy,
+
   Nba,
   Nirf,
   Iic,
@@ -150,7 +154,9 @@ import {
   Akkadians,
   Audit_stmt,
   Verification,
-  Dash_results
+  Dash_results,
+  Iqac_strategic,
+  Autonomus
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -271,6 +277,10 @@ const App = () => {
         <Route path="/iqac_aqar" element={<Iqac_aqar/>} />
         <Route path="/iqac" element={<Iqac/>} />
         <Route path="/iqac_feed" element={<Iqac_feed/>} />
+        <Route path="/iqac_practices" element={<Iqac_practices/>} />
+        <Route path="/iqac_distinctiveness" element={<Iqac_distinctiveness/>} />
+        <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
+        
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
@@ -319,6 +329,8 @@ const App = () => {
          
          <Route path="/audit_stmt" element={<Audit_stmt/>}/>
          <Route path="/verification" element={<Verification/>}/>
+         <Route path="/iqac_strategic" element={<Iqac_strategic/>}/>
+         <Route path="/autonomus" element={<Autonomus/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
