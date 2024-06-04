@@ -212,7 +212,7 @@ const iqac_feed=[
         'id':"1",
         "head":"2022-2023",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1eXwp-FCLU-uKrKd5JfUlGg4q3sKon8Xu/view?usp=sharing"
+        "pdf":"/feedback_analysis_22-23.pdf"
     },
     {
         'id':"2",
@@ -233,7 +233,7 @@ const iqac_aqar=[
         'id':"3",
         "head":"2021-2022",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1oCJd3MPmdWSYFsmi1Bi7oFez6Svz6N5l/view?usp=sharing"
+        "pdf":"/AQAR_report_2021-22.pdf"
     },
     {
         'id':"2",
@@ -254,7 +254,7 @@ const iqac_min=[
         'id':"1",
         "head":"2022-2023",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1yVLm5uboQNFRn7hbdfQkDCy8xv107oTE/view?usp=drive_link"
+        "pdf":"https://drive.google.com/file/d/1yVLm5uboQNFRn7hbdfQkDCy8xv107oTE/view?usp=sharing"
     },
     {
         'id':"2",
@@ -327,7 +327,7 @@ const distinctiveness_data=[
     {
         'id':'1',
         'program':'Institutional Distinctiveness',
-        'pdf':'https://drive.google.com/file/d/1IsCr0m2dQfR0I2wBrXboBGgOz5PAT3DL/view?usp=sharing'
+        'pdf':'/Institutional_distinctiveness.pdf'
       },
 
 
@@ -336,7 +336,7 @@ const Strategic_data=[
     {
         'id':'1',
         'program':'Strategic Plan',
-        'pdf':'https://drive.google.com/file/d/1G6JfbrB5kPsdsVEtr-ka98FB0KwyGVSW/view?usp=sharing'
+        'pdf':'/strategic_plan.pdf'
       },
 
 
