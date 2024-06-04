@@ -212,7 +212,7 @@ const iqac_feed=[
         'id':"1",
         "head":"2022-2023",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1eXwp-FCLU-uKrKd5JfUlGg4q3sKon8Xu/view?usp=sharing"
+        "pdf":"/feedback_analysis_22-23.pdf"
     },
     {
         'id':"2",
@@ -233,7 +233,7 @@ const iqac_aqar=[
         'id':"3",
         "head":"2021-2022",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1oCJd3MPmdWSYFsmi1Bi7oFez6Svz6N5l/view?usp=sharing"
+        "pdf":"/AQAR_report_2021-22.pdf"
     },
     {
         'id':"2",
