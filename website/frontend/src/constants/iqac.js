@@ -327,7 +327,7 @@ const distinctiveness_data=[
     {
         'id':'1',
         'program':'Institutional Distinctiveness',
-        'pdf':'https://drive.google.com/file/d/1IsCr0m2dQfR0I2wBrXboBGgOz5PAT3DL/view?usp=sharing'
+        'pdf':'/Institutional_distinctiveness.pdf'
       },
 
 
@@ -336,7 +336,7 @@ const Strategic_data=[
     {
         'id':'1',
         'program':'Strategic Plan',
-        'pdf':'https://drive.google.com/file/d/1G6JfbrB5kPsdsVEtr-ka98FB0KwyGVSW/view?usp=sharing'
+        'pdf':'/strategic_plan.pdf'
       },
 
 
