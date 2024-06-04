@@ -1,3 +1,5 @@
+const ravena ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/Raveena+A_+Civil.webp"
+
 const swayam ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
 const robotics ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/robotics.webp"
 const placement="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/placement.webp"
@@ -649,6 +651,18 @@ const civ_patents = [
     content:
       "In 2021, a patent was granted to Dr. C. Vijayaprabha for the creation of the 15CEC76 Concrete and Highway Laboratory Manual.",
   },
+];
+
+const civ_stud_achivement =[
+  {
+    'id':'1',
+    'heading':"Raveen A (91762211042)",
+    'sub-head':"Batch : 2022-2026",
+    'pic':ravena,
+    link: "https://drive.google.com/file/d/12KX9ldS2rRIhiO0kDMwrHHKPqKjzaItF/view?usp=sharing",
+    'content_1':'',
+    'content_2':"Raveen A of II year Civil (Batch 2022- 2026) has represented Anna University in the All India Inter-University Karate tournament held between 16.03.3034 and 19.03.2024 at Panjab University, Chandigarh"
+},
 ];
 
 const civ_lib_data = [
@@ -1796,6 +1810,7 @@ export {
   civ_labs,
   civ_awards,
   civ_patents,
+  civ_stud_achivement,
   civ_lib_data,
   civ_place_lt,
   civ_place_hexagon,
