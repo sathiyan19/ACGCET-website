@@ -31,7 +31,7 @@ const selva="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const muthu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_muthuramalingam.webp"
 const murugesan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_murugesan.webp"
 const veenus="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_veenusrani.webp"
-
+const gayathiri="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Gayathri_civil_fac-1.webp"
 
 const computer ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Computer+Lab.webp" 
 const concrete  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Concrete+lab.webp"
@@ -227,6 +227,15 @@ const civ_fac_profiles = [
     Designation: "Assistant Professor",
     mailid: "appusriramm@accet.ac.in",
     pdf: "https://drive.google.com/file/d/1hRLU2SCEJj0rc7SHgafsYvIQL5u0fKSQ/view?usp=drive_link",
+  },
+  {
+    id: "13",
+    cover: cover,
+    dp: gayathiri,
+    name: "M.GAYATHRI",
+    Designation: "Assistant Professor",
+    mailid: "gayathri@accet.ac.in",
+    pdf: "https://drive.google.com/file/d/13GAOVduo48ow1DblMm7GifRJhkD9gp3t/view?usp=sharing",
   },
 ];
 const civ_sup_profiles = [
