@@ -2260,27 +2260,27 @@ const ece_extracurricular= [
 const ece_stud_activities = [
   {
     id: "20",
-    heading: "Handball'24",
+    heading: "Anna University Zonal Handball'24",
     "sub-head":
-      "S.Shahid Affan participated and secured 3rd position in the handball tournament held at Chenduran College Of Engineering and Technology",
+      "S.Shahid Affan participated and secured 3rd position in the Zonal handball tournament held at Chenduran College Of Engineering and Technology",
     pic: handball,
     content_1: "",
     content_2: "",
   },
   {
     id: "19",
-    heading: "Football'24",
+    heading: "Anna University Zonal Football'24",
     "sub-head":
-      "Rajavarman.A, secured runnerup position in Football tournament held at Mount Zion College of Engineering and Technology",
+      "Rajavarman.A, secured runnerup position in the Zonal Football tournament held at Mount Zion College of Engineering and Technology",
     pic: football,
     content_1: "",
     content_2: "",
   },
   {
     id: "18",
-    heading: "Basket Ball'24",
+    heading: "Anna University Zonal Basket Ball'24",
     "sub-head":
-      "Sujitha S, Janani Kamachi.S and Durga.A  secured 3rd position in Basket ball tournament held at Vellamal College of Engineering and Technology,Madurai.",
+      "Sujitha S, Janani Kamachi.S and Durga.A  secured 3rd position in the Zonal Basket ball tournament held at Vellamal College of Engineering and Technology,Madurai.",
     pic: basketball,
     content_1: "",
     content_2: "",
@@ -2307,7 +2307,7 @@ const ece_stud_activities = [
     id: "17",
     heading: "Arun Kumar N",
     "sub-head":
-      "Arun Kumar N of '26 batch has secured the first prize in the Ad-shoot event of UTSAVAM-24 a national level fest organized by Alagappa Institute of management,Karaikudi held on 15th March 2024",
+      "Arun Kumar N of '25 batch has secured the first prize in the Ad-shoot event of UTSAVAM-24 a national level fest organized by Alagappa Institute of management held on 15th March 2024",
     pic: arunkumar,
     content_1: "",
     content_2: "",
@@ -2325,7 +2325,7 @@ const ece_stud_activities = [
     id: "18",
     heading: "Vimanthan KG",
     "sub-head":
-      "VimanthanK G,of our department representing as Anna University captain for Southzone National Level Archery competition which was held at Punjab on 13 December -26 December2023.He secured 198thrank at all India level.",
+      "VimanthanK G, Anna University captain for Southzone National Level Archery competition which was held at Punjab on December2023. He secured 198th rank at all India level.",
     pic: vimanthan,
     content_1: "",
     content_2: "",
