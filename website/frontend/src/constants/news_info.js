@@ -58,14 +58,14 @@ export const news_info=[
         'content_1':'',
         'content_2':"Commencing on the 9th of September, a specialized general aptitude training program has been organized for 60 third-year students over the weekends. Taking place on both Saturdays and Sundays, this initiative seeks to nurture the students' problem-solving skills and overall aptitude. By dedicating their weekends to this training, participants are preparing themselves for a competitive edge in their academic pursuits and future career endeavors. This comprehensive program is designed to instill valuable knowledge and capabilities, enabling these students to excel academically and navigate the complexities of the professional world with confidence. It serves as a valuable investment in their personal and intellectual growth."
     },
-    {
-        'id':'5',
-        'heading':"World Standards Day, 2023",
-        'sub-head':'Join us for an exhilarating journey of learning, unlearning and relearning on 09-10-2023.',
-        'pic':stnd_day,
-        'content_1':'Alagappa Chettiar Government College of Engineering and Technology, Sivaganga, hosts diverse events: writing, essay competitions, quizzes, debates, and nukkad natak. Winners eagerly await felicitation on World Standards Day in Madurai, a celebration of academic excellence and achievement.',
-        'content_2':"A shared vision for a better world embodies the collective aspirations of individuals, communities, and nations to create a more equitable, sustainable, and harmonious global society. It is a beacon of hope that unites people across diverse backgrounds, inspiring collaboration and action. This vision encompasses ideals such as social justice, environmental stewardship, and peace, fostering a sense of responsibility to leave a lasting positive impact for future generations. It is a powerful force that drives humanity toward a brighter and more inclusive future."
-    },
+    // {
+    //     'id':'5',
+    //     'heading':"World Standards Day, 2023",
+    //     'sub-head':'Join us for an exhilarating journey of learning, unlearning and relearning on 09-10-2023.',
+    //     'pic':stnd_day,
+    //     'content_1':'Alagappa Chettiar Government College of Engineering and Technology, Sivaganga, hosts diverse events: writing, essay competitions, quizzes, debates, and nukkad natak. Winners eagerly await felicitation on World Standards Day in Madurai, a celebration of academic excellence and achievement.',
+    //     'content_2':"A shared vision for a better world embodies the collective aspirations of individuals, communities, and nations to create a more equitable, sustainable, and harmonious global society. It is a beacon of hope that unites people across diverse backgrounds, inspiring collaboration and action. This vision encompasses ideals such as social justice, environmental stewardship, and peace, fostering a sense of responsibility to leave a lasting positive impact for future generations. It is a powerful force that drives humanity toward a brighter and more inclusive future."
+    // },
 
     {
         'id':'6',
