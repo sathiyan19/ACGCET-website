@@ -18,10 +18,11 @@ const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clu
 const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/leo.webp"
 const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/MUTHAMIL.webp"
 const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/music.webp"
+const image6="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/clubs/Build_club.webp"
 const Clubs_heroimage_carousalinfo = {
   id: 1,
   title: "Clubs at ACGCET",
-  img_list: [image1, image2,image3,image4,image5],
+  img_list: [image1, image2,image3,image4,image5,image6],
 };
 
 const Clubs_info = [
