@@ -5,7 +5,7 @@ import './Ece_research.css'
 import { Radial_menu,Table,Listformat } from "../../components";
 import { Backtotop,Floatinmenu,Underline } from "../../widgets";
 
-import { ece_dept_menu,ece_research_info, patent_info,guide_info, scholar_info1,scholar_info2,scholar_info3,scholar_info4,ece_siva,ece_margaret, ece_rajesh } from "../../constants/ece_dept";
+import { ece_dept_menu,ece_research_info, patent_info,guide_info, scholar_info1,scholar_info2,scholar_info3,scholar_info4,ece_siva,ece_margaret, ece_rajesh, ece_karthika } from "../../constants/ece_dept";
 
 import { FaMicrochip } from "react-icons/fa6";
 
@@ -124,6 +124,10 @@ const Ece_research = () => {
           <div className='ece_pts'>
             <h3>Dr. B.Rajeshkanna</h3>
             <Listformat points={ece_rajesh}/>
+          </div>
+          <div className='ece_pts'>
+            <h3>Dr.C.Karthika </h3>
+            <Listformat points={ece_karthika}/>
           </div>
 
       </div>

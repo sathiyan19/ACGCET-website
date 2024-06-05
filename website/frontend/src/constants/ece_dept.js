@@ -83,6 +83,10 @@ const swayam="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Dep
 const robotics="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/robotics.webp"
 const placement="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/placement.webp"
 
+const sundar_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/sundarapandi_23.webp"
+const bharathi_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/bharathi_23.webp"
+const dhanaraman_22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/dhanaraman_22.webp"
+const swetha_22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/swethasri_22.webp"
 const priya_21  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/priya_21.webp"
 const navin_21 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/navin_21.webp"
 const aish_20 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/aishwarya_20.webp"
@@ -123,6 +127,7 @@ const ece_ic_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com
 const ece_pcb_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/PCB_Fabrication_Station.webp"
 const ece_antenna_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/ECE_Ant_Chamber_1.webp"
 
+const festronix_23 = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/festronix'23+(2).webp"
 const ncmoc19 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/ncmoc19.webp"
 const stal21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/stalwartz21.webp"
 const prag21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/pragyanz21.webp"
@@ -145,7 +150,14 @@ const malai_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaw
 const gok_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/gok_thiran_23.webp"
 const jos_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/jos_thiran_23.webp"
 const mm_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/mm_thiran_23.webp"
-
+const vimanthan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/vimanthan_archery.webp"
+const sivakumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/siva_cup.webp"
+const arunkumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/adshoot_arun.webp"
+const top_design1_24="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/top_des24_1st.webp"
+const top_design2_24="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/top_des24_2nd.webp"
+const basketball="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/ece24_basketball.webp"
+const football="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/ece_24football.webp"
+const handball="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/handball24_ece.webp"
 
 
 const ece_dept_menu = [
@@ -617,7 +629,56 @@ const ece_rajesh=[
   },
 ];
 
+const ece_karthika=[
+  {
+    'id':"1",
+    'point':"Dr.K.Muralibabu, Dr.L.Agilandeeswari, Dr.C.Kathika Pragadeeswari(Assistant Professor), Embedded System and IoT Design, ISBN: 978-93-87950-89-4,First Edition, Lakshmi Publications, Chennai, India, January 2024.",
+  },
+];
+
 const ece_rankers = [
+  {
+    head:"2019-2023 Batch",
+    rankers:[
+      {
+        id: "1",
+        cover: cover,
+        dp: bharathi_23,
+        name: "Bharathi P",
+        Designation: "First rank holder",
+        mailid: "1914008",
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: sundar_23,
+        name: "Sundarapandi S",
+        Designation: "Second rank holder",
+        mailid: "1914041",
+      },
+    ]
+  },
+  {
+    head:"2018-2022 Batch",
+    rankers:[
+      {
+        id: "1",
+        cover: cover,
+        dp: swetha_22,
+        name: "Swetha Sri R",
+        Designation: "First rank holder",
+        mailid: "1814045",
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: dhanaraman_22,
+        name: "B.Dhanaraman",
+        Designation: "Second rank holder",
+        mailid: "1814014 ",
+      },
+    ]
+  },
   {
     head:"2017-2021 Batch",
     rankers:[
@@ -773,6 +834,7 @@ const ece_outcomes = [
       "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
   },
 ];
+
 const ece_spec_outcomes = [
   {
     id: "1",
@@ -2080,6 +2142,17 @@ const ece_dept_events = [
 
 const ece_events = [
   {
+    id: "6",
+    heading: "Festronix'23",
+    "sub-head":
+      "29th NOV 2023",
+    pic: festronix_23,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
     id: "4",
     heading: "Pragyanz'22",
     "sub-head":
@@ -2166,7 +2239,97 @@ const ece_projects = [
   },
 ];
 
+const ece_cocurricular_data = [
+  {
+    id:1,
+    program:'2022-23',
+    pdf:'https://drive.google.com/file/d/1MReCIeYLWTd4PPMib9RU73rfKCODYV1R/view?usp=sharing',
+  }
+]
+
+const ece_extracurricular= [
+  {
+    id:1,
+    program:'2023-24',
+    pdf:'https://drive.google.com/file/d/1XI2xR4XmRiZ_DYToY7dNTgPPBcx2uyio/view?usp=sharing',
+  }
+]
+
+
+
 const ece_stud_activities = [
+  {
+    id: "20",
+    heading: "Handball'24",
+    "sub-head":
+      "S.Shahid Affan participated and secured 3rd position in the handball tournament held at Chenduran College Of Engineering and Technology",
+    pic: handball,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "19",
+    heading: "Football'24",
+    "sub-head":
+      "Rajavarman.A, secured runnerup position in Football tournament held at Mount Zion College of Engineering and Technology",
+    pic: football,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "18",
+    heading: "Basket Ball'24",
+    "sub-head":
+      "Sujitha S, Janani Kamachi.S and Durga.A  secured 3rd position in Basket ball tournament held at Vellamal College of Engineering and Technology,Madurai.",
+    pic: basketball,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "19",
+    heading: "Top Designers 2024",
+    "sub-head":
+      "Sowmiya D ,Vasanthamalar J and Blesslin Rinu P bagged 1st place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: top_design1_24,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "18",
+    heading: "Top Designers 2024",
+    "sub-head":
+      " Geethapriya,Nidya Sri kamatchi and Nandhini bagged 2nd place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: top_design2_24,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "17",
+    heading: "Arun Kumar N",
+    "sub-head":
+      "Arun Kumar N of '26 batch has secured the first prize in the Ad-shoot event of UTSAVAM-24 a national level fest organized by Alagappa Institute of management,Karaikudi held on 15th March 2024",
+    pic: arunkumar,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "19",
+    heading: "Sivakumar M",
+    "sub-head":
+      "Sivakumar M of 26 batch secured the 1st place in 400m and 2nd place in 110m in the State Level Athletics Meet 2024 held at Tirunelveli",
+    pic: sivakumar,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "18",
+    heading: "Vimanthan KG",
+    "sub-head":
+      "VimanthanK G,of our department representing as Anna University captain for Southzone National Level Archery competition which was held at Punjab on 13 December -26 December2023.He secured 198thrank at all India level.",
+    pic: vimanthan,
+    content_1: "",
+    content_2: "",
+  },
   {
     id: "17",
     heading: "Thiran 2023",
@@ -2371,6 +2534,19 @@ const ece_antenna_rf = [
 
 const ece_placement_info = [
   {
+    id:"4",
+    year: "2020-2024 Batch",
+    salary:"7.5 LPA",
+    details: [
+      {
+        id: "1",
+        heading: "In-Campus",
+        perc: 54,
+        symbol:"%"
+      },
+    ],
+  },
+  {
     id:"1",
     year: "2019-2023 Batch",
     salary:"8 LPA",
@@ -2430,17 +2606,22 @@ const ece_placement_info = [
 
 const ece_intern=[
   {
-      'id':'1',
-      'program':'Internship 2021-2022',
-      'pdf':'https://drive.google.com/file/d/13e9q9mAH0vHu5UIrB2SA_sZSZlFHDo8Q/view?usp=drive_link '
+    'id':'4',
+    'program':'Internship 2023-2024',
+    'pdf':'https://drive.google.com/file/d/1soWf_av3Z3N1X153idf4wcKaAUq4f38U/view?usp=sharing'
   },
   {
-      'id':'2',
+      'id':'3',
       'program':'Internship 2022-2023',
       'pdf':'https://drive.google.com/file/d/18k11n_gx0ECOts0JPUwKKyFuLab3uLYz/view?usp=drive_link '
   },
   {
-      'id':'3',
+    'id':'2',
+    'program':'Internship 2021-2022',
+    'pdf':'https://drive.google.com/file/d/13e9q9mAH0vHu5UIrB2SA_sZSZlFHDo8Q/view?usp=drive_link '
+  },
+  {
+      'id':'1',
       'program':'Implant Training Details',
       'pdf':'https://drive.google.com/file/d/1PBZXDsAeY1cloa90xuBkya9aPumOdm8w/view?usp=drivesdk'
   },
@@ -2480,5 +2661,8 @@ export {
   ece_dept_lib,
   ece_events,
   ece_spec_outcomes,
-  ece_intern
+  ece_intern,
+  ece_cocurricular_data,
+  ece_extracurricular,
+  ece_karthika
 };
