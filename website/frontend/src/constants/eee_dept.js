@@ -1,7 +1,6 @@
 // import dpm from "../assets/pictures/boy.webp";
 // import dpf from "../assets/pictures/girl.webp"
 // import cover from "../assets/pictures/eee-cover.webp";
-import venkatesan from "../assets/pictures/Dr.S.Venkatesan.webp"
 // import swayam from '../assets/pictures/swayam.webp'
 // import robotics from '../assets/pictures/robotics.webp'
 // import placement from '../assets/pictures/placement.webp'
@@ -69,6 +68,7 @@ const baskaran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/D
 const arunya="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/2-Arunya-Revathi.webp"
 const Nageswari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/3-Nageswari.webp"
 const Vennila="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/4-Vennila.webp"
+const venkatesan ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/venkat-TNPSC-exam.webp"
 const Madasamy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/5-Madasamy.webp"
 const Ramadas="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/6-Ramadas.webp"
 const arun="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/7+Arun.webp"

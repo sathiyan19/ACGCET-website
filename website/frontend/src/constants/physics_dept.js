@@ -1,6 +1,5 @@
-import dpm from "../assets/pictures/boy.webp";
-import arugumam from "../assets/pictures/R.Arugumugam.webp";
-import rengarajan from "../assets/pictures/V.Rengarajan.webp";
+const arugumam = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/R.Arugumugam.webp";
+const rengarajan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/V.Rengarajan.webp";
 
 const pcover = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/phy+cover.webp";
 const cynthia = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/cynthia.webp";

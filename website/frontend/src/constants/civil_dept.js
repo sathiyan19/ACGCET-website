@@ -1,3 +1,5 @@
+const ravena ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/Raveena+A_+Civil.webp"
+
 const swayam ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
 const robotics ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/robotics.webp"
 const placement="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/placement.webp"
@@ -20,7 +22,9 @@ const sumathy="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/De
 const venkat="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Venkatesh+Baskaran-1.webp"
 const mani="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Prof.R.MANIGANDAN.webp"
 const tamizh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Senthamizhan+(1)-1.webp"
-
+const ambikapathi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Ambikapathi.A-1.jpg"
+const appusriram="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Appu+Sriram-1.jpg"
+const arune="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+ARUN.E-1.jpg"
 
 const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_rajasekar.webp"
 const kathir="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_kathiresan.webp"
@@ -29,7 +33,7 @@ const selva="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const muthu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_muthuramalingam.webp"
 const murugesan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_murugesan.webp"
 const veenus="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_veenusrani.webp"
-
+const gayathiri="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Gayathri_civil_fac-1.webp"
 
 const computer ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Computer+Lab.webp" 
 const concrete  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Concrete+lab.webp"
@@ -198,6 +202,42 @@ const civ_fac_profiles = [
     Designation: "Assistant Professor",
     mailid: "venkatesh@gcetly.ac.in",
     pdf: "https://drive.google.com/file/d/1mepcWTb4EsJf7fFTMs7S4QBf1t9yDJ-f/view?usp=drive_link",
+  },
+  {
+    id: "10",
+    cover: cover,
+    dp: ambikapathi,
+    name: "A. Ambikapathi",
+    Designation: "Assistant Professor",
+    mailid: "ambipathi@gmail.com",
+    pdf: "https://drive.google.com/file/d/1tbL1tvVV1YI-OD3Ql-f7a2XVXXl8jYQ5/view?usp=drive_link",
+  },
+  {
+    id: "11",
+    cover: cover,
+    dp: arune,
+    name: "Arun E",
+    Designation: "Assistant Professor",
+    mailid: "arune1811@gmail.com",
+    pdf: "https://drive.google.com/file/d/1ERZGvFwBjop_gfe8li4y14FR9rxQD1bu/view?usp=drive_link",
+  },
+  {
+    id: "12",
+    cover: cover,
+    dp: appusriram,
+    name: "Appu Sriram M",
+    Designation: "Assistant Professor",
+    mailid: "appusriramm@accet.ac.in",
+    pdf: "https://drive.google.com/file/d/1hRLU2SCEJj0rc7SHgafsYvIQL5u0fKSQ/view?usp=drive_link",
+  },
+  {
+    id: "13",
+    cover: cover,
+    dp: gayathiri,
+    name: "M.GAYATHRI",
+    Designation: "Assistant Professor",
+    mailid: "gayathri@accet.ac.in",
+    pdf: "https://drive.google.com/file/d/13GAOVduo48ow1DblMm7GifRJhkD9gp3t/view?usp=sharing",
   },
 ];
 const civ_sup_profiles = [
@@ -649,6 +689,18 @@ const civ_patents = [
     content:
       "In 2021, a patent was granted to Dr. C. Vijayaprabha for the creation of the 15CEC76 Concrete and Highway Laboratory Manual.",
   },
+];
+
+const civ_stud_achivement =[
+  {
+    'id':'1',
+    'heading':"Raveen A (91762211042)",
+    'sub-head':"Batch : 2022-2026",
+    'pic':ravena,
+    link: "https://drive.google.com/file/d/12KX9ldS2rRIhiO0kDMwrHHKPqKjzaItF/view?usp=sharing",
+    'content_1':'',
+    'content_2':"Raveen A of II year Civil (Batch 2022- 2026) has represented Anna University in the All India Inter-University Karate tournament held between 16.03.3034 and 19.03.2024 at Panjab University, Chandigarh"
+},
 ];
 
 const civ_lib_data = [
@@ -1796,6 +1848,7 @@ export {
   civ_labs,
   civ_awards,
   civ_patents,
+  civ_stud_achivement,
   civ_lib_data,
   civ_place_lt,
   civ_place_hexagon,
