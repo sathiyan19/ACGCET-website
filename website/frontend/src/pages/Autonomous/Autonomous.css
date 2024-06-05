@@ -1,29 +1,28 @@
-.annual_container{
-    /* margin-top: 30px; */
+.autonomous_whole{
     padding: 20px;
 }
-.annual_reports_container{
+.autonomous_sub_container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.annual_reports{
+.autonomous_sub{
     width: 70%;
 }
 
 @media(max-width:1024px){
-    .annual_reports{
+    .autonomous_sub{
         width: 100%;
     }
 }
 @media(max-width:768px){
-    .annual_reports{
+    .autonomous_sub{
         width:70%
     }
 }
 
 @media(max-width:500px){
-    .annual_reports{
+    .autonomous_sub{
         width: 100%;
     }
 }

@@ -1,3 +1,13 @@
 .ece_student_activities{
     margin-bottom: 100px;
 }
+
+/* .ece_co-curricular{
+    padding: 20px;
+} */
+
+.ece_cocurri_card_outer,.ece_extracurri_card_outer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
