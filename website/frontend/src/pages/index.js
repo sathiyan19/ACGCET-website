@@ -69,6 +69,8 @@ export {default as Iqac_feed} from './Iqac_feed/Iqac_feed'
 export {default as Iqac_distinctiveness} from './Iqac_distinctiveness/Iqac_distinctiveness'
 export {default as Iqac_practices} from './Iqac_practices/Iqac_practices'
 export {default as Iqac_std_statisfy} from './Iqac_std_statisfy/Iqac_std_statisfy'
+export {default as Iqac_committee} from './Iqac_committee/Iqac_committee'
+
 
 export {default as Nba} from './Nba/Nba'
 export {default as Nbadoc} from './Nba/Nbadoc'
@@ -112,6 +114,8 @@ export {default as Coe_syllabus1}from'./coe/Coe_syllabus1'
 export {default as Coe_Committiee}from'./coe/Coe_Committiee'
 export{default as Placement} from './placement/placement'
 export {default as Placement_faq} from './placement/Placement_Faq'
+export {default as Placement_wk_training} from './placement/Placement_wk_training'
+
 // export{default as Mech_coe} from'./Mechdept/Mech_coe'
 export{default as Login} from './Login/Login'
 export{default as Dashboard} from './Dashboard/Dashboard'

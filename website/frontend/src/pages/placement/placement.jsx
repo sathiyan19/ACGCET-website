@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 
 import "./Placement.css";
 import { Backtotop,Floatinmenu,Underline,Deptvision,Deptmission } from "../../widgets";
-import {Accordion,Hodmsg} from '../../components';
 import { placement_menu } from "../../constants/placement";
 
 import {Radial_menu } from "../../components";

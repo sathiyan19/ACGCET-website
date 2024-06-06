@@ -384,6 +384,35 @@ const Physics_dept_fmenu = [
       name: "ACGCET, Karaikudi",
       dur: "06-11-20 to 19-11-20",
     },
+    {
+      sno: "11",
+      title:
+        "One-week online induction programme",
+      name: "ACGCET, Karaikudi",
+      dur: "27.10.2021 – 03.11.2021",
+    },
+    {
+      sno: "12",
+      title:
+        "Tamil Nadu State Government Sponsored Two Weeks Faculty Development Programme on \"Exploring the Fabrication Techniques, Characterization and Applications of Functional Materials\"",
+      name: "ACGCET, Karaikudi",
+      dur: "13.06.2022 - 26.06.2022",
+    },
+    {
+      sno: "13",
+      title:
+        "Two-week induction programme",
+      name: "ACGCET, Karaikudi",
+      dur: "14.11.2022 – 27.11.2022",
+    },
+    {
+      sno: "14",
+      title:
+        "Two-week student induction programme",
+      name: "ACGCET, Karaikudi",
+      dur: "14.9.2023 – 27.09.2023",
+    },
+    
   ];
 
 const phy_former_prof = [
