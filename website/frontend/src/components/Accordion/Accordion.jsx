@@ -46,6 +46,7 @@ const Accordion = ({ accord_data}) => {
             <div className="accord_layout accord_close">
               {item.component==='table'  &&(<Table data={item.structure.data} columns={item.structure.columns}/>)}
               {item.component==='listformat'&&(<Listformat points={item.data}/>)}
+              {item.component==='para'&&(<p className="accord_para_comp">{item.data}</p>)}
             </div>
 
           </div>
