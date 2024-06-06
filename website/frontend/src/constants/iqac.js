@@ -321,6 +321,11 @@ const iqac_floater_menu={
             'link':'Student Satisfaction Survey',
             'path':'/iqac_std_statisfy'
         },
+        {
+            'id':'9',
+            'link':'Committee',
+            'path':'/iqac_committee'
+        },
     ]
 }
 const distinctiveness_data=[
@@ -329,9 +334,76 @@ const distinctiveness_data=[
         'program':'Institutional Distinctiveness',
         'pdf':'https://drive.google.com/file/d/1IsCr0m2dQfR0I2wBrXboBGgOz5PAT3DL/view?usp=sharing'
       },
-
-
 ]
+
+const iqac_com=[
+    {
+        'id':'1',
+        'program':'போதை பொருள் தடுப்பு குழு',
+        'pdf':'https://drive.google.com/file/d/1ZH4Gn3P9C8z7fWLG-lpMMiwb69xf1s0F/view?usp=sharing'
+    },
+    {
+        'id':'2',
+        'program':'Students grievance redressal committee',
+        'pdf':'https://drive.google.com/file/d/1dBxKqzTO4ni0xzPT7s7dqq86UT5q11KZ/view?usp=sharing'
+    },
+    {
+        'id':'3',
+        'program':'Research Advisory committee',
+        'pdf':'https://drive.google.com/file/d/1-Nj0WnGQYAjkBbNu5_rO3o4thglf5rN0/view?usp=sharing'
+    },
+    {
+        'id':'4',
+        'program':'Placement advisory committee',
+        'pdf':'https://drive.google.com/file/d/1eOQfzS1EfQwXb2fLK1s1JCNeHEkUIUyn/view?usp=sharing'
+    },
+    {
+        'id':'5',
+        'program':'Library committee',
+        'pdf':'https://drive.google.com/file/d/1TKHa-9nyg6hjXvz111vCkf1BYGN36ure/view?usp=sharing'
+    },
+    {
+        'id':'6',
+        'program':'Internal committee ',
+        'pdf':'https://drive.google.com/file/d/1xUPFa0h9XPOZ6vadVi8QzdeXh0PA9yZA/view?usp=sharing'
+    },
+    {
+        'id':'7',
+        'program':'Hostel committee',
+        'pdf':'https://drive.google.com/file/d/1gVEfbqewbHAjckku2KYutYDDtH7QoISB/view?usp=sharing'
+    },
+    {
+        'id':'8',
+        'program':'Grievance redressal committee',
+        'pdf':'https://drive.google.com/file/d/1BwRJ5LHg-VuHmdM-62iOcbTS9iBCIabl/view?usp=sharing'
+    },
+    {
+        'id':'9',
+        'program':'Examination reform committee',
+        'pdf':'https://drive.google.com/file/d/1BgUmw4mI-urL_3plHEoBGX8VCHXC1SbU/view?usp=sharing'
+    },
+    {
+        'id':'10',
+        'program':'Differently abled persons welfare committee',
+        'pdf':'https://drive.google.com/file/d/1-2F-hErRd6EGIS9qHgyBDs7gi0qa9gUc/view?usp=drive_link'
+    },
+    {
+        'id':'11',
+        'program':'Committee for SC-ST',
+        'pdf':'https://drive.google.com/file/d/1GhaZQgLZCNORnBemF4pMAH002id3RfrJ/view?usp=sharing'
+    },
+    {
+        'id':'12',
+        'program':'Co curricular-Extra curricular activities committee',
+        'pdf':'https://drive.google.com/file/d/1bszhAa8wYJzLYbarkZ4BECoQmP0GibBu/view?usp=sharing'
+    },
+    {
+        'id':'13',
+        'program':'Anti ragging committee',
+        'pdf':'https://drive.google.com/file/d/1nHKTUtFQEqas_hsNODkyQg5yh6CWaA1H/view?usp=drive_link'
+    },
+]
+
 const Strategic_data=[
     {
         'id':'1',
@@ -350,6 +422,7 @@ const Iqac_std_statisfy_data=[
     }
 ]
 
+
 export {
     iqac,
     iqac_func,
@@ -361,5 +434,6 @@ export {
     iqac_floater_menu,
     distinctiveness_data,
     Strategic_data,
-    Iqac_std_statisfy_data
+    Iqac_std_statisfy_data,
+    iqac_com
 };

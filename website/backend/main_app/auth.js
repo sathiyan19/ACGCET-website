@@ -38,8 +38,8 @@ const {find_dept}=require('./support_functions.js')
     }
 
       //--------------changes-----------------for recaptcha
-      res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-      res.setHeader('Access-Control-Allow-Credentials', 'true');
+      // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+      // res.setHeader('Access-Control-Allow-Credentials', 'true');
       //--------------changes-----------------
 
       if (ispswd) {
@@ -53,11 +53,7 @@ const {find_dept}=require('./support_functions.js')
       }
     } catch (error) {
       console.log(error);
-      console.error("Error calling function: ", error);
-      throw new functions.https.HttpsError(
-        "internal",
-        "Internal server error."
-      );
+      
     }
   };
 
