@@ -54,8 +54,8 @@ const top_nav_paths = [
     id: "5",
     type: "1",
     title: "Placement",
-    basepath: "/under",
-    // basepath: "/placement",
+    // basepath: "/under",
+    basepath: "/placement",
     links: [],
   },
 
@@ -74,7 +74,7 @@ const top_nav_paths = [
       { path: "/yrc", link: "YRC" },
       { path: "/uba", link: "UBA" },
       { path: "/thiran", link: "Thiran" },
-      { path: "/Xprez", link: "Xprez" },
+      // { path: "/Xprez", link: "Xprez" },
     ],
   },
   

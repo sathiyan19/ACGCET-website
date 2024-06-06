@@ -42,7 +42,7 @@ const Ece_research = () => {
     <div className="ecedept">
     <div className="ecebg">
       <div className="eceheading">
-      Department of Electrical and Electronics Engineering
+      Department of Electronics and Communication Engineering
       </div>
       <div className='ece_sub_heading'>Research and Publications</div>
     </div>

@@ -11,6 +11,12 @@
     flex: 1;
   }
   
+  .accord_para_comp{
+    font-size: 18px;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: black;
+  }
   
   .accord_tabs {
     width: 90%;
@@ -101,7 +107,7 @@
     animation: slideup 0.5s ease; /* Changed 'ease' to 'linear' */
     transform-origin: top; /* Set the transform origin to the top to control the direction of scaling */
     transform: scaleY(0);
-    overflow-x: scroll;
+    overflow-x: auto;
      /* Added a transition for smooth scaleY changes */
 }
 
@@ -123,8 +129,14 @@
     }
 }
 
+@media(max-width:500px){
+  .accord_para_comp{
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 450px){
-  .accord_layout accord_close{
+  .accord_layout .accord_close{
     width: 70%;
   }
   .accord_tabs{
@@ -133,7 +145,7 @@
 }
 
 @media (max-width: 410px){
-  .accord_layout accord_close{
+  .accord_layout .accord_close{
     width: 70%;
   }
   .accord_tabs{
@@ -142,11 +154,11 @@
 }
 
 @media (max-width: 350px){
-  .accord_layout accord_close{
+  .accord_layout .accord_close{
     width: 60%;
   }
   .accord_tabs{
-    width:60%;
+    width:70%;
   }
 }
 /* @media (max-width: 768px) {

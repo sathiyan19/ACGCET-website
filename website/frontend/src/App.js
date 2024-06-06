@@ -156,7 +156,8 @@ import {
   Verification,
   Dash_results,
   Iqac_strategic,
-  Autonomous
+  Autonomous,
+  Placement_faq
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -298,6 +299,7 @@ const App = () => {
         <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
         <Route path="/mechdept/mech-sae"element={<Mech_events/>}/>
         <Route path="/placement" element={<Placement />} />
+        <Route path="/placement/faqs" element={<Placement_faq/>}/>
         <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
          
          <Route path="/coe"element={<Coe/>}/>
