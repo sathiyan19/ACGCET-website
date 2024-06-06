@@ -694,12 +694,12 @@ const civ_patents = [
 const civ_stud_achivement =[
   {
     'id':'1',
-    'heading':"Raveen A (91762211042)",
+    'heading':"Raveena (91762211042)",
     'sub-head':"Batch : 2022-2026",
     'pic':ravena,
     link: "https://drive.google.com/file/d/12KX9ldS2rRIhiO0kDMwrHHKPqKjzaItF/view?usp=sharing",
     'content_1':'',
-    'content_2':"Raveen A of II year Civil (Batch 2022- 2026) has represented Anna University in the All India Inter-University Karate tournament held between 16.03.3034 and 19.03.2024 at Panjab University, Chandigarh"
+    'content_2':"Raveena of II year Civil (Batch 2022- 2026) has represented Anna University in the All India Inter-University Karate tournament held between 16.03.3034 and 19.03.2024 at Panjab University, Chandigarh"
 },
 ];
 
