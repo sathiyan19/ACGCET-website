@@ -22,7 +22,13 @@ const placement_menu =[
         path: "/placement/faqs",
         link: "FAQs",
         arl:'l'
-    }
+    },
+    {
+        id: "5",
+        path: "/placement/Placement_wk_training",
+        link: "Training and Workshops",
+        arl:'l'
+    },
 ]
 
 const placement_faqs=[
@@ -217,9 +223,73 @@ const placement_faqs=[
     },
 
 ]
+const placement_mock_drive=[
+    {
+        'sno':'1',
+        'dept':'EEE',
+        'interviewer':'S. Anubama',
+        'company':'TVS Training and Services',
+    },
+    {
+        'sno':'2',
+        'dept':'EEE',
+        'interviewer':'S. Muthukumar',
+        'company':'M&M Automotive Division',
+    },
+    {
+        'sno':'3',
+        'dept':'Civil',
+        'interviewer':'Venkatesh Prabhakar',
+        'company':'JENO Maran Builders Pvt Ltd',
+    },
+    {
+        'sno':'4',
+        'dept':'Civil',
+        'interviewer':'Jayakumar',
+        'company':'Oasis Grace, Muscat',
+    },
+    {
+        'sno':'5',
+        'dept':'Mechanical',
+        'interviewer':'Swarnam J Vasudevan',
+        'company':'India Yamaha Motors',
+    },
+
+    {
+        'sno':'6',
+        'dept':'Mechanical',
+        'interviewer':'Sakthivel',
+        'company':'Sri Vigneswara Cold forge',
+    },
+    {
+        'sno':'7',
+        'dept':'Mechanical',
+        'interviewer':'R Kannan',
+        'company':'Maktec Engineering corporation',
+    },
+    {
+        'sno':'8',
+        'dept':'Mechanical',
+        'interviewer':'K Rajmohan',
+        'company':'BHEL',
+    },
+    {
+        'sno':'9',
+        'dept':'ECE',
+        'interviewer':'Meenakshi Shanmugam',
+        'company':'Career Coach',
+    },
+    {
+        'sno':'10',
+        'dept':'IT',
+        'interviewer':'Muneeswaran',
+        'company':'Zoho Corp with a team of 11 members from Zoho Corp, Karaikudi.',
+    },
+]
 
 
 export{
     placement_menu,
-    placement_faqs
+    placement_faqs,
+    placement_mock_drive
 };
