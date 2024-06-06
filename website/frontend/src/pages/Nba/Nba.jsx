@@ -7,6 +7,7 @@ import { Table ,Radial_menu } from "../../components";
 import { nba,nba_menu } from "../../constants/nba";
 
 import { Floatinmenu,Underline } from "../../widgets";
+import { BsClipboardDataFill } from "react-icons/bs";
 
 
 const Nba = () => {
@@ -25,7 +26,11 @@ const Nba = () => {
     <div className='nba'>
       <section className="nbamenu">
       <div className="nba_float_menu">
-          <Floatinmenu  head="Menu" links={nba_menu} />
+          <Floatinmenu
+            logo={BsClipboardDataFill}
+            head="Menu"
+            links={nba_menu}
+          />
         </div>
         <Radial_menu menu_links={nba_menu}/>
       <Underline heading="NBA" />
