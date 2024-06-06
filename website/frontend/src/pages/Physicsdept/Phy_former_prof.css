@@ -1,0 +1,45 @@
+.Physics_sub_heading {
+    text-align: center;
+    position: absolute;
+    color: #ff6600;
+    font-size: 150%;
+    top: 75%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px #000;
+  }
+
+  .shphydark {
+    /* display: flex;
+      flex-direction: column; */
+    padding: 40px 20px;
+    width: 75%;
+    /* border-radius: 5px 0 5px 0; */
+  }
+ 
+
+  @media (max-width: 1024px) {
+    .Physicsheading {
+      top: 35%;
+      font-size: 150%;
+      font-weight: 500;
+    }
+    .Physics_sub_heading {
+      font-size: 100%;
+      font-weight: 500;
+    }
+    .ecebg {
+      width: 100%;
+      height: 700px;
+    }
+  }
+  @media (max-width: 768px) {
+    .shphydark {
+      width: 100%;
+    }
+    .shphydept_float_menu {
+      display: none;
+    }
+}
+ 

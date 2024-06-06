@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { Table,Radial_menu } from '../../components'
-import { Sh_dept_fmenu,chemi_prog } from '../../constants/Sh_dept_menu'
-import { Backtotop,Floatinmenu } from '../../widgets';
+import { Chemistry_dept_fmenu,chemi_prog } from '../../constants/chemistry_dept'
+import { Backtotop,Floatinmenu,Underline } from '../../widgets';
 
 import { GrTest } from "react-icons/gr";
 const Sh_Chemi_prog = () => {
@@ -19,10 +19,11 @@ const Sh_Chemi_prog = () => {
       <div>
     <section className="shchemidark">
             <div className="dept_float_menu">
-              <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
+              <Floatinmenu logo={GrTest} head="Menu" links={Chemistry_dept_fmenu} />
             </div>
-            <Radial_menu menu_links={Sh_dept_fmenu} />
+            <Radial_menu menu_links={Chemistry_dept_fmenu} />
       <div className='sh_chemi'>
+      <Underline heading="Programme Organized"/>
       <Table data={chemi_prog} columns={columns} />
       </div> 
       </section>

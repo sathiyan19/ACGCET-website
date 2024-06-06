@@ -1,48 +1,71 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 
 import "./Sports.css";
 
-
-import { Heroimagecarousal, Timeline, Listformat } from "../../components";
-import { Deptvision, Underline, Deptmission,Devcard } from "../../widgets";
 import {
-  Sports_heroimage_carousalinfo,
-  sportstime,
-  sportslist,
-  sportsvision,
-  sportsmission,
+  Heroimagecarousal,
+  Timeline,
+  Listformat,
+  Slideshow,
+} from "../../components";
+import { Sportcard,Underline } from "../../widgets";
+
+import { Events } from "../../containers";
+import {
+  sports_meet_2k24_schedule,
+  sports_slideshow,
+  sport_cards,
 } from "../../constants/sports";
+// import {
+//   Sports_heroimage_carousalinfo,
+//   sportstime,
+//   sportslist,
+//   sportsvision,
+//   sportsmission,
+// } from "../../constants/sports";
 
 const Sports = () => {
   useEffect(() => {
-    document.title = 'ACCET-Sports';
+    document.title = "ACCET-Sports";
   }, []);
   return (
     <div>
-      Sports
-      {/* hero image */}
-      {/* <Heroimagecarousal
-        key={Sports_heroimage_carousalinfo.id}
-        title={Sports_heroimage_carousalinfo.title}
-        img_list={Sports_heroimage_carousalinfo.img_list}
-      /> */}
+      <div className="sports_slides">
+        <Slideshow images={sports_slideshow} />
+      </div>
 
-      {/* <div className="vimisec">
-        <Underline heading="sathiyan" />
-        <Deptvision visiondata={sportsvision.visiondata} />
-        <Deptmission head="SSS" points={sportsmission} />
-        {sportstime.map((item) => (
-          <Timeline
-            head={item.head}
-            house={item.house}
-            content={item.content}
-          />
-        ))}
+      <div className="sports_content_area">
 
-        <Listformat points={sportslist} />
+        <Underline heading="Sports"/>
 
-        <Devcard/> */}
-      {/* </div> */}
+        <p className="sports_top_head">ACMARA RIVALRY'24</p>
+        <p className="sports_head">Team Standings</p>
+        <p className="sports_notification">After Men's Football matches...</p>
+
+        <div className="sports_cards_holder">
+          {sport_cards.map((team) => {
+            return (
+              <Sportcard
+                key={team.id}
+                img={team.img}
+                head={team.head}
+                points={team.points}
+                wins={team.wins}
+                link={team.link}
+              />
+            );
+          })}
+        </div>
+
+        <a className="sports_insta_link" href="https://www.instagram.com/actech_sports/">
+          <p className="sports_insta_desc">For faster updates, follow our instagram page here!</p>
+        </a>
+
+        <p className="sports_head sports_page_anamoly">Sports Meet Schedule</p>
+
+        <Events events={sports_meet_2k24_schedule} />
+
+      </div>
     </div>
   );
 };

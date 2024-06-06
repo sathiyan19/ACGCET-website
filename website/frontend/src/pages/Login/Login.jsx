@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import "./Login.css";
 import svg from "../../assets/pictures/login_svg.svg";
 import axios from "axios";
+import ReCaptcha from "../../components/Recaptcha/Recaptcha";
 
 axios.defaults.withCredentials = true;
 
@@ -11,6 +12,16 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [usrerror, setUsrerror] = useState("");
   const [pswderror, setPswderror] = useState("");
+
+//   // recaptcha
+  const [retoken, setreToken] = useState('');
+  const [submitEnabled, setSubmitEnabled] = useState(false);
+
+  useEffect(() => {
+    if (retoken.length) {
+        setSubmitEnabled(true)
+    }
+}, [retoken])
 
   const navigate = useNavigate();
 
@@ -32,19 +43,23 @@ const Login = () => {
 
   const form_submit = async (e) => {
     e.preventDefault();
-    console.log(username, password);
+    // console.log(username, password);
+    setUsername(username.trim());
+    setPassword(password.trim());
 
     let uflag = 0,
       pflag = 0;
     try {
-      if (username.trim().length === 0) {
-        setUsrerror("Enter Register number");
+      // console.log(username.length)
+      if (username.length !==7 && username.length !==11) {
+        // console.log("inside")
+        setUsrerror("Enter valid register number");
       } else {
         uflag = 1;
         setUsrerror("");
       }
 
-      if (password.trim().length === 0) {
+      if (password.length === 0) {
         setPswderror("Enter Password");
       } else {
         pflag = 1;
@@ -57,16 +72,29 @@ const Login = () => {
         } else if (username.length === 11) {
           code = username.substring(6, 8);
         }
-        console.log(find_dept(code));
-        const res = await axios.post("http://localhost:5002/api/login", {
+        // console.log(find_dept(code));
+        const res = await axios.post("/backend/login", {
           username,
           password,
         });
-        console.log(res.data.pswd_status);
-        if (res.data.pswd_status) {
-          console.log("Matched");
-          navigate("/dashboard");
-        } else {
+        // console.log(res.data.pswd_status);
+        if(username==='91762115000'&& res.data.pswd_status){
+          console.log("admin pass matched");
+          navigate("/admin-panel");
+        }
+       
+        else if (res.data.pswd_status) {
+          // console.log("Matched");
+          // console.log("p_flag:", res.data.p_flag); 
+          // console.log(res.data.reg_no);
+          navigate("/dashboard", { state: { pflag: res.data.p_flag , regno : res.data.regno } });
+        }
+
+        else if(res.data.username_not_found){
+          setUsrerror("Register number not found")
+        }
+        
+         else {
           setPassword("");
           setPswderror("Incorrect password");
         }
@@ -75,6 +103,22 @@ const Login = () => {
       console.error(error);
     }
   };
+
+//   // recaptcha
+  const handleToken = (retoken) => {
+    setreToken(retoken)
+  }
+
+  useEffect(()=>{
+    // console.log("started!")
+    axios.get("/backend/login_verification")
+    .then((res)=>{
+      // console.log(res)
+      if(res.data.token_status==="okay"){
+        navigate("/dashboard")
+      }
+    })
+  },[])
 
   return (
     <div className="login-pagef">
@@ -99,7 +143,7 @@ const Login = () => {
                   autoComplete="username"
                   value={username}
                   type="text"
-                  placeholder="Username"
+                  placeholder="Register Number"
                   onChange={(e) => setUsername(e.target.value)}
                 />
                 <i className="fa fa-user"></i>
@@ -118,7 +162,14 @@ const Login = () => {
                 <i className="fa fa-lock"></i>
               </div>
 
-              <button type="submit" className="login-submit">
+              {/* recaptcha className="login-submit"     className={`${submitEnabled ? 'bg-blue-600 hover:bg-blue-900' : 'bg-gray-600 cursor-not-allowed'} px-6 py-2 mt-4 text-white  rounded-lg `*/}
+
+              <div className="captcha">
+                        <ReCaptcha siteKey="6LfdMIUpAAAAAFboyQAwnlX8ikyxl1eXy8YhERhN" callback={handleToken} />
+              </div>
+
+              <button disabled={!submitEnabled} type="submit" className={`${submitEnabled ? 'login-submit enabled' : 'login-submit disabled'}`}
+              >
                 Login
               </button>
             </form>

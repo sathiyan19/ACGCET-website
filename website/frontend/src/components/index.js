@@ -18,3 +18,7 @@ export {default as Sh_tab_Programme} from './Sh_tabs/Sh_tab_Programme'
 export {default as Reunion_card_display} from './Reunion_card_display/Renioun_card_display';
 export {default as Accordion} from './Accordion/Accordion';
 export {default as Chatbot} from './Chatbot/Chatbot';
+export {default as Recaptcha} from './Recaptcha/Recaptcha';
+export {default as Pic_gallery} from './Pic_gallery/Pic_gallery';
+export {default as Sidenavbar} from './Sidenavbar/Sidenavbar'
+export {default as Dash_radialmenu} from './Dash_radialmenu/Dash_radialmenu'

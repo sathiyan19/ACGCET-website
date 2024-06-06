@@ -2,11 +2,13 @@ import React from 'react'
 
 import { Backtotop,Floatinmenu, Underline,Modal} from "../../widgets";
 
-import { Sh_dept_fmenu } from '../../constants/Sh_dept_menu';
+import { English_dept_fmenu } from '../../constants/english_dept';
 import { Radial_menu } from "../../components";
-import englab from "../../assets/pictures/englab.webp"
+// import englab from "../../assets/pictures/englab.webp"
 
 import { RiEnglishInput } from "react-icons/ri";
+
+const englab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/English/englab.webp"
 
 
 const Sh_Eng_lab = () => {
@@ -14,9 +16,9 @@ const Sh_Eng_lab = () => {
     <div>
       <section className="shengdark">
         <div className="shengdept_float_menu">
-          <Floatinmenu logo={RiEnglishInput} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={RiEnglishInput} head="Menu" links={English_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={English_dept_fmenu} />
         <div className="sheng_abt_area">
         <div className="sheng_abt">
         <Underline heading="English Language laboratory"/>

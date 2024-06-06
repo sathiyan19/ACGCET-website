@@ -11,7 +11,7 @@ const Dropdown = ({type,title,base,links,func}) => {
   }else if(type==="3"){
     class_name="nav-link link"
   }else if(type==="4"){
-    class_name="nav-link login_button fa fa-user-alt"
+    class_name="nav-link login_button "
   }
 
 

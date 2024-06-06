@@ -2,20 +2,21 @@ import React from 'react'
 
 import { Backtotop,Floatinmenu, Underline,Modal} from "../../widgets";
 
-import { Sh_dept_fmenu } from '../../constants/Sh_dept_menu';
+import { Chemistry_dept_fmenu } from '../../constants/chemistry_dept';
 import { Radial_menu } from "../../components";
 
 import { GrTest } from "react-icons/gr";
-import chemilab from "../../assets/pictures/chemilab.webp"
+// import chemilab from "../../assets/pictures/chemilab.webp"
+const chemilab ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Chemistry/chemilab.webp"
 
 const Sh_Chemi_lab = () => {
   return (
     <div>
       <section className="shengdark">
         <div className="shengdept_float_menu">
-          <Floatinmenu logo={GrTest} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GrTest} head="Menu" links={Chemistry_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={Chemistry_dept_fmenu} />
         <div className="sheng_abt_area">
         <div className="sheng_abt">
         <Underline heading="Chemistry laboratory"/>

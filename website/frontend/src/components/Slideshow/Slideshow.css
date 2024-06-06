@@ -9,7 +9,7 @@
     display: none
 }
 
-.active{
+.slide_active{
     display: block !important;
 }
 

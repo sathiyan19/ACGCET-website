@@ -3,10 +3,11 @@ import React,{useEffect} from "react";
 import "./Yrc.css";
 import { Underline } from "../../widgets";
 import { Listformat } from "../../components";
-import abt from "../../assets/pictures/yrc/abt.webp";
-import yrclogo from "../../assets/pictures/yrc/ll.webp";
+// import abt from "../../assets/pictures/yrc/abt.webp";
+// import yrclogo from "../../assets/pictures/yrc/ll.webp";
 import { yrclist } from "../../constants/yrc";
-
+const abt="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/yrc/yrc/abt.webp"
+const yrclogo="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/yrc/yrc/yrclogo.webp"
 const Yrc = () => {
   useEffect(() => {
     document.title = 'ACCET-YRC';

@@ -2,11 +2,12 @@ import React from 'react'
 
 import { Backtotop,Floatinmenu, Underline,Modal} from "../../widgets";
 
-import { Sh_dept_fmenu } from '../../constants/Sh_dept_menu';
+import { Physics_dept_fmenu } from '../../constants/physics_dept';
 import { Radial_menu } from "../../components";
 import { GiPendulumSwing } from "react-icons/gi";
 
-import phylab from '../../assets/pictures/phylab.webp'
+// import phylab from '../../assets/pictures/phylab.webp'
+const phylab = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/phylab.webp"
 
 
 const Sh_Phy_lab = () => {
@@ -14,9 +15,9 @@ const Sh_Phy_lab = () => {
     <div>
       <section className="shphydark">
         <div className="shphydept_float_menu">
-          <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Sh_dept_fmenu} />
+          <Floatinmenu logo={GiPendulumSwing} head="Menu" links={Physics_dept_fmenu} />
         </div>
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={Physics_dept_fmenu} />
         <div className="shphy_abt_area">
         <div className="shphy_abt">
         <Underline heading="Physics laboratory"/>

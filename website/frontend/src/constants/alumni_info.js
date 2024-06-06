@@ -1,14 +1,23 @@
-import contrib_pic from '../assets/pictures/clgphoto.webp'
-import cover from "../assets/pictures/cover pic.jpg";
-import alumni1 from '../assets/pictures/alumni1.webp'
-import alumni2 from '../assets/pictures/alumni2.webp'
-import alumni3 from '../assets/pictures/alumni3.webp'
+// import contrib_pic from '../assets/pictures/clgphoto.webp'
+// import cover from "../assets/pictures/cover pic.jpg";
+// import alumni1 from '../assets/pictures/alumni1.webp'
+// import alumni2 from '../assets/pictures/alumni2.webp'
+// import alumni3 from '../assets/pictures/alumni3.webp'
 
-import coral_reef from '../assets/pictures/alumni_pics/coral_reef_alumni.webp'
-import alumni_1982 from '../assets/pictures/alumni_pics/alumni_1982.webp'
-import silver_98 from '../assets/pictures/alumni_pics/silver_98.webp'
-import pre_gold_79 from '../assets/pictures/alumni_pics/pre_gold_79.webp'
-import diam_68 from '../assets/pictures/alumni_pics/diam_68.webp'
+// import coral_reef from '../assets/pictures/alumni_pics/coral_reef_alumni.webp'
+// import alumni_1982 from '../assets/pictures/alumni_pics/alumni_1982.webp'
+// import silver_98 from '../assets/pictures/alumni_pics/silver_98.webp'
+// import pre_gold_79 from '../assets/pictures/alumni_pics/pre_gold_79.webp'
+// import diam_68 from '../assets/pictures/alumni_pics/diam_68.webp'
+const coral_reef="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/reunions/alumni_pics/coral_reef_alumni.webp"
+const alumni_1982="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/reunions/alumni_pics/alumni_1982.webp"
+const silver_98="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/reunions/alumni_pics/silver_98.webp"
+const pre_gold_79="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/reunions/alumni_pics/pre_gold_79.webp"
+const diam_68="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/reunions/alumni_pics/diam_68.webp"
+const contrib_pic="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/about/clgphoto.webp"
+const alumni1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/about/alumni1.webp"
+const alumni2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/about/alumni2.webp"
+const alumni3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/about/alumni3.webp"
 
 export const contributions=[
     {

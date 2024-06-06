@@ -6,7 +6,7 @@ import underm from '../../assets/pictures/uctmob.webp'
 
 import { Backtotop } from "../../widgets";
 import { Radial_menu } from "../../components";
-import { Sh_dept_fmenu } from '../../constants/Sh_dept_menu';
+import { English_dept_fmenu } from '../../constants/english_dept';
 
 
 const Sh_Eng_research = () => {
@@ -20,7 +20,7 @@ const Sh_Eng_research = () => {
         <img className='uct_bg_mob' src={underm} alt='under_constructionp'/>
       </div>
         
-        <Radial_menu menu_links={Sh_dept_fmenu} />
+        <Radial_menu menu_links={English_dept_fmenu} />
         
         </section>
         <Backtotop/>

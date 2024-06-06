@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import './Radial_menu.css'
@@ -9,6 +9,15 @@ const Radial_menu = ({menu_links}) => {
   const toggle_menu = () => {
     setmenu_open(!menu_open);
   };
+  useEffect(()=>{
+    const handleRadialdis = () => {
+      if(window.innerWidth>500){
+        setmenu_open(false)
+      }
+    };
+    window.addEventListener('resize', handleRadialdis);
+  },[]);
+
   return (
     <>
       <div

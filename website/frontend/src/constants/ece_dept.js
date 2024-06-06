@@ -1,76 +1,164 @@
 // import dp from "../assets/pictures/dp.jpg";
-import dpm from "../assets/pictures/boy.webp";
-import dpf from "../assets/pictures/girl.webp";
-import cover from "../assets/pictures/microchip.webp";
+// import dpm from "../assets/pictures/boy.webp";
+// import dpf from "../assets/pictures/girl.webp";
+// import cover from "../assets/pictures/microchip.webp";
 
-import swayam from "../assets/pictures/swayam.webp";
-import robotics from "../assets/pictures/robotics.webp";
-import placement from "../assets/pictures/placement.webp";
+// import swayam from "../assets/pictures/swayam.webp";
+// import robotics from "../assets/pictures/robotics.webp";
+// import placement from "../assets/pictures/placement.webp";
 
-import ece_adc_lab from "../assets/pictures/ece_dept/ece_labs/ece_adc_lab-c.webp"
-import ece_rfs_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfs_lab-c.webp"
-import ece_fo_lab from "../assets/pictures/ece_dept/ece_labs/ece_fo_lab.webp"
-import ece_cn_lab from "../assets/pictures/ece_dept/ece_labs/ece_cn_lab.webp"
-import ece_vlsi_lab from "../assets/pictures/ece_dept/ece_labs/ece_vlsi_lab.webp"
-import ece_ic_lab from "../assets/pictures/ece_dept/ece_labs/ece_ic_lab.webp"
-import ece_sig_lab from "../assets/pictures/ece_dept/ece_labs/ece_sig_lab.webp"
-import ece_edc_lab from "../assets/pictures/ece_dept/ece_labs/ece_edc_lab.webp"
-import ece_rfm_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfm_lab.webp"
-import ece_opt_lab from "../assets/pictures/ece_dept/ece_labs/ece_opt_lab.webp"
-import ece_pcb_lab from "../assets/pictures/ece_dept/ece_labs/PCB_Fabrication_Station.webp"
-import ece_antenna_lab from "../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.webp";
+// import ece_adc_lab from "../assets/pictures/ece_dept/ece_labs/ece_adc_lab-c.webp"
+// import ece_rfs_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfs_lab-c.webp"
+// import ece_fo_lab from "../assets/pictures/ece_dept/ece_labs/ece_fo_lab.webp"
+// import ece_cn_lab from "../assets/pictures/ece_dept/ece_labs/ece_cn_lab.webp"
+// import ece_vlsi_lab from "../assets/pictures/ece_dept/ece_labs/ece_vlsi_lab.webp"
+// import ece_ic_lab from "../assets/pictures/ece_dept/ece_labs/ece_ic_lab.webp"
+// import ece_sig_lab from "../assets/pictures/ece_dept/ece_labs/ece_sig_lab.webp"
+// import ece_edc_lab from "../assets/pictures/ece_dept/ece_labs/ece_edc_lab.webp"
+// import ece_rfm_lab from "../assets/pictures/ece_dept/ece_labs/ece_rfm_lab.webp"
+// import ece_opt_lab from "../assets/pictures/ece_dept/ece_labs/ece_opt_lab.webp"
+// import ece_pcb_lab from "../assets/pictures/ece_dept/ece_labs/PCB_Fabrication_Station.webp"
+// import ece_antenna_lab from "../assets/pictures/ece_dept/ece_labs/ECE_Ant_Chamber_1.webp";
+
+// import thiran_2k22 from "../assets/pictures/ece_dept/stud_activities/Thiran 2k22.webp";
+// import circuit_debug from "../assets/pictures/ece_dept/stud_activities/Circuit Debugging.webp";
+// import best_manager from "../assets/pictures/ece_dept/stud_activities/best_manager.webp";
+// import tech_quiz from "../assets/pictures/ece_dept/stud_activities/tech_quiz.webp";
+// import paper_presentation from "../assets/pictures/ece_dept/stud_activities/paper_presentation.webp";
+// import circuit_designers from "../assets/pictures/ece_dept/stud_activities/circuit_designers.webp";
+// import top_design1 from "../assets/pictures/ece_dept/stud_activities/top_design1.webp";
+// import top_design2 from "../assets/pictures/ece_dept/stud_activities/top_designer2.webp";
+// import hrk_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/hrk_topdesign_2k22.webp";
+// import sow_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/sow_topdesign_2k22.webp";
+// import anu_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/anu_topdesign_2k22.webp";
+// import asw_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/asw_topdesign_2k22.webp";
+// import malai_thiran_23 from "../assets/pictures/ece_dept/stud_activities/malai_thiran_23.webp";
+// import mm_thiran_23 from "../assets/pictures/ece_dept/stud_activities/mm_thiran_23.webp";
+// import gok_thiran_23 from "../assets/pictures/ece_dept/stud_activities/gok_thiran_23.webp";
+// import jos_thiran_23 from "../assets/pictures/ece_dept/stud_activities/jos_thiran_23.webp";
+
+ 
+
+// import ncmoc19 from '../assets/pictures/ece_dept/ece_events/ncmoc19.webp'
+// import stal21 from '../assets/pictures/ece_dept/ece_events/stalwartz21.webp'
+// import prag21 from '../assets/pictures/ece_dept/ece_events/pragyanz21.webp'
+// import prag22 from '../assets/pictures/ece_dept/ece_events/pragyanz22.webp'
+// import unknown from '../assets/pictures/ece_dept/ece_events/unkown.webp'
+
+// import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
+
+// import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
+// import aruna from "../assets/pictures/ece_dept/ece_faculties/Ece_Aruna Rani M-1.webp"
+// import helena from "../assets/pictures/ece_dept/ece_faculties/Ece_HelenaD-1.webp"
+// import rajesh from "../assets/pictures/ece_dept/ece_faculties/Ece_KarpagarajeshG-1.webp"
+// import keerthana from "../assets/pictures/ece_dept/ece_faculties/Ece_KeerthanaP-1.webp"
+// import mahendran from "../assets/pictures/ece_dept/ece_faculties/Ece_Mahendran C-1.webp"
+// import merlin from "../assets/pictures/ece_dept/ece_faculties/Ece_Merlin sheeba X-1.webp"
+// import khanna from "../assets/pictures/ece_dept/ece_faculties/Ece_Rajesh kanna B-1.webp"
+// import ramya from "../assets/pictures/ece_dept/ece_faculties/Ece_Ramya SP-1.webp"
+// import renisha from "../assets/pictures/ece_dept/ece_faculties/Ece_RenishaG-1.webp"
+// import sindhu from "../assets/pictures/ece_dept/ece_faculties/Ece_SindujaC-1.webp"
+// import sezhina from "../assets/pictures/ece_dept/ece_faculties/sezhina.webp"
+// import karthika from "../assets/pictures/ece_dept/ece_faculties/karthika.webp"
+// import nandhini from "../assets/pictures/ece_dept/ece_faculties/dhevanandhini.webp"
+
+// import akila from "../assets/pictures/ece_dept/ece_faculties/akila.webp"
+// import chandrasekar from "../assets/pictures/ece_dept/ece_faculties/chandrasekaran.webp"
+// import selvi from "../assets/pictures/ece_dept/ece_faculties/tamilselvi.webp"
+// import vasanthi from "../assets/pictures/ece_dept/ece_faculties/vasanthi.webp"
+// import karthi from "../assets/pictures/ece_dept/ece_faculties/karthikeyan.webp"
+// import sankar from "../assets/pictures/ece_dept/ece_faculties/sankar.webp"
+
+// import priya_21 from '../assets/pictures/ece_dept/ece_rankers/priya_21.webp'
+// import navin_21 from '../assets/pictures/ece_dept/ece_rankers/navin_21.webp'
+// import aish_20 from '../assets/pictures/ece_dept/ece_rankers/aishwarya_20.webp'
+// import sujitha_20 from '../assets/pictures/ece_dept/ece_rankers/sujitha_20.webp'
+
+const dpm="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/boy.webp"
+const dpf="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/girl.webp"
+const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/microchip.webp"
 
 
-import thiran_2k22 from "../assets/pictures/ece_dept/stud_activities/Thiran 2k22.webp";
-import circuit_debug from "../assets/pictures/ece_dept/stud_activities/Circuit Debugging.webp";
-import best_manager from "../assets/pictures/ece_dept/stud_activities/best_manager.webp";
-import tech_quiz from "../assets/pictures/ece_dept/stud_activities/tech_quiz.webp";
-import paper_presentation from "../assets/pictures/ece_dept/stud_activities/paper_presentation.webp";
-import circuit_designers from "../assets/pictures/ece_dept/stud_activities/circuit_designers.webp";
-import top_design1 from "../assets/pictures/ece_dept/stud_activities/top_design1.webp";
-import top_design2 from "../assets/pictures/ece_dept/stud_activities/top_designer2.webp";
-import hrk_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/hrk_topdesign_2k22.webp";
-import sow_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/sow_topdesign_2k22.webp";
-import anu_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/anu_topdesign_2k22.webp";
-import asw_top_design_2k22 from "../assets/pictures/ece_dept/stud_activities/asw_topdesign_2k22.webp";
-import malai_thiran_23 from "../assets/pictures/ece_dept/stud_activities/malai_thiran_23.webp";
-import mm_thiran_23 from "../assets/pictures/ece_dept/stud_activities/mm_thiran_23.webp";
-import gok_thiran_23 from "../assets/pictures/ece_dept/stud_activities/gok_thiran_23.webp";
-import jos_thiran_23 from "../assets/pictures/ece_dept/stud_activities/jos_thiran_23.webp";
+const swayam="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
+const robotics="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/robotics.webp"
+const placement="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/placement.webp"
 
-import ncmoc19 from '../assets/pictures/ece_dept/ece_events/ncmoc19.webp'
-import stal21 from '../assets/pictures/ece_dept/ece_events/stalwartz21.webp'
-import prag21 from '../assets/pictures/ece_dept/ece_events/pragyanz21.webp'
-import prag22 from '../assets/pictures/ece_dept/ece_events/pragyanz22.webp'
-import unknown from '../assets/pictures/ece_dept/ece_events/unkown.webp'
+const sundar_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/sundarapandi_23.webp"
+const bharathi_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/bharathi_23.webp"
+const dhanaraman_22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/dhanaraman_22.webp"
+const swetha_22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/swethasri_22.webp"
+const priya_21  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/priya_21.webp"
+const navin_21 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/navin_21.webp"
+const aish_20 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/aishwarya_20.webp"
+const sujitha_20="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/eliterankers/sujitha_20.webp"
+const somasundaram = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Somasundaram.webp"
+const asr= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/ASR.webp"
+const aruna = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Aruna+Rani+M-1.webp"
+const helena = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_HelenaD-1.webp"
+// const  rajesh= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Rajesh+kanna+B-1.webp"
+const keerthana = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_KeerthanaP-1.webp"
+const mahendran = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Mahendran+C-1.webp"
+const merlin = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Merlin+sheeba+X-1.webp"
+const khanna = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Rajesh+kanna+B-1.webp"
+const ramya = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Ramya+SP-1.webp"
+const  renisha= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_RenishaG-1.webp"
+const sindhu = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_SindujaC-1.webp"
+const  sezhina= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/sezhina.webp"
+const karthika = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/karthika.webp"
+const  nandhini= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/dhevanandhini.webp"
+const akila="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/akila.webp"
+const chandrasekar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/chandrasekaran.webp"
+const selvi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/tamilselvi.webp"
+const vasanthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/vasanthi.webp"
+const karthi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/karthikeyan.webp"
+const sankar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/supportingfac/sankar.webp"
+const karpagagrajesh = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/Ece_KarpagarajeshG.webp"
+const ece_adc_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_adc_lab-c.webp"
+const ece_rfs_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_rfs_lab-c.webp"
+const ece_fo_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_fo_lab.webp"
+const ece_opt_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_opt_lab.webp"
+const ece_vlsi_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_vlsi_lab.webp"
+const ece_sig_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_sig_lab.webp"
+const ece_edc_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_edc_lab.webp"
+const ece_cn_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_cn_lab.webp"
+const ece_rfm_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/academiclabs/ece_rfm_lab.webp"
 
-import somasundaram from "../assets/pictures/ece_dept/ece_faculties/Somasundaram.webp";
-import asr from "../assets/pictures/ece_dept/ece_faculties/ASR.webp";
-import aruna from "../assets/pictures/ece_dept/ece_faculties/Ece_Aruna Rani M-1.webp"
-import helena from "../assets/pictures/ece_dept/ece_faculties/Ece_HelenaD-1.webp"
-import rajesh from "../assets/pictures/ece_dept/ece_faculties/Ece_KarpagarajeshG-1.webp"
-import keerthana from "../assets/pictures/ece_dept/ece_faculties/Ece_KeerthanaP-1.webp"
-import mahendran from "../assets/pictures/ece_dept/ece_faculties/Ece_Mahendran C-1.webp"
-import merlin from "../assets/pictures/ece_dept/ece_faculties/Ece_Merlin sheeba X-1.webp"
-import khanna from "../assets/pictures/ece_dept/ece_faculties/Ece_Rajesh kanna B-1.webp"
-import ramya from "../assets/pictures/ece_dept/ece_faculties/Ece_Ramya SP-1.webp"
-import renisha from "../assets/pictures/ece_dept/ece_faculties/Ece_RenishaG-1.webp"
-import sindhu from "../assets/pictures/ece_dept/ece_faculties/Ece_SindujaC-1.webp"
-import sezhina from "../assets/pictures/ece_dept/ece_faculties/sezhina.webp"
-import karthika from "../assets/pictures/ece_dept/ece_faculties/karthika.webp"
-import nandhini from "../assets/pictures/ece_dept/ece_faculties/dhevanandhini.webp"
+const ece_ic_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/ece_ic_lab.webp"
+const ece_pcb_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/PCB_Fabrication_Station.webp"
+const ece_antenna_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/ECE_Ant_Chamber_1.webp"
 
-import akila from "../assets/pictures/ece_dept/ece_faculties/akila.webp"
-import chandrasekar from "../assets/pictures/ece_dept/ece_faculties/chandrasekaran.webp"
-import selvi from "../assets/pictures/ece_dept/ece_faculties/tamilselvi.webp"
-import vasanthi from "../assets/pictures/ece_dept/ece_faculties/vasanthi.webp"
-import karthi from "../assets/pictures/ece_dept/ece_faculties/karthikeyan.webp"
-import sankar from "../assets/pictures/ece_dept/ece_faculties/sankar.webp"
+const festronix_23 = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/festronix'23+(2).webp"
+const ncmoc19 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/ncmoc19.webp"
+const stal21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/stalwartz21.webp"
+const prag21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/pragyanz21.webp"
+const prag22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/pragyanz22.webp"
+const unknown="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/unkown.webp"
 
-import priya_21 from '../assets/pictures/ece_dept/ece_rankers/priya_21.webp'
-import navin_21 from '../assets/pictures/ece_dept/ece_rankers/navin_21.webp'
-import aish_20 from '../assets/pictures/ece_dept/ece_rankers/aishwarya_20.webp'
-import sujitha_20 from '../assets/pictures/ece_dept/ece_rankers/sujitha_20.webp'
+const thiran_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/Thiran+2k22.webp"
+const circuit_debug="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/Circuit+Debugging.webp"
+const best_manager="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/best_manager.webp"
+const tech_quiz="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/tech_quiz.webp"
+const paper_presentation="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/paper_presentation.webp"
+const circuit_designers="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/circuit_designers.webp"
+const top_design1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/top_design1.webp"
+const top_design2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/top_designer2.webp"
+const hrk_top_design_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/hrk_topdesign_2k22.webp"
+const sow_top_design_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/sow_topdesign_2k22.webp"
+const anu_top_design_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/anu_topdesign_2k22.webp"
+const asw_top_design_2k22="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/asw_topdesign_2k22.webp"
+const malai_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/malai_thiran_23.webp"
+const gok_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/gok_thiran_23.webp"
+const jos_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/jos_thiran_23.webp"
+const mm_thiran_23="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/mm_thiran_23.webp"
+const vimanthan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/vimanthan_archery.webp"
+const sivakumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/siva_cup.webp"
+const arunkumar="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/adshoot_arun.webp"
+const top_design1_24="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/top_des24_1st.webp"
+const top_design2_24="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/top_des24_2nd.webp"
+const basketball="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/ece24_basketball.webp"
+const football="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/ece_24football.webp"
+const handball="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/handball24_ece.webp"
+
 
 const ece_dept_menu = [
   {
@@ -88,13 +176,13 @@ const ece_dept_menu = [
   {
     id: "3",
     path: "/ecedept/ece-faculties",
-    link: "Faculties",
+    link: "Faculty",
     arl: "l",
   },
   {
     id: "4",
     path: "/ecedept/ece-lab",
-    link: "Lab Facilities",
+    link: "Laboratory Facilities",
     arl: "l",
   },
   {
@@ -166,13 +254,13 @@ const ece_fac_profiles = [
     dp: asr,
     name: "Dr.A.Sivanantha Raja",
     Designation: "Head of the Department",
-    mailid: "sivanantharaja@gmail.com",
+    mailid: "sivanantharaja@accet.ac.in",
     pdf: "https://drive.google.com/file/d/1R9A7ul9goH87qnMYhIZQvI8qFCNcR2iX/view?usp=drive_link",
   },
   {
     id: "2",
     cover: cover,
-    dp: rajesh,
+    dp: karpagagrajesh,
     name: "Dr.G.Karpagarajesh",
     Designation: "Associate Professor",
     mailid: "gkrajesh1@gmail.com",
@@ -286,15 +374,15 @@ const ece_fac_profiles = [
     mailid: "keerthiperumal@gmail.com",
     pdf: "https://drive.google.com/file/d/1JGWDBNKTk4ZAovxUYokqidpefKClCgl5/view?usp=drive_link",
   },
-  {
-    id: "15",
-    cover: cover,
-    dp: merlin,
-    name: "Mrs.X.Merlin Sheeba",
-    Designation: "Assistant Professor",
-    mailid: "renachristina@gmail.com",
-    pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
-  },
+  // {
+  //   id: "15",
+  //   cover: cover,
+  //   dp: merlin,
+  //   name: "Mrs.X.Merlin Sheeba",
+  //   Designation: "Assistant Professor",
+  //   mailid: "renachristina@gmail.com",
+  //   pdf: "https://drive.google.com/file/d/11wEMzW6yCE_WiZzxgTv9tNLobNDMBmBh/view?usp=drive_link",
+  // },
 ];
 
 const ece_sup_profiles = [
@@ -541,7 +629,56 @@ const ece_rajesh=[
   },
 ];
 
+const ece_karthika=[
+  {
+    'id':"1",
+    'point':"Dr.K.Muralibabu, Dr.L.Agilandeeswari, Dr.C.Kathika Pragadeeswari(Assistant Professor), Embedded System and IoT Design, ISBN: 978-93-87950-89-4,First Edition, Lakshmi Publications, Chennai, India, January 2024.",
+  },
+];
+
 const ece_rankers = [
+  {
+    head:"2019-2023 Batch",
+    rankers:[
+      {
+        id: "1",
+        cover: cover,
+        dp: bharathi_23,
+        name: "Bharathi P",
+        Designation: "First rank holder",
+        mailid: "1914008",
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: sundar_23,
+        name: "Sundarapandi S",
+        Designation: "Second rank holder",
+        mailid: "1914041",
+      },
+    ]
+  },
+  {
+    head:"2018-2022 Batch",
+    rankers:[
+      {
+        id: "1",
+        cover: cover,
+        dp: swetha_22,
+        name: "Swetha Sri R",
+        Designation: "First rank holder",
+        mailid: "1814045",
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: dhanaraman_22,
+        name: "B.Dhanaraman",
+        Designation: "Second rank holder",
+        mailid: "1814014 ",
+      },
+    ]
+  },
   {
     head:"2017-2021 Batch",
     rankers:[
@@ -697,6 +834,7 @@ const ece_outcomes = [
       "Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
   },
 ];
+
 const ece_spec_outcomes = [
   {
     id: "1",
@@ -2004,6 +2142,17 @@ const ece_dept_events = [
 
 const ece_events = [
   {
+    id: "6",
+    heading: "Festronix'23",
+    "sub-head":
+      "29th NOV 2023",
+    pic: festronix_23,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
     id: "4",
     heading: "Pragyanz'22",
     "sub-head":
@@ -2090,7 +2239,97 @@ const ece_projects = [
   },
 ];
 
+const ece_cocurricular_data = [
+  {
+    id:1,
+    program:'2022-23',
+    pdf:'https://drive.google.com/file/d/1MReCIeYLWTd4PPMib9RU73rfKCODYV1R/view?usp=sharing',
+  }
+]
+
+const ece_extracurricular= [
+  {
+    id:1,
+    program:'2023-24',
+    pdf:'https://drive.google.com/file/d/1XI2xR4XmRiZ_DYToY7dNTgPPBcx2uyio/view?usp=sharing',
+  }
+]
+
+
+
 const ece_stud_activities = [
+  {
+    id: "20",
+    heading: "Anna University Zonal Handball'24",
+    "sub-head":
+      "S.Shahid Affan participated and secured 3rd position in the Zonal handball tournament held at Chenduran College Of Engineering and Technology",
+    pic: handball,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "19",
+    heading: "Anna University Zonal Football'24",
+    "sub-head":
+      "Rajavarman.A, secured runnerup position in the Zonal Football tournament held at Mount Zion College of Engineering and Technology",
+    pic: football,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "18",
+    heading: "Anna University Zonal Basket Ball'24",
+    "sub-head":
+      "Sujitha S, Janani Kamachi.S and Durga.A  secured 3rd position in the Zonal Basket ball tournament held at Vellamal College of Engineering and Technology,Madurai.",
+    pic: basketball,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "19",
+    heading: "Top Designers 2024",
+    "sub-head":
+      "Sowmiya D ,Vasanthamalar J and Blesslin Rinu P bagged 1st place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: top_design1_24,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "18",
+    heading: "Top Designers 2024",
+    "sub-head":
+      " Geethapriya,Nidya Sri kamatchi and Nandhini bagged 2nd place in Top Designers contest conducted by Sudharsan Engineering College.",
+    pic: top_design2_24,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "17",
+    heading: "Arun Kumar N",
+    "sub-head":
+      "Arun Kumar N of '25 batch has secured the first prize in the Ad-shoot event of UTSAVAM-24 a national level fest organized by Alagappa Institute of management held on 15th March 2024",
+    pic: arunkumar,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "19",
+    heading: "Sivakumar M",
+    "sub-head":
+      "Sivakumar M of 26 batch secured the 1st place in 400m and 2nd place in 110m in the State Level Athletics Meet 2024 held at Tirunelveli",
+    pic: sivakumar,
+    content_1: "",
+    content_2: "",
+  },
+  {
+    id: "18",
+    heading: "Vimanthan KG",
+    "sub-head":
+      "VimanthanK G, Anna University captain for Southzone National Level Archery competition which was held at Punjab on December2023. He secured 198th rank at all India level.",
+    pic: vimanthan,
+    content_1: "",
+    content_2: "",
+  },
   {
     id: "17",
     heading: "Thiran 2023",
@@ -2295,6 +2534,19 @@ const ece_antenna_rf = [
 
 const ece_placement_info = [
   {
+    id:"4",
+    year: "2020-2024 Batch",
+    salary:"7.5 LPA",
+    details: [
+      {
+        id: "1",
+        heading: "In-Campus",
+        perc: 54,
+        symbol:"%"
+      },
+    ],
+  },
+  {
     id:"1",
     year: "2019-2023 Batch",
     salary:"8 LPA",
@@ -2352,6 +2604,36 @@ const ece_placement_info = [
   },
 ];
 
+const ece_intern=[
+  
+  {
+    'id':'1',
+    'program':'Internship 2023-2024',
+    'pdf':'https://drive.google.com/file/d/1soWf_av3Z3N1X153idf4wcKaAUq4f38U/view?usp=sharing '
+},
+{
+  'id':'2',
+  'program':'Internship 2022-2023',
+  'pdf':'https://drive.google.com/file/d/18k11n_gx0ECOts0JPUwKKyFuLab3uLYz/view?usp=drive_link '
+},
+{
+      'id':'3',
+      'program':'Internship 2021-2022',
+      'pdf':'https://drive.google.com/file/d/13e9q9mAH0vHu5UIrB2SA_sZSZlFHDo8Q/view?usp=drive_link '
+  },
+  
+  {
+    'id':'2',
+    'program':'Internship 2021-2022',
+    'pdf':'https://drive.google.com/file/d/13e9q9mAH0vHu5UIrB2SA_sZSZlFHDo8Q/view?usp=drive_link '
+  },
+  {
+      'id':'1',
+      'program':'Implant Training Details',
+      'pdf':'https://drive.google.com/file/d/1PBZXDsAeY1cloa90xuBkya9aPumOdm8w/view?usp=drivesdk'
+  },
+]
+
 export {
   ece_dept_menu,
   ece_fac_profiles,
@@ -2385,5 +2667,9 @@ export {
   ece_stud_data,
   ece_dept_lib,
   ece_events,
-  ece_spec_outcomes
+  ece_spec_outcomes,
+  ece_intern,
+  ece_cocurricular_data,
+  ece_extracurricular,
+  ece_karthika
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import svg from "../../assets/pictures/forgetpassword_svg.svg";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -7,7 +7,16 @@ import './Newpass.css'
 const Newpass = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const regno = location.state && location.state.regno;
+  // const regno = location.state && location.state.regno;
+ const [regno,setRegno]=useState();
+
+useEffect(() => {
+  if (location.state && location.state.regno) {
+    setRegno(location.state.regno);
+  } else {
+    navigate('/password-reset');
+  }
+}, [location.state, navigate]);
 
   const [new_password, setNew_password] = useState("");
   const [rep_password, setRep_password] = useState("");
@@ -16,7 +25,7 @@ const Newpass = () => {
 
   const password_strength = (pswd) => {
     const strongRegex =
-      /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+      /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[#@$!%*?&])[A-Za-z\d#@$!%*?&]{8,}$/;
     const mediumRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
     if (strongRegex.test(pswd)) {
@@ -41,7 +50,7 @@ const Newpass = () => {
       if (pswd_match(new_password,rep_password) && (strength === "Strong" || strength==="Medium")) {
         console.log("Reset")
         const response = await axios.post(
-          "http://localhost:5002/api/reset-pswd",
+          "/backend/reset-pswd",
           {
             regno: regno,
             password: new_password

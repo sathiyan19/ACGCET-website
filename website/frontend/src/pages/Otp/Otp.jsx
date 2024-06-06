@@ -1,23 +1,38 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState,useEffect } from "react";
 import "./Otp.css";
 import { Link,useLocation, useNavigate } from "react-router-dom";
 import svg from '../../assets/pictures/forgetpassword_svg.svg';
 import axios from "axios";
 
 const Otp = () => {
+  const [mailid]=useState('');
   const navigate=useNavigate();
   const location=useLocation();
   const [loading,setLoading]=useState(false);
   const inputs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const [otp_error,setOtp_error]=useState("");
-  const email= location.state && location.state.email;
-  const regno= location.state && location.state.regno;
+  // const mailid= location.state && location.state.mailid;
+  // const regno= location.state && location.state.regno;
+  const [regno, setRegno] = useState('');
   console.log(regno)
   const [otpValues,setOtpValues]=useState(["","","",""]);
+
+  useEffect(() => {
+    if (location.state && location.state.regno) {
+      setRegno(location.state.regno);
+    } else {
+      navigate('/password-reset');
+    }
+  }, [location.state, navigate]);
+
+  useEffect(() => {
+    document.title = "Enter OTP";
+  }, []);
+
   const handleOtpSubmit = async(e) => {
     e.preventDefault();
     const otp = otpValues.join("");
-    console.log("Submitting OTP:", otp, "for email:", email);
+    console.log("Submitting OTP:", otp, "for email:", mailid);
 
     if(otp.length!==4){
         setOtp_error("Enter a valid OTP")
@@ -25,7 +40,7 @@ const Otp = () => {
         setOtp_error("");
         try{
           setLoading(true)
-          const response=await axios.post("http://localhost:5002/api/validate-otp",{email,otp});
+          const response=await axios.post("/backend/validate-otp",{mailid,otp});
           if(response.data.success){
             console.log('Otp is valid');
             navigate('/password-create',{state:{regno:regno}})
@@ -84,7 +99,7 @@ const Otp = () => {
           </div>
         </div>
         {otp_error && <div className="otp_err_msg">{otp_error}</div>}
-        <button className="login-submit" type="submit" onClick={handleOtpSubmit}>
+        <button className="login-submit_passwdrec" type="submit" onClick={handleOtpSubmit}>
           {loading ?'Verifying otp....': 'Verify OTP'}
         </button>
       </form>
