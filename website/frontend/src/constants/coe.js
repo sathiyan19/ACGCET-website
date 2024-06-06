@@ -384,7 +384,8 @@ const coe_syllabus22=[
   
     'id':'2',
     'program':'Mechanical engineering',
-    'pdf':'https://drive.google.com/file/d/1dEOopLkPc6uhqzvrSanuOBocTxyQlsFW/view?usp=sharing',
+    // 'pdf':'https://drive.google.com/file/d/1dEOopLkPc6uhqzvrSanuOBocTxyQlsFW/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1b708AMnmhEk_dF7jUOQAJH20oj73DOLD/view?usp=sharing'
    
   },
   {
