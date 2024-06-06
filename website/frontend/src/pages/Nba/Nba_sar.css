@@ -1,0 +1,10 @@
+.nba_doc{
+    margin-top: 20px;
+    padding:10px;
+}
+.nba_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px;
+}

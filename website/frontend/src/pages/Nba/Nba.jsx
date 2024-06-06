@@ -2,11 +2,11 @@ import React,{useEffect} from 'react'
 
 import "./Nba.css";
 
-import { Table } from "../../components";
+import { Table ,Radial_menu } from "../../components";
 
-import { nba } from "../../constants/nba";
+import { nba,nba_menu } from "../../constants/nba";
 
-import { Underline } from "../../widgets";
+import { Floatinmenu,Underline } from "../../widgets";
 
 
 const Nba = () => {
@@ -23,8 +23,11 @@ const Nba = () => {
     
   return (
     <div className='nba'>
-      
-      
+      <section className="nbamenu">
+      <div className="nba_float_menu">
+          <Floatinmenu  head="Menu" links={nba_menu} />
+        </div>
+        <Radial_menu menu_links={nba_menu}/>
       <Underline heading="NBA" />
       
 
@@ -33,7 +36,7 @@ const Nba = () => {
       <div className='nba_tab'>
       <Table data={nba} columns={columns} />
       </div>
-
+      </section>
     </div>
   )
 }

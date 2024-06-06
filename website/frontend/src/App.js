@@ -94,6 +94,8 @@ import {
   Iqac_std_statisfy,
 
   Nba,
+  Nbadoc,
+  Nba_sar,
   Nirf,
   Iic,
   Uba,
@@ -282,6 +284,8 @@ const App = () => {
         <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
         
         <Route path="/nba" element={<Nba/>} />
+        <Route path="/nba/nbadoc" element={<Nbadoc/>} />
+        <Route path="/nba/nba_sar" element={<Nba_sar/>} />
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
