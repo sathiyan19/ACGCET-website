@@ -13,7 +13,7 @@ const English_faculty = () => {
         <div className="Englishheading">
           Department of English
         </div>
-        <div className='English_sub_heading'>Faculties</div>
+        <div className='English_sub_heading'>Faculty members</div>
     </div>
     <Sh_Eng_fac/>
     <Backtotop/>
