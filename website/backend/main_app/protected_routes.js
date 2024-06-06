@@ -8,7 +8,7 @@ const dashboard=async(req,res)=>{
         if(reg_no==='91762115000'){
           return res.json({Status:"Success",stud_details:{regno:reg_no}})
         }
-        // console.log(reg_no);
+        console.log(dept);
           let dept_table=dept+"_stud_details";
     const [[dash]]= await pool.query(
         `
@@ -18,7 +18,7 @@ const dashboard=async(req,res)=>{
         `,
       [dept_table,reg_no]
     );
-    dash.department=dept.toUpperCase()
+    // dash.department=dept.toUpperCase()
     return res.json({Status:"Success",stud_details:dash})
 
 }catch(error){

@@ -159,7 +159,8 @@ import {
   Dash_results,
   Iqac_strategic,
   Autonomous,
-  Placement_faq
+  Placement_faq,
+  Iqac_committee
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -283,6 +284,8 @@ const App = () => {
         <Route path="/iqac_practices" element={<Iqac_practices/>} />
         <Route path="/iqac_distinctiveness" element={<Iqac_distinctiveness/>} />
         <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
+        <Route path="/iqac_committee" element={<Iqac_committee/>} />
+
         
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nba/nbadoc" element={<Nbadoc/>} />
