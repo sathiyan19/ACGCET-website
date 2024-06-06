@@ -160,7 +160,7 @@ import {
   Iqac_strategic,
   Autonomous,
   Placement_faq,
-  Placement_wk_training,,
+  Placement_wk_training,
   Iqac_committee
 } from "./pages";
 import "./App.css";

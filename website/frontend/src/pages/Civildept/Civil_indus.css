@@ -38,6 +38,40 @@
     padding: 20px 0px;
     margin-bottom: 30px;
  } 
+
+ .civ_consult_content{
+    font-size: 20px;
+    color: black;
+    line-height: 1.5rem;
+    text-align: justify;
+ }
+
+ .civ_consult_layout{
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+ }
+
+ .civ_consult_img_holder{
+  max-width: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+ }
+
+ .civ_consult_img_holder_pot{
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+ }
+
+ .civ_consult_img{
+  height: auto;
+  width: 100%;
+ }
  
 
  @media (max-width:1050px){
@@ -53,3 +87,15 @@
       }
     }
   }
+
+  @media(max-width:720px){
+    .civ_consult_img_holder{
+      max-width: 500px;
+    }
+  }
+
+@media(max-width:500px){
+  .civ_consult_content{
+    font-size: 16px;
+  }
+}

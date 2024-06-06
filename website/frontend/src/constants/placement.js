@@ -5,12 +5,12 @@ const placement_menu =[
         link: "Overview",
         arl:'l'
     },
-    // {
-    //     id: "2",
-    //     path: "/placement/training",
-    //     link: "Training and Workshops",
-    //     arl:'l'
-    // },
+    {
+        id: "2",
+        path: "/placement/Placement_wk_training",
+        link: "Training and Workshops",
+        arl:'l'
+    },
     // {
     //     id: "2",
     //     path: "/placement/alumni_stories",
@@ -21,12 +21,6 @@ const placement_menu =[
         id: "4",
         path: "/placement/faqs",
         link: "FAQs",
-        arl:'l'
-    },
-    {
-        id: "5",
-        path: "/placement/Placement_wk_training",
-        link: "Training and Workshops",
         arl:'l'
     },
 ]

@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import './Civil_research.css'
 
-import { Floatinmenu,Underline } from '../../widgets';
+import { Floatinmenu,Underline,Content_card } from '../../widgets';
 import { Radial_menu,Table } from '../../components';
 import { civ_dept_menu,
   civ_research_info,
@@ -9,7 +9,7 @@ import { civ_dept_menu,
   scholar_info2,
   scholar_info3, 
   scholar_info4,
-scholar_info5} from '../../constants/civil_dept';
+scholar_info5, civ_publish_data} from '../../constants/civil_dept';
 
 import { BsFillBuildingsFill } from "react-icons/bs";
 
@@ -111,6 +111,17 @@ const Civil_research = () => {
         <div className='civil_res_table'>
       <Table data={civ_research_info} columns={column} />
       </div>
+      </div>
+      <div className="civ_magaz_area">
+    
+             
+        {/* <Underline heading="Magazines & Newsletters"/> */}
+
+        <div className='civil_magaz_cards'>
+            {civ_publish_data.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+        </div>
+              
+    
       </div>
         </section>
         </div>

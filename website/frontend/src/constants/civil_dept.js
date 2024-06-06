@@ -34,6 +34,7 @@ const muthu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Dep
 const murugesan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_murugesan.webp"
 const veenus="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_veenusrani.webp"
 const gayathiri="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Gayathri_civil_fac-1.webp"
+const jeyashankari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/civil_jeyashankari.webp"
 
 const computer ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Computer+Lab.webp" 
 const concrete  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Concrete+lab.webp"
@@ -168,6 +169,15 @@ const civ_fac_profiles = [
     pdf: "https://drive.google.com/file/d/19E3dQNGUdMENQp4p6EyeA2GpwlD1rJAW/view?usp=drive_link",
   },
   // {
+    {
+      id: "5",
+      cover: cover,
+      dp: venkat,
+      name: "Venkatesh B",
+      Designation: "Assistant Professor",
+      mailid: "venkatesh@gcetly.ac.in",
+      pdf: "https://drive.google.com/file/d/1mepcWTb4EsJf7fFTMs7S4QBf1t9yDJ-f/view?usp=drive_link",
+    },
   //   id: "2",
   //   cover: cover,
   //   dp: tamizh,
@@ -193,15 +203,6 @@ const civ_fac_profiles = [
     Designation: "Assistant Professor(Adhoc)",
     mailid: "vinothrvkce@gmail.com",
     pdf: "https://drive.google.com/file/d/1aM6O4cKxCGbSstY4XhUOoQtoqGfuhOu_/view?usp=drive_link",
-  },
-  {
-    id: "5",
-    cover: cover,
-    dp: venkat,
-    name: "Venkatesh B",
-    Designation: "Assistant Professor",
-    mailid: "venkatesh@gcetly.ac.in",
-    pdf: "https://drive.google.com/file/d/1mepcWTb4EsJf7fFTMs7S4QBf1t9yDJ-f/view?usp=drive_link",
   },
   {
     id: "10",
@@ -238,6 +239,15 @@ const civ_fac_profiles = [
     Designation: "Assistant Professor",
     mailid: "gayathri@accet.ac.in",
     pdf: "https://drive.google.com/file/d/13GAOVduo48ow1DblMm7GifRJhkD9gp3t/view?usp=sharing",
+  },
+  {
+    id: "14",
+    cover: cover,
+    dp: jeyashankari,
+    name: "K.JEYASHANKARI",
+    Designation: "Assistant Professor(adhoc)",
+    mailid: "jeys.engg@gmail.com",
+    pdf: "https://drive.google.com/file/d/1WpDzj0qu7KL49qKNP0nvV4SNQ3GPuz2K/view?usp=sharing",
   },
 ];
 const civ_sup_profiles = [
@@ -608,12 +618,28 @@ const civ_dept_events = [
 
 const civ_awards = [
   {
-    id: "6",
+    id: "9",
     head: "",
     house: "right",
+    pdf: "https://drive.google.com/file/d/1HvXAigB530wWAC78M7j2XOaNu6JelRmF/view?usp=sharing",
+    content:
+      "Dr. S. R. Sumathy, As the Coordinator of the NPTEL Local Chapter has encouraged more students across colleges to participate in NPTEL courses.",
+  },
+  {
+    id: "6",
+    head: "",
+    house: "left",
     pdf: "https://drive.google.com/file/d/1XH1mUAAL8EJ48JKdN-RFFY5Uqz34F0Ap/view?usp=drive_link",
     content:
       "Dr. C. Vijayaprabha achieved the distinction of being designated as an 'NPTEL Domain Scholar' in the field of Concrete Technology by IIT Madras during the period from July to October 2023, demonstrating her advanced knowledge and expertise in civil engineering.",
+  },
+  {
+    id: "7",
+    head: "",
+    house: "right",
+    pdf: "https://drive.google.com/file/d/1i9MWj3irHjcpD5_uPAzDdHT8RqndwfGP/view?usp=sharing",
+    content:
+      "Dr. S. R. Sumathy, As the Nodal Officer for the Academic Bank of Credits has reported that 6,686 marksheets have been published through DigiLocker to date.",
   },
   {
     id: "5",
@@ -643,6 +669,7 @@ const civ_awards = [
     id: "1",
     head: "",
     house: "right",
+    pdf: "https://drive.google.com/file/d/1oAi1qpg4XlvIKerO8qEKktOTmTceNH1c/view?usp=drive_link",
     content:
       "In 2021, Dr. S. R. Sumathy was awarded the NESIN Award for Best Researcher in Civil Engineering by Science Father, recognizing her exceptional contributions to the field.",
   },
@@ -653,6 +680,14 @@ const civ_awards = [
     pdf: "https://drive.google.com/file/d/1rnXzucT0I21lJqn-QUhqXvN67S4lb1Ke/view?usp=drive_link",
     content:
       "In October 2020, Dr. C. Vijayaprabha received the Research Excellence Award in Civil Engineering, known as the InSc Award 2020, from the Institute of Scholars (InSc), acknowledging her outstanding contributions to the field.",
+  },
+  {
+    id: "8",
+    head: "",
+    house: "right",
+    pdf: "https://drive.google.com/file/d/1cyFgg57bVBgzilequQRqAvQt6f9EAyva/view?usp=sharing",
+    content:
+      "Dr. S. R. Sumathy, As the Coordinator for IIRS has motivated students to enroll in the IIRS Outreach e-Learning Education Programme.",
   },
 ];
 
@@ -1322,6 +1357,69 @@ const civ_lib_data = [
   },
 ];
 
+const civ_place_24_zoho=[
+  {
+    sno:1,
+    point:"Fathima Rizwana"
+  },
+];
+
+const civ_place_24_lt=[
+  {
+    sno:1,
+    point:"Saranraj R"
+  },
+];
+
+const civ_place_24_im=[
+  {
+    sno:1,
+    point:"Gokulavasan"
+  },
+  {
+    sno:2,
+    point:"Gokulnath"
+  },
+];
+
+const civ_place_24_conserve=[
+  {
+    sno:1,
+    point:"Kasthuri"
+  },
+];
+
+const civ_place_24_pinnacle=[
+  {
+    sno:1,
+    point:"Balakumaran N"
+  },
+  {
+    sno:2,
+    point:"Dineshkumar A"
+  },
+  {
+    sno:3,
+    point:"Narayanakarthick M"
+  },
+  {
+    sno:4,
+    point:"Pavithra S"
+  },
+  {
+    sno:5,
+    point:"Selvakumar A"
+  },
+  {
+    sno:6,
+    point:"Keerthika G"
+  },
+  {
+    sno:7,
+    point:"Janarthini B"
+  },
+];
+
 const civ_place_lt=[
   {
     sno:1,
@@ -1834,6 +1932,19 @@ const about_info=[
   },
 ];
 
+const civ_publish_data=[
+  {
+    'id':'1',
+    'program':'Publications 2021-2024',
+    'pdf':'https://drive.google.com/file/d/16e9TgFTuyxjtcSb3Nb8OQF8EH_pjy6MV/view?usp=drive_link'
+  },
+  {
+    'id':'2',
+    'program':'Publications 2017-2020',
+    'pdf':'https://drive.google.com/file/d/1ehk3vD503j4FZUcuVXO8K9-gK7CYaXfr/view?usp=drive_link'
+  }
+]
+
 export {
   civ_dept_menu,
   civ_fac_profiles,
@@ -1865,5 +1976,11 @@ export {
   mag_data,
   intern_data,
   mou_data,
-  civ_indus_slide
+  civ_indus_slide,
+  civ_place_24_zoho,
+  civ_place_24_lt,
+  civ_place_24_im,
+  civ_place_24_conserve,
+  civ_place_24_pinnacle,
+  civ_publish_data
 };

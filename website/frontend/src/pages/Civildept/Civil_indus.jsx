@@ -22,6 +22,15 @@ import { Radial_menu,Slideshow} from "../../components";
 
 import { BsFillBuildingsFill } from "react-icons/bs";
 
+const AL1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/consulting/civil_AL_1.jpg"
+const AL2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/consulting/civil_AL_2.jpg"
+const CVP1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/consulting/civil_CVP_1.jpg"
+const KMS1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/consulting/civil_KMS_1.jpg"
+const KMS2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/consulting/civil_KMS_2.jpg"
+const KMS3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/consulting/civil_KMS_3.jpg"
+const SRS1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/consulting/civil_SRS_1.jpg"
+const SRS2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Industry_interaction/consulting/civil_SRS_2.jpg"
+
 const Civil_indus = () => {
   useEffect(() => {
     document.title = 'ACCET-Civil | Industry Interaction';
@@ -59,6 +68,48 @@ const Civil_indus = () => {
 
                <div className='civil_intern_cards'>
                 {intern_data.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+               </div>
+
+               <Underline heading="Consultancy Activities"/>
+               <div className='civ_consult_content'>Standard Penetration Test conducted for various construction works to investigate the Safe Bearing Capacity of Soil.</div>
+               <div className='civ_consult_layout'>
+
+                <div className='civ_consult_img_holder'>
+                  <img className='civ_consult_img' src={AL1}/>
+                </div>
+
+                <div className='civ_consult_img_holder'>
+                  <img className='civ_consult_img' src={CVP1}/>
+                </div>
+
+                <div className='civ_consult_img_holder'>
+                  <img className='civ_consult_img' src={KMS1}/>
+                </div>
+
+                <div className='civ_consult_img_holder'>
+                  <img className='civ_consult_img' src={KMS2}/>
+                </div>
+
+                <div className='civ_consult_img_holder'>
+                  <img className='civ_consult_img' src={KMS3}/>
+                </div>
+
+               </div>
+
+               <div className='civ_consult_layout'>
+
+                <div className='civ_consult_img_holder_pot'>
+                  <img className='civ_consult_img' src={AL2}/>
+                </div>
+
+                <div className='civ_consult_img_holder_pot'>
+                  <img className='civ_consult_img' src={SRS1}/>
+                </div>
+
+                <div className='civ_consult_img_holder_pot'>
+                  <img className='civ_consult_img' src={SRS2}/>
+                </div>
+
                </div>
 
                <Underline heading="Mou"/>
