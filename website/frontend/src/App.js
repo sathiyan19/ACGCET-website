@@ -70,6 +70,8 @@ import {
   Iqac_aqar,
   Iqac_feed,
   Nba,
+  Nbadoc,
+  Nba_sar,
   Nirf,
   Iic,
   Sh_faculty,
@@ -207,6 +209,8 @@ const App = () => {
         <Route path="/iqac" element={<Iqac/>} />
         <Route path="/iqac_feed" element={<Iqac_feed/>} />
         <Route path="/nba" element={<Nba/>} />
+        <Route path="/nba/nbadoc" element={<Nbadoc/>} />
+        <Route path="/nba/nba_sar" element={<Nba_sar/>} />
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
