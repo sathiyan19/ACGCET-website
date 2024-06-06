@@ -25,6 +25,7 @@ const tamizh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Dep
 const ambikapathi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Ambikapathi.A-1.jpg"
 const appusriram="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Appu+Sriram-1.jpg"
 const arune="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+ARUN.E-1.jpg"
+const jeyashankari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/civil_jeyashankari.webp"
 
 const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_rajasekar.webp"
 const kathir="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_kathiresan.webp"
@@ -238,6 +239,15 @@ const civ_fac_profiles = [
     Designation: "Assistant Professor",
     mailid: "gayathri@accet.ac.in",
     pdf: "https://drive.google.com/file/d/13GAOVduo48ow1DblMm7GifRJhkD9gp3t/view?usp=sharing",
+  },
+  {
+    id: "14",
+    cover: cover,
+    dp: jeyashankari,
+    name: "K.JEYASHANKARI",
+    Designation: "Assistant Professor(adhoc)",
+    mailid: "jeys.engg@gmail.com",
+    pdf: "https://drive.google.com/file/d/1WpDzj0qu7KL49qKNP0nvV4SNQ3GPuz2K/view?usp=sharing",
   },
 ];
 const civ_sup_profiles = [
