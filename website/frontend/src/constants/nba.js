@@ -118,14 +118,14 @@ export const nba_doc=[
 export const nba_civ_sar=[
     {
         'id':'1',
-        'program':'Civ Sar',
+        'program':'Civil SAR',
         'pdf':'https://drive.google.com/file/d/1jSHxMjKlvbqoHc4tP67HRfxtLBmnw0Fd/view'
     }
 ]
 export const nba_mec_sar=[
     {
         'id':'1',
-        'program':'Mec Sar',
+        'program':'Mechanical SAR',
         'pdf':'https://drive.google.com/file/d/16VVjQGMpaF07AgCPrZtXydNvb17fVEsK/view'
     }
 ]
