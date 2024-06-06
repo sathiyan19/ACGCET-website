@@ -10,7 +10,6 @@ import {Radial_menu } from "../../components";
 import { FaGraduationCap } from "react-icons/fa";
 import oracle_placement from '../../assets/pictures/news_img/oracle.webp'
 
-const cse="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cse/csecover.webp"
 
 const Placement = () => {
   useEffect(() => {

@@ -2305,9 +2305,9 @@ const ece_stud_activities = [
   },
   {
     id: "17",
-    heading: "Arun Kumar N",
+    heading: "Ad-shoot event",
     "sub-head":
-      "Arun Kumar N of '25 batch has secured the first prize in the Ad-shoot event of UTSAVAM-24 a national level fest organized by Alagappa Institute of management held on 15th March 2024",
+      "Arun Kumar N and Akash P of '25 batch has secured the first prize in the Ad-shoot event of UTSAVAM-24 organized by Alagappa Institute of management held on 15th March 2024",
     pic: arunkumar,
     content_1: "",
     content_2: "",
@@ -2536,7 +2536,7 @@ const ece_placement_info = [
   {
     id:"4",
     year: "2020-2024 Batch",
-    salary:"7.5 LPA",
+    salary:"7 LPA",
     details: [
       {
         id: "1",
