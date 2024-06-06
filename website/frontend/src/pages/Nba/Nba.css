@@ -3,14 +3,24 @@
     width:70%;
 }
 .nba{
-  padding:10px;
+  padding:25px;
     >p{
+      
+        text-align: justify;
+        font-size: 18px;
         padding:10px;
         margin-left: auto;
         margin-right: auto;
         width:85%;
         line-height: 1.5rem;
     }
+}
+.nbamenu{
+  /* display: flex;
+    flex-direction: column; */
+  padding: 40px 20px;
+  width: 75%;
+  /* border-radius: 5px 0 5px 0; */
 }
 @media (max-width:895px) {
      .nba_tab{

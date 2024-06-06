@@ -37,6 +37,26 @@ export const bulletin_info=[
 //             </span>
 //         ),
 //     },
+{
+    id:'18',
+    link:"https://drive.google.com/file/d/1vxzqp9-1uaB2rCaPIl0653RlTjeym6Fj/view?usp=drive_link",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">III Assessment Tests Schedule for B.E. & PTBE
+</span>
+        </span>
+    ),
+},
+{
+    id:'17',
+    link:"https://drive.google.com/file/d/1ci_AC7Hc9CoZrz6eke2J16AkPnTLXu4p/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Advertisement for the Part time B.E. Counseling for the academic year 2024-2025
+</span>
+        </span>
+    ),
+},
     {
         id:'16',
         link:"https://drive.google.com/file/d/1V9itpzM-S1GPo2UQy5DWkrazGMzFzOKg/view",

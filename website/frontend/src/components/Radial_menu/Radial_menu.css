@@ -86,6 +86,10 @@
     flex-direction: column;
 }
 
+.dept_menu{
+    min-width: 300px;
+}
+
 @media(min-width:501px){
     .radial_menu{
         display: none;
@@ -95,6 +99,9 @@
 @media(max-width:375px){
     .radial_bg{
         padding: 90px 200px;
+    }
+    .dept_menu{
+        min-width: 280px;
     }
 }
 @media(max-width:345px){

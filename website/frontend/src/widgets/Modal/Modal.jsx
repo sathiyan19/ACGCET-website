@@ -118,7 +118,7 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2,link }) => {
             {link &&(
             <div className="modal_ext_link_holder">
               <div className="modal_ext_link">
-                <a href={link} className="modal_ext_link_tag">Video&nbsp;&nbsp;<span className="fa fa-angle-double-right yah"></span></a>
+                <a href={link} className="modal_ext_link_tag">Media&nbsp;&nbsp;<span className="fa fa-angle-double-right yah"></span></a>
               </div>
             </div>
             )}

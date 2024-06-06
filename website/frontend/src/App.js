@@ -94,6 +94,8 @@ import {
   Iqac_std_statisfy,
 
   Nba,
+  Nbadoc,
+  Nba_sar,
   Nirf,
   Iic,
   Uba,
@@ -156,6 +158,8 @@ import {
   Verification,
   Dash_results,
   Iqac_strategic,
+  Autonomous,
+  Placement_faq,
   Iqac_committee
 } from "./pages";
 import "./App.css";
@@ -284,6 +288,8 @@ const App = () => {
 
         
         <Route path="/nba" element={<Nba/>} />
+        <Route path="/nba/nbadoc" element={<Nbadoc/>} />
+        <Route path="/nba/nba_sar" element={<Nba_sar/>} />
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
@@ -300,6 +306,7 @@ const App = () => {
         <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
         <Route path="/mechdept/mech-sae"element={<Mech_events/>}/>
         <Route path="/placement" element={<Placement />} />
+        <Route path="/placement/faqs" element={<Placement_faq/>}/>
         <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
          
          <Route path="/coe"element={<Coe/>}/>
@@ -332,6 +339,7 @@ const App = () => {
          <Route path="/audit_stmt" element={<Audit_stmt/>}/>
          <Route path="/verification" element={<Verification/>}/>
          <Route path="/iqac_strategic" element={<Iqac_strategic/>}/>
+         <Route path="/autonomous" element={<Autonomous/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

@@ -17,7 +17,7 @@ const Cse_faculties = () => {
             <div className="cseheading">
               Department of Computer Science and Engineering
             </div>
-            <div className="cse_sub_heading">Faculties</div>
+            <div className="cse_sub_heading">Faculty members</div>
           </div>
           <section className="csedark">
             <div className="dept_float_menu">

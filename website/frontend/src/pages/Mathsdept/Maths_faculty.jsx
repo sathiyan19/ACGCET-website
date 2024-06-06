@@ -13,7 +13,7 @@ const Maths_faculty = () => {
         <div className="Mathsheading">
           Department of Mathematics
         </div>
-        <div className='Maths_sub_heading'>Faculties</div>
+        <div className='Maths_sub_heading'>Faculty members</div>
     </div>
     <Sh_mat_fac/>
     <Backtotop/>

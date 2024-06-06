@@ -13,7 +13,7 @@ const Chemistry_faculty = () => {
         <div className="Chemistryheading">
           Department of Chemistry
         </div>
-        <div className='Chemistry_sub_heading'>Faculties</div>
+        <div className='Chemistry_sub_heading'>Faculty Members</div>
     </div>
     <Sh_Chemi_fac/>
     <Backtotop/>
