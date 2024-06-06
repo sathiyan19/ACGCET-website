@@ -70,3 +70,63 @@ export const nba=[
         'period':'3 years'
     }
 ]
+export const nba_menu=[
+    {
+    id: "1",
+    path: "/Nba",
+    link: "About",
+    arl:'l'
+    },
+    
+    {
+        id: "2",
+       path: "/Nba/Nbadoc",
+       link: "NBA Documents",
+       arl:'l'
+       },
+       {
+        id: "3",
+       path: "/Nba/Nba_sar",
+       link: "Self Assessment Report",
+       arl:'l'
+       },
+          
+]
+export const nba_doc=[
+    {
+        'id':'1',
+        'program':'NBA 2021',
+        'pdf':'https://drive.google.com/file/d/1ldXwtFLlZI4E9eQLrdYNSkRz9ueKPYJj/view'
+    },
+    {
+        'id':'2',
+        'program':'NBA 2013',
+        'pdf':'https://drive.google.com/file/d/1a5tV44qDQ_KOXKp33GiWcv-IA9zb39VH/view'
+    },
+   
+    {
+        'id':'3',
+        'program':'NBA 2009',
+        'pdf':'https://drive.google.com/file/d/157ogzVgdGo7y4txJy_kzzJvz_n0ZIarb/view'
+    },
+    {
+        'id':'4',
+        'program':'NBA 2004',
+        'pdf':'https://drive.google.com/file/d/1JNp0G8foTwokxg-D4NVaTZyaypvz_IYg/view'
+    }
+]
+export const nba_civ_sar=[
+    {
+        'id':'1',
+        'program':'Civil SAR',
+        'pdf':'https://drive.google.com/file/d/1jSHxMjKlvbqoHc4tP67HRfxtLBmnw0Fd/view'
+    }
+]
+export const nba_mec_sar=[
+    {
+        'id':'1',
+        'program':'Mechanical SAR',
+        'pdf':'https://drive.google.com/file/d/16VVjQGMpaF07AgCPrZtXydNvb17fVEsK/view'
+    }
+]
+  

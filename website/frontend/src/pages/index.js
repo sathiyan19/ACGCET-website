@@ -71,6 +71,8 @@ export {default as Iqac_practices} from './Iqac_practices/Iqac_practices'
 export {default as Iqac_std_statisfy} from './Iqac_std_statisfy/Iqac_std_statisfy'
 
 export {default as Nba} from './Nba/Nba'
+export {default as Nbadoc} from './Nba/Nbadoc'
+export {default as Nba_sar} from './Nba/Nba_sar'
 export {default as Nirf} from './Nirf/Nirf'
 export {default as Iic} from './Iic/Iic'
 export {default as Scholarship} from './Scholarship/Scholarship'
