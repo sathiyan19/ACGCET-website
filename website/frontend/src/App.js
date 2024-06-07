@@ -161,6 +161,7 @@ import {
   Autonomous,
   Placement_faq,
   Placement_wk_training,
+  Placement_companies,
   Iqac_committee
 } from "./pages";
 import "./App.css";
@@ -309,7 +310,7 @@ const App = () => {
         <Route path="/placement" element={<Placement />} />
         <Route path="/placement/faqs" element={<Placement_faq/>}/>
         <Route path="/placement/Placement_wk_training" element={<Placement_wk_training/>}/>
-
+        <Route path="/placement/our_recruiters" element={<Placement_companies/>}/>
         <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
          
          <Route path="/coe"element={<Coe/>}/>
