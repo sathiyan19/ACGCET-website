@@ -161,7 +161,8 @@ import {
   Autonomous,
   Placement_faq,
   Placement_wk_training,
-  Iqac_committee
+  Iqac_committee,
+  Placement_stats
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -309,6 +310,7 @@ const App = () => {
         <Route path="/placement" element={<Placement />} />
         <Route path="/placement/faqs" element={<Placement_faq/>}/>
         <Route path="/placement/Placement_wk_training" element={<Placement_wk_training/>}/>
+        <Route path="/placement/placement_statistics" element={<Placement_stats/>}/>
 
         <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
          
