@@ -3,7 +3,7 @@ import "./Coe_syllabus1.css";
 import { Backtotop, Syllabuscard, Underline,Floatinmenu} from "../../widgets";
 import { coe_syllabus, coe_menu,coe_syllabus22,coe_syllabus221} from "../../constants/coe";
 import { Radial_menu } from "../../components";
-  import { BsFillGearFill} from "react-icons/bs";
+import { FaEmpire } from "react-icons/fa6";
 
 const Coe_syllabus1 = () => {
     useEffect(() => {
@@ -21,7 +21,7 @@ const Coe_syllabus1 = () => {
 
     <div className="dept_float_menu">
     <Floatinmenu
-    logo={BsFillGearFill}
+    logo={FaEmpire}
     head="Menu"
     links={coe_menu}
     />
