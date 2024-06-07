@@ -17,7 +17,6 @@ const Opening = ({ top_head, heading, click }) => {
           <a
             className="opening_sub_link"
             href={click}
-            target="_blank"
             rel="noopener noreferrer"
           >
             
