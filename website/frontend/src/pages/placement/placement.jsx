@@ -9,6 +9,7 @@ import {Radial_menu } from "../../components";
 import { FaGraduationCap } from "react-icons/fa";
 import oracle_placement from '../../assets/pictures/news_img/oracle.webp'
 
+
 const Placement = () => {
   useEffect(() => {
     document.title='ACCET-Placement';

@@ -417,7 +417,7 @@ const Iqac_std_statisfy_data=[
     {
         'id':'1',
         'program':'Student Satisfaction Survey',
-        'pdf':'https://drive.google.com/drive/folders/1eY3Vo_V-k-xQLjWi7ECEYGf2S3yE3SoT?usp=sharing'
+        'pdf':'/naac_feedback_document.pdf'
 
     }
 ]
