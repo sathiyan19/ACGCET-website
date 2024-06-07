@@ -18,6 +18,7 @@ const anbu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const karthiga ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/karthiga.webp"
 const rajanandhini ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/rajanandini.webp"
 const ramakrishnan ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/CSE_Ramakrishnan.webp"
+const kalaiselvi ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/CSE_Kalaiselvi.webp"
 const vijay ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Supporting_fac/Vijay+Profile+2023.webp"
 const chandraprabha ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/chandraprabha.webp"
 const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Supporting_fac/raja.webp"
@@ -188,6 +189,15 @@ const cse_fac_profiles = [
     Designation: "Assistant professor",
     mailid: "srk.accet@gmail.com",
     pdf: "https://drive.google.com/file/d/12wPIyujrnvmyzbue7CyL0q4NPxVQG9l_/view?usp=sharing",
+  },
+  {
+    id: "10",
+    cover: cover,
+    dp: kalaiselvi,
+    name: "Mrs.M.Kalaiselvi",
+    Designation: "Assistant professor",
+    mailid: "kalailaya@gmail.com",
+    pdf: "https://drive.google.com/file/d/151ARd_n_lykJj81budIlBrFnvFv6e1P6/view?usp=sharing",
   },
 ];
 const cse_sup_profiles = [
