@@ -11,7 +11,8 @@ import {
     civ_dept_menu,
     civ_awards,
     civ_patents,
-    civ_stud_achivement
+    civ_stud_achivement,
+
   } from "../../constants/civil_dept";
 
   import {Listformat, Timeline} from '../../components'
@@ -52,8 +53,15 @@ const Civil_awards = () => {
 
               <div className="civ_stud_achievement">
                 <Underline heading="Students Achievements"/>
-                {civ_stud_achivement.map((item)=><Modal heading={item.heading} pic={item.pic} content_1={item.content_1} content_2={item.content_2} link={item.link} sub_text={item["sub-head"]}/>)}
+                <div className='stud_achieve_cards row'>
+                  {civ_stud_achivement.map((item)=><Modal heading={item.heading} pic={item.pic} content_1={item.content_1} content_2={item.content_2} link={item.link} sub_text={item["sub-head"]}/>)}
+                </div>
+
+
               </div>
+
+
+
     
             </div>
 

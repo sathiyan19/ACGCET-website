@@ -25,6 +25,7 @@ const tamizh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Dep
 const ambikapathi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Ambikapathi.A-1.jpg"
 const appusriram="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Appu+Sriram-1.jpg"
 const arune="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+ARUN.E-1.jpg"
+const jeyashankari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/civil_jeyashankari.webp"
 
 const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_rajasekar.webp"
 const kathir="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_kathiresan.webp"
@@ -34,7 +35,6 @@ const muthu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Dep
 const murugesan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_murugesan.webp"
 const veenus="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_veenusrani.webp"
 const gayathiri="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Gayathri_civil_fac-1.webp"
-const jeyashankari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/civil_jeyashankari.webp"
 
 const computer ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Computer+Lab.webp" 
 const concrete  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Concrete+lab.webp"
@@ -46,6 +46,8 @@ const soil ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const structure ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Structural+Lab.webp"
 const survey ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Survey+Lab.webp" 
 
+const nptl_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/NPTEL_certificate.webp"
+const gate_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/gate_img.webp"
 
 const civ_dept_menu = [
   {
@@ -234,21 +236,22 @@ const civ_fac_profiles = [
   {
     id: "13",
     cover: cover,
+    dp: jeyashankari,
+    name: "K.JEYASHANKARI",
+    Designation: "Assistant Professor(Contract Basis)",
+    mailid: "jeys.engg@gmail.com",
+    pdf: "https://drive.google.com/file/d/1WpDzj0qu7KL49qKNP0nvV4SNQ3GPuz2K/view?usp=sharing",
+  },
+  {
+    id: "14",
+    cover: cover,
     dp: gayathiri,
     name: "M.GAYATHRI",
     Designation: "Assistant Professor",
     mailid: "gayathri@accet.ac.in",
     pdf: "https://drive.google.com/file/d/13GAOVduo48ow1DblMm7GifRJhkD9gp3t/view?usp=sharing",
   },
-  {
-    id: "14",
-    cover: cover,
-    dp: jeyashankari,
-    name: "K.JEYASHANKARI",
-    Designation: "Assistant Professor(adhoc)",
-    mailid: "jeys.engg@gmail.com",
-    pdf: "https://drive.google.com/file/d/1WpDzj0qu7KL49qKNP0nvV4SNQ3GPuz2K/view?usp=sharing",
-  },
+  
 ];
 const civ_sup_profiles = [
   {
@@ -265,7 +268,7 @@ const civ_sup_profiles = [
     cover: cover,
     dp: selva,
     name: "C.Selvaraj",
-    Designation: "Lab Assistant",//(spl-gr)
+    Designation: "Lab Assistant (Sl-Gr)",
     mailid: "selvarajc1971@gmail.com",
     pdf: "https://drive.google.com/file/d/1q88hCWtv3g_k5S9TR2avLxWMwdorJu5T/view?usp=drive_link",
   },
@@ -274,7 +277,7 @@ const civ_sup_profiles = [
     cover: cover,
     dp: muthu,
     name: "C.Muthuramalingam",
-    Designation: "Lab Assistant",//(spl-gr)
+    Designation: "Lab Assistant (Sl-Gr)",
     mailid: "",
     pdf: "https://drive.google.com/file/d/19V56uEx3rQ6W13MG32Ni3-8R5kl3xkpi/view?usp=drive_link",
   },
@@ -736,7 +739,34 @@ const civ_stud_achivement =[
     'content_1':'',
     'content_2':"Raveena of II year Civil (Batch 2022- 2026) has represented Anna University in the All India Inter-University Karate tournament held between 16.03.3034 and 19.03.2024 at Panjab University, Chandigarh"
 },
+
+{
+  
+   id: "2",
+    heading: " GATE Passed Students 2024",
+
+    "sub-head":
+    "The following students have cleared and attained GATE score  ",
+    
+    pic: gate_cover,
+    content_1: "",
+    content_2:    "Kishore.S(2011022) ,  Nagarajan.L(2011031) ,  Nivetha.S(2011033)  , Abiksha.J(2111001)",
+
+},
+{
+  id: "3",
+  heading: "NPTEL Online Certification",
+  "sub-head":
+    "Abinaya.S has successfully completed the  NPTEL online certification course 'Introduction in Engineering Seismology' ",
+  pic: nptl_cover,
+  content_1: "",
+  content_2: "",
+
+
+}
 ];
+
+
 
 const civ_lib_data = [
   {
@@ -1357,6 +1387,14 @@ const civ_lib_data = [
   },
 ];
 
+const civil_study_matetial=[
+  {
+    'id':'1',
+    'program':'Notes link',
+    'pdf':'https://drive.google.com/file/d/1qUsgu4k0SfUpZgnwFIaDB1LGwRixw8El/view?usp=sharing'
+},
+];
+
 const civ_place_24_zoho=[
   {
     sno:1,
@@ -1966,6 +2004,7 @@ export {
   civ_patents,
   civ_stud_achivement,
   civ_lib_data,
+  civil_study_matetial,
   civ_place_lt,
   civ_place_hexagon,
   civ_place_aarbee,
@@ -1987,5 +2026,6 @@ export {
   civ_place_24_im,
   civ_place_24_conserve,
   civ_place_24_pinnacle,
-  civ_publish_data
+  civ_publish_data,
+
 };
