@@ -4,7 +4,7 @@ import "./Iic.css"
 
 import { Content_card,Underline } from '../../widgets'
 
-import { iic } from '../../constants/iic';
+import { iic,edc } from '../../constants/iic';
 
 
 const Iic = () => {
@@ -19,6 +19,13 @@ const Iic = () => {
         <div className='iic_cards'>
             {iic.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
         </div>
+
+        <Underline heading="EDC"/>
+
+        <div className='iic_cards'>
+            {edc.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+        </div>
+
 
     </div>
   )
