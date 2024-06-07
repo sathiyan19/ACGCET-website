@@ -399,14 +399,14 @@ const coe_syllabus22=[
   
     'id':'4',
     'program':'Electrical And Electronics Engineering',
-    'pdf':'https://drive.google.com/file/d/1n1Emoq2XKTZ6Y1McffPH6H4XqbZE74xb/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1SVbqR4d_BuMFGodewPQ3FVg93Elu9Kr_/view?usp=sharing',
    
   },
   {
   
     'id':'5',
     'program':'Civil Engineering',
-    'pdf':'https://drive.google.com/file/d/1lyLkLD6zAfiKi0trnkkbx5Y_m02E_Yua/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1kX3tXBQxbRsTXrcyw7qMi4KmgG773DyK/view?usp=sharing',
    
   },
   {
