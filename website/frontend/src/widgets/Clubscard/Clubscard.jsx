@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Clubscard.css'
+import "./Clubscard.css";
 
 const Clubscard = ({
   logoimg,
@@ -12,6 +12,7 @@ const Clubscard = ({
   staffdesi,
   student,
   studentdesi,
+  infolink,
 }) => {
   return (
     <div className="clubcard_content">
@@ -40,15 +41,24 @@ const Clubscard = ({
       <div className="connect">
         <div className="icons">
           <div className="callfor">
-          <h5>Connect with us on</h5>
+            <h5>Connect with us on</h5>
           </div>
           <div className="callable">
-          <a href={instalink}>
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href={maillink}>
-            <i class="fa fa-envelope"></i>
-          </a>
+            {instalink && (
+              <a href={instalink}>
+                <i class="fa fa-instagram"></i>
+              </a>
+            )}
+            {maillink && (
+              <a href={maillink}>
+                <i class="fa fa-envelope"></i>
+              </a>
+            )}
+            {infolink && (
+              <a href={infolink}>
+                <i class="fa fa-info-circle"></i>
+              </a>
+            )}
           </div>
         </div>
       </div>

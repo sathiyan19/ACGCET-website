@@ -102,7 +102,7 @@ const merlin = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/D
 const khanna = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Rajesh+kanna+B-1.webp"
 const ramya = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Ramya+SP-1.webp"
 const  renisha= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_RenishaG-1.webp"
-const sindhu = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_SindujaC-1.webp"
+const sindhu = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Sindhuja.webp"
 const  sezhina= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/sezhina.webp"
 const karthika = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/karthika.webp"
 const  nandhini= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/dhevanandhini.webp"
@@ -127,6 +127,8 @@ const ece_ic_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com
 const ece_pcb_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/PCB_Fabrication_Station.webp"
 const ece_antenna_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/ECE_Ant_Chamber_1.webp"
 
+const rp2040 = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/rp2040_training.webp"
+const genomics = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/genomics.webp"
 const festronix_23 = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/festronix'23+(2).webp"
 const ncmoc19 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/ncmoc19.webp"
 const stal21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/stalwartz21.webp"
@@ -2148,6 +2150,28 @@ const ece_dept_events = [
 ];
 
 const ece_events = [
+  {
+    id: "8",
+    heading: "Training Programme in RP2040 Dual Core Embedded Controller",
+    "sub-head":
+      "2022-2023",
+    pic: rp2040,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "7",
+    heading: "Seminar on Genomics Technology Era",
+    "sub-head":
+      "2023-2024",
+    pic: genomics,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
   {
     id: "6",
     heading: "Festronix'23",
