@@ -25,6 +25,7 @@ const tamizh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Dep
 const ambikapathi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Ambikapathi.A-1.jpg"
 const appusriram="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Appu+Sriram-1.jpg"
 const arune="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+ARUN.E-1.jpg"
+const jeyashankari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/civil_jeyashankari.webp"
 
 const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_rajasekar.webp"
 const kathir="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_kathiresan.webp"
@@ -45,6 +46,8 @@ const soil ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const structure ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Structural+Lab.webp"
 const survey ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Survey+Lab.webp" 
 
+const nptl_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/NPTEL_certificate.webp"
+const gate_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/gate_img.webp"
 
 const civ_dept_menu = [
   {
@@ -168,6 +171,15 @@ const civ_fac_profiles = [
     pdf: "https://drive.google.com/file/d/19E3dQNGUdMENQp4p6EyeA2GpwlD1rJAW/view?usp=drive_link",
   },
   // {
+    {
+      id: "5",
+      cover: cover,
+      dp: venkat,
+      name: "Venkatesh B",
+      Designation: "Assistant Professor",
+      mailid: "venkatesh@gcetly.ac.in",
+      pdf: "https://drive.google.com/file/d/1mepcWTb4EsJf7fFTMs7S4QBf1t9yDJ-f/view?usp=drive_link",
+    },
   //   id: "2",
   //   cover: cover,
   //   dp: tamizh,
@@ -193,15 +205,6 @@ const civ_fac_profiles = [
     Designation: "Assistant Professor(Adhoc)",
     mailid: "vinothrvkce@gmail.com",
     pdf: "https://drive.google.com/file/d/1aM6O4cKxCGbSstY4XhUOoQtoqGfuhOu_/view?usp=drive_link",
-  },
-  {
-    id: "5",
-    cover: cover,
-    dp: venkat,
-    name: "Venkatesh B",
-    Designation: "Assistant Professor",
-    mailid: "venkatesh@gcetly.ac.in",
-    pdf: "https://drive.google.com/file/d/1mepcWTb4EsJf7fFTMs7S4QBf1t9yDJ-f/view?usp=drive_link",
   },
   {
     id: "10",
@@ -233,12 +236,22 @@ const civ_fac_profiles = [
   {
     id: "13",
     cover: cover,
+    dp: jeyashankari,
+    name: "K.JEYASHANKARI",
+    Designation: "Assistant Professor(Contract Basis)",
+    mailid: "jeys.engg@gmail.com",
+    pdf: "https://drive.google.com/file/d/1WpDzj0qu7KL49qKNP0nvV4SNQ3GPuz2K/view?usp=sharing",
+  },
+  {
+    id: "14",
+    cover: cover,
     dp: gayathiri,
     name: "M.GAYATHRI",
     Designation: "Assistant Professor",
     mailid: "gayathri@accet.ac.in",
     pdf: "https://drive.google.com/file/d/13GAOVduo48ow1DblMm7GifRJhkD9gp3t/view?usp=sharing",
   },
+  
 ];
 const civ_sup_profiles = [
   {
@@ -255,7 +268,7 @@ const civ_sup_profiles = [
     cover: cover,
     dp: selva,
     name: "C.Selvaraj",
-    Designation: "Lab Assistant",//(spl-gr)
+    Designation: "Lab Assistant (Sl-Gr)",
     mailid: "selvarajc1971@gmail.com",
     pdf: "https://drive.google.com/file/d/1q88hCWtv3g_k5S9TR2avLxWMwdorJu5T/view?usp=drive_link",
   },
@@ -264,7 +277,7 @@ const civ_sup_profiles = [
     cover: cover,
     dp: muthu,
     name: "C.Muthuramalingam",
-    Designation: "Lab Assistant",//(spl-gr)
+    Designation: "Lab Assistant (Sl-Gr)",
     mailid: "",
     pdf: "https://drive.google.com/file/d/19V56uEx3rQ6W13MG32Ni3-8R5kl3xkpi/view?usp=drive_link",
   },
@@ -608,12 +621,28 @@ const civ_dept_events = [
 
 const civ_awards = [
   {
-    id: "6",
+    id: "9",
     head: "",
     house: "right",
+    pdf: "https://drive.google.com/file/d/1HvXAigB530wWAC78M7j2XOaNu6JelRmF/view?usp=sharing",
+    content:
+      "Dr. S. R. Sumathy, As the Coordinator of the NPTEL Local Chapter has encouraged more students across colleges to participate in NPTEL courses.",
+  },
+  {
+    id: "6",
+    head: "",
+    house: "left",
     pdf: "https://drive.google.com/file/d/1XH1mUAAL8EJ48JKdN-RFFY5Uqz34F0Ap/view?usp=drive_link",
     content:
       "Dr. C. Vijayaprabha achieved the distinction of being designated as an 'NPTEL Domain Scholar' in the field of Concrete Technology by IIT Madras during the period from July to October 2023, demonstrating her advanced knowledge and expertise in civil engineering.",
+  },
+  {
+    id: "7",
+    head: "",
+    house: "right",
+    pdf: "https://drive.google.com/file/d/1i9MWj3irHjcpD5_uPAzDdHT8RqndwfGP/view?usp=sharing",
+    content:
+      "Dr. S. R. Sumathy, As the Nodal Officer for the Academic Bank of Credits has reported that 6,686 marksheets have been published through DigiLocker to date.",
   },
   {
     id: "5",
@@ -643,6 +672,7 @@ const civ_awards = [
     id: "1",
     head: "",
     house: "right",
+    pdf: "https://drive.google.com/file/d/1oAi1qpg4XlvIKerO8qEKktOTmTceNH1c/view?usp=drive_link",
     content:
       "In 2021, Dr. S. R. Sumathy was awarded the NESIN Award for Best Researcher in Civil Engineering by Science Father, recognizing her exceptional contributions to the field.",
   },
@@ -653,6 +683,14 @@ const civ_awards = [
     pdf: "https://drive.google.com/file/d/1rnXzucT0I21lJqn-QUhqXvN67S4lb1Ke/view?usp=drive_link",
     content:
       "In October 2020, Dr. C. Vijayaprabha received the Research Excellence Award in Civil Engineering, known as the InSc Award 2020, from the Institute of Scholars (InSc), acknowledging her outstanding contributions to the field.",
+  },
+  {
+    id: "8",
+    head: "",
+    house: "right",
+    pdf: "https://drive.google.com/file/d/1cyFgg57bVBgzilequQRqAvQt6f9EAyva/view?usp=sharing",
+    content:
+      "Dr. S. R. Sumathy, As the Coordinator for IIRS has motivated students to enroll in the IIRS Outreach e-Learning Education Programme.",
   },
 ];
 
@@ -701,7 +739,34 @@ const civ_stud_achivement =[
     'content_1':'',
     'content_2':"Raveena of II year Civil (Batch 2022- 2026) has represented Anna University in the All India Inter-University Karate tournament held between 16.03.3034 and 19.03.2024 at Panjab University, Chandigarh"
 },
+
+{
+  
+   id: "2",
+    heading: " GATE Passed Students 2024",
+
+    "sub-head":
+    "The following students have cleared and attained GATE score  ",
+    
+    pic: gate_cover,
+    content_1: "",
+    content_2:    "Kishore.S(2011022) ,  Nagarajan.L(2011031) ,  Nivetha.S(2011033)  , Abiksha.J(2111001)",
+
+},
+{
+  id: "3",
+  heading: "NPTEL Online Certification",
+  "sub-head":
+    "Abinaya.S has successfully completed the  NPTEL online certification course 'Introduction in Engineering Seismology' ",
+  pic: nptl_cover,
+  content_1: "",
+  content_2: "",
+
+
+}
 ];
+
+
 
 const civ_lib_data = [
   {
@@ -1322,6 +1387,77 @@ const civ_lib_data = [
   },
 ];
 
+const civil_study_matetial=[
+  {
+    'id':'1',
+    'program':'Notes link',
+    'pdf':'https://drive.google.com/file/d/1qUsgu4k0SfUpZgnwFIaDB1LGwRixw8El/view?usp=sharing'
+},
+];
+
+const civ_place_24_zoho=[
+  {
+    sno:1,
+    point:"Fathima Rizwana"
+  },
+];
+
+const civ_place_24_lt=[
+  {
+    sno:1,
+    point:"Saranraj R"
+  },
+];
+
+const civ_place_24_im=[
+  {
+    sno:1,
+    point:"Gokulavasan"
+  },
+  {
+    sno:2,
+    point:"Gokulnath"
+  },
+];
+
+const civ_place_24_conserve=[
+  {
+    sno:1,
+    point:"Kasthuri"
+  },
+];
+
+const civ_place_24_pinnacle=[
+  {
+    sno:1,
+    point:"Balakumaran N"
+  },
+  {
+    sno:2,
+    point:"Dineshkumar A"
+  },
+  {
+    sno:3,
+    point:"Narayanakarthick M"
+  },
+  {
+    sno:4,
+    point:"Pavithra S"
+  },
+  {
+    sno:5,
+    point:"Selvakumar A"
+  },
+  {
+    sno:6,
+    point:"Keerthika G"
+  },
+  {
+    sno:7,
+    point:"Janarthini B"
+  },
+];
+
 const civ_place_lt=[
   {
     sno:1,
@@ -1395,6 +1531,11 @@ const civ_place_pinnacle=[
 ];
 
 const mag_data=[
+  {
+    'id':'5',
+    'program':'Magazine 2024',
+    'pdf':'https://drive.google.com/file/d/1ROP_ak5Or3dnNIaU5Fz9PuZZdDiBDqzD/view?usp=sharing'
+  },
   {
     'id':'3',
     'program':'Newsletter Oct 2023',
@@ -1834,6 +1975,19 @@ const about_info=[
   },
 ];
 
+const civ_publish_data=[
+  {
+    'id':'1',
+    'program':'Publications 2021-2024',
+    'pdf':'https://drive.google.com/file/d/16e9TgFTuyxjtcSb3Nb8OQF8EH_pjy6MV/view?usp=drive_link'
+  },
+  {
+    'id':'2',
+    'program':'Publications 2017-2020',
+    'pdf':'https://drive.google.com/file/d/1ehk3vD503j4FZUcuVXO8K9-gK7CYaXfr/view?usp=drive_link'
+  }
+]
+
 export {
   civ_dept_menu,
   civ_fac_profiles,
@@ -1850,6 +2004,7 @@ export {
   civ_patents,
   civ_stud_achivement,
   civ_lib_data,
+  civil_study_matetial,
   civ_place_lt,
   civ_place_hexagon,
   civ_place_aarbee,
@@ -1865,5 +2020,12 @@ export {
   mag_data,
   intern_data,
   mou_data,
-  civ_indus_slide
+  civ_indus_slide,
+  civ_place_24_zoho,
+  civ_place_24_lt,
+  civ_place_24_im,
+  civ_place_24_conserve,
+  civ_place_24_pinnacle,
+  civ_publish_data,
+
 };

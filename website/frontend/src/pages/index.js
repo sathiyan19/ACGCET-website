@@ -114,6 +114,8 @@ export {default as Coe_syllabus1}from'./coe/Coe_syllabus1'
 export {default as Coe_Committiee}from'./coe/Coe_Committiee'
 export{default as Placement} from './placement/placement'
 export {default as Placement_faq} from './placement/Placement_Faq'
+export {default as Placement_wk_training} from './placement/Placement_wk_training'
+
 // export{default as Mech_coe} from'./Mechdept/Mech_coe'
 export{default as Login} from './Login/Login'
 export{default as Dashboard} from './Dashboard/Dashboard'
@@ -165,3 +167,4 @@ export{default as Iqac_strategic} from './Iqac_strategic/Iqac_strategic'
 export{default as Autonomous} from './Autonomous/Autonomous'
 
 export {default as Build}from'./Clubs/Build'
+export{default as Ece_coe} from './Ecedept/Ece_coe'

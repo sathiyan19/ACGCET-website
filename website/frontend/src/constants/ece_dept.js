@@ -211,6 +211,7 @@ const ece_dept_menu = [
     link: "Placement Activites",
     arl: "l",
   },
+ 
   {
     id: "9",
     path: "/ecedept/ece-rankers",
@@ -233,6 +234,12 @@ const ece_dept_menu = [
     id: "12",
     path: "/ecedept/ece-antenna-testing",
     link: "Antenna Testing",
+    arl: "l",
+  },
+  {
+    id: "13",
+    path: "/ecedept/ece_coe",
+    link: "Electronics Test Engineering",
     arl: "l",
   },
 ];
@@ -2329,9 +2336,9 @@ const ece_stud_activities = [
   },
   {
     id: "17",
-    heading: "Arun Kumar N",
+    heading: "Ad-shoot event",
     "sub-head":
-      "Arun Kumar N of '25 batch has secured the first prize in the Ad-shoot event of UTSAVAM-24 a national level fest organized by Alagappa Institute of management held on 15th March 2024",
+      "Arun Kumar N and Akash P of '25 batch has secured the first prize in the Ad-shoot event of UTSAVAM-24 organized by Alagappa Institute of management held on 15th March 2024",
     pic: arunkumar,
     content_1: "",
     content_2: "",
@@ -2555,12 +2562,75 @@ const ece_antenna_rf = [
     point: "Power Sensor (10MHz -18GHz, -30dBm to 20dBm)",
   },
 ];
+const list_head =[
+  {
+    id: "1",
+    point: "Establish new course on Electronic testing and thereby make the students get hands on training in the respective domain",
+  },
+  {
+    id: "2",
+    point: "Conduct high Quality Training in Electronic testing",
+  },
+  {
+    id: "3",
+    point: "Develop association between academia and industry related to Electronic testing",
+  },
+  {
+    id: "4",
+    point: "Conduct Research and Development in related fields and disseminate the results into sustainable business proposals / solutions",
+  },
+  {
+    id: "5",
+    point: "Upgrade the Centre’s technical capacity ",
+  },
+  {
+    id: "6",
+    point: "Support creative and innovative proposals in terms of functions and facilities",
+  },
+  
+
+];
+const list_head1=[
+  {
+    id: "1",
+    point: "Test Director 9 - Simulation platform",
+  },
+  {
+    id: "2",
+    point: "Board walker 9627",
+  },
+  {
+    id: "3",
+    point: "Boundary Scan Test kit",
+  },
+  {
+    id: "4",
+    point: "QT 55 - VI Trainer Kit",
+  },
+  {
+    id: "5",
+    point: "QT - 65 - ICFT and OCFT Kit",
+  },
+  {
+    id: "6",
+    point: "Nodal Impedance Analyser",
+  },
+  {
+    id: "7",
+    point: "PICO Oscilloscope Diagnostics",
+  },
+  {
+    id: "8",
+    point: "LCR Meter",
+  },
+
+]
 
 const ece_placement_info = [
   {
     id:"4",
     year: "2020-2024 Batch",
-    salary:"7.5 LPA",
+    salary:"7 LPA",
     details: [
       {
         id: "1",
@@ -2695,5 +2765,8 @@ export {
   ece_intern,
   ece_cocurricular_data,
   ece_extracurricular,
-  ece_karthika
+  ece_karthika,
+  list_head,
+  list_head1
+
 };
