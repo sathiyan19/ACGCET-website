@@ -1494,6 +1494,11 @@ const civ_place_pinnacle=[
 
 const mag_data=[
   {
+    'id':'5',
+    'program':'Magazine 2024',
+    'pdf':'https://drive.google.com/file/d/1ROP_ak5Or3dnNIaU5Fz9PuZZdDiBDqzD/view?usp=sharing'
+  },
+  {
     'id':'3',
     'program':'Newsletter Oct 2023',
     'pdf':'https://drive.google.com/file/d/1cD33AhRGQoBjQH9S1ned3_SPaS-r95ez/view?usp=drive_link'
