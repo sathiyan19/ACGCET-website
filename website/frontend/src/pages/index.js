@@ -166,3 +166,6 @@ export{default as Audit_stmt} from './Audit_stmt/Audit_stmt'
 export{default as Verification} from './Verification/Verification'
 export{default as Iqac_strategic} from './Iqac_strategic/Iqac_strategic'
 export{default as Autonomous} from './Autonomous/Autonomous'
+
+export {default as Build}from'./Clubs/Build'
+export{default as Ece_coe} from './Ecedept/Ece_coe'

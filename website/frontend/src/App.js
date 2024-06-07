@@ -8,7 +8,10 @@ import {
   Milestones,
   About,
   Vision,
+
   Clubs,
+  Build,
+  
   Office,
   Alumni,
   Nss,
@@ -162,6 +165,7 @@ import {
   Placement_faq,
   Placement_wk_training,
   Iqac_committee,
+  Ece_coe,
   Placement_stats
 } from "./pages";
 import "./App.css";
@@ -345,6 +349,9 @@ const App = () => {
          <Route path="/verification" element={<Verification/>}/>
          <Route path="/iqac_strategic" element={<Iqac_strategic/>}/>
          <Route path="/autonomous" element={<Autonomous/>}/>
+
+         <Route path="/clubs/build_club" element={<Build/>}/>
+         <Route path="/ecedept/ece_coe" element={<Ece_coe/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

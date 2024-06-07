@@ -12,6 +12,10 @@ const oracle2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/pl
 const oracle3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/oracle3.webp";
 const mock1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/mock1.webp";
 const mock2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/mock2.webp";
+
+ const apps ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/apps-third-yrs.webp";
+ const ansa1 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/ansa1.webp";
+ const ansa2 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/ansa2.webp";
 const Visit2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/place1.webp";
 const Visit1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/place2.webp";
 
@@ -134,6 +138,41 @@ const Placement_wk_training = () => {
           <p className='placement_content'>
           By integrating these state-of-the-art facilities into our academic environment, we are fostering a culture of innovation and problem-solving that extends beyond the classroom. Students will have the opportunity to collaborate on projects, develop new technologies, and gain insights into industry practices, all within a supportive, technologically advanced setting. This collaboration with Base Automation not only enriches our curriculum but also enhances our institutional reputation as a leader in automation education. We are excited about the future possibilities this lab will bring, preparing our students to be the pioneers of tomorrow's industrial solutions.
           </p>
+        </div>
+        </div>
+        <div className='placement_abt3'>
+        <Underline heading="General Aptitude Assessment for third years"/> 
+        <div className='placement_two-col'>
+          <p className='placement_content'>
+          The third-year general aptitude test, held on March 22, 2024, was a significant event for students aiming to assess and improve their cognitive and problem-solving abilities. This annual examination, conducted across various educational institutions, is designed to evaluate a broad spectrum of skills, including logical reasoning, quantitative analysis, verbal ability, and data interpretation.
+
+The test is a pivotal part of the academic calendar, helping students gauge their readiness for competitive exams and future career challenges. This year's edition saw an increase in participation, reflecting a growing awareness among students about the importance of aptitude tests in academic and professional development.
+
+
+          </p>
+          <div className="dept_img_holder">
+            <img className="dept_img" src={apps} />
+          </div>
+        </div>
+     
+         <div className='placement_abt4'>
+        <Underline heading="Training on ANSA software for Mechanical Engineering students"/> 
+        <div className='placement_two-col'>
+          <p className='placement_content'>
+          The recent training session on ANSA software for Mechanical Engineering students provided an invaluable opportunity to gain hands-on experience with a crucial tool in the industry. ANSA, known for its advanced pre-processing capabilities, is essential for finite element analysis (FEA) and computer-aided engineering (CAE). During the training, students were introduced to the software’s interface, learning how to create and manipulate complex models, mesh geometries, and set up simulations. This practical exposure is vital for understanding real-world engineering problems and enhancing their technical skill set.
+          </p>
+          <div className="dept_img_holder">
+            <img className="dept_img" src={ansa1} />
+          </div>
+        </div>
+        <div className='placement_two-col1'>
+        <div className="dept_img_holder2">
+            <img className="dept_img" src={ansa2} />
+          </div>
+          <p className='placement_content'>
+          By integrating ANSA training into their curriculum, the Mechanical Engineering department aims to bridge the gap between theoretical knowledge and practical application. Students can now better prepare for careers in automotive, aerospace, and other engineering sectors where FEA is extensively used. This training not only boosts their employability but also equips them with the necessary tools to tackle engineering challenges, fostering a deeper comprehension of mechanical systems and their analysis.
+          </p>
+        </div>
         </div>
         </div>
       </section>
