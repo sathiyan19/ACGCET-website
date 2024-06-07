@@ -59,6 +59,12 @@ const placement_menu =[
         link: "Training and Workshops",
         arl:'l'
     },
+    {
+        id: "7",
+        path: "/placement/placement_statistics",
+        link: "Placement Statistics",
+        arl:'l'
+    },
     // {
     //     id: "2",
     //     path: "/placement/alumni_stories",

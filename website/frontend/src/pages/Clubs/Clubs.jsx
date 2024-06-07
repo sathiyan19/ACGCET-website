@@ -44,6 +44,7 @@ const Clubs = () => {
           staffdesi={item.staffdesi}
           student={item.student}
           studentdesi={item.studentdesi}
+          infolink={item.infolink}
         />
       ))}
     </div>

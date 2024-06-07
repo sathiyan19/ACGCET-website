@@ -5,9 +5,7 @@ import{
     Floatinmenu,
     Underline,
     Content_card,
-    Opening,
-    
-    
+    Opening,   
   }from"../../widgets";
   
   import
