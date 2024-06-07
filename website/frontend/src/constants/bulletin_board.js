@@ -38,7 +38,7 @@ export const bulletin_info=[
 //         ),
 //     },
 {
-    id:'22',
+    id:'23',
     link:"https://drive.google.com/file/d/1onZo4UGT_esdqisCoetDZEJC0NW_XdcD/view?usp=sharing",
     content:(
         <span>
