@@ -8,7 +8,10 @@ import {
   Milestones,
   About,
   Vision,
+
   Clubs,
+  Build,
+  
   Office,
   Alumni,
   Nss,
@@ -340,6 +343,8 @@ const App = () => {
          <Route path="/verification" element={<Verification/>}/>
          <Route path="/iqac_strategic" element={<Iqac_strategic/>}/>
          <Route path="/autonomous" element={<Autonomous/>}/>
+
+         <Route path="/clubs/build_club" element={<Build/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

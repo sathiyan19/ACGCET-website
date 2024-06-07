@@ -37,6 +37,7 @@ const Clubs_info = [
     staffdesi: "Associate Professor/Civil",
     student: "Mohammed Ishaq Khan R",
     studentdesi: "3rd year Electrical",
+    infolink:"/clubs/build_club",
   },
   {
     id: "1",
@@ -49,6 +50,7 @@ const Clubs_info = [
     staffdesi: "Asst.Prof. EEE Dept",
     student: "Anuraj Kishore J",
     studentdesi: "4th year ECE",
+    infolink:"",
   },
 
   {
@@ -62,6 +64,7 @@ const Clubs_info = [
     staffdesi: "Cheif faculty advisor/Physics",
     student: "Sathyan S",
     studentdesi: "4th year Mechanical",
+    infolink:"",
   },
 
   {
@@ -75,6 +78,7 @@ const Clubs_info = [
     staffdesi: "Asst.Prof. Mech Dept",
     student: "P.Gokulavasan ",
     studentdesi: "4th year Civil",
+    infolink:"",
   },
 
   // {
@@ -101,7 +105,24 @@ const Clubs_info = [
     staffdesi: "Assistant Professor/Maths",
     student: "Dhanushree M",
     studentdesi: "4th year CSE",
+    infolink:"",
   },
 ];
 
-export { Clubs_heroimage_carousalinfo, Clubs_info };
+const build_club_reports=[
+  {
+      'id':"2",
+      "head":"2023-2024",
+      "house":"right",
+      "pdf":"https://drive.google.com/file/d/1svCpM7GKbQqKKpHxdk896Av3y_eVJ0qf/view?usp=drive_link"
+  },
+  {
+      'id':"1",
+      "head":"2022-2023",
+      "house":"left",
+      "pdf":"https://drive.google.com/file/d/18ayxlleEEkwUmaxLWkCsghg-msRoPyKl/view?usp=drive_link"
+  }
+]
+
+
+export { Clubs_heroimage_carousalinfo, Clubs_info,build_club_reports };
