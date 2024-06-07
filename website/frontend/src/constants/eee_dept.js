@@ -764,6 +764,12 @@ const studcorner=[
     program:"Indumathi V",
     view:"https://drive.google.com/file/d/1dYWVNbKBlcTQCTNql0n7WjoS3WCcYwBL/view"
   },
+  {
+    id:'4',
+    // top_head:'B.E (final yr)',
+    program:"Nidhish MM, Sunjith Kumaran CM, \n Madhavan K, VinothKumar S",
+    view:"https://drive.google.com/file/d/1OOI-yiXQz2QU-6pu-gvlwkg6vsTa2dla/view?usp=drive_link "
+  },
 ]
 const eee_gen=[
   {
