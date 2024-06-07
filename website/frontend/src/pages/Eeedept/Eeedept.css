@@ -93,6 +93,12 @@
   justify-content: center;
   margin-left: 10px;
 }
+.eee-intro-vid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
 @media(max-width:1100px){
   .eeetwo-col {
