@@ -46,6 +46,8 @@ const soil ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const structure ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Structural+Lab.webp"
 const survey ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Survey+Lab.webp" 
 
+const nptl_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/NPTEL_certificate.webp"
+const gate_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/gate_img.webp"
 
 const civ_dept_menu = [
   {
@@ -737,7 +739,34 @@ const civ_stud_achivement =[
     'content_1':'',
     'content_2':"Raveena of II year Civil (Batch 2022- 2026) has represented Anna University in the All India Inter-University Karate tournament held between 16.03.3034 and 19.03.2024 at Panjab University, Chandigarh"
 },
+
+{
+  
+   id: "2",
+    heading: " GATE Passed Students 2024",
+
+    "sub-head":
+    "The following students have cleared and attained GATE score  ",
+    
+    pic: gate_cover,
+    content_1: "",
+    content_2:    "Kishore.S(2011022) ,  Nagarajan.L(2011031) ,  Nivetha.S(2011033)  , Abiksha.J(2111001)",
+
+},
+{
+  id: "3",
+  heading: "NPTEL Online Certification",
+  "sub-head":
+    "Abinaya.S has successfully completed the  NPTEL online certification course ",
+  pic: nptl_cover,
+  content_1: "",
+  content_2: "",
+
+
+}
 ];
+
+
 
 const civ_lib_data = [
   {
@@ -1992,5 +2021,6 @@ export {
   civ_place_24_im,
   civ_place_24_conserve,
   civ_place_24_pinnacle,
-  civ_publish_data
+  civ_publish_data,
+
 };
