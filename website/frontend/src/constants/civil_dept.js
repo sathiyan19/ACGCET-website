@@ -757,7 +757,7 @@ const civ_stud_achivement =[
   id: "3",
   heading: "NPTEL Online Certification",
   "sub-head":
-    "Abinaya.S has successfully completed the  NPTEL online certification course ",
+    "Abinaya.S has successfully completed the  NPTEL online certification course 'Introduction in Engineering Seismology' ",
   pic: nptl_cover,
   content_1: "",
   content_2: "",
@@ -1531,6 +1531,11 @@ const civ_place_pinnacle=[
 ];
 
 const mag_data=[
+  {
+    'id':'5',
+    'program':'Magazine 2024',
+    'pdf':'https://drive.google.com/file/d/1ROP_ak5Or3dnNIaU5Fz9PuZZdDiBDqzD/view?usp=sharing'
+  },
   {
     'id':'3',
     'program':'Newsletter Oct 2023',
