@@ -9,7 +9,8 @@ const oracle2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/pl
 const oracle3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/oracle3.webp";
 const mock1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/mock1.webp";
 const mock2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/mock2.webp";
-
+const Visit2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/place1.webp";
+const Visit1="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/place2.webp";
 
 const Placement_wk_training = () => {
     useEffect(() => {
@@ -75,6 +76,25 @@ const Placement_wk_training = () => {
         <h2>Mock Drive Panel List</h2>
         <div className='placement_mock_tab'>
         <Table data={placement_mock_drive} columns={columns} />
+        </div>
+        <div className='placement_abt2'>
+        <Underline heading="Campus Visit"/> 
+        <div className='placement_two-col'>
+          <p className='placement_content'>
+          We were delighted to host the top-level management team from Base Automation for a significant campus visit aimed at establishing a cutting-edge Industrial Automation Lab dedicated to research and development. This initiative represents a transformative leap in our educational approach, providing students with unparalleled opportunities to engage directly with the latest advancements in automation technology. The proposed lab will be a hub for hands-on learning, where students can work on real-time projects that reflect the intricate challenges of modern industrial systems. This immersive experience is designed to bridge the gap between classroom theory and practical application, equipping our students with the skills and confidence needed to excel in the rapidly evolving field of industrial automation.
+          </p>
+          <div className="dept_img_holder">
+            <img className="dept_img" src={Visit1} />
+          </div>
+        </div>
+        <div className='placement_two-col1'>
+        <div className="dept_img_holder2">
+            <img className="dept_img" src={Visit2} />
+          </div>
+          <p className='placement_content'>
+          By integrating these state-of-the-art facilities into our academic environment, we are fostering a culture of innovation and problem-solving that extends beyond the classroom. Students will have the opportunity to collaborate on projects, develop new technologies, and gain insights into industry practices, all within a supportive, technologically advanced setting. This collaboration with Base Automation not only enriches our curriculum but also enhances our institutional reputation as a leader in automation education. We are excited about the future possibilities this lab will bring, preparing our students to be the pioneers of tomorrow's industrial solutions.
+          </p>
+        </div>
         </div>
       </section>
 
