@@ -38,6 +38,46 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'22',
+    link:"https://drive.google.com/file/d/1onZo4UGT_esdqisCoetDZEJC0NW_XdcD/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 B.E. II Semester Exams Timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'21',
+    link:"https://drive.google.com/file/d/1Im1hjIhLK3NnpntIL0Or-wRdlwi2p5fl/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 B.E. IV Semester Exams Timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'20',
+    link:"https://drive.google.com/file/d/1__knJrkEpH0-VKmHze7h38j8PWnL4Pav/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 Part-time B.E. II Semester Exams Timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'19',
+    link:"https://drive.google.com/file/d/1JdLQoOLT1HuNEzNdUE38xwuwK8qeV1FQ/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 Arrear Exams Timetable
+</span>
+        </span>
+    ),
+},
+{
     id:'18',
     link:"https://drive.google.com/file/d/1vxzqp9-1uaB2rCaPIl0653RlTjeym6Fj/view?usp=drive_link",
     content:(
