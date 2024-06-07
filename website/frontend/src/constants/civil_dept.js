@@ -25,6 +25,7 @@ const tamizh="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Dep
 const ambikapathi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Ambikapathi.A-1.jpg"
 const appusriram="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+Appu+Sriram-1.jpg"
 const arune="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Civil+ARUN.E-1.jpg"
+const jeyashankari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/civil_jeyashankari.webp"
 
 const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_rajasekar.webp"
 const kathir="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_kathiresan.webp"
@@ -34,7 +35,6 @@ const muthu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Dep
 const murugesan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_murugesan.webp"
 const veenus="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Supporting_fac/civil_veenusrani.webp"
 const gayathiri="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/Gayathri_civil_fac-1.webp"
-const jeyashankari="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Faculties/Teaching_fac/civil_jeyashankari.webp"
 
 const computer ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Computer+Lab.webp" 
 const concrete  ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Concrete+lab.webp"
@@ -234,21 +234,22 @@ const civ_fac_profiles = [
   {
     id: "13",
     cover: cover,
+    dp: jeyashankari,
+    name: "K.JEYASHANKARI",
+    Designation: "Assistant Professor(Contract Basis)",
+    mailid: "jeys.engg@gmail.com",
+    pdf: "https://drive.google.com/file/d/1WpDzj0qu7KL49qKNP0nvV4SNQ3GPuz2K/view?usp=sharing",
+  },
+  {
+    id: "14",
+    cover: cover,
     dp: gayathiri,
     name: "M.GAYATHRI",
     Designation: "Assistant Professor",
     mailid: "gayathri@accet.ac.in",
     pdf: "https://drive.google.com/file/d/13GAOVduo48ow1DblMm7GifRJhkD9gp3t/view?usp=sharing",
   },
-  {
-    id: "14",
-    cover: cover,
-    dp: jeyashankari,
-    name: "K.JEYASHANKARI",
-    Designation: "Assistant Professor(adhoc)",
-    mailid: "jeys.engg@gmail.com",
-    pdf: "https://drive.google.com/file/d/1WpDzj0qu7KL49qKNP0nvV4SNQ3GPuz2K/view?usp=sharing",
-  },
+  
 ];
 const civ_sup_profiles = [
   {
@@ -265,7 +266,7 @@ const civ_sup_profiles = [
     cover: cover,
     dp: selva,
     name: "C.Selvaraj",
-    Designation: "Lab Assistant",//(spl-gr)
+    Designation: "Lab Assistant (Sl-Gr)",
     mailid: "selvarajc1971@gmail.com",
     pdf: "https://drive.google.com/file/d/1q88hCWtv3g_k5S9TR2avLxWMwdorJu5T/view?usp=drive_link",
   },
@@ -274,7 +275,7 @@ const civ_sup_profiles = [
     cover: cover,
     dp: muthu,
     name: "C.Muthuramalingam",
-    Designation: "Lab Assistant",//(spl-gr)
+    Designation: "Lab Assistant (Sl-Gr)",
     mailid: "",
     pdf: "https://drive.google.com/file/d/19V56uEx3rQ6W13MG32Ni3-8R5kl3xkpi/view?usp=drive_link",
   },
@@ -1357,6 +1358,14 @@ const civ_lib_data = [
   },
 ];
 
+const civil_study_matetial=[
+  {
+    'id':'1',
+    'program':'Notes link',
+    'pdf':'https://drive.google.com/file/d/1qUsgu4k0SfUpZgnwFIaDB1LGwRixw8El/view?usp=sharing'
+},
+];
+
 const civ_place_24_zoho=[
   {
     sno:1,
@@ -1961,6 +1970,7 @@ export {
   civ_patents,
   civ_stud_achivement,
   civ_lib_data,
+  civil_study_matetial,
   civ_place_lt,
   civ_place_hexagon,
   civ_place_aarbee,
