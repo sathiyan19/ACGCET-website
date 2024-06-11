@@ -102,7 +102,7 @@ const merlin = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/D
 const khanna = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Rajesh+kanna+B-1.webp"
 const ramya = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Ramya+SP-1.webp"
 const  renisha= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_RenishaG-1.webp"
-const sindhu = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_SindujaC-1.webp"
+const sindhu = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/Ece_Sindhuja.webp"
 const  sezhina= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/sezhina.webp"
 const karthika = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/karthika.webp"
 const  nandhini= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/faculties/teachingfac/dhevanandhini.webp"
@@ -127,6 +127,8 @@ const ece_ic_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com
 const ece_pcb_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/PCB_Fabrication_Station.webp"
 const ece_antenna_lab="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/laboratories/industryandinstitutelab/ECE_Ant_Chamber_1.webp"
 
+const rp2040 = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/rp2040_training.webp"
+const genomics = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/genomics.webp"
 const festronix_23 = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/festronix'23+(2).webp"
 const ncmoc19 ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/ncmoc19.webp"
 const stal21="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/events/stalwartz21.webp"
@@ -209,6 +211,7 @@ const ece_dept_menu = [
     link: "Placement Activites",
     arl: "l",
   },
+ 
   {
     id: "9",
     path: "/ecedept/ece-rankers",
@@ -231,6 +234,12 @@ const ece_dept_menu = [
     id: "12",
     path: "/ecedept/ece-antenna-testing",
     link: "Antenna Testing",
+    arl: "l",
+  },
+  {
+    id: "13",
+    path: "/ecedept/ece_coe",
+    link: "Electronics Test Engineering",
     arl: "l",
   },
 ];
@@ -2142,6 +2151,28 @@ const ece_dept_events = [
 
 const ece_events = [
   {
+    id: "8",
+    heading: "Training Programme in RP2040 Dual Core Embedded Controller",
+    "sub-head":
+      "2022-2023",
+    pic: rp2040,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
+    id: "7",
+    heading: "Seminar on Genomics Technology Era",
+    "sub-head":
+      "2023-2024",
+    pic: genomics,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
+  {
     id: "6",
     heading: "Festronix'23",
     "sub-head":
@@ -2531,6 +2562,69 @@ const ece_antenna_rf = [
     point: "Power Sensor (10MHz -18GHz, -30dBm to 20dBm)",
   },
 ];
+const list_head =[
+  {
+    id: "1",
+    point: "Establish new course on Electronic testing and thereby make the students get hands on training in the respective domain",
+  },
+  {
+    id: "2",
+    point: "Conduct high Quality Training in Electronic testing",
+  },
+  {
+    id: "3",
+    point: "Develop association between academia and industry related to Electronic testing",
+  },
+  {
+    id: "4",
+    point: "Conduct Research and Development in related fields and disseminate the results into sustainable business proposals / solutions",
+  },
+  {
+    id: "5",
+    point: "Upgrade the Centre’s technical capacity ",
+  },
+  {
+    id: "6",
+    point: "Support creative and innovative proposals in terms of functions and facilities",
+  },
+  
+
+];
+const list_head1=[
+  {
+    id: "1",
+    point: "Test Director 9 - Simulation platform",
+  },
+  {
+    id: "2",
+    point: "Board walker 9627",
+  },
+  {
+    id: "3",
+    point: "Boundary Scan Test kit",
+  },
+  {
+    id: "4",
+    point: "QT 55 - VI Trainer Kit",
+  },
+  {
+    id: "5",
+    point: "QT - 65 - ICFT and OCFT Kit",
+  },
+  {
+    id: "6",
+    point: "Nodal Impedance Analyser",
+  },
+  {
+    id: "7",
+    point: "PICO Oscilloscope Diagnostics",
+  },
+  {
+    id: "8",
+    point: "LCR Meter",
+  },
+
+]
 
 const ece_placement_info = [
   {
@@ -2671,5 +2765,8 @@ export {
   ece_intern,
   ece_cocurricular_data,
   ece_extracurricular,
-  ece_karthika
+  ece_karthika,
+  list_head,
+  list_head1
+
 };

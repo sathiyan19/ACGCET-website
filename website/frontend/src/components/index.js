@@ -22,3 +22,4 @@ export {default as Recaptcha} from './Recaptcha/Recaptcha';
 export {default as Pic_gallery} from './Pic_gallery/Pic_gallery';
 export {default as Sidenavbar} from './Sidenavbar/Sidenavbar'
 export {default as Dash_radialmenu} from './Dash_radialmenu/Dash_radialmenu'
+export {default as Logo_gallery} from './Logo_gallery/Logo_gallery'

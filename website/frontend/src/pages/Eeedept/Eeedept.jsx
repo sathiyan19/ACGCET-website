@@ -120,7 +120,12 @@ const Eeedept = () => {
             {eee_progs.map((item)=><Content_card key={item.id} period={item.period} year={item.year} top_head={item.top_head} heading={item.program} intake={item.intake}/>)}
           </div>
         </div>
+        <Underline heading="Department Video"/>
+      <div className="eee-intro-vid">
+      <iframe src="https://drive.google.com/file/d/1CnZKls7OOE2Ir0LQFOO7hd9qLktyqTM0/preview" className="eee-intro-vid-i"   allow="autoplay"></iframe>
+      </div>
       </section>
+      
 
       <Backtotop />
     </div>

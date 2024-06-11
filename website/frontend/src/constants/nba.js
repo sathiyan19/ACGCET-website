@@ -85,13 +85,6 @@ export const nba=[
     },
     {
         'sno':'13',
-        'name':'B.E -Electronics and Communication Engineering',
-        'acc_stat':'3rd Accreditation',
-        'year':'2021',
-        'period':'3 years'
-    },
-    {
-        'sno':'14',
         'name':'M.E- Manufacturing',
         'acc_stat':'1st Accreditation',
         'year':'2013',

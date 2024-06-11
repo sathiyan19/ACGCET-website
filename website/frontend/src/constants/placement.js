@@ -1,3 +1,51 @@
+const acs="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/acs.webp"
+const admindroid="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/admindroid.webp"
+const base="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/base_automation.webp"
+const brakes="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/brakes.webp"
+const centizen="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/Centizen.webp"
+const data_aces="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/data_aces.webp"
+const edify="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/edify.webp"
+const face="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/face.webp"
+const finsurge="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/finsurge.webp"
+const flsmidth="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/flsmidth.webp"
+const fourbends="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/fourbends.webp"
+const geakminds="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/Geakminds.webp"
+const gofrugal="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/gofrugal.webp"
+const hand="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/hand.webp"
+const hcl="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/hcl.webp"
+const hexawave="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/hexawave.webp"
+const infofaces="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/Infofaces.webp"
+const jetz="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/jetz.webp"
+const lightcast="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/lightcast.webp"
+const lt="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/lt.webp"
+const lucas_tvs="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/lucas_tvs.webp"
+const mistral="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/mistral.webp"
+const p="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/p.webp"
+const pentagon="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/pentagon_space.webp"
+const pentalpha="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/pentalpha.webp"
+const propal="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/propal.webp"
+const saintgobain="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/saint_gobain.webp"
+const scas="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/scas.webp"
+const schneider="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/schneider.webp"
+const survey="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/survey_sparrow.webp"
+const mahindra="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/tech_mahindra.webp"
+const titan="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/titan.webp"
+const tns="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/Tns.webp"
+const valeo="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/valeo.webp"
+const vi="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/vi_microsystems.webp"
+const wafer="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/wafer_space.webp"
+const whiteblue="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/whiteblue.webp"
+const wipro="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/wipro.webp"
+const yamaha="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/yamaha.webp"
+const zf="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/zf.webp"
+const zoho="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/zoho.webp"
+
+
+
+
+
+
+
 const placement_menu =[
     {
         id: "1",
@@ -11,6 +59,12 @@ const placement_menu =[
         link: "Training and Workshops",
         arl:'l'
     },
+    {
+        id: "7",
+        path: "/placement/placement_statistics",
+        link: "Placement Statistics",
+        arl:'l'
+    },
     // {
     //     id: "2",
     //     path: "/placement/alumni_stories",
@@ -18,11 +72,18 @@ const placement_menu =[
     //     arl:'l'
     // },
     {
+        id: "5",
+        path: "/placement/our_recruiters",
+        link: "Our Recruiters",
+        arl: "l"
+    },
+    {
         id: "4",
         path: "/placement/faqs",
         link: "FAQs",
         arl:'l'
     },
+    
 ]
 
 const placement_faqs=[
@@ -280,10 +341,55 @@ const placement_mock_drive=[
         'company':'Zoho Corp with a team of 11 members from Zoho Corp, Karaikudi.',
     },
 ]
+const placement_logo=[
+    { id: "1", logo_img: acs, logo_desc: "acs" },
+    { id: "2", logo_img: admindroid, logo_desc: "admindroid" },
+    { id: "3", logo_img: base, logo_desc: "base" },
+    { id: "4", logo_img: brakes, logo_desc: "brakes" },
+    { id: "5", logo_img: centizen, logo_desc: "centizen" },
+    { id: "6", logo_img: data_aces, logo_desc: "data_aces" },
+    { id: "7", logo_img: edify, logo_desc: "edify" },
+    { id: "8", logo_img: face, logo_desc: "face" },
+    { id: "9", logo_img: finsurge, logo_desc: "finsurge" },
+    { id: "10", logo_img: flsmidth, logo_desc: "flsmidth" },
+    { id: "11", logo_img: fourbends, logo_desc: "fourbends" },
+    { id: "12", logo_img: geakminds, logo_desc: "geakminds" },
+    { id: "13", logo_img: gofrugal, logo_desc: "gofrugal" },
+    { id: "14", logo_img: hand, logo_desc: "hand" },
+    { id: "15", logo_img: hcl, logo_desc: "hcl" },
+    { id: "16", logo_img: hexawave, logo_desc: "hexawave" },
+    { id: "17", logo_img: infofaces, logo_desc: "infofaces" },
+    { id: "18", logo_img: jetz, logo_desc: "jetz" },
+    { id: "19", logo_img: lightcast, logo_desc: "lightcast" },
+    { id: "20", logo_img: lt, logo_desc: "lt" },
+    { id: "21", logo_img: lucas_tvs, logo_desc: "lucas_tvs" },
+    { id: "22", logo_img: mistral, logo_desc: "mistral" },
+    { id: "23", logo_img: p, logo_desc: "p" },
+    { id: "24", logo_img: pentagon, logo_desc: "pentagon" },
+    { id: "25", logo_img: pentalpha, logo_desc: "pentalpha" },
+    { id: "26", logo_img: propal, logo_desc: "propal" },
+    { id: "27", logo_img: saintgobain, logo_desc: "saintgobain" },
+    { id: "28", logo_img: scas, logo_desc: "scas" },
+    { id: "29", logo_img: schneider, logo_desc: "schneider" },
+    { id: "30", logo_img: survey, logo_desc: "survey" },
+    { id: "31", logo_img: mahindra, logo_desc: "mahindra" },
+    { id: "32", logo_img: titan, logo_desc: "titan" },
+    { id: "33", logo_img: tns, logo_desc: "tns" },
+    { id: "34", logo_img: valeo, logo_desc: "valeo" },
+    { id: "35", logo_img: vi, logo_desc: "vi" },
+    { id: "36", logo_img: wafer, logo_desc: "wafer" },
+    { id: "37", logo_img: whiteblue, logo_desc: "whiteblue" },
+    { id: "38", logo_img: wipro, logo_desc: "wipro" },
+    { id: "39", logo_img: yamaha, logo_desc: "yamaha" },
+    { id: "40", logo_img: zf, logo_desc: "zf" },
+    { id: "41", logo_img: zoho, logo_desc: "zoho" }
+
+]
 
 
 export{
     placement_menu,
     placement_faqs,
-    placement_mock_drive
+    placement_mock_drive,
+    placement_logo
 };
