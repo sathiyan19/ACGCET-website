@@ -6,7 +6,7 @@ import { Table ,Radial_menu } from "../../components";
 
 import { nba,nba_menu } from "../../constants/nba";
 
-import { Floatinmenu,Underline } from "../../widgets";
+import { Floatinmenu,Underline, Backtotop } from "../../widgets";
 import { BsClipboardDataFill } from "react-icons/bs";
 
 
@@ -24,7 +24,8 @@ const Nba = () => {
     
   return (
     <div className='nba'>
-      <section className="nbamenu">
+       <Underline heading="NBA" />
+      
       <div className="nba_float_menu">
           <Floatinmenu
             logo={BsClipboardDataFill}
@@ -32,18 +33,18 @@ const Nba = () => {
             links={nba_menu}
           />
         </div>
+        
+     
         <Radial_menu menu_links={nba_menu}/>
-      <Underline heading="NBA" />
-      
 
-      <p>The institution is committed to continuous improvement in the quality of excellence through strong leadership. National Board of Accreditation (NBA) granted accreditation to the programmmes after critically evaluated and assured the quality of the programmes offered by  the institution.</p>
+      <p className='nba_text'>The institution is committed to continuous improvement in the quality of excellence through strong leadership. National Board of Accreditation (NBA) granted accreditation to the programmmes after critically evaluated and assured the quality of the programmes offered by  the institution.</p>
 
       <div className='nba_tab'>
       <Table data={nba} columns={columns} />
       </div>
-      </section>
+      <Backtotop />
     </div>
-  )
-}
+  );
+};
 
 export default Nba
