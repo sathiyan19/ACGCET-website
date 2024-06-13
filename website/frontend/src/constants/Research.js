@@ -39,7 +39,7 @@ const Main_Research_civil=[
 const Research_Promotion_Policy=[
     { 'id' : '6',
     'program':'Research Promotion Policy ',
-    'pdf':'https://drive.google.com/file/d/1abaNoQ23pVVt3h1Bql_OjX1zcklqDQVL/view?usp=sharing'
+    'pdf':'https://drive.google.com/file/d/1nrkSxg-5d-iMQFq8HW-nhEWIJb__BeP3/view?usp=sharing'
 },
 ]
 

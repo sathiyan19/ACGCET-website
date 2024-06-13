@@ -122,7 +122,7 @@ const Eeedept = () => {
         </div>
         <Underline heading="Department Video"/>
       <div className="eee-intro-vid">
-      <iframe src="https://drive.google.com/file/d/1CnZKls7OOE2Ir0LQFOO7hd9qLktyqTM0/preview" width="840" height="480" allow="autoplay"></iframe>
+      <iframe src="https://drive.google.com/file/d/1CnZKls7OOE2Ir0LQFOO7hd9qLktyqTM0/preview" className="eee-intro-vid-i"   allow="autoplay"></iframe>
       </div>
       </section>
       

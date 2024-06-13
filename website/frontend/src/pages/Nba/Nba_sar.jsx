@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 
 import "./Nba_sar.css"
 
-import { Content_card,Underline,Floatinmenu } from '../../widgets'
+import { Content_card,Underline,Floatinmenu, Backtotop } from '../../widgets'
 
 import { nba_menu,nba_civ_sar,nba_mec_sar} from '../../constants/nba';
 import {Radial_menu } from "../../components";
@@ -31,6 +31,7 @@ const Nbasar= () => {
             {nba_mec_sar.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
         </div>
         </section>
+        <Backtotop/>
     </div>
   )
 }

@@ -115,6 +115,8 @@ export {default as Coe_Committiee}from'./coe/Coe_Committiee'
 export{default as Placement} from './placement/placement'
 export {default as Placement_faq} from './placement/Placement_Faq'
 export {default as Placement_wk_training} from './placement/Placement_wk_training'
+export {default as Placement_stats} from './placement/Placement_stats'
+export {default as Placement_companies} from './placement/Placement_companies'
 
 // export{default as Mech_coe} from'./Mechdept/Mech_coe'
 export{default as Login} from './Login/Login'
