@@ -28,15 +28,15 @@ const Sh_Phy_research = () => {
             <Listformat points={Phy_research_P}/>
           </div>
           <div className='pts'>
-            <h3>Mr.S.Venkatrajan S</h3>
+            <h3>Mr.Venkatrajan S</h3>
             <Listformat points={Phy_research_V}/>
           </div>
           <div className='pts'>
-            <h3>Dr.S.R Cynthia </h3>
+            <h3>Dr.Cynthia S.R </h3>
             <Listformat points={Phy_research_C}/>
           </div>
           <div className='pts'>
-            <h3>Dr.G.Sivaganesh G</h3>
+            <h3>Dr.Sivaganesh G</h3>
             <Listformat points={Phy_research_S}/>
           </div>
           <div className='pts'>
@@ -48,7 +48,7 @@ const Sh_Phy_research = () => {
             <Listformat points={Phy_research_M}/>
           </div>
           <div className='pts'>
-            <h3>Mr.R.PARTHIBAN</h3>
+            <h3>Mr.Parthiban R</h3>
             <Listformat points={Phy_research_PA}/>
           </div>
         </div>
