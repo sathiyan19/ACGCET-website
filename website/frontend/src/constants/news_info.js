@@ -77,14 +77,14 @@ export const news_info=[
     //     'content_2':"A shared vision for a better world embodies the collective aspirations of individuals, communities, and nations to create a more equitable, sustainable, and harmonious global society. It is a beacon of hope that unites people across diverse backgrounds, inspiring collaboration and action. This vision encompasses ideals such as social justice, environmental stewardship, and peace, fostering a sense of responsibility to leave a lasting positive impact for future generations. It is a powerful force that drives humanity toward a brighter and more inclusive future."
     // },
 
-    {
-        'id':'6',
-        'heading':"NLP For 3rd years",
-        'sub-head':"College's 3rd-year students benefited from 3-week NLP program sponsored by 1998 Alumni.",
-        'pic':nlp,
-        'content_1':'',
-        'content_2':"The 3rd year students of our college attended a program called the Neuro- Linguistic Programming for three weeks on weekends from August 18,2023 to September 2,2023. This program consisted six engaging sessions and is related to communication and personality development. Our Alumni of 1998 batch sponsored for this program. A set of 32 students attended the program which was referred to as the 'Pilot Batch'. The students were greatly benefited by this program and a big thanks to our Alumni for arranging such a productive program for the students."
-    },
+    // {
+    //     'id':'6',
+    //     'heading':"NLP For 3rd years",
+    //     'sub-head':"College's 3rd-year students benefited from 3-week NLP program sponsored by 1998 Alumni.",
+    //     'pic':nlp,
+    //     'content_1':'',
+    //     'content_2':"The 3rd year students of our college attended a program called the Neuro- Linguistic Programming for three weeks on weekends from August 18,2023 to September 2,2023. This program consisted six engaging sessions and is related to communication and personality development. Our Alumni of 1998 batch sponsored for this program. A set of 32 students attended the program which was referred to as the 'Pilot Batch'. The students were greatly benefited by this program and a big thanks to our Alumni for arranging such a productive program for the students."
+    // },
 
     {
         'id':'7',
