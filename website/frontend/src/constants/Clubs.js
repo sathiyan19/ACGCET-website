@@ -84,6 +84,7 @@ const Clubs_info = [
   {
     id: "3",
     logoimg: muthamizh,
+
     title: "முத்தமிழ் மன்றம்",
     maillink: "mailto:naniidhal2k20@gmail.com",
     instalink: "https://www.instagram.com/nani_idhal_acgcet/",
@@ -93,6 +94,7 @@ const Clubs_info = [
     student: "Harish Ashwathaman",
     studentdesi: "4th year",
   },
+
 
   {
     id: "4",

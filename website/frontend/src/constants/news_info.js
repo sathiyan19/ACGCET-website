@@ -17,6 +17,7 @@ const ga="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/h
 const nlp="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/nlp.webp"
 const stnd_day="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/stnd_day.webp"
 const ececover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/microchip.webp"
+const nba_visit="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/about/home/news_img/NBA_visit.webp"
 
 // import ga from '../assets/pictures/news_img/ga.webp'
 // import nlp from '../assets/pictures/news_img/nlp.webp'
@@ -27,6 +28,15 @@ export const news_info=[
 
     {
         'id':'1',
+        'heading':"NBA Visit",
+        'sub-head':'NBA visit for Mechanical, Civil and EEE departments.',
+        'pic':nba_visit,
+        'content_1':'',
+        'content_2':'A 3-member NBA committee visited our institution on 08-06-2024 to renew the NBA accreditation for Civil, Mechanical and EEE Departments.'
+    },
+
+    {
+        'id':'2',
         'heading':"Oracle's AI/ML Mastery Session",
         'sub-head':'Oracle AI/ML Orientation Program: Navigating the Frontiers of Artificial Intelligence and Machine Learning',
         'pic':oracle,
@@ -35,7 +45,7 @@ export const news_info=[
     },
 
     {
-        'id':'2',
+        'id':'3',
         'heading':"Envision Conference at IITMRP",
         'sub-head':'Empowering Tomorrow\'s Leaders: Insights from the Envision Energy Conference at IITMRP',
         'pic':envision,
@@ -43,7 +53,7 @@ export const news_info=[
         'content_2':'A set of nine 2nd year students of our college recently had the opportunity to attend a dynamic conference themed "Envision Energy Conference" at IITMRP, on the dates 4th and 5th January, 2024, through the build club, which is being a great source of immense opportunities for our students. The conference proved to be an enlightening experience, that brought together professionals from diverse fields to exchange insights and ideas. The keynote sessions were particularly captivating, featuring industrial and educational delegates who shared their captivating and futuristic ideas. The interactive panel discussions were a highlight, allowing experts to engage in thought-provoking conversations. This groundbreaking conference not only provided valuable exposure to visionary ideas but also served as a platform for our students to broaden their understanding of the dynamic world around them.'
     },
     {
-        'id':'3',
+        'id':'4',
         'heading':" SIH winner",
         'sub-head':'Engineering Excellence: Triumph at Smart India Hackathon Hardware Edition 2023',
         'pic':sih,
@@ -51,7 +61,7 @@ export const news_info=[
         'content_2':'The 14.6 km long cable belt conveyor is supported on pulleys. A steel rope runs over these pulleys while the belt sits over them. The conveyor is operated by pulling the steel ropes with a drive motor. The rope gets elongated due to pulling force leading to breakage of its strands. Similarly, the belt also gets worn out causing stoppage of conveyor operation unpredictably. Solution Desired: By capturing the past reasons for wear and tear including visuals and using a suitable ML application, try to predict the condition of the Rope and belt well in advance such that corrective and preventive actions can be taken before its failure preventing loss of production.'
     },
     {
-        'id':'4',
+        'id':'5',
         'heading':"General Aptitude Training",
         'sub-head':'Specialized weekend aptitude program for 60 third year students for academic & career success.',
         'pic':ga,
@@ -67,14 +77,14 @@ export const news_info=[
     //     'content_2':"A shared vision for a better world embodies the collective aspirations of individuals, communities, and nations to create a more equitable, sustainable, and harmonious global society. It is a beacon of hope that unites people across diverse backgrounds, inspiring collaboration and action. This vision encompasses ideals such as social justice, environmental stewardship, and peace, fostering a sense of responsibility to leave a lasting positive impact for future generations. It is a powerful force that drives humanity toward a brighter and more inclusive future."
     // },
 
-    {
-        'id':'6',
-        'heading':"NLP For 3rd years",
-        'sub-head':"College's 3rd-year students benefited from 3-week NLP program sponsored by 1998 Alumni.",
-        'pic':nlp,
-        'content_1':'',
-        'content_2':"The 3rd year students of our college attended a program called the Neuro- Linguistic Programming for three weeks on weekends from August 18,2023 to September 2,2023. This program consisted six engaging sessions and is related to communication and personality development. Our Alumni of 1998 batch sponsored for this program. A set of 32 students attended the program which was referred to as the 'Pilot Batch'. The students were greatly benefited by this program and a big thanks to our Alumni for arranging such a productive program for the students."
-    },
+    // {
+    //     'id':'6',
+    //     'heading':"NLP For 3rd years",
+    //     'sub-head':"College's 3rd-year students benefited from 3-week NLP program sponsored by 1998 Alumni.",
+    //     'pic':nlp,
+    //     'content_1':'',
+    //     'content_2':"The 3rd year students of our college attended a program called the Neuro- Linguistic Programming for three weeks on weekends from August 18,2023 to September 2,2023. This program consisted six engaging sessions and is related to communication and personality development. Our Alumni of 1998 batch sponsored for this program. A set of 32 students attended the program which was referred to as the 'Pilot Batch'. The students were greatly benefited by this program and a big thanks to our Alumni for arranging such a productive program for the students."
+    // },
 
     {
         'id':'7',
