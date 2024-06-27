@@ -2,9 +2,9 @@ import React, { useEffect } from 'react'
 
 import "./Placement.css";
 import { Backtotop,Floatinmenu,Underline,Deptvision,Deptmission } from "../../widgets";
-import { placement_menu } from "../../constants/placement";
+import { placement_menu, placement_officers } from "../../constants/placement";
 
-import {Radial_menu } from "../../components";
+import {Radial_menu,Profile_display } from "../../components";
 
 import { FaGraduationCap } from "react-icons/fa";
 import oracle_placement from '../../assets/pictures/news_img/oracle.webp'
@@ -41,6 +41,9 @@ const Placement = () => {
           The Placement Cells across various departments play a pivotal role in shaping the professional trajectories of students. Established to bridge the gap between academics and industry, these cells actively forge connections with leading companies. By securing internships and placements, they empower students with practical experience, aligning academic knowledge with real-world challenges. These cells go beyond mere placement assistance, they serve as comprehensive career development hubs. Through workshops, seminars, and one-on-one counseling, dedicated teams guide students in refining their resumes and honing interview skills. The collaborative efforts of these Placement Cell ensure that graduates are not just academically adept but also possess the practical skills and confidence needed for a successful and fulfilling career in their respective fields.
           </p>
         </div>
+        <Underline heading="Officers Incharge"/> 
+        <Profile_display list_info={placement_officers} />
+
         </div>
       </section>
 
