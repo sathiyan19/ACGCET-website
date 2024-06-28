@@ -38,6 +38,16 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'24',
+    link:"https://drive.google.com/file/d/1rseEJqbptYRbNE083s6xZzygBs2a6cCI/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">1st year M.E 2024-25 FEES DETAILS
+</span>
+        </span>
+    ),
+},
+{
     id:'23',
     link:"https://drive.google.com/file/d/1onZo4UGT_esdqisCoetDZEJC0NW_XdcD/view?usp=sharing",
     content:(
