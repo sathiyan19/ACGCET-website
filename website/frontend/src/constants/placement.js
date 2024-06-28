@@ -82,7 +82,7 @@ const zoho =
   "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/company_logo/zoho.webp";
 const baskaran="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/faculties/teachingfac/1-Baskaran-_3_.webp";
 const suganthi="";
-const cover="";
+const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/placement/placement-bg.webp";
 const dpf="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Eee/girl.webp"
 
 const placement_menu = [
