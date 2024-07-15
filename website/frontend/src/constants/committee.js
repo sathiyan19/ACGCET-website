@@ -1,5 +1,11 @@
 export const commpdf=[
     {
+        'id':"14",
+        "head":"Web Committee",
+        "house":"right",
+        "pdf":"https://drive.google.com/file/d/1z6GKBU8LNQHQwNIoG6W-yO5Dx-lUgNZj/view?usp=sharing"
+    },
+    {
         'id':"7",
         "head":"Placement Advisory Committee",
         "house":"left",
