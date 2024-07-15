@@ -378,7 +378,8 @@ const coe_syllabus22=[
     'id':'1',
     'program':'Computer Science And Engineering',
     // 'pdf':'https://drive.google.com/file/d/1flPg5MjLQv4GXAufeyQHEzYCQgoVabIa/view?usp=sharing',
-    'pdf':'https://drive.google.com/file/d/1udmwCq7A4qQgzS9-DFV1mKiW14KZIjFg/view?usp=drive_link',
+    // 'pdf':'https://drive.google.com/file/d/1udmwCq7A4qQgzS9-DFV1mKiW14KZIjFg/view?usp=drive_link',
+    'pdf':'https://drive.google.com/file/d/1-6iyz5ZxDopIW9BMq1Ju3d6GzizoFy0Z/view?usp=sharing',
    
   },
   {
