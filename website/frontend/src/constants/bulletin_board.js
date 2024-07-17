@@ -38,6 +38,16 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'28',
+    link:"https://drive.google.com/file/d/1cNTbFrYLS3ykOJNletywi9x8n2_UokKq/view?usp=drive_link",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Lateral Entry (Direct Second) BE Degree Course 2024-25 Fees Details
+</span>
+        </span>
+    ),
+},
+{
     id:'27',
     link:"https://drive.google.com/file/d/1yx-H2gLoZYDWvWt2ee9SO74Z6YWTsdM8/view?usp=drive_link",
     content:(
