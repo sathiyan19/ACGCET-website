@@ -46,6 +46,8 @@ const soil ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const structure ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Structural+Lab.webp"
 const survey ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Lab_Facilities/Survey+Lab.webp" 
 
+const nptl_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/NPTEL_certificate.webp"
+const gate_cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/gate_img.webp"
 
 const civ_dept_menu = [
   {
@@ -737,7 +739,34 @@ const civ_stud_achivement =[
     'content_1':'',
     'content_2':"Raveena of II year Civil (Batch 2022- 2026) has represented Anna University in the All India Inter-University Karate tournament held between 16.03.3034 and 19.03.2024 at Panjab University, Chandigarh"
 },
+
+{
+  
+   id: "2",
+    heading: " GATE Passed Students 2024",
+
+    "sub-head":
+    "The following students have cleared and attained GATE score.",
+    
+    pic: gate_cover,
+    content_1: "",
+    content_2:    "We proudly congratulates our outstanding students, Kishore S. (2011022), Nagarajan L. (2011031), Nivetha S. (2011033), and Abiksha J. (2111001), for successfully clearing the GATE exam this year. Your exceptional dedication and hard work have led to this remarkable achievement. We are incredibly proud of your success and wish you all the best in your future endeavors. May you continue to excel and achieve great heights in your academic and professional journeys.",
+
+},
+{
+  id: "3",
+  heading: "NPTEL Online Certification",
+  "sub-head":
+    "Abinaya.S has successfully completed the  NPTEL online certification course 'Introduction in Engineering Seismology'.",
+  pic: nptl_cover,
+  content_1: "",
+  content_2: "",
+
+
+}
 ];
+
+
 
 const civ_lib_data = [
   {
@@ -1503,6 +1532,11 @@ const civ_place_pinnacle=[
 
 const mag_data=[
   {
+    'id':'5',
+    'program':'Magazine 2024',
+    'pdf':'https://drive.google.com/file/d/1ROP_ak5Or3dnNIaU5Fz9PuZZdDiBDqzD/view?usp=sharing'
+  },
+  {
     'id':'3',
     'program':'Newsletter Oct 2023',
     'pdf':'https://drive.google.com/file/d/1cD33AhRGQoBjQH9S1ned3_SPaS-r95ez/view?usp=drive_link'
@@ -1992,5 +2026,6 @@ export {
   civ_place_24_im,
   civ_place_24_conserve,
   civ_place_24_pinnacle,
-  civ_publish_data
+  civ_publish_data,
+
 };
