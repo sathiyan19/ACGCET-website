@@ -34,7 +34,8 @@ const top_nav_paths = [
       { path: "/programs", link: "Programs offered" },
       { path: "/academic-calendar", link: "Academic Calendar" },
       {path:"/coe",link:"Autonomous Office"},
-      {path:"/research",link:"Research"}
+      {path:"/research",link:"Research"},
+      {path:"/sgpa",link: "Sgpa Calculator"}
     ],
   },
 

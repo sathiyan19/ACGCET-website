@@ -164,10 +164,7 @@ import {
   Autonomous,
   Placement_faq,
   Placement_wk_training,
-  Placement_companies,
-  Iqac_committee,
-  Ece_coe,
-  Placement_stats
+  Iqac_committee
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -350,9 +347,6 @@ const App = () => {
          <Route path="/verification" element={<Verification/>}/>
          <Route path="/iqac_strategic" element={<Iqac_strategic/>}/>
          <Route path="/autonomous" element={<Autonomous/>}/>
-
-         <Route path="/clubs/build_club" element={<Build/>}/>
-         <Route path="/ecedept/ece_coe" element={<Ece_coe/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
