@@ -156,6 +156,14 @@ export const subjects = {
     "19MAB41":{credits:3,subname:"Numerical Methods"},
     "19NM019": {credits:2,subname:"Robotic Process and Industrial Automation (Naan Mudhalvan Course)"},
 
+        "19EEE02": {credits: 3 , subname:"	Solid State Drives"},	
+    "19MEP04": {credits: 3 , subname:"	Principles of Management(FT)"},	
+    "19EEL71": {credits:1.5  , subname:"	Power Systems Laboratory	"},
+    "19EEL72": {credits: 1.5 , subname:"	Comprehensive Viva	"},
+    "19CEM61": {credits: 0 , subname:"	Constitution of India (Mandatory Course)	"},
+    "19EEM71": {credits: 0 , subname:"	Stress Management By Yoga (Mandatory Courses)"},	
+
+
     "19EEG51":{credits:4,subname:"Control System"},
     "19EEC51":{credits:4,subname:"AC Machines"},
     "19EEC52":{credits:3,subname:"Analysis of Signals and Systems"},
@@ -226,6 +234,15 @@ export const subjects = {
     "19NM019": {credits:2,subname:"Robotic Process and Industrial Automation (Naan Mudhalvan Course)"},
     "19NM020": {credits:2,subname:"Block Chain Technology (Naan Mudhalvan Course)"},
     "19NM021": {credits:2,subname:"Digital Marketing (Naan Mudhalvan Course)"},
+
+
+    "19ECE12": {credits: 3 ,subname: "Mobile and Wireless Communication"},
+    "19ECE14": { credits: 3 ,subname: "Speech Processing"},
+    "19ECP04": { credits: 3 ,subname: "Automobile Electrical and Electronics Systems	"},
+    "19ECL71": { credits: 1.5,subname: "Microwave and Optical Engineering Laboratory	"},
+    "19ECL72": { credits: 1 , subname: "Cyber Physical Systems Laboratory"},
+    "19ECZ71": { credits: 4 , subname: "Mini Project	"},
+
 
     "19ECC51": {credits: 4, subname: "Digital Signal Processing"},
     "19ECC52": {credits: 3, subname: "Linear Integrated Circuits"},
@@ -342,3 +359,214 @@ export const admin_menu = [
     arl: "l",
   },
 ];
+
+export const semesterSubjects={
+  CSE :{
+    1:{
+      code:["22HSE11",
+      "22MAB13",
+      "22PHB14",
+      "22CYB15",
+      "22CSG16",
+      "22HST17",
+      "22CSL18",
+      "22PHL19",
+      "22CYL1A",
+      "22HSL1B"
+    ]
+    },
+
+    3:{
+      code:[
+        "22CSC32",
+  "22CSC33",
+  "22CSC35",
+  "22CSC36",
+  "22CSG31",
+  "22CSL37",
+  "22CSL38",
+  "22CSL39",
+  "22CSZ3A",
+  "22MAB34",
+
+      ]
+    }
+  
+  },
+  ECE:{
+    1:{
+      code:[
+        "22HSE11",
+      "22MAB13",
+      "22PHB14",
+      "22CYB15",
+      "22CSG16",
+      "22HST17",
+      "22CSL18",
+      "22PHL19",
+      "22CYL1A",
+      "22HSL1B",
+      ]
+    },
+    3:{
+      code:[
+        "22MAB33" ,
+        "22ECC31",
+        "22ECC32",
+        "22ECC34",
+        "22ECC35",
+        "22ECG36",
+        "22ECL37",
+        "22ECL38",
+        "22ECZ39",
+      ]
+    },
+    5:{
+      code:[
+       "19ECC51",
+        "19ECC52",
+        "19ECC53",
+        "19ECC54",
+        "19MEH41",
+        "19ECE01",
+        "19ECE03",
+        "19ECE04",
+        "19ECE06",
+        "19ECL51",
+        "19ECL52",
+        "19ECZ51",
+      ]
+    },
+    7:{
+      code:[
+        "19ECE12",
+        "19ECE14",
+        "19ECP04",
+        "19ECL71",
+        "19ECL72",
+        "19ECZ71",
+      ]
+  },
+},
+  EEE:{
+    1:{
+      code:[
+        "22HSE11",
+        "22MAB13",
+        "22PHB14",
+        "22CYB15",
+        "22CSG16",
+        "22HST17",
+        "22CSL18",
+        "22PHL19",
+        "22CYL1A",
+        "22HSL1B",
+      ]
+    },
+    3:{
+      code:[
+        "22MAB32",
+        "22ECG31",
+        "22EEC33",
+        "22EEC34",
+        "22EEC35",
+        "22EEG36",
+        "22EEL37",
+        "22EEL38",
+        "22EEL3A",
+        "22EEZ39",
+        
+      ]
+    },
+    5:{
+      code:[
+        "19EEG51",
+        "19EEC51",
+        "19EEC52",
+        "19EEP05",
+        "19EEE07",
+        "19EEE18",
+        "19EEL51",
+        "19EEL52",
+        "19EEZ51",
+        
+      ]
+    },
+    7:{
+      code:[
+        "19EEE02",
+       "19MEP04",
+       "19EEL71",
+       "19EEL72",
+       "19CEM61",
+        "19EEM71",
+        
+        
+      ]
+    }
+  },
+  CIV:{
+    1:{
+      code:[
+        "22HSE11" ,
+         "22MAB12" ,
+         "22PHB14",
+        "22CYB15" ,
+        "22EEG16",
+         "22HST17",
+          "22EEL18",
+          "22PHL19" ,
+         "22CYL1A" ,
+          "22HSL1B"
+      ]
+    },
+    
+      2:{
+        code:[
+     
+    "22MAB31", 
+    "22CEG32",
+    "22CEG33",
+    "22CEC34",
+    "22CEC35",
+    "22CEC36",
+    "22CEL37",
+    "22CEL38",
+    "22CEL39",
+    "22CEZ3A",
+         
+  ]
+},
+3:{
+  code:[
+    "22MAB31",
+    "22CEG32",
+    "22CEG33",
+    "22CEC34",
+    "22CEC35",
+    "22CEC36",
+    "22CEL37",
+    "22CEL38",
+    "22CEL39",
+    "22CEZ3A",
+    
+  ]
+}
+  },
+  MEC:{
+    1:{
+      code:[
+        "22HSE11",
+      "22MAB13",
+      "22PHB14",
+      "22CYB15",
+      "22CSG16",
+      "22HST17",
+      "22CSL18",
+      "22PHL19",
+      "22CYL1A",
+      "22HSL1B",
+      ]
+    }
+  }
+}
