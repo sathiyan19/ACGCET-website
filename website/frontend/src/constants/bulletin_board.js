@@ -38,6 +38,46 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'27',
+    link:"https://drive.google.com/file/d/1yx-H2gLoZYDWvWt2ee9SO74Z6YWTsdM8/view?usp=drive_link",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">1st year B.E - 2024-25 - Fees Details
+</span>
+        </span>
+    ),
+},
+{
+    id:'26',
+    link:"https://drive.google.com/file/d/1pQCu8Swl22ClOJvWSET42Jkv290Mq_WM/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Regular B.E, M.E 2024-25 Semester Fees details
+</span>
+        </span>
+    ),
+},
+{
+    id:'25',
+    link:"https://drive.google.com/file/d/1K4t4r2_WrIdx9Ak0blZNJcVagkT0w_4w/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">1st year PTBE 2024-25 Fees details
+</span>
+        </span>
+    ),
+},
+{
+    id:'24',
+    link:"https://drive.google.com/file/d/1rseEJqbptYRbNE083s6xZzygBs2a6cCI/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">1st year M.E 2024-25 Fees details
+</span>
+        </span>
+    ),
+},
+{
     id:'23',
     link:"https://drive.google.com/file/d/1onZo4UGT_esdqisCoetDZEJC0NW_XdcD/view?usp=sharing",
     content:(
@@ -77,16 +117,16 @@ export const bulletin_info=[
         </span>
     ),
 },
-{
-    id:'18',
-    link:"https://drive.google.com/file/d/1vxzqp9-1uaB2rCaPIl0653RlTjeym6Fj/view?usp=drive_link",
-    content:(
-        <span>
-            <span className="newContent">New</span> <span className="insideNewContent">III Assessment Tests Schedule for B.E. & PTBE
-</span>
-        </span>
-    ),
-},
+// {
+//     id:'18',
+//     link:"https://drive.google.com/file/d/1vxzqp9-1uaB2rCaPIl0653RlTjeym6Fj/view?usp=drive_link",
+//     content:(
+//         <span>
+//             <span className="newContent">New</span> <span className="insideNewContent">III Assessment Tests Schedule for B.E. & PTBE
+// </span>
+//         </span>
+//     ),
+// },
 {
     id:'17',
     link:"https://drive.google.com/file/d/1ci_AC7Hc9CoZrz6eke2J16AkPnTLXu4p/view?usp=sharing",
