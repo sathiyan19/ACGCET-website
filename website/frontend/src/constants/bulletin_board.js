@@ -38,6 +38,16 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'30',
+    link:"https://drive.google.com/file/d/1G2ZgAi0WkaT3hLk894hwSi84lHhZmw-2/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Pragati/Saksham/Swanath/CSS Scholarship - OTR & Face Authentication instructions
+</span>
+        </span>
+    ),
+},
+{
     id:'29',
     link:"https://drive.google.com/file/d/18hfxDTJ03Cki8Ltt1FMqG0OkZYgwgPdE/view?usp=drive_link",
     content:(
@@ -53,7 +63,7 @@ export const bulletin_info=[
     content:(
         <span>
             <span className="newContent">New</span> <span className="insideNewContent">1st year M.E - 2024-25 - Classes commences from 01.08.2024
-</span>
+            </span>
         </span>
     ),
 },
@@ -227,11 +237,14 @@ export const bulletin_info=[
         link:"https://drive.google.com/file/d/14hQRj_dDiKsFnk3_405vecsLErdo4zSZ/view?usp=sharing",
         content:"Update on E-kYC – 2023-2024 BE/ME – BC/MBC/DNC Post Matric Scholarship",
     },
-    {
-        id:'8',
-        link:"https://drive.google.com/file/d/1BoOObzaYAIYVYUi2bfBUDwgmkVXobxCJ/view?usp=sharing",
-        content:"Scholarship – Pragathi/Saksham/Swanatn",
-    },
+    // {
+    //     id:'8',
+    //     link:"https://drive.google.com/file/d/1BoOObzaYAIYVYUi2bfBUDwgmkVXobxCJ/view?usp=sharing",
+    //     content:"Scholarship – Pragathi/Saksham/Swanatn",
+    // },
+
+
+
     // {
     //     id:'9',
     //     link:"https://drive.google.com/file/d/1lRk4E_xkYQiOX9FcWipUAZQ2umIwEsnk/view?usp=sharing",
