@@ -185,7 +185,7 @@ const Dash_results = () => {
                 </div>
                 <div className="dash-result-table">
                   <div className="dash-table-header">
-                    {/* <div className="sem_options_holder">
+                    <div className="sem_options_holder">
                       <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
                         <div className="sem_input">Sem {sem}</div>
                         <div className="fa fa fa-chevron-circle-down"></div>
@@ -207,7 +207,7 @@ const Dash_results = () => {
                             </div>
                           ))}
                       </div>
-                    </div>  */}
+                    </div> 
                     <div className="dash-result-table-head">Semester {sem}</div>
                   </div>
                   <div className="dash_res_table_holder">
@@ -215,7 +215,7 @@ const Dash_results = () => {
                   </div>
                   <div class="marksheet-container">
                     <div className="cool_holder">
-                      {/* <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button> */}
+                      <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button>
                     </div>
                   </div>
                   
