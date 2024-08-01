@@ -38,6 +38,27 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'28',
+    link:"https://drive.google.com/file/d/1G2ZgAi0WkaT3hLk894hwSi84lHhZmw-2/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Pragati/Saksham/Swanath/CSS Scholarship - OTR & Face Authentication instructions
+</span>
+        </span>
+    ),
+},
+
+{
+    id:'27',
+    link:"https://drive.google.com/file/d/1yx-H2gLoZYDWvWt2ee9SO74Z6YWTsdM8/view?usp=drive_link",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">1st year B.E - 2024-25 - Fees Details
+</span>
+        </span>
+    ),
+},
+{
     id:'27',
     link:"https://drive.google.com/file/d/1yx-H2gLoZYDWvWt2ee9SO74Z6YWTsdM8/view?usp=drive_link",
     content:(
@@ -212,6 +233,9 @@ export const bulletin_info=[
         link:"https://drive.google.com/file/d/1BoOObzaYAIYVYUi2bfBUDwgmkVXobxCJ/view?usp=sharing",
         content:"Scholarship – Pragathi/Saksham/Swanatn",
     },
+
+
+
     // {
     //     id:'9',
     //     link:"https://drive.google.com/file/d/1lRk4E_xkYQiOX9FcWipUAZQ2umIwEsnk/view?usp=sharing",
