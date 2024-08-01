@@ -38,6 +38,16 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'29',
+    link:"https://drive.google.com/file/d/18hfxDTJ03Cki8Ltt1FMqG0OkZYgwgPdE/view?usp=drive_link",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">1st Year PT -BE  Classes Starts from 01-08-2024
+</span>
+        </span>
+    ),
+},
+{
     id:'28',
     link:"https://drive.google.com/file/d/1sElm-y3OZL7gGE8i1-Q_0OYpEBCzDoYH/view?usp=sharing",
     content:(
