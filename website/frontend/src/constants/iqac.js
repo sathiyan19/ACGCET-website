@@ -230,6 +230,12 @@ const iqac_feed=[
 
 const iqac_aqar=[
     {
+        'id':"4",
+        "head":"2022-2023",
+        "house":"right",
+        "pdf":"https://drive.google.com/file/d/1cYjL55OoumsY8jhWUdW948gjeAyczScx/view?usp=sharing"
+    },
+    {
         'id':"3",
         "head":"2021-2022",
         "house":"left",
