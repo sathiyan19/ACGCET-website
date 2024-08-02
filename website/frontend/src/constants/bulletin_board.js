@@ -42,7 +42,7 @@ export const bulletin_info=[
     link:"https://drive.google.com/file/d/1yx-H2gLoZYDWvWt2ee9SO74Z6YWTsdM8/view?usp=drive_link",
     content:(
         <span>
-            <span className="newContent">New</span> <span className="insideNewContent">1st year B.E - 2024-25 - Fees Details
+            <span className="newContent">New</span> <span className="insideNewContent">1st year B.E - 2024-25 -Fees-Details 
 </span>
         </span>
     ),
@@ -77,46 +77,46 @@ export const bulletin_info=[
         </span>
     ),
 },
-{
-    id:'23',
-    link:"https://drive.google.com/file/d/1onZo4UGT_esdqisCoetDZEJC0NW_XdcD/view?usp=sharing",
-    content:(
-        <span>
-            <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 B.E. II Semester Exams Timetable
-</span>
-        </span>
-    ),
-},
-{
-    id:'21',
-    link:"https://drive.google.com/file/d/1Im1hjIhLK3NnpntIL0Or-wRdlwi2p5fl/view?usp=sharing",
-    content:(
-        <span>
-            <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 B.E. IV Semester Exams Timetable
-</span>
-        </span>
-    ),
-},
-{
-    id:'20',
-    link:"https://drive.google.com/file/d/1__knJrkEpH0-VKmHze7h38j8PWnL4Pav/view?usp=sharing",
-    content:(
-        <span>
-            <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 Part-time B.E. II Semester Exams Timetable
-</span>
-        </span>
-    ),
-},
-{
-    id:'19',
-    link:"https://drive.google.com/file/d/1JdLQoOLT1HuNEzNdUE38xwuwK8qeV1FQ/view?usp=sharing",
-    content:(
-        <span>
-            <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 Arrear Exams Timetable
-</span>
-        </span>
-    ),
-},
+// {
+//     id:'23',
+//     link:"https://drive.google.com/file/d/1onZo4UGT_esdqisCoetDZEJC0NW_XdcD/view?usp=sharing",
+//     content:(
+//         <span>
+//             <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 B.E. II Semester Exams Timetable
+// </span>
+//         </span>
+//     ),
+// },
+// {
+//     id:'21',
+//     link:"https://drive.google.com/file/d/1Im1hjIhLK3NnpntIL0Or-wRdlwi2p5fl/view?usp=sharing",
+//     content:(
+//         <span>
+//             <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 B.E. IV Semester Exams Timetable
+// </span>
+//         </span>
+//     ),
+// },
+// {
+//     id:'20',
+//     link:"https://drive.google.com/file/d/1__knJrkEpH0-VKmHze7h38j8PWnL4Pav/view?usp=sharing",
+//     content:(
+//         <span>
+//             <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 Part-time B.E. II Semester Exams Timetable
+// </span>
+//         </span>
+//     ),
+// },
+// {
+//     id:'19',
+//     link:"https://drive.google.com/file/d/1JdLQoOLT1HuNEzNdUE38xwuwK8qeV1FQ/view?usp=sharing",
+//     content:(
+//         <span>
+//             <span className="newContent">New</span> <span className="insideNewContent">APR / MAY - 2024 Arrear Exams Timetable
+// </span>
+//         </span>
+//     ),
+// },
 // {
 //     id:'18',
 //     link:"https://drive.google.com/file/d/1vxzqp9-1uaB2rCaPIl0653RlTjeym6Fj/view?usp=drive_link",
@@ -127,16 +127,16 @@ export const bulletin_info=[
 //         </span>
 //     ),
 // },
-{
-    id:'17',
-    link:"https://drive.google.com/file/d/1ci_AC7Hc9CoZrz6eke2J16AkPnTLXu4p/view?usp=sharing",
-    content:(
-        <span>
-            <span className="newContent">New</span> <span className="insideNewContent">Advertisement for the Part time B.E. Counseling for the academic year 2024-2025
-</span>
-        </span>
-    ),
-},
+// {
+//     id:'17',
+//     link:"https://drive.google.com/file/d/1ci_AC7Hc9CoZrz6eke2J16AkPnTLXu4p/view?usp=sharing",
+//     content:(
+//         <span>
+//             <span className="newContent">New</span> <span className="insideNewContent">Advertisement for the Part time B.E. Counseling for the academic year 2024-2025
+// </span>
+//         </span>
+//     ),
+// },
     {
         id:'16',
         link:"https://drive.google.com/file/d/1V9itpzM-S1GPo2UQy5DWkrazGMzFzOKg/view",
@@ -192,11 +192,11 @@ export const bulletin_info=[
         link:"https://drive.google.com/file/d/1N9yOpdr5ciHkcQ7-J0MHVHPb2LdARswY/view?usp=sharing",
         content:"Scholarship renewal",
     },
-    {
-        id:'5',
-        link:"https://drive.google.com/file/d/1IaIH8XLfSfecnk9FJOUKVw6z1zBAJmVV/view?usp=drive_link",
-        content:"B.E (Regular), B.E(Part Time), M.E(Regular) Fees Structure – AY 2023-2024",
-    },
+    // {
+    //     id:'5',
+    //     link:"https://drive.google.com/file/d/1IaIH8XLfSfecnk9FJOUKVw6z1zBAJmVV/view?usp=drive_link",
+    //     content:"B.E (Regular), B.E(Part Time), M.E(Regular) Fees Structure – AY 2023-2024",
+    // },
     // {
     //     id:'6',
     //     link:"https://drive.google.com/file/d/18TxoSvEM-KyL3PZ4TTDen7maumF_JdB_/view?usp=sharing",
