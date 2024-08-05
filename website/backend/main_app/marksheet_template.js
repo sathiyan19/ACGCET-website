@@ -16,7 +16,7 @@ const pdftemplate = ({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa,
     tableRows += `
           <tr class="cert-tr">
               <td class="cert-td">${subject.subcode}</td>
-              <td class="cert-td">${subjects_list[sub_dept][subject.subcode].subname}</td>
+              <td class="cert-td cert-td-subname">${subjects_list[sub_dept][subject.subcode].subname}</td>
               <td class="cert-td">${subjects_list[sub_dept][subject.subcode].credits}</td>
               <td class="cert-td">${subject.grade}</td>
               <td class="cert-td">${subject.result}</td>
@@ -140,7 +140,11 @@ const pdftemplate = ({ studentname, stud_dept, dob, reg_no, batch, gender, cgpa,
     color: black;
     white-space: pre-line;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
+    vertical-align: top;
+}
+.cert-td-subname{
+  text-align:left;
 }
 .cert-td-foot{
   text-align:center;
