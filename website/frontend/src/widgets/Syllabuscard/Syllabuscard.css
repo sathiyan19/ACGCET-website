@@ -1,31 +1,45 @@
+
+
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure body width is 100% */
+  max-width: 100%; /* Prevent any content from exceeding the viewport width */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
 .sybsyllabus {
-  width: 300px;
-  /* width: calc(33.33% - 40px);  */
-  /* max-width: 300px;  */
-  height: 200px;
+  width: 100%; 
+  max-width: 300px; 
+  height: 200px; 
   border-radius: 50%; 
-  border: 2px solid #00134d; /* Example border color */
+  border: 2px solid #00134d;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0px 0px 10px 5px rgba(0, 19, 77, 0.5); /* Adjust shadow values as needed */
-  margin: 20px; 
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 19, 77, 0.5); 
+  margin: 20px auto; 
   transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+  position: relative; 
 
 }
 
 .syb_body {
-  width: auto;
+  width: 100%;
   height: auto;
-  
-    
-    /* margin: 15px 20px; */
-  
-    overflow: hidden;
-  
-    border-radius: 10px;
-    
+  overflow: hidden; 
+  border-radius: 10px;
+  padding: 10px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
   }
   .syb_bg {
     height: 128px;
@@ -34,6 +48,7 @@
     position: absolute;
     top: -75px;
     right: -75px;
+    border-radius: 50%;
   }
 
 
@@ -56,9 +71,10 @@
   margin: 0;
   padding: 10px;
   text-align: center;
+ 
 }
 
-/* Link styles */
+
 .syblink {
   font-size: 14px;
   color: #00134d;
@@ -76,11 +92,10 @@
   z-index: 2;
 }
 
-@media (max-width:740px){
-  .sybsyllabus{
-    width:250px;
-    height:150px;
-    padding: 0;
+@media (max-width: 740px) {
+  .sybsyllabus {
+    max-width: 250px;
+    height: auto;
   }
 }
 

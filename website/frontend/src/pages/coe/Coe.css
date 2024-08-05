@@ -1,3 +1,7 @@
+
+body {
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -149,24 +153,7 @@
   
 }
 
-@media (max-width: 500px) {
-  .coe_sub_head {
-    font-size: 28px;
-  }
-  .coe_dept_content {
-    
-    text-align: justify;
-  font-size: 16px; /* Adjusted font size */
-  line-height: 1.5rem;
-  color: black;
 
-    
-  }
- 
-  .dept_float_menu {
-    display: none;
-  }
-}
 
 @media (max-width: 500px) {
   .coe_bg {
@@ -186,10 +173,31 @@
   .coe_two-col1 p {
     padding: 0 5px;
   }
+  .coe_sub_head {
+    font-size: 28px;
+  }
+  .coe_dept_content {
+    
+    text-align: justify;
+  font-size: 16px; /* Adjusted font size */
+  line-height: 1.5rem;
+  color: black;
+
+    
+  }
+ 
+  .dept_float_menu {
+    display: none;
+  }
 }
 
 @media (max-width: 321px) {
   .coe_sub_head {
     font-size: 26px;
   }
+}
+
+/* Ensure elements do not cause horizontal overflow */
+* {
+  box-sizing: border-box;
 }
