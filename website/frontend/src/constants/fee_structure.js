@@ -2,12 +2,12 @@ export const fee_pdfs=[
     {
         "id":"1",
         "program":"Regular B.E.",
-        "pdf":"https://drive.google.com/file/d/100tRe1xPkDeKyUkT5RaKbv2cigBj8F_S/view?usp=drive_link"
+        "pdf":"https://drive.google.com/file/d/1La3rb_Z_6ki6qQPzI4yOV0aUYy3zTJlE/view?usp=sharing"
     },
     {
         "id":"2",
         "program":"Lateral B.E.",
-        "pdf":"https://drive.google.com/file/d/1kzEcmG70NVfQ17hltcBd98uACv5NrGM2/view?usp=drive_link"
+        "pdf":"https://drive.google.com/file/d/1VAR9OrlUlK1K2RCy868rQmpq99-uQD5l/view?usp=sharing"
     },
     {
         "id":"3",

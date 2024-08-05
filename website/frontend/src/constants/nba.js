@@ -115,6 +115,11 @@ export const nba_menu=[
 ]
 export const nba_doc=[
     {
+        'id':'5',
+        'program':'NBA 2024',
+        'pdf':'https://drive.google.com/file/d/1ohculzgXvFiWfgd8K7Qd_3g0V9I9nuhE/view?usp=sharing'
+    },
+    {
         'id':'1',
         'program':'NBA 2021',
         'pdf':'https://drive.google.com/file/d/1ldXwtFLlZI4E9eQLrdYNSkRz9ueKPYJj/view'
