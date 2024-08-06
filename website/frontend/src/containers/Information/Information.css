@@ -1,55 +1,61 @@
+/* Information.css */
+
 .newContent {
     color: #ff6600 !important;
     font-weight: bold;
-    
-}
-
-.insideNewContent{
+  }
+  
+  .insideNewContent {
     color: white;
-}
-
-@keyframes marquee {
+  }
+  
+  .bulletin-board {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+  
+  .scroll-content {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: scroll 20s linear infinite;
+    list-style: circle;
+    /* text-wrap: nowrap; */
+  }
+  
+  @keyframes scroll {
     0% {
-        transform: translateY(100%);
+      transform: translateY(20%);
     }
     100% {
-        transform: translateY(-100%);
+      transform: translateY(-100%);
     }
-}
-
-.list {
+  }
+  
+  .list {
     overflow: hidden;
     position: relative;
     height: 150px;
     padding-left: 30px;
-    list-style:circle  ;
-    /* background-color: aqua; */
-}
-
-.msg {
+    list-style: circle;
+  }
+  
+  .msg {
     margin: 15px 0;
     color: white;
-    /* animation: marquee 10s linear infinite; */
-    /* animation: marquee 5s steps(20) infinite; */
-    /* animation-play-state: running;  */
     height: fit-content;
-    /* display: flex; */
-    align-items: center
-}
-
-.list:hover .msg {
-    animation-play-state: paused; /* Pause animation on hover */
-}
-
-.important {
+    align-items: center;
+  }
+  
+  .important {
     display: flex;
     padding: 0 20px;
-    /* animation-name: slide-up;
-    animation-duration: 1s;
-    animation-timing-function:ease-out; */
-}
-
-.bulletin {
+  }
+  
+  .bulletin {
     width: 70%;
     background-color: #01134d;
     margin-right: 10px;
@@ -57,9 +63,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.quick {
+  }
+  
+  .quick {
     width: 30%;
     background-color: #01134d;
     margin-left: 10px;
@@ -68,93 +74,90 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.quick-link {
+  }
+  
+  .quick-link {
     color: white;
     width: 80%;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
     padding: 5px;
-    margin: 7px 0px;
+    margin: 5px 0px;
     border: 2px solid white;
     border-radius: 7px;
-}
-
-.quick-link:hover {
+  }
+  
+  .quick-link:hover {
     background-color: white;
     color: #01134d;
     font-weight: 700;
-}
-
-.board {
+  }
+  
+  .board {
     text-align: center;
-    /* text-decoration: underline; */
     font-size: 25px;
     color: white;
     font-weight: 600;
-}
-
-.line {
+  }
+  
+  .line {
     height: 2px;
     background-color: white;
     width: 170px;
     margin: 5px 0;
-}
-
-.impmsg {
+  }
+  
+  .impmsg {
     line-height: 1.2rem;
     color: white;
     text-decoration: none;
     font-size: 18px;
-}
-
-.impmsg:hover {
+  }
+  
+  .impmsg:hover {
     text-decoration: underline;
     color: white;
-}
-/* 
-.msg {
-    color: white;
-} */
-
-@keyframes slide-up {
+  }
+  
+  @keyframes slide-up {
     from {
-        opacity: 0;
-        transform: translateY(5%);
+      opacity: 0;
+      transform: translateY(5%);
     }
     to {
-        opacity: 0.8;
-        transform: translateY(0);
+      opacity: 0.8;
+      transform: translateY(0);
     }
-}
-@media(max-width:870px){
-    .important{
-        flex-direction: column;
+  }
+  
+  @media (max-width: 870px) {
+    .important {
+      flex-direction: column;
     }
     .bulletin {
-        width: 100%;
-        margin: 0;
+      width: 100%;
+      margin: 0;
     }
     .quick {
-        margin: 0;
-        margin-top: 10px;
-        width: 100%;
+      margin: 0;
+      margin-top: 10px;
+      width: 100%;
     }
-}
-
-@media(max-width:550px) {
+  }
+  
+  @media (max-width: 550px) {
     .board {
-        font-size: 20px;
+      font-size: 20px;
     }
-    .line{
-        width: 145px;
+    .line {
+      width: 145px;
     }
     .impmsg {
-        font-size: 15px;
+      font-size: 15px;
     }
     .quick-link {
-        font-size: 15px;
+      font-size: 15px;
     }
-}
+  }
+  
