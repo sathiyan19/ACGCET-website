@@ -56,7 +56,7 @@ const Clubs_info = [
   {
     id: "5",
     logoimg: freshers,
-    title: "Freshers Asso",
+    title: "Freshers Association",
     maillink: "mailto:freshers.asso@gmail.com",
     instalink: "https://www.instagram.com/freshers_association_of_accet/",
     para: "ACGCET is dedicated to cultivating a sense of community, camaraderie, and innovation among incoming students, as evidenced by the Fresher's Association. This platform serves as a welcoming and integrative space, facilitating the seamless transition of new students into the dynamic college environment while offering avenues for personal growth, learning, and enjoyment. The mission of the Fresher's Association is rooted in creating an inclusive and inviting atmosphere for newcomers, aiding their smooth adjustment to college life. The goal is to nurture their innate talents, provide support for their aspirations, and empower them to evolve into holistic individuals capable of making positive contributions not only within the college community but also in broader contexts. The Association achieves this through initiatives like comprehensive campus tours, specialized workshops leading to valuable certifications spanning leadership and technical skills, and the vibrant Fresher's Day celebrated every Tuesday, replete with engaging events, competitions, and activities, fostering unity, mirth, and a well-deserved respite from academic pursuits.",
