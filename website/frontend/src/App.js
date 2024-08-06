@@ -168,7 +168,10 @@ import {
   Placement_companies,
   Iqac_committee,
   Sgpa,
-  Feedback
+
+  Feedback,
+  Alumini_fb,
+  Collaborator_fb,
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -352,7 +355,10 @@ const App = () => {
          <Route path="/iqac_strategic" element={<Iqac_strategic/>}/>
          <Route path="/autonomous" element={<Autonomous/>}/>
          <Route path="/sgpa" element={<Sgpa/>}/>
+
          <Route path="/feedback" element={<Feedback/>}/>
+         <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
+         <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
