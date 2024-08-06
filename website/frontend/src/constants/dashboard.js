@@ -636,10 +636,52 @@ export const subjects = {
           "22CEL4A": { credits: 1.5, subname: "Fluid Mechanics and Machinery Laboratory" },
           "22NCC02": { credits: 3, subname: "NCC Credit Course Level 2" },
         
-        
+          
+            "19ENH11": { credits: 3, subname: "Communicative English" },
+            "19MAB12": { credits: 4, subname: "Mathematics I" },
+            "19PHB13": { credits: 4, subname: "Physics: Properties of Materials and Mechanics" },
+            "19EEG16": { credits: 4, subname: "Basic Electrical and Electronics Engineering" },
+            "19CEC31": { credits: 3, subname: "Surveying I" },
+          
+            "19CHB21": { credits: 4, subname: "Chemistry" },
+            "19MAB22": { credits: 4, subname: "Mathematics II" },
+            "19CSG23": { credits: 3, subname: "Python Programming" },
+            "19MEG24": { credits: 3, subname: "Engineering Graphics" },
+            "19CEC43": { credits: 3, subname: "Surveying II" },
       
-      
+          "19CEG31": { credits: 4, subname: "Solid Mechanics - I" },
+  "19CEH31": { credits: 3, subname: "Professional Practices, Ethics and Building By-laws" },
+  "19CEB33": { credits: 3, subname: "Science of Building Materials" },
+  "19CEC41": { credits: 3, subname: "Highway Engineering" },
+  "19CEC54": { credits: 3, subname: "Environmental Engineering - I" },
     
+  "19CEG41": { credits: 4, subname: "Solid Mechanics - II" },
+  "19CEG42": { credits: 4, subname: "Fluid Mechanics" },
+  "19CEC42": { credits: 3, subname: "Soil Mechanics" },
+  "19CEC62": { credits: 3, subname: "Environmental Engineering - II" },
+  "19CEL41": { credits: 1.5, subname: "Computer Aided Civil Engineering Drawing" },
+
+  "19CEC51": { credits: 4, subname: "Structural Analysis I" },
+  "19CEC52": { credits: 4, subname: "Design of RC Elements" },
+  "19CEC53": { credits: 3, subname: "Irrigation Engineering and Hydraulic Structures" },
+  "19CEC55": { credits: 3, subname: "Foundation Engineering" },
+  "19CEL62": { credits: 1.5, subname: "Irrigation and Environmental Engineering Drawing" },
+
+  
+    "19CEC61": { credits: 4, subname: "Structural Analysis II" },
+    "19CEC63": { credits: 4, subname: "Design of RC Structures and Masonry" },
+    "19CEC64": { credits: 3, subname: "Applied Hydraulics and Fluid Machinery" },
+    "19CEE6X": { credits: 3, subname: "Elective-I" },
+    "19CEL71": { credits: 1.5, subname: "Design and Drawing for RC and Steel Structures with Software Applications" },
+  
+    
+      "19CEH71": { credits: 3, subname: "Construction Management" },
+      "19CEC71": { credits: 3, subname: "Estimation and Costing" },
+      "19CEE7X": { credits: 3, subname: "Elective - II" },
+      "19CEZ73": { credits: 6, subname: "Project & Viva - Voce" }
+    
+    
+
 
     
   }
