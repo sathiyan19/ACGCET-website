@@ -1,7 +1,7 @@
 import React from 'react';
 import './Alumini_fb.css';
 import { Backtotop, Underline } from "../../widgets";
-import { feedbackQuestions } from "../../constants/feedbackQuestions";
+import { AlumniFeedbackQuestions } from "../../constants/feedbackQuestions";
 
 const Alumini_fb = () => {
   return (
@@ -72,7 +72,7 @@ const Alumini_fb = () => {
 
           <br />
 
-          {feedbackQuestions.map(({ question, translation, name }) => (
+          {AlumniFeedbackQuestions.map(({ question, translation, name }) => (
             <div className="alumni_fb_question" key={name}>
               <p>{question}</p>
               <p>({translation})</p>
