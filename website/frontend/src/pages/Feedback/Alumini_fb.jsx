@@ -5,11 +5,8 @@ import { feedbackQuestions } from "../../constants/feedbackQuestions";
 
 const Alumini_fb = () => {
   return (
-
-    
     <div className="alumni_fb_container">
-      <Underline heading = "Alumini Feedback"/>
-      
+      <Underline heading="Alumini Feedback" />
       <h1 className="alumni_fb_title">Alumni Feedback</h1>
       <form className="alumni_fb_form">
         <div className="alumni_fb_row">
@@ -73,7 +70,7 @@ const Alumini_fb = () => {
         <div className="alumni_fb_feedback">
           <p>5 - Excellent  4 - Satisfied  3 - Good  2 - Not Satisfied  1 - Poor</p>
 
-          <br /> 
+          <br />
 
           {feedbackQuestions.map(({ question, translation, name }) => (
             <div className="alumni_fb_question" key={name}>
@@ -103,4 +100,3 @@ const Alumini_fb = () => {
 };
 
 export default Alumini_fb;
-
