@@ -1792,7 +1792,7 @@ const cse_asso_events=[
 const cse_mou_contend_card=[
   {
     'id':'1',
-    'program':'Tracin ',
+    'program':'Tarcin ',
     'pdf':'https://drive.google.com/file/d/1aYah80F6D942XSe_jhtJNBbgULft3iKD/view?usp=sharing'
   }
 ]
