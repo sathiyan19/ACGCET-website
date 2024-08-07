@@ -5,11 +5,13 @@ import './Cse_mou.css'
 import {
   Backtotop,
   Floatinmenu,
+  Content_card
 } from "../../widgets";
 
 import {
   cse_dept_menu,
-  cse_mou_data
+  cse_mou_data,
+  cse_mou_contend_card,
 } from "../../constants/cse_dept";
 
 import {FaComputer} from 'react-icons/fa6'
@@ -48,6 +50,13 @@ const Cse_mou = () => {
       <div className='cse_mou_tab'>
       <Table data={cse_mou_data} columns={columns} />
       </div>
+
+      <div className="cse_mou_content_card">
+        {cse_mou_contend_card.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
+
+      </div>
+
+
       </section>
 
       <Backtotop />

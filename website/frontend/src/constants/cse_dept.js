@@ -1789,6 +1789,14 @@ const cse_asso_events=[
   },
 ]
 
+const cse_mou_contend_card=[
+  {
+    'id':'1',
+    'program':'Tracin ',
+    'pdf':'https://drive.google.com/file/d/1aYah80F6D942XSe_jhtJNBbgULft3iKD/view?usp=sharing'
+  }
+]
+
 export {
   cse_dept_menu,
   cse_fac_profiles,
@@ -1803,5 +1811,6 @@ export {
   cse_stud_data,
   cse_prog_time,
   cse_mou_data,
-  cse_asso_events
+  cse_asso_events,
+  cse_mou_contend_card,
 };
