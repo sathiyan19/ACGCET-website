@@ -51,10 +51,6 @@ const Cse_mou = () => {
       <Table data={cse_mou_data} columns={columns} />
       </div>
 
-      <div className="cse_mou_content_card">
-        {cse_mou_contend_card.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
-
-      </div>
 
 
       </section>

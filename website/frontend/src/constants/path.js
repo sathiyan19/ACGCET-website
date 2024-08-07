@@ -37,7 +37,7 @@ const top_nav_paths = [
       {path:"/research",link:"Research"},
       // {path:"/feedback/alumini_fb",link:"Research"},
 
-      {path:"/feedback/collaborator_fb",link:"Feedback"},
+      // {path:"/feedback/collaborator_fb",link:"Feedback"},
       // {path:"/sgpa",link: "Sgpa Calculator"}
     ],
   },
