@@ -113,6 +113,7 @@ export const subjects = {
   "22CSL39": { credits: 1.5, subname: "Database Management Systems Laboratory" },
   "22CSZ3A": { credits: 1, subname: "Professional Development (Skill Based Course)" },
   "22MAB34": { credits: 4, subname: "Discrete Mathematics" },
+  "22NM001": { credits: 2, subname: "Microsoft Essentials (Naan Mudhalvan Course)" },
 
   "22HSE11": { credits: 3, subname: "Professional English-I" },
   "22MAB13": { credits: 4, subname: "Matrices, Calculus and Laplace Transforms" },
@@ -138,7 +139,6 @@ export const subjects = {
     "22CSL28": { credits: 1.5, subname: "Programming in C Laboratory" },
     "22HSL29": { credits: 1.5, subname: "Communication Laboratory/Foreign Language" },
 
-    
       "22CSC41": { credits: 3, subname: "Introduction to Operating Systems" },
       "22CSC42": { credits: 3, subname: "Computer Networks" },
       "22CSC43": { credits: 3, subname: "Theory of Computation" },
@@ -162,14 +162,6 @@ export const subjects = {
         "22CSL56": { credits: 1.5, subname: "Compiler Design Laboratory" },
         "22CSL57": { credits: 1.5, subname: "Machine Learning Laboratory" },
       
-      
-    
-    
-  
-  
-
-
-   
   },
   "EEE_subs": {
     "19CSC51": { credits: 3, subname: "Software Engineering" },
