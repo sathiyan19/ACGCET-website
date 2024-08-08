@@ -58,6 +58,14 @@ export const devteam=[
 ]
 
 export const guide_team=[
+    // {
+    //     id:"1",
+    //     name:"Dhurika V",
+    //     batch:"2020-2024 Batch",
+    //     linkedin:"https://www.linkedin.com/in/dhurika-vijay-anand/",
+    //     pic:dhurika,
+    //     color:"#cc66ff"
+    // },
     {
         id:"1",
         name:"Dhurika V",

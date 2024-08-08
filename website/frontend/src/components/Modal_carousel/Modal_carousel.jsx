@@ -131,6 +131,9 @@ const Modal_carousel = ({info}) => {
             pic={item.pic}
             content_1={item.content_1}
             content_2={item.content_2}
+            butt_text={item.butt_text}
+            pdflink={item.pdflink}
+            
           />
         ))}
       </div>
