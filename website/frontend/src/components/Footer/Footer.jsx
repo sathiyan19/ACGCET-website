@@ -27,7 +27,8 @@ const Footer = () => {
                             <li><a href="/naac" target='blank' rel='noopener noreferrer' media='print'>NAAC</a></li>
                             <li><a href="/aicte">AICTE</a></li>
                             <li><a href="https://drive.google.com/file/d/1ZwueQyjgqkqhmbY2-I2G972QQ7TY4urz/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Affliation</a></li>
-                            <li><a href="https://drive.google.com/file/d/1s2O5gv3ZY_UFnatRDD-tI1OodPEEI864/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Autonomous</a></li>
+                            <li><a href="/autonomous">Autonomous</a></li>
+                            {/* <li><a href="https://drive.google.com/file/d/1s2O5gv3ZY_UFnatRDD-tI1OodPEEI864/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Autonomous</a></li> */}
                             <li><a href="https://drive.google.com/file/d/15XA3lz_0XbcLafIkk5V3IqsXkA-lVG6W/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Fire Service License</a></li>
                             <li><a href="https://drive.google.com/file/d/1UgGpqWhJyy6stEmUQgu_4TOLEhPqDqlG/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Occupancy Certificate</a></li>
                             <li><a href="https://drive.google.com/file/d/1ryOwfK8ryUbldT_peyqWiCZgBqiyFIoN/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Structural Stability Certificate</a></li>
@@ -37,11 +38,12 @@ const Footer = () => {
                         <p className="first">Attachments</p>
                         <ul>
                             <li><a href="https://drive.google.com/file/d/15Qmckh-4q0tH5kPdludd8HNTp5BdNYaZ/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>TEQIP</a></li>
-                            <li><a href="https://drive.google.com/file/d/1-DdofEfKjhRdTFNcbrYHbHP7LtdCOcek/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>ARIIA</a></li>
+                            {/* <li><a href="https://drive.google.com/file/d/1-DdofEfKjhRdTFNcbrYHbHP7LtdCOcek/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>ARIIA</a></li> */}
                             <li><a href="/audit_stmt"  rel='noopener noreferrer' media='print'>Audit Statement</a></li>
                             <li><a href="https://drive.google.com/file/d/1LpmkLiKlGX6ZI1dQ_g_Z2N19G34U3kqY/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Code of Conduct</a></li>
                             <li><a href="https://drive.google.com/file/d/1tJM-F8JBMAuM2Z4XFIT4y9dvMX3BgQ10/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Employees Service rules</a></li>
                             <li><a href="https://drive.google.com/file/d/1KpmEBZJpcjcCSGQFWnZ09wM7hnSzpoxV/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Women's Helpline Number</a></li>
+                            <li><a href="https://drive.google.com/file/d/1sLXzf0tIDblbj8EyWSxcdYl0Am-tyMrW/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Faculty Appraisal</a></li>
                         </ul>
                     </div>
                     <div className="col-lg-3 sec-contact">

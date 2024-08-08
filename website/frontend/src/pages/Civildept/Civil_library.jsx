@@ -1,9 +1,10 @@
 import React,{useEffect} from "react";
 
+import "./Civil_library.css"
 import { Radial_menu, Table } from "../../components";
 import { BsFillBuildingsFill } from "react-icons/bs";
-import { Backtotop, Floatinmenu, Underline } from "../../widgets";
-import { civ_dept_menu, civ_lib_data } from "../../constants/civil_dept";
+import { Content_card,Backtotop, Floatinmenu, Underline } from "../../widgets";
+import { civ_dept_menu, civ_lib_data,civil_study_matetial } from "../../constants/civil_dept";
 const lib ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Library/civillib.webp"
 
 const Civil_library = () => {
@@ -58,6 +59,10 @@ const Civil_library = () => {
               <Table data={civ_lib_data} columns={columns} />
             </div>
           </div>
+        </div>
+        <Underline heading="Study Materials"/>
+        <div className='civil_study_mat_cards'>
+            {civil_study_matetial.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
         </div>
       </section>
 

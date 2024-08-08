@@ -36,6 +36,12 @@ const Main_Research_civil=[
     'pdf':'/civildept/civil-research'
 },
 ]
+const Research_Promotion_Policy=[
+    { 'id' : '6',
+    'program':'Research Promotion Policy ',
+    'pdf':'https://drive.google.com/file/d/1_v0p5-bqdaGP8m0YHpCZm6KXBGeb5UPW/view?usp=sharing'
+},
+]
 
 
 export{
@@ -44,4 +50,5 @@ export{
     Main_Research_eee,
     Main_Research_mech,
     Main_Research_civil,
+    Research_Promotion_Policy,
 }

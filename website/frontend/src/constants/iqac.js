@@ -1,93 +1,98 @@
 const iqac=[
     {
        sno:'1',
-       rep:'Chair Person-Principal\n(Ex- Officio)',
-       name:'Dr.A.Elango'
+       rep:'Chair Person\n(Ex- Officio)',
+       name:'Dr.K.Baskaran\nPrincipal'
     },
     {
         sno:'2',
         rep:'Coordinator',
-        name:'Dr.K.Ramanathan\nAsso.Prof/Mechanical'
+        name:'Dr.G.Renisha\nASP/ECE'
     },
     {
         sno:'3',
-        rep:'Faculty',
-        name:' Prof.G.Pannerselvam,\nHOD/Civil'
+        rep:'Co-coordinator',
+        name:'Prof.S.Syed Suhaia,\nAP/CSE'
     },
     {
         sno:'4',
-        rep:'Faculty',
-        name:'Dr.R.Malayalamurthi,\nHOD/ Mechanical'
+        rep:'Co-coordinator',
+        name:'Dr.R.N.Mariammal,\nAP/Physics'
     },
     {
         sno:'5',
         rep:'Faculty',
-        name:'Dr.K.Baskaran,\nHOD/EEE'
+        name:'Dr.A.Sivanantharaja,\nProfessor/ECE and NAAC Coordinator'
     },
     {
         sno:'6',
         rep:'Faculty',
-        name:'Dr.A.Sivanantharaja,\nHOD/ECE'
+        name:'Dr.K.Ramanathan,\nProfessor/ Mechanical Engineering'
     },
     {
         sno:'7',
         rep:'Faculty',
-        name:'Dr.L.Ganesan,\nHOD/CSE'
+        name:'Dr.C.Subramanian,\nProfessor/Civil Engineering'
     },
     {
         sno:'8',
         rep:'Faculty',
-        name:'Dr.B.V.Bhuvaneswari,\nHOD/Physics'
+        name:'Dr.A.Arunya Revathy,\nProfessor/EEE'
     },
     {
         sno:'9',
         rep:'Faculty',
-        name:' Dr.R.Vasanthi,\nHOD/Maths'
+        name:'Dr.C.Umarani,\nASP/CSE'
     },
     {
         sno:'10',
         rep:'Faculty',
-        name:'Dr.M.Athimoolam,\nPhysical Director'
+        name:'Dr.S.Ponmudi,\nASP/Physics'
     },
     {
         sno:'11',
+        rep:'Faculty',
+        name:' Dr.C.Vijayaprabha,\nASP/Civil and NBA Coordinator'
+    },
+    {
+        sno:'12',
         rep:'Administration',
         name:'Mrs.S.Manohari,\nPA to Principal'
     },
     {
-        sno:'12',
-        rep:'Alumni',
-        name:'Mr.M.Balasubramanian,\nGM-BHEL'
-    },
-    {
         sno:'13',
-        rep:'Students',
-        name:' Mr.N.Akilan,\nIII B.E (Mechanical)'
+        rep:'Alumni',
+        name:'Dr.G.Sozhan,\nChief Scientist(Rtd),CSIR-CECRI'
     },
     {
         sno:'14',
         rep:'Students',
-        name:'Ms.B.Ishwarya,\nIII B.E (ECE)'
+        name:'Ms.S.Swetha,(Reg.No. 91762115041)\nIII year (CSE)'
     },
     {
         sno:'15',
-        rep:'Society',
-        name:'Mr.VR.Vellaisamy,\nLIC Agent,\nKaraikudi'
+        rep:'Students',
+        name:'Mr.S.Barath Raj,(Reg.No. 91762211010)\nII year (Civil)'
     },
     {
         sno:'16',
-        rep:'Employer',
-        name:'Mr.Vembu kumar\n,Gofrugal Technologies,Velacherry,\nChennai'
+        rep:'Society',
+        name:'Mr.A.R.Narayanan,\nBusiness man,\nKaraikudi'
     },
     {
         sno:'17',
-        rep:'Industrialist',
-        name:'Mr.K.Prabu and Mr.R.Sampath\nScientific Metal Engineers,\nKaraikudi'
+        rep:'Employer',
+        name:'Dr.R.Vijaya Rajeshwaran\nVI Microsystems,Pvt.Ltd'
     },
     {
         sno:'18',
+        rep:'Industrialist',
+        name:'Dr.R.Kalidoss\nManaging Director, Protech Anodes & Alloy Engineers, SIDCO Industrial Estates\nKaraikudi'
+    },
+    {
+        sno:'19',
         rep:'Stake Holders',
-        name:'Mr.A.Rajamathava Kalanithi,\nAnnamaliyar Metals,\nKaraikudi'
+        name:'Mrs.T.Kalaivani,\nParent,HOD/IT,Sri Sai Niketan College for Women\nAmaravathipudur'
     }
 ]
 
@@ -205,9 +210,9 @@ const iqac_strategy=[
 const iqac_feed=[
     {
         'id':"1",
-        "head":"2020-2021",
+        "head":"2022-2023",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1U7selJmYywgb7CTOxTtTG3xtvri6sLvn/view?usp=sharing"
+        "pdf":"/feedback_analysis_22-23.pdf"
     },
     {
         'id':"2",
@@ -217,18 +222,24 @@ const iqac_feed=[
     },
     {
         'id':"3",
-        "head":"2022-2023",
+        "head":"2020-2021",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1eXwp-FCLU-uKrKd5JfUlGg4q3sKon8Xu/view?usp=sharing"
+        "pdf":"https://drive.google.com/file/d/1U7selJmYywgb7CTOxTtTG3xtvri6sLvn/view?usp=sharing"
     },
 ]
 
 const iqac_aqar=[
     {
+        'id':"4",
+        "head":"2022-2023",
+        "house":"right",
+        "pdf":"https://drive.google.com/file/d/1cYjL55OoumsY8jhWUdW948gjeAyczScx/view?usp=sharing"
+    },
+    {
         'id':"3",
         "head":"2021-2022",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1oCJd3MPmdWSYFsmi1Bi7oFez6Svz6N5l/view?usp=sharing"
+        "pdf":"/AQAR_report_2021-22.pdf"
     },
     {
         'id':"2",
@@ -249,7 +260,7 @@ const iqac_min=[
         'id':"1",
         "head":"2022-2023",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1yVLm5uboQNFRn7hbdfQkDCy8xv107oTE/view?usp=drive_link"
+        "pdf":"https://drive.google.com/file/d/1yVLm5uboQNFRn7hbdfQkDCy8xv107oTE/view?usp=sharing"
     },
     {
         'id':"2",
@@ -280,6 +291,7 @@ const iqac_floater_menu={
             'link':'IQAC Minutes',
             'path':'/iqac_min'
         },
+     
         {
             'id':'2',
             'link':'AQAR Report',
@@ -305,17 +317,117 @@ const iqac_floater_menu={
             'link':'Institutional Distinctiveness',
             'path':'/iqac_distinctiveness'
         },
+        {
+            'id':'7',
+            'link':'Strategic Plan',
+            'path':'/iqac_strategic'
+        },
+        {
+            'id':'8',
+            'link':'Student Satisfaction Survey',
+            'path':'/iqac_std_statisfy'
+        },
+        {
+            'id':'9',
+            'link':'Committee',
+            'path':'/iqac_committee'
+        },
     ]
 }
 const distinctiveness_data=[
     {
         'id':'1',
         'program':'Institutional Distinctiveness',
-        'pdf':'https://drive.google.com/file/d/12VMESkpN9HWosZ60-k3AVCAnRii1Ss5D/view?usp=sharing'
+        'pdf':'/Institutional_distinctiveness.pdf'
+      },
+]
+
+const iqac_com=[
+    {
+        'id':'1',
+        'program':'போதை பொருள் தடுப்பு குழு',
+        'pdf':'https://drive.google.com/file/d/1ZH4Gn3P9C8z7fWLG-lpMMiwb69xf1s0F/view?usp=sharing'
+    },
+    {
+        'id':'2',
+        'program':'Students grievance redressal committee',
+        'pdf':'https://drive.google.com/file/d/1dBxKqzTO4ni0xzPT7s7dqq86UT5q11KZ/view?usp=sharing'
+    },
+    {
+        'id':'3',
+        'program':'Research Advisory committee',
+        'pdf':'https://drive.google.com/file/d/1-Nj0WnGQYAjkBbNu5_rO3o4thglf5rN0/view?usp=sharing'
+    },
+    {
+        'id':'4',
+        'program':'Placement advisory committee',
+        'pdf':'https://drive.google.com/file/d/1eOQfzS1EfQwXb2fLK1s1JCNeHEkUIUyn/view?usp=sharing'
+    },
+    {
+        'id':'5',
+        'program':'Library committee',
+        'pdf':'https://drive.google.com/file/d/1TKHa-9nyg6hjXvz111vCkf1BYGN36ure/view?usp=sharing'
+    },
+    {
+        'id':'6',
+        'program':'Internal committee ',
+        'pdf':'https://drive.google.com/file/d/1xUPFa0h9XPOZ6vadVi8QzdeXh0PA9yZA/view?usp=sharing'
+    },
+    {
+        'id':'7',
+        'program':'Hostel committee',
+        'pdf':'https://drive.google.com/file/d/1gVEfbqewbHAjckku2KYutYDDtH7QoISB/view?usp=sharing'
+    },
+    {
+        'id':'8',
+        'program':'Grievance redressal committee',
+        'pdf':'https://drive.google.com/file/d/1BwRJ5LHg-VuHmdM-62iOcbTS9iBCIabl/view?usp=sharing'
+    },
+    {
+        'id':'9',
+        'program':'Examination reform committee',
+        'pdf':'https://drive.google.com/file/d/1BgUmw4mI-urL_3plHEoBGX8VCHXC1SbU/view?usp=sharing'
+    },
+    {
+        'id':'10',
+        'program':'Differently abled persons welfare committee',
+        'pdf':'https://drive.google.com/file/d/1-2F-hErRd6EGIS9qHgyBDs7gi0qa9gUc/view?usp=drive_link'
+    },
+    {
+        'id':'11',
+        'program':'Committee for SC-ST',
+        'pdf':'https://drive.google.com/file/d/1GhaZQgLZCNORnBemF4pMAH002id3RfrJ/view?usp=sharing'
+    },
+    {
+        'id':'12',
+        'program':'Co curricular-Extra curricular activities committee',
+        'pdf':'https://drive.google.com/file/d/1bszhAa8wYJzLYbarkZ4BECoQmP0GibBu/view?usp=sharing'
+    },
+    {
+        'id':'13',
+        'program':'Anti ragging committee',
+        'pdf':'https://drive.google.com/file/d/1nHKTUtFQEqas_hsNODkyQg5yh6CWaA1H/view?usp=drive_link'
+    },
+]
+
+const Strategic_data=[
+    {
+        'id':'1',
+        'program':'Strategic Plan',
+        'pdf':'/strategic_plan.pdf'
       },
 
 
 ]
+const Iqac_std_statisfy_data=[
+    {
+        'id':'1',
+        'program':'Student Satisfaction Survey',
+        'pdf':'/naac_feedback_document.pdf'
+
+    }
+]
+
 
 export {
     iqac,
@@ -327,4 +439,7 @@ export {
     iqac_min,
     iqac_floater_menu,
     distinctiveness_data,
+    Strategic_data,
+    Iqac_std_statisfy_data,
+    iqac_com
 };

@@ -93,6 +93,16 @@
   justify-content: center;
   margin-left: 10px;
 }
+.eee-intro-vid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.eee-intro-vid-i{
+  width:840px;
+  height:480px;
+}
 
 @media(max-width:1100px){
   .eeetwo-col {
@@ -134,6 +144,12 @@
   }
   
 }
+@media (max-width: 645px){
+.eee-intro-vid-i{
+  width:840px;
+  height:380px;
+}
+}
 
 @media (max-width: 500px) {
   .eee_sub_head {
@@ -144,6 +160,10 @@
   }
   .dept_float_menu {
     display: none;
+  }
+  .eee-intro-vid-i{
+    width:840px;
+    height:200px;
   }
 }
 

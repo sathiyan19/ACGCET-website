@@ -76,8 +76,22 @@ export const subjects = {
     "19CSL52": { credits: 1, subname: "OOPS and Java Programming Laboratory"},
     "19CSZ51": { credits: 1, subname: "Technical Seminar - I"},
     "19MAB51": { credits: 4, subname: "Probability and Queuing Theory"},
-    "19CSC71": { credits: 3, subname: "Graphics and Multimedia" },
+    "19NM032":{credits: 2, subname: "Experience Based Practical Lerning (Naan Mudhalvan Course)"},
 
+    "19CEZ51":{credits:0,subname:"Soft Skill Enhancement Training"},
+    "19CSE17":{credits:3,subname:"User Interface Design"},
+    "19CSC61":{credits:3,subname:"Artificial Intelligence"},
+    "19CSC62":{credits:3,subname:"Compiler Design"},
+    "19CSC63":{credits:3,subname:"Web Application Programming"},
+    "19CSC64":{credits:3,subname:"Object Oriented Analysis and Design"},
+    "19CSC65":{credits:3,subname:"Mobile and Pervasive Computing"},
+    "19CSL61":{credits:1,subname:"Compiler Design Laboratory"},
+    "19CSL62":{credits:1,subname:"CASE Tools Laboratory"},
+    "19CSZ61":{credits:1,subname:"Technical Seminar - II"},
+    "19MEP04":{credits:3,subname:"Principles of Managament"},
+    "19NM041":{credits:2,subname:"Naan Mudhalvan - Deep Learning & Neural Networks"},
+
+  "19CSC71": { credits: 3, subname: "Graphics and Multimedia" },
   "19CSC72": { credits: 3, subname: "C # and .NET Technologies" },
   "19CSC73": { credits: 3, subname: "Cryptography and Network Security" },
   "19CSE32": { credits: 3, subname: "Grid and Cloud Computing" },
@@ -110,6 +124,51 @@ export const subjects = {
   "22PHL19": { credits: 1.5, subname: "Physics Laboratory" },
   "22CYL1A": { credits: 1.5, subname: "Chemistry Laboratory" },
   "22HSL1B": { credits: 1.5, subname: "English Laboratory" },
+
+  
+    "22HSE21": { credits: 2, subname: "Professional English-II" },
+    "22MAB22": { credits: 4, subname: "Statistics and Numerical Methods" },
+    "22PHB2E": { credits: 4, subname: "Physics for Information Science" },
+    "22EEG16": { credits: 3, subname: "Basic Electrical, Electronics and Instrumentation Engineering" },
+    "22MEG24": { credits: 4, subname: "Engineering Graphics" },
+    "22CSC25": { credits: 3, subname: "Programming in C" },
+    "22NCC01": { credits: 2, subname: "NCC Credit Course Level 1" },
+    "22HST26": { credits: 1, subname: "Tamils and Technology" },
+    "22EPL27": { credits: 2, subname: "Engineering Practices Laboratory" },
+    "22CSL28": { credits: 1.5, subname: "Programming in C Laboratory" },
+    "22HSL29": { credits: 1.5, subname: "Communication Laboratory/Foreign Language" },
+
+    
+      "22CSC41": { credits: 3, subname: "Introduction to Operating Systems" },
+      "22CSC42": { credits: 3, subname: "Computer Networks" },
+      "22CSC43": { credits: 3, subname: "Theory of Computation" },
+      "22CSC44": { credits: 3, subname: "Cryptography and Cyber Security" },
+      "22CSC45": { credits: 3, subname: "Artificial Intelligence" },
+      "22CYB46": { credits: 2, subname: "Environmental Sciences and Sustainability" },
+      "22NCC02": { credits: 3, subname: "NCC Credit Course Level 2" },
+      "22CSL47": { credits: 1.5, subname: "Operating Systems Laboratory" },
+      "22CSL48": { credits: 2, subname: "Network and Cyber Security Lab" },
+      "22CSL49": { credits: 1.5, subname: "Artificial Intelligence Lab" },
+
+      
+        "22CSC51": { credits: 3, subname: "Foundations of Data Science" },
+        "22CSC52": { credits: 3, subname: "Compiler Design" },
+        "22CSC53": { credits: 3, subname: "Introduction to Machine Learning" },
+        "22CSC54": { credits: 3, subname: "Distributed Computing" },
+        "22CSV24": { credits: 3, subname: "UI and UX Design" },
+        "22CSV31": { credits: 3, subname: " Cloud Computing (NPTEL)" },
+        "22UGMXX": { credits: 0, subname: "Disaster Management" },
+        "22CSL55": { credits: 1.5, subname: "Data Science Laboratory" },
+        "22CSL56": { credits: 1.5, subname: "Compiler Design Laboratory" },
+        "22CSL57": { credits: 1.5, subname: "Machine Learning Laboratory" },
+      
+      
+    
+    
+  
+  
+
+
    
   },
   "EEE_subs": {
@@ -156,6 +215,14 @@ export const subjects = {
     "19MAB41":{credits:3,subname:"Numerical Methods"},
     "19NM019": {credits:2,subname:"Robotic Process and Industrial Automation (Naan Mudhalvan Course)"},
 
+    "19EEE02": {credits: 3 , subname:"	Solid State Drives"},	
+    "19MEP04": {credits: 3 , subname:"	Principles of Management(FT)"},	
+    "19EEL71": {credits:1.5  , subname:"	Power Systems Laboratory	"},
+    "19EEL72": {credits: 1.5 , subname:"	Comprehensive Viva	"},
+    "19CEM61": {credits: 0 , subname:"	Constitution of India (Mandatory Course)	"},
+    "19EEM71": {credits: 0 , subname:"	Stress Management By Yoga (Mandatory Courses)"},	
+
+
     "19EEG51":{credits:4,subname:"Control System"},
     "19EEC51":{credits:4,subname:"AC Machines"},
     "19EEC52":{credits:3,subname:"Analysis of Signals and Systems"},
@@ -187,6 +254,50 @@ export const subjects = {
     "22PHL19": {credits: 1.5, subname: "Physics Laboratory"},
     "22CYL1A": {credits: 1.5, subname: "Chemistry Laboratory"},
     "22HSL1B": {credits: 1.5, subname: "English Laboratory"},
+
+    
+      "22HSE21": { credits: 2, subname: "Professional English-II" },
+      "22MAB22": { credits: 4, subname: "Statistics and Numerical Methods" },
+      "22PHB2C": { credits: 4, subname: "Physics for Electrical Engineering" },
+      "22CMG23": { credits: 3, subname: "Basic Civil and Mechanical Engineering" },
+      "22MEG24": { credits: 4, subname: "Engineering Graphics" },
+      "22EEC25": { credits: 4, subname: "Electric Circuit Analysis" },
+      "22NCC01": { credits: 2, subname: "NCC Credit Course Level 1" },
+      "22HST26": { credits: 1, subname: "Tamils and Technology" },
+      "22EPL27": { credits: 2, subname: "Engineering Practices Laboratory" },
+      "22EEL28": { credits: 1.5, subname: "Electric Circuit Laboratory" },
+      "22HSL29": { credits: 1.5, subname: "Communication Laboratory/Foreign Language" },
+
+      
+        "22EEC41": { credits: 4, subname: "Electrical Machines - II" },
+        "22EEC42": { credits: 3, subname: "Digital Logic Circuits" },
+        "22ECG43": { credits: 3, subname: "Linear Integrated Circuits" },
+        "22EEC44": { credits: 3, subname: "Measurements and Instrumentation" },
+        "22EEC45": { credits: 3, subname: "Microprocessor and Microcontroller" },
+        "22CYB46": { credits: 2, subname: "Environmental Sciences and Sustainability" },
+        "22NCC02": { credits: 3, subname: "NCC Credit Course Level 2" },
+        "22EEL47": { credits: 1.5, subname: "Electrical Machines Laboratory – II" },
+        "22EEL48": { credits: 1.5, subname: "Linear and Digital Integrated Circuits Laboratory" },
+        "22EEL49": { credits: 1.5, subname: "Microprocessor and Microcontroller Laboratory" },
+
+        
+          "22EEC51": { credits: 4, subname: "Linear Control Theory" },
+          "22EEC52": { credits: 3, subname: "Power Electronics" },
+          "22EEC53": { credits: 3, subname: "Generation, Transmission and Distribution" },
+          "22EEV31": { credits: 3, subname: "Signals and Systems" },  
+          "22EEV32": { credits: 3, subname: "Probability, Complex Functions and Fourier Series" },  
+          "22EEV33": { credits: 3, subname: "Electrical Machines - I" },  
+          "22UGM05": { credits: 0, subname: "Constitution of India" },  
+          "22EEL58": { credits: 1.5, subname: "Control and Instrumentation Laboratory" },
+          "22EEL59": { credits: 1.5, subname: "Power Electronics Laboratory" },
+        
+        
+
+
+      
+      
+    
+    
   },
   "ECE_subs": {
     "19CMG15": {credits: 4,subname:"Basic Civil and Mechanical Engineering"},
@@ -227,6 +338,15 @@ export const subjects = {
     "19NM020": {credits:2,subname:"Block Chain Technology (Naan Mudhalvan Course)"},
     "19NM021": {credits:2,subname:"Digital Marketing (Naan Mudhalvan Course)"},
 
+
+    "19ECE12": {credits: 3 ,subname: "Mobile and Wireless Communication"},
+    "19ECE14": { credits: 3 ,subname: "Speech Processing"},
+    "19ECP04": { credits: 3 ,subname: "Automobile Electrical and Electronics Systems	"},
+    "19ECL71": { credits: 1.5,subname: "Microwave and Optical Engineering Laboratory	"},
+    "19ECL72": { credits: 1 , subname: "Cyber Physical Systems Laboratory"},
+    "19ECZ71": { credits: 4 , subname: "Mini Project	"},
+
+
     "19ECC51": {credits: 4, subname: "Digital Signal Processing"},
     "19ECC52": {credits: 3, subname: "Linear Integrated Circuits"},
     "19ECC53": {credits: 3, subname: "Communication Theory"},
@@ -260,10 +380,113 @@ export const subjects = {
     "22PHL19": {credits: 1.5, subname: "Physics Laboratory"},
     "22CYL1A": {credits: 1.5, subname: "Chemistry Laboratory"},
     "22HSL1B": {credits: 1.5, subname: "English Laboratory"},
+
+    
+      "22HSE21": { credits: 2, subname: "Professional English – II" },
+      "22MAB22": { credits: 4, subname: "Statistics and Numerical Methods" },
+      "22PHB2D": { credits: 4, subname: "Physics for Electronics Engineering" },
+      "22EEG16": { credits: 3, subname: "Basic Electrical, Electronics and Instrumentation Engineering" },
+      "22HST26": { credits: 1, subname: "Tamils and Technology" },
+      "22NCC01": { credits: 2, subname: "NCC Credit Course Level 1" },
+      "22EPL27": { credits: 2, subname: "Engineering Practices Laboratory" },
+      "22ECL28": { credits: 1.5, subname: "Circuits Analysis Laboratory" },
+
+      
+        "22ECC41": { credits: 3, subname: "Transmission Lines and RF Systems" },
+        "22ECC42": { credits: 4, subname: "Networks and Security" },
+        "22ECC43": { credits: 3, subname: "Linear Integrated Circuits" },
+        "22ECC44": { credits: 4, subname: "Digital Signal Processing" },
+        "22ECC45": { credits: 3, subname: "Communication Systems" },
+        "22CYB46": { credits: 2, subname: "Environmental Sciences and Sustainability" },
+        "22NCC02": { credits: 3, subname: "NCC Credit Course Level 2" },
+        "22ECL47": { credits: 1.5, subname: "Communication Systems Laboratory" },
+        "22ECL48": { credits: 1.5, subname: "Linear Integrated Circuits Laboratory" },
+
+        
+          "22ECG51": { credits: 4, subname: "Control Systems" },
+          "22ECC52": { credits: 3, subname: "VLSI and Chip Design" },
+          "22ECC53": { credits: 4, subname: "Wireless Communication" },
+          "22ECV41": { credits: 3, subname: "Wearable Devices" },
+          "22ECV82": { credits: 3, subname: "Wireless Broadband Network" },
+          "22ECV74": { credits: 3, subname: "Satellite Communication" },
+          "22UGM05": { credits: 0, subname: "Constitution of India" },
+          "22ECL54": { credits: 2, subname: "VLSI Laboratory" },
+        
+        
+      
+      
+
+
+    
+    
+
+
   },
 
   "MEC_subs": {
 
+    
+      "19ENH11": { credits: 2, subname: "Communicative English" },
+      "19MAB12": { credits: 3, subname: "Mathematics I" },
+      "19PHB13": { credits: 3, subname: "Physics: Properties of Materials and Mechanics" },
+      "19EEG16": { credits: 4, subname: "Basic Electrical and Electronics Engineering" },
+      "19PHL17": { credits: 1, subname: "Physics Laboratory" },
+      "19MEL18": { credits: 1, subname: "Workshop Practice Laboratory" },
+
+      "19CHB21": { credits: 3, subname: "Chemistry" },
+      "19MAB22": { credits: 3, subname: "Mathematics II" },
+      "19CSG23": { credits: 3, subname: "Python Programming" },
+      "19MEG24": { credits: 4, subname: "Engineering Graphics" },
+      "19CHL26": { credits: 1.5, subname: "Chemistry Laboratory" },
+      "19CSL27": { credits: 1.5, subname: "Python Programming Lab" },
+      "19SHA01": { credits: 0, subname: "Professional Communication" },
+      "19SHA02": { credits: 0, subname: "Error Analysis and Fundamental Physical Quantities" },
+      
+        "19MAB32": { credits: 4, subname: "Partial Differential Equation & Numerical Methods" },
+        "19MEB32": { credits: 3, subname: "Engineering Materials & Metallurgy" },
+        "19MEG31": { credits: 3, subname: "Applied Mechanics" },
+        "19MEC31": { credits: 3, subname: "Thermodynamics" },
+        "19MEC32": { credits: 3, subname: "Fluid Mechanics" },
+        "19MEC33": { credits: 3, subname: "Manufacturing Technology - I" },
+        "19MEL31": { credits: 2, subname: "Machine Drawing Practice" },
+        "19MEL32": { credits: 1.5, subname: "Manufacturing Technology - I Laboratory" },
+        "19MEM31": { credits: 0, subname: "Yoga for Human Excellence" } ,
+
+        
+          "19MEC41": { credits: 3, subname: "Mechanics of Solids" },
+          "19MEC42": { credits: 3, subname: "Theory of Machines - I" },
+          "19MEC43": { credits: 3, subname: "Thermal Engineering" },
+          "19MEC44": { credits: 3, subname: "Manufacturing Technology - II" },
+          "19MEH41": { credits: 3, subname: "Total Quality Management" },
+          // "19MEEXX": { credits: 3, subname: "Professional Elective I" },
+          "19MEL41": { credits: 1.5, subname: "Mechanics of Solids and Metallurgy Laboratory" },
+          "19MEL42": { credits: 1.5, subname: "Thermal Engineering Laboratory" },
+          "19MEL43": { credits: 1.5, subname: "Manufacturing Technology – II Laboratory" },
+            
+              "19MEC61": { credits: 3, subname: "Design of Mechanical Drives" },
+              "19MEC62": { credits: 3, subname: "Heat and Mass Transfer" },
+              "19MEC63": { credits: 3, subname: "Mechatronics" },
+              "19MEH61": { credits: 3, subname: "Operational Research" },
+              // "19MEEXX": { credits: 3, subname: "Professional Elective - IV" },
+              // "19MEPXX": { credits: 3, subname: "Open Elective - II" },
+              "19MEZ61": { credits: 3, subname: "Design and Fabrication Project" },
+              "19MEL61": { credits: 1.5, subname: "Heat and Mass Transfer Laboratory" },
+              "19MEL62": { credits: 1.5, subname: "Automation Laboratory" },
+
+              
+                "19MEC71": { credits: 3, subname: "Engineering Metrology and Measurement" },
+                // "19MEEXX": { credits: 3, subname: "Professional Elective - V" },
+                // "19MEPXX": { credits: 3, subname: "Open Elective - III" },
+                // "19MEPXX": { credits: 3, subname: "Open Elective - IV" },
+                "19MEL71": { credits: 1.5, subname: "Computer Aided Simulation and Analysis Laboratory" },
+                "19MEL72": { credits: 1.5, subname: "Engineering Metrology and Measurements Laboratory" },
+                "19CHM31": { credits: 0, subname: "Environmental Science and Engineering" } ,
+
+                
+                  // "19MEEXX": { credits: 3, subname: "Professional Elective - VI" },
+                  // "19MEPXX": { credits: 3, subname: "Open Elective - V" },
+                  "19MEZ81": { credits: 10, subname: "Project Work" },
+                
     "19MEC51": {credits: 3, subname: "Design of Machine Elements"},
     "19MEC52": {credits: 3, subname: "Theory of Machines II"},
     "19MEC53": {credits: 3, subname: "Fluid Machinery"},
@@ -297,7 +520,52 @@ export const subjects = {
     "22CSL18": {credits: 1.5, subname: "Problem Solving and Python Programming Laboratory"},
     "22PHL19": {credits: 1.5, subname: "Physics Laboratory"},
     "22CYL1A": {credits: 1.5, subname: "Chemistry Laboratory"},
-    "22HSL1B": {credits: 1.5, subname: "English Laboratory"}
+    "22HSL1B": {credits: 1.5, subname: "English Laboratory"},
+
+    
+      "22HSE21": { credits: 2, subname: "Professional English-II" },
+      "22MAB22": { credits: 4, subname: "Statistics and Numerical Methods" },
+      "22PHB2B": { credits: 4, subname: "Material Science" },
+      "22CSG16": { credits: 3, subname: "Problem Solving and Python Programming" },
+      "22MEG24": { credits: 4, subname: "Engineering Graphics" },
+      "22HST26": { credits: 1, subname: "Tamils and Technology" },
+      "22NCC01": { credits: 2, subname: "NCC Credit Course Level 1" },
+      "22EPL27": { credits: 2, subname: "Engineering Practices Laboratory" },
+      "22CSL18": { credits: 1.5, subname: "Problem Solving and Python Programming Laboratory" },
+      "22HSL29": { credits: 1.5, subname: "Communication Laboratory / Foreign Language" },
+
+      
+        "22MEC41": { credits: 4, subname: "Theory of Machines" },
+        "22MEC42": { credits: 4, subname: "Thermal Engineering" },
+        "22MEC43": { credits: 3, subname: "Hydraulics and Pneumatics" },
+        "22MEC44": { credits: 3, subname: "Manufacturing Technology" },
+        "22MEC45": { credits: 3, subname: "Strength of Materials" },
+        "22CYB46": { credits: 2, subname: "Environmental Sciences and Sustainability" },
+        "22NCC02": { credits: 3, subname: "NCC Credit Course Level 2" },
+        "22MEL47": { credits: 2, subname: "Strength of Materials and Fluid Machinery Laboratory" },
+        "22MEL48": { credits: 2, subname: "Thermal Engineering Laboratory" },
+
+        
+          "22MEC51": { credits: 4, subname: "Design of Machine Elements" },
+          "22MEC52": { credits: 3, subname: "Metrology and Measurements" },
+          "22MEV22": { credits: 3, subname: "Additive Manufacturing " },
+          "22MEVA1": { credits: 3, subname: "Advanced Vehicle Engineering" },
+          "22MEV93": { credits: 3, subname: "Industrial Safety " },
+          "22MEVA3": { credits: 3, subname: " Casting and Welding Processes" },
+          "22MEV24": { credits: 3, subname: "Design For X / Surface Engineering" },
+          "22MEVA5": { credits: 3, subname: "Design For X / Surface Engineering" },
+          "22UGM04": { credits: 0, subname: "Disaster Management" },
+          "22MEZ53": { credits: 1, subname: "Summer Internship– I" },
+          "22MEL54": { credits: 2, subname: "Theory of Machines Laboratory" },
+          "22MEL55": { credits: 2, subname: "Metallurgy and Metrology Laboratory" }
+        
+        
+      
+      
+
+
+    
+    
   },
 
   "CIV_subs": {
@@ -331,6 +599,91 @@ export const subjects = {
     "22PHL19": {credits: 1.5, subname: "Physics Laboratory"},
     "22CYL1A": {credits: 1.5, subname: "Chemistry Laboratory"},
     "22HSL1B": {credits: 1.5, subname: "English Laboratory"},
+
+    
+      "22CEC51": { credits: 4, subname: "Structural Analysis I" },
+      "22CEC52": { credits: 3, subname: "Design of RC Elements" },
+      "22CEC53": { credits: 3, subname: "Soil Mechanics" },
+      "22CEV26": { credits: 3, subname: "Advanced Construction Techniques" },
+      "22CEV13": { credits: 3, subname: "Prefabricated Structures" },
+      "22CEV13": { credits: 3, subname: "Prefabricated Structures" },
+      "22UGM05": { credits: 0, subname: "Constitution of India" },
+      "22CEL54": { credits: 1.5, subname: "Soil Mechanics Laboratory" },
+      "22CEL55": { credits: 1.5, subname: "Concrete and Highway Laboratory" },
+    
+      
+        "22HSE21": { credits: 2, subname: "Professional English - II" },
+        "22MAB22": { credits: 4, subname: "Statistics and Numerical Methods" },
+        "22PHB2A": { credits: 4, subname: "Physics for Civil Engineering" },
+        "22CSG16": { credits: 3, subname: "Problem Solving and Python Programming" },
+        "22MEG24": { credits: 4, subname: "Engineering Graphics" },
+        "22HST26": { credits: 1, subname: "Tamils and Technology" },
+        "22NCC01": { credits: 1, subname: "NCC Credit Course Level 1" },
+        "22EPL27": { credits: 2, subname: "Engineering Practices Laboratory" },
+        "22CSL18": { credits: 1.5, subname: "Problem Solving and Python Programming Laboratory" },
+        "22HSL29": { credits: 1.5, subname: "Communication Laboratory / Foreign Language" },
+
+        
+          "22CEG41": { credits: 4, subname: "Solid Mechanics" },
+          "22CEC42": { credits: 3, subname: "Highway Engineering" },
+          "22CEC43": { credits: 3, subname: "Applied Hydraulics Engineering" },
+          "22CEC44": { credits: 3, subname: "Waste Water Engineering" },
+          "22CEC45": { credits: 3, subname: "Concrete Technology" },
+          "22CYB46": { credits: 2, subname: "Environmental Sciences and Sustainability" },
+          "22CEB47": { credits: 3, subname: "Surveying II" },
+          "22CEL48": { credits: 1.5, subname: "Survey Laboratory II" },
+          "22CEL49": { credits: 1.5, subname: "Strength of Materials Laboratory" },
+          "22CEL4A": { credits: 1.5, subname: "Fluid Mechanics and Machinery Laboratory" },
+          "22NCC02": { credits: 3, subname: "NCC Credit Course Level 2" },
+        
+          
+            "19ENH11": { credits: 3, subname: "Communicative English" },
+            "19MAB12": { credits: 4, subname: "Mathematics I" },
+            "19PHB13": { credits: 4, subname: "Physics: Properties of Materials and Mechanics" },
+            "19EEG16": { credits: 4, subname: "Basic Electrical and Electronics Engineering" },
+            "19CEC31": { credits: 3, subname: "Surveying I" },
+          
+            "19CHB21": { credits: 4, subname: "Chemistry" },
+            "19MAB22": { credits: 4, subname: "Mathematics II" },
+            "19CSG23": { credits: 3, subname: "Python Programming" },
+            "19MEG24": { credits: 3, subname: "Engineering Graphics" },
+            "19CEC43": { credits: 3, subname: "Surveying II" },
+      
+          "19CEG31": { credits: 4, subname: "Solid Mechanics - I" },
+  "19CEH31": { credits: 3, subname: "Professional Practices, Ethics and Building By-laws" },
+  "19CEB33": { credits: 3, subname: "Science of Building Materials" },
+  "19CEC41": { credits: 3, subname: "Highway Engineering" },
+  "19CEC54": { credits: 3, subname: "Environmental Engineering - I" },
+    
+  "19CEG41": { credits: 4, subname: "Solid Mechanics - II" },
+  "19CEG42": { credits: 4, subname: "Fluid Mechanics" },
+  "19CEC42": { credits: 3, subname: "Soil Mechanics" },
+  "19CEC62": { credits: 3, subname: "Environmental Engineering - II" },
+  "19CEL41": { credits: 1.5, subname: "Computer Aided Civil Engineering Drawing" },
+
+  "19CEC51": { credits: 4, subname: "Structural Analysis I" },
+  "19CEC52": { credits: 4, subname: "Design of RC Elements" },
+  "19CEC53": { credits: 3, subname: "Irrigation Engineering and Hydraulic Structures" },
+  "19CEC55": { credits: 3, subname: "Foundation Engineering" },
+  "19CEL62": { credits: 1.5, subname: "Irrigation and Environmental Engineering Drawing" },
+
+  
+    "19CEC61": { credits: 4, subname: "Structural Analysis II" },
+    "19CEC63": { credits: 4, subname: "Design of RC Structures and Masonry" },
+    "19CEC64": { credits: 3, subname: "Applied Hydraulics and Fluid Machinery" },
+    "19CEE6X": { credits: 3, subname: "Elective-I" },
+    "19CEL71": { credits: 1.5, subname: "Design and Drawing for RC and Steel Structures with Software Applications" },
+  
+    
+      "19CEH71": { credits: 3, subname: "Construction Management" },
+      "19CEC71": { credits: 3, subname: "Estimation and Costing" },
+      "19CEE7X": { credits: 3, subname: "Elective - II" },
+      "19CEZ73": { credits: 6, subname: "Project & Viva - Voce" }
+    
+    
+
+
+    
   }
 };
 
@@ -342,3 +695,245 @@ export const admin_menu = [
     arl: "l",
   },
 ];
+
+export const semesterSubjects={
+  CSE :{
+    1:{
+      code:["22HSE11",
+      "22MAB13",
+      "22PHB14",
+      "22CYB15",
+      "22CSG16",
+      "22HST17",
+      "22CSL18",
+      "22PHL19",
+      "22CYL1A",
+      "22HSL1B"
+    ]
+    },
+    2: {
+      code: [
+        "22HSE21",
+        "22MAB22",
+        "22PHB2E",
+        "22EEG16",
+        "22MEG24",
+        "22CSC25",
+        "22NCC01",
+        "22HST26",
+        "22EPL27",
+        "22CSL28",
+        "22HSL29"
+      ]
+    },
+  
+    4: {
+      code: [
+        "22CSC41",
+        "22CSC42",
+        "22CSC43",
+        "22CSC44",
+        "22CSC45",
+        "22CYB46",
+        "22NCC02",
+        "22CSL47",
+        "22CSL48",
+        "22CSL49"
+      ]
+    },
+
+    3:{
+      code:[
+        "22CSC32",
+  "22CSC33",
+  "22CSC35",
+  "22CSC36",
+  "22CSG31",
+  "22CSL37",
+  "22CSL38",
+  "22CSL39",
+  "22CSZ3A",
+  "22MAB34",
+
+      ]
+    }
+  
+  },
+  ECE:{
+    1:{
+      code:[
+        "22HSE11",
+      "22MAB13",
+      "22PHB14",
+      "22CYB15",
+      "22CSG16",
+      "22HST17",
+      "22CSL18",
+      "22PHL19",
+      "22CYL1A",
+      "22HSL1B",
+      ]
+    },
+    
+    3:{
+      code:[
+        "22MAB33" ,
+        "22ECC31",
+        "22ECC32",
+        "22ECC34",
+        "22ECC35",
+        "22ECG36",
+        "22ECL37",
+        "22ECL38",
+        "22ECZ39",
+      ]
+    },
+    5:{
+      code:[
+       "19ECC51",
+        "19ECC52",
+        "19ECC53",
+        "19ECC54",
+        "19MEH41",
+        "19ECE01",
+        "19ECE03",
+        "19ECE04",
+        "19ECE06",
+        "19ECL51",
+        "19ECL52",
+        "19ECZ51",
+      ]
+    },
+    7:{
+      code:[
+        "19ECE12",
+        "19ECE14",
+        "19ECP04",
+        "19ECL71",
+        "19ECL72",
+        "19ECZ71",
+      ]
+  },
+},
+  EEE:{
+    1:{
+      code:[
+        "22HSE11",
+        "22MAB13",
+        "22PHB14",
+        "22CYB15",
+        "22CSG16",
+        "22HST17",
+        "22CSL18",
+        "22PHL19",
+        "22CYL1A",
+        "22HSL1B",
+      ]
+    },
+    3:{
+      code:[
+        "22MAB32",
+        "22ECG31",
+        "22EEC33",
+        "22EEC34",
+        "22EEC35",
+        "22EEG36",
+        "22EEL37",
+        "22EEL38",
+        "22EEL3A",
+        "22EEZ39",
+        
+      ]
+    },
+    5:{
+      code:[
+        "19EEG51",
+        "19EEC51",
+        "19EEC52",
+        "19EEP05",
+        "19EEE07",
+        "19EEE18",
+        "19EEL51",
+        "19EEL52",
+        "19EEZ51",
+        
+      ]
+    },
+    7:{
+      code:[
+        "19EEE02",
+       "19MEP04",
+       "19EEL71",
+       "19EEL72",
+       "19CEM61",
+        "19EEM71",
+        
+        
+      ]
+    }
+  },
+  CIV:{
+    1:{
+      code:[
+        "22HSE11" ,
+         "22MAB12" ,
+         "22PHB14",
+        "22CYB15" ,
+        "22EEG16",
+         "22HST17",
+          "22EEL18",
+          "22PHL19" ,
+         "22CYL1A" ,
+          "22HSL1B"
+      ]
+    },
+    
+      2:{
+        code:[
+     
+    "22MAB31", 
+    "22CEG32",
+    "22CEG33",
+    "22CEC34",
+    "22CEC35",
+    "22CEC36",
+    "22CEL37",
+    "22CEL38",
+    "22CEL39",
+    "22CEZ3A",
+         
+  ]
+},
+3:{
+  code:[
+    "22MAB31",
+    "22CEG32",
+    "22CEG33",
+    "22CEC34",
+    "22CEC35",
+    "22CEC36",
+    "22CEL37",
+    "22CEL38",
+    "22CEL39",
+    "22CEZ3A",
+    
+  ]
+}
+  },
+  MEC:{
+    1:{
+      code:[
+        "22HSE11",
+      "22MAB13",
+      "22PHB14",
+      "22CYB15",
+      "22CSG16",
+      "22HST17",
+      "22CSL18",
+      "22PHL19",
+      "22CYL1A",
+      "22HSL1B",
+      ]
+    }
+  }
+}

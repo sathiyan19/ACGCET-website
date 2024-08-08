@@ -17,6 +17,8 @@ const hema ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depa
 const anbu ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/anbuselvi.webp" 
 const karthiga ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/karthiga.webp"
 const rajanandhini ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/rajanandini.webp"
+const ramakrishnan ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/CSE_Ramakrishnan.webp"
+const kalaiselvi ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/CSE_Kalaiselvi.webp"
 const vijay ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Supporting_fac/Vijay+Profile+2023.webp"
 const chandraprabha ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Teaching_fac/chandraprabha.webp"
 const raja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Supporting_fac/raja.webp"
@@ -108,16 +110,16 @@ const cse_hod={
 
 const cse_fac_profiles = [
   {
-    id: "8",
+    id: "1",
     cover: cover,
     dp: uma_rani,
     name: "Dr. C.UmaRani",
-    Designation: "Head of the Department/ Associate professor",
+    Designation: "Associate professor & Head",
     mailid: "drcumakkd@gmail.com",
     pdf: "https://drive.google.com/file/d/1rmAwrw8Wl5g43x93TvtOK3Yl952hEDnt/view?usp=drive_link",
   },
   {
-    id: "1",
+    id: "2",
     cover: cover,
     dp: chandraprabha,
     name: "K.Chandraprabha",
@@ -126,7 +128,7 @@ const cse_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1vLl4q7g8vqOGGjfTlJQvFL1tkmoLVfVM/view?usp=drive_link",
   },
   {
-    id: "2",
+    id: "3",
     cover: cover,
     dp: suhaila,
     name: "S.Syed Suhaila",
@@ -135,7 +137,7 @@ const cse_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1bhp8EW2O_4bXHvchHsbfsE-ylujZnDfe/view?usp=drive_link",
   },
   {
-    id: "3",
+    id: "4",
     cover: cover,
     dp: sk,
     name: "Dr.K.Sundara Krishnan",
@@ -144,7 +146,7 @@ const cse_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1Q8LmN5KQyHpSfPGzqJxVSleJzQg_hHPj/view?usp=drive_link",
   },
   {
-    id: "4",
+    id: "5",
     cover: cover,
     dp: hema,
     name: "Dr.N.Hema Rajini",
@@ -153,7 +155,7 @@ const cse_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1PzD1k3JgWvEyM75nEx0CBqzEqH2FVBpz/view?usp=drive_link",
   },
   {
-    id: "5",
+    id: "6",
     cover: cover,
     dp: anbu,
     name: "Anbu Selvi P",
@@ -162,7 +164,7 @@ const cse_fac_profiles = [
     pdf: "https://drive.google.com/file/d/19_plkpq1IGaxhevM7d1QUyVZocjaPcoe/view?usp=drive_link",
   },
   {
-    id: "6",
+    id: "7",
     cover: cover,
     dp: karthiga,
     name: "G. Karthika",
@@ -171,13 +173,31 @@ const cse_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1SRHrupLxqjI6IzVpVVEzmAS8MpTUJp6I/view?usp=drive_link",
   },
   {
-    id: "7",
+    id: "8",
     cover: cover,
     dp: rajanandhini,
     name: "Mrs.M.Rajanandhini",
     Designation: "Assistant professor(Ad-hoc)",
     mailid: "priyamnandhini@gmail.com",
     pdf: "https://drive.google.com/file/d/1ORvnOsK4rvj_e9jIt27xnoa7iEPXKn5H/view?usp=drive_link",
+  },
+  {
+    id: "9",
+    cover: cover,
+    dp: ramakrishnan,
+    name: "Mr.S.Ramakrishnan",
+    Designation: "Assistant professor",
+    mailid: "srk.accet@gmail.com",
+    pdf: "https://drive.google.com/file/d/12wPIyujrnvmyzbue7CyL0q4NPxVQG9l_/view?usp=sharing",
+  },
+  {
+    id: "10",
+    cover: cover,
+    dp: kalaiselvi,
+    name: "Mrs.M.Kalaiselvi",
+    Designation: "Assistant professor",
+    mailid: "kalailaya@gmail.com",
+    pdf: "https://drive.google.com/file/d/151ARd_n_lykJj81budIlBrFnvFv6e1P6/view?usp=sharing",
   },
 ];
 const cse_sup_profiles = [
@@ -655,59 +675,60 @@ const cse_stud_data = [
           regno:"91762215058",
           name: "YOGA SATHYA R",
         },
+     
         {
           sno: "51",
-          regno:"91762315201",
-          name: "ANNAMALAI M",
-        },
-        {
-          sno: "52",
           regno:"91762315202",
           name: "KAVIYA S",
         },{
-          sno: "53",
+          sno: "52",
           regno:"91762315203",
           name: "MOHAMMED SHAJITH M I",
         },
         {
-          sno: "54",
+          sno: "53",
           regno:"91762315204",
           name: "NANDHAKUMAR N",
         },
         {
-          sno: "55",
+          sno: "54",
           regno:"91762315205",
           name: "SUBIKSHA M V",
         },
         {
-          sno: "56",
+          sno: "55",
           regno:"91762215301",
           name: "INDIRA R",
         },
         {
-          sno: "57",
+          sno: "56",
           regno:"91762215302",
           name: "MANIRAJ S",
         },
         {
-          sno: "58",
+          sno: "57",
           regno:"91762215303",
           name: "RITHIKA S",
         },
         {
-          sno: "59",
+          sno: "58",
           regno:"91762215304",
           name: "SANJAYKUMAR A",
         },
         {
-          sno: "60",
+          sno: "59",
           regno:"91762215305",
           name: "VIGNESH A",
         },
         {
-          sno: "61",
+          sno: "60",
           regno:"91762215306",
           name: "VIMALRAJAN S",
+        },
+        {
+          sno: "61",
+          regno:"91762115304",
+          name: "KEERTHANA S",
         }
       ],
       columns: [

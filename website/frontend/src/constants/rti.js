@@ -2,8 +2,8 @@ const asr= "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Depar
 export const rti_data=[
     {
         'id':1,
-        'program':'Public Information Officer And Appellate Authority',
-        'pdf':'https://drive.google.com/file/d/1f_V2mcOgOAxiEwuQE9bvN5PjexEQwR-3/view?usp=sharing',
+        'program':'RTI Officers',
+        'pdf':'https://drive.google.com/file/d/1fEI7j2Ok3m1fsKhk5bcugLiOIR9kJSoF/view?usp=sharing',
     },
     {
         'id':2,

@@ -22,7 +22,7 @@ const sendquery = async (req,res) => {
     transporter.sendMail(
       {
         from: "acgcet25@gmail.com",
-        to: "sivanantharaja@gmail.com",
+        to: "coe@accet.ac.in",
         subject: `Query from ${coename} through COE site`,
         text: `Mail id: ${coeemail},\n Phone no: ${coephno},\n Query: ${coequery}`,
       },
@@ -101,15 +101,19 @@ const sendOTP = async (req, res) => {
 
 // app.post('/validate-otp', cors(), async (req, res) => {
   const validateOTP = async (req, res) => {
-    console.log(email);
-    const { otp } = req.body;
-    console.log("email:", email, "otp:", otp);
-    if (otpData.hasOwnProperty(email) && otpData[email] === otp) {
-      res.status(200).json({ success: true, message: "valid otp" });
-      console.log("Otp is validated");
-    } else {
-      res.status(500).json({ success: false, error: "Invalid OTP" });
-      console.log("otp is not valid");
+    try {
+      console.log(email);
+      const { otp } = req.body;
+      console.log("email:", email, "otp:", otp);
+      if (otpData.hasOwnProperty(email) && otpData[email] === otp) {
+        res.status(200).json({ success: true, message: "valid otp" });
+        console.log("Otp is validated");
+      } else {
+        res.status(500).json({ success: false, error: "Invalid OTP" });
+        console.log("otp is not valid");
+      }
+    } catch (error) {
+      console.log(error)
     }
   };
 //   );

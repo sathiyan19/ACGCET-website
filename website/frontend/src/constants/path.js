@@ -33,8 +33,12 @@ const top_nav_paths = [
     links: [
       { path: "/programs", link: "Programs offered" },
       { path: "/academic-calendar", link: "Academic Calendar" },
-      {path:"/coe",link:"Autonomous Office"},
-      {path:"/research",link:"Research"}
+      {path:"coe",link:"Autonomous Office"},
+      // {path:"/research",link:"Research"},
+      {path:"/feedback/alumini_fb",link:"Research"},
+
+      {path:"/feedback/collaborator_fb",link:"Feedback"},
+      // {path:"/sgpa",link: "Sgpa Calculator"}
     ],
   },
 
@@ -54,8 +58,8 @@ const top_nav_paths = [
     id: "5",
     type: "1",
     title: "Placement",
-    basepath: "/under",
-    // basepath: "/placement",
+    // basepath: "/under",
+    basepath: "/placement",
     links: [],
   },
 
@@ -74,7 +78,7 @@ const top_nav_paths = [
       { path: "/yrc", link: "YRC" },
       { path: "/uba", link: "UBA" },
       { path: "/thiran", link: "Thiran" },
-      { path: "/Xprez", link: "Xprez" },
+      // { path: "/Xprez", link: "Xprez" },
     ],
   },
   

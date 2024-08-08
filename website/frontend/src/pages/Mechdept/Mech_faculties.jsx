@@ -19,7 +19,7 @@ const Mech_faculties = () => {
             <div className="mechheading">
               Department of Mechanical Engineering
             </div>
-            <div className="mech_sub_heading">Faculties</div>
+            <div className="mech_sub_heading">Faculty members</div>
           </div>
           <section className="mechdark">
             <div className="dept_float_menu">

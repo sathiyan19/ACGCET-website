@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Radial_menu,Listformat } from '../../components'
-import { Physics_dept_fmenu,Phy_research_C,Phy_research_M,Phy_research_P,Phy_research_S,Phy_research_V,Phy_research_Vj,Phy_research_B } from '../../constants/physics_dept'
+import { Physics_dept_fmenu,Phy_research_C,Phy_research_M,Phy_research_P,Phy_research_S,Phy_research_V,Phy_research_Vj,Phy_research_B,Phy_research_PA } from '../../constants/physics_dept'
 import { Backtotop,Floatinmenu,Underline } from '../../widgets';
 
 import { GiPendulumSwing } from "react-icons/gi";
@@ -28,15 +28,15 @@ const Sh_Phy_research = () => {
             <Listformat points={Phy_research_P}/>
           </div>
           <div className='pts'>
-            <h3>Venkatrajan S</h3>
+            <h3>Mr.Venkatrajan S</h3>
             <Listformat points={Phy_research_V}/>
           </div>
           <div className='pts'>
-            <h3>Cynthia S R</h3>
+            <h3>Dr.Cynthia S.R </h3>
             <Listformat points={Phy_research_C}/>
           </div>
           <div className='pts'>
-            <h3>Sivaganesh G</h3>
+            <h3>Dr.Sivaganesh G</h3>
             <Listformat points={Phy_research_S}/>
           </div>
           <div className='pts'>
@@ -46,6 +46,10 @@ const Sh_Phy_research = () => {
           <div className='pts'>
             <h3>Dr.Mariammal R N</h3>
             <Listformat points={Phy_research_M}/>
+          </div>
+          <div className='pts'>
+            <h3>Mr.Parthiban R</h3>
+            <Listformat points={Phy_research_PA}/>
           </div>
         </div>
         </div>

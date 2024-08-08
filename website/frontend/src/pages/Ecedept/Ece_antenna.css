@@ -1,4 +1,5 @@
-.antenna_flex1{
+.antenna_flex1
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,15 +18,18 @@
     display: none;
     margin-bottom: 30px;
 }
-.antenna_flex1_img{
+.antenna_flex1_img
+{
     width:45%;
     margin-bottom: 30px;
 }
-.ant_img{
+.ant_img
+{
     width: 100%;
     height: auto;
 }
-.antenna_list_content{
+.antenna_list_content
+{
     padding: 10px 20px;
 }
 .antenna_head{

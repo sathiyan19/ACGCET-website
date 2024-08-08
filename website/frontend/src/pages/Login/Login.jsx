@@ -13,7 +13,7 @@ const Login = () => {
   const [usrerror, setUsrerror] = useState("");
   const [pswderror, setPswderror] = useState("");
 
-//   // recaptcha
+// recaptcha
   const [retoken, setreToken] = useState('');
   const [submitEnabled, setSubmitEnabled] = useState(false);
 
@@ -76,6 +76,7 @@ const Login = () => {
         const res = await axios.post("/backend/login", {
           username,
           password,
+          retoken  //recaptcha
         });
         // console.log(res.data.pswd_status);
         if(username==='91762115000'&& res.data.pswd_status){
@@ -94,6 +95,14 @@ const Login = () => {
           setUsrerror("Register number not found")
         }
         
+
+        //regno not found
+        
+        else if (res.data.username_not_found) {
+          setUsrerror("Register no. not found");
+        }
+        //--
+
          else {
           setPassword("");
           setPswderror("Incorrect password");

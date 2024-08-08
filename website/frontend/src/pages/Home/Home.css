@@ -1,0 +1,15 @@
+.home_clg_vdo_holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home_clg_vdo{
+    width: 60%;
+}
+
+@media(max-width:500px){
+    .home_clg_vdo{
+        width:95%;
+    }
+}

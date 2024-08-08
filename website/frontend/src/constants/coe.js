@@ -377,35 +377,38 @@ const coe_syllabus22=[
   
     'id':'1',
     'program':'Computer Science And Engineering',
-    'pdf':'https://drive.google.com/file/d/1flPg5MjLQv4GXAufeyQHEzYCQgoVabIa/view?usp=sharing',
+    // 'pdf':'https://drive.google.com/file/d/1flPg5MjLQv4GXAufeyQHEzYCQgoVabIa/view?usp=sharing',
+    // 'pdf':'https://drive.google.com/file/d/1udmwCq7A4qQgzS9-DFV1mKiW14KZIjFg/view?usp=drive_link',
+    'pdf':'https://drive.google.com/file/d/1-6iyz5ZxDopIW9BMq1Ju3d6GzizoFy0Z/view?usp=sharing',
    
   },
   {
   
     'id':'2',
     'program':'Mechanical engineering',
-    'pdf':'https://drive.google.com/file/d/1dEOopLkPc6uhqzvrSanuOBocTxyQlsFW/view?usp=sharing',
+    // 'pdf':'https://drive.google.com/file/d/1dEOopLkPc6uhqzvrSanuOBocTxyQlsFW/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1b708AMnmhEk_dF7jUOQAJH20oj73DOLD/view?usp=sharing'
    
   },
   {
   
     'id':'3',
     'program':'Electronics And Communication Engineering',
-    'pdf':'https://drive.google.com/file/d/1oNDLkhmB-I1Us3gEzlvVy8bFa7CQpUBD/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/19V13hmGfa9gM4RyT5kTLN5T1IlvfRLkE/view?usp=sharing',
    
   },
   {
   
     'id':'4',
     'program':'Electrical And Electronics Engineering',
-    'pdf':'https://drive.google.com/file/d/1n1Emoq2XKTZ6Y1McffPH6H4XqbZE74xb/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1SVbqR4d_BuMFGodewPQ3FVg93Elu9Kr_/view?usp=sharing',
    
   },
   {
   
     'id':'5',
     'program':'Civil Engineering',
-    'pdf':'https://drive.google.com/file/d/1lyLkLD6zAfiKi0trnkkbx5Y_m02E_Yua/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1kX3tXBQxbRsTXrcyw7qMi4KmgG773DyK/view?usp=sharing',
    
   },
   {

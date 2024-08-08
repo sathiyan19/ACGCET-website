@@ -1,6 +1,5 @@
-import dpm from "../assets/pictures/boy.webp";
-import arugumam from "../assets/pictures/R.Arugumugam.webp";
-import rengarajan from "../assets/pictures/V.Rengarajan.webp";
+const arugumam = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/R.Arugumugam.webp";
+const rengarajan = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/V.Rengarajan.webp";
 
 const pcover = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/phy+cover.webp";
 const cynthia = "https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/science_humanities/Physics/Phy_faculties/cynthia.webp";
@@ -203,6 +202,25 @@ const Physics_dept_fmenu = [
       point:
         "S. Ponmudi,R. Sivakumar andC. Sanjeeviraja, Effects of sputtering power and substrate temperature on the optical properties of Al2O3:Cr2O3 thin films, Mater. Today Proc. 9 (2019) 1979-1984.",
     },
+    {
+      id: "7",
+      point:
+        "S. Ponmudi, R. Sivakumar and C. Sanjeeviraja, Tunable room-temperature ferromagnetism in RF magnetron sputtered Al2Cr2Cu2O8 thin film, Ceramics International, 50 (2024) 4190-4203.",
+    },
+    {
+      id: "8",
+      point:
+"S. Ponmudi, R. Sivakumar and C. Sanjeeviraja, Tuning the phase structure and surface morphology of Cr2O3: CuO thin film by annealing for enhanced ammonia sensing performance at room temperature,Inorganic Chemistry Communications, 158 (2023) 111512. "    
+},
+    {
+      id: "9",
+      point:"S. Ponmudi, R. Sivakumar and C. Sanjeeviraja, Studies on the properties of Al2O3:Cr2O3 (50:50) thin film, AIP Conf. Proc. 1728 (2016) 020288. "
+},
+    {
+      id: "10",
+      point:"S.R. Cynthia, R. Sivakumar, C. Sanjeeviraja and S. Ponmudi, Characterization of ZnO:SnO2 (50:50) thin film deposited by RF magnetron sputtering technique,  AIP Conf. Proc. 1728 (2016) 020567 "
+},
+    
   ];
   
   const Phy_research_V = [
@@ -226,6 +244,24 @@ const Physics_dept_fmenu = [
       point:
         "S.Venkatarajan, B.V.Bhuvaneswari, A.Athijayamani, S.Navaneethakrishnan, Mechanical Properties of Roselle fiber/Coconut shell particulate/Vinyl Ester Hybrid composite, Journal of Applied Science and Computations, Vol 5, ISS 10 OCT 2018P.1369 – 1378, 1076-5131.",
     },
+    {
+      id: "5",
+      point:" S Venkatarajan, C Subbu, A Athijayamani, Evaluation of shear property of Screw pine fiber/glass fiber reinforced vinyl ester hybrid composites, Materials Letters 332, 133538, 2023"    },
+    {
+      id: "6",
+      point:" S Venkatarajan, C Subbu, A Athijayamani, SM Sivagami, Effects of fiber content and its chemical treatment on the mechanical properties of screw pine fiber reinforced vinyl ester composite, Materials Research Express 9 (6), 065308, 2022 "    },
+    {
+      id: "7",
+      point:"M Ramakrishnan, S Ramasubramanian, S Venkatarajan, A Ayyanar, Study of mechanical properties of roselle fiber reinforced vinyl ester biocomposite based on the length and content of fiber: Mechanical properties of roselle fiber reinforced Vinyl Ester Biocomposite, Mechanics 27 (3), 265-269, 2021 "    
+    },
+    {
+      id: "8",
+      point:" S Venkatarajan, A Athijayamani, An overview on natural cellulose fiber reinforced polymer composites, Materials Today: Proceedings 37, 3620-3624, 2021 "    
+    },
+    {
+      id: "9",
+      point:"S. Venkatarajan; A. Athijayamani; R. Parthiban; S. Navaneethakrishnan, Effects of water absorption on the mechanical properties of RF/CSP/VE hybrid composite, AIP Conf. Proc. 2128, 020003 (2019) "    
+    },
   ];
   
   const Phy_research_C = [
@@ -243,6 +279,22 @@ const Physics_dept_fmenu = [
       id: "3",
       point:
         "S.R. Cynthia, R. Sivakumar, C. Sanjeeviraja, C. Gopalakrishnan, K. Jeyadheepan, Room temperature ammonia gas sensing characteristics of copper oxide-tin oxide composite thin films prepared by radio frequency magnetron sputtering technique, J. Mater. Sci. Mater. Electron 31 (2020) 18018.",
+    },
+    {
+      id: "4",
+      point:"Fredselin R. S. Vithel, Ramadoss Manimekalai, Sreekrishnan Rajammal Cynthia, Vediyappan Govindan , M. Ijaz Khan , Sherzod Abdullaev , Salman A. AlQahtani and Nouf F. AlQahtani, Growth, characterization, and anti-bacterial activity of l-methionine supplemented with sulphamic acid single crystals, Open Physics, 2024, 22(1), 20230175"    
+    },
+    {
+      id: "5",
+      point:"S R Cynthia, Characterization of ZnO doped SnO2 thin films deposited by RF magnetron sputtering, European Chemical Bulletin, 2023 12 (6), 382 - 387. "    
+    },
+    {
+      id: "6",
+      point:"S R Cynthia, Recent developments on the detection and monitoring of gases with semiconducting metal oxide gas sensors: A Review European Chemical Bulletin, 2023 12 (12), 2705-2711.  "    
+    },
+    {
+      id: "7",
+      point:"S R Cynthia, R Sivakumar, C Sanjeeviraja, S Ponmudi, Characterization of ZnO: SnO2 (50: 50) thin film deposited by RF magnetron sputtering technique, AIP Conference Proceedings , 2017 41728 (1)."    
     },
   ];
   
@@ -287,6 +339,38 @@ const Physics_dept_fmenu = [
       point:
         "Sivaganesh, G & Arulgnanam, A, 2017, ‘Generalized analytical solutions for certain coupled simple chaotic systems’, Chinese Physics B, Vol. 26, No. 5.",
     },
+    {
+      id: "9",
+      point:"Sivaganesh G, Srinivasan K, Fonzin Fozin T and Raja Mohamed I, 2024, ‘Analytical  studies on third-order chaotic systems with Sprott type nonlinearities and their microcontroller’, Physica Scripta, Vol. 99, pp. 045246."    
+    },
+    {
+      id: "10",
+      point:"Fonzin Fozin T , Tchamda A R, Sivaganesh G, Srinivasan K, Tabekoueng Njitacke Z and Mezatio A B, 2024, ‘Superconductivity coupling harmonic resonant oscillators: Homogeneous and heterogeneous extreme multistability with multi-scrolls’, Chaos, Vol. 34, pp. 013148. "    
+    },
+    {
+      id: "11",
+      point:"Sivaganesh G,Srinivasan K, Fonzin Fozin T and Gladwin Pradeep R, 2023, ‘Boosting of stable synchronization in coupled non-identical counter-rotating chaotic systems’, Chaos, Vol. 33, pp. 093116."    
+    },
+    {
+      id: "12",
+      point:"Sivaganesh G, Srinivasan K, Fonzin Fozin, T and Gladwin Pradeep, R, 2023, ‘Emergence of chaotic hysteresis in a second-order non-autonomous chaotic circuit’, Chaos Solitons & Fractals, Vol. 174, pp. 113884. "    
+    },
+    {
+      id: "13",
+      point:"Sivaganesh G & Srinivasan K, 2023, ‘Theoretical Investigations on the Multistability, Quasiperiodicity and Synchronization of the Driven Chua's Circuit’, Circuits Systems & Signal ProcessingVol. 42, pp. 3200-3228. "    
+    },
+    {
+      id: "14",
+      point:"Sivaganesh G, Srinivasan K, T. Fonzin Fozin & I. Raja Mohamed, 2023, Energy computation and multistability in a class of second-order chaotic systems with simple nonlinearities numerical, experimental and analytical results’, Physica Scripta, Vol. 98, pp. 015226. "    
+    },
+    {
+      id: "15",
+      point:"Srinivasan K,Sivaganesh G, T. Fonzin Fozin & Raja Mohamed I, 2023 ‘Analytical studies on complete, lag and anticipation synchronization in cascaded systems with numerical and experimental confirmation’, AEU-International Journal of Electronics and Communications, Vol. 159, pp. 154491. "    
+    },
+    {
+      id: "16",
+      point:"Sivaganesh G, Srinivasan K & Arulgnanam A, 2022, ‘Analytical studies on the dynamics of higher-dimensional nonlinear circuit systems’, Pramana, Vol. 96, pp."    
+    },
   ];
   
   const Phy_research_Vj = [
@@ -313,6 +397,11 @@ const Physics_dept_fmenu = [
       point:
         " R. N. Mariammal, N. Rajamanickam, B. Renganathan, D. Sastikumar, and K. Ramachandran, Effect of Co on the magnetic and gas sensing properties of SnO2 nanoparticles, Journal of Applied Physics,122 124504 (2017).",
     },
+  ];
+  const Phy_research_PA =[
+    {
+      id: "1",
+      point:"S. Venkatarajan; A. Athijayamani; R. Parthiban; S. Navaneethakrishnan, Effects of water absorption on the mechanical properties of RF/CSP/VE hybrid composite, AIP Conf. Proc. 2128, 020003 (2019)"    },
   ];
 
   const phy_prog = [
@@ -385,6 +474,35 @@ const Physics_dept_fmenu = [
       name: "ACGCET, Karaikudi",
       dur: "06-11-20 to 19-11-20",
     },
+    {
+      sno: "11",
+      title:
+        "One-week online induction programme",
+      name: "ACGCET, Karaikudi",
+      dur: "27.10.2021 – 03.11.2021",
+    },
+    {
+      sno: "12",
+      title:
+        "Tamil Nadu State Government Sponsored Two Weeks Faculty Development Programme on \"Exploring the Fabrication Techniques, Characterization and Applications of Functional Materials\"",
+      name: "ACGCET, Karaikudi",
+      dur: "13.06.2022 - 26.06.2022",
+    },
+    {
+      sno: "13",
+      title:
+        "Two-week induction programme",
+      name: "ACGCET, Karaikudi",
+      dur: "14.11.2022 – 27.11.2022",
+    },
+    {
+      sno: "14",
+      title:
+        "Two-week student induction programme",
+      name: "ACGCET, Karaikudi",
+      dur: "14.9.2023 – 27.09.2023",
+    },
+    
   ];
 
 const phy_former_prof = [
@@ -413,6 +531,7 @@ const phy_former_prof = [
     Phy_research_S,
     Phy_research_Vj,
     Phy_research_M,
+    Phy_research_PA,
     phy_prog,
     phy_former_prof
   }

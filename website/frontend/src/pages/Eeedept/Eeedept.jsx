@@ -98,6 +98,16 @@ const Eeedept = () => {
           <Underline heading="HOD's Message" />
           <Hodmsg name={eee_hod.name} designation={eee_hod.designation} pic={eee_hod.pic} content={eee_hod.content}/>
         </div> */}
+        
+        {/* <div className="eee_vdo_gallery_holder">
+        <Underline heading="EEE Department Video Gallery" />
+        <div className='home_clg_vdo_holder'>
+          <video className='home_clg_vdo' controls autoPlay muted>
+            <source src={eeevdo} type="video/mp4" />
+          </video>
+        </div>
+        </div> */}
+
         <div className="eee_vision_mission">
           <Underline heading="Our Vision & Mission" />
           <Deptvision visiondata={eee_vision.visiondata} />
@@ -110,7 +120,12 @@ const Eeedept = () => {
             {eee_progs.map((item)=><Content_card key={item.id} period={item.period} year={item.year} top_head={item.top_head} heading={item.program} intake={item.intake}/>)}
           </div>
         </div>
+        <Underline heading="Department Video"/>
+      <div className="eee-intro-vid">
+      <iframe src="https://drive.google.com/file/d/1CnZKls7OOE2Ir0LQFOO7hd9qLktyqTM0/preview" className="eee-intro-vid-i"   allow="autoplay"></iframe>
+      </div>
       </section>
+      
 
       <Backtotop />
     </div>

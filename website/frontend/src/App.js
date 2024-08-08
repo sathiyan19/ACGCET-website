@@ -8,7 +8,10 @@ import {
   Milestones,
   About,
   Vision,
+
   Clubs,
+  Build,
+  
   Office,
   Alumni,
   Nss,
@@ -91,8 +94,11 @@ import {
   Iqac_feed,
   Iqac_practices,
   Iqac_distinctiveness,
+  Iqac_std_statisfy,
 
   Nba,
+  Nbadoc,
+  Nba_sar,
   Nirf,
   Iic,
   Uba,
@@ -153,7 +159,19 @@ import {
   Akkadians,
   Audit_stmt,
   Verification,
-  Dash_results
+  Dash_results,
+  Iqac_strategic,
+  Autonomous,
+  Placement_faq,
+  Placement_wk_training,
+  Placement_stats,
+  Placement_companies,
+  Iqac_committee,
+  Sgpa,
+
+  Feedback,
+  Alumini_fb,
+  Collaborator_fb,
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -276,8 +294,13 @@ const App = () => {
         <Route path="/iqac_feed" element={<Iqac_feed/>} />
         <Route path="/iqac_practices" element={<Iqac_practices/>} />
         <Route path="/iqac_distinctiveness" element={<Iqac_distinctiveness/>} />
+        <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
+        <Route path="/iqac_committee" element={<Iqac_committee/>} />
+
         
         <Route path="/nba" element={<Nba/>} />
+        <Route path="/nba/nbadoc" element={<Nbadoc/>} />
+        <Route path="/nba/nba_sar" element={<Nba_sar/>} />
         <Route path="/nirf" element={<Nirf/>} />
         <Route path="/iic" element={<Iic/>} />
         <Route path="/ecedept/ece-dept-lib" element={<Ece_dept_lib/>} />
@@ -294,6 +317,10 @@ const App = () => {
         <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
         <Route path="/mechdept/mech-sae"element={<Mech_events/>}/>
         <Route path="/placement" element={<Placement />} />
+        <Route path="/placement/faqs" element={<Placement_faq/>}/>
+        <Route path="/placement/Placement_wk_training" element={<Placement_wk_training/>}/>
+        <Route path="/placement/placement_statistics" element={<Placement_stats/>}/>
+        <Route path="/placement/our_recruiters" element={<Placement_companies/>}/>
         <Route path="/mechdept/mech-centre-of-excellance"element={<Mech_coe/>}/>
          
          <Route path="/coe"element={<Coe/>}/>
@@ -325,6 +352,13 @@ const App = () => {
          
          <Route path="/audit_stmt" element={<Audit_stmt/>}/>
          <Route path="/verification" element={<Verification/>}/>
+         <Route path="/iqac_strategic" element={<Iqac_strategic/>}/>
+         <Route path="/autonomous" element={<Autonomous/>}/>
+         <Route path="/sgpa" element={<Sgpa/>}/>
+
+         <Route path="/feedback" element={<Feedback/>}/>
+         <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
+         <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

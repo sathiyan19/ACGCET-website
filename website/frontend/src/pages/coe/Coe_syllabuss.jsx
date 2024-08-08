@@ -3,7 +3,7 @@ import "./Coe_syllabuss.css";
 import { Backtotop, Syllabuscard, Underline,Floatinmenu} from "../../widgets";
 import { coe_syllabus, coe_menu,coe_syllabus1,coe_syllabus2} from "../../constants/coe";
 import { Radial_menu } from "../../components";
-  import { BsFillGearFill} from "react-icons/bs";
+import { FaEmpire } from "react-icons/fa6";
 const Coe_syllabuss = () => {
   useEffect(() => {
     document.title = 'Accet-COE |  2019 Syllabus';
@@ -21,7 +21,7 @@ const Coe_syllabuss = () => {
 
       <div className="dept_float_menu">
       <Floatinmenu
-      logo={BsFillGearFill}
+      logo={FaEmpire}
       head="Menu"
       links={coe_menu}
       />
