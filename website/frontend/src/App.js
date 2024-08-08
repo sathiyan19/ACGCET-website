@@ -172,6 +172,8 @@ import {
   Feedback,
   Alumini_fb,
   Collaborator_fb,
+  Employer_fb,
+  Supplier_fb,
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -359,6 +361,8 @@ const App = () => {
          <Route path="/feedback" element={<Feedback/>}/>
          <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
          <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
+         <Route path="/feedback/employer_fb" element={<Employer_fb/>}/>
+         <Route path="/feedback/supplier_fb" element={<Supplier_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

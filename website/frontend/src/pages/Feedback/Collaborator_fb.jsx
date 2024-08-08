@@ -77,16 +77,13 @@ const Collaborator_fb = () => {
                 </div>
 
                 <div className="collab_fb_row">
-                    <input type="text" className="collab_fb_cmd" placeholder='command'  />
-                </div>
-
-                <div className="collab_fb_row">
                     <button type='summit' className='collab_fb_summit'> 
                         Submit
                     </button>
                 </div>
                 
             </form>
+            <Backtotop />
         </div>
     );
 };
