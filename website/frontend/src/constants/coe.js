@@ -316,13 +316,13 @@ const coe_syllabus=[
 {
   'id':'2',
   'program':'  Civil Engineering',
-  'pdf':'https://drive.google.com/file/d/17K031CqGzl2tgmAiwIP0a1Dxn9oxeCQy/view?usp=sharing',
+  'pdf':'https://drive.google.com/file/d/1PzrqXYLQdv7xZv6OCCYA_-NgCG9m0l5E/view?usp=sharing',
  
 },
 {
   'id':'4',
   'program':' Electronics and Communication Engineering',
-  'pdf':'https://drive.google.com/file/d/1g5z3ndEWrUoMQ_pIyeFtVS71GjjpmmpB/view?usp=sharing',
+  'pdf':'https://drive.google.com/file/d/1M-LzLOg-VWfAHWrvvha8idsVHSLurZ72/view?usp=sharing',
  
 },
 {

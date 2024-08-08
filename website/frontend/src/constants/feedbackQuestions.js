@@ -171,14 +171,66 @@ export const feedbackQuestions = [
       translation: "காப்புரிமை",
       name: "question 17",
     },
-    
-    
-    
-    
-
-
-
 
   ];
+
+  export const std_teach_fb_data=[
+    {
+      question: "",
+      translation:"",
+      name:"",
+
+    },
+    {
+      question: "",
+      translation:"",
+      name:"",
+
+    },
+    {
+      question: "",
+      translation:"",
+      name:"",
+
+    },
+    {
+      question: "",
+      translation:"",
+      name:"",
+
+    },
+    {
+      question: "",
+      translation:"",
+      name:"",
+
+    },
+  ];
+
+  export const student_fb_card=[
+    {
+      'id':'1',
+      'program':'Teaching and Learning ',
+      'pdf':'./Std_teaching_fb'
+    },
+    {
+      'id':'2',
+      'program':'Practical and Laboratory Feedback',
+      'pdf':'####'
+    },
+    {
+      'id':'3',
+      'program':'Technical Seminar Feedback',
+      'pdf':'####'
+    },
+    {
+      'id':'4',
+      'program':'Mini Project and Project Feedback',
+      'pdf':'####'
+    },
+   
+  ]
+
+
 
   
