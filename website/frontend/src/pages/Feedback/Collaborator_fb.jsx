@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Collaborator_fb.css";
 import { Backtotop, Underline } from '../../widgets';
-import { collab_fb } from '../../constants/feedbackQuestions';
+import { collaboratorFeedbackQustions } from '../../constants/feedbackQuestions';
 
 const Collaborator_fb = () => {
     // State to manage selected ratings
@@ -52,7 +52,7 @@ const Collaborator_fb = () => {
                 </div>
 
                 <div className="collab_fb_map">
-                    {collab_fb.map(({ question, translation, name }) => (
+                    {collaboratorFeedbackQustions.map(({ question, translation, name }) => (
                         <div className="collab_fb_question" key={name}>
                             <p>{question}</p>
                             <p>({translation})</p>
