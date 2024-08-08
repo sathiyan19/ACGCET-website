@@ -1,3 +1,10 @@
 .cse_outcomes{
     margin-top: 100px;
 }
+.cse_mou_content_card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
