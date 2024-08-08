@@ -168,7 +168,7 @@ import {
   Placement_companies,
   Iqac_committee,
   Sgpa,
-
+  Parents_fb,
   Feedback,
   Alumini_fb,
   Collaborator_fb,
@@ -296,7 +296,7 @@ const App = () => {
         <Route path="/iqac_distinctiveness" element={<Iqac_distinctiveness/>} />
         <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
         <Route path="/iqac_committee" element={<Iqac_committee/>} />
-
+        
         
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nba/nbadoc" element={<Nbadoc/>} />
@@ -359,6 +359,7 @@ const App = () => {
          <Route path="/feedback" element={<Feedback/>}/>
          <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
          <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
+         <Route path="parents_fb" element={<Parents_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

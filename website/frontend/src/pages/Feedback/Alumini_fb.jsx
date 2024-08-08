@@ -6,8 +6,8 @@ import { AlumniFeedbackQuestions } from "../../constants/feedbackQuestions";
 const Alumini_fb = () => {
   return (
     <div className="alumni_fb_container">
-      <Underline heading="Alumini Feedback" />
-      <h1 className="alumni_fb_title">Alumni Feedback</h1>
+      <Underline heading="Alumni Feedback" />
+      
       <form className="alumni_fb_form">
         <div className="alumni_fb_row">
           <input type="text" className="alumni_fb_input" placeholder="Enter Name of the Alumni*" required />
@@ -22,10 +22,10 @@ const Alumini_fb = () => {
             <option value="" disabled selected>Select Department*</option>
             {/* Add options here */}
           </select>
-        </div>
-        <div className="alumni_fb_row">
           <input type="text" className="alumni_fb_input" placeholder="Enter passed out year*" required />
         </div>
+        {/* <div className="alumni_fb_row"> */}
+        {/* </div> */}
 
         <h2 className="alumni_fb_subtitle">Details of Higher Studies</h2>
         <div className="alumni_fb_row">
