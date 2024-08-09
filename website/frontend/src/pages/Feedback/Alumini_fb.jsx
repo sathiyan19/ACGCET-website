@@ -83,13 +83,16 @@ const Alumini_fb = () => {
               <p>{question}</p>
               <p>({translation})</p>
               <div className="alumni_fb_ratings">
-                {[1, 2, 3, 4, 5].map(num => (
-                  <label key={num}>
-                    <input type="radio" name={name} value={num} />
-                    {num}
-                  </label>
-                ))}
-              </div>
+      {[1, 2, 3, 4, 5].map(num => (
+        <React.Fragment key={num}>
+          <input type="radio" id={`rating-${num}`} name={name} value={num} />
+          <label htmlFor={`rating-${num}`}>{num}</label>
+        </React.Fragment>
+        
+      ))}
+    </div>
+    
+
             </div>
           ))}
         </div>
