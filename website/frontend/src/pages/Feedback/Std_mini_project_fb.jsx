@@ -22,7 +22,7 @@ const Std_mini_project_fb = () => {
                 <input type="text" className='std_mini_proj_fb_input' placeholder='Course Title' />
             </div>
             <div className='std_mini_proj_fb_row_sl'>
-                <input type="text" className='std_mini_proj_fb_input_full'  placeholder=' Student E-mail Address*' required/>
+                <input type="email" className='std_mini_proj_fb_input_full'  placeholder=' Student E-mail Address*' required/>
             </div>
             <div className='std_mini_proj_fb_row_sl'>
                 <input type="text" className='std_mini_proj_fb_input_full'  placeholder=' Faculty'/>

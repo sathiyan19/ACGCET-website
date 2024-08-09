@@ -24,6 +24,12 @@
   margin-bottom: 10px;
 }
 
+.supplier_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
 .supplier_fb_input, .supplier_fb_select {
   width: 48%;
   padding: 15px;
@@ -34,7 +40,7 @@
 
 .supplier_fb_row_sl input{
     width: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 50px; 
 }
 
 .supplier_fb_subtitle {
