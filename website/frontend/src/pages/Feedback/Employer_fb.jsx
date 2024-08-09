@@ -7,7 +7,7 @@ import { employerFeedbackQuestions } from "../../constants/feedbackQuestions";
 const Employer_fb = () => {
   return (
     <div className='employer_fb_container'>
-        <div className="employer_fb_udl">
+        <div>
           <Underline heading = "Employer Feedback"/>
         </div>
         <form className='employer_fb_form'>
