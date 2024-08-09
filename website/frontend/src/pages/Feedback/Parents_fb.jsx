@@ -12,6 +12,8 @@ const Parents_fb = () => {
         <div className="parents_fb_row">
           <input type="text" className="parents_fb_input" placeholder="Enter Name of student*" required />
           <input type="text" className="parents_fb_input" placeholder="Enter Student Register number*" required />
+        </div>
+        <div className='parents_fb_row'>
           <input type="text" className="parents_fb_input" placeholder="Enter The Branch*" required />
           <input type="text" className="parents_fb_input" placeholder="Enter passed out year*" required />
         </div>
@@ -28,7 +30,7 @@ const Parents_fb = () => {
 
         <h2 className="parents_fb_subtitle">Please give your valuable feedback on a scale</h2>
         <div className="parents_fb_feedback">
-          <p>5 - Excellent  4 - Satisfied  3 - Good  2 - Not Satisfied  1 - Poor</p>
+          <p className='parents_fb_instruction'>5 - Excellent  4 - Satisfied  3 - Good  2 - Not Satisfied  1 - Poor</p>
 
           <br />
 
@@ -48,7 +50,7 @@ const Parents_fb = () => {
           ))}
         </div>
 
-        <div className="parents_fb_row">
+        <div className="parents_fb_btn">
           <button type="submit" className="parents_fb_submit">
             Submit
           </button>

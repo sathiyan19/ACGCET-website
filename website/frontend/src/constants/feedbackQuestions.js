@@ -202,12 +202,12 @@ export const parentFeedbackQuestions =[
 
 export const consultancyFeedbackQuestions = [
   {
-    question:"Consultancy Fee",
-    translation:"நிறுவன கட்டணம்",
+    question:"Consultancy Fee     ",
+    translation:" நிறுவன கட்டணம் ",
     name:"question1",
   },
   {
-    question:"Meeting Deadline",
+    question:"Meeting Deadline  ",
     translation:"காலக்கெடு",
     name:"question2",
   },

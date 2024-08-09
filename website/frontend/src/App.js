@@ -172,9 +172,12 @@ import {
   Feedback,
   Alumini_fb,
   Collaborator_fb,
+  Consultancy_fb,
+  Supplier_fb,
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
+
 /*import Coe_Adminstration from "./pages/Coe/Coe_Adminstration";*/
 
 
@@ -360,6 +363,8 @@ const App = () => {
          <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
          <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
          <Route path="parents_fb" element={<Parents_fb/>}/>
+         <Route path="consultancy_fb" element={<Consultancy_fb/>}/>
+         <Route path="supplier_fb" element={<Supplier_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
