@@ -78,9 +78,9 @@
   justify-content: center;
 }
 
-.custom-radio {
+/* .custom-radio {
   display: inline-block;
-  width: 16px; /* Adjust the outer circle size */
+  width: 16px;
   height: 16px;
   background-color: white;
   border: 2px solid #00134d;
@@ -92,19 +92,19 @@
 input[type="radio"]:checked + .custom-radio::before {
   content: '';
   display: block;
-  width: 8px; /* Adjust the inner circle size */
+  width: 8px;
   height: 8px;
-  background-color: #00134d; /* Blue color for the inner circle */
+  background-color: #00134d;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
-input[type="radio"]:checked + .custom-radio {
-  background-color: white; /* White color for the outer circle */
-}
+/* input[type="radio"]:checked + .custom-radio {
+  background-color: white;
+} */
 
 input[type="radio"] {
   display: none;
