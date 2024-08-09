@@ -33,13 +33,13 @@ function Supplier_fb() {
                             <p>{question}</p>
                             <p>({translation})</p>
                             <div className="supplier_fb_ratings">{[1, 2, 3, 4, 5].map(num => (
-                            <label key={num}>
+                              <label key={num}>
                                 <input type="radio" name={name} value={num} />
-                                {num}
-                            </label>
+                                <span className="custom-radio">{num}</span>
+                              </label>
                             ))}
-                            </div>
                         </div>
+                      </div>
                     ))} 
                 </div>
                 <div className="supplier_fb_btn">
