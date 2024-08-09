@@ -176,6 +176,7 @@ export{default as Alumini_fb} from './Feedback/Alumini_fb'
 export{default as Collaborator_fb} from './Feedback/Collaborator_fb'
 export{default as Student_fb} from './Feedback/Student_fb'
 export{default as Std_teaching_fb} from './Feedback/Std_teaching_fb'
-
+export{default as Practical_fb} from './Feedback/Practical_fb'
+export{default as Technical_fb}from './Feedback/Technical_fb'
 
 

@@ -1,4 +1,4 @@
-.std_teach_fb_container{
+.practical_fb_container{
     
     max-width: 800px;
     margin:  40px auto;
@@ -6,7 +6,7 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: #fff; 
 }
-.std_teach_fb_form{
+.practical_fb_form{
 display: flex;
 flex-direction: column;
 }
@@ -14,7 +14,7 @@ flex-direction: column;
 
 
 
-.std_teach_fb_rows{
+.practical_fb_rows{
 
 display: flex;
 flex-wrap: wrap;
@@ -22,17 +22,17 @@ justify-content: space-around;
 margin-bottom: 10px;
 
 }
-.std_teach_fb_input{
+.practical_fb_input{
 width: 49%;
 padding: 12px;
 
 }
-.std_teach_fb_input_full{
+.practical_fb_input_full{
 width: 99%;
 padding: 12px;
 
 }
-.std_teach_fb_rating{
+.practical_fb_rating{
 
 margin: 12px auto;
 justify-content: center;
@@ -66,15 +66,15 @@ color: #00134d;
   input[type="radio"] {
     display: none;
   }
-  .std_teach_fb_data{
+  .practical_fb_data{
     display: flex;
     justify-content: space-evenly;
     margin: 30px;
   }
 
-  .std_teaching_fb_submit{
+  .practical_fb_submit{
     display: flex;
-   margin:  auto;
+   margin: 5px auto;
 
   }
   

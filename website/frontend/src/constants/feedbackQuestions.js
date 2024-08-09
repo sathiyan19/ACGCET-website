@@ -253,12 +253,119 @@ export const feedbackQuestions = [
           name: "question15"
         },
       
-      
-    
+  ]
+    export const practical_fb_data=[
+      {
+        question: "Lab manuals are supplied at the beginning of the lab",
+        translation: "",
+        name: "question1"
+      },
+      {
+        question: "Labs were neat and clean with proper labelling and marking of equipment’s ",
+        translation: "",
+        name: "question2"
+      },
+      {
+        question: "All equipment’s were in working condition",
+        translation: "",
+        name: "question3"
+      },
+      {
+        question: "Each student gets a chance to perform the experiment by his/her own  hands",
+        translation: "",
+        name: "question4"
+      },
+      {
+        question: "Lab hours were mostly spent on performing experiments",
+        translation: "",
+        name: "question5"
+      },
+      {
+        question: "Faculty was cooperative and ensured the smooth conduct of the experiments",
+        translation: "",
+        name: "question6"
+      },
+      {
+        question: "Faculty had in-depth knowledge about the experiments",
+        translation: "",
+        name: "question7"
+      },
+      {
+        question: "Lab reports were checked timely with proper marking or grading",
+        translation: "",
+        name: "question8"
+      },
+      {
+        question: "Model exams were conducted and helped us to prepare for semester exams",
+        translation: "",
+        name: "question9"
+      },
+      {
+        question: "Practical sessional exams were held in time",
+        translation: "",
+        name: "question10"
+      },
+      {
+        question: "Experiments helped in better understanding of the subject",
+        translation: "",
+        name: "question11"
+      },
+    ];
     
  
-    
-  ];
+    export const technical_fb_data=[
+      {
+        question: "Faculty detailed the objectives and the plan of execution of the course to the students ",
+        translation: "",
+        name: "question1"
+      },
+      {
+        question: "Faculty gave advise in selection and presentation of topics",
+        translation: "",
+        name: "question2"
+      },
+      {
+        question: "Effectiveness of Faculty in making the students use modern presentation aids",
+        translation: "",
+        name: "question3"
+      },
+      {
+        question: "Faculty support towards the development of students skill",
+        translation: "",
+        name: "question4"
+      },
+      {
+        question: "Faculty made the seminar class a positive learning environment",
+        translation: "",
+        name: "question5"
+      },
+      {
+        question: "Faculty and the course motivated the students do their best work",
+        translation: "",
+        name: "question6"
+      },
+      {
+        question: "Faculty appreciated the students ideas and presentation",
+        translation: "",
+        name: "question7"
+      },
+      {
+        question: "Faculty appeared enthusiastic and interested",
+        translation: "",
+        name: "question8"
+      },
+      {
+        question: "Faculty was accessible outside of class",
+        translation: "",
+        name: "question9"
+      },
+      {
+        question: "I found the course to be interesting and a platform to learn and present new ideas",
+        translation: "",
+        name: "question10"
+      },
+    ]
+
 
   export const student_fb_card=[
     {
@@ -269,12 +376,12 @@ export const feedbackQuestions = [
     {
       'id':'2',
       'program':'Practical and Laboratory Feedback',
-      'pdf':'####'
+      'pdf':'./Practical_fb'
     },
     {
       'id':'3',
       'program':'Technical Seminar Feedback',
-      'pdf':'####'
+      'pdf':'Technical_fb'
     },
     {
       'id':'4',
