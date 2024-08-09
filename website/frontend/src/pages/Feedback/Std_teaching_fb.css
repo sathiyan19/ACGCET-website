@@ -36,6 +36,8 @@ padding: 12px;
 
 margin: 12px auto;
 justify-content: center;
+font-size: 18px;
+color: #00134d;
 
 
 }
@@ -63,6 +65,17 @@ justify-content: center;
   
   input[type="radio"] {
     display: none;
+  }
+  .std_teach_fb_data{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+  }
+
+  .std_teaching_fb_submit{
+    display: flex;
+   margin: 5px auto;
+
   }
   
   

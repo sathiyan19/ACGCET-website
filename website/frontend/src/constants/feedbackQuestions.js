@@ -175,12 +175,87 @@ export const feedbackQuestions = [
   ];
 
   export const std_teach_fb_data=[
-    {
-      question: "I carry the knowledge in Mathematics, Science and Engineering  fundamentals",
-      translation:"",
-      name:"question1",
-
-    },
+    
+      {
+        question: "I carry the knowledge in Mathematics, Science, and Engineering fundamentals",
+        translation: "",
+        name: "question1"
+      },
+      {
+        question: "I am able to analyze complex engineering problems",
+        translation: "",
+        name: "question2"
+      },
+      {
+        question: "I am able to identify components, design systems, and reach solutions for engineering problems",
+        translation: "",
+        name: "question3"
+      },
+      {
+        question: "I am able to do analysis and interpret the data to provide valid conclusions",
+        translation: "",
+        name: "question4"
+      },
+      {
+        question: "I am able to use modern tools for engineering activities",
+        translation: "",
+        name: "question5"
+      },
+      {
+        question: "I am applying the contextual knowledge to assess several issues and the consequent responsibilities relevant to the profession",
+        translation: "",
+        name: "question6"
+      },
+      
+        {
+          question: "I understand the importance of engineering solutions for the development of society and the environment",
+          translation: "",
+          name: "question7"
+        },
+        {
+          question: "I apply ethical principles and commit to professional ethics and responsibilities",
+          translation: "",
+          name: "question8"
+        },
+        {
+          question: "I am able to function effectively as an individual, and as a member or as a leader in diverse teams",
+          translation: "",
+          name: "question9"
+        },
+        {
+          question: "I am able to communicate effectively (write reports, make effective presentations and give, receive clear instructions) with society at large",
+          translation: "",
+          name: "question10"
+        },
+        {
+          question: "I am able to apply the knowledge related to Project management and finance",
+          translation: "",
+          name: "question11"
+        },
+        {
+          question: "I am able to learn new techniques and update myself in the broadest context of technological change",
+          translation: "",
+          name: "question12"
+        },
+        {
+          question: "I am able to analyze, design, and provide solutions to the problems pertaining to Electronics, VLSI, Image processing, and Embedded systems",
+          translation: "",
+          name: "question13"
+        },
+        {
+          question: "I am able to analyze, design, and provide solutions to the problems pertaining to RF and Microwaves, Wireless and Optical Communication",
+          translation: "",
+          name: "question14"
+        },
+        {
+          question: "I am able to design web-based and mobile-based applications",
+          translation: "",
+          name: "question15"
+        },
+      
+      
+    
+    
  
     
   ];
