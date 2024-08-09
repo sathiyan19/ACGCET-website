@@ -1,0 +1,97 @@
+*{
+  margin: 30px;
+}
+.parents_fb_container {
+  
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .parents_fb_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .parents_fb_form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .parents_fb_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .parents_fb_input, .parents_fb_select {
+    width: 48%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .parents_fb_select {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .parents_fb_subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .parents_fb_instruction{
+    text-align: center;
+    margin-bottom: -10px;
+    margin-bottom: 15px;
+  }
+
+  .parents_fb_feedback {
+    margin-top: 30px;
+  }
+  
+  .parents_fb_question {
+    margin-bottom: 20px;
+  }
+  
+  .parents_fb_ratings {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  .parents_fb_ratings label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .parents_fb_ratings input {
+    margin-right: 5px;
+  }
+
+  .parents_fb_btn{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 600px) {
+    .parents_fb_row {
+      flex-direction: column;
+    }
+  
+    .parents_fb_input, .p_fb_select {
+      width: 100%;
+    }
+  }
+  

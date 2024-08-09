@@ -168,7 +168,7 @@ import {
   Placement_companies,
   Iqac_committee,
   Sgpa,
-
+  Parents_fb,
   Feedback,
   Alumini_fb,
   Collaborator_fb,
@@ -178,9 +178,12 @@ import {
   Std_teaching_fb,
   Std_mini_project_fb,
 
+  Consultancy_fb,
+  Supplier_fb,
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
+
 /*import Coe_Adminstration from "./pages/Coe/Coe_Adminstration";*/
 
 
@@ -302,7 +305,7 @@ const App = () => {
         <Route path="/iqac_distinctiveness" element={<Iqac_distinctiveness/>} />
         <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
         <Route path="/iqac_committee" element={<Iqac_committee/>} />
-
+        
         
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nba/nbadoc" element={<Nbadoc/>} />
@@ -369,6 +372,9 @@ const App = () => {
          <Route path="/feedback/Std_mini_project_fb" element={<Std_mini_project_fb/>}/>
 
          <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
+         <Route path="parents_fb" element={<Parents_fb/>}/>
+         <Route path="consultancy_fb" element={<Consultancy_fb/>}/>
+         <Route path="supplier_fb" element={<Supplier_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
