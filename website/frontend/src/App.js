@@ -176,6 +176,7 @@ import {
   Supplier_fb,
   Student_fb,
   Std_teaching_fb,
+  Std_mini_project_fb,
 
 } from "./pages";
 import "./App.css";
@@ -363,6 +364,10 @@ const App = () => {
 
          <Route path="/feedback" element={<Feedback/>}/>
          <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
+         <Route path="/feedback/Student_fb" element={<Student_fb/>}/>
+         <Route path="/feedback/Std_teaching_fb" element={<Std_teaching_fb/>}/>
+         <Route path="/feedback/Std_mini_project_fb" element={<Std_mini_project_fb/>}/>
+
          <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}

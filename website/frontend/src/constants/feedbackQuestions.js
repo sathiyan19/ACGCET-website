@@ -252,13 +252,60 @@ export const AlumniFeedbackQuestions = [
           translation: "",
           name: "question15"
         },
-      
-      
-    
-    
- 
-    
-  ];
+];
+
+export const std_mini_project_fb_data=[
+  {
+    question:"Objectives of the project were well defined ",
+    translation:"",
+    name: "question1"
+  },
+  {
+    question:"Extent of technical support by the supervisor to complete the project",
+    translation:"",
+    name: "question2"
+  },
+  {
+    question:"Extent of facilities offered or available in the department in perusing the project work",
+    translation:"",
+    name: "question3"
+  },
+  {
+    question:"Project reviews or meetings were conducted regularly",
+    translation:"",
+    name: "question4"
+  },
+  {
+    question:"Project reviews helped us to enhance the quality and quantity of work",
+    translation:"",
+    name: "question5"
+  },
+  {
+    question:"Support of supervisor in preparing and evaluating the thesis",
+    translation:"",
+    name: "question6"
+  },
+  {
+    question:"Did you implement the knowledge gained in developing the project?",
+    translation:"",
+    name: "question7"
+  },
+  {
+    question:"Did the project work motivate you to do new findings even after completing the course?",
+    translation:"",
+    name: "question8"
+  },
+  {
+    question:"The project developed is beneficial to the society",
+    translation:"",
+    name: "question9"
+  },
+  {
+    question:"Whether appreciated and recognized as an individual or as a team for the work done",
+    translation:"",
+    name: "question10"
+  },
+];
 
   export const student_fb_card=[
     {
@@ -279,13 +326,11 @@ export const AlumniFeedbackQuestions = [
     {
       'id':'4',
       'program':'Mini Project and Project Feedback',
-      'pdf':'####'
+      'pdf':'./Std_mini_project_fb'
     },
    
-  ]
-
-
   ];
+
 
 export const employerFeedbackQuestions =[
   {

@@ -4,7 +4,7 @@ import { Underline ,Content_card} from '../../widgets'
 import{student_fb_card}from'../../constants/feedbackQuestions'
 
 
-const student_fb = () => {
+const Student_fb = () => {
   return (
     <div>
     <div className="student_fb_area">
@@ -22,4 +22,4 @@ const student_fb = () => {
   )
 }
 
-export default student_fb
+export default Student_fb
