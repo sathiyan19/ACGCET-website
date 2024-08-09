@@ -28,6 +28,8 @@ const Alumini_fb = () => {
             <option value="" disabled selected>Select Department*</option>
             {/* Add options here */}
           </select>
+        </div>
+        <div className="alumni_fb_row">
           <input type="text" className="alumni_fb_input" placeholder="Enter passed out year*" required />
         </div>
 

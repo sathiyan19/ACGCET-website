@@ -181,5 +181,5 @@ export{default as Technical_fb}from './Feedback/Technical_fb'
 
 
 export{default as Parents_fb}from './Feedback/Parents_fb'
-export{default as Consultancy_fb} from './Feedback/Consultancy_fb'
+export{default as Consultancy_fb} from './Feedback/consultancy_fb'
 export{default as Supplier_fb} from './Feedback/Supplier_fb'
