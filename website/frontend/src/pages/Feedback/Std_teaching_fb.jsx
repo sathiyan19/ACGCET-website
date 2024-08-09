@@ -12,7 +12,7 @@ const Std_teaching_fb = () => {
     <div className="std_teach_fb_rows">
 
         <input type="text" className ="std_teach_fb_input" placeholder='Programme'  required/>
-            <input type="text"  className ="std_teach_fb_input" placeholder='Semester'  required/>
+        <input type="text"  className ="std_teach_fb_input" placeholder='Semester'  required/>
     </div>
     <div className="std_teach_fb_rows">
      <input type="text" className='std_teach_fb_input_full' placeholder='Course Title' required />
@@ -34,7 +34,7 @@ const Std_teaching_fb = () => {
     </div>
 
     {/* <div className="std_teach_fb_map"> */}
-    {std_teach_fb_data.map(({ question, translation, name }) => (
+        {std_teach_fb_data.map(({ question, translation, name }) => (
                         <div className="collab_fb_question" key={name}>
                             <p>{question}</p>
                             <p>{translation}</p>

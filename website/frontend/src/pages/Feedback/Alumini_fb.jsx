@@ -26,7 +26,9 @@ const Alumini_fb = () => {
           </select>
           <select className="alumni_fb_select" required>
             <option value="" disabled selected>Select Department*</option>
-            {/* Add options here */}
+            <option value="BE">B.E</option>
+            <option value="ME">M.E</option>
+            <option value="PhD">PhD</option>
           </select>
         </div>
         <div className="alumni_fb_row">
