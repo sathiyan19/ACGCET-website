@@ -182,7 +182,7 @@ import {
   Std_mini_project_fb,
 
   Consultancy_fb,
-  Supplier_fb,
+
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
