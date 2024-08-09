@@ -33,23 +33,18 @@ const Std_teaching_fb = () => {
         <p>Ratings: 5 – Excellent; 4 – Very Good; 3 – Good; 2 – Poor; 1 – Very Poor</p>
     </div>
 
-    {/* <div className="std_teach_fb_map">
-    {collab_fb.map(({ question, translation, name }) => (
+    {/* <div className="std_teach_fb_map"> */}
+    {std_teach_fb_data.map(({ question, translation, name }) => (
                         <div className="collab_fb_question" key={name}>
                             <p>{question}</p>
-                            <p>({translation})</p>
+                            <p>{translation}</p>
                             <div className="std_teach_fb_data">
-                                {[1, 2, 3, 4, 5].map((value) => (
-                                    <label key={value}>
-                                        <input
-                                            type="radio"
-                                            name={name}
-                                            value={value}
-                                            checked={ratings[name] === value.toString()}
-                                            onChange={(e) => handleRatingChange(name, e.target.value)}
-                                            required
-                                        />
-                                        {value}
+                                {[1, 2, 3, 4, 5].map(num => (
+                                    <label key={num}>
+                                    <input type="radio" name={name} value={num} />
+                                        <span className="custom-radio">{num}</span>
+                                        
+
                                     </label>
                                 ))}
                             </div>
@@ -60,9 +55,9 @@ const Std_teaching_fb = () => {
 
 
 
-    </div> */}
     </div>
-   </div>
+    </div>
+//    </div>
   )
 }
 

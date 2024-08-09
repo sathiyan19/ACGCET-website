@@ -176,35 +176,13 @@ export const feedbackQuestions = [
 
   export const std_teach_fb_data=[
     {
-      question: "",
+      question: "I carry the knowledge in Mathematics, Science and Engineering  fundamentals",
       translation:"",
-      name:"",
+      name:"question1",
 
     },
-    {
-      question: "",
-      translation:"",
-      name:"",
-
-    },
-    {
-      question: "",
-      translation:"",
-      name:"",
-
-    },
-    {
-      question: "",
-      translation:"",
-      name:"",
-
-    },
-    {
-      question: "",
-      translation:"",
-      name:"",
-
-    },
+ 
+    
   ];
 
   export const student_fb_card=[
