@@ -1,6 +1,6 @@
 import React from 'react'
 import './Std_teaching_fb.css'
-import { Underline } from '../../widgets'
+import { Underline ,Backtotop} from '../../widgets'
 import { std_teach_fb_data } from '../../constants/feedbackQuestions'
 
 const Std_teaching_fb = () => {
@@ -51,11 +51,15 @@ const Std_teaching_fb = () => {
                             
                         </div>
                     ))}
-        
-
-
 
     </div>
+    <div className="std_teaching_fb">
+          <button type="submit" className="std_teaching_fb_submit">
+            Submit
+          </button>
+        </div>
+
+    <Backtotop />
     </div>
 //    </div>
   )
