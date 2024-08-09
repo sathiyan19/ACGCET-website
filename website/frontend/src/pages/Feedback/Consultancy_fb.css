@@ -78,7 +78,7 @@
   justify-content: center;
 }
 
-.custom-radio {
+.consultancy-custom-radio {
   display: inline-block;
   width: 16px; /* Adjust the outer circle size */
   height: 16px;
@@ -89,7 +89,7 @@
   position: relative;
 }
 
-input[type="radio"]:checked + .custom-radio::before {
+input[type="radio"]:checked + .consultancy-custom-radio::before {
   content: '';
   display: block;
   width: 8px; /* Adjust the inner circle size */
@@ -102,7 +102,7 @@ input[type="radio"]:checked + .custom-radio::before {
   transform: translate(-50%, -50%);
 }
 
-input[type="radio"]:checked + .custom-radio {
+input[type="radio"]:checked + .consultancy-custom-radio {
   background-color: white; /* White color for the outer circle */
 }
 

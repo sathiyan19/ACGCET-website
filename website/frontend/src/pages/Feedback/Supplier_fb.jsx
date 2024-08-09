@@ -7,7 +7,7 @@ const Supplier_fb = () => {
     return(
         <div className='supplier_fb_container'>
             <div className="supplier_fb_udl">
-                <Underline heading = "supplier Feedback"/>
+                <Underline heading = "Supplier Feedback"/>
             </div>  
             <form className='supplier_fb_form'>
                 <div className='supplier_fb_row_sl'>
@@ -17,8 +17,8 @@ const Supplier_fb = () => {
                     <input type="text" className='supplier_fb_input' placeholder='Product supplied*' required/>
                     <select className="supplier_fb_select" required>
                         <option value="" disabled selected>Branch*</option>
-                        <option value="Civil">Civil</option>
-                        <option value="Mechanical">Mechanical</option>
+                        <option value="Civil">CIV</option>
+                        <option value="Mechanical">MECH</option>
                         <option value="EEE">EEE</option>
                         <option value="ECE">ECE</option>
                         <option value="CSE">CSE</option>
@@ -32,13 +32,16 @@ const Supplier_fb = () => {
                         <div className="supplier_fb_question" key={name}>
                             <p>{question}</p>
                             <p>({translation})</p>
-                            <div className="supplier_fb_ratings">{[1, 2, 3, 4, 5].map(num => (
-                            <label key={num}>
-                                <input type="radio" name={name} value={num} />
-                                {num}
-                            </label>
-                            ))}
-                            </div>
+                           <div className="alumni_fb_ratings">
+              {[1, 2, 3, 4, 5].map(num => (
+  <label key={num}>
+    <input type="radio" name={name} value={num} />
+    <span className="custom-radio">{num}</span>
+  </label>
+))}
+
+
+              </div>
                         </div>
                     ))} 
                 </div>
