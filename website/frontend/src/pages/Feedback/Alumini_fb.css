@@ -1,104 +1,81 @@
-*{
-    margin: 30px;
+.alumni_fb_container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.alumni_fb_container {
-   margin-top: 50px;
-    max-width: 800px;
+.alumni_fb_title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
 
-    margin: 50px auto;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
+.alumni_fb_form {
+  display: flex;
+  flex-direction: column;
   
-  .alumni_fb_title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-  }
+}
+
+.alumni_fb_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.alumni_fb_input, .alumni_fb_select {
+  width: 48%;
+  padding: 10px;
   
-  .alumni_fb_form {
-    display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.alumni_fb_select {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.alumni_fb_subtitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.alumni_fb_feedback {
+  margin-top: 30px;
+}
+
+.alumni_fb_question {
+  margin-bottom: 20px;
+}
+
+.alumni_fb_ratings {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.alumni_fb_ratings label {
+  display: flex;
+  align-items: center;
+}
+
+.alumni_fb_ratings input {
+  margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .alumni_fb_row {
     flex-direction: column;
   }
-  
-  .alumni_fb_row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  
+
   .alumni_fb_input, .alumni_fb_select {
-    width: 48%;
-    padding: 15px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .alumni_fb_select {
     width: 100%;
-    margin-bottom: 15px;
   }
-  
-  .alumni_fb_subtitle {
-    font-weight: bold;
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .alumni_fb_rating {
-    margin-top: 20px;
-    text-align: center;
-
-
-  }
-  
-  .alumni_fb_rating label {
-    font-weight: bold;
-  }
-
-  /* Existing styles */
-
-/* New styles for the feedback questions */
-.alumni_fb_feedback {
-    margin-top: 30px;
-  }
-  
-  .alumni_fb_question {
-    margin-bottom: 20px;
-  }
-  
-  .alumni_fb_ratings {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-    padding: 5px;
-    
-
-  }
-  
-  .alumni_fb_ratings label {
-    display: flex;
-    align-items: center;
-  }
-  
-  .alumni_fb_ratings input {
-    margin-right: 5px;
-  }
-  
-  
-  @media (max-width: 600px) {
-    .alumni_fb_row {
-      flex-direction: column;
-    }
-    
-    .alumni_fb_input, .alumni_fb_select {
-      width: 100%;
-    }
-  }
-  
+}

@@ -12,7 +12,7 @@ const SgpaDropDown = ({ options, onChange, label, value }) => (
           Select
         </option>
         {options.map((option, index) => (
-          <option key={index} value={option}>
+          <option className='sgpa_drop_options' key={index} value={option}>
             {option}
           </option>
         ))}

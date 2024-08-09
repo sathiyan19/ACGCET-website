@@ -22,6 +22,9 @@ const top_nav_paths = [
       { path: "/office", link: "Principal Office" },
       { path: "/organisation", link: "Organization Structure" },
       { path: "/committee", link: "Committee/Cell" },
+      {path: "/Parents_fb", link:"Parents_feedback"},
+      {path: "/Consultancy_fb", link:"Consultancy_fb"},
+      {path: "/Supplier_fb", link: "Supplier_fb"},
     ],
   },
 

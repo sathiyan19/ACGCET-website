@@ -1,7 +1,7 @@
 import React from 'react';
 import './Alumini_fb.css';
 import { Backtotop, Underline } from "../../widgets";
-import { feedbackQuestions } from "../../constants/feedbackQuestions";
+import { AlumniFeedbackQuestions } from "../../constants/feedbackQuestions";
 
 const Alumini_fb = () => {
   return (
@@ -28,8 +28,6 @@ const Alumini_fb = () => {
             <option value="" disabled selected>Select Department*</option>
             {/* Add options here */}
           </select>
-        </div>
-        <div className="alumni_fb_row">
           <input type="text" className="alumni_fb_input" placeholder="Enter passed out year*" required />
         </div>
 
@@ -80,7 +78,7 @@ const Alumini_fb = () => {
 
        
 
-          {feedbackQuestions.map(({ question, translation, name }) => (
+          {AlumniFeedbackQuestions.map(({ question, translation, name }) => (
             <div className="alumni_fb_question" key={name}>
               <p>{question}</p>
               <p>({translation})</p>
@@ -111,4 +109,3 @@ const Alumini_fb = () => {
 };
 
 export default Alumini_fb;
-
