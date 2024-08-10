@@ -36,10 +36,10 @@ export const news_info=[
     {
         'id':'9',
         'heading':"Tarcin MOU",
-        'sub-head':'NBA visit for Mechanical, Civil and EEE departments.',
+        'sub-head':'Memorandum of Understanding between ACGCET, Karaikudi and Garuda Aerospace Pvt.ltd, Chennai.',
         'pic':garuda,
         'content_1':'',
-        'content_2':'A 3-member NBA committee visited our institution on 08-06-2024 to renew the NBA accreditation for Civil, Mechanical and EEE Departments.',
+        'content_2':'',
         'butt_text':'viewpdf',
         'pdflink':'https://drive.google.com/file/d/11LFsCN6pOHrvZbtWlwkq12rl8sz8G_Ce/view?usp=sharing',
         
@@ -47,10 +47,10 @@ export const news_info=[
     {
         'id':'8',
         'heading':"Tarcin Signature",
-        'sub-head':'NBA visit for Mechanical, Civil and EEE departments.',
+        'sub-head':'Memorandum of understanding is earned between Tarcin Robtic LLP, Madurai and ACGCET.',
         'pic':tarcinsign,
         'content_1':'',
-        'content_2':'A 3-member NBA committee visited our institution on 08-06-2024 to renew the NBA accreditation for Civil, Mechanical and EEE Departments.',
+        'content_2':'',
         'butt_text':'viewpdf',
         'pdflink':'https://drive.google.com/file/d/1aYah80F6D942XSe_jhtJNBbgULft3iKD/view?usp=sharing',
     },
