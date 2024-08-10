@@ -168,13 +168,25 @@ import {
   Placement_companies,
   Iqac_committee,
   Sgpa,
-
+  Parents_fb,
   Feedback,
   Alumini_fb,
   Collaborator_fb,
+  Employer_fb,
+  Supplier_fb,
+  Student_fb,
+  Std_teaching_fb,
+  Practical_fb,
+  Technical_fb,
+
+  Std_mini_project_fb,
+
+  Consultancy_fb,
+
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
+
 /*import Coe_Adminstration from "./pages/Coe/Coe_Adminstration";*/
 
 
@@ -296,7 +308,7 @@ const App = () => {
         <Route path="/iqac_distinctiveness" element={<Iqac_distinctiveness/>} />
         <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
         <Route path="/iqac_committee" element={<Iqac_committee/>} />
-
+        
         
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nba/nbadoc" element={<Nbadoc/>} />
@@ -358,7 +370,19 @@ const App = () => {
 
          <Route path="/feedback" element={<Feedback/>}/>
          <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
+         <Route path="/feedback/Student_fb" element={<Student_fb/>}/>
+         <Route path="/feedback/Std_teaching_fb" element={<Std_teaching_fb/>}/>
+         <Route path="/feedback/Std_mini_project_fb" element={<Std_mini_project_fb/>}/>
+
          <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
+         <Route path="/feedback/student_fb" element={<Student_fb/>}/>
+         <Route path="/feedback/Std_teaching_fb" element={<Std_teaching_fb/>}/>
+         <Route path="/feedback/Practical_fb" element={<Practical_fb/>}/>
+         <Route path="/feedback/Technical_fb" element={<Technical_fb/>}/>
+         <Route path="parents_fb" element={<Parents_fb/>}/>
+         <Route path="consultancy_fb" element={<Consultancy_fb/>}/>
+         <Route path="supplier_fb" element={<Supplier_fb/>}/>
+         <Route path="employer_fb" element={<Employer_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

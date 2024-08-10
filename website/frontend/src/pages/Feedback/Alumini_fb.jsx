@@ -5,9 +5,15 @@ import { AlumniFeedbackQuestions } from "../../constants/feedbackQuestions";
 
 const Alumini_fb = () => {
   return (
+
+    
     <div className="alumni_fb_container">
-      <Underline heading="Alumini Feedback" />
-      <h1 className="alumni_fb_title">Alumni Feedback</h1>
+      <div className="alumni_fb_udl">
+
+      <Underline heading = "Alumini Feedback"/>
+      </div>
+      
+      {/* <h1 className="alumni_fb_title">Alumni Feedback</h1> */}
       <form className="alumni_fb_form">
         <div className="alumni_fb_row">
           <input type="text" className="alumni_fb_input" placeholder="Enter Name of the Alumni*" required />
@@ -20,7 +26,9 @@ const Alumini_fb = () => {
           </select>
           <select className="alumni_fb_select" required>
             <option value="" disabled selected>Select Department*</option>
-            {/* Add options here */}
+            <option value="BE">B.E</option>
+            <option value="ME">M.E</option>
+            <option value="PhD">PhD</option>
           </select>
         </div>
         <div className="alumni_fb_row">
@@ -70,20 +78,25 @@ const Alumini_fb = () => {
         <div className="alumni_fb_feedback">
           <p>5 - Excellent  4 - Satisfied  3 - Good  2 - Not Satisfied  1 - Poor</p>
 
-          <br />
+          <br /> 
+
+       
 
           {AlumniFeedbackQuestions.map(({ question, translation, name }) => (
             <div className="alumni_fb_question" key={name}>
               <p>{question}</p>
               <p>({translation})</p>
               <div className="alumni_fb_ratings">
-                {[1, 2, 3, 4, 5].map(num => (
-                  <label key={num}>
-                    <input type="radio" name={name} value={num} />
-                    {num}
-                  </label>
-                ))}
-              </div>
+      {[1, 2, 3, 4, 5].map(num => (
+        <React.Fragment key={num}>
+          <input type="radio" id={`rating-${num}`} name={name} value={num} />
+          <label htmlFor={`rating-${num}`}>{num}</label>
+        </React.Fragment>
+        
+      ))}
+    </div>
+    
+
             </div>
           ))}
         </div>

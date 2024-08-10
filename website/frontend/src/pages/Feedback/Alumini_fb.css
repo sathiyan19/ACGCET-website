@@ -1,6 +1,12 @@
+*{
+    margin: 30px;
+}
+
 .alumni_fb_container {
+   margin-top: 50px;
   max-width: 800px;
-  margin: 0 auto;
+
+  margin: 50px auto;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -16,6 +22,7 @@
 .alumni_fb_form {
   display: flex;
   flex-direction: column;
+  
 }
 
 .alumni_fb_row {
@@ -27,8 +34,8 @@
 
 .alumni_fb_input, .alumni_fb_select {
   width: 48%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 15px;
+  
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -42,7 +49,7 @@
   font-weight: bold;
   font-size: 18px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .alumni_fb_feedback {
