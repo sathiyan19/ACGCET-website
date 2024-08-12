@@ -48,7 +48,7 @@ const Consultancy_fb = () => {
                 {['Low', 'Medium', 'High'].map((label, index) => (
                   <label key={index}>
                     <input type="radio" name={name} value={label.toLowerCase()} />
-                    <span className="custom-radio"></span>
+                    <span className="consultancy-custom-radio"></span>
                     {label}
                   </label>
                 ))}
