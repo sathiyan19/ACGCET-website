@@ -39,11 +39,11 @@ const Parents_fb = () => {
               <p>{question}</p>
               <p>({translation})</p>
               <div className="parents_fb_ratings">
-                {[1, 2, 3, 4, 5].map(num => (
-                  <label key={num}>
-                    <input type="radio" name={name} value={num} />
-                    {num}
-                  </label>
+              {[1, 2, 3, 4, 5].map(num => (
+                <label key={num}>
+                  <input type="radio" name={name} value={num} />
+                  <span className="custom-radio">{num}</span>
+                </label>
                 ))}
               </div>
             </div>
