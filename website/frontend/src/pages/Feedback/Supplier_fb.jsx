@@ -1,10 +1,13 @@
-import React, { useState }, { useState } from 'react';;
+import React, { useState } from 'react';
 import './Supplier_fb.css';
 import { Backtotop, Underline } from "../../widgets";
 import { supplierFeedbackQuestions } from "../../constants/feedbackQuestions";
 
 const Supplier_fb = () => {
     const [supplierName, setSupplierName] = useState('');
+    const [productSupplied, setProductSupplied] = useState('');
+    const [branch, setBranch] = useState('');
+    const [ratings, setRatings] = useState({});
     const [nameError, setNameError] = useState('');
 
     const validateName = (name) => {
@@ -24,10 +27,29 @@ const Supplier_fb = () => {
         validateName(name);
     };
 
+    const handleProductChange = (e) => {
+        setProductSupplied(e.target.value);
+    };
+
+    const handleBranchChange = (e) => {
+        setBranch(e.target.value);
+    };
+
+    const handleRatingChange = (questionName, value) => {
+        setRatings(prevRatings => ({
+            ...prevRatings,
+            [questionName]: value
+        }));
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validateName(supplierName)) {
-            alert('Form submitted successfully!');
+            alert('Feedback submitted successfully!');
+            setSupplierName('');
+            setProductSupplied('');
+            setBranch('');
+            setRatings({});
         } else {
             alert('Please correct the errors before submitting.');
         }
@@ -51,9 +73,21 @@ const Supplier_fb = () => {
                     {nameError && <p className='supplier_fb_error'>{nameError}</p>}
                 </div>
                 <div className='supplier_fb_row'>
-                    <input type="text" className='supplier_fb_input' placeholder='Product supplied*' required />
-                    <select className="supplier_fb_select" required>
-                        <option value="" disabled selected>Branch*</option>
+                    <input 
+                        type="text" 
+                        className='supplier_fb_input' 
+                        placeholder='Product supplied*' 
+                        value={productSupplied}
+                        onChange={handleProductChange}
+                        required 
+                    />
+                    <select 
+                        className="supplier_fb_select" 
+                        value={branch} 
+                        onChange={handleBranchChange} 
+                        required
+                    >
+                        <option value="" disabled>Branch*</option>
                         <option value="Civil">CIV</option>
                         <option value="Mechanical">MECH</option>
                         <option value="EEE">EEE</option>
@@ -69,11 +103,18 @@ const Supplier_fb = () => {
                         <div className="supplier_fb_question" key={name}>
                             <p>{question}</p>
                             <p>({translation})</p>
-                            <div className="supplier_fb_ratings">
+                            <div className="alumni_fb_ratings">
                                 {[1, 2, 3, 4, 5].map(num => (
                                     <label key={num}>
-                                        <input type="radio" name={name} value={num} required />
-                                        <span className="custom-radio">{num}</span>
+                                        <input 
+                                            type="radio" 
+                                            name={name} 
+                                            value={num} 
+                                            checked={ratings[name] === num} 
+                                            onChange={() => handleRatingChange(name, num)} 
+                                            required 
+                                        />
+                                        <span className="supplier_custom-radio">{num}</span>
                                     </label>
                                 ))}
                             </div>
@@ -89,4 +130,4 @@ const Supplier_fb = () => {
     );
 };
 
-export default Supplier_fb;;
+export default Supplier_fb;
