@@ -38,6 +38,16 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'29',
+    link:"https://drive.google.com/file/d/1NmQ5f8fGh45ZAvCN3fVzhngWhV1oBcyZ/view?usp=drive_link",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Commencement of first year ME Classes on 01.08.2024
+</span>
+        </span>
+    ),
+},
+{
     id:'28',
     link:"https://drive.google.com/file/d/1cNTbFrYLS3ykOJNletywi9x8n2_UokKq/view?usp=drive_link",
     content:(
