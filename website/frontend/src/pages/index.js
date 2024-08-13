@@ -176,6 +176,15 @@ export{default as Alumini_fb} from './Feedback/Alumini_fb'
 export{default as Collaborator_fb} from './Feedback/Collaborator_fb'
 export{default as Student_fb} from './Feedback/Student_fb'
 export{default as Std_teaching_fb} from './Feedback/Std_teaching_fb'
+export{default as Std_mini_project_fb} from './Feedback/Std_mini_project_fb'
+export{default as Employer_fb} from './Feedback/Employer_fb'
+export{default as Technical_fb} from './Feedback/Technical_fb'
+export{default as Practical_fb} from './Feedback/Practical_fb'
 
 
 
+export{default as Parents_fb}from './Feedback/Parents_fb'
+// export{default as Consultancy_fb} from './Feedback/Consultancy_fb'
+export{default as Supplier_fb} from './Feedback/Supplier_fb'
+// export{default as Parents_fb}from './Feedback/Parents_fb'
+export{default as Consultancy_fb} from './Feedback/consultancy_fb'
