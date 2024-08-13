@@ -178,10 +178,16 @@
   display: flex;
   align-items: center;
   color: #fff;
-  border: 2px solid #01134d;
+  /* border: 2px solid #01134d; */
   text-decoration: none;
   background-color: #01134d;
+
 }
+.but:hover{
+  background-color: #ff6600;
+  color: #00134d ;
+}
+
 
 .yah {
   font-size: 24px;
@@ -211,6 +217,8 @@
   animation-duration: 4s;
 }
 
+
+
 .modal_ext_link_holder{
   
   display: flex;
@@ -230,6 +238,8 @@
   text-decoration: none;
   background-color: #01134d;
 }
+
+
 
 .modal_ext_link_tag:hover{
   color: #fff;

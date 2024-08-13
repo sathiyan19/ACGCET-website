@@ -9,7 +9,7 @@ const dbConfig = {
     // password: 'Badminton19@',
     // password: 'kaviya',
     // password: 'root',
-    // password:'1988',
+    password:'1988',
     database: 'clgdata'
   };
 

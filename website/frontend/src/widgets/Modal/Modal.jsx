@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import "./Modal.css";
 
-const Modal = ({ heading, sub_text, pic, content_1, content_2,link }) => {
+const Modal = ({ heading, sub_text, pic, content_1, content_2,link,butt_text,pdflink }) => {
   const [modal_flag, setmodal_flag] = useState(false);
   const displaymodal = () => {
     setmodal_flag(true);
@@ -82,11 +82,18 @@ const Modal = ({ heading, sub_text, pic, content_1, content_2,link }) => {
               <div className="cont-head">{heading}</div>
               {sub_text &&(<div className="cont-abt">{sub_text}</div>)}
             </div>
-            {(content_1 || content_2) &&(
+            {((content_1 || content_2) && butt_text==='knowmore')&&(
             <button className="but" id="but" onClick={displaymodal}>
               Know more &nbsp;
               <span className="fa fa-angle-double-right yah"></span>
             </button>
+            )}
+            {(butt_text==='viewpdf')&&(
+              
+              <a className="but" id="but" href={pdflink} target="blank">
+                View PDF &nbsp;
+                <span className="fa fa-angle-double-right yah"></span>
+              </a>
             )}
           </div>
         </div>

@@ -170,4 +170,12 @@ export{default as Autonomous} from './Autonomous/Autonomous'
 
 export {default as Build}from'./Clubs/Build'
 export{default as Ece_coe} from './Ecedept/Ece_coe'
+
 export{default as Feedback} from './Feedback/Feedback'
+export{default as Alumini_fb} from './Feedback/Alumini_fb'
+export{default as Collaborator_fb} from './Feedback/Collaborator_fb'
+export{default as Student_fb} from './Feedback/Student_fb'
+export{default as Std_teaching_fb} from './Feedback/Std_teaching_fb'
+
+
+

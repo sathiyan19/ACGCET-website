@@ -661,6 +661,36 @@ export const semesterSubjects={
       "22HSL1B"
     ]
     },
+    2: {
+      code: [
+        "22HSE21",
+        "22MAB22",
+        "22PHB2E",
+        "22EEG16",
+        "22MEG24",
+        "22CSC25",
+        "22NCC01",
+        "22HST26",
+        "22EPL27",
+        "22CSL28",
+        "22HSL29"
+      ]
+    },
+  
+    4: {
+      code: [
+        "22CSC41",
+        "22CSC42",
+        "22CSC43",
+        "22CSC44",
+        "22CSC45",
+        "22CYB46",
+        "22NCC02",
+        "22CSL47",
+        "22CSL48",
+        "22CSL49"
+      ]
+    },
 
     3:{
       code:[
@@ -694,6 +724,7 @@ export const semesterSubjects={
       "22HSL1B",
       ]
     },
+    
     3:{
       code:[
         "22MAB33" ,

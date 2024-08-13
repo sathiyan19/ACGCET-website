@@ -1,0 +1,41 @@
+.std_teach_fb_container{
+    
+    max-width: 800px;
+    margin:  40px auto;
+    padding: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+}
+.std_teach_fb_form{
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+.std_teach_fb_rows{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin-bottom: 10px;
+
+}
+.std_teach_fb_input{
+width: 49%;
+padding: 12px;
+
+}
+.std_teach_fb_input_full{
+width: 99%;
+padding: 12px;
+
+}
+.std_teach_fb_rating{
+
+margin: 12px auto;
+justify-content: center;
+
+
+}
