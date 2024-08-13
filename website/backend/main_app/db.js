@@ -8,8 +8,8 @@ const dbConfig = {
     // password:'Mohana@07',
     // password: 'Badminton19@',
     // password: 'kaviya',
-    password: 'root',
-    // password:'1988',
+    // password: 'root',
+    password:'1988',
     database: 'clgdata'
   };
 

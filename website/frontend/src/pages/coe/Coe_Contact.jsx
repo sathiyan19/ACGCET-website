@@ -63,20 +63,12 @@ const Contact = () => {
         </div>
         <div className="coe-contactform">
         <div className="coe-sir">
-  <img className='coe-sir-img' src={asr} alt="Dr. A. Sivanantha Raja" />
+          <img className='coe-sir-img' src={asr} alt="Dr. A. Sivanantha Raja" />
+          <p className="coe-sir-name">Dr. A. Sivanantha Raja,</p>
+          <p className="coe-sir-designation">Controller of Examination,</p>
+          <p>ACGCET, Karaikudi.</p>
  
-  <p className="coe-sir-name">Dr. A. Sivanantha Raja,</p>
-  <p className="coe-sir-designation">Controller of Examination,</p>
-  <p>ACGCET, Karaikudi.</p>
- 
- 
-</div>
-
-          
-       
-         
-       
-       
+        </div> 
           <div className="coe-textbox">
             <p className='coe-textbox-p'>Leave Your Query Here</p>
             <form id='coe-form' onSubmit={sendQuery}>
