@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
+const {ratingsubmit} =require("./feedback.js")
 const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP, sendquery}=require("./otp.js")
 const {dashboard}=require("./protected_routes.js")
@@ -36,6 +37,8 @@ router.post('/api/resresult',res_result)
 router.post('/api/getsemlist',get_sem_list)
 
 router.post('/api/sendquery',sendquery)
+
+router.post('/api/ratingsubmit',ratingsubmit);
 
 router.post('/api/download_marksheet',download_prov_marksheet)
 

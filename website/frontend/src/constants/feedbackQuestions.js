@@ -471,48 +471,49 @@ export const consultancyFeedbackQuestions = [
   },
 ];
 
-export const supplierFeedbackQuestions =[
+export const supplierFeedbackQuestions = [
   {
-    question:"Procurement process",
-    translation:"கொள்முதல் செயல்முறை",
-    name:"question1",
+    question: "Procurement process",
+    translation: "கொள்முதல் செயல்முறை",
+    name: "procurement_process",
   },
   {
-    question:"Payment process",
-    translation:"கட்டண செயல்முறை",
-    name:"question2",
+    question: "Payment process",
+    translation: "கட்டண செயல்முறை",
+    name: "payment_process",
   },
   {
-    question:"Staff members’ professionalism",
-    translation:"ஊழியகர்களின் தொழில்முறை",
-    name:"question3",
+    question: "Staff members’ professionalism",
+    translation: "ஊழியகர்களின் தொழில்முறை",
+    name: "staff_professionalism",
   },
   {
-    question:"Supplier's receipt process",
-    translation:"சப்ளையர் ரசீது செயல்முறை",
-    name:"question4",
+    question: "Supplier's receipt process",
+    translation: "சப்ளையர் ரசீது செயல்முறை",
+    name: "receipt_process",
   },
   {
-    question:"Paper work process",
-    translation:"காகிதவேலை செயல்முறை",
-    name:"question5",
+    question: "Paper work process",
+    translation: "காகிதவேலை செயல்முறை",
+    name: "paperwork_process",
   },
   {
-    question:"Ability to provide efficient and effective communication at all levels",
-    translation:"அனைத்து நிலைகளில் திறமையான மற்றும் பயனுள்ள தகவல்தொடர்புகளை வழங்குவதர்கான இருப்பு",
-    name:"question6",
+    question: "Ability to provide efficient and effective communication at all levels",
+    translation: "அனைத்து நிலைகளில் திறமையான மற்றும் பயனுள்ள தகவல்தொடர்புகளை வழங்குவதர்கான இருப்பு",
+    name: "communication_efficiency",
   },
   {
-    question:"Levels of ethical practice and support",
-    translation:"நெறிமுறை,நடைமுறை மற்றும் ஆதரவு நிலைகள்",
-    name:"question7",
+    question: "Levels of ethical practice and support",
+    translation: "நெறிமுறை,நடைமுறை மற்றும் ஆதரவு நிலைகள்",
+    name: "ethical_practices",
   },
   {
-    question:"Business relationship with you",
-    translation:"வணிக உறவு",
-    name:"question8",
+    question: "Business relationship with you",
+    translation: "வணிக உறவு",
+    name: "business_relationship",
   },
 ];
+
 
 export const collaboratorFeedbackQustions = [
   {
