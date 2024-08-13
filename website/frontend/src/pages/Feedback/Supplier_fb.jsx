@@ -1,55 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState }, { useState } from 'react';;
 import './Supplier_fb.css';
 import { Backtotop, Underline } from "../../widgets";
 import { supplierFeedbackQuestions } from "../../constants/feedbackQuestions";
-import axios from 'axios';
-const Supplier_fb = () => {
-    // State to store the selected ratings
-    const [ratings, setRatings] = useState({});
-    const [loading, setLoading] = useState(false);
-    // Handle change of radio button
-    const handleRatingChange = (questionName, value) => {
-        setRatings(prevRatings => ({
-            ...prevRatings,
-            [questionName]: value
-        }));
-    };
 
-    // Handle form submission
-    const RatingSubmit = async (event) => {
-        event.preventDefault();
-    
-        try {
-            setLoading(true);
-            const supplierName = event.target.elements[0].value;
-            const productSupplied = event.target.elements[1].value;
-            const branch = event.target.elements[2].value;
-    
-            const response = await axios.post('/backend/ratingsubmit', {
-                supplier_name: supplierName,
-                product_supplied: productSupplied,
-                branch: branch,
-                ratings
-            });
-    
-            console.log(response.data);
-            alert("Ratings submitted successfully");
-        } catch (error) {
-            console.error('Error:', error);
-            alert("An error occurred while submitting your ratings");
-        } finally {
-            setLoading(false);
+const Supplier_fb = () => {
+    const [supplierName, setSupplierName] = useState('');
+    const [nameError, setNameError] = useState('');
+
+    const validateName = (name) => {
+        const nameRegex = /^[A-Za-z\s]{2,30}$/;
+        if (!nameRegex.test(name)) {
+            setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+            return false;
+        } else {
+            setNameError('');
+            return true;
         }
     };
-    
+
+    const handleNameChange = (e) => {
+        const name = e.target.value;
+        setSupplierName(name);
+        validateName(name);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (validateName(supplierName)) {
+            alert('Form submitted successfully!');
+        } else {
+            alert('Please correct the errors before submitting.');
+        }
+    };
+
     return (
         <div className='supplier_fb_container'>
-            <div className="supplier_fb_udl">
+            <div>
                 <Underline heading="Supplier Feedback" />
-            </div>
-            <form className='supplier_fb_form' onSubmit={RatingSubmit}>
+            </div>  
+            <form className='supplier_fb_form' onSubmit={handleSubmit}>
                 <div className='supplier_fb_row_sl'>
-                    <input type="text" className='supplier_fb_input' placeholder='Name of the Supplier*' required />
+                    <input 
+                        type="text" 
+                        className='supplier_fb_input' 
+                        placeholder='Name of the Supplier*' 
+                        value={supplierName}
+                        onChange={handleNameChange}
+                        required 
+                    />
+                    {nameError && <p className='supplier_fb_error'>{nameError}</p>}
                 </div>
                 <div className='supplier_fb_row'>
                     <input type="text" className='supplier_fb_input' placeholder='Product supplied*' required />
@@ -70,16 +69,10 @@ const Supplier_fb = () => {
                         <div className="supplier_fb_question" key={name}>
                             <p>{question}</p>
                             <p>({translation})</p>
-                            <div className="alumni_fb_ratings">
+                            <div className="supplier_fb_ratings">
                                 {[1, 2, 3, 4, 5].map(num => (
                                     <label key={num}>
-                                        <input
-                                            type="radio"
-                                            name={name}
-                                            value={num}
-                                            checked={ratings[name] === num}
-                                            onChange={() => handleRatingChange(name, num)}
-                                        />
+                                        <input type="radio" name={name} value={num} required />
                                         <span className="custom-radio">{num}</span>
                                     </label>
                                 ))}
@@ -94,6 +87,6 @@ const Supplier_fb = () => {
             <Backtotop />
         </div>
     );
-}
+};
 
-export default Supplier_fb;
+export default Supplier_fb;;
