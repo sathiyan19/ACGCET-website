@@ -5,18 +5,7 @@ import { supplierFeedbackQuestions } from "../../constants/feedbackQuestions";
 
 const Supplier_fb = () => {
     const [supplierName, setSupplierName] = useState('');
-    const [productSupplied, setProductSupplied] = useState('');
-    const [branch, setBranch] = useState('');
-    const [procurementProcess, setProcurementProcess] = useState('');
-    const [paymentProcess, setPaymentProcess] = useState('');
-    const [staffProfessionalism, setStaffProfessionalism] = useState('');
-    const [receiptProcess, setReceiptProcess] = useState('');
-    const [paperworkProcess, setPaperworkProcess] = useState('');
-    const [communicationEfficiency, setCommunicationEfficiency] = useState('');
-    const [ethicalPractices, setEthicalPractices] = useState('');
-    const [feedbackDate, setFeedbackDate] = useState('');
     const [nameError, setNameError] = useState('');
-    const [loading, setLoading] = useState(false);
 
     const validateName = (name) => {
         const nameRegex = /^[A-Za-z\s]{2,30}$/;
@@ -35,54 +24,12 @@ const Supplier_fb = () => {
         validateName(name);
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        if (!validateName(supplierName)) {
+        if (validateName(supplierName)) {
+            alert('Form submitted successfully!');
+        } else {
             alert('Please correct the errors before submitting.');
-            return;
-        }
-
-        setLoading(true);
-        try {
-            const response = await fetch('/api/generate-pdf', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    supplier_name: supplierName,
-                    product_supplied: productSupplied,
-                    branch: branch,
-                    procurement_process: procurementProcess,
-                    payment_process: paymentProcess,
-                    staff_professionalism: staffProfessionalism,
-                    receipt_process: receiptProcess,
-                    paperwork_process: paperworkProcess,
-                    communication_efficiency: communicationEfficiency,
-                    ethical_practices: ethicalPractices,
-                    feedback_date: feedbackDate
-                })
-            });
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok.');
-            }
-
-            const blob = await response.blob();
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Supplier_Feedback_Report.pdf';
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-
-            alert('PDF generated successfully!');
-        } catch (error) {
-            console.error('Error generating PDF:', error);
-            alert('Error generating PDF.');
-        } finally {
-            setLoading(false);
         }
     };
 
@@ -104,21 +51,9 @@ const Supplier_fb = () => {
                     {nameError && <p className='supplier_fb_error'>{nameError}</p>}
                 </div>
                 <div className='supplier_fb_row'>
-                    <input 
-                        type="text" 
-                        className='supplier_fb_input' 
-                        placeholder='Product supplied*' 
-                        value={productSupplied}
-                        onChange={(e) => setProductSupplied(e.target.value)}
-                        required 
-                    />
-                    <select 
-                        className="supplier_fb_select" 
-                        value={branch}
-                        onChange={(e) => setBranch(e.target.value)}
-                        required
-                    >
-                        <option value="" disabled>Select Branch*</option>
+                    <input type="text" className='supplier_fb_input' placeholder='Product supplied*' required />
+                    <select className="supplier_fb_select" required>
+                        <option value="" disabled selected>Branch*</option>
                         <option value="Civil">Civil</option>
                         <option value="Mechanical">Mechanical</option>
                         <option value="EEE">EEE</option>
@@ -137,21 +72,7 @@ const Supplier_fb = () => {
                             <div className="supplier_fb_ratings">
                                 {[1, 2, 3, 4, 5].map(num => (
                                     <label key={num}>
-                                        <input 
-                                            type="radio" 
-                                            name={name} 
-                                            value={num} 
-                                            onChange={(e) => {
-                                                if (name === 'procurement_process') setProcurementProcess(e.target.value);
-                                                if (name === 'payment_process') setPaymentProcess(e.target.value);
-                                                if (name === 'staff_professionalism') setStaffProfessionalism(e.target.value);
-                                                if (name === 'receipt_process') setReceiptProcess(e.target.value);
-                                                if (name === 'paperwork_process') setPaperworkProcess(e.target.value);
-                                                if (name === 'communication_efficiency') setCommunicationEfficiency(e.target.value);
-                                                if (name === 'ethical_practices') setEthicalPractices(e.target.value);
-                                            }}
-                                            required 
-                                        />
+                                        <input type="radio" name={name} value={num} required />
                                         <span className="custom-radio">{num}</span>
                                     </label>
                                 ))}
@@ -160,9 +81,7 @@ const Supplier_fb = () => {
                     ))}
                 </div>
                 <div className="supplier_fb_btn">
-                    <button type="submit" className="supplier_fb_submit" disabled={loading}>
-                        {loading ? 'Generating PDF...' : 'Submit'}
-                    </button>
+                    <button type="submit" className="supplier_fb_submit">Submit</button>
                 </div>
             </form>
             <Backtotop />
