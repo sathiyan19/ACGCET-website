@@ -25,6 +25,7 @@ const top_nav_paths = [
       {path: "/Parents_fb", link:"Parents_feedback"},
       {path: "/Consultancy_fb", link:"Consultancy_fb"},
       {path: "/Supplier_fb", link: "Supplier_fb"},
+      {path: "/FeedbackPdf", link: "FeedbackPdf"},
     ],
   },
 
