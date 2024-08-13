@@ -62,7 +62,7 @@ const Supplier_fb = () => {
 
             console.log(response.data);
             console.log(ratings);
-            alert("Ratings submitted successfully");
+            alert("Feedback submitted successfully");
             setSupplierName('');
             setProductSupplied('');
             setBranch('');

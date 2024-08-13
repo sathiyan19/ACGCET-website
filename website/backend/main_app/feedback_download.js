@@ -1,85 +1,148 @@
+const pool = require("./db.js");
 const express = require('express');
-const mysql = require('mysql');
 const puppeteer = require('puppeteer');
-const path = require('path');
+const nodemailer = require('nodemailer');
+const mysql = require('mysql2/promise');
 const fs = require('fs');
+const path = require('path');
+
+// Initialize Express app
 const app = express();
+const port = 5000;
 
-app.use(express.json());
-
-// MySQL connection setup
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database: 'your_database'
-});
-
-db.connect((err) => {
-    if (err) throw err;
-    console.log('Connected to database');
-});
-
-// Endpoint to truncate the data
-app.post('/api/truncate-data', (req, res) => {
-    const query = 'TRUNCATE TABLE SupplierFeedback';
-
-    db.query(query, (err, result) => {
-        if (err) {
-            console.error('Error truncating data:', err);
-            return res.status(500).send('Error truncating data');
+// HTML template function for the PDF
+const getPdfTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
-        res.send('Data truncated successfully');
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Supplier Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    
+    <table>
+        <tr>
+            <th>Supplier Name</th>
+            <th>Product Supplied</th>
+            <th>Branch</th>
+            <th>Procurement Process</th>
+            <th>Payment Process</th>
+            <th>Staff Professionalism</th>
+            <th>Receipt Process</th>
+            <th>Paperwork Process</th>
+            <th>Communication Efficiency</th>
+            <th>Ethical Practices</th>
+            <th>Business Relationship</th>
+        </tr>
+        ${feedbackData.map(row => `
+        <tr>
+            <td>${row.supplier_name}</td>
+            <td>${row.product_supplied}</td>
+            <td>${row.branch}</td>
+            <td>${row.procurement_process}</td>
+            <td>${row.payment_process}</td>
+            <td>${row.staff_professionalism}</td>
+            <td>${row.receipt_process}</td>
+            <td>${row.paperwork_process}</td>
+            <td>${row.communication_efficiency}</td>
+            <td>${row.ethical_practices}</td>
+            <td>${row.business_relationship}</td>
+        </tr>`).join('')}
+    </table>
+</body>
+</html>
+`;
+
+// Function to fetch data, generate PDF, truncate the table, and send email
+async function generatePdfAndSendEmail() {
+    // Fetching the data from the SupplierFeedback table
+    const [rows] = await pool.query('SELECT * FROM SupplierFeedback');
+
+    // Create HTML content using the template
+    const htmlContent = getPdfTemplate(rows);
+
+    // Generate PDF using Puppeteer
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.setContent(htmlContent);
+    const pdfBuffer = await page.pdf({ format: 'A4' });
+    await browser.close();
+
+    // Save PDF to file
+    const pdfPath = path.join(__dirname, 'supplier-feedback.pdf');
+    fs.writeFileSync(pdfPath, pdfBuffer);
+
+    // Truncate the SupplierFeedback table
+    await pool.query('TRUNCATE TABLE SupplierFeedback');
+
+    // Send PDF via email using Nodemailer
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'your-email@gmail.com',
+            pass: 'your-email-password',
+        },
     });
-});
 
-// Endpoint to generate the PDF
-app.post('/api/generate-pdf', async (req, res) => {
-    const {
-        supplier_name,
-        product_supplied,
-        branch,
-        procurement_process,
-        payment_process,
-        staff_professionalism,
-        receipt_process,
-        paperwork_process,
-        communication_efficiency,
-        ethical_practices,
-        feedback_date
-    } = req.body;
+    const mailOptions = {
+        from: 'your-email@gmail.com',
+        to: 'admin-email@example.com',
+        subject: 'Supplier Feedback PDF',
+        text: 'Please find the attached Supplier Feedback PDF.',
+        attachments: [
+            {
+                filename: 'supplier-feedback.pdf',
+                path: pdfPath,
+            },
+        ],
+    };
 
-    const html = fb_pdftemplate({
-        supplier_name,
-        product_supplied,
-        branch,
-        procurement_process,
-        payment_process,
-        staff_professionalism,
-        receipt_process,
-        paperwork_process,
-        communication_efficiency,
-        ethical_practices,
-        feedback_date
-    });
+    await transporter.sendMail(mailOptions);
+}
 
+// Route to handle PDF generation, table truncation, and email sending
+const generate_pdf = async (req, res) => {
     try {
-        const browser = await puppeteer.launch();
-        const page = await browser.newPage();
-        await page.setContent(html);
-        const buffer = await page.pdf({ format: 'A4' });
-        await browser.close();
-
-        res.setHeader('Content-Disposition', 'attachment; filename=Supplier_Feedback_Report.pdf');
-        res.setHeader('Content-Type', 'application/pdf');
-        res.send(buffer);
+        await generatePdfAndSendEmail();
+        res.status(200).send('PDF generated, table truncated, and email sent!');
     } catch (error) {
-        console.error('Error generating PDF:', error);
-        res.status(500).send('Error generating PDF');
+        console.error('Error:', error);
+        res.status(500).send('Failed to generate PDF and send email.');
     }
-});
+};
 
-const port = 3000;
+// Start the Express server
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+module.exports={
+    generate_pdf
+
+};

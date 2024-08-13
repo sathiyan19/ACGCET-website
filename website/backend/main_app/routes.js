@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
+const {generate_pdf}= require("./feedback_download.js")
 const {ratingsubmit} =require("./feedback.js")
 const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP, sendquery}=require("./otp.js")
@@ -39,6 +40,8 @@ router.post('/api/getsemlist',get_sem_list)
 router.post('/api/sendquery',sendquery)
 
 router.post('/api/ratingsubmit',ratingsubmit);
+
+router.post('/api/generate_pdf',generate_pdf);
 
 router.post('/api/download_marksheet',download_prov_marksheet)
 
