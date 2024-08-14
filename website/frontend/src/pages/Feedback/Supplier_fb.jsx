@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import './Supplier_fb.css';
 import { Backtotop, Underline } from "../../widgets";
 import { supplierFeedbackQuestions } from "../../constants/feedbackQuestions";
+import axios from 'axios';
 
 const Supplier_fb = () => {
     const [supplierName, setSupplierName] = useState('');
     const [productSupplied, setProductSupplied] = useState('');
     const [branch, setBranch] = useState('');
-    const [ratings, setRatings] = useState({});
+    const [ratings, setRatings] = useState({
+      
+    }); // Default values
+
     const [nameError, setNameError] = useState('');
 
     const validateName = (name) => {
@@ -27,31 +31,60 @@ const Supplier_fb = () => {
         validateName(name);
     };
 
-    const handleProductChange = (e) => {
-        setProductSupplied(e.target.value);
-    };
+    // const handleProductChange = (e) => {
+    //     setProductSupplied(e.target.value);
+    // };
 
-    const handleBranchChange = (e) => {
-        setBranch(e.target.value);
-    };
+    // const handleBranchChange = (e) => {
+    //     setBranch(e.target.value);
+    // };
 
-    const handleRatingChange = (questionName, value) => {
+    // const handleRatingChange = (questionName, value) => {
+    //     setRatings(prevRatings => ({
+    //         ...prevRatings,
+    //         [questionName]: value
+    //     }));
+    // };
+
+    const handleProductChange = (e) => setProductSupplied(e.target.value);
+    const handleBranchChange = (e) => setBranch(e.target.value);
+
+    const handleRatingChange = (e, name) => {
         setRatings(prevRatings => ({
             ...prevRatings,
-            [questionName]: value
+            [name]: parseInt(e.target.value, 10) // Convert to integer
         }));
     };
+    
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (validateName(supplierName)) {
-            alert('Feedback submitted successfully!');
+    const RatingSubmit = async (event) => {
+        event.preventDefault();
+
+        if (!validateName(supplierName)) {
+            return;
+        }
+
+        // Debugging: Log the ratings object to check if it's correct
+        console.log("Ratings being submitted:", ratings);
+
+        try {
+            const response = await axios.post('/api/ratingsubmit', {
+                supplier_name: supplierName,
+                product_supplied: productSupplied,
+                branch: branch,
+                ratings: ratings // Send the ratings object directly
+            });
+
+            console.log(response.data);
+            console.log(ratings);
+            alert("Feedback submitted successfully");
             setSupplierName('');
             setProductSupplied('');
             setBranch('');
-            setRatings({});
-        } else {
-            alert('Please correct the errors before submitting.');
+            setRatings({});
+        } catch (error) {
+            console.error('Error:', error);
+            alert("An error occurred while submitting your ratings");
         }
     };
 
@@ -60,7 +93,7 @@ const Supplier_fb = () => {
             <div>
                 <Underline heading="Supplier Feedback" />
             </div>  
-            <form className='supplier_fb_form' onSubmit={handleSubmit}>
+            <form className='supplier_fb_form' onSubmit={RatingSubmit}>
                 <div className='supplier_fb_row_sl'>
                     <input 
                         type="text" 
@@ -103,18 +136,18 @@ const Supplier_fb = () => {
                         <div className="supplier_fb_question" key={name}>
                             <p>{question}</p>
                             <p>({translation})</p>
-                            <div className="alumni_fb_ratings">
+                            <div className="supplier_fb_ratings">
                                 {[1, 2, 3, 4, 5].map(num => (
                                     <label key={num}>
                                         <input 
                                             type="radio" 
                                             name={name} 
                                             value={num} 
-                                            checked={ratings[name] === num} 
-                                            onChange={() => handleRatingChange(name, num)} 
+                                            onChange={(e) => handleRatingChange(e, name)} 
+                                            checked={ratings[name] === num} // Ensure correct radio is checked
                                             required 
                                         />
-                                        <span className="supplier_custom-radio">{num}</span>
+                                        <span className="custom-radio">{num}</span>
                                     </label>
                                 ))}
                             </div>

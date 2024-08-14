@@ -78,7 +78,7 @@
   justify-content: center;
 }
 
-.consultancy-custom-radio {
+ .consultancy-custom-radio {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -100,9 +100,14 @@ input[type="radio"]:checked + .consultancy-custom-radio::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} 
 
-input[type="radio"]:checked + .custom-radio {
+<<<<<<<<< Temporary merge branch 1
+/* input[type="radio"]:checked + .custom-radio {
+  background-color: white;
+} */
+=========
+input[type="radio"]:checked + .consultancy-custom-radio {
   background-color: white; /* White color for the outer circle */
 }
 

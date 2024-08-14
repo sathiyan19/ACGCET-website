@@ -1,0 +1,52 @@
+.box-container {
+    border: 2px solid #ccc;
+    border-radius: 5px; /* Minimal border-radius for rectangular shape */
+    padding: 20px;
+    width: 350px; /* Width of the box */
+    margin: 50px auto; /* Center horizontally */
+    /* position: absolute; */
+    top: 50%;
+    left: 50%; /* Center vertically */
+    background-color: #f9f9f9;
+    text-align: center;
+    
+  }
+  .admin_head{
+    padding-left:10px ;
+  }
+  
+  .box-heading {
+    margin-bottom: 15px;
+    font-size: 24px; /* Adjust size to match design */
+    color: #333;
+    
+  }
+  
+  .box-dropdown {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .box-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00134d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .box-button:hover {
+    background-color: #00134d;
+  }
+ .options:hover{
+  background-color: red;
+ }
+.box-option .list:hover{
+  background-color: red;
+}
