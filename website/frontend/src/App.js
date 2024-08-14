@@ -169,6 +169,7 @@ import {
   Iqac_committee,
   Sgpa,
   Parents_fb,
+
   Feedback,
   Alumini_fb,
   Collaborator_fb,
@@ -368,7 +369,7 @@ const App = () => {
          <Route path="/autonomous" element={<Autonomous/>}/>
          <Route path="/sgpa" element={<Sgpa/>}/>
 
-         <Route path="/feedback" element={<Feedback/>}/>
+         <Route path="/feedback/Feedback" element={<Feedback/>}/>
          <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
          <Route path="/feedback/Student_fb" element={<Student_fb/>}/>
          <Route path="/feedback/Std_teaching_fb" element={<Std_teaching_fb/>}/>

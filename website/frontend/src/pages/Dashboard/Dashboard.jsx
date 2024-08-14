@@ -87,6 +87,9 @@ const Dashboard = () => {
           if (res.data.stud_details.regno === "91762115000") {
             navigate("/admin-panel");
           }
+          else if (res.data.stud_details.regno === "91762110000") {
+            navigate("/admin-panel");
+          }
           setStud_details(res.data.stud_details);
         } else {
           navigate("/login-page");

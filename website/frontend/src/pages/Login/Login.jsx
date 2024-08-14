@@ -79,11 +79,17 @@ const Login = () => {
           retoken  //recaptcha
         });
         // console.log(res.data.pswd_status);
-        if(username==='91762115000'&& res.data.pswd_status){
+        if(username==='91762110000' && res.data.pswd_status){
+          console.log("pass matched");
+         navigate("/admin-panel");
+        //  console.log("hgj")
+       }
+      
+        else if(username==='91762115000'&& res.data.pswd_status){
           console.log("admin pass matched");
           navigate("/admin-panel");
         }
-       
+
         else if (res.data.pswd_status) {
           // console.log("Matched");
           // console.log("p_flag:", res.data.p_flag); 
@@ -95,13 +101,6 @@ const Login = () => {
           setUsrerror("Register number not found")
         }
         
-
-        //regno not found
-        
-        else if (res.data.username_not_found) {
-          setUsrerror("Register no. not found");
-        }
-        //--
 
          else {
           setPassword("");

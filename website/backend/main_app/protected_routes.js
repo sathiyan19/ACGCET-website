@@ -7,6 +7,8 @@ const dashboard=async(req,res)=>{
         const dept=req.dept;
         if(reg_no==='91762115000'){
           return res.json({Status:"Success",stud_details:{regno:reg_no}})
+        }else if(reg_no==='91762110000'){
+          return res.json({Status:"Success",stud_details:{regno:reg_no}})
         }
         console.log(dept);
           let dept_table=dept+"_stud_details";

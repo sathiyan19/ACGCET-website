@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fb_main_heading{
+    margin: 35px;
+}
+
+.fb_card_holder_main{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    /* grid-template-rows: repeat(12,1fr); */
+    padding: 80px ;
+    gap: 20px;
+}
+
+.fb_card_holder_main div{
+  background-color: lightblue;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+    4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+    15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+    29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+    70px 70px 80px rgba(0, 0, 0, 0.02);
+
+}
+
+.parent_fb__card{
+    grid-column: span 4 ;
+    grid-row:span 32;
+
+}
+
+.student_fb__card{
+    grid-column: span 4 ;
+    grid-row:span 24; 
+
+
+
+}
+.alumni_fb__card{
+    grid-column: span 4 ;
+    grid-row: span 18 ;
+
+
+
+}
+
+.collab_fb__card{
+    grid-column: span 4 ;
+    grid-row:span 20 ;
+
+}
+
+.supplier_fb__card{
+
+    grid-column: span 4 ;
+    grid-row: span 24;
+}
+
+.faculty_fb__card{
+    grid-column: span 4 ;
+    grid-row: span 28;
+
+}
+
+.consult_fb__card{
+    grid-column: span 4 ;
+    grid-row: span 25;
+
+}
+.employee_fb__card{
+    grid-column: span 4 ;
+    grid-row: span 20;
+
+}
