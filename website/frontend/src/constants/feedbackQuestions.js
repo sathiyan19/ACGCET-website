@@ -82,7 +82,255 @@ export const AlumniFeedbackQuestions = [
       translation: "எனது திறன்களை நான் அறிவேன் ",
       name: "question16",
     },
+
   ];
+
+  export const collab_fb = [
+    {
+
+      question:"Main objectives of the proposal",
+      translation:"நோக்கம்",
+      name:"question 1",
+
+    },
+    {
+      question: "Review of the state-of-the-art in the field",
+      translation: "துறையில் கலைநிலை ஆய்வு மதிப்பீடு",
+      name: "question 2",
+    },
+    {
+      question: "Detailed Methodology and Plan of Action",
+      translation: "வழிமுறை மற்றும் செயல்திட்டம்",
+      name: "question 3",
+    },
+    {
+      question: "Performance Milestones and Schedule",
+      translation: "செயல்திறன் மைல்கல் மற்றும் அட்டவனை",
+      name: "question 4",
+    },
+    {
+      question: "Deliverables",
+      translation: "வழங்ககூடியவை",
+      name: "question 5",
+    },
+    {
+      question: "Estimated Expenditure",
+      translation: "மதிப்பிடப்பட்ட செலவு",
+      name: "question 6",
+    },
+    {
+      question: "Appointment of Research Staff in time",
+      translation: "சரியான நேரத்தில் ஆராய்ச்சி ஊழியர்களை நியமித்தல்",
+      name: "question 7",
+    },
+    {
+      question: "Completion of Modules in time",
+      translation: "தொகுதிகளை சரியான நேரத்தில் முடித்தல்",
+      name: "question 8",
+    },
+    {
+      question: "Result achieved as expected",
+      translation: "எதிர்பார்த்தபடி முடிவு அடையப்பட்டது",
+      name: "question 9",
+    },
+    {
+      question: "Performance in periodical Reviews",
+      translation: "காலமுறை மதிப்பாய்வில் செயல்திறன்",
+      name: "question 10",
+    },{
+      question: "Timely closure of the project",
+      translation: "திட்டத்தைச் சரியான நேரத்தில் முடிப்பது",
+      name: "question 11",
+    },
+    {
+      question: "Literature Collected",
+      translation: "சேகரிக்கப்பட்ட ஆவணங்கள்",
+      name: "question 12",
+    },
+    {
+      question: "Final Technical Report(s)",
+      translation: "இறுதி தொழில்நுட்ப அறிக்கை",
+      name: "question 13",
+    },
+    {
+      question: "Hardware or Software developed",
+      translation: "மென்பொருள் மற்றும் வன்பொருள்",
+      name: "question 14",
+    },
+    {
+      question: "Deliverables as in Proposal",
+      translation: "முன்மொழிவில் உள்ளபடி வழங்ககூடியவை",
+      name: "question 15",
+    },{
+      question: "Publications",
+      translation: "வெளியீடு",
+      name: "question 16",
+    },
+    {
+      question: "Patents",
+      translation: "காப்புரிமை",
+      name: "question 17",
+    },
+
+  ];
+
+  export const std_teach_fb_data=[
+    
+      {
+        question: "I carry the knowledge in Mathematics, Science, and Engineering fundamentals",
+        translation: "",
+        name: "question1"
+      },
+      {
+        question: "I am able to analyze complex engineering problems",
+        translation: "",
+        name: "question2"
+      },
+      {
+        question: "I am able to identify components, design systems, and reach solutions for engineering problems",
+        translation: "",
+        name: "question3"
+      },
+      {
+        question: "I am able to do analysis and interpret the data to provide valid conclusions",
+        translation: "",
+        name: "question4"
+      },
+      {
+        question: "I am able to use modern tools for engineering activities",
+        translation: "",
+        name: "question5"
+      },
+      {
+        question: "I am applying the contextual knowledge to assess several issues and the consequent responsibilities relevant to the profession",
+        translation: "",
+        name: "question6"
+      },
+      
+        {
+          question: "I understand the importance of engineering solutions for the development of society and the environment",
+          translation: "",
+          name: "question7"
+        },
+        {
+          question: "I apply ethical principles and commit to professional ethics and responsibilities",
+          translation: "",
+          name: "question8"
+        },
+        {
+          question: "I am able to function effectively as an individual, and as a member or as a leader in diverse teams",
+          translation: "",
+          name: "question9"
+        },
+        {
+          question: "I am able to communicate effectively (write reports, make effective presentations and give, receive clear instructions) with society at large",
+          translation: "",
+          name: "question10"
+        },
+        {
+          question: "I am able to apply the knowledge related to Project management and finance",
+          translation: "",
+          name: "question11"
+        },
+        {
+          question: "I am able to learn new techniques and update myself in the broadest context of technological change",
+          translation: "",
+          name: "question12"
+        },
+        {
+          question: "I am able to analyze, design, and provide solutions to the problems pertaining to Electronics, VLSI, Image processing, and Embedded systems",
+          translation: "",
+          name: "question13"
+        },
+        {
+          question: "I am able to analyze, design, and provide solutions to the problems pertaining to RF and Microwaves, Wireless and Optical Communication",
+          translation: "",
+          name: "question14"
+        },
+        {
+          question: "I am able to design web-based and mobile-based applications",
+          translation: "",
+          name: "question15"
+        },
+];
+
+export const std_mini_project_fb_data=[
+  {
+    question:"Objectives of the project were well defined ",
+    translation:"",
+    name: "question1"
+  },
+  {
+    question:"Extent of technical support by the supervisor to complete the project",
+    translation:"",
+    name: "question2"
+  },
+  {
+    question:"Extent of facilities offered or available in the department in perusing the project work",
+    translation:"",
+    name: "question3"
+  },
+  {
+    question:"Project reviews or meetings were conducted regularly",
+    translation:"",
+    name: "question4"
+  },
+  {
+    question:"Project reviews helped us to enhance the quality and quantity of work",
+    translation:"",
+    name: "question5"
+  },
+  {
+    question:"Support of supervisor in preparing and evaluating the thesis",
+    translation:"",
+    name: "question6"
+  },
+  {
+    question:"Did you implement the knowledge gained in developing the project?",
+    translation:"",
+    name: "question7"
+  },
+  {
+    question:"Did the project work motivate you to do new findings even after completing the course?",
+    translation:"",
+    name: "question8"
+  },
+  {
+    question:"The project developed is beneficial to the society",
+    translation:"",
+    name: "question9"
+  },
+  {
+    question:"Whether appreciated and recognized as an individual or as a team for the work done",
+    translation:"",
+    name: "question10"
+  },
+];
+
+  export const student_fb_card=[
+    {
+      'id':'1',
+      'program':'Teaching and Learning ',
+      'pdf':'./Std_teaching_fb'
+    },
+    {
+      'id':'2',
+      'program':'Practical and Laboratory Feedback',
+      'pdf':'####'
+    },
+    {
+      'id':'3',
+      'program':'Technical Seminar Feedback',
+      'pdf':'####'
+    },
+    {
+      'id':'4',
+      'program':'Mini Project and Project Feedback',
+      'pdf':'./Std_mini_project_fb'
+    },
+   
+  ];
+
 
 export const employerFeedbackQuestions =[
   {
@@ -202,12 +450,12 @@ export const parentFeedbackQuestions =[
 
 export const consultancyFeedbackQuestions = [
   {
-    question:"Consultancy Fee",
-    translation:"நிறுவன கட்டணம்",
+    question:"Consultancy Fee     ",
+    translation:" நிறுவன கட்டணம் ",
     name:"question1",
   },
   {
-    question:"Meeting Deadline",
+    question:"Meeting Deadline  ",
     translation:"காலக்கெடு",
     name:"question2",
   },
@@ -223,48 +471,49 @@ export const consultancyFeedbackQuestions = [
   },
 ];
 
-export const supplierFeedbackQuestions =[
+export const supplierFeedbackQuestions = [
   {
-    question:"Procurement process",
-    translation:"கொள்முதல் செயல்முறை",
-    name:"question1",
+    question: "Procurement process",
+    translation: "கொள்முதல் செயல்முறை",
+    name: "procurement_process",
   },
   {
-    question:"Payment process",
-    translation:"கட்டண செயல்முறை",
-    name:"question2",
+    question: "Payment process",
+    translation: "கட்டண செயல்முறை",
+    name: "payment_process",
   },
   {
-    question:"Staff members’ professionalism",
-    translation:"ஊழியகர்களின் தொழில்முறை",
-    name:"question3",
+    question: "Staff members’ professionalism",
+    translation: "ஊழியகர்களின் தொழில்முறை",
+    name: "staff_professionalism",
   },
   {
-    question:"Supplier's receipt process",
-    translation:"சப்ளையர் ரசீது செயல்முறை",
-    name:"question4",
+    question: "Supplier's receipt process",
+    translation: "சப்ளையர் ரசீது செயல்முறை",
+    name: "receipt_process",
   },
   {
-    question:"Paper work process",
-    translation:"காகிதவேலை செயல்முறை",
-    name:"question5",
+    question: "Paper work process",
+    translation: "காகிதவேலை செயல்முறை",
+    name: "paperwork_process",
   },
   {
-    question:"Ability to provide efficient and effective communication at all levels",
-    translation:"அனைத்து நிலைகளில் திறமையான மற்றும் பயனுள்ள தகவல்தொடர்புகளை வழங்குவதர்கான இருப்பு",
-    name:"question6",
+    question: "Ability to provide efficient and effective communication at all levels",
+    translation: "அனைத்து நிலைகளில் திறமையான மற்றும் பயனுள்ள தகவல்தொடர்புகளை வழங்குவதர்கான இருப்பு",
+    name: "communication_efficiency",
   },
   {
-    question:"Levels of ethical practice and support",
-    translation:"நெறிமுறை,நடைமுறை மற்றும் ஆதரவு நிலைகள்",
-    name:"question7",
+    question: "Levels of ethical practice and support",
+    translation: "நெறிமுறை,நடைமுறை மற்றும் ஆதரவு நிலைகள்",
+    name: "ethical_practices",
   },
   {
-    question:"Business relationship with you",
-    translation:"வணிக உறவு",
-    name:"question8",
+    question: "Business relationship with you",
+    translation: "வணிக உறவு",
+    name: "business_relationship",
   },
 ];
+
 
 export const collaboratorFeedbackQustions = [
   {

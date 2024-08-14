@@ -2,7 +2,7 @@
     margin: 30px;
 }
 
-.supplier_fb_container {
+.std_mini_proj_fb_container {
   max-width: 800px;
 
   margin: 50px auto;
@@ -11,26 +11,19 @@
   background-color: #fff;
 }
 
-.supplier_fb_form {
+.std_mini_proj_fb_form {
   display: flex;
   flex-direction: column;
 }
 
-.supplier_fb_row {
+.std_mini_proj_fb_row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.supplier_fb_error {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-.supplier_fb_input, .supplier_fb_select {
+.std_mini_proj_fb_input, .std_mini_proj_fb_select {
   width: 48%;
   padding: 15px;
   margin-bottom: 10px;
@@ -38,56 +31,59 @@
   border-radius: 5px;
 }
 
-.supplier_fb_row_sl input{
+.std_mini_proj_fb_row_sl input{
     width: 100%;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.supplier_fb_subtitle {
+.std_mini_proj_fb_subtitle {
   font-weight: bold;
   font-size: 20px;
   margin-top: 25px;
   text-align: center;
 }
 
-.supplier_fb_instruction{
+.std_mini_proj_fb_instruction{
     text-align: center;
-    margin-bottom: 15px;
-    margin-top: -10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
-.supplier_fb_feedback {
+.std_mini_proj_fb_feedback {
   margin-top: 30px;
 }
 
-.supplier_fb_question {
+.std_mini_proj_fb_question {
   margin-bottom: 20px;
 }
 
-.supplier_fb_ratings {
+.std_mini_proj_fb_ratings {
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
   padding: 5px;
 }
 
-.supplier_fb_ratings label {
+.std_mini_proj_fb_ratings label {
   display: flex;
   align-items: center;
 }
 
-.supplier_fb_ratings input {
+.std_mini_proj_fb_ratings input {
   margin-right: 5px;
 }
 
-.supplier_fb_ratings {
+.std_mini_proj_fb_ratings {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
     padding: 5px;
   }
   
-  .supplier_fb_ratings label {
+  .std_mini_proj_fb_ratings label {
     display: flex;
     align-items: center;
   }
@@ -106,7 +102,6 @@
     color: #00134d;
     background-color: white;
     font-weight: bold;
-    cursor: pointer;
   }
   
   input[type="radio"]:checked + .custom-radio {
@@ -123,18 +118,18 @@
     align-items: center;
   }
 
-.supplier_fb_btn{
+.std_mini_proj_fb_btn{
     margin-top: 15px;
     display: flex;
     justify-content: center;
 }
 
 @media (max-width: 600px) {
-  .supplier_fb_row {
+  .std_mini_proj_fb_row {
     flex-direction: column;
   }
 
-  .supplier_fb_input, .supplier_fb_select {
+  .std_mini_proj_fb_input, .std_mini_proj_fb_select {
     width: 100%;
   }
 }
