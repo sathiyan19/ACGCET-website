@@ -1,14 +1,12 @@
-const pool = require("./db.js");
 const express = require('express');
 const puppeteer = require('puppeteer');
 const nodemailer = require('nodemailer');
-const mysql = require('mysql2/promise');
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
+const pool = require('./db'); // Assuming this is correctly set up
 
 // Initialize Express app
 const app = express();
-const port = 5000;
 
 // HTML template function for the PDF
 const getPdfTemplate = (feedbackData) => `
@@ -80,69 +78,88 @@ const getPdfTemplate = (feedbackData) => `
 </html>
 `;
 
-// Function to fetch data, generate PDF, truncate the table, and send email
-async function generatePdfAndSendEmail() {
-    // Fetching the data from the SupplierFeedback table
-    const [rows] = await pool.query('SELECT * FROM SupplierFeedback');
+// Function to fetch data, generate PDF, send email, and truncate the table
+const generatePdfAndSendEmail = async (req, res) => {
+    try {
+        console.log("Fetching data from the database...");
+        const [rows] = await pool.query('SELECT * FROM SupplierFeedback');
+        console.log("Fetched data:", rows);
 
-    // Create HTML content using the template
-    const htmlContent = getPdfTemplate(rows);
+        if (rows.length === 0) {
+            throw new Error("No data available to generate PDF.");
+        }
 
-    // Generate PDF using Puppeteer
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.setContent(htmlContent);
-    const pdfBuffer = await page.pdf({ format: 'A4' });
-    await browser.close();
+        console.log("Generating PDF...");
+        const htmlContent = getPdfTemplate(rows);
 
-    // Save PDF to file
-    const pdfPath = path.join(__dirname, 'supplier-feedback.pdf');
-    fs.writeFileSync(pdfPath, pdfBuffer);
+        const browser = await puppeteer.launch();
+        const page = await browser.newPage();
+        await page.setContent(htmlContent);
+        const pdfBuffer = await page.pdf({ format: 'A4' });
+        const pdfPath = path.join(__dirname, 'supplier-feedback.pdf');
+        fs.writeFileSync(pdfPath, pdfBuffer);
+        await browser.close();
+        console.log("PDF generated successfully.");
 
-    // Truncate the SupplierFeedback table
-    await pool.query('TRUNCATE TABLE SupplierFeedback');
+        // Set headers for file download
+        const filename = `feedback.pdf`;
+        res.setHeader('Content-Type', 'application/pdf');
+        res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
 
-    // Send PDF via email using Nodemailer
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: 'your-email@gmail.com',
-            pass: 'your-email-password',
-        },
-    });
+        // Send the PDF buffer as response
+        res.send(pdfBuffer);
 
-    const mailOptions = {
-        from: 'your-email@gmail.com',
-        to: 'admin-email@example.com',
-        subject: 'Supplier Feedback PDF',
-        text: 'Please find the attached Supplier Feedback PDF.',
-        attachments: [
-            {
-                filename: 'supplier-feedback.pdf',
-                path: pdfPath,
+        // After sending the response, proceed to send the email
+        console.log("Sending email...");
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            host: 'smtp.gmail.com',
+            port: 587, // Use STARTTLS
+            secure: false, // Set secure to false for STARTTLS
+            auth: {
+                user: "acgcet25@gmail.com",
+                pass: "aimykdsvzkgbkqag", // Use an App Password
             },
-        ],
-    };
+            connectionTimeout: 10000, // 10 seconds timeout
+            socketTimeout: 10000, // 10 seconds timeout
+        });
 
-    await transporter.sendMail(mailOptions);
+        const mailOptions = {
+            from: 'acgcet25@gmail.com',
+            to: 'acgcet25@gmail.com',
+            subject: 'Supplier Feedback PDF',
+            text: 'Please find the attached Supplier Feedback PDF.',
+            attachments: [
+                {
+                    filename: 'supplier-feedback.pdf',
+                    path: pdfPath,
+                },
+            ],
+        };
+
+        await transporter.sendMail(mailOptions);
+        console.log("Email sent successfully.");
+
+        // Finally, truncate the table after sending the email
+        console.log("Truncating SupplierFeedback table...");
+        await pool.query('TRUNCATE TABLE SupplierFeedback');
+        console.log("Table truncated successfully.");
+
+        // Optionally remove the file after sending it and sending the email
+        fs.unlink(pdfPath, (err) => {
+            if (err) console.error("Error removing file:", err);
+        });
+
+    } catch (error) {
+        console.error('Error during PDF generation, email sending, or truncating table:', error);
+        res.status(500).send('Failed to complete the operation.');
+    }
 }
 
-// Route to handle PDF generation, table truncation, and email sending
-const generate_pdf = async (req, res) => {
-    try {
-        await generatePdfAndSendEmail();
-        res.status(200).send('PDF generated, table truncated, and email sent!');
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Failed to generate PDF and send email.');
-    }
-};
+// Route to handle PDF generation, email sending, and table truncation
+app.post('/api/generate_pdf', generatePdfAndSendEmail);
 
-// Start the Express server
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
-module.exports={
-    generate_pdf
-
+// Export the function for testing or other purposes
+module.exports = {
+    generate_pdf: generatePdfAndSendEmail,
 };
