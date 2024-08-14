@@ -1789,6 +1789,8 @@ const cse_asso_events=[
   },
 ]
 
+
+
 export {
   cse_dept_menu,
   cse_fac_profiles,
@@ -1803,5 +1805,6 @@ export {
   cse_stud_data,
   cse_prog_time,
   cse_mou_data,
-  cse_asso_events
+  cse_asso_events,
+
 };

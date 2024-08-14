@@ -316,13 +316,13 @@ const coe_syllabus=[
 {
   'id':'2',
   'program':'  Civil Engineering',
-  'pdf':'https://drive.google.com/file/d/17K031CqGzl2tgmAiwIP0a1Dxn9oxeCQy/view?usp=sharing',
+  'pdf':'https://drive.google.com/file/d/1PzrqXYLQdv7xZv6OCCYA_-NgCG9m0l5E/view?usp=sharing',
  
 },
 {
   'id':'4',
   'program':' Electronics and Communication Engineering',
-  'pdf':'https://drive.google.com/file/d/1g5z3ndEWrUoMQ_pIyeFtVS71GjjpmmpB/view?usp=sharing',
+  'pdf':'https://drive.google.com/file/d/1M-LzLOg-VWfAHWrvvha8idsVHSLurZ72/view?usp=sharing',
  
 },
 {
@@ -394,7 +394,7 @@ const coe_syllabus22=[
   
     'id':'3',
     'program':'Electronics And Communication Engineering',
-    'pdf':'https://drive.google.com/file/d/19V13hmGfa9gM4RyT5kTLN5T1IlvfRLkE/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1M-LzLOg-VWfAHWrvvha8idsVHSLurZ72/view?usp=sharing',
    
   },
   {
@@ -408,7 +408,7 @@ const coe_syllabus22=[
   
     'id':'5',
     'program':'Civil Engineering',
-    'pdf':'https://drive.google.com/file/d/1kX3tXBQxbRsTXrcyw7qMi4KmgG773DyK/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1R5Ba50HUB8y-EDv4H6vNuuO0cCEqaFn2/view?usp=sharing',
    
   },
   {

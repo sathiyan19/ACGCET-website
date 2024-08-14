@@ -1,0 +1,67 @@
+.collab_fb_body{
+    max-width: 800px;
+    margin:  40px auto;
+    padding: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+
+.collab_fb_form{
+    display: flex;
+    flex-direction: column;
+}
+.collab_fb_row{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+}
+
+.collab_fb_input, .collab_fb_select{
+    width: 49%;
+    padding: 15px;
+}
+
+.collab_fb_input_lgrow{
+    width: 99%;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+.collab_fb_cmd{
+    width: 99%;
+    margin-bottom: 5px;
+    padding: 30px;
+
+}
+
+.collab_fb_subheading{
+
+    font-size: 17px;
+    margin: 5px auto;
+    /* font-weight: bold; */
+}
+.collab_fb_rating{
+    margin: 12px auto;
+
+ 
+}
+.collab_fb_radio{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px 0px;
+
+}
+.collab_fb_summit{
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
