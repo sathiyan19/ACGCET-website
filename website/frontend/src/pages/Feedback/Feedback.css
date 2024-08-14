@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+.feedback_whole_container {
+    padding:  0 58px;
+    background-color: white;
+    margin:60px;
+    
+}
+
+.feedback_heading {
+    /* margin-bottom: 20px; */
+    padding-top: 20px;
+    margin:10px;
+}
+
+.student_feedback, .alumini_feedback, .faculty_feedback, 
+.counsaltancy_feedback, .employer_feedback, .parents_feedback, 
+.supplier_feedback,.collaborator_feedback {
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow : 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+    4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+    15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+    29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+    70px 70px 80px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+}
+
+.feedback_top_image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.feedback_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feedback_content   {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 100%; 
+    color: black;
+    /* margin-left: 20px; */
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+   /* text-wrap: nowrap; */
+    border-radius: 10px;
+    z-index: 1; 
+   
+
+}
+
+.student_feedback:hover .feedback_content,
+.alumini_feedback:hover .feedback_content,
+.faculty_feedback:hover .feedback_content,
+.counsaltancy_feedback:hover .feedback_content,
+.employer_feedback:hover .feedback_content,
+.parents_feedback:hover .feedback_content,
+.supplier_feedback:hover .feedback_content,
+.collaborator_feedback:hover .feedback_content{
+    opacity: 1; /* Show content on hover */
+    /* transform: scale(1.05);  */
+    }
+.student_feedback:hover .feedback_image,
+.alumini_feedback:hover .feedback_image,
+.faculty_feedback:hover .feedback_image,
+.counsaltancy_feedback:hover .feedback_image,
+.employer_feedback:hover .feedback_image,
+.parents_feedback:hover .feedback_image,
+.supplier_feedback:hover .feedback_image,
+.collaborator_feedback:hover .feedback_image
+ {
+    transform: scale(1.1); /* Zoom the image by 10% */
+}
+
+
+.feedback_description{
+    display: inline-block; 
+    background: linear-gradient(
+        180deg,
+        hsla(0, 0%, 0%, 0) 10%,
+        hsla(0, 0%, 0%, 0) 100%,
+        hsl(0, 0%, 0%) 0%
+    );
+    padding: 5px; 
+    border-radius: 5px; 
+    color: black; 
+}
+.feedback_description1{
+    color: black;
+    padding: 5px; 
+}
+
+
+/* .student_feedback .feedback_content {
+    padding: 20px;
+    text-align: left;
+}
+
+.student_feedback .student_description {
+    font-size: 2rem;
+} */
+
+.alumini_feedback .alumini_description,
+.faculty_feedback .faculty_description,
+.counsaltancy_feedback .counsaltancy_description,
+.employer_feedback .employer_description,
+.parents_feedback .parents_description,
+.supplier_feedback .supplier_description,
+.collaborator_feedback.collaborator_description{
+    font-size: 22px;
+}
+
+.feedback_grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+}
+
+.student_feedback{
+    grid-column: span 4;
+    grid-row: span 32;
+}
+.alumini_feedback{
+    grid-column: span 4;
+    grid-row: span 24;
+}
+.faculty_feedback{
+    grid-column: span 4;
+    grid-row: span 18;
+}
+
+.counsaltancy_feedback{
+    grid-column: span 4;
+    grid-row: span 20;
+}
+
+.employer_feedback{
+    grid-column: span 4;
+    grid-row: span 24;
+}
+
+.supplier_feedback{
+    grid-column: span 4;
+    grid-row: span 28;
+}
+
+.parents_feedback{
+    grid-column: span 4;
+    grid-row: span 25;
+}
+
+.collaborator_feedback{
+    grid-column: span 4;
+    grid-row: span 20;
+}
+
+.feedback_content:hover .feedback-card-arrow {
+    color: #ff5722; 
+    transform: translateX(10px);
+}
+
+.feedback-card-arrow {
+    font-size: 2rem;
+    color: #1e73be; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+    margin-left: 5px; 
+}
+/* @media(max-width:799px) {
+    .feedback_content {
+        font-size: 22px;
+        top:130px;
+        margin-left: 10px;
+    }
+} */
+  
+
+@media(max-width: 800px) {
+
+    .feedback_grid {
+        display: flex;
+        flex-direction: column;
+       
+        gap: 20px;
+    }
+
+    .student_feedback, .alumini_feedback, .faculty_feedback, 
+    .counsaltancy_feedback, .employer_feedback, .supplier_feedback, 
+    .parents_feedback, .collaborator_feedback {
+        grid-column: span 9;
+        grid-row: unset;
+        width: 100%;
+    }
+    .feedback_content {
+        font-size: 22px;
+        top:130px;
+        margin-left: 10px;
+    }
+
+}
+@media (min-width: 500px) and (max-width: 800px) {
+    .student_feedback,
+    .alumini_feedback,
+    .faculty_feedback,
+    .counsaltancy_feedback,
+    .employer_feedback,
+    .supplier_feedback,
+    .parents_feedback,
+    .collaborator_feedback {
+        width: 400px; /* Adjust this percentage as needed */
+        height: 350px; /* Adjust the height as needed */
+    }
+    .feedback_content{
+        bottom:5px;
+    }
+}
+@media (min-width: 320px) and (max-width: 499px) {
+    .student_feedback,
+    .alumini_feedback,
+    .faculty_feedback,
+    .counsaltancy_feedback,
+    .employer_feedback,
+    .supplier_feedback,
+    .parents_feedback,
+    .collaborator_feedback {
+        border-radius: 15px;
+        width: 300px; /* Adjust the width as needed */
+        height:200px;
+        box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    }
+    .feedback_content{
+        top:20px;
+    }
+}
+@media (min-width: 320px) and (max-width: 799px) {
+    .feedback_whole_container {
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feedback_grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* .student_feedback,
+    .alumini_feedback,
+    .faculty_feedback,
+    .counsaltancy_feedback,
+    .employer_feedback,
+    .supplier_feedback,
+    .parents_feedback,
+    .collaborator_feedback {
+        border-radius: 15px;
+        width: 300px; 
+        height:200px;
+        box-sizing: border-box; 
+    } */
+    /* .feedback_content{
+        top:20px;
+    } */
+}
+/* @media (min-width: 320px) and (max-width: 515px) {
+    .feedback_content{
+        top:70px;
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        right:30px;
+        text-wrap: wrap;
+    }
+    .faculty_description{
+        top:50px;
+
+    }
+} */
