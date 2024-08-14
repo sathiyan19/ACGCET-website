@@ -8,11 +8,9 @@ const Supplier_fb = () => {
     const [supplierName, setSupplierName] = useState('');
     const [productSupplied, setProductSupplied] = useState('');
     const [branch, setBranch] = useState('');
-    const [ratings, setRatings] = useState({
-      
-    }); // Default values
-
+    const [ratings, setRatings] = useState({});
     const [nameError, setNameError] = useState('');
+    const [ratingErrors, setRatingErrors] = useState({});
 
     const validateName = (name) => {
         const nameRegex = /^[A-Za-z\s]{2,30}$/;
@@ -25,26 +23,23 @@ const Supplier_fb = () => {
         }
     };
 
+    const validateRatings = () => {
+        const errors = {};
+        supplierFeedbackQuestions.forEach(({ name }) => {
+            if (!ratings[name]) {
+                errors[name] = 'Please select a rating     (தயவுசெய்து மதிப்பீட்டை தேர்வு செய்யவும்)';
+                // errors[name]='';
+            }
+        });
+        setRatingErrors(errors);
+        return Object.keys(errors).length === 0;
+    };
+
     const handleNameChange = (e) => {
         const name = e.target.value;
         setSupplierName(name);
         validateName(name);
     };
-
-    // const handleProductChange = (e) => {
-    //     setProductSupplied(e.target.value);
-    // };
-
-    // const handleBranchChange = (e) => {
-    //     setBranch(e.target.value);
-    // };
-
-    // const handleRatingChange = (questionName, value) => {
-    //     setRatings(prevRatings => ({
-    //         ...prevRatings,
-    //         [questionName]: value
-    //     }));
-    // };
 
     const handleProductChange = (e) => setProductSupplied(e.target.value);
     const handleBranchChange = (e) => setBranch(e.target.value);
@@ -52,36 +47,39 @@ const Supplier_fb = () => {
     const handleRatingChange = (e, name) => {
         setRatings(prevRatings => ({
             ...prevRatings,
-            [name]: parseInt(e.target.value, 10) // Convert to integer
+            [name]: parseInt(e.target.value, 10)
+        }));
+        setRatingErrors(prevErrors => ({
+            ...prevErrors,
+            [name]: '' // Clear the error once a rating is selected
         }));
     };
-    
 
     const RatingSubmit = async (event) => {
         event.preventDefault();
 
-        if (!validateName(supplierName)) {
+        const isNameValid = validateName(supplierName);
+        const areRatingsValid = validateRatings();
+
+        if (!isNameValid || !areRatingsValid) {
             return;
         }
-
-        // Debugging: Log the ratings object to check if it's correct
-        console.log("Ratings being submitted:", ratings);
 
         try {
             const response = await axios.post('/api/ratingsubmit', {
                 supplier_name: supplierName,
                 product_supplied: productSupplied,
                 branch: branch,
-                ratings: ratings // Send the ratings object directly
+                ratings: ratings
             });
 
             console.log(response.data);
-            console.log(ratings);
             alert("Feedback submitted successfully");
             setSupplierName('');
             setProductSupplied('');
             setBranch('');
-            setRatings({});
+            setRatings({});
+            setRatingErrors({});
         } catch (error) {
             console.error('Error:', error);
             alert("An error occurred while submitting your ratings");
@@ -144,13 +142,13 @@ const Supplier_fb = () => {
                                             name={name} 
                                             value={num} 
                                             onChange={(e) => handleRatingChange(e, name)} 
-                                            checked={ratings[name] === num} // Ensure correct radio is checked
-                                            required 
+                                            checked={ratings[name] === num} 
                                         />
                                         <span className="custom-radio">{num}</span>
                                     </label>
                                 ))}
                             </div>
+                            {ratingErrors[name] && <p className='supplier_fb_error'>{ratingErrors[name]}</p>}
                         </div>
                     ))}
                 </div>

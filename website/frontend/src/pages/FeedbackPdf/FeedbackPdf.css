@@ -50,3 +50,19 @@
 .box-option .list:hover{
   background-color: red;
 }
+.admin_logout_button{
+  display:flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  margin-bottom: 30px;
+ 
+}
+
+.admin_logout_button button{
+background-color: #ff6600 ;
+color:#00134d;
+}
+.admin_logout_button button:hover{
+  background-color:#00134d;
+  color:white;
+}
