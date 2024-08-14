@@ -5,9 +5,15 @@ import { AlumniFeedbackQuestions } from "../../constants/feedbackQuestions";
 
 const Alumini_fb = () => {
   return (
+
+    
     <div className="alumni_fb_container">
-      <Underline heading="Alumni Feedback" />
+      <div className="alumni_fb_udl">
+
+      <Underline heading = "Alumini Feedback"/>
+      </div>
       
+      {/* <h1 className="alumni_fb_title">Alumni Feedback</h1> */}
       <form className="alumni_fb_form">
         <div className="alumni_fb_row">
           <input type="text" className="alumni_fb_input" placeholder="Enter Name of the Alumni*" required />
@@ -24,10 +30,10 @@ const Alumini_fb = () => {
             <option value="ME">M.E</option>
             <option value="PhD">PhD</option>
           </select>
+        </div>
+        <div className="alumni_fb_row">
           <input type="text" className="alumni_fb_input" placeholder="Enter passed out year*" required />
         </div>
-        {/* <div className="alumni_fb_row"> */}
-        {/* </div> */}
 
         <h2 className="alumni_fb_subtitle">Details of Higher Studies</h2>
         <div className="alumni_fb_row">
@@ -72,7 +78,9 @@ const Alumini_fb = () => {
         <div className="alumni_fb_feedback">
           <p>5 - Excellent  4 - Satisfied  3 - Good  2 - Not Satisfied  1 - Poor</p>
 
-          <br />
+          <br /> 
+
+       
 
           {AlumniFeedbackQuestions.map(({ question, translation, name }) => (
             <div className="alumni_fb_question" key={name}>

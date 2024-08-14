@@ -42,7 +42,7 @@ const Parents_fb = () => {
               {[1, 2, 3, 4, 5].map(num => (
                 <label key={num}>
                   <input type="radio" name={name} value={num} />
-                  <span className="custom-radio">{num}</span>
+                  <span className="parent_custom-radio">{num}</span>
                 </label>
                 ))}
               </div>

@@ -43,8 +43,6 @@ const Std_teaching_fb = () => {
                                     <label key={num}>
                                     <input type="radio" name={name} value={num} />
                                         <span className="custom-radio">{num}</span>
-                                        
-
                                     </label>
                                 ))}
                             </div>
