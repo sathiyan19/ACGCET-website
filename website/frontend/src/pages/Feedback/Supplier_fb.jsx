@@ -31,20 +31,20 @@ const Supplier_fb = () => {
         validateName(name);
     };
 
-    const handleProductChange = (e) => {
-        setProductSupplied(e.target.value);
-    };
+    // const handleProductChange = (e) => {
+    //     setProductSupplied(e.target.value);
+    // };
 
-    const handleBranchChange = (e) => {
-        setBranch(e.target.value);
-    };
+    // const handleBranchChange = (e) => {
+    //     setBranch(e.target.value);
+    // };
 
-    const handleRatingChange = (questionName, value) => {
-        setRatings(prevRatings => ({
-            ...prevRatings,
-            [questionName]: value
-        }));
-    };
+    // const handleRatingChange = (questionName, value) => {
+    //     setRatings(prevRatings => ({
+    //         ...prevRatings,
+    //         [questionName]: value
+    //     }));
+    // };
 
     const handleProductChange = (e) => setProductSupplied(e.target.value);
     const handleBranchChange = (e) => setBranch(e.target.value);

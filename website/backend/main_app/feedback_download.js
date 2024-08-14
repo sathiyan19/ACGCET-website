@@ -112,10 +112,7 @@ const generatePdfAndSendEmail = async (req, res) => {
         // After sending the response, proceed to send the email
         console.log("Sending email...");
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            host: 'smtp.gmail.com',
-            port: 587, // Use STARTTLS
-            secure: false, // Set secure to false for STARTTLS
+            service: 'gmail', // Set secure to false for STARTTLS
             auth: {
                 user: "acgcet25@gmail.com",
                 pass: "aimykdsvzkgbkqag", // Use an App Password
