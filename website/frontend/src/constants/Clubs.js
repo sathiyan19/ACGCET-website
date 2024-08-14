@@ -76,8 +76,8 @@ const Clubs_info = [
     para: "The primary aim of the club is to inspire young individuals to cultivate leadership traits through active engagement in various social service endeavors. The club envisions becoming a worldwide frontrunner in initiatives related to community and humanitarian assistance. Its mission is centered on equipping volunteers with the means to make impactful contributions to their communities, address humanitarian concerns, and promote the ideals of peace. The core objectives encompass affording youth the chance to evolve into responsible contributors within their local, national, and international spheres. The club's planned activities encompass a range of events such as treasure hunts and inaugurations, all aimed at fostering personal development and community involvement among its members.",
     staff: "Mr. V. Jawahar",
     staffdesi: "Asst.Prof. Mech Dept",
-    student: "Arunkumar N" ,
-    studentdesi: "4th year EEE",
+    student: "Arunkumar N",
+    studentdesi: "4th year ECE",
     infolink:"",
   },
 
@@ -91,8 +91,8 @@ const Clubs_info = [
     para: "முத்தமிழ் மன்றம், தமிழ்மொழி மற்றும் கலாச்சாரங்களை மாணவர்களிடையே வளர்த்துப் போற்றுவதற்காக உருவாக்கப்பட்டது. இது, தமிழின் வரலாறு மற்றும் கலாச்சார விழுமியங்களைப் பரப்பி, மாணவர்களின் தமிழ்த்திறனை மேம்படுத்தவும், அவர்களின் தனித்திறன்களை வெளிக்கொணரவும் நடவடிக்கைகள் மேற்கொள்ளும். போட்டிகள், கலாச்சார நிகழ்ச்சிகள், மற்றும் அறநிலையப் பொழிவுகள் மூலம் தமிழ் மொழியின் மீது மாணவர்களின் ஆர்வத்தை ஊக்குவிக்கிறது. ஆண்டுதோறும் முத்தமிழ் விழாக்கள், கலைக்குழுக்கள், மற்றும் தமிழ்ச் சங்கங்களுடன் இணைந்து நிகழ்ச்சிகளை நடத்தி, மாணவர்களின் திறமைகளை வெளிக்கொணருகிறது. 'அகழ்', 'விடியல்', மற்றும் 'சமத்துவ பொங்கல்' போன்ற விழாக்களும் மாணவர்களின் இடையே பிரம்மாண்டத்தின் விருந்தாகுகிறது. மாணவர்களின் தனித்திறன்கள் மற்றும் முத்தமிழ் மன்ற நிகழ்வுகளைத் தொகுத்து காலம் கடந்து அழியா நினைவு கூறும் சுவடாக 'சங்கமம் இதழ்' யை வெளியிடுகிறது. மேலும், பிற கல்லூரிகள் மற்றும் மாவட்ட அளவிலான போட்டிகளிலும் மாணவர்களை ஈடுபடுத்தி, அவர்களின் திறமைகளைப் பரப்புவதிலும் மன்றம் முக்கிய பங்காற்றுகிறது.",
     staff: "Mr.Pradeep",
     staffdesi: "Ece",
-    student: "Harish Ashwathaman",
-    studentdesi: "4th year",
+    student: "Hari Bharathi KS",
+    studentdesi: "4th year Mechanical",
   },
 
 
