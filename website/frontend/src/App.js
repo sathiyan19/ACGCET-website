@@ -380,10 +380,10 @@ const App = () => {
          <Route path="/feedback/Std_teaching_fb" element={<Std_teaching_fb/>}/>
          <Route path="/feedback/Practical_fb" element={<Practical_fb/>}/>
          <Route path="/feedback/Technical_fb" element={<Technical_fb/>}/>
-         <Route path="parents_fb" element={<Parents_fb/>}/>
-         <Route path="consultancy_fb" element={<Consultancy_fb/>}/>
-         <Route path="supplier_fb" element={<Supplier_fb/>}/>
-         <Route path="employer_fb" element={<Employer_fb/>}/>
+         <Route path="/feedback/parents_fb" element={<Parents_fb/>}/>
+         <Route path="/feedback/consultancy_fb" element={<Consultancy_fb/>}/>
+         <Route path="/feedback/supplier_fb" element={<Supplier_fb/>}/>
+         <Route path="/feedback/employer_fb" element={<Employer_fb/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
