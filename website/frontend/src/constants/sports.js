@@ -55,6 +55,8 @@
 // import volleyball_W_R from "../assets/pictures/sportsmeet/typhonz/VB_W(R).webp"
 // import chess_M_W from "../assets/pictures/sportsmeet/typhonz/Chess_M.webp"
 
+import vimanthan from "../assets/pictures/vimanthan.webp"
+import raveena from "../assets/pictures/raveena.webp"
 const badminton_M_R="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Badminton_M(R).webp"
 const khokho_M_R="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Kho_M(R).webp"
 const ballbadminton_M_W="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Ball_bad_M.webp"
@@ -103,6 +105,8 @@ const image2="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/spo
 const image3="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/sports/cricket.webp"
 const image4="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/sports/girls+badminton.webp"
 const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/sports/girls+volleyball.webp"
+
+const baja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/BAJA-2014.webp"
 
 const sports_slideshow=[image1,image2,image3,image4,image5]
 
@@ -610,6 +614,28 @@ const sport_cards=[
             ]
         }
     },
+]
+export const sport_achivement_info=[
+    {
+        'id':'1',
+        'heading':'Winner',
+        'sub-head':"Raveena, a third-year Civil student, competed in inter-university karate for Anna University and received her Form 3 certificate.",
+        'pic':raveena,
+        'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
+        'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
+      
+      },
+      {
+        'id':'2',
+        'heading':'Winner ',
+        'sub-head':"Vimanthan, a third-year ECE student, participated in the Southwest Inter-University Archery as part of Anna University's team and received his Form 3 certificate.",
+        'pic':vimanthan,
+        'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
+        'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
+      
+      },
+
+
 ]
 
 export {sport_cards,sports_slideshow,sportstime,sportslist,sportsvision,sportsmission,sports_meet_2k24_schedule,ignatz_list,typhonz_list,phoenix_list,akkadians_list}
