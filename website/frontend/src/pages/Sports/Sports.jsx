@@ -8,13 +8,14 @@ import {
   Listformat,
   Slideshow,
 } from "../../components";
-import { Sportcard,Underline } from "../../widgets";
+import { Sportcard,Underline , Modal} from "../../widgets";
 
 import { Events } from "../../containers";
 import {
   sports_meet_2k24_schedule,
   sports_slideshow,
   sport_cards,
+  sport_achivement_info,
 } from "../../constants/sports";
 // import {
 //   Sports_heroimage_carousalinfo,
@@ -61,10 +62,25 @@ const Sports = () => {
           <p className="sports_insta_desc">For faster updates, follow our instagram page here!</p>
         </a>
 
-        <p className="sports_head sports_page_anamoly">Sports Meet Schedule</p>
+        {/* <p className="sports_head sports_page_anamoly">Sports Meet Schedule</p> */}
 
-        <Events events={sports_meet_2k24_schedule} />
+        {/* <Events events={sports_meet_2k24_schedule} /> */}
 
+        <div className="mech_events">
+            <Underline heading="Achivements" />
+            <div className="lab_cards row">
+              {sport_achivement_info.map((item) => (
+                <Modal
+                  heading={item.heading}
+                  pic={item.pic}
+                 
+                  sub_text={item["sub-head"]}
+                />
+              ))}
+            </div>
+          </div>
+
+            
       </div>
     </div>
   );
