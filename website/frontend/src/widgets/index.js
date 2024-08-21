@@ -19,3 +19,4 @@ export {default as Syllabuscard } from './Syllabuscard/Syllabuscard';
 
 export{default as SgpaDropDown} from './SgpaDropDown/SgpaDropDown';
 export {default as Successful_dialog} from './Successful_dialog/Successful_dialog';
+export {default as Videocard} from './Videocard/Videocard';
