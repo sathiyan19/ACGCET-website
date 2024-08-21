@@ -1,0 +1,32 @@
+
+.ece_res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ece_res_table{
+    width: 80%;
+    margin-bottom: 20px;
+    /* overflow-x: scroll; */
+    /* padding: 20px 30px; */
+}
+
+.ece_super{
+    color: #00134d;
+}
+@media (max-width:650px){
+    .ece_res_table{
+        width:90%;
+    }
+}
+@media (max-width:450px){
+    .ece_res_table{
+        width:100%;
+    }
+}
+@media (max-width:450px){
+    .ece_res_table{
+        overflow-x:scroll ;
+    }
+}

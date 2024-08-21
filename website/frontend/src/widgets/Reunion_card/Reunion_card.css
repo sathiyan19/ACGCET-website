@@ -1,0 +1,58 @@
+.reunion_card{
+    margin: 20px 70px;
+    padding: 10px;
+    width:300px;
+    background-color: #e5e4e0;
+    border-radius: 5px;
+    box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+    4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+    15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+    29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+    70px 70px 80px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+    /* display: flex; */
+}
+.reunion_img_holder{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.reunion_img{
+    width: 100%;
+    height:auto;
+}
+
+.reunion_content{
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.reunion_batch{
+    margin-top: 10px;
+    color: black;
+}
+
+.reunion_name{
+    margin-top: 10px;
+    color: #00134d;
+    font-size: 30px;
+}
+.reunion_desc{
+    margin-top: 10px;
+    line-height: 1.3rem;
+}
+.reunion_holder{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.reunion_date{
+    color: white;
+    padding:12px;
+    border-radius: 60px;
+    text-align: center;
+    background-color: #00134d;
+    /* width:50% */
+}

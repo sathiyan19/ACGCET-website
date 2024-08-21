@@ -1,0 +1,157 @@
+.rec{
+    margin-bottom: 10px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .recout1{
+    height: 100px;
+    background-color: #00134d;
+  }
+  
+  .recout2{
+    height: 350px;
+    /* max-height: 600px; */
+    background-color:#f1f1f1;
+    
+  }
+  
+  .recin{
+    position: absolute;
+    box-shadow: 1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+      4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+      15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+      29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+      70px 70px 80px rgba(0, 0, 0, 0.02);
+    background-color: #e5e4e0;
+    top:13%;
+    left: 5%;
+    width:90%;
+    /* height:75%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .rectext{
+    width: 60%;
+  }
+  
+  .recparasec{
+    >p{
+      color: black;
+      line-height: 1.5rem;
+      padding: 10px;
+      margin-left:10px;
+      margin-right: 10px;
+      text-align: justify;
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+    > img {
+      height: 50px;
+      width: 50px;
+    }
+    .recq1 {
+      margin-left: 0;
+    }
+    .recq2 {
+      margin-left: 90%;
+    }
+  }
+  
+  
+  .recpic{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width:1350px){
+    .recout2{
+      height: 400px;
+    }
+  }
+  
+  @media (max-width:960px){
+    .recout2{
+      height: 450px;
+    }
+  }
+  
+  @media (max-width:790px){
+    .recout2{
+      height: 500px;
+    }
+  }
+  
+  @media (max-width:660px){
+  
+    .recout2{
+      height: 650px;
+    }
+  
+  
+    .recin{
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      left: 10%;
+      top:8%;
+    }
+  
+    .rectext{
+      width: 100%;
+    }
+    .recpic{
+      width: 50%;
+    }
+  }
+  
+  @media (max-width:460px){
+    .recin{
+      top:6%;
+    }
+  }
+  
+  @media (max-width:436px){
+    .recin{
+      top:5%;
+    }
+  
+  
+  
+    .recparasec img{
+      height: 40px;
+      width:40px
+    }
+  }
+  
+  @media (max-width:396px){
+    .recparasec{
+      >img{
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+  
+  @media (max-width:350px){
+    .recout1{
+      height: 120px;
+    }
+  }
+  
+  @media (max-width:335px){
+    .recout2{
+      height: 620px;
+    }
+  }
+  
+  @media (max-width:331px){
+    .recout2{
+      height: 700px;
+    }
+  }
