@@ -66,7 +66,7 @@ const Supplier_fb = () => {
         }
 
         try {
-            const response = await axios.post('/api/ratingsubmit', {
+            const response = await axios.post('/api/supplier_ratingsubmit', {
                 supplier_name: supplierName,
                 product_supplied: productSupplied,
                 branch: branch,
@@ -137,14 +137,14 @@ const Supplier_fb = () => {
                             <div className="supplier_fb_ratings">
                                 {[1, 2, 3, 4, 5].map(num => (
                                     <label key={num}>
-                                        <input 
+                                        <input className='sup_fb_btn'
                                             type="radio" 
                                             name={name} 
                                             value={num} 
                                             onChange={(e) => handleRatingChange(e, name)} 
                                             checked={ratings[name] === num} 
                                         />
-                                        <span className="custom-radio">{num}</span>
+                                        <span className="supplier_custom-radio">{num}</span>
                                     </label>
                                 ))}
                             </div>

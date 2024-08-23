@@ -452,22 +452,22 @@ export const consultancyFeedbackQuestions = [
   {
     question:"Consultancy Fee     ",
     translation:" நிறுவன கட்டணம் ",
-    name:"question1",
+    name:"consultancy_fee",
   },
   {
     question:"Meeting Deadline  ",
     translation:"காலக்கெடு",
-    name:"question2",
+    name:"meeting_deadline",
   },
   {
     question:"Work Quality",
     translation:"வேலை தரம்",
-    name:"question3",
+    name:"work_quality",
   },
   {
     question:"Approach",
     translation:"அணுகுமுறை",
-    name:"question4",
+    name:"approach",
   },
 ];
 

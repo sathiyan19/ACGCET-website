@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const {generate_pdf}= require("./feedback_download.js")
-const {ratingsubmit} =require("./feedback.js")
+const {supplier_ratingsubmit,consultancy_ratingsubmit} =require("./feedback.js")
 const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP, sendquery}=require("./otp.js")
 const {dashboard}=require("./protected_routes.js")
@@ -39,7 +39,9 @@ router.post('/api/getsemlist',get_sem_list)
 
 router.post('/api/sendquery',sendquery)
 
-router.post('/api/ratingsubmit',ratingsubmit);
+router.post('/api/supplier_ratingsubmit',supplier_ratingsubmit);
+
+router.post('/api/consultancy_ratingsubmit',consultancy_ratingsubmit);
 
 router.post('/api/generate_pdf',generate_pdf);
 

@@ -381,7 +381,7 @@ const App = () => {
          <Route path="/feedback/Practical_fb" element={<Practical_fb/>}/>
          <Route path="/feedback/Technical_fb" element={<Technical_fb/>}/>
          <Route path="/feedback/parents_fb" element={<Parents_fb/>}/>
-         <Route path="/feedback/consultancy_fb" element={<consultancy_fb/>}/>
+         <Route path="/feedback/Consultancy_fb" element={<Consultancy_fb/>}/>
          <Route path="/feedback/supplier_fb" element={<Supplier_fb/>}/>
          <Route path="/feedback/employer_fb" element={<Employer_fb/>}/>
          <Route path="/FeedbackPdf" element={<FeedbackPdf/>}/>

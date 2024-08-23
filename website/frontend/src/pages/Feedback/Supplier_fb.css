@@ -97,6 +97,10 @@
     display: flex;
     align-items: center;
   }
+
+  .sup_fb_btn{
+    cursor: pointer;
+  }
   
   .supplier_custom-radio {
     display: inline-block;
