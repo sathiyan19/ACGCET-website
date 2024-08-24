@@ -4,7 +4,8 @@ import { Backtotop, Underline } from "../../widgets";
 import { AlumniFeedbackQuestions } from "../../constants/feedbackQuestions";
 
 const Alumini_fb = () => {
-  return (
+
+ return (
 
     
     <div className="alumni_fb_container">

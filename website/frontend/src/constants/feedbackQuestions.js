@@ -332,119 +332,121 @@ export const std_mini_project_fb_data=[
   // ];
 
 
-export const employerFeedbackQuestions =[
-  {
-    question:"Technical knowledge/skill",
-    translation:"தொழில்நுட்ப அறிவு/திறன்",
-    name:"question1",
-  },
-  {
-    question:"Communication skill",
-    translation:"தொடர்பு திறன்",
-    name:"question2",
-  },
-  {
-    question:"Independent thinking and problem solving ability",
-    translation:"சுய‌ சிந்தனை மற்றும் சிக்கலை தீர்க்கும் திறன்",
-    name:"question3",
-  },
-  {
-    question:"Inclination to adopt new technology",
-    translation:"புதிய தொழில்நுட்பத்தை கடைப்பிடிக்க விருப்பம்",
-    name:"question4",
-  },
-  {
-    question:"Ability to take up extra responsibility",
-    translation:"கூடுதல் பொறுப்பை ஏற்கும் திறன்",
-    name:"question5",
-  },
-  {
-    question:"Obligation to work beyond schedule if required",
-    translation:"தேவைப்பட்டால் அட்டவணைக்கு அப்பால் வேலை செய்ய வேண்டிய கடமை",
-    name:"question6",
-  },
-  {
-    question:"Ability to contribute to the goal of the organization",
-    translation:"நிறுவனத்தின் இலக்குக்கு பங்களிக்கும் திறன்",
-    name:"question7",
-  },
-  {
-    question:"Planning and organization skills",
-    translation:"திட்டமிடல் மற்றும் ஒருங்கிணைக்கும் திறன்கள்",
-    name:"question8",
-  },
-  {
-    question:"Possess leadership qualities",
-    translation:"தலைமை பண்புகளை கொண்டவர்",
-    name:"question9",
-  },
-  {
-    question:"Relationship with seniors and subordinates",
-    translation:"மூத்தவர் மற்றும் துணை அதிகாரிகளுடனான உறவு",
-    name:"question10",
-  },
-];
+
+  export const employerFeedbackQuestions = [
+    {
+      question: "Technical knowledge/skill",
+      translation: "தொழில்நுட்ப அறிவு/திறன்",
+      name: "technical_knowledge",
+    },
+    {
+      question: "Communication skill",
+      translation: "தொடர்பு திறன்",
+      name: "communication_skill",
+    },
+    {
+      question: "Independent thinking and problem solving ability",
+      translation: "சுய‌ சிந்தனை மற்றும் சிக்கலை தீர்க்கும் திறன்",
+      name: "independent_thinking",
+    },
+    {
+      question: "Inclination to adopt new technology",
+      translation: "புதிய தொழில்நுட்பத்தை கடைப்பிடிக்க விருப்பம்",
+      name: "new_technology_inclination",
+    },
+    {
+      question: "Ability to take up extra responsibility",
+      translation: "கூடுதல் பொறுப்பை ஏற்கும் திறன்",
+      name: "extra_responsibility",
+    },
+    {
+      question: "Obligation to work beyond schedule if required",
+      translation: "தேவைப்பட்டால் அட்டவணைக்கு அப்பால் வேலை செய்ய வேண்டிய கடமை",
+      name: "work_beyond_schedule",
+    },
+    {
+      question: "Ability to contribute to the goal of the organization",
+      translation: "நிறுவனத்தின் இலக்குக்கு பங்களிக்கும் திறன்",
+      name: "organizational_contribution",
+    },
+    {
+      question: "Planning and organization skills",
+      translation: "திட்டமிடல் மற்றும் ஒருங்கிணைக்கும் திறன்கள்",
+      name: "planning_organization_skills",
+    },
+    {
+      question: "Possess leadership qualities",
+      translation: "தலைமை பண்புகளை கொண்டவர்",
+      name: "leadership_qualities",
+    },
+    {
+      question: "Relationship with seniors and subordinates",
+      translation: "மூத்தவர் மற்றும் துணை அதிகாரிகளுடனான உறவு",
+      name: "relationship_with_seniors",
+    },
+  ];
+
   
-export const parentFeedbackQuestions =[
+export const parentFeedbackQuestions = [
   {
-    question:"Rate the infrastructure facilities of the institution",
-    translation:"நிறுவனங்களின் உட்கட்டமைப்பு வசதிகளை மதிப்பிடவும்",
-    name:"question1",
+    question: "Rate the infrastructure facilities of the institution",
+    translation: "நிறுவனங்களின் உட்கட்டமைப்பு வசதிகளை மதிப்பிடவும்",
+    name: "infrastructure_facilities",
   },
   {
-    question:"Rate the ambience of the college with respect to the facilities such as ATM, post office and medical facilities and transportationgiven to your ward",
-    translation:"தன்னியக்க காசளிப்பு இயந்திரம் (ஏடிஎம்) ,தபால் அலுவலகம் ,மருத்துவ வசதிகள் ,போக்குவரத்து வசதிகளைப் பொருத்து கல்லூரி சூழலை மதிப்பிடவும்",
-    name:"question2",
+    question: "Rate the ambience of the college with respect to the facilities such as ATM, post office, medical facilities, and transportation given to your ward",
+    translation: "தன்னியக்க காசளிப்பு இயந்திரம் (ஏடிஎம்), தபால் அலுவலகம், மருத்துவ வசதிகள், போக்குவரத்து வசதிகளைப் பொருத்து கல்லூரி சூழலை மதிப்பிடவும்",
+    name: "college_ambience",
   },
   {
-    question:"Authorities and the college office are approachable, ready to help and clarify your queries",
-    translation:"அதிகாரிகள் மற்றும் கல்லூரி அலுவலகம் அணுகக்கூடியது ,உங்கள் கேள்விகளுக்கு உதவவும் தெளிவுப்படுத்தவும் தயாராக உள்ளது",
-    name:"question3",
+    question: "Authorities and the college office are approachable, ready to help and clarify your queries",
+    translation: "அதிகாரிகள் மற்றும் கல்லூரி அலுவலகம் அணுகக்கூடியது, உங்கள் கேள்விகளுக்கு உதவவும் தெளிவுப்படுத்தவும் தயாராக உள்ளது",
+    name: "authority_approachability",
   },
   {
-    question:"Is your ward happy with the hostel facilities?",
-    translation:"உங்கள் பிள்ளைகள் விடுதி வசதிகளால் மகிழ்ச்சியாக உள்ளனரா?",
-    name:"question4",
+    question: "Is your ward happy with the hostel facilities?",
+    translation: "உங்கள் பிள்ளைகள் விடுதி வசதிகளால் மகிழ்ச்சியாக உள்ளனரா?",
+    name: "hostel_facilities",
   },
   {
-    question:"Rate the library and sport facilities",
-    translation:"நூலகம் மற்றும் விளையாட்டு வசதிகளை மதிப்பிடவும்",
-    name:"question5",
+    question: "Rate the library and sport facilities",
+    translation: "நூலகம் மற்றும் விளையாட்டு வசதிகளை மதிப்பிடவும்",
+    name: "library_sports_facilities",
   },
   {
-    question:"What is your assessment of security and safety measures in the institution?",
-    translation:"கல்வி நிறுவனத்தில் பாதுகாப்பு மற்றும் பாதுகாப்பு நடவடிக்கைகள்'பற்றிய உங்கள் மதிப்பேடு என்ன?",
-    name:"question6",
+    question: "What is your assessment of security and safety measures in the institution?",
+    translation: "கல்வி நிறுவனத்தில் பாதுகாப்பு மற்றும் பாதுகாப்பு நடவடிக்கைகள் பற்றிய உங்கள் மதிப்பீடு என்ன?",
+    name: "security_safety_measures",
   },
   {
-    question:"Rate the acadamic skills and knowledge of the faculty",
-    translation:"ஆசிரியர்களின் கல்வித்திறன் மற்றும் அறிவை மதிப்பிடுங்கள்",
-    name:"question7",
+    question: "Rate the academic skills and knowledge of the faculty",
+    translation: "ஆசிரியர்களின் கல்வித்திறன் மற்றும் அறிவை மதிப்பிடுங்கள்",
+    name: "faculty_academic_skills",
   },
   {
-    question:"Rate the learning experience of your ward n the institution",
-    translation:"நிறுவனத்தில் உங்கள் பிள்ளைகளின் கற்றல் அனுபவத்தை மதிப்பிடவும்",
-    name:"question8",
+    question: "Rate the learning experience of your ward in the institution",
+    translation: "நிறுவனத்தில் உங்கள் பிள்ளைகளின் கற்றல் அனுபவத்தை மதிப்பிடவும்",
+    name: "learning_experience",
   },
   {
-    question:"Rate the environment in terms of diversity among the students in the institution",
-    translation:"நிறுவனத்தில் உள்ள மாணவர்களிடையே பண்முகத்தன்மையின் அடிப்படையில் மதிப்பிடவும்",
-    name:"question9",
+    question: "Rate the environment in terms of diversity among the students in the institution",
+    translation: "நிறுவனத்தில் உள்ள மாணவர்களிடையே பண்முகத்தன்மையின் அடிப்படையில் மதிப்பிடவும்",
+    name: "environment_diversity",
   },
   {
-    question:"Assessment about the placement and internship opportunities provided by the institution",
-    translation:"நிறுவனம் வழங்கிய வேலைவாய்ப்பு பற்றிய மதிப்பீடு",
-    name:"question10",
+    question: "Assessment about the placement and internship opportunities provided by the institution",
+    translation: "நிறுவனம் வழங்கிய வேலைவாய்ப்பு பற்றிய மதிப்பீடு",
+    name: "placement_opportunities",
   },
   {
-    question:"Technical knowledge of your ward has improved after joining the institution",
-    translation:"நிறுவனத்தில் சேர்ந்தபிறகு உங்கள் பிள்ளையின் தொழில்நுட்ப அறிவு மேம்பட்டுள்ளது",
-    name:"question11",
+    question: "Technical knowledge of your ward has improved after joining the institution",
+    translation: "நிறுவனத்தில் சேர்ந்தபிறகு உங்கள் பிள்ளையின் தொழில்நுட்ப அறிவு மேம்பட்டுள்ளது",
+    name: "technical_knowledge_improvement",
   },
   {
-    question:"How extent do you think that the college environment is conductive for the overall development of your ward",
-    translation:"உங்கள் பிள்ளையின் ஒட்டுமொத்த வளர்ச்சிக்குக் கல்லூரிச் சூழல் எந்த அளவுக்கு உகந்தது என்று நினைக்கிறீர்கள்",
-    name:"question12",
+    question: "How conducive do you think the college environment is for the overall development of your ward?",
+    translation: "உங்கள் பிள்ளையின் ஒட்டுமொத்த வளர்ச்சிக்குக் கல்லூரிச் சூழல் எந்த அளவுக்கு உகந்தது என்று நினைக்கிறீர்கள்",
+    name: "college_environment_development",
   },
 ];
 

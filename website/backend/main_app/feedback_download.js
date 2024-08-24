@@ -1,15 +1,15 @@
 const express = require('express');
 const puppeteer = require('puppeteer');
-const nodemailer = require('nodemailer');
-const path = require('path');
-const fs = require('fs');
 const pool = require('./db'); // Assuming this is correctly set up
+const nodemailer = require('nodemailer');
+const fs = require('fs'); // Import the fs module if needed
+require('dotenv').config(); // Import dotenv to manage environment variables
 
-// Initialize Express app
 const app = express();
+app.use(express.json()); // To handle JSON payloads
 
-// HTML template function for the PDF
-const getPdfTemplate = (feedbackData) => `
+// HTML template functions for each feedback type
+const getSupplierFeedbackTemplate = (feedbackData) => `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,9 +17,11 @@ const getPdfTemplate = (feedbackData) => `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supplier Feedback</title>
     <style>
-        body {
+          body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 15px;
+            font-size:10px;
+            font-weight:unset;
         }
         h1 {
             color: #333;
@@ -28,13 +30,15 @@ const getPdfTemplate = (feedbackData) => `
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            table-layout: auto; /* Makes columns evenly spaced */
         }
         table, th, td {
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 8px;
+            padding: 2px;
             text-align: left;
+          
         }
         th {
             background-color: #f4f4f4;
@@ -43,93 +47,233 @@ const getPdfTemplate = (feedbackData) => `
 </head>
 <body>
     <h1>Supplier Feedback Summary</h1>
+    <div class="table-container">
+        <p>Date: ${new Date().toLocaleDateString()}</p>
+        <table>
+            <tr>
+                <th>Supplier Name</th>
+                <th>Product Supplied</th>
+                <th>Branch</th>
+                <th>Procurement Process</th>
+                <th>Payment Process</th>
+                <th>Staff Professionalism</th>
+                <th>Receipt Process</th>
+                <th>Paperwork Process</th>
+                <th>Communication Efficiency</th>
+                <th>Ethical Practices</th>
+                <th>Business Relationship</th>
+            </tr>
+            ${feedbackData.map(row => `
+            <tr>
+                <td>${row.supplier_name}</td>
+                <td>${row.product_supplied}</td>
+                <td>${row.branch}</td>
+                <td>${row.procurement_process}</td>
+                <td>${row.payment_process}</td>
+                <td>${row.staff_professionalism}</td>
+                <td>${row.receipt_process}</td>
+                <td>${row.paperwork_process}</td>
+                <td>${row.communication_efficiency}</td>
+                <td>${row.ethical_practices}</td>
+                <td>${row.business_relationship}</td>
+            </tr>`).join('')}
+        </table>
+    </div>
+</body>
+</html>
+`;
+
+const getParentsFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents Feedback</title>
+    <style>
+
+  body {
+            font-family: Arial, sans-serif;
+            margin: 15px;
+            
+            font-size: 10px;
+            font-weight: unset;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Container to enable horizontal scrolling */
+        .table-container {
+            overflow-x: auto;
+            padding-left: 15px; /* Add left margin */
+    padding-right: 15px; /* Add right margin */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            table-layout: auto; /* Ensures the table layout is fixed for better control */
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 2px;
+            text-align: left;
+            // word-break: break-word; 
+        }
+
+        th {
+            background-color: #f4f4f4;
+          }
+
+        // td {
+        //     white-space: nowrap; 
+        //     overflow: hidden; 
+        // }
+
+        @media print {
+            body {
+                margin: 10px; /* Remove margin to utilize the full printable area */
+                font-size: 8px; /* Reduce font size for better fit in PDF */
+            }
+
+            .table-container {
+                overflow-x: visible; /* Ensure full table is printed */
+               padding-left: 15px; /* Add left margin */
+    padding-right: 15px; /* Add right margin */
+            }
+  table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            table-layout: auto; /* Ensures the table layout is fixed for better control */
+        }
+
+            th, td {
+                font-size: 8px; /* Reduce font size for better fit */
+                padding: 2px 4px; /* Adjust padding for space optimization */
+                overflow: visible; /* Allow content overflow if necessary */
+            }
+
+            thead {
+                display: table-header-group; /* Repeat header on each page */
+            }
+
+            tfoot {
+                display: table-footer-group; /* Optionally add footer if needed */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Parents Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
-    
     <table>
         <tr>
-            <th>Supplier Name</th>
-            <th>Product Supplied</th>
+            <th>Student Name</th>
+            <th>Register Number</th>
             <th>Branch</th>
-            <th>Procurement Process</th>
-            <th>Payment Process</th>
-            <th>Staff Professionalism</th>
-            <th>Receipt Process</th>
-            <th>Paperwork Process</th>
-            <th>Communication Efficiency</th>
-            <th>Ethical Practices</th>
-            <th>Business Relationship</th>
+            <th>Passed Out Year</th>
+            <th>Infrastructure</th>
+            <th>College Ambience</th>
+            <th>Authority Approachability</th>
+            <th>Hostel Facilities</th>
+            <th>Library & Sports Facilities</th>
+            <th>Security & Safety Measures</th>
+            <th>Faculty Academic Skills</th>
+            <th>Learning Experience</th>
+            <th>Environment Diversity</th>
+            <th>Placement Opportunities</th>
+            <th>Technical Knowledge Improvement</th>
+            <th>College Environment Development</th>
         </tr>
         ${feedbackData.map(row => `
         <tr>
-            <td>${row.supplier_name}</td>
-            <td>${row.product_supplied}</td>
+            <td>${row.student_name}</td>
+            <td>${row.register_number}</td>
             <td>${row.branch}</td>
-            <td>${row.procurement_process}</td>
-            <td>${row.payment_process}</td>
-            <td>${row.staff_professionalism}</td>
-            <td>${row.receipt_process}</td>
-            <td>${row.paperwork_process}</td>
-            <td>${row.communication_efficiency}</td>
-            <td>${row.ethical_practices}</td>
-            <td>${row.business_relationship}</td>
+            <td>${row.passed_out_year}</td>
+            <td>${row.infrastructure_facilities}</td>
+            <td>${row.college_ambience}</td>
+            <td>${row.authority_approachability}</td>
+            <td>${row.hostel_facilities}</td>
+            <td>${row.library_sports_facilities}</td>
+            <td>${row.security_safety_measures}</td>
+            <td>${row.faculty_academic_skills}</td>
+            <td>${row.learning_experience}</td>
+            <td>${row.environment_diversity}</td>
+            <td>${row.placement_opportunities}</td>
+            <td>${row.technical_knowledge_improvement}</td>
+            <td>${row.college_environment_development}</td>
         </tr>`).join('')}
     </table>
 </body>
 </html>
 `;
 
-// Function to fetch data, generate PDF, send email, and truncate the table
 const generatePdfAndSendEmail = async (req, res) => {
-    try {
-        console.log("Fetching data from the database...");
-        const [rows] = await pool.query('SELECT * FROM SupplierFeedback');
-        console.log("Fetched data:", rows);
+    const { option } = req.body;
 
-        if (rows.length === 0) {
+    try {
+        let feedbackData;
+        let htmlContent;
+
+        // Fetch data based on the selected option
+        switch (option) {
+            case 'supplier':
+                [feedbackData] = await pool.query('SELECT * FROM SupplierFeedback');
+                htmlContent = getSupplierFeedbackTemplate(feedbackData);
+                break;
+            case 'parents':
+                [feedbackData] = await pool.query('SELECT * FROM ParentsFeedback');
+                htmlContent = getParentsFeedbackTemplate(feedbackData);
+                break;
+            default:
+                return res.status(400).send('Invalid option selected.');
+        }
+
+        if (feedbackData.length === 0) {
             throw new Error("No data available to generate PDF.");
         }
 
-        console.log("Generating PDF...");
-        const htmlContent = getPdfTemplate(rows);
-
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
         const page = await browser.newPage();
         await page.setContent(htmlContent);
         const pdfBuffer = await page.pdf({ format: 'A4' });
-        const pdfPath = path.join(__dirname, 'supplier-feedback.pdf');
-        fs.writeFileSync(pdfPath, pdfBuffer);
         await browser.close();
-        console.log("PDF generated successfully.");
 
-        // Set headers for file download
-        const filename = `feedback.pdf`;
         res.setHeader('Content-Type', 'application/pdf');
-        res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
-
-        // Send the PDF buffer as response
+        res.setHeader('Content-Disposition', `attachment; filename="${option}-feedback.pdf"`);
         res.send(pdfBuffer);
 
-        // After sending the response, proceed to send the email
         console.log("Sending email...");
         const transporter = nodemailer.createTransport({
-            service: 'gmail', // Set secure to false for STARTTLS
+            service: 'gmail',
             auth: {
                 user: "acgcet25@gmail.com",
-                pass: "aimykdsvzkgbkqag", // Use an App Password
+
+                pass: "aimykdsvzkgbkqag", // Use environment variable for password
             },
             connectionTimeout: 10000, // 10 seconds timeout
             socketTimeout: 10000, // 10 seconds timeout
         });
 
         const mailOptions = {
-            from: 'acgcet25@gmail.com',
-            to: 'acgcet25@gmail.com',
-            subject: 'Supplier Feedback PDF',
-            text: 'Please find the attached Supplier Feedback PDF.',
+            from: 'mohanamala07gmail.com',
+            to:'mohanamala07@gmail.com' ,
+            subject: `${option.charAt(0).toUpperCase() + option.slice(1)} Feedback PDF`,
+            text: 'Please find the attached Feedback PDF.',
             attachments: [
                 {
-                    filename: 'supplier-feedback.pdf',
-                    path: pdfPath,
+                    filename: `${option}-feedback.pdf`,
+                    content: pdfBuffer // Attach the generated PDF from buffer
                 },
             ],
         };
@@ -138,25 +282,20 @@ const generatePdfAndSendEmail = async (req, res) => {
         console.log("Email sent successfully.");
 
         // Finally, truncate the table after sending the email
-        console.log("Truncating SupplierFeedback table...");
-        await pool.query('TRUNCATE TABLE SupplierFeedback');
+        console.log(`Truncating ${option.charAt(0).toUpperCase() + option.slice(1)}Feedback table...`);
+        await pool.query(`TRUNCATE TABLE ${option.charAt(0).toUpperCase() + option.slice(1)}Feedback`);
         console.log("Table truncated successfully.");
 
-        // Optionally remove the file after sending it and sending the email
-        fs.unlink(pdfPath, (err) => {
-            if (err) console.error("Error removing file:", err);
-        });
-
     } catch (error) {
-        console.error('Error during PDF generation, email sending, or truncating table:', error);
-        res.status(500).send('Failed to complete the operation.');
+        console.error('Error during PDF generation:', error);
+        res.status(500).send('Failed to generate the file.');
     }
 }
-
-// Route to handle PDF generation, email sending, and table truncation
+module.exports = {
+    generatePdfAndSendEmail,
+};
 app.post('/api/generate_pdf', generatePdfAndSendEmail);
 
-// Export the function for testing or other purposes
-module.exports = {
-    generate_pdf: generatePdfAndSendEmail,
-};
+// app.listen(3001, () => {
+//     console.log('Server is running on port 3001');
+// });
