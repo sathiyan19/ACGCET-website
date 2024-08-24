@@ -41,7 +41,11 @@ router.post('/api/sendquery',sendquery)
 router.post('/api/parentsfeedbacksubmit', parentsfeedbackSubmit)
 router.post('/api/ EmployeeFeedbackSubmit',  EmployeeFeedbackSubmit)
 
-router.post('/api/ratingsubmit',ratingsubmit);
+router.post('/api/supplier_ratingsubmit',supplier_ratingsubmit);
+
+router.post('/api/consultancy_ratingsubmit',consultancy_ratingsubmit);
+
+router.post('/api/collaborator_ratingsubmit',collaborator_ratingsubmit);
 
 router.post('/api/generate_pdf',generatePdfAndSendEmail);
 

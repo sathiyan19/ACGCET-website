@@ -97,8 +97,12 @@
     display: flex;
     align-items: center;
   }
+
+  .sup_fb_btn{
+    cursor: pointer;
+  }
   
-  .supplier_custom-radio {
+  .custom-radio {
     display: inline-block;
     width: 20px; /* Adjust the outer circle size */
     height: 20px;
@@ -115,7 +119,7 @@
     cursor: pointer;
   }
   
-  input[type="radio"]:checked + .supplier_custom-radio {
+  input[type="radio"]:checked + .custom-radio {
     background-color: #00134d;
     color: white; /* Change number color when selected */
   }

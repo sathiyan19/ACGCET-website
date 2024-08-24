@@ -23,13 +23,20 @@ const Alumini_fb = () => {
         <div className="alumni_fb_row">
           <select className="alumni_fb_select" required>
             <option value="" disabled selected>Select Programme*</option>
+            <option value="BE">B.E</option>
+            <option value="ME">M.E</option>
+            <option value="PhD">PhD</option>
             {/* Add options here */}
           </select>
           <select className="alumni_fb_select" required>
             <option value="" disabled selected>Select Department*</option>
-            <option value="BE">B.E</option>
-            <option value="ME">M.E</option>
-            <option value="PhD">PhD</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="EEE">EEE</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE">CSE</option>
+            <option value="Others">Others</option>
+
           </select>
         </div>
         <div className="alumni_fb_row">
@@ -40,7 +47,8 @@ const Alumini_fb = () => {
         <div className="alumni_fb_row">
           <select className="alumni_fb_select">
             <option value="" disabled selected>Whether did any higher studies?</option>
-            {/* Add options here */}
+            <option value="yes">Yes</option>
+            <option value="yes">No</option>
           </select>
           <input type="text" className="alumni_fb_input" placeholder="Name of The institution (Optional)" />
         </div>
@@ -49,7 +57,9 @@ const Alumini_fb = () => {
         <div className="alumni_fb_row">
           <select className="alumni_fb_select">
             <option value="" disabled selected>Whether wrote any Competitive Exam?</option>
-            {/* Add options here */}
+            <option value="yes">Yes</option>
+            <option value="yes">No</option>
+ 
           </select>
           <input type="text" className="alumni_fb_input" placeholder="Name of the Examination (Optional)" />
         </div>
@@ -70,6 +80,8 @@ const Alumini_fb = () => {
         <div className="alumni_fb_row">
           <select className="alumni_fb_select">
             <option value="" disabled selected>Whether you are in-service or retired?</option>
+            <option value="ervice">Service</option>
+            <option value="Retired">Retired</option>
             {/* Add options here */}
           </select>
           <input type="text" className="alumni_fb_input" placeholder="City (Optional)" />
@@ -84,25 +96,24 @@ const Alumini_fb = () => {
        
 
           {AlumniFeedbackQuestions.map(({ question, translation, name }) => (
-            <div className="alumni_fb_question" key={name}>
+              <div className="alumni_fb_question" key={name}>
               <p>{question}</p>
               <p>({translation})</p>
               <div className="alumni_fb_ratings">
-      {[1, 2, 3, 4, 5].map(num => (
-        <React.Fragment key={num}>
-          <input type="radio" id={`rating-${num}`} name={name} value={num} />
-          <label htmlFor={`rating-${num}`}>{num}</label>
-        </React.Fragment>
-        
+                  {[1, 2, 3, 4, 5].map(num => (
+                     <label key={num}>
+                     <input type="radio" name={name} value={num} />
+                         <span className="custom-radio">{num}</span>
+                     </label>
+                  ))}
+              </div>
+              
+          </div>
       ))}
-    </div>
-    
-
-            </div>
-          ))}
+          
         </div>
 
-        <div className="alumni_fb_row">
+        <div className="alumni_fb_row_button">
           <button type="submit" className="alumni_fb_submit">
             Submit
           </button>

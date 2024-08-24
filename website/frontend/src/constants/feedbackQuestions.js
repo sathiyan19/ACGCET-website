@@ -454,22 +454,22 @@ export const consultancyFeedbackQuestions = [
   {
     question:"Consultancy Fee     ",
     translation:" நிறுவன கட்டணம் ",
-    name:"question1",
+    name:"consultancy_fee",
   },
   {
     question:"Meeting Deadline  ",
     translation:"காலக்கெடு",
-    name:"question2",
+    name:"meeting_deadline",
   },
   {
     question:"Work Quality",
     translation:"வேலை தரம்",
-    name:"question3",
+    name:"work_quality",
   },
   {
     question:"Approach",
     translation:"அணுகுமுறை",
-    name:"question4",
+    name:"approach",
   },
 ];
 
@@ -521,87 +521,87 @@ export const collaboratorFeedbackQustions = [
   {
     question:"Main objectives of the proposal",
     translation:"நோக்கம்",
-    name:"question1",
+    name:"proposal_objective",
   },
   {
     question:"Review of the state-of-art in the field",
     translation:"துறையில் கலைநிலை ஆய்வு மதிப்பீடு",
-    name:"question2",
+    name:"state_of_art",
   },
   {
     question:"Detailed Methodology and Plan of Action",
     translation:"வழிமுறை மற்றும் செயல்திட்டம்",
-    name:"question3",
+    name:"methodology_and_action_plan",
   },
   {
     question:"Performance Milestones and Schedule",
     translation:"செயல்திறன் மைல்கல் மற்றும் அட்டவனை",
-    name:"question4",
+    name:"performance_milestone",
   },
   {
     question:"Deliverables",
     translation:"வழங்ககூடியவை",
-    name:"question5",
+    name:"deliverables",
   },
   {
     question:"Estimated Expenditure",
     translation:"மதிப்பிடப்பட்ட செலவு",
-    name:"question6",
+    name:"estimated_expenditure",
   },
   {
     question:"Appointment of Research Staff in time",
     translation:"சரியான நேரத்தில் ஆராய்ச்சி ஊழியர்களை நியமித்தல்",
-    name:"question7",
+    name:"appoinment_of_staffs",
   },
   {
     question:"Completion of Modules in time",
     translation:"தொகுதிகளை சரியான நேரத்தில் முடித்தல்",
-    name:"question8",
+    name:"completion_in_time",
   },
   {
     question:"Result achieved as expected",
     translation:"எதிர்பார்த்தபடி முடிவு அடையப்பட்டது",
-    name:"question9",
+    name:"expected_result",
   },
   {
     question:"Performance in periodical Reviews",
     translation:"காலமுறை மதிப்பாய்வில் செயல்திறன்",
-    name:"question10",
+    name:"review_performance",
   },
   {
     question:"Timely closure of the project",
     translation:"திட்டத்தைச் சரியான நேரத்தில் முடிப்பது",
-    name:"question11",
+    name:"project_closure_time",
   },
   {
     question:"Literature Collected",
     translation:"சேகரிக்கப்பட்ட ஆவணங்கள்",
-    name:"question12",
+    name:"literature_collected",
   },
   {
     question:"Final Technical Report(s)",
     translation:"இறுதி தொழில்நுட்ப அறிக்கை",
-    name:"question13",
+    name:"final_technical_report",
   },
   {
     question:"Hardware or Software developed",
     translation:"மென்பொருள் மற்றும் வன்பொருள்",
-    name:"question14",
+    name:"developed_hardware_or_software",
   },
   {
     question:"Deliverables as in Proposal",
     translation:"முன்மொழிவில் உள்ளபடி வழங்ககூடியவை",
-    name:"question15",
+    name:"proposal_deliverables",
   },
   {
     question:"Publications",
     translation:"வெளியீடு",
-    name:"question16",
+    name:"publications",
   },
   {
     question:"Patents",
     translation:"காப்புரிமை",
-    name:"question17",
+    name:"patents",
   },
 ];
 

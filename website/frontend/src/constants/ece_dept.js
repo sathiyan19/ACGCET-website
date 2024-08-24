@@ -238,7 +238,7 @@ const ece_dept_menu = [
   },
   {
     id: "13",
-    path: "/ecedept/ece_coe",
+    path: "/ecedept/Ece_elect_test_coe",
     link: "Electronics Test Engineering",
     arl: "l",
   },
