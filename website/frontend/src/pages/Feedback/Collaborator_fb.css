@@ -20,9 +20,20 @@
 
 }
 
+.collab_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
 .collab_fb_input, .collab_fb_select{
     width: 49%;
     padding: 15px;
+    margin-bottom: 10px;
+}
+input{
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 .collab_fb_input_lgrow{
@@ -38,28 +49,93 @@
 }
 
 .collab_fb_subheading{
-
-    font-size: 17px;
-    margin: 5px auto;
-    /* font-weight: bold; */
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 25px;
+  text-align: center;
 }
-.collab_fb_rating{
-    margin: 12px auto;
 
- 
+.collab_fb_instructions{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
 }
-.collab_fb_radio{
+
+.collab_fb_ratings {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    margin: 10px 0px;
-
-}
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  .collab_fb_ratings label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .collab_fb_ratings input {
+    margin-right: 5px;
+  }
+  
+  .collab_fb_ratings {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      padding: 5px;
+    }
+    
+    .collab_fb_ratings label {
+      display: flex;
+      align-items: center;
+    }
+  
+    .collab_fb_btn{
+      cursor: pointer;
+    }
+    
+    .custom-radio {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #00134d;
+      border-radius: 50%;
+      margin-right: 5px;
+      position: relative;
+      text-align: center;
+      line-height: 18px; 
+      font-size: 12px; 
+      color: #00134d;
+      background-color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    input[type="radio"]:checked + .custom-radio {
+        background-color: #00134d;
+        color: white; /* Change number color when selected */
+      }
+    
+    input[type="radio"] {
+      display: none;
+    }
+    
+    label {
+      display: flex;
+      align-items: center;
+    }
 .collab_fb_summit{
     margin-top: 15px;
 }
 
+@media (max-width: 600px) {
+  .collab_fb_row {
+    flex-direction: column;
+  }
 
+  .collab_fb_input, .collab_fb_select {
+    width: 100%;
+  }
+}
 
 
 
