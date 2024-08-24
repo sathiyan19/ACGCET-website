@@ -144,7 +144,7 @@ const Supplier_fb = () => {
                                             onChange={(e) => handleRatingChange(e, name)} 
                                             checked={ratings[name] === num} 
                                         />
-                                        <span className="supplier_custom-radio">{num}</span>
+                                        <span className="custom-radio">{num}</span>
                                     </label>
                                 ))}
                             </div>

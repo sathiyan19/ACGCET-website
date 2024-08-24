@@ -103,9 +103,103 @@ const consultancy_ratingsubmit = async (req, res) =>{
         res.status(500).json({ error: 'Database error' });
     }
 
-}
+};
+
+const collaborator_ratingsubmit = async (req, res) => {
+    const {
+        project_name,
+        funding_agency,
+        duration,
+        principal_invigilator,
+        authority_name,
+        ratings
+    } = req.body;
+    
+
+
+    const{
+        proposal_objective,
+        state_of_art,
+        methodology_and_action_plan,
+        performance_milestone,
+        deliverables,
+        estimated_expenditure,
+        appoinment_of_staffs,
+        completion_in_time,
+        expected_result,
+        review_performance,
+        project_closure_time,
+        literature_collected,
+        final_technical_report,
+        developed_hardware_or_software,
+        proposal_deliverables,
+        publications,
+        patents
+    }= ratings;
+
+    const insertQuery = `
+        INSERT INTO CollaboratorFeedback (
+            project_name,
+            funding_agency,
+            duration,
+            principal_invigilator,
+            authority_name,
+            proposal_objective,
+            state_of_art,
+            methodology_and_action_plan,
+            performance_milestone,
+            deliverables,
+            estimated_expenditure,
+            appoinment_of_staffs,
+            completion_in_time,
+            expected_result,
+            review_performance,
+            project_closure_time,
+            literature_collected,
+            final_technical_report,
+            developed_hardware_or_software,
+            proposal_deliverables,
+            publications,
+            patents
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `;
+
+    try {
+        const [results] = await pool.query(insertQuery, [
+        project_name,
+        funding_agency,
+        duration,
+        principal_invigilator,
+        authority_name,
+        proposal_objective,
+        state_of_art,
+        methodology_and_action_plan,
+        performance_milestone,
+        deliverables,
+        estimated_expenditure,
+        appoinment_of_staffs,
+        completion_in_time,
+        expected_result,
+        review_performance,
+        project_closure_time,
+        literature_collected,
+        final_technical_report,
+        developed_hardware_or_software,
+        proposal_deliverables,
+        publications,
+        patents
+        ]);
+
+        res.status(200).json({ message: 'Ratings submitted successfully',results });
+    } 
+    catch (err) {
+        console.error('Error inserting data:', err);
+        res.status(500).json({ error: 'Database error' });
+    }
+};
 
 module.exports = {
     supplier_ratingsubmit,
-    consultancy_ratingsubmit
+    consultancy_ratingsubmit,
+    collaborator_ratingsubmit,
 };

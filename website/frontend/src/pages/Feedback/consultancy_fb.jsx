@@ -3,7 +3,6 @@ import './Consultancy_fb.css';
 import { Backtotop, Underline } from "../../widgets";
 import { consultancyFeedbackQuestions } from "../../constants/feedbackQuestions";
 import axios from 'axios';
-// import {isValid, parseISO} from 'date-fns'
 
 const Consultancy_fb = () => {
   const [department, setDepartment] = useState('');
