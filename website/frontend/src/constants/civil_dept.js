@@ -1,5 +1,5 @@
 import prakash from '../assets/pictures/Prakash.webp'
-
+//
 const ravena ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/Raveena+A_+Civil.webp"
 
 const swayam ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
