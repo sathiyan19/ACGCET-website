@@ -417,6 +417,7 @@ const cse_labs=[
 //       "faculty and staff promote the intellectual, professional, social, and personal development of its students through innovations in learning, scholarship, and creative endeavours. Students, faculty, and staff partner to create strong"+
 //       "engagement with the local, national, and global communities. The institution dedicates itself to academic vitality, integrity, and diversity."
 //   },
+//
 // ]
 
 const cse_stud_data = [
