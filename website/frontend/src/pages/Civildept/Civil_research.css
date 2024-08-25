@@ -1,0 +1,35 @@
+
+.civil_res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.civil_res_table{
+    width: 80%;
+    margin-bottom: 20px;
+    /* overflow-x: scroll; */
+    /* padding: 20px 30px; */
+}
+.civil_res_table{
+    overflow-x:scroll ;
+}
+
+.civil_super{
+    color: #00134d;
+}
+@media (max-width:650px){
+    .civil_res_table{
+        width:90%;
+    }
+}
+@media (max-width:450px){
+    .civil_res_table{
+        width:100%;
+    }
+}
+@media (max-width:450px){
+    .civil_res_table{
+        overflow-x:scroll ;
+    }
+}

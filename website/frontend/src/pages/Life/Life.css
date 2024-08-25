@@ -1,0 +1,242 @@
+.life_at_acgcet_holder{
+    padding: 20px;
+}
+
+.life_grid_holder{
+    margin: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.life_crd_content{
+    padding: 20px;
+}
+
+.life_text_1,.life_text_6{
+    color: black;
+}
+.life_text_2,.life_text_5,.life_text_7,.life_text_9{
+    color: #00134d;
+}
+.life_text_3,.life_text_4,.life_text_8{
+    color: #e5e4e0;
+    /* color: white; */
+}
+
+.life_head{
+    font-size: 32px;
+    /* color: black; */
+    margin-bottom: 20px;
+}
+
+.life_crd_writing{
+    font-size: 18px;
+    /* color: black; */
+    text-align: justify;
+    line-height: 1.5rem;
+    text-indent: 20px;
+}
+
+.life_image{
+    width: 100%;
+    height: auto;
+}
+
+.life_item1{
+    background-color: #e5e4e0;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+.life_item2{
+    background-color: #d9edff;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.life_item3{
+    background-color: #00134d;
+    grid-column: span 1;
+    grid-row: span 3;
+}
+.life_item4{
+    background-color: #00134d;
+    grid-column: span 2;
+    grid-row: span 3;
+}
+.life_item5{
+    background-color: #d9edff;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.life_item6{
+    background-color: #e5e4e0;
+    grid-column: span 4;
+    grid-row: span 3;
+}
+.life_item7{
+    background-color: #d9edff;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.life_item8{
+    background-color: #00134d;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.life_item9{
+    background-color: #d9edff;
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.change_cross_text_900{
+    display: none;
+}
+
+.life_read_more{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.life_read_link{
+    /* color: black; */
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.read_link_1,.read_link_6{
+    color: black;
+}
+
+.read_link_1:hover,.read_link_6:hover{
+    color: black;
+}
+
+.read_link_2,.read_link_5,.read_link_7,.read_link_9{
+    color: #00134d;
+}
+
+.read_link_2:hover,.read_link_5:hover,.read_link_7:hover,.read_link_9:hover{
+    color: #00134d;
+}
+.read_link_3,.read_link_4,.read_link_8{
+    color: #e5e4e0;
+}
+
+.read_link_3:hover,.read_link_4:hover,.read_link_8:hover{
+    color: #e5e4e0;
+}
+
+.life_read_link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6600;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .life_read_link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  @media(max-width:1350px){
+    .life_item3{
+        background-color: #d9edff;
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    .life_item5{
+        background-color: #00134d;
+        grid-column: span 2;
+        grid-row:  span 1;
+    }
+    .life_item6{
+        grid-column: span 3;
+    }
+    .life_item7{
+        grid-column: span 2;
+    }
+    .life_item8{
+        background-color: #e5e4e0;
+        grid-column: span 3;
+    }
+    .life_item9{
+        grid-column: span 2;
+    }
+    .life_text_3{
+        color: #00134d;
+    }
+    .read_link_3,.read_link_3:hover{
+        color: #00134d;
+    }
+    .life_text_5{
+        color: #e5e4e0;
+    }
+    .read_link_5,.read_link_5:hover{
+        color: #e5e4e0;
+    }
+    .life_text_8{
+        color: black;
+    }
+    .read_link_8,.read_link_8:hover{
+        color: black;
+    }
+  }
+
+  @media(max-width:900px){
+    .change_cross_text_900{
+        display: block;
+    }
+    .change_cross_text_lap{
+        display: none;
+    }
+  }
+
+  @media(max-width:800px){
+    .life_grid_holder{
+        margin: 0px;
+    }
+    .life_head{
+        font-size: 26px;
+    }
+  }
+  @media(max-width:650px){
+    .life_crd_writing{
+        font-size: 16px;
+        text-indent: 20px;
+    }
+  }
+  @media(max-width:600px){
+    .life_item1,
+    .life_item2,
+    .life_item3,
+    .life_item4,
+    .life_item5,
+    .life_item6,
+    .life_item7,
+    .life_item8,
+    .life_item9{
+        grid-column: span 5;
+    }
+    .change_cross_text_900{
+        display: none;
+    }
+    .change_cross_text_lap{
+        display: block;
+    }
+    .life_at_acgcet_holder{
+        margin-top: 30px;
+        padding: 10px;
+    }
+  }

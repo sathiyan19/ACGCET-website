@@ -1,0 +1,81 @@
+.missionchip {
+  padding: 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.missionchip h1 {
+  color: #00134d;
+  font-weight: 500;
+}
+
+.missionhead {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.missionlogosec {
+  color: #00134d;
+  font-size: 50px;
+}
+.missionlogo {
+  fill: #00134d;
+}
+
+.missionholder {
+  display: flex;
+  margin-right: 200px;
+}
+
+.missionchip ul {
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.missionchip ul li {
+  line-height: 1.5rem;
+  font-size: 18px;
+  text-align: justify;
+  color: black;
+  list-style-type: none;
+  position: relative; /* Create a positioning context */
+  padding-left: 28px;
+}
+
+.missionchip ul li::before {
+  content: ""; /* Create an empty content for the pseudo-element */
+  display: inline-block;
+  width: 16px; /* Adjust the dimensions as needed */
+  height: 16px;
+  background-image: url("https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/nss/nss/quote1.webp");
+  background-size: cover; /* Adjust to your preference */
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 800px) {
+  .missionholder {
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .missionlogosec {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .missionholder {
+    margin-right: 0;
+  }
+}
+
+@media(max-width:500px){
+    .missionchip ul li {
+        font-size: 16px;
+    }
+}

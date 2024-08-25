@@ -1,0 +1,427 @@
+.teqip1_heading{
+  /* font-weight: 500;
+  color:#00134d; */
+  margin-top: 50px;
+  margin-left: 20px;
+  /* font-size: 40px; */
+  
+}
+
+.teqip1_obj {
+  font-weight: 500;
+  color:#00134d;
+  margin-top: 60px;
+  margin-left: 40px;
+  font-size: 26px;
+}
+
+.teqip1_content{
+  border-radius:5px ;
+  margin-top:30px;
+  margin-left: 70px ;
+  margin-right: 70px;
+  background-color:#D9EDFF ;
+  box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+  4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+  15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+  29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+  70px 70px 80px rgba(0, 0, 0, 0.02);
+}
+
+.teqip1_content p{
+  color:black;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+
+
+.teqip1_tab{
+  /* margin: 380px 20px 20px 20px;*/
+  /* 
+  display:flex;
+  align-items: center;
+  justify-content: center; */
+
+    margin: 280px;
+    margin-top: 380px;
+    margin-bottom: 50px; 
+}
+
+/* .teqip1_inner1{
+  display:none;
+  height:100px;
+  width:150px;
+  position: relative;
+  background-color: #00134d;
+  top:60px;
+  left:1000px;
+  border-radius:15px ;
+}
+.teqip1_inner2{
+  height:100px;
+  width:150px;
+  position: relative;
+  background-color:#00134d;
+  z-index:0;
+  top:110px;
+  left:50px;
+  border-radius:15px ;
+  display:none;
+} */
+
+.teqip1_inner{
+
+box-shadow:1.9px 1.9px 2.2px rgba(0, 0, 0, 0.07),
+4.7px 4.7px 5.3px rgba(0, 0, 0, 0.05), 8.8px 8.8px 10px rgba(0, 0, 0, 0.042),
+15.6px 15.6px 17.9px rgba(0, 0, 0, 0.035),
+29.2px 29.2px 33.4px rgba(0, 0, 0, 0.028),
+70px 70px 80px rgba(0, 0, 0, 0.02);
+  margin-top:30px;
+  margin-left: 60px ;
+  margin-right: 70px;
+  position:absolute;
+  z-index: 2;
+  background-color:#D9EDFF ;
+  border-radius:5px ;
+}
+
+.teqip1_inner p li{
+  color:black;
+  margin:20px;
+  line-height: 1.5rem;
+  
+}
+
+/* .teqip1_tab th:nth-child(1),
+.teqip1_tab td:nth-child(1) {
+        width: 8%; 
+  } 
+
+.teqip1_tab th:nth-child(3),
+.teqip1_tab td:nth-child(3) {
+      width: 5%; 
+      
+  } */
+  .teqip1_tab td:nth-child(3) 
+  {
+    text-align: right;
+  }
+/* 
+  .teqip1_tab th:nth-child(2),
+  .teqip1_tab td:nth-child(2) {
+    width: 25%; 
+  } */
+  @media (max-width: 1440px){
+    .teqip1_tab{
+      width:50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  .teqip1_tab th:nth-child(2),
+  .teqip1_tab td:nth-child(2) {
+    width: 50%; 
+  }
+.teqip1_tab th:nth-child(3),
+.teqip1_tab td:nth-child(3) {
+      width: 5%;   
+  } 
+  .teqip1_tab th:nth-child(1),
+.teqip1_tab td:nth-child(1) {
+        width: 8%; 
+  } 
+  }
+  
+  @media (max-width: 1100px){
+    .teqip1_tab{
+      width:60%;
+      margin:350px auto 70px auto;  
+    }
+    /* .teqip1_tab th:nth-child(3),
+    .teqip1_tab td:nth-child(3) {
+      width: 5%;     
+    }
+    .teqip1_tab th:nth-child(2),
+    .teqip1_tab td:nth-child(2) {
+      width: 25%; 
+    }
+    .teqip1_tab th:nth-child(1),
+    .teqip1_tab td:nth-child(1) {
+        width: 8%; 
+  }  */
+  }
+
+  @media (max-width: 900px){
+    .teqip1_content{
+      margin:20px;
+    }
+
+    /* .teqip1_inner1{
+      display:none;
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:10px;
+      left:605px;
+      border-radius:15px ;
+    }
+
+    .teqip1_inner2{
+      display:none;
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      top:80px;
+      right:5px;
+      left:10px;
+      border-radius:15px ;
+    } */
+  
+    .teqip1_inner{
+      border-radius:5px ;
+      margin-top:80px;
+      margin:20px;
+      background-color:#D9EDFF ;
+    }
+
+    .teqip1_inner p li{
+      color:black;
+      margin:20px;
+      line-height: 1.5rem;
+    }
+
+    .teqip1_tab{
+      margin:350px auto 70px auto;   
+    }
+
+    .teqip1_obj{
+      font-weight: 500;
+      color:#00134d;
+      margin-top: 40px;
+    }
+    
+  }
+
+  @media (max-width: 640px) {
+    .teqip1_tab{
+      margin:400px auto 20px auto;
+      overflow-x: auto;
+      width:90%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .teqip1_tab{
+      margin:460px auto 20px auto;
+      /* overflow-x: scroll; */
+      width:90%;
+    }
+    ::-webkit-scrollbar  {
+      width: 5px !important;
+    }
+    ::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 1px #152029 !important;
+      border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background:#00134d ;
+      border-radius: 15px;
+      width:2px;
+      height: 10px; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #aaa;
+    }
+
+    .teqip1_inner{
+      border-style: none;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .teqip1_tab{
+      margin:460px auto 20px auto;
+      overflow-x: auto;
+      width:90%;
+    }
+    ::-webkit-scrollbar  {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 5px #152029;
+      border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background:#00134d ;
+      border-radius: 15px;
+      width:2px; /* width of the thumb */
+      height: 10px; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #aaa;
+    }
+
+    .teqip1_inner{
+      border-style: none;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .teqip1_tab{
+      margin:600px auto 20px auto;
+      overflow-x: scroll;
+    }
+  }
+  @media (max-width: 290px) {
+    .teqip1_tab{
+      margin:690px auto 20px auto;
+      overflow-x:scroll;
+    }
+  }
+
+
+    /* ::-webkit-scrollbar  {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 5px #152029;
+      border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background:#00134d ;
+      border-radius: 15px;
+      width:2px; 
+      height: 10px; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #aaa;
+    }
+
+    .teqip1_inner{
+      border-style: none;
+    } */
+  /* @media only screen and (max-width: 425px) {
+    .teqip1_tab{
+     overflow-x: hidden;
+    } 
+    ::-webkit-scrollbar  {
+      width: 0px;
+      display: none;
+    }
+    ::-webkit-scrollbar-track{
+     box-shadow: inset 0 0 5px #152029;
+      border-radius: 15px; 
+      display:none ;
+    }
+  } */
+
+  /* @media only screen and (min-width:375px ) and (max-width:426px){
+    .teqip1_tab{
+      margin:10px ;
+      margin-top:300px;  
+    }
+    .teqip1_inner1{
+      display:none;
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:8px;
+      left:265px;
+      border-radius:15px ;
+    }
+    .teqip1_inner2{
+      display:none;
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      top: 250px;
+      border-radius:15px ;
+    }
+    .teqip1_obj{
+      margin-bottom: 25px;
+    }
+  } */
+  /* @media only screen and (min-width:320px ) and (max-width:376px){
+    
+    .teqip1_tab{
+      margin:10px ;
+      margin-top:300px;  
+    }
+    
+    .teqip1_inner1{
+      display:none;
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:10px;
+      left:215px;
+      border-radius:15px ;
+    }
+    .teqip1_inner2{
+      display:none;
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      top: 275px;
+      border-radius:15px ;
+    }
+  } */
+
+  /* @media (max-width: 320px){
+    
+
+    .teqip1_tab{
+      margin-top:370px ; 
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    
+
+    .teqip1_inner1{
+      display:none;
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color: #00134d;
+      top:10px;
+      left:160px;
+      border-radius:15px ;
+    }
+    .teqip1_inner2{
+      display:none;
+      height:100px;
+      width:150px;
+      position: relative;
+      background-color:#00134d;
+      top: 345px;
+      bottom: 3px;
+      right:5px;
+      left:10px;
+      border-radius:15px ;
+    }
+  
+    .teqip1_inner{
+      border-radius:5px ;
+      margin-top:80px;
+      margin:20px;
+      z-index:1;
+      background-color:#D9EDFF ;
+      border-style: ridge;
+      border-radius:15px ;
+    }
+    .teqip1_obj{
+      margin-bottom: 25px;
+    }
+  }
+
+ 
+    
+   
+   */

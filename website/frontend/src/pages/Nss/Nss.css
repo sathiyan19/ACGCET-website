@@ -1,0 +1,346 @@
+.nsspara {
+  padding: 10px;
+  margin-top:10px;
+}
+.nsstherila{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+  }
+.nssparacont{
+    width: 78%;
+  }
+.nssparacont_p{
+    line-height: 1.5rem;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+  }
+.nssparalogo {
+    width: 20%;
+  }
+.nssflexlogo{
+    width: 100%;
+    height: auto;
+  }
+.mosec {
+  display: flex;  
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+.mottonss{
+  height: 350px;
+}
+.mottotext {
+  display: flex;
+  flex-direction: column;
+}
+.q1 {
+  margin-left: 10px;
+}
+.q2 {
+  margin-left: 400px;
+}
+.q1,.q2{
+  height: 100px;
+  width: 100px;
+}
+.mottotext_h2{
+  margin-left: 120px;
+  color: black;
+  margin-top: 10px;
+}
+.mottohead {
+  margin-top: 28px;
+  background-color: #00134d;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mottohead_h1{
+    color: white;
+}
+
+
+.nssofficers {
+  margin-top: 10px;
+  padding: 20px;
+}
+.nsscardholder {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nsscards {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+.nssgallerysec{
+  padding: 20px;
+}
+  .nssworkslide{
+    width: 70%;
+  }
+  .nssworkflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+ 
+  .nsstime{
+    padding: 20px;
+
+   }
+   .nsstime1_h3{
+    color: #00134d;
+    /* font-size: large; */
+  }
+  .nsstime1_p{
+    line-height: 1.5rem;
+    color:black;
+    font-size: 18px;
+    text-align: justify;
+  }
+  
+
+
+  
+  .nssloga{
+    padding: 20px;
+  }
+  .nssloga_p{
+      color: black;
+      line-height: 1.5rem;
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    .nssawardslide{
+      display:flex;
+      border-radius: 20px;
+      border-left: 5px solid #00134d;
+      margin-top: 20px;
+      justify-content:space-evenly;
+      align-items: center;
+      background-color: #f1f1f1;
+      /* .nssawardtext{
+        width: 50%;
+        >h5{
+          font-size: 70px;
+          color: #00134d;
+         
+        }
+        >p{
+          
+          color: black;
+          font-size: 20px;
+          line-height: 1.5rem;
+          text-align: center;
+        }
+      } 
+      .nssawardpics{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }*/
+    }
+  
+
+
+.nssachieve{
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width:1050px){
+  
+    .nsswork{
+      display:none
+    }
+    .nssworkslide{
+      width: 100% !important;
+    }
+  
+}
+
+@media (max-width:950px){
+  
+    .nssparacont{
+      width: 72%;
+    }
+    .nssparalogo{
+      width:25%;
+    }
+  
+}
+
+@media (max-width: 768px) {
+  .mosec {
+    height: 300px;
+  }
+
+  .mottoimg img {
+    height: 300px;
+  }
+
+  
+    .q1,.q2{
+      width: 70px;
+      height: 70px;
+    }
+    .q2 {
+      margin-left: 380px;
+    }
+  
+
+  .mottohead {
+    height: 60px;
+    margin-top: 44px;
+  }
+
+  .nsstherila{
+    flex-direction: column-reverse;
+    padding: 0;
+    
+  }
+  .nssparacont{
+      width: 100%;
+    }
+    .nssparalogo{
+      padding-bottom: 10px;
+    }
+
+
+
+  .nsscards {
+    width: 100% !important;
+  }
+
+  /* .nssloga{
+    .nssawardtable{
+      overflow-x: scroll;
+    }
+  } */
+
+}
+
+@media (max-width: 600px) {
+  .mosec {
+    flex-direction: column;
+    height: 600px;
+    margin: 0px 30px 30px 30px;
+  }
+  .nssawardtable{
+    overflow-x: scroll;
+  }
+
+
+    .q1,.q2{
+      width: 30px;
+      height: 30px;
+    }
+    .mottotext_h2{
+      margin-left: 40px;
+    }
+    .q1 {
+      margin-left: 5px;
+      margin-top: 20px;
+    }
+    .q2 {
+      margin-left: 250px;
+    }
+  
+
+  
+    .nssparalogo{
+      width: 40%;
+    }
+  
+
+
+
+ 
+    /* .pohead {
+      > h1 {
+        font-size: 30px;
+      }
+    } */
+    .nsscards {
+      flex-direction: column;
+    }
+  
+
+  .nssgallerysec{
+    padding: 10px;
+    
+  }
+  .nsstime{
+      padding: 0;
+    }
+
+
+  .nssloga{
+    padding: 0 !important;
+  }
+
+
+  /* .nssachieve{
+    overflow-x: scroll;
+  } */
+}
+
+@media (max-width:500px){
+  
+
+  .nssparacont_p{
+          font-size: 16px ;
+  }
+  
+    .nsstime.nsstime1_p{
+        font-size: 16px;
+      }
+    
+    .nssloga_p{
+        font-size: 16px;
+    }
+  
+
+}
+
+
+
+@media (max-width: 405px){
+  
+    .nsstherila{
+      padding: 10px;
+      
+    }
+    .nssparalogo{
+        width: 50%;
+      }
+      .nssachieve{
+        padding: 5px;
+        width: 100%;
+      }
+  
+
+  /* .nssachieve{
+    padding:0px; 
+    width:100%; 
+    
+    
+  }*/
+
+}

@@ -1,0 +1,47 @@
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url("../../assets/pictures/eee_about.webp");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.clubs_hero {
+  height: 600px;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-weight: bolder;
+  font-size: 60px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    top: 80%;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .clubs_hero{
+    height: 300px;
+  }
+}
