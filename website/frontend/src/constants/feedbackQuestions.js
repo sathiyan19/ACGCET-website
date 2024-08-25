@@ -450,73 +450,6 @@ export const parentFeedbackQuestions = [
   },
 ];
 
-export const consultancyFeedbackQuestions = [
-  {
-    question:"Consultancy Fee     ",
-    translation:" நிறுவன கட்டணம் ",
-    name:"consultancy_fee",
-  },
-  {
-    question:"Meeting Deadline  ",
-    translation:"காலக்கெடு",
-    name:"meeting_deadline",
-  },
-  {
-    question:"Work Quality",
-    translation:"வேலை தரம்",
-    name:"work_quality",
-  },
-  {
-    question:"Approach",
-    translation:"அணுகுமுறை",
-    name:"approach",
-  },
-];
-
-export const supplierFeedbackQuestions = [
-  {
-    question: "Procurement process",
-    translation: "கொள்முதல் செயல்முறை",
-    name: "procurement_process",
-  },
-  {
-    question: "Payment process",
-    translation: "கட்டண செயல்முறை",
-    name: "payment_process",
-  },
-  {
-    question: "Staff members’ professionalism",
-    translation: "ஊழியகர்களின் தொழில்முறை",
-    name: "staff_professionalism",
-  },
-  {
-    question: "Supplier's receipt process",
-    translation: "சப்ளையர் ரசீது செயல்முறை",
-    name: "receipt_process",
-  },
-  {
-    question: "Paper work process",
-    translation: "காகிதவேலை செயல்முறை",
-    name: "paperwork_process",
-  },
-  {
-    question: "Ability to provide efficient and effective communication at all levels",
-    translation: "அனைத்து நிலைகளில் திறமையான மற்றும் பயனுள்ள தகவல்தொடர்புகளை வழங்குவதர்கான இருப்பு",
-    name: "communication_efficiency",
-  },
-  {
-    question: "Levels of ethical practice and support",
-    translation: "நெறிமுறை,நடைமுறை மற்றும் ஆதரவு நிலைகள்",
-    name: "ethical_practices",
-  },
-  {
-    question: "Business relationship with you",
-    translation: "வணிக உறவு",
-    name: "business_relationship",
-  },
-];
-
-
 export const collaboratorFeedbackQustions = [
   {
     question:"Main objectives of the proposal",
@@ -537,6 +470,36 @@ export const collaboratorFeedbackQustions = [
     question:"Performance Milestones and Schedule",
     translation:"செயல்திறன் மைல்கல் மற்றும் அட்டவனை",
     name:"performance_milestone",
+  },
+  {
+    question:"Deliverables",
+    translation:"வழங்ககூடியவை",
+    name:"deliverables",
+  },
+  {
+    question:"Estimated Expenditure",
+    translation:"மதிப்பிடப்பட்ட செலவு",
+    name:"estimated_expenditure",
+  },
+  {
+    question:"Appointment of Research Staff in time",
+    translation:"சரியான நேரத்தில் ஆராய்ச்சி ஊழியர்களை நியமித்தல்",
+    name:"appoinment_of_staffs",
+  },
+  {
+    question:"Completion of Modules in time",
+    translation:"தொகுதிகளை சரியான நேரத்தில் முடித்தல்",
+    name:"completion_in_time",
+  },
+  {
+    question:"Result achieved as expected",
+    translation:"எதிர்பார்த்தபடி முடிவு அடையப்பட்டது",
+    name:"expected_result",
+  },
+  {
+    question:"Performance in periodical Reviews",
+    translation:"காலமுறை மதிப்பாய்வில் செயல்திறன்",
+    name:"review_performance",
   },
   {
     question:"Deliverables",
@@ -608,95 +571,73 @@ export const collaboratorFeedbackQustions = [
 
 
 
+export const supplierFeedbackQuestions = [
+  {
+    question: "Procurement process",
+    translation: "கொள்முதல் செயல்முறை",
+    name: "procurement_process",
+  },
+  {
+    question: "Payment process",
+    translation: "கட்டண செயல்முறை",
+    name: "payment_process",
+  },
+  {
+    question: "Staff members’ professionalism",
+    translation: "ஊழியகர்களின் தொழில்முறை",
+    name: "staff_professionalism",
+  },
+  {
+    question: "Supplier's receipt process",
+    translation: "சப்ளையர் ரசீது செயல்முறை",
+    name: "receipt_process",
+  },
+  {
+    question: "Paper work process",
+    translation: "காகிதவேலை செயல்முறை",
+    name: "paperwork_process",
+  },
+  {
+    question: "Ability to provide efficient and effective communication at all levels",
+    translation: "அனைத்து நிலைகளில் திறமையான மற்றும் பயனுள்ள தகவல்தொடர்புகளை வழங்குவதர்கான இருப்பு",
+    name: "communication_efficiency",
+  },
+  {
+    question: "Levels of ethical practice and support",
+    translation: "நெறிமுறை,நடைமுறை மற்றும் ஆதரவு நிலைகள்",
+    name: "ethical_practices",
+  },
+  {
+    question: "Business relationship with you",
+    translation: "வணிக உறவு",
+    name: "business_relationship",
+  },
+];
 
-  export const collab_fb = [
-    {
+export const consultancyFeedbackQuestions = [
+  {
+    question:"Consultancy Fee     ",
+    translation:" நிறுவன கட்டணம் ",
+    name:"consultancy_fee",
+  },
+  {
+    question:"Meeting Deadline  ",
+    translation:"காலக்கெடு",
+    name:"meeting_deadline",
+  },
+  {
+    question:"Work Quality",
+    translation:"வேலை தரம்",
+    name:"work_quality",
+  },
+  {
+    question:"Approach",
+    translation:"அணுகுமுறை",
+    name:"approach",
+  },
+];
 
-      question:"Main objectives of the proposal",
-      translation:"நோக்கம்",
-      name:"question 1",
 
-    },
-    {
-      question: "Review of the state-of-the-art in the field",
-      translation: "துறையில் கலைநிலை ஆய்வு மதிப்பீடு",
-      name: "question 2",
-    },
-    {
-      question: "Detailed Methodology and Plan of Action",
-      translation: "வழிமுறை மற்றும் செயல்திட்டம்",
-      name: "question 3",
-    },
-    {
-      question: "Performance Milestones and Schedule",
-      translation: "செயல்திறன் மைல்கல் மற்றும் அட்டவனை",
-      name: "question 4",
-    },
-    {
-      question: "Deliverables",
-      translation: "வழங்ககூடியவை",
-      name: "question 5",
-    },
-    {
-      question: "Estimated Expenditure",
-      translation: "மதிப்பிடப்பட்ட செலவு",
-      name: "question 6",
-    },
-    {
-      question: "Appointment of Research Staff in time",
-      translation: "சரியான நேரத்தில் ஆராய்ச்சி ஊழியர்களை நியமித்தல்",
-      name: "question 7",
-    },
-    {
-      question: "Completion of Modules in time",
-      translation: "தொகுதிகளை சரியான நேரத்தில் முடித்தல்",
-      name: "question 8",
-    },
-    {
-      question: "Result achieved as expected",
-      translation: "எதிர்பார்த்தபடி முடிவு அடையப்பட்டது",
-      name: "question 9",
-    },
-    {
-      question: "Performance in periodical Reviews",
-      translation: "காலமுறை மதிப்பாய்வில் செயல்திறன்",
-      name: "question 10",
-    },{
-      question: "Timely closure of the project",
-      translation: "திட்டத்தைச் சரியான நேரத்தில் முடிப்பது",
-      name: "question 11",
-    },
-    {
-      question: "Literature Collected",
-      translation: "சேகரிக்கப்பட்ட ஆவணங்கள்",
-      name: "question 12",
-    },
-    {
-      question: "Final Technical Report(s)",
-      translation: "இறுதி தொழில்நுட்ப அறிக்கை",
-      name: "question 13",
-    },
-    {
-      question: "Hardware or Software developed",
-      translation: "மென்பொருள் மற்றும் வன்பொருள்",
-      name: "question 14",
-    },
-    {
-      question: "Deliverables as in Proposal",
-      translation: "முன்மொழிவில் உள்ளபடி வழங்ககூடியவை",
-      name: "question 15",
-    },{
-      question: "Publications",
-      translation: "வெளியீடு",
-      name: "question 16",
-    },
-    {
-      question: "Patents",
-      translation: "காப்புரிமை",
-      name: "question 17",
-    },
-
-  ];
 
   export const std_teach_fb_data=[
     

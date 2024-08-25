@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const {generatePdfAndSendEmail}= require("./feedback_download.js")
-const {ratingsubmit,parentsfeedbackSubmit, EmployeeFeedbackSubmit} =require("./feedback.js")
+const {ratingsubmit,parentsfeedbackSubmit, EmployeeSubmit, consultancy_ratingsubmit,collaborator_ratingsubmit} =require("./feedback.js")
 const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP, sendquery}=require("./otp.js")
 const {dashboard}=require("./protected_routes.js")
@@ -38,14 +38,16 @@ router.post('/api/resresult',res_result)
 router.post('/api/getsemlist',get_sem_list)
 
 router.post('/api/sendquery',sendquery)
+
 router.post('/api/parentsfeedbacksubmit', parentsfeedbackSubmit)
-router.post('/api/ EmployeeFeedbackSubmit',  EmployeeFeedbackSubmit)
 
-router.post('/api/supplier_ratingsubmit',supplier_ratingsubmit);
+router.post('/api/employeefeedbacksubmit',  EmployeeSubmit)
+router.post('/api/consultancy_ratingsubmit', consultancy_ratingsubmit )
+router.post('/api/collaborator_ratingsubmit', collaborator_ratingsubmit )
 
-router.post('/api/consultancy_ratingsubmit',consultancy_ratingsubmit);
+router.post('/api/ratingsubmit',ratingsubmit);
 
-router.post('/api/collaborator_ratingsubmit',collaborator_ratingsubmit);
+
 
 router.post('/api/generate_pdf',generatePdfAndSendEmail);
 

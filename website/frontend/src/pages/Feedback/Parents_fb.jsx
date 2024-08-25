@@ -185,7 +185,7 @@ const ParentsFeedback = () => {
                 </div>
             </form>
             <Backtotop />
-            <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> {/* Render AlertModal */}
+            <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
         </div>
     );
 };

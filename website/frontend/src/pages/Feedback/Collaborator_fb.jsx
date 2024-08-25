@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Collaborator_fb.css";
-import { Backtotop, Underline } from '../../widgets';
+import { Backtotop, Underline,Alertmessage} from '../../widgets';
 import { collaboratorFeedbackQustions } from '../../constants/feedbackQuestions';
 import axios from 'axios';
 
@@ -12,6 +12,7 @@ const Collaborator_fb = () => {
     const [authorityName, setAuthorityName] = useState('');
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
+    const [alertMessage, setAlertMessage] = useState('');
 
     useEffect(() => {
         document.title = 'ACGCET-Collaborator-Feedback';
@@ -32,7 +33,7 @@ const Collaborator_fb = () => {
     const handleRatingChange = (e, name) => {
         setRatings(prevRatings => ({
           ...prevRatings,
-          [name]: parseInt(e.target.value)
+          [name]: parseInt(e.target.value,10)
         }));
         setRatingErrors(prevErrors => ({
           ...prevErrors,
@@ -57,7 +58,7 @@ const Collaborator_fb = () => {
           });
     
           console.log(response.data);
-          alert("Feedback submitted successfully");
+          setAlertMessage("Feedback submitted successfully");
     
           // Clear the form after submission
           setProjectName('');
@@ -69,9 +70,10 @@ const Collaborator_fb = () => {
           setRatingErrors({});
         } catch (error) {
           console.error('Error:', error);
-          alert("An error occurred while submitting your ratings");
+          setAlertMessage("An error occurred while submitting your ratings");
         }
     };
+    const handleCloseAlert = () => setAlertMessage('');
 
     return (
         <div className='collab_fb_body'>
@@ -120,7 +122,12 @@ const Collaborator_fb = () => {
                         <div className="collab_fb_ratings">
                             {[1, 2, 3, 4, 5].map(num => (
                                 <label key={num}>
-                                <input type="radio" name={name} value={num} onChange={(e) => handleRatingChange(e, name)} checked={ratings[name] === num} 
+                                <input type="radio"
+                                 name={name} 
+                                 value={num} 
+                                 onChange={(e) => handleRatingChange(e, name)}
+                                  checked={ratings[name] === num} 
+                                  required
                                 />
                                 <span className="custom-radio">{num}</span>
                                 </label>
@@ -139,6 +146,7 @@ const Collaborator_fb = () => {
                 
             </form>
             <Backtotop />
+            <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
         </div>
     );
 };

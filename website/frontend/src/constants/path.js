@@ -39,7 +39,7 @@ const top_nav_paths = [
       { path: "/academic-calendar", link: "Academic Calendar" },
       {path:"coe",link:"Autonomous Office"},
       {path:"/research",link:"Research"},
-      // {path:"/feedback/Feedback",link:"Feedback"},
+      {path:"/feedback/Feedback",link:"Feedback"},
       
       // {path:"/feedback/Student_fb",link:"Feedback"},
 

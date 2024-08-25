@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Employer_fb.css';
-import { Backtotop, Underline,Alertmessage } from "../../widgets";
+import { Backtotop, Underline, Alertmessage} from "../../widgets";
 import { employerFeedbackQuestions } from "../../constants/feedbackQuestions";
 import axios from 'axios';
 
@@ -48,6 +48,7 @@ const EmployeeFeedback = () => {
         setter(name);
         validateName(name);
     };
+    
 
     const handleRatingChange = (e, name) => {
         setRatings(prevRatings => ({
@@ -69,6 +70,7 @@ const EmployeeFeedback = () => {
         if (!isNameValid || !areRatingsValid) {
             return;
         }
+        
 
         try {
             const response = await axios.post('/api/employeefeedbacksubmit', {
@@ -83,9 +85,9 @@ const EmployeeFeedback = () => {
                 current_position: currentPosition,
                 responsibilities: responsibilities,
                 achievements_awards: achievements,
-                ratings:ratings // Spread ratings directly
+                ratings: ratings
             });
-
+            
             console.log(response.data);
             setAlertMessage("Feedback submitted successfully");
             setHrName('');
@@ -102,9 +104,9 @@ const EmployeeFeedback = () => {
             setRatings({});
             setRatingErrors({});
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Error:', error.response ? error.response.data : error.message);
             setAlertMessage("An error occurred while submitting your feedback");
-        }
+        }    
     };
     const handleCloseAlert = () => setAlertMessage('');
     return (
@@ -128,6 +130,8 @@ const EmployeeFeedback = () => {
                         onChange={(e) => setCompanyName(e.target.value)}
                         required 
                     />
+                    {nameError && <p className="error">{nameError}</p>}
+
                 </div>
                 <div className='employer_fb_row'>
                     <input 
@@ -251,7 +255,7 @@ const EmployeeFeedback = () => {
                 </div>
             </form>
             <Backtotop />
-            <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> {/* Render AlertModal */}
+            <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
         </div>
     );
 };
