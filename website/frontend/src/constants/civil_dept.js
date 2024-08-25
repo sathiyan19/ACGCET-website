@@ -1,3 +1,5 @@
+import prakash from '../assets/pictures/Prakash.webp'
+//
 const ravena ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/Raveena+A_+Civil.webp"
 
 const swayam ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
@@ -162,6 +164,15 @@ const civ_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1CN75Jy44sBNcD3zovqYjKMTT-nAT8yqj/view?usp=sharing",
   },
   {
+    id: "15",
+    cover: cover,
+    dp: prakash,
+    name: "Dr. R. PRAKASH",
+    Designation: "Associate Professor",
+    mailid: "rprakash024@gmail.com",
+    pdf: "https://drive.google.com/file/d/1Qpd11Jj8NZ3XVCGbuYklMtJ909iRR9mF/view?usp=sharing",
+  },
+  {
     id: "1",
     cover: cover,
     dp: leela,
@@ -251,6 +262,7 @@ const civ_fac_profiles = [
     mailid: "gayathri@accet.ac.in",
     pdf: "https://drive.google.com/file/d/13GAOVduo48ow1DblMm7GifRJhkD9gp3t/view?usp=sharing",
   },
+
   
 ];
 const civ_sup_profiles = [
