@@ -11,6 +11,12 @@ display: flex;
 flex-direction: column;
 }
 
+.std_teaching_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: -30px;
+}
+
 
 
 
@@ -78,5 +84,17 @@ color: #00134d;
 
   }
   
+  @media (max-width: 600px) {
+    .std_teach_fb_row {
+      flex-direction: column;
+    }
   
+    .std_teach_fb_input, .std_teach_fb_select {
+      width: 100%;
+    }
+
+    .stud_teach_fb_two_line{
+      margin-bottom: 10px;
+    }
+  }
   

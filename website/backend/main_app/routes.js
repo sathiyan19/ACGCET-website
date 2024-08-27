@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const {generate_pdf}= require("./feedback_download.js")
-const {supplier_ratingsubmit,consultancy_ratingsubmit,collaborator_ratingsubmit} =require("./feedback.js")
+const {supplier_ratingsubmit,consultancy_ratingsubmit,collaborator_ratingsubmit,std_teaching_ratingsubmit,std_technical_seminar_ratingsubmit,std_practical_ratingsubmit,std_mini_project_ratingsubmit} =require("./feedback.js")
 const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP, sendquery}=require("./otp.js")
 const {dashboard}=require("./protected_routes.js")
@@ -44,6 +44,14 @@ router.post('/api/supplier_ratingsubmit',supplier_ratingsubmit);
 router.post('/api/consultancy_ratingsubmit',consultancy_ratingsubmit);
 
 router.post('/api/collaborator_ratingsubmit',collaborator_ratingsubmit);
+
+router.post('/api/std_teaching_ratingsubmit',std_teaching_ratingsubmit);
+
+router.post('/api/std_practical_ratingsubmit',std_practical_ratingsubmit);
+
+router.post('/api/std_technical_seminar_ratingsubmit',std_technical_seminar_ratingsubmit);
+
+router.post('/api/std_mini_project_ratingsubmit',std_mini_project_ratingsubmit);
 
 router.post('/api/generate_pdf',generate_pdf);
 

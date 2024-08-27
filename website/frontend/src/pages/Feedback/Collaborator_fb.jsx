@@ -48,7 +48,6 @@ const Collaborator_fb = () => {
         if (!areRatingsValid) {
           return;
         }
-        console.log(projectName,fundingAgency);
         
         try {
           const response = await axios.post('/api/collaborator_ratingsubmit', {

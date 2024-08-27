@@ -11,6 +11,11 @@ display: flex;
 flex-direction: column;
 }
 
+.std_technical_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: -30px;
+}
 
 
 
@@ -79,4 +84,15 @@ color: #00134d;
   }
   
   
+  @media (max-width: 600px) {
+    .technical_fb_row {
+      flex-direction: column;
+    }
   
+    .technical_fb_input, .technical_fb_select {
+      width: 100%;
+    }
+    .technical_fb_two_line{
+      margin-bottom: 10px;
+    }
+  }
