@@ -1,0 +1,39 @@
+.prog_off{
+    padding: 20px;
+    margin-top: 15px;
+}
+
+/* .head{
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #00134d;
+} */
+.progs{
+    padding: 20px 10px;
+}
+.prog_content{
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: black;
+    text-align: justify;
+}
+.progs_flex{
+    padding: 20px 0px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.prog_sub_head{
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #00134d;
+}
+
+.prog_cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

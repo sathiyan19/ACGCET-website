@@ -1,0 +1,110 @@
+.sihwhole{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.sihabt{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    }
+    .sihabttext{
+        width: 80%;
+    }
+    .sihabttextp{
+line-height: 1.5rem;
+            color: black;
+            font-size: 18px;
+            text-align: justify;
+    }
+    .sih_logo_holder{
+        width: 20%;
+    }
+    .sih_logo_img{
+width: 100%;
+            height: auto;
+    }
+
+
+.sihparticipate{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+    .sihsrjr{
+width: 40%;
+        border-radius:20px ;
+        padding: 20px;
+        background-color: #f1f1f1;
+    }
+    .sihsrjrp{
+line-height: 1.5rem;
+            color: black;
+            font-size: 18px;
+            text-align: justify;
+    }
+    
+
+
+.sihpro{
+    >h3{
+        color: #00134d;
+        margin-top: 10px;
+    }
+}
+
+    @media(max-width:1130px){
+        .sihabt{
+            .sih_logo_holder{
+                width: 30%;
+            }
+        }
+    }
+
+@media (max-width:1000px){
+    .sihabt{
+        padding: 0;
+        flex-direction: column-reverse;
+        .sihabttext{
+            width: 100%;
+        }
+        .sih_logo_holder{
+            width: 20%;
+            margin-bottom: 10px;
+        }
+    }
+    .sihparticipate.sihsrjr{
+            width: 48%;
+        }
+    
+}
+
+@media(max-width:768px){
+    .sihabt.sih_logo_holder{
+            width: 20%;
+        }
+    
+}
+
+@media (max-width:600px){
+    .sihabttext{
+        width: 100%;
+    }
+    .sihabttext .sihabttextp{
+font-size: 16px;
+    }
+    .sih_logo_holder{
+        width: 30%;
+    }
+    .sihparticipate{
+        flex-direction: column;
+    }
+    .sihparticipate .sihsrjr{
+            width: 100%;
+            margin-bottom: 10px;
+    }
+    .sihsrjr .sihsrjrp{
+        font-size: 16px;
+    }
+}
