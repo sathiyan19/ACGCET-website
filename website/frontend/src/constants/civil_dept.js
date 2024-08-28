@@ -146,6 +146,15 @@ const civ_fac_profiles = [
     pdf: "https://drive.google.com/file/d/1T6Jiwq-TywClE-EZ1gr0UwG2F3ck9ks-/view?usp=drive_link",
   },
   {
+    id: "15",
+    cover: cover,
+    dp: prakash,
+    name: "Dr. R. PRAKASH",
+    Designation: "Associate Professor",
+    mailid: "rprakash024@gmail.com",
+    pdf: "https://drive.google.com/file/d/1Qpd11Jj8NZ3XVCGbuYklMtJ909iRR9mF/view?usp=sharing",
+  },
+  {
     id: "7",
     cover: cover,
     dp: vijaya,
@@ -163,15 +172,7 @@ const civ_fac_profiles = [
     mailid: "smkavitha@accetedu.in",
     pdf: "https://drive.google.com/file/d/1CN75Jy44sBNcD3zovqYjKMTT-nAT8yqj/view?usp=sharing",
   },
-  {
-    id: "15",
-    cover: cover,
-    dp: prakash,
-    name: "Dr. R. PRAKASH",
-    Designation: "Associate Professor",
-    mailid: "rprakash024@gmail.com",
-    pdf: "https://drive.google.com/file/d/1Qpd11Jj8NZ3XVCGbuYklMtJ909iRR9mF/view?usp=sharing",
-  },
+  
   {
     id: "1",
     cover: cover,
