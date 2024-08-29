@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const {generate_pdf}= require("./feedback_download.js")
-const {supplier_ratingsubmit,consultancy_ratingsubmit,collaborator_ratingsubmit,std_teaching_ratingsubmit,std_technical_seminar_ratingsubmit,std_practical_ratingsubmit,std_mini_project_ratingsubmit} =require("./feedback.js")
+const {generatePdfAndSendEmail}= require("./feedback_download.js")
+const {supplier_ratingsubmit,consultancy_ratingsubmit,collaborator_ratingsubmit,std_teaching_ratingsubmit,std_technical_seminar_ratingsubmit,std_practical_ratingsubmit,std_mini_project_ratingsubmit, parentsfeedbackSubmit,EmployeeFeedbackSubmit,alumniFeedbackSubmit} =require("./feedback.js")
 const {login,login_verify,verifyUser,logout,reset}=require("./auth.js")
 const {sendOTP,validateOTP, sendquery}=require("./otp.js")
 const {dashboard}=require("./protected_routes.js")
@@ -53,7 +53,14 @@ router.post('/api/std_technical_seminar_ratingsubmit',std_technical_seminar_rati
 
 router.post('/api/std_mini_project_ratingsubmit',std_mini_project_ratingsubmit);
 
-router.post('/api/generate_pdf',generate_pdf);
+router.post('/api/parentsfeedbacksubmit', parentsfeedbackSubmit);
+
+router.post('/api/employeefeedbacksubmit',EmployeeFeedbackSubmit);
+
+router.post('/api/alumnifeedback',alumniFeedbackSubmit)
+
+router.post('/api/generate_pdf',generatePdfAndSendEmail);
+
 
 router.post('/api/download_marksheet',download_prov_marksheet)
 

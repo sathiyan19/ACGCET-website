@@ -1,89 +1,83 @@
 // feedbackQuestions.js
 
 export const AlumniFeedbackQuestions = [
-    {
-      question: " I have become more knowledgeable now in my field of study",
-      translation: "நான் இப்போது எனது படிப்புத் துறையில் அதிக திறமையாக உள்ளேன்",
-      name: "question1",
-    },
-    {
-      question: "I know the latest developments in my field and I’m up-to-date",
-      translation: "எனது துறையில் சமீபத்திய முன்னேற்றங்கள் எனக்குத் தெரியும், நான் புதுப்பித்த நிலையில் இருக்கிறேன்",
-      name: "question2",
-    },
-    {
-      question: "Nowadays, I’m more practical in solving issues related to my work/domain",
-      translation: "எனது பணி/துறையில் தொடர்பான சிக்கல்களை தீர்ப்பதில் நான் மிகவும் நடைமுறையில் இருக்கிறேன்",
-      name: "question3",
-    },
-    {
-      question: "My thoughts are more creative after the completion of my course",
-      translation: "எனது படிப்பை முடித்த பிறகு எனது எண்ணங்கள் மிகவும் ஆக்கபூர்வமாக இருக்கின்றன",
-      name: "question4",
-    },
-    {
-      question: "I’m more analytical in assessing situations nowadays",
-      translation: "சூழ்நிலைகளைக் மதிப்பீடு செய்வதில் நான் மிகவும் பகுத்தறிவு கொண்டவனாக இருக்கிறேன்",
-      name: "question5",
-    },
-    {
-      question: "I have become more of a self-learner recently",
-      translation: "நான் சமீபகாலமாக சுயமாக கற்க மாறிவிட்டேன்",
-      name: "question6",
-    },
-
-    {
-      question: "I can relate the importance of financial management for my professional life ",
-      translation: " எனது வாழ்க்கைக்கான நிதி நிர்வாகத்தின் முக்கியத்துவத்தை என்னால் விவரிக்க முடியும்",
-      name: "question7",
-    },
-    {
-      question: "I know my capabilities ",
-      translation: " எனது திறன்களை நான் அறிவேன்",
-      name: "question8",
-    },
-    {
-      question: " I’m familiar with modern equipment / tools in the field ",
-      translation: " துறையில் உள்ள நவீன உபகரணங்கள் / கருவிகளை நான் நன்கு அறிந்திருக்கிறேன்",
-      name: "question9",
-    },
-    {
-      question: "  I mingle better with my peer group",
-      translation: " நான் எனது சக குழுவுடன் நன்றாக பழகுகிறேன்",
-      name: "question10",
-    },
-    {
-      question: "I have more professional friends ",
-      translation: " எனக்கு தொழில்முறை நண்பர்கள் அதிகம்",
-      name: "question11",
-    },
-    {
-      question: "  I’m talented to lead a group",
-      translation: "(நான் ஒரு குழுவை வழிநடத்த திறமையாக உள்ளேன் ",
-      name: "question12",
-    },
-    {
-      question: " Over the years, I developed ability to communicate effectively",
-      translation: "நான் திறம்பட தொடர்பு கொள்ளும் திறனை வளர்த்துக் கொண்டேன் ",
-      name: "question13",
-    },
-    {
-      question: "I can express my ideas clearly to others ",
-      translation: " எனது எண்ணங்களை மற்றவர்களுக்கு தெளிவாக வெளிப்படுத்த முடிகிறது",
-      name: "question14",
-    },
-    {
-      question: " My actions are more ethical than before",
-      translation: "எனது செயல்கள் முன்பை விட ஒழுக்கமானவையாக இருக்கிறது ",
-      name: "question15",
-    },
-    {
-      question: " I know my capabilities ",
-      translation: "எனது திறன்களை நான் அறிவேன் ",
-      name: "question16",
-    },
-
-  ];
+  {
+    question: "I have become more knowledgeable now in my field of study",
+    translation: "நான் இப்போது எனது படிப்புத் துறையில் அதிக திறமையாக உள்ளேன்",
+    name: "knowledge_in_field",
+  },
+  {
+    question: "I know the latest developments in my field and I’m up-to-date",
+    translation: "எனது துறையில் சமீபத்திய முன்னேற்றங்கள் எனக்குத் தெரியும், நான் புதுப்பித்த நிலையில் இருக்கிறேன்",
+    name: "latest_developments",
+  },
+  {
+    question: "Nowadays, I’m more practical in solving issues related to my work/domain",
+    translation: "எனது பணி/துறையில் தொடர்பான சிக்கல்களை தீர்ப்பதில் நான் மிகவும் நடைமுறையில் இருக்கிறேன்",
+    name: "practical_solving",
+  },
+  {
+    question: "My thoughts are more creative after the completion of my course",
+    translation: "எனது படிப்பை முடித்த பிறகு எனது எண்ணங்கள் மிகவும் ஆக்கபூர்வமாக இருக்கின்றன",
+    name: "creative_thoughts",
+  },
+  {
+    question: "I’m more analytical in assessing situations nowadays",
+    translation: "சூழ்நிலைகளைக் மதிப்பீடு செய்வதில் நான் மிகவும் பகுத்தறிவு கொண்டவனாக இருக்கிறேன்",
+    name: "analytical_assessment",
+  },
+  {
+    question: "I have become more of a self-learner recently",
+    translation: "நான் சமீபகாலமாக சுயமாக கற்க மாறிவிட்டேன்",
+    name: "self_learner",
+  },
+  {
+    question: "I can relate the importance of financial management for my professional life",
+    translation: "எனது வாழ்க்கைக்கான நிதி நிர்வாகத்தின் முக்கியத்துவத்தை என்னால் விவரிக்க முடியும்",
+    name: "financial_management",
+  },
+  {
+    question: "I know my capabilities",
+    translation: "எனது திறன்களை நான் அறிவேன்",
+    name: "know_capabilities",
+  },
+  {
+    question: "I’m familiar with modern equipment/tools in the field",
+    translation: "துறையில் உள்ள நவீன உபகரணங்கள்/கருவிகளை நான் நன்கு அறிந்திருக்கிறேன்",
+    name: "modern_equipment",
+  },
+  {
+    question: "I mingle better with my peer group",
+    translation: "நான் எனது சக குழுவுடன் நன்றாக பழகுகிறேன்",
+    name: "peer_interaction",
+  },
+  {
+    question: "I have more professional friends",
+    translation: "எனக்கு தொழில்முறை நண்பர்கள் அதிகம்",
+    name: "professional_friends",
+  },
+  {
+    question: "I’m talented to lead a group",
+    translation: "நான் ஒரு குழுவை வழிநடத்த திறமையாக உள்ளேன்",
+    name: "leadership_ability",
+  },
+  {
+    question: "Over the years, I developed ability to communicate effectively",
+    translation: "நான் திறம்பட தொடர்பு கொள்ளும் திறனை வளர்த்துக் கொண்டேன்",
+    name: "effective_communication",
+  },
+  {
+    question: "I can express my ideas clearly to others",
+    translation: "எனது எண்ணங்களை மற்றவர்களுக்கு தெளிவாக வெளிப்படுத்த முடிகிறது",
+    name: "clear_expression",
+  },
+  {
+    question: "My actions are more ethical than before",
+    translation: "எனது செயல்கள் முன்பை விட ஒழுக்கமானவையாக இருக்கிறது",
+    name: "ethical_actions",
+  },
+ 
+];
 
 
 export const std_mini_project_fb_data=[
@@ -141,119 +135,119 @@ export const std_mini_project_fb_data=[
 
 
 
-export const employerFeedbackQuestions =[
-  {
-    question:"Technical knowledge/skill",
-    translation:"தொழில்நுட்ப அறிவு/திறன்",
-    name:"question1",
-  },
-  {
-    question:"Communication skill",
-    translation:"தொடர்பு திறன்",
-    name:"question2",
-  },
-  {
-    question:"Independent thinking and problem solving ability",
-    translation:"சுய‌ சிந்தனை மற்றும் சிக்கலை தீர்க்கும் திறன்",
-    name:"question3",
-  },
-  {
-    question:"Inclination to adopt new technology",
-    translation:"புதிய தொழில்நுட்பத்தை கடைப்பிடிக்க விருப்பம்",
-    name:"question4",
-  },
-  {
-    question:"Ability to take up extra responsibility",
-    translation:"கூடுதல் பொறுப்பை ஏற்கும் திறன்",
-    name:"question5",
-  },
-  {
-    question:"Obligation to work beyond schedule if required",
-    translation:"தேவைப்பட்டால் அட்டவணைக்கு அப்பால் வேலை செய்ய வேண்டிய கடமை",
-    name:"question6",
-  },
-  {
-    question:"Ability to contribute to the goal of the organization",
-    translation:"நிறுவனத்தின் இலக்குக்கு பங்களிக்கும் திறன்",
-    name:"question7",
-  },
-  {
-    question:"Planning and organization skills",
-    translation:"திட்டமிடல் மற்றும் ஒருங்கிணைக்கும் திறன்கள்",
-    name:"question8",
-  },
-  {
-    question:"Possess leadership qualities",
-    translation:"தலைமை பண்புகளை கொண்டவர்",
-    name:"question9",
-  },
-  {
-    question:"Relationship with seniors and subordinates",
-    translation:"மூத்தவர் மற்றும் துணை அதிகாரிகளுடனான உறவு",
-    name:"question10",
-  },
-];
+  export const employerFeedbackQuestions = [
+    {
+      question: "Technical knowledge/skill",
+      translation: "தொழில்நுட்ப அறிவு/திறன்",
+      name: "technical_knowledge",
+    },
+    {
+      question: "Communication skill",
+      translation: "தொடர்பு திறன்",
+      name: "communication_skill",
+    },
+    {
+      question: "Independent thinking and problem solving ability",
+      translation: "சுய‌ சிந்தனை மற்றும் சிக்கலை தீர்க்கும் திறன்",
+      name: "independent_thinking",
+    },
+    {
+      question: "Inclination to adopt new technology",
+      translation: "புதிய தொழில்நுட்பத்தை கடைப்பிடிக்க விருப்பம்",
+      name: "new_technology_inclination",
+    },
+    {
+      question: "Ability to take up extra responsibility",
+      translation: "கூடுதல் பொறுப்பை ஏற்கும் திறன்",
+      name: "extra_responsibility",
+    },
+    {
+      question: "Obligation to work beyond schedule if required",
+      translation: "தேவைப்பட்டால் அட்டவணைக்கு அப்பால் வேலை செய்ய வேண்டிய கடமை",
+      name: "work_beyond_schedule",
+    },
+    {
+      question: "Ability to contribute to the goal of the organization",
+      translation: "நிறுவனத்தின் இலக்குக்கு பங்களிக்கும் திறன்",
+      name: "organizational_contribution",
+    },
+    {
+      question: "Planning and organization skills",
+      translation: "திட்டமிடல் மற்றும் ஒருங்கிணைக்கும் திறன்கள்",
+      name: "planning_organization_skills",
+    },
+    {
+      question: "Possess leadership qualities",
+      translation: "தலைமை பண்புகளை கொண்டவர்",
+      name: "leadership_qualities",
+    },
+    {
+      question: "Relationship with seniors and subordinates",
+      translation: "மூத்தவர் மற்றும் துணை அதிகாரிகளுடனான உறவு",
+      name: "relationship_with_seniors",
+    },
+  ];
   
-export const parentFeedbackQuestions =[
+export const parentFeedbackQuestions = [
   {
-    question:"Rate the infrastructure facilities of the institution",
-    translation:"நிறுவனங்களின் உட்கட்டமைப்பு வசதிகளை மதிப்பிடவும்",
-    name:"question1",
+    question: "Rate the infrastructure facilities of the institution",
+    translation: "நிறுவனங்களின் உட்கட்டமைப்பு வசதிகளை மதிப்பிடவும்",
+    name: "infrastructure_facilities",
   },
   {
-    question:"Rate the ambience of the college with respect to the facilities such as ATM, post office and medical facilities and transportationgiven to your ward",
-    translation:"தன்னியக்க காசளிப்பு இயந்திரம் (ஏடிஎம்) ,தபால் அலுவலகம் ,மருத்துவ வசதிகள் ,போக்குவரத்து வசதிகளைப் பொருத்து கல்லூரி சூழலை மதிப்பிடவும்",
-    name:"question2",
+    question: "Rate the ambience of the college with respect to the facilities such as ATM, post office, medical facilities, and transportation given to your ward",
+    translation: "தன்னியக்க காசளிப்பு இயந்திரம் (ஏடிஎம்), தபால் அலுவலகம், மருத்துவ வசதிகள், போக்குவரத்து வசதிகளைப் பொருத்து கல்லூரி சூழலை மதிப்பிடவும்",
+    name: "college_ambience",
   },
   {
-    question:"Authorities and the college office are approachable, ready to help and clarify your queries",
-    translation:"அதிகாரிகள் மற்றும் கல்லூரி அலுவலகம் அணுகக்கூடியது ,உங்கள் கேள்விகளுக்கு உதவவும் தெளிவுப்படுத்தவும் தயாராக உள்ளது",
-    name:"question3",
+    question: "Authorities and the college office are approachable, ready to help and clarify your queries",
+    translation: "அதிகாரிகள் மற்றும் கல்லூரி அலுவலகம் அணுகக்கூடியது, உங்கள் கேள்விகளுக்கு உதவவும் தெளிவுப்படுத்தவும் தயாராக உள்ளது",
+    name: "authority_approachability",
   },
   {
-    question:"Is your ward happy with the hostel facilities?",
-    translation:"உங்கள் பிள்ளைகள் விடுதி வசதிகளால் மகிழ்ச்சியாக உள்ளனரா?",
-    name:"question4",
+    question: "Is your ward happy with the hostel facilities?",
+    translation: "உங்கள் பிள்ளைகள் விடுதி வசதிகளால் மகிழ்ச்சியாக உள்ளனரா?",
+    name: "hostel_facilities",
   },
   {
-    question:"Rate the library and sport facilities",
-    translation:"நூலகம் மற்றும் விளையாட்டு வசதிகளை மதிப்பிடவும்",
-    name:"question5",
+    question: "Rate the library and sport facilities",
+    translation: "நூலகம் மற்றும் விளையாட்டு வசதிகளை மதிப்பிடவும்",
+    name: "library_sports_facilities",
   },
   {
-    question:"What is your assessment of security and safety measures in the institution?",
-    translation:"கல்வி நிறுவனத்தில் பாதுகாப்பு மற்றும் பாதுகாப்பு நடவடிக்கைகள்'பற்றிய உங்கள் மதிப்பேடு என்ன?",
-    name:"question6",
+    question: "What is your assessment of security and safety measures in the institution?",
+    translation: "கல்வி நிறுவனத்தில் பாதுகாப்பு மற்றும் பாதுகாப்பு நடவடிக்கைகள் பற்றிய உங்கள் மதிப்பீடு என்ன?",
+    name: "security_safety_measures",
   },
   {
-    question:"Rate the acadamic skills and knowledge of the faculty",
-    translation:"ஆசிரியர்களின் கல்வித்திறன் மற்றும் அறிவை மதிப்பிடுங்கள்",
-    name:"question7",
+    question: "Rate the academic skills and knowledge of the faculty",
+    translation: "ஆசிரியர்களின் கல்வித்திறன் மற்றும் அறிவை மதிப்பிடுங்கள்",
+    name: "faculty_academic_skills",
   },
   {
-    question:"Rate the learning experience of your ward n the institution",
-    translation:"நிறுவனத்தில் உங்கள் பிள்ளைகளின் கற்றல் அனுபவத்தை மதிப்பிடவும்",
-    name:"question8",
+    question: "Rate the learning experience of your ward in the institution",
+    translation: "நிறுவனத்தில் உங்கள் பிள்ளைகளின் கற்றல் அனுபவத்தை மதிப்பிடவும்",
+    name: "learning_experience",
   },
   {
-    question:"Rate the environment in terms of diversity among the students in the institution",
-    translation:"நிறுவனத்தில் உள்ள மாணவர்களிடையே பண்முகத்தன்மையின் அடிப்படையில் மதிப்பிடவும்",
-    name:"question9",
+    question: "Rate the environment in terms of diversity among the students in the institution",
+    translation: "நிறுவனத்தில் உள்ள மாணவர்களிடையே பண்முகத்தன்மையின் அடிப்படையில் மதிப்பிடவும்",
+    name: "environment_diversity",
   },
   {
-    question:"Assessment about the placement and internship opportunities provided by the institution",
-    translation:"நிறுவனம் வழங்கிய வேலைவாய்ப்பு பற்றிய மதிப்பீடு",
-    name:"question10",
+    question: "Assessment about the placement and internship opportunities provided by the institution",
+    translation: "நிறுவனம் வழங்கிய வேலைவாய்ப்பு பற்றிய மதிப்பீடு",
+    name: "placement_opportunities",
   },
   {
-    question:"Technical knowledge of your ward has improved after joining the institution",
-    translation:"நிறுவனத்தில் சேர்ந்தபிறகு உங்கள் பிள்ளையின் தொழில்நுட்ப அறிவு மேம்பட்டுள்ளது",
-    name:"question11",
+    question: "Technical knowledge of your ward has improved after joining the institution",
+    translation: "நிறுவனத்தில் சேர்ந்தபிறகு உங்கள் பிள்ளையின் தொழில்நுட்ப அறிவு மேம்பட்டுள்ளது",
+    name: "technical_knowledge_improvement",
   },
   {
-    question:"How extent do you think that the college environment is conductive for the overall development of your ward",
-    translation:"உங்கள் பிள்ளையின் ஒட்டுமொத்த வளர்ச்சிக்குக் கல்லூரிச் சூழல் எந்த அளவுக்கு உகந்தது என்று நினைக்கிறீர்கள்",
-    name:"question12",
+    question: "How conducive do you think the college environment is for the overall development of your ward?",
+    translation: "உங்கள் பிள்ளையின் ஒட்டுமொத்த வளர்ச்சிக்குக் கல்லூரிச் சூழல் எந்த அளவுக்கு உகந்தது என்று நினைக்கிறீர்கள்",
+    name: "college_environment_development",
   },
 ];
 
