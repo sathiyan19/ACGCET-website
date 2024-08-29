@@ -75,6 +75,10 @@
 .alumni_fb_ratings input {
   margin-right: 5px;
 }
+.alumni_fb_btn {
+  text-align: center;
+  margin-top: 20px;
+}
 
 @media (max-width: 600px) {
   .alumni_fb_row {

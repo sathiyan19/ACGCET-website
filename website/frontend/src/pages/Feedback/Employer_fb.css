@@ -18,18 +18,56 @@
 
 .employer_fb_row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
-.employer_fb_input, .employer_fb_select {
-  width: 48%;
-  padding: 15px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.employer_fb_input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 8px;
 }
+
+.employer_fb_input:last-child {
+  margin-right: 0;
+}
+
+.employer_fb_input_full {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Employer_fb.css */
+.employer_fb_input, 
+.employer_fb_select, 
+.employer_fb_textarea {
+    width: 100%;
+    padding: 15px; /* Adjust this value for larger padding */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.employer_fb_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between the input fields */
+}
+
+.employer_fb_container {
+    padding: 20px; /* Adjust for container padding */
+}
+
+.employer_fb_btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 
 .employer_fb_row_sl input{
     width: 100%;
@@ -48,6 +86,14 @@
     margin-bottom: 15px;
     margin-top: -10px;
 }
+.employer_fb_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+
 
 .employer_fb_feedback {
   margin-top: 30px;
