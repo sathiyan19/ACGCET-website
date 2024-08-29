@@ -78,8 +78,13 @@ const Technical_fb = () => {
     <form className="technical_fb_form" onSubmit={handleSubmit}>
     <div className="technical_fb_rows">
 
-        <input type="text" className ="technical_fb_input technical_fb_two_line" placeholder='Programme*'  required value={programme} onChange={(e)=> setProgramme(e.target.value)}/>
-            <input type="text"  className ="technical_fb_input" placeholder='Semester*'  required value={semester} onChange={(e)=> setSemester(e.target.value)}/>
+      <select className="technical_fb_select technical_fb_two_line" required value={programme} onChange={(e)=> setProgramme(e.target.value)}>
+        <option value="" disabled selected>Select Programme*</option>
+        <option value="BE">B.E</option>
+        <option value="ME">M.E</option>
+        <option value="PhD">PhD</option>
+      </select>
+      <input type="text"  className ="technical_fb_input" placeholder='Semester*'  required value={semester} onChange={(e)=> setSemester(e.target.value)}/>
     </div>
     <div className="technical_fb_rows">
      <input type="text" className='technical_fb_input_full' placeholder='Course Title*' required value={courseTitle} onChange={(e)=> setCourseTitle(e.target.value)}/>
@@ -95,14 +100,14 @@ const Technical_fb = () => {
     <div className="technical_fb_rows">
         <input type="email" className='technical_fb_input_full'  placeholder=' Student E-mail Address*' required value={studentEmail} onChange={(e)=> setStudentEmail(e.target.value)}/>
     </div>
+    <h2 className="technical_fb_subtitle">Please give your valuable feedback on a scale</h2>
+    
 
-    <div className="technical_fb_rating">
-        <p>Ratings: 5 – Excellent; 4 – Very Good; 3 – Good; 2 – Poor; 1 – Very Poor</p>
-    </div>
-
-    {/* <div className="std_teach_fb_map"> */}
+  <div>  
+  <p className='technical_fb_instruction'>5 - Excellent,  4 - Satisfied,   3 - Good,   2 - Not Satisfied,   1 - Poor</p>
+  <br />
     {technical_fb_data.map(({ question, translation, name }) => (
-                        <div className="collab_fb_question" key={name}>
+                        <div className="ctechnical_fb_question" key={name}>
                             <p>{question}</p>
                             <p>{translation}</p>
                             <div className="technical_fb_data">
@@ -117,7 +122,7 @@ const Technical_fb = () => {
                         </div>
                     ))}
 
-    
+        </div>
         <div className="technical_fb">
           <button type="submit" className="technical_fb_submit">
             Submit

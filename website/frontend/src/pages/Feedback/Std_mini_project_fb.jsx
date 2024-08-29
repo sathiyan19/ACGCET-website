@@ -88,17 +88,18 @@ const Std_mini_project_fb = () => {
                 <input type="text" className='std_mini_proj_fb_input std_mini_proj_fb_two_line' placeholder='Course code*' required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}/>
                 <input type="text" className='std_mini_proj_fb_input' placeholder='Course Title*' required value={courseTitle} onChange={(e)=> setCourseTitle(e.target.value)}/>
             </div>
-            <div className='std_mini_proj_fb_row_sl'>
+            <div className='std_mini_proj_fb_row'>
                 <input type="email" className='std_mini_proj_fb_input_full'  placeholder=' Student E-mail Address*' required value={studentEmail} onChange={(e)=> setStudentEmail(e.target.value)}/>
             </div>
-            <div className='std_mini_proj_fb_row_sl'>
+            <div className='std_mini_proj_fb_row'>
                 <input type="text" className='std_mini_proj_fb_input_full'  placeholder=' Faculty*'required value={faculty} onChange={(e)=> setFaculty(e.target.value)}/>
             </div>
-            <div className="std_mini_proj_fb_rating">
-                <p className='std_mini_proj_fb_instruction'>Ratings: 5 – Excellent; 4 – Very Good; 3 – Good; 2 – Poor; 1 – Very Poor</p>
-            </div>
+            <h2 className="std_mini_proj_fb_subtitle">Please give your valuable feedback on a scale</h2>
+            <div>
+            <p className='std_mini_proj_fb_instruction'>5 - Excellent,  4 - Satisfied,   3 - Good,   2 - Not Satisfied,   1 - Poor</p>
+            <br />
             {std_mini_project_fb_data.map(({ question, translation, name }) => (
-                <div className="collab_fb_question" key={name}>
+                <div className="std_mini_proj_fb_question" key={name}>
                     <p>{question}</p>
                     <p>{translation}</p>
                     <div className="std_teach_fb_data">{[1, 2, 3, 4, 5].map(num => (
@@ -111,6 +112,7 @@ const Std_mini_project_fb = () => {
                     {ratingErrors[name] && <p className='std_mini_proj_fb_error'>{ratingErrors[name]}</p>}
                 </div>
             ))}
+            </div>
             <div className="std_teaching_fb">
                 <button type="submit" className="std_teaching_fb_submit">Submit</button>
             </div>

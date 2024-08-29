@@ -92,7 +92,7 @@ const Alumini_fb = () => {
 
         <h2 className="alumni_fb_subtitle">Please give your valuable feedback on a scale</h2>
         <div className="alumni_fb_feedback">
-          <p>5 - Excellent  4 - Satisfied  3 - Good  2 - Not Satisfied  1 - Poor</p>
+          <p className='alumni_fb_instructions'>5 - Excellent  4 - Satisfied  3 - Good  2 - Not Satisfied  1 - Poor</p>
 
           <br /> 
 

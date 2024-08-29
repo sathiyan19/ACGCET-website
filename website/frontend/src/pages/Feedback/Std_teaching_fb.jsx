@@ -78,7 +78,12 @@ const Std_teaching_fb = () => {
     <form className="std_teach_fb_form" onSubmit={handleSubmit}>
     <div className="std_teach_fb_rows">
 
-        <input type="text" className ="std_teach_fb_input stud_teach_fb_two_line" placeholder='Programme*'  required value={programme} onChange={(e)=> setProgramme(e.target.value)}/>
+      <select className="stud_teach_fb_select stud_teach_fb_two_line" required value={programme} onChange={(e)=> setProgramme(e.target.value)}>
+        <option value="" disabled selected>Select Programme*</option>
+        <option value="BE">B.E</option>
+        <option value="ME">M.E</option>
+        <option value="PhD">PhD</option>
+      </select>
         <input type="text"  className ="std_teach_fb_input" placeholder='Semester*'  required value={semester} onChange={(e)=> setSemester(e.target.value)}/>
     </div>
     <div className="std_teach_fb_rows">
@@ -95,13 +100,14 @@ const Std_teaching_fb = () => {
     <div className="std_teach_fb_rows">
         <input type="email" className='std_teach_fb_input_full'  placeholder=' Student E-mail Address*' required value={studentEmail} onChange={(e)=> setStudentEmail(e.target.value)}/>
     </div>
-
-    <div className="std_teach_fb_rating">
-        <p>Ratings: 5 – Excellent; 4 – Very Good; 3 – Good; 2 – Poor; 1 – Very Poor</p>
-    </div>
+    <h2 className="std_tech_fb_subtitle">Please give your valuable feedback on a scale</h2>
+    <div className="std_teach_fb_feedback">
+      <p className='std_tech_fb_instruction'>5 - Excellent,  4 - Satisfied,   3 - Good,   2 - Not Satisfied,   1 - Poor</p>
+      <br />
+    
 
         {std_teach_fb_data.map(({ question, translation, name }) => (
-                        <div className="collab_fb_question" key={name}>
+                        <div className="std_teach_fb_question" key={name}>
                             <p>{question}</p>
                             <p>{translation}</p>
                             <div className="std_teach_fb_data">
@@ -116,7 +122,7 @@ const Std_teaching_fb = () => {
                         </div>
                     ))}
 
-    
+    </div>
         <div className="std_teaching_fb">
           <button type="submit" className="std_teaching_fb_submit">
             Submit
