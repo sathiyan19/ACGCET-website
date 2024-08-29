@@ -26,7 +26,7 @@
   margin-bottom: 10px;
 }
 
-.consultancy_fb_input, .consultancy_fb_select {
+.consultancy_fb_input, .consultancy_fb_select,  .consultancy_fb_select_sl{
   width: 48%;
   padding: 10px;
   margin-bottom: 10px;
@@ -34,7 +34,7 @@
   border-radius: 5px;
 }
 
-.consultancy_fb_select {
+.consultancy_fb_select_sl{
   width: 100%;
   margin-bottom: 15px;
 }
@@ -102,17 +102,15 @@ input[type="radio"]:checked + .consultancy-custom-radio::before {
   transform: translate(-50%, -50%);
 } 
 
-<<<<<<<<< Temporary merge branch 1
-/* input[type="radio"]:checked + .custom-radio {
-  background-color: white;
-} */
-=========
 input[type="radio"]:checked + .consultancy-custom-radio {
   background-color: white; /* White color for the outer circle */
 }
 
 input[type="radio"] {
   display: none;
+}
+.consultancy-custom-radio{
+  cursor: pointer;
 }
 
 label {
@@ -123,9 +121,17 @@ label {
   display: flex;
   gap: 20px;
   margin: 0px;
-  
-
 }
+
+.consultancy_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+#consultancy_date_err{
+  margin-left: 52%;
+}
+
 .consultancy_fb_qr_p{
   margin: 12px;
 }
@@ -139,5 +145,9 @@ label {
 
   .consultancy_fb_input, .consultancy_fb_select {
     width: 100%;
+  }
+
+  #consultancy_date_err{
+    margin-left: 5px;
   }
 }

@@ -79,251 +79,60 @@ export const AlumniFeedbackQuestions = [
  
 ];
 
-  // export const collab_fb = [
-  //   {
-
-  //     question:"Main objectives of the proposal",
-  //     translation:"நோக்கம்",
-  //     name:"question 1",
-
-  //   },
-  //   {
-  //     question: "Review of the state-of-the-art in the field",
-  //     translation: "துறையில் கலைநிலை ஆய்வு மதிப்பீடு",
-  //     name: "question 2",
-  //   },
-  //   {
-  //     question: "Detailed Methodology and Plan of Action",
-  //     translation: "வழிமுறை மற்றும் செயல்திட்டம்",
-  //     name: "question 3",
-  //   },
-  //   {
-  //     question: "Performance Milestones and Schedule",
-  //     translation: "செயல்திறன் மைல்கல் மற்றும் அட்டவனை",
-  //     name: "question 4",
-  //   },
-  //   {
-  //     question: "Deliverables",
-  //     translation: "வழங்ககூடியவை",
-  //     name: "question 5",
-  //   },
-  //   {
-  //     question: "Estimated Expenditure",
-  //     translation: "மதிப்பிடப்பட்ட செலவு",
-  //     name: "question 6",
-  //   },
-  //   {
-  //     question: "Appointment of Research Staff in time",
-  //     translation: "சரியான நேரத்தில் ஆராய்ச்சி ஊழியர்களை நியமித்தல்",
-  //     name: "question 7",
-  //   },
-  //   {
-  //     question: "Completion of Modules in time",
-  //     translation: "தொகுதிகளை சரியான நேரத்தில் முடித்தல்",
-  //     name: "question 8",
-  //   },
-  //   {
-  //     question: "Result achieved as expected",
-  //     translation: "எதிர்பார்த்தபடி முடிவு அடையப்பட்டது",
-  //     name: "question 9",
-  //   },
-  //   {
-  //     question: "Performance in periodical Reviews",
-  //     translation: "காலமுறை மதிப்பாய்வில் செயல்திறன்",
-  //     name: "question 10",
-  //   },{
-  //     question: "Timely closure of the project",
-  //     translation: "திட்டத்தைச் சரியான நேரத்தில் முடிப்பது",
-  //     name: "question 11",
-  //   },
-  //   {
-  //     question: "Literature Collected",
-  //     translation: "சேகரிக்கப்பட்ட ஆவணங்கள்",
-  //     name: "question 12",
-  //   },
-  //   {
-  //     question: "Final Technical Report(s)",
-  //     translation: "இறுதி தொழில்நுட்ப அறிக்கை",
-  //     name: "question 13",
-  //   },
-  //   {
-  //     question: "Hardware or Software developed",
-  //     translation: "மென்பொருள் மற்றும் வன்பொருள்",
-  //     name: "question 14",
-  //   },
-  //   {
-  //     question: "Deliverables as in Proposal",
-  //     translation: "முன்மொழிவில் உள்ளபடி வழங்ககூடியவை",
-  //     name: "question 15",
-  //   },{
-  //     question: "Publications",
-  //     translation: "வெளியீடு",
-  //     name: "question 16",
-  //   },
-  //   {
-  //     question: "Patents",
-  //     translation: "காப்புரிமை",
-  //     name: "question 17",
-  //   },
-
-  // ];
-
-//   export const std_teach_fb_data=[
-    
-//       {
-//         question: "I carry the knowledge in Mathematics, Science, and Engineering fundamentals",
-//         translation: "",
-//         name: "question1"
-//       },
-//       {
-//         question: "I am able to analyze complex engineering problems",
-//         translation: "",
-//         name: "question2"
-//       },
-//       {
-//         question: "I am able to identify components, design systems, and reach solutions for engineering problems",
-//         translation: "",
-//         name: "question3"
-//       },
-//       {
-//         question: "I am able to do analysis and interpret the data to provide valid conclusions",
-//         translation: "",
-//         name: "question4"
-//       },
-//       {
-//         question: "I am able to use modern tools for engineering activities",
-//         translation: "",
-//         name: "question5"
-//       },
-//       {
-//         question: "I am applying the contextual knowledge to assess several issues and the consequent responsibilities relevant to the profession",
-//         translation: "",
-//         name: "question6"
-//       },
-      
-//         {
-//           question: "I understand the importance of engineering solutions for the development of society and the environment",
-//           translation: "",
-//           name: "question7"
-//         },
-//         {
-//           question: "I apply ethical principles and commit to professional ethics and responsibilities",
-//           translation: "",
-//           name: "question8"
-//         },
-//         {
-//           question: "I am able to function effectively as an individual, and as a member or as a leader in diverse teams",
-//           translation: "",
-//           name: "question9"
-//         },
-//         {
-//           question: "I am able to communicate effectively (write reports, make effective presentations and give, receive clear instructions) with society at large",
-//           translation: "",
-//           name: "question10"
-//         },
-//         {
-//           question: "I am able to apply the knowledge related to Project management and finance",
-//           translation: "",
-//           name: "question11"
-//         },
-//         {
-//           question: "I am able to learn new techniques and update myself in the broadest context of technological change",
-//           translation: "",
-//           name: "question12"
-//         },
-//         {
-//           question: "I am able to analyze, design, and provide solutions to the problems pertaining to Electronics, VLSI, Image processing, and Embedded systems",
-//           translation: "",
-//           name: "question13"
-//         },
-//         {
-//           question: "I am able to analyze, design, and provide solutions to the problems pertaining to RF and Microwaves, Wireless and Optical Communication",
-//           translation: "",
-//           name: "question14"
-//         },
-//         {
-//           question: "I am able to design web-based and mobile-based applications",
-//           translation: "",
-//           name: "question15"
-//         },
-// ];
 
 export const std_mini_project_fb_data=[
   {
     question:"Objectives of the project were well defined ",
     translation:"",
-    name: "question1"
+    name: "project_objectives"
   },
   {
     question:"Extent of technical support by the supervisor to complete the project",
     translation:"",
-    name: "question2"
+    name: "technical_support"
   },
   {
     question:"Extent of facilities offered or available in the department in perusing the project work",
     translation:"",
-    name: "question3"
+    name: "facilities_offered"
   },
   {
     question:"Project reviews or meetings were conducted regularly",
     translation:"",
-    name: "question4"
+    name: "frequency_0f_project_reviews"
   },
   {
     question:"Project reviews helped us to enhance the quality and quantity of work",
     translation:"",
-    name: "question5"
+    name: "helpful_of_project_reviews"
   },
   {
     question:"Support of supervisor in preparing and evaluating the thesis",
     translation:"",
-    name: "question6"
+    name: "support_of_suppervisor"
   },
   {
     question:"Did you implement the knowledge gained in developing the project?",
     translation:"",
-    name: "question7"
+    name: "implementation_of_knowledge"
   },
   {
     question:"Did the project work motivate you to do new findings even after completing the course?",
     translation:"",
-    name: "question8"
+    name: "motivation_to_do_new_findings"
   },
   {
     question:"The project developed is beneficial to the society",
     translation:"",
-    name: "question9"
+    name: "project_beniefit_to_society"
   },
   {
     question:"Whether appreciated and recognized as an individual or as a team for the work done",
     translation:"",
-    name: "question10"
+    name: "appreciation"
   },
 ];
 
-  // export const student_fb_card=[
-  //   {
-  //     'id':'1',
-  //     'program':'Teaching and Learning ',
-  //     'pdf':'./Std_teaching_fb'
-  //   },
-  //   {
-  //     'id':'2',
-  //     'program':'Practical and Laboratory Feedback',
-  //     'pdf':'####'
-  //   },
-  //   {
-  //     'id':'3',
-  //     'program':'Technical Seminar Feedback',
-  //     'pdf':'####'
-  //   },
-  //   {
-  //     'id':'4',
-  //     'program':'Mini Project and Project Feedback',
-  //     'pdf':'./Std_mini_project_fb'
-  //   },
-   
-  // ];
 
 
   export const employerFeedbackQuestions = [
@@ -446,22 +255,22 @@ export const consultancyFeedbackQuestions = [
   {
     question:"Consultancy Fee     ",
     translation:" நிறுவன கட்டணம் ",
-    name:"question1",
+    name:"consultancy_fee",
   },
   {
     question:"Meeting Deadline  ",
     translation:"காலக்கெடு",
-    name:"question2",
+    name:"meeting_deadline",
   },
   {
     question:"Work Quality",
     translation:"வேலை தரம்",
-    name:"question3",
+    name:"work_quality",
   },
   {
     question:"Approach",
     translation:"அணுகுமுறை",
-    name:"question4",
+    name:"approach",
   },
 ];
 
@@ -513,87 +322,87 @@ export const collaboratorFeedbackQustions = [
   {
     question:"Main objectives of the proposal",
     translation:"நோக்கம்",
-    name:"question1",
+    name:"proposal_objective",
   },
   {
     question:"Review of the state-of-art in the field",
     translation:"துறையில் கலைநிலை ஆய்வு மதிப்பீடு",
-    name:"question2",
+    name:"state_of_art",
   },
   {
     question:"Detailed Methodology and Plan of Action",
     translation:"வழிமுறை மற்றும் செயல்திட்டம்",
-    name:"question3",
+    name:"methodology_and_action_plan",
   },
   {
     question:"Performance Milestones and Schedule",
     translation:"செயல்திறன் மைல்கல் மற்றும் அட்டவனை",
-    name:"question4",
+    name:"performance_milestone",
   },
   {
     question:"Deliverables",
     translation:"வழங்ககூடியவை",
-    name:"question5",
+    name:"deliverables",
   },
   {
     question:"Estimated Expenditure",
     translation:"மதிப்பிடப்பட்ட செலவு",
-    name:"question6",
+    name:"estimated_expenditure",
   },
   {
     question:"Appointment of Research Staff in time",
     translation:"சரியான நேரத்தில் ஆராய்ச்சி ஊழியர்களை நியமித்தல்",
-    name:"question7",
+    name:"appoinment_of_staffs",
   },
   {
     question:"Completion of Modules in time",
     translation:"தொகுதிகளை சரியான நேரத்தில் முடித்தல்",
-    name:"question8",
+    name:"completion_in_time",
   },
   {
     question:"Result achieved as expected",
     translation:"எதிர்பார்த்தபடி முடிவு அடையப்பட்டது",
-    name:"question9",
+    name:"expected_result",
   },
   {
     question:"Performance in periodical Reviews",
     translation:"காலமுறை மதிப்பாய்வில் செயல்திறன்",
-    name:"question10",
+    name:"review_performance",
   },
   {
     question:"Timely closure of the project",
     translation:"திட்டத்தைச் சரியான நேரத்தில் முடிப்பது",
-    name:"question11",
+    name:"project_closure_time",
   },
   {
     question:"Literature Collected",
     translation:"சேகரிக்கப்பட்ட ஆவணங்கள்",
-    name:"question12",
+    name:"literature_collected",
   },
   {
     question:"Final Technical Report(s)",
     translation:"இறுதி தொழில்நுட்ப அறிக்கை",
-    name:"question13",
+    name:"final_technical_report",
   },
   {
     question:"Hardware or Software developed",
     translation:"மென்பொருள் மற்றும் வன்பொருள்",
-    name:"question14",
+    name:"developed_hardware_or_software",
   },
   {
     question:"Deliverables as in Proposal",
     translation:"முன்மொழிவில் உள்ளபடி வழங்ககூடியவை",
-    name:"question15",
+    name:"proposal_deliverables",
   },
   {
     question:"Publications",
     translation:"வெளியீடு",
-    name:"question16",
+    name:"publications",
   },
   {
     question:"Patents",
     translation:"காப்புரிமை",
-    name:"question17",
+    name:"patents",
   },
 ];
 
@@ -695,78 +504,78 @@ export const collaboratorFeedbackQustions = [
       {
         question: "I carry the knowledge in Mathematics, Science, and Engineering fundamentals",
         translation: "",
-        name: "question1"
+        name: "knowledge_in_fundamentals"
       },
       {
         question: "I am able to analyze complex engineering problems",
         translation: "",
-        name: "question2"
+        name: "analyze_engineering_problems"
       },
       {
         question: "I am able to identify components, design systems, and reach solutions for engineering problems",
         translation: "",
-        name: "question3"
+        name: "identify_design_solutions"
       },
       {
         question: "I am able to do analysis and interpret the data to provide valid conclusions",
         translation: "",
-        name: "question4"
+        name: "data_analysis_interpretation"
       },
       {
         question: "I am able to use modern tools for engineering activities",
         translation: "",
-        name: "question5"
+        name: "use_modern_tools"
       },
       {
         question: "I am applying the contextual knowledge to assess several issues and the consequent responsibilities relevant to the profession",
         translation: "",
-        name: "question6"
+        name: "contextual_knowledge"
       },
       
         {
           question: "I understand the importance of engineering solutions for the development of society and the environment",
           translation: "",
-          name: "question7"
+          name: "importance_of_solutions"
         },
         {
           question: "I apply ethical principles and commit to professional ethics and responsibilities",
           translation: "",
-          name: "question8"
+          name: "ethical_principles"
         },
         {
           question: "I am able to function effectively as an individual, and as a member or as a leader in diverse teams",
           translation: "",
-          name: "question9"
+          name: "teamwork_ability"
         },
         {
           question: "I am able to communicate effectively (write reports, make effective presentations and give, receive clear instructions) with society at large",
           translation: "",
-          name: "question10"
+          name: "communication_effectiveness"
         },
         {
           question: "I am able to apply the knowledge related to Project management and finance",
           translation: "",
-          name: "question11"
+          name: "project_management_finance"
         },
         {
           question: "I am able to learn new techniques and update myself in the broadest context of technological change",
           translation: "",
-          name: "question12"
+          name: "learn_new_techniques"
         },
         {
           question: "I am able to analyze, design, and provide solutions to the problems pertaining to Electronics, VLSI, Image processing, and Embedded systems",
           translation: "",
-          name: "question13"
+          name: "analyze_design_solutions_electronics"
         },
         {
           question: "I am able to analyze, design, and provide solutions to the problems pertaining to RF and Microwaves, Wireless and Optical Communication",
           translation: "",
-          name: "question14"
+          name: "analyze_design_solutions_rf_microwaves"
         },
         {
           question: "I am able to design web-based and mobile-based applications",
           translation: "",
-          name: "question15"
+          name: "design_web_mobile_apps"
         },
       
   ]
@@ -774,57 +583,57 @@ export const collaboratorFeedbackQustions = [
       {
         question: "Lab manuals are supplied at the beginning of the lab",
         translation: "",
-        name: "question1"
+        name: "lab_manual_supply"
       },
       {
         question: "Labs were neat and clean with proper labelling and marking of equipment’s ",
         translation: "",
-        name: "question2"
+        name: "clean_and_neatness_of_lab"
       },
       {
         question: "All equipment’s were in working condition",
         translation: "",
-        name: "question3"
+        name: "equipment_working_condition"
       },
       {
         question: "Each student gets a chance to perform the experiment by his/her own  hands",
         translation: "",
-        name: "question4"
+        name: "student_performance_on_own_hand"
       },
       {
         question: "Lab hours were mostly spent on performing experiments",
         translation: "",
-        name: "question5"
+        name: "lab_hours_for_experiment"
       },
       {
         question: "Faculty was cooperative and ensured the smooth conduct of the experiments",
         translation: "",
-        name: "question6"
+        name: "faculty_cooperation"
       },
       {
         question: "Faculty had in-depth knowledge about the experiments",
         translation: "",
-        name: "question7"
+        name: "faculty_knowledge"
       },
       {
         question: "Lab reports were checked timely with proper marking or grading",
         translation: "",
-        name: "question8"
+        name: "lab_reports_checking"
       },
       {
         question: "Model exams were conducted and helped us to prepare for semester exams",
         translation: "",
-        name: "question9"
+        name: "conducting_model_exams"
       },
       {
         question: "Practical sessional exams were held in time",
         translation: "",
-        name: "question10"
+        name: "on_time_of_practical_exams"
       },
       {
         question: "Experiments helped in better understanding of the subject",
         translation: "",
-        name: "question11"
+        name: "helpful_of_experiments"
       },
     ];
     
@@ -833,52 +642,52 @@ export const collaboratorFeedbackQustions = [
       {
         question: "Faculty detailed the objectives and the plan of execution of the course to the students ",
         translation: "",
-        name: "question1"
+        name: "faculty_objectives_plan"
       },
       {
         question: "Faculty gave advise in selection and presentation of topics",
         translation: "",
-        name: "question2"
+        name: "faculty_advice_topics"
       },
       {
         question: "Effectiveness of Faculty in making the students use modern presentation aids",
         translation: "",
-        name: "question3"
+        name: "effectiveness_modern_aids"
       },
       {
         question: "Faculty support towards the development of students skill",
         translation: "",
-        name: "question4"
+        name: "faculty_support_skills"
       },
       {
         question: "Faculty made the seminar class a positive learning environment",
         translation: "",
-        name: "question5"
+        name: "seminar_class_environment"
       },
       {
         question: "Faculty and the course motivated the students do their best work",
         translation: "",
-        name: "question6"
+        name: "motivation_to_do_best"
       },
       {
         question: "Faculty appreciated the students ideas and presentation",
         translation: "",
-        name: "question7"
+        name: "appreciation_of_ideas"
       },
       {
         question: "Faculty appeared enthusiastic and interested",
         translation: "",
-        name: "question8"
+        name: "enthusiasm_interest"
       },
       {
         question: "Faculty was accessible outside of class",
         translation: "",
-        name: "question9"
+        name: "faculty_accessibility"
       },
       {
         question: "I found the course to be interesting and a platform to learn and present new ideas",
         translation: "",
-        name: "question10"
+        name: "course_interest_platform"
       },
     ]
 
@@ -902,7 +711,7 @@ export const collaboratorFeedbackQustions = [
     {
       'id':'4',
       'program':'Mini Project and Project Feedback',
-      'pdf':'####'
+      'pdf':'./Std_mini_project_fb'
     },
    
   ]
