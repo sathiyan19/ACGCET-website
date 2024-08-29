@@ -8,6 +8,7 @@ import colloborator_fb from "../../assets/pictures/colloborator_fb.webp";
 import supplier_fb from "../../assets/pictures/supplier_fb.webp";
 import employer_fb from "../../assets/pictures/employer_fb.webp";
 import parent_fb from "../../assets/pictures/parent_fb.webp";
+import parentblack from "../../assets/pictures/parentblack.jpg";
 import consultancy_fb from "../../assets/pictures/consultancy_fb.webp";
 import "./Feedback.css";
 
@@ -107,7 +108,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/parents_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={parent_fb} />
+              <img className="feedback_image" src={parentblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Parents </div>

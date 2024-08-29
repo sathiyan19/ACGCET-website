@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Std_mini_project_fb.css'
-import { Underline ,Backtotop} from '../../widgets'
+import { Underline ,Backtotop,Alertmessage} from '../../widgets'
 import { std_mini_project_fb_data } from '../../constants/feedbackQuestions'
 import axios from 'axios';
 
@@ -14,6 +14,7 @@ const Std_mini_project_fb = () => {
     const [studentEmail, setStudentEmail] = useState('');
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
+    const [alertMessage, setAlertMessage] = useState('');
 
     const validateRatings = () => {
         const errors = {};
@@ -54,7 +55,7 @@ const Std_mini_project_fb = () => {
           });
           console.log(programme,semester);
           console.log(response.data);
-          alert("Feedback submitted successfully");
+          setAlertMessage("Feedback submitted successfully");
     
           // Clear the form after submission
           setProgramme('');
@@ -67,10 +68,10 @@ const Std_mini_project_fb = () => {
           setRatingErrors({});
         } catch (error) {
           console.error('Error:', error);
-          alert("An error occurred while submitting your ratings");
+          setAlertMessage("An error occurred while submitting your ratings");
         }
     };
-
+    const handleCloseAlert = () => setAlertMessage('');
   return (
     <div className='std_mini_proj_fb_container'>
         <Underline heading="Mini Project and Project Feedback"/>
@@ -116,6 +117,7 @@ const Std_mini_project_fb = () => {
             </div>
         </form>
         <Backtotop/>
+        <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
     </div>
   )
 }

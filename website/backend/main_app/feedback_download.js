@@ -589,6 +589,659 @@ ${feedbackData.map(row => `
 </body>
 </html>
 `;
+
+
+const getTeachingFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colloborator Feedback</title>
+    <style>
+
+   body {
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        font-size: 8px; /* Reduced font size */
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .table-container {
+        width: 100%; 
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        table-layout: auto; /* Allow table to auto adjust */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 2px;
+        text-align: left;
+        word-wrap: break-word; /* Enable word wrapping */
+        font-size: 8px; /* Reduced font size */
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    @media print {
+        body {
+            margin: 10px;
+        }
+
+        .table-container {
+            width: 100%; 
+        }
+
+        table {
+            width: 100%; 
+        }
+
+        th, td {
+            font-size: 8px;
+            padding: 2px;
+            word-wrap: break-word; /* Ensure word wrapping */
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Collaboratar Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    <table>
+        <tr>
+<th>Programme Name</th>
+<th>Semester</th>
+<th>Course Title</th>
+<th>Course Code</th>
+<th>Faculty Name</th>
+<th>Student Email</th>
+<th>knowledge in fundamentals</th>
+<th>Analyzing engineering problems</th>
+<thIdentify design solutions</th>
+<th> Data analysis interpretation</th>
+<th>Use Modern Tools</th>
+<th>contextual knowledge</th>
+<th>Importance of Solutions</th>
+<th> Ethical Principles</th>
+<th> Teamwork Ability</th>
+<th>Communication Effectiveness</th>
+<th> Project Management Finance</th>
+<th> Learn New Techniques</th>
+<th>Analyze Design Solutions Electronics</th>
+<th>Analyze Design Solutions rf Microwaves</th>
+<th>Design web mobile apps</th>
+
+</tr>
+${feedbackData.map(row => `
+<tr>
+<td>${row.programme}</td>
+<td>${row.semester}</td>
+<td>${row.course_title}</td>
+<td>${row.course_code}</td>
+<td>${row.faculty}</td>
+<td>${row.student_email}</td>
+<td>${row.knowledge_in_fundamentals}</td>
+<td>${row.analyze_engineering_problems}</td>
+<td>${row.identify_design_solutions}</td>
+<td>${row.data_analysis_interpretation}</td>
+<td>${row.use_modern_tools}</td>
+<td>${row.contextual_knowledge}</td>
+<td>${row.importance_of_solutions}</td>
+<td>${row.ethical_principles}</td>
+<td>${row.teamwork_ability}</td>
+<td>${row.communication_effectiveness}</td>
+<td>${row.project_management_finance}</td>
+<td>${row.learn_new_techniques}</td>
+<td>${row.analyze_design_solutions_electronics}</td>
+<td>${row.analyze_design_solutions_rf_microwaves}</td>
+<td>${row.design_web_mobile_apps}</td>
+
+
+
+</tr>`).join('')}
+    </table>
+</body>
+</html>
+`;
+
+const getPracticalFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colloborator Feedback</title>
+    <style>
+
+   body {
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        font-size: 8px; /* Reduced font size */
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .table-container {
+        width: 100%; 
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        table-layout: auto; /* Allow table to auto adjust */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 2px;
+        text-align: left;
+        word-wrap: break-word; /* Enable word wrapping */
+        font-size: 8px; /* Reduced font size */
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    @media print {
+        body {
+            margin: 10px;
+        }
+
+        .table-container {
+            width: 100%; 
+        }
+
+        table {
+            width: 100%; 
+        }
+
+        th, td {
+            font-size: 8px;
+            padding: 2px;
+            word-wrap: break-word; /* Ensure word wrapping */
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Collaboratar Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    <table>
+        <tr>
+<th>Programme</th>
+<th>Semester</th>
+<th>Course Title</th>
+<th>Course Code</th>
+<th>Faculty</th>
+<th>Student Email</th>
+<th>Lab Manual Supply</th>
+<th>Clean And Neatness Of Lab</th>
+<th>Equipment Working Condition</th>
+<th>Student Performance On Own Hand</th>
+<th>Lab Hours For Experiment</th>
+<th>Faculty Cooperation</th>
+<th>Faculty Knowledge</th>
+<th>Lab Reports Checking</th>
+<th>Conducting Model Exams</th>
+<th>On Time Of Practical Exams</th>
+<th>Helpful Of Experiments</th>
+
+
+</tr>
+${feedbackData.map(row => `
+<tr>
+<td>${row.programme}</td>
+<td>${row.semester}</td>
+<td>${row.course_title}</td>
+<td>${row.course_code}</td>
+<td>${row.faculty}</td>
+<td>${row.student_email}</td>
+<td>${row.lab_manual_supply}</td>
+<td>${row.clean_and_neatness_of_lab}</td>
+<td>${row.equipment_working_condition}</td>
+<td>${row.student_performance_on_own_hand}</td>
+<td>${row.lab_hours_for_experiment}</td>
+<td>${row.faculty_cooperation}</td>
+<td>${row.faculty_knowledge}</td>
+<td>${row.lab_reports_checking}</td>
+<td>${row.conducting_model_exams}</td>
+<td>${row.on_time_of_practical_exams}</td>
+<td>${row.helpful_of_experiments}</td>
+
+
+
+
+</tr>`).join('')}
+    </table>
+</body>
+</html>
+`;
+
+
+
+// const getTeachingFeedbackTemplate = (feedbackData) => `
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Colloborator Feedback</title>
+//     <style>
+
+//    body {
+//         font-family: Arial, sans-serif;
+//         margin: 15px;
+//         font-size: 8px; /* Reduced font size */
+//     }
+
+//     h1 {
+//         color: #333;
+//     }
+
+//     .table-container {
+//         width: 100%; 
+//         margin: 0 auto;
+//         overflow-x: auto;
+//     }
+
+//     table {
+//         width: 100%;
+//         border-collapse: collapse;
+//         margin-top: 20px;
+//         table-layout: auto; /* Allow table to auto adjust */
+//     }
+
+//     th, td {
+//         border: 1px solid #ddd;
+//         padding: 2px;
+//         text-align: left;
+//         word-wrap: break-word; /* Enable word wrapping */
+//         font-size: 8px; /* Reduced font size */
+//     }
+
+//     th {
+//         background-color: #f4f4f4;
+//     }
+
+//     @media print {
+//         body {
+//             margin: 10px;
+//         }
+
+//         .table-container {
+//             width: 100%; 
+//         }
+
+//         table {
+//             width: 100%; 
+//         }
+
+//         th, td {
+//             font-size: 8px;
+//             padding: 2px;
+//             word-wrap: break-word; /* Ensure word wrapping */
+//         }
+
+//         thead {
+//             display: table-header-group;
+//         }
+
+//         tfoot {
+//             display: table-footer-group;
+//         }
+//     }
+
+//     </style>
+// </head>
+// <body>
+//     <h1>Collaboratar Feedback Summary</h1>
+//     <p>Date: ${new Date().toLocaleDateString()}</p>
+//     <table>
+//         <tr>
+// <th>Programme Name</th>
+// <th>Semester</th>
+// <th>Course Title</th>
+// <th>Course Code</th>
+// <th>Faculty Name</th>
+// <th>Student Email</th>
+// <th>knowledge in fundamentals</th>
+// <th>Analyzing engineering problems</th>
+// <thIdentify design solutions</th>
+// <th> Data analysis interpretation</th>
+// <th>Use Modern Tools</th>
+// <th>contextual knowledge</th>
+// <th>Importance of Solutions</th>
+// <th> Ethical Principles</th>
+// <th> Teamwork Ability</th>
+// <th>Communication Effectiveness</th>
+// <th> Project Management Finance</th>
+// <th> Learn New Techniques</th>
+// <th>Analyze Design Solutions Electronics</th>
+// <th>Analyze Design Solutions rf Microwaves</th>
+// <th>Design web mobile apps</th>
+
+// </tr>
+// ${feedbackData.map(row => `
+// <tr>
+// <td>${row.programme}</td>
+// <td>${row.semester}</td>
+// <td>${row.course_title}</td>
+// <td>${row.course_code}</td>
+// <td>${row.faculty}</td>
+// <td>${row.student_email}</td>
+// <td>${row.knowledge_in_fundamentals}</td>
+// <td>${row.analyze_engineering_problems}</td>
+// <td>${row.identify_design_solutions}</td>
+// <td>${row.data_analysis_interpretation}</td>
+// <td>${row.use_modern_tools}</td>
+// <td>${row.contextual_knowledge}</td>
+// <td>${row.importance_of_solutions}</td>
+// <td>${row.ethical_principles}</td>
+// <td>${row.teamwork_ability}</td>
+// <td>${row.communication_effectiveness}</td>
+// <td>${row.project_management_finance}</td>
+// <td>${row.learn_new_techniques}</td>
+// <td>${row.analyze_design_solutions_electronics}</td>
+// <td>${row.analyze_design_solutions_rf_microwaves}</td>
+// <td>${row.design_web_mobile_apps}</td>
+
+
+
+// </tr>`).join('')}
+//     </table>
+// </body>
+// </html>
+// `;
+
+const getMiniFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colloborator Feedback</title>
+    <style>
+
+   body {
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        font-size: 8px; /* Reduced font size */
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .table-container {
+        width: 100%; 
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        table-layout: auto; /* Allow table to auto adjust */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 2px;
+        text-align: left;
+        word-wrap: break-word; /* Enable word wrapping */
+        font-size: 8px; /* Reduced font size */
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    @media print {
+        body {
+            margin: 10px;
+        }
+
+        .table-container {
+            width: 100%; 
+        }
+
+        table {
+            width: 100%; 
+        }
+
+        th, td {
+            font-size: 8px;
+            padding: 2px;
+            word-wrap: break-word; /* Ensure word wrapping */
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Collaboratar Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    <table>
+        <tr>
+<th>Programme</th>
+<th>Semester</th>
+<th>Course Title</th>
+<th>Course Code</th>
+<th>Faculty</th>
+<th>Student Email</th>
+<th>Project Objectives</th>
+<th>Technical Support</th>
+<th>Facilities Offered</th>
+<th>Frequency Of Project Reviews</th>
+<th>Helpful Of Project Reviews</th>
+<th>Support Of Supervisor</th>
+<th>Implementation Of Knowledge</th>
+<th>Motivation To Do New Findings</th>
+<th>Project Benefit To Society</th>
+<th>Appreciation</th>
+
+
+
+</tr>
+${feedbackData.map(row => `
+<tr>
+<td>${row.programme}</td>
+<td>${row.semester}</td>
+<td>${row.course_title}</td>
+<td>${row.course_code}</td>
+<td>${row.faculty}</td>
+<td>${row.student_email}</td>
+<td>${row.project_objectives}</td>
+<td>${row.technical_support}</td>
+<td>${row.facilities_offered}</td>
+<td>${row.frequency_0f_project_reviews}</td>
+<td>${row.helpful_of_project_reviews}</td>
+<td>${row.support_of_suppervisor}</td>
+<td>${row.implementation_of_knowledge}</td>
+<td>${row.motivation_to_do_new_findings}</td>
+<td>${row.project_beniefit_to_society}</td>
+<td>${row.appreciation}</td>
+
+
+
+
+</tr>`).join('')}
+    </table>
+</body>
+</html>
+`;
+const getSeminarFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colloborator Feedback</title>
+    <style>
+
+   body {
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        font-size: 8px; /* Reduced font size */
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .table-container {
+        width: 100%; 
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        table-layout: auto; /* Allow table to auto adjust */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 2px;
+        text-align: left;
+        word-wrap: break-word; /* Enable word wrapping */
+        font-size: 8px; /* Reduced font size */
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    @media print {
+        body {
+            margin: 10px;
+        }
+
+        .table-container {
+            width: 100%; 
+        }
+
+        table {
+            width: 100%; 
+        }
+
+        th, td {
+            font-size: 8px;
+            padding: 2px;
+            word-wrap: break-word; /* Ensure word wrapping */
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Collaboratar Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    <table>
+        <tr>
+<th>Programme</th>
+<th>Semester</th>
+<th>Course Title</th>
+<th>Course Code</th>
+<th>Faculty</th>
+<th>Student Email</th>
+<th>Faculty Objectives Plan</th>
+<th>Faculty Advice Topics</th>
+<th>Effectiveness Modern Aids</th>
+<th>Faculty Support Skills</th>
+<th>Seminar Class Environment</th>
+<th>Motivation To Do Best</th>
+<th>Appreciation Of Ideas</th>
+<th>Enthusiasm Interest</th>
+<th>Faculty Accessibility</th>
+<th>Course Interest Platform</th>
+
+
+
+
+</tr>
+${feedbackData.map(row => `
+<tr>
+<td>${row.programme}</td>
+<td>${row.semester}</td>
+<td>${row.course_title}</td>
+<td>${row.course_code}</td>
+<td>${row.faculty}</td>
+<td>${row.student_email}</td>
+<td>${row.faculty_objectives_plan}</td>
+<td>${row.faculty_advice_topics}</td>
+<td>${row.effectiveness_modern_aids}</td>
+<td>${row.faculty_support_skills}</td>
+<td>${row.seminar_class_environment}</td>
+<td>${row.motivation_to_do_best}</td>
+<td>${row.appreciation_of_ideas}</td>
+<td>${row.enthusiasm_interest}</td>
+<td>${row.faculty_accessibility}</td>
+<td>${row.course_interest_platform}</td>
+
+
+
+
+</tr>`).join('')}
+    </table>
+</body>
+</html>
+`;
 const generatePdfAndSendEmail = async (req, res) => {
     const { option } = req.body;
 
@@ -618,6 +1271,22 @@ const generatePdfAndSendEmail = async (req, res) => {
                     [feedbackData] = await pool.query('SELECT * FROM CollaboratorFeedback  ');
                     htmlContent = getCollaboratarFeedbackTemplate(feedbackData);
                     break;
+                    case 'teaching':
+                        [feedbackData] = await pool.query('SELECT * FROM  TeachingAndLearningFeedback ');
+                        htmlContent = getTeachingFeedbackTemplate(feedbackData);
+                        break;
+                    case 'Practical':
+                        [feedbackData] = await pool.query('SELECT * FROM  PracticalFeedback ');
+                        htmlContent = getPracticalFeedbackTemplate(feedbackData);
+                        break;
+                    case 'mini':
+                        [feedbackData] = await pool.query('SELECT * FROM MiniProjectFeedback ');
+                        htmlContent = getMiniFeedbackTemplate(feedbackData);
+                        break;
+                    case 'seminar':
+                        [feedbackData] = await pool.query('SELECT * FROM  TechnicalSeminarFeedback');
+                        htmlContent = getSeminarFeedbackTemplate(feedbackData);
+                        break;
             default:
                 return res.status(400).send('Invalid option selected.');
         }

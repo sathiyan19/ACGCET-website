@@ -43,7 +43,7 @@
     top: 70px;
     width: 100%;
     height: 100%; 
-    color: black;
+    color: white;
     /* margin-left: 20px; */
     font-family: 'Lato', sans-serif;
     font-size: 22px;
@@ -89,10 +89,10 @@
     );
     padding: 5px; 
     border-radius: 5px; 
-    color: black; 
+    color: white; 
 }
 .feedback_description1{
-    color: black;
+    color: white;
     padding: 5px; 
 }
 

@@ -1,7 +1,7 @@
 
 import React ,{useState}from 'react'
 import './Practical_fb.css'
-import { Underline ,Backtotop} from '../../widgets'
+import { Underline ,Backtotop,Alertmessage} from '../../widgets'
 import { practical_fb_data } from '../../constants/feedbackQuestions'
 import axios from 'axios';
 
@@ -15,6 +15,7 @@ const Practical_fb = () => {
     const [studentEmail, setStudentEmail] = useState('');
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
+    const [alertMessage, setAlertMessage] = useState('');
 
     const validateRatings = () => {
         const errors = {};
@@ -56,7 +57,7 @@ const Practical_fb = () => {
           });
     
           console.log(response.data);
-          alert("Feedback submitted successfully");
+          setAlertMessage("Feedback submitted successfully");
     
           // Clear the form after submission
           setProgramme('');
@@ -69,10 +70,10 @@ const Practical_fb = () => {
           setRatingErrors({});
         } catch (error) {
           console.error('Error:', error);
-          alert("An error occurred while submitting your ratings");
+          setAlertMessage("An error occurred while submitting your ratings");
         }
     }; 
-
+    const handleCloseAlert = () => setAlertMessage('');
   return (
     <div className="practical_fb_container">
     <Underline heading="Practical / Labortary Feedback"/>
@@ -127,10 +128,11 @@ const Practical_fb = () => {
         </div>
     </form>
     <Backtotop />
+    <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
     </div>
 //    </div>
-  )
-}
+  );
+};
 
 export default Practical_fb
 

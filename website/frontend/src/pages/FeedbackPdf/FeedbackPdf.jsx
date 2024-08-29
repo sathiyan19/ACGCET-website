@@ -64,7 +64,10 @@ const FeedbackPdf = () => {
           <option className='box-option' value="" disabled>Choose an option</option>
           <option className='box-option' value="supplier">Supplier Feedback</option>
           <option className='box-option' value="consultancy">Consultancy Feedback</option>
-          <option className='box-option' value="student">Student Feedback</option>
+          <option className='box-option' value="teaching"> Teaching and Learning Feedback</option>
+          <option className='box-option' value="Practical"> Practical and Laboratory Feedback</option>
+          <option className='box-option' value="mini"> Mini project and Project Feedback</option>
+          <option className='box-option' value="seminar"> Technical seminar Feedback</option>
           <option className='box-option' value="alumni">Alumni Feedback</option>
           <option className='box-option' value="faculty">Faculty Feedback</option>
           <option className='box-option' value="employer">Employer Feedback</option>
