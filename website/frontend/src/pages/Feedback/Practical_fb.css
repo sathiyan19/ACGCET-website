@@ -11,7 +11,11 @@ display: flex;
 flex-direction: column;
 }
 
-
+.std_practical_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: -30px;
+}
 
 
 .practical_fb_rows{
@@ -33,7 +37,7 @@ padding: 12px;
 
 }
 .practical_fb_rating{
-
+display: flex;
 margin: 12px auto;
 justify-content: center;
 font-size: 18px;
@@ -78,5 +82,19 @@ color: #00134d;
 
   }
   
+  @media (max-width: 600px) {
+    .practical_fb_rows {
+      flex-direction: column;
+    }
   
+    .practical_fb_input, .practical_fb_select {
+      width: 100%;
+    }
+    .practical_fb_two_line{
+      margin-bottom: 10px;
+    }
+    .practical_fb_rating{
+      text-align: center;
+    }
+  }
   

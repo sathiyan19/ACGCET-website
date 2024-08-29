@@ -182,9 +182,10 @@ import {
   Practical_fb,
   Technical_fb,
 
-  Std_mini_project_fb,
+  
   Consultancy_fb,
   FeedbackPdf,
+  Std_mini_project_fb
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -378,7 +379,7 @@ const App = () => {
          <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
          <Route path="/feedback/Student_fb" element={<Student_fb/>}/>
          <Route path="/feedback/Std_teaching_fb" element={<Std_teaching_fb/>}/>
-         <Route path="/feedback/Std_mini_project_fb" element={<Std_mini_project_fb/>}/>
+         <Route path="/feedback/std_mini_project_fb" element={<Std_mini_project_fb/>}/>
 
          <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
          <Route path="/feedback/student_fb" element={<Student_fb/>}/>
