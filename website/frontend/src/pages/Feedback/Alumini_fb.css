@@ -31,7 +31,14 @@
   justify-content: space-between;
   margin-bottom: 15px;
 }
-
+.alumni_fb_1st_input{
+  width: 100%; /* Adjusts the width of each field to take half the available space with some gap */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 .alumni_fb_input, .alumni_fb_select {
   width: 48%;
   padding: 15px;
@@ -82,7 +89,7 @@
 .alumni_fb_error {
   color: red;
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 0px;
   }
 @media (max-width: 600px) {
   .alumni_fb_row {

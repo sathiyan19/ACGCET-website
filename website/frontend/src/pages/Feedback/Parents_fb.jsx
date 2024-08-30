@@ -128,22 +128,25 @@ const ParentsFeedback = () => {
                 <div className='parents_fb_row'>
                     <input 
                         type="text" 
-                        className='parents_fb_input' 
+                        className='parents_fb_1st_input' 
                         placeholder='Enter Name of student*' 
                         value={studentName}
                         onChange={handleNameChange}
                         required 
                     />
+                    </div>
+                    {nameError && <p className='parents_fb_error'>{nameError}</p>}
+                    <div className='parents_fb_row'>
                     <input 
                         type="text" 
-                        className='parents_fb_input' 
+                        className='parents_fb_1st_input' 
                         placeholder='Enter Student Register number*' 
                         value={registerNumber}
                         onChange={handleRegisterNumberChange}
                         required 
                     />
                 </div>
-                {nameError && <p className='parents_fb_error'>{nameError}</p>}
+               
                 {registerNumberError && <p className='parents_student_fb_error'>{registerNumberError}</p>}
 
                 <div className='parents_fb_row'>

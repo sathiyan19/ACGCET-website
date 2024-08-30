@@ -159,24 +159,27 @@ const Alumni_fb = () => {
                 <div className="alumni_fb_row">
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_1st_input"
                         placeholder="Enter Name of the Alumni*"
                         value={name}
                         onChange={handleNameChange}
                         required
                     />
-                   
+                    </div>
+                    {nameError && <p className='alumni_fb_error'>{nameError}</p>}
+                   <div className="alumni_fb_row">
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_1st_input"
                         placeholder="Enter Designation*"
                         value={designation}
                         onChange={(e) => setDesignation(e.target.value)}
                         required
                     />
-                     {nameError && <p className='alumni_fb_error'>{nameError}</p>}
+                     </div>
+                    
                     {errors.designation && <p className='alumni_fb_error'>{errors.designation}</p>}
-                </div>
+              
                 <div className="alumni_fb_row">
                     <select
                         className="alumni_fb_select"

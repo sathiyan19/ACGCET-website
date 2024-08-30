@@ -143,7 +143,8 @@ const EmployeeFeedback = () => {
         <div className='employer_fb_container'>
             <Underline heading="Employer Feedback" />
             <form className='employer_fb_form' onSubmit={EmployeeFeedbackSubmit}>
-                <div className='employer_fb_row'>
+                {/* <div className='employer_fb_row'> */}
+                    <div className='employer_fb_row'>
                     <input 
                         type="text" 
                         className='employer_fb_input' 
@@ -152,6 +153,9 @@ const EmployeeFeedback = () => {
                         onChange={handleHrNameChange} // Use the HR name change handler
                         required 
                     />
+                    </div>
+                    {nameError.hrName && <p className='employer_fb_error'>{nameError.hrName}</p>}
+                    <div className='employer_fb_row'>
                     <input 
                         type="text" 
                         className='employer_fb_input' 
@@ -160,8 +164,9 @@ const EmployeeFeedback = () => {
                         onChange={(e) => setCompanyName(e.target.value)}
                         required 
                     />
-                </div>
-                {nameError.hrName && <p className='employer_fb_error'>{nameError.hrName}</p>}
+                    </div>
+                {/* </div> */}
+               
                 <div className='employer_fb_row'>
                     <input 
                         type="text" 
@@ -171,6 +176,7 @@ const EmployeeFeedback = () => {
                         onChange={(e) => setCompanyAddress(e.target.value)}
                     />
                 </div>
+                {/* <div className='employer_fb_row'> */}
                 <div className='employer_fb_row'>
                     <input 
                         type="text" 
@@ -180,6 +186,8 @@ const EmployeeFeedback = () => {
                         onChange={handleStudentNameChange} // Use the student name change handler
                         required 
                     />
+                    </div>
+                    {nameError.studentName && <p className='employer_fb_error'>{nameError.studentName}</p>}
                     <select 
                        className='employer_fb_input' 
                        value={programme} 
@@ -191,8 +199,8 @@ const EmployeeFeedback = () => {
                         <option value="ME">M.E</option>
                         <option value="PhD">PhD</option>
                     </select>
-                </div>
-                {nameError.studentName && <p className='employer_fb_error'>{nameError.studentName}</p>}
+                {/* </div> */}
+               
                 <div className='employer_fb_row'>
                 <select 
                        className='employer_fb_input' 
