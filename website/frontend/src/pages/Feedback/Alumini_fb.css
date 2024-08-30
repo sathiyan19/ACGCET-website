@@ -49,11 +49,19 @@
   font-weight: bold;
   font-size: 18px;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.alumni_fb_instruction{
+  text-align: center;
+  margin-top: -10px;
 }
 
 .alumni_fb_feedback {
   margin-top: 30px;
+  margin-bottom: 10px;
+
 }
 
 .alumni_fb_question {
@@ -82,7 +90,7 @@
 .alumni_fb_error {
   color: red;
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 10px;
   }
 @media (max-width: 600px) {
   .alumni_fb_row {
@@ -91,5 +99,8 @@
 
   .alumni_fb_input, .alumni_fb_select {
     width: 100%;
+  }
+  .alumni_fb_input_lgrow{
+    margin-bottom: 15px;
   }
 }
