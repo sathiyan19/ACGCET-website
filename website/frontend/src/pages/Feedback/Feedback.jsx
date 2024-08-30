@@ -11,7 +11,7 @@ import parent_fb from "../../assets/pictures/parent_fb.webp";
 import parentblack from "../../assets/pictures/parentblack.jpg";
 import collabooratorblack from "../../assets/pictures/collabooratorblack.webp";
 import counsaltancyblack from "../../assets/pictures/counsaltancyblack.webp";
-import parentblack from "../../assets/pictures/parentblack.jpg";
+// import parentblack from "../../assets/pictures/parentblack.jpg";
 import consultancy_fb from "../../assets/pictures/consultancy_fb.webp";
 import "./Feedback.css";
 
