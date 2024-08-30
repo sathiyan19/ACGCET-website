@@ -53,7 +53,14 @@ router.post('/api/ratingsubmit',ratingsubmit);
 
 
 
+router.post('/api/parentsfeedbacksubmit', parentsfeedbackSubmit);
+
+router.post('/api/employeefeedbacksubmit',EmployeeFeedbackSubmit);
+
+router.post('/api/alumnifeedback',alumniFeedbackSubmit)
+
 router.post('/api/generate_pdf',generatePdfAndSendEmail);
+
 
 router.post('/api/download_marksheet',download_prov_marksheet)
 

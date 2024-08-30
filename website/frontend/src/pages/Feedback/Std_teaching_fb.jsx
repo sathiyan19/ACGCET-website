@@ -14,6 +14,29 @@ const Std_teaching_fb = () => {
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
     const [alertMessage, setAlertMessage] = useState('');
+    const [nameError, setNameError] = useState('');
+    const [semError, setSemError] = useState('');
+
+    const validateName = (name) => {
+      const nameRegex = /^[A-Za-z\s]{2,30}$/;
+      if (!nameRegex.test(name)) {
+        setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+        return false;
+      } else {
+        setNameError('');
+        return true;
+      }
+    };
+    const validateSem= (sem) => {
+      const semRegex = /^[1-8]{1}$/;
+      if (!semRegex.test(sem)) {
+        setSemError('Enter valid semester');
+        return false;
+      } else {
+        setSemError('');
+        return true;
+      }
+    };
 
     const validateRatings = () => {
         const errors = {};
@@ -24,6 +47,17 @@ const Std_teaching_fb = () => {
         });
         setRatingErrors(errors);
         return Object.keys(errors).length === 0;
+    };
+
+    const handleNameChange = (e) => {
+      const name = e.target.value;
+      validateName(name);
+      setFaculty(name);
+    };
+    const handleSemChange = (e) => {
+      const sem = e.target.value;
+      validateSem(sem);
+      setSemester(sem);
     };
 
     const handleRatingChange = (e, name) => {
@@ -41,25 +75,27 @@ const Std_teaching_fb = () => {
         event.preventDefault();
 
         const areRatingsValid = validateRatings();
+        const isNameValid = validateName(faculty);
+        const isSemValid = validateSem(semester);
 
-        if (!areRatingsValid) {
+        if (!areRatingsValid || !isNameValid || !isSemValid) {
             return;
         }
 
         try {
             const response = await axios.post('/api/std_teaching_ratingsubmit', {
-                programme,
-                semester,
+                programme: programme,
+                semester: semester,
                 course_title: courseTitle,
                 course_code: courseCode,
-                faculty,
+                faculty: faculty,
                 student_email: studentEmail,
-                ratings
+                ratings: ratings
             });
-
+    
             console.log(response.data);
-            setAlertMessage("Feedback submitted successfully");
-
+            alert("Feedback submitted successfully");
+    
             // Clear the form after submission
             setProgramme('');
             setSemester('');

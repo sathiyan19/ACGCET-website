@@ -82,6 +82,7 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
             </tr>`).join('')}
         </table>
     </div>
+<<<<<<< HEAD
 </body>
 </html>
 `;
@@ -204,6 +205,8 @@ const getParentsFeedbackTemplate = (feedbackData) => `
             <td>${row.college_environment_development}</td>
         </tr>`).join('')}
     </table>
+=======
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
 </body>
 </html>
 `;
@@ -216,6 +219,7 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
     <title>Employee Feedback</title>
     <style>
 
+<<<<<<< HEAD
    body {
         font-family: Arial, sans-serif;
         margin: 15px;
@@ -339,10 +343,15 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
 `;
 const getCounsaltancyFeedbackTemplate = (feedbackData) => `
 <!DOCTYPE html>
+=======
+const getParentsPdfTemplate = (feedbackData) => `
+   <!DOCTYPE html>
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Counsaltancy Feedback</title>
     <style>
 
@@ -1248,6 +1257,303 @@ ${feedbackData.map(row => `
 const generatePdfAndSendEmail = async (req, res) => {
     const { option } = req.body;
 
+=======
+    <title>Parents Feedback</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        font-size: 10px;
+        font-weight: unset;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .table-container {
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        table-layout: fixed; /* Fixed layout for better control of columns */
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 2px;
+        text-align: left;
+        word-wrap: break-word; /* Ensure long text wraps within cells */
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    @media print {
+        body {
+            margin: 10px;
+            font-size: 8px;
+        }
+
+        .table-container {
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            table-layout: fixed;
+        }
+
+        th, td {
+            font-size: 8px;
+            padding: 2px 4px;
+            overflow: visible;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <h1>Parents Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Register Number</th>
+                    <th>Branch</th>
+                    <th>Passed Out Year</th>
+                    <th>Infrastructure</th>
+                    <th>College Ambience</th>
+                    <th>Authority Approachability</th>
+                    <th>Hostel Facilities</th>
+                    <th>Library & Sports Facilities</th>
+                    <th>Security & Safety Measures</th>
+                    <th>Faculty Academic Skills</th>
+                    <th>Learning Experience</th>
+                    <th>Environment Diversity</th>
+                    <th>Placement Opportunities</th>
+                    <th>Technical Knowledge Improvement</th>
+                    <th>College Environment Development</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${feedbackData.map(row => `
+                <tr>
+                    <td>${row.student_name}</td>
+                    <td>${row.register_number}</td>
+                    <td>${row.branch}</td>
+                    <td>${row.passed_out_year}</td>
+                    <td>${row.infrastructure_facilities}</td>
+                    <td>${row.college_ambience}</td>
+                    <td>${row.authority_approachability}</td>
+                    <td>${row.hostel_facilities}</td>
+                    <td>${row.library_sports_facilities}</td>
+                    <td>${row.security_safety_measures}</td>
+                    <td>${row.faculty_academic_skills}</td>
+                    <td>${row.learning_experience}</td>
+                    <td>${row.environment_diversity}</td>
+                    <td>${row.placement_opportunities}</td>
+                    <td>${row.technical_knowledge_improvement}</td>
+                    <td>${row.college_environment_development}</td>
+                </tr>`).join('')}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>`
+;
+const getAlumniPdfTemplate = (feedbackData) => `
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Feedback</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        font-size: 10px;
+        font-weight: unset;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .table-container {
+        width: 100%;
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        table-layout: fixed; /* Fixed layout for better control of columns */
+    }
+
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 2px;
+        text-align: left;
+        word-wrap: break-word; /* Ensure long text wraps within cells */
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    @media print {
+        body {
+            margin: 10px;
+            font-size: 8px;
+        }
+
+        .table-container {
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            table-layout: fixed;
+        }
+
+        th, td {
+            font-size: 8px;
+            padding: 2px 4px;
+            overflow: visible;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <h1>Parents Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    
+    <div class="table-container">
+<table>
+    <thead>
+        <tr>
+            <th>Alumni Name</th>
+            <th>Designation</th>
+            <th>Programme</th>
+            <th>Department</th>
+            <th>Passed Out Year</th>
+            <th>Higher Studies</th>
+            <th>Higher Studies Institution</th>
+            <th>Competitive Exam</th>
+            <th>Competitive Exam Name</th>
+            <th>Company Name</th>
+            <th>Entry Level Position</th>
+            <th>Current Position</th>
+            <th>Responsibilities</th>
+            <th>Achievements</th>
+            <th>In Service</th>
+            <th>City</th>
+            <th>Knowledge in Field</th>
+            <th>Latest Developments</th>
+            <th>Practical Solving</th>
+            <th>Creative Thoughts</th>
+            <th>Analytical Assessment</th>
+            <th>Self Learner</th>
+            <th>Financial Management</th>
+            <th>Know Capabilities</th>
+            <th>Modern Equipment</th>
+            <th>Peer Interaction</th>
+            <th>Professional Friends</th>
+            <th>Leadership Ability</th>
+            <th>Effective Communication</th>
+            <th>Clear Expression</th>
+            <th>Ethical Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        ${feedbackData.map(row => `
+        <tr>
+            <td>${row.alumni_name || 'N/A'}</td>
+            <td>${row.designation || 'N/A'}</td>
+            <td>${row.programme || 'N/A'}</td>
+            <td>${row.department || 'N/A'}</td>
+            <td>${row.passed_out_year || 'N/A'}</td>
+            <td>${row.higher_studies || 'N/A'}</td>
+            <td>${row.higher_studies_institution || 'N/A'}</td>
+            <td>${row.competitive_exam || 'N/A'}</td>
+            <td>${row.competitive_exam_name || 'N/A'}</td>
+            <td>${row.company_name || 'N/A'}</td>
+            <td>${row.entry_level_position || 'N/A'}</td>
+            <td>${row.current_position || 'N/A'}</td>
+            <td>${row.responsibilities || 'N/A'}</td>
+            <td>${row.achievements || 'N/A'}</td>
+            <td>${row.in_service || 'N/A'}</td>
+            <td>${row.city || 'N/A'}</td>
+            <td>${row.knowledge_in_field !== undefined ? row.knowledge_in_field : 'N/A'}</td>
+            <td>${row.latest_developments !== undefined ? row.latest_developments : 'N/A'}</td>
+            <td>${row.practical_solving !== undefined ? row.practical_solving : 'N/A'}</td>
+            <td>${row.creative_thoughts !== undefined ? row.creative_thoughts : 'N/A'}</td>
+            <td>${row.analytical_assessment !== undefined ? row.analytical_assessment : 'N/A'}</td>
+            <td>${row.self_learner !== undefined ? row.self_learner : 'N/A'}</td>
+            <td>${row.financial_management !== undefined ? row.financial_management : 'N/A'}</td>
+            <td>${row.know_capabilities !== undefined ? row.know_capabilities : 'N/A'}</td>
+            <td>${row.modern_equipment !== undefined ? row.modern_equipment : 'N/A'}</td>
+            <td>${row.peer_interaction !== undefined ? row.peer_interaction : 'N/A'}</td>
+            <td>${row.professional_friends !== undefined ? row.professional_friends : 'N/A'}</td>
+            <td>${row.leadership_ability !== undefined ? row.leadership_ability : 'N/A'}</td>
+            <td>${row.effective_communication !== undefined ? row.effective_communication : 'N/A'}</td>
+            <td>${row.clear_expression !== undefined ? row.clear_expression : 'N/A'}</td>
+            <td>${row.ethical_actions !== undefined ? row.ethical_actions : 'N/A'}</td>
+        </tr>`).join('')}
+    </tbody>
+</table>
+
+    </div>
+</body>
+</html>`
+;
+
+
+
+const generatePdfAndSendEmail = async (req, res) => {
+    const { option } = req.body;
+
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
     try {
         let feedbackData;
         let htmlContent;
@@ -1260,6 +1566,7 @@ const generatePdfAndSendEmail = async (req, res) => {
                 break;
             case 'parents':
                 [feedbackData] = await pool.query('SELECT * FROM ParentsFeedback');
+<<<<<<< HEAD
                 htmlContent = getParentsFeedbackTemplate(feedbackData);
                 break;
                 case 'employee':
@@ -1290,6 +1597,14 @@ const generatePdfAndSendEmail = async (req, res) => {
                         [feedbackData] = await pool.query('SELECT * FROM  TechnicalSeminarFeedback');
                         htmlContent = getSeminarFeedbackTemplate(feedbackData);
                         break;
+=======
+                htmlContent = getParentsPdfTemplate(feedbackData);
+                break;
+                case 'alumni':
+                    [feedbackData] = await pool.query('SELECT * FROM alumniFeedback');
+                    htmlContent = getAlumniPdfTemplate(feedbackData);
+                    break;
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
             default:
                 return res.status(400).send('Invalid option selected.');
         }
@@ -1301,7 +1616,11 @@ const generatePdfAndSendEmail = async (req, res) => {
         const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
         const page = await browser.newPage();
         await page.setContent(htmlContent);
+<<<<<<< HEAD
         const pdfBuffer = await page.pdf({ format: 'A3' });
+=======
+        const pdfBuffer = await page.pdf({ format: 'A4' });
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
         await browser.close();
 
         res.setHeader('Content-Type', 'application/pdf');
@@ -1312,9 +1631,14 @@ const generatePdfAndSendEmail = async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
+<<<<<<< HEAD
                 user: "acgcet25@gmail.com",
 
                 pass: "aimykdsvzkgbkqag", // Use environment variable for password
+=======
+                user: "acgcet25@gmail.com", // Use environment variable for email
+                pass:"aimykdsvzkgbkqag" , // Use environment variable for password
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
             },
             connectionTimeout: 10000, // 10 seconds timeout
             socketTimeout: 10000, // 10 seconds timeout
@@ -1322,7 +1646,11 @@ const generatePdfAndSendEmail = async (req, res) => {
 
         const mailOptions = {
             from: 'mohanamala07gmail.com',
+<<<<<<< HEAD
             to:'mohanamala07@gmail.com' ,
+=======
+            to:'mohanamala07@gmail.com',
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
             subject: `${option.charAt(0).toUpperCase() + option.slice(1)} Feedback PDF`,
             text: 'Please find the attached Feedback PDF.',
             attachments: [
@@ -1337,15 +1665,27 @@ const generatePdfAndSendEmail = async (req, res) => {
         console.log("Email sent successfully.");
 
         // Finally, truncate the table after sending the email
+<<<<<<< HEAD
         console.log(`Truncating ${option.charAt(0).toUpperCase() + option.slice(1)}Feedback table...`);
         await pool.query(`TRUNCATE TABLE ${option.charAt(0).toUpperCase() + option.slice(1)}Feedback`);
         console.log("Table truncated successfully.");
         // res.redirect('./FeedbackPdf/FeedbackPdf');
+=======
+        const tableName = `${option.charAt(0).toUpperCase() + option.slice(1)}Feedback`;
+        console.log(`Truncating ${tableName} table...`);
+        await pool.query(`TRUNCATE TABLE ${tableName}`);
+        console.log("Table truncated successfully.");
+
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
     } catch (error) {
         console.error('Error during PDF generation:', error);
         res.status(500).send('Failed to generate the file.');
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d
 module.exports = {
     generatePdfAndSendEmail,
 };
@@ -1353,4 +1693,8 @@ app.post('/api/generate_pdf', generatePdfAndSendEmail);
 
 // app.listen(3001, () => {
 //     console.log('Server is running on port 3001');
+<<<<<<< HEAD
 // });
+=======
+// });
+>>>>>>> 75211b65b94d06234870fcb9a4472606d9723c3d

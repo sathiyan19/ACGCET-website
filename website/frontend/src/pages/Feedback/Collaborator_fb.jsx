@@ -30,6 +30,12 @@ const Collaborator_fb = () => {
         return Object.keys(errors).length === 0;
     };
 
+    const handleNameChange = (e) => {
+        const name = e.target.value;
+        validateName(name);
+        setAuthorityName(name);
+      };
+
     const handleRatingChange = (e, name) => {
         setRatings(prevRatings => ({
           ...prevRatings,
@@ -45,8 +51,9 @@ const Collaborator_fb = () => {
         event.preventDefault();
         
         const areRatingsValid = validateRatings();
+        const isNameValid = validateName(authorityName);
 
-        if (!areRatingsValid) {
+        if (!areRatingsValid || !isNameValid) {
           return;
         }
         
@@ -100,7 +107,8 @@ const Collaborator_fb = () => {
                 </div>
 
                 <div className="collab_fb_row">
-                    <input type="text" className="collab_fb_input_lgrow" placeholder='Name of the authority' required value={authorityName} onChange={(e) => setAuthorityName(e.target.value)}/>
+                    <input type="text" className="collab_fb_input_lgrow" placeholder='Name of the authority' required value={authorityName} onChange={handleNameChange}/>
+                    {nameError && <p className='collab_fb_name_error'>{nameError}</p>}
                 </div>
 
                 <h2 className="collab_fb_subheading">Please give your valuable feedback on a scale</h2>
@@ -137,7 +145,7 @@ const Collaborator_fb = () => {
                     ))}
                 </div>
 
-                <div className="collab_fb_row">
+                <div className="collab_fb_btn">
                     <button type='summit' className='collab_fb_summit'> 
                         Submit
                     </button>

@@ -166,7 +166,17 @@ label {
   display: flex;
   justify-content: center;
 }
-
+.employer_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  }
+  .employer_year_of_joining_container{
+    color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left:51%;
+  }
 @media (max-width: 600px) {
 .employer_fb_row {
   flex-direction: column;

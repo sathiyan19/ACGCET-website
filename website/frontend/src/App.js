@@ -170,13 +170,14 @@ import {
   Placement_companies,
   Iqac_committee,
   Sgpa,
-  Parents_fb,
+  
 
   Feedback,
   Alumini_fb,
   Collaborator_fb,
   Employer_fb,
   Supplier_fb,
+  Parents_fb,
   Student_fb,
   Std_teaching_fb,
   Practical_fb,

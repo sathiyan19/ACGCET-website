@@ -6,8 +6,11 @@ const getPdfTemplate = (feedbackData) => `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supplier Feedback</title>
     <style>
-          body {
+            body {
             font-family: Arial, sans-serif;
+            margin: 15px;
+            font-size:10px;
+            font-weight:unset;
             margin: 15px;
             font-size:10px;
             font-weight:unset;
@@ -20,13 +23,16 @@ const getPdfTemplate = (feedbackData) => `
             border-collapse: collapse;
             margin-top: 20px;
             table-layout: auto; 
+            table-layout: auto; 
         }
         table, th, td {
             border: 1px solid #ddd;
         }
         th, td {
             padding: 2px;
+            padding: 2px;
             text-align: left;
+          
           
         }
         th {
