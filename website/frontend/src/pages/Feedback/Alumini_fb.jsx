@@ -56,7 +56,16 @@ const Alumni_fb = () => {
             return true;
         }
     };
-
+    const validateRatings = () => {
+        const errors = {};
+        AlumniFeedbackQuestions.forEach(({ name }) => {
+          if (!ratings[name]) {
+            errors[name] = 'Please select a rating (தயவுசெய்து மதிப்பீட்டை தேர்வு செய்யவும்)';
+          }
+        });
+        setRatingErrors(errors);
+        return Object.keys(errors).length === 0;
+      };
     const handleRatingChange = (e, name) => {
       setRatings(prevRatings => ({
           ...prevRatings,
@@ -68,31 +77,22 @@ const Alumni_fb = () => {
       }));
   };
   
-
+  const handleNameChange = (e) => {
+    const name = e.target.value;
+    setName(name);
+    
+    validateName(name);
+  };
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("Form Data:", {
-        name,
-        designation,
-        programme,
-        department,
-        passedOutYear,
-        higherStudies,
-        institution,
-        competitiveExam,
-        examName,
-        company,
-        entryLevelPosition,
-        currentPosition,
-        responsibilities,
-        achievements,
-        serviceStatus,
-        city,
-        ratings
-    });
-    
+   
+    const isNameValid = validateName(name);
+    const areRatingsValid = validateRatings();
 
 
+    if (!isNameValid || !areRatingsValid) {
+        return;
+      }
         const isFormValid = validateForm();
 
         if (!isFormValid) {
@@ -162,10 +162,10 @@ const Alumni_fb = () => {
                         className="alumni_fb_input"
                         placeholder="Enter Name of the Alumni*"
                         value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={handleNameChange}
                         required
                     />
-                    {nameError && <p className='alumni_fb_error'>{nameError}</p>}
+                   
                     <input
                         type="text"
                         className="alumni_fb_input"
@@ -174,6 +174,7 @@ const Alumni_fb = () => {
                         onChange={(e) => setDesignation(e.target.value)}
                         required
                     />
+                     {nameError && <p className='alumni_fb_error'>{nameError}</p>}
                     {errors.designation && <p className='alumni_fb_error'>{errors.designation}</p>}
                 </div>
                 <div className="alumni_fb_row">
@@ -205,23 +206,41 @@ const Alumni_fb = () => {
                     {errors.department && <p className='alumni_fb_error'>{errors.department}</p>}
                 </div>
                 <div className="alumni_fb_row">
-                    <input
-                        type="text"
-                        className="alumni_fb_input"
-                        placeholder="Enter passed out year*"
-                        value={passedOutYear}
-                        onChange={(e) => setPassedOutYear(e.target.value)}
-                        required
-                    />
-                    {errors.passedOutYear && <p className='alumni_fb_error'>{errors.passedOutYear}</p>}
-                </div>
+    <input
+        type="text"
+        className="alumni_fb_input"
+        placeholder="Enter passed out year*"
+        value={passedOutYear}
+        onChange={(e) => {
+            const value = e.target.value;
 
-                <h2 className="alumni_fb_subtitle">Details of Higher Studies</h2>
+            // Check if the input contains only digits and is at most 4 characters long
+            if (/^\d{0,4}$/.test(value)) {
+                setPassedOutYear(value);
+
+                // Validate if the input has exactly 4 digits
+                if (value.length === 4) {
+                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
+                } else {
+                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Year must be exactly 4 digits.' }));
+                }
+            } else {
+                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter only 4 digits .' }));
+            }
+        }}
+        required
+    />
+   
+</div>
+
+{errors.passedOutYear && <p className='alumni_fb_error'>{errors.passedOutYear}</p>}
+<h2 className="alumni_fb_subtitle">Details of Higher Studies</h2>
                 <div className="alumni_fb_row">
                     <select
                         className="alumni_fb_select"
                         value={higherStudies}
                         onChange={(e) => setHigherStudies(e.target.value)}
+                        required
                     >
                         <option value="" disabled>Select whether you did any higher studies</option>
                         <option value="yes">Yes</option>
@@ -242,6 +261,7 @@ const Alumni_fb = () => {
                         className="alumni_fb_select"
                         value={competitiveExam}
                         onChange={(e) => setCompetitiveExam(e.target.value)}
+                        required
                     >
                         <option value="" disabled>Select whether you wrote any competitive exam</option>
                         <option value="yes">Yes</option>

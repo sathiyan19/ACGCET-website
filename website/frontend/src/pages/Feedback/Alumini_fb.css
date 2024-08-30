@@ -86,7 +86,11 @@
   text-align: center;
   margin-top: 20px;
 }
-
+.alumni_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: 15px;
+  }
 @media (max-width: 600px) {
   .alumni_fb_row {
     flex-direction: column;
