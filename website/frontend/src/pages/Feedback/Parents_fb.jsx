@@ -63,9 +63,10 @@ const ParentsFeedback = () => {
         // Check if the input contains only digits and is at most 4 characters long
         if (/^\d{0,4}$/.test(value)) {
             setPassedOutYear(value);
+            const date= new Date();
 
             // Validate if the input has exactly 4 digits
-            if (value.length === 4) {
+            if (value.length === 4 && value>=1952 && value<=date.getFullYear()) {
                 setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
             } else {
                 setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Year must be exactly 4 digits.' }));

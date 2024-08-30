@@ -253,11 +253,15 @@ const EmployeeFeedback = () => {
                         onChange={(e) => setAchievements(e.target.value)}
                     />
                 </div>
+                <h2 className="employer_fb_subtitle">Please give your valuable feedback on a scale</h2>
+                <div>
+                <p className="employer_fb_instruction">5 - Excellent, 4 - Satisfied, 3 - Good, 2 - Not Satisfied, 1 - Poor</p>
+                <br />   
                 {employerFeedbackQuestions.map(({ question, translation, name }) => (
-                        <div className="alumni_fb_question" key={name}>
+                        <div className="employer_fb_question" key={name}>
                             <p>{question}</p>
                             <p>({translation})</p>
-                            <div className="alumni_fb_ratings">
+                            <div className="employer_fb_ratings">
                                 {[1, 2, 3, 4, 5].map(num => (
                                     <label key={num}>
                                         <input 
@@ -271,11 +275,12 @@ const EmployeeFeedback = () => {
                                     </label>
                                 ))}
                             </div>
-                            {ratingErrors[name] && <p className='alumni_fb_error'>{ratingErrors[name]}</p>}
+                            {ratingErrors[name] && <p className='employer_fb_error'>{ratingErrors[name]}</p>}
                         </div>
                     ))}
+                    </div>
                 <div className="employer_fb_btn">
-                    <button type="submit" className="alumni_fb_submit">Submit</button>
+                    <button type="submit" className="employer_fb_submit">Submit</button>
                 </div>
             </form>
             <Backtotop />
