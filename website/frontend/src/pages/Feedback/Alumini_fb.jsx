@@ -76,6 +76,8 @@ const Alumni_fb = () => {
           [name]: '' // Clear the error once a rating is selected
       }));
   };
+
+  
   
   const handleNameChange = (e) => {
     const name = e.target.value;
@@ -220,15 +222,16 @@ const Alumni_fb = () => {
             // Check if the input contains only digits and is at most 4 characters long
             if (/^\d{0,4}$/.test(value)) {
                 setPassedOutYear(value);
+                const date= new Date();
 
                 // Validate if the input has exactly 4 digits
-                if (value.length === 4) {
+                if (value.length === 4 && value>=1952 && value<=date.getFullYear()) {
                     setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
                 } else {
-                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Year must be exactly 4 digits.' }));
+                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
                 }
             } else {
-                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter only 4 digits .' }));
+                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
             }
         }}
         required
@@ -251,7 +254,7 @@ const Alumni_fb = () => {
                     </select>
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_input "
                         placeholder="Name of the institution (Optional)"
                         value={institution}
                         onChange={(e) => setInstitution(e.target.value)}
@@ -292,7 +295,7 @@ const Alumni_fb = () => {
                 <div className="alumni_fb_row">
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_input alumni_fb_input_lgrow"
                         placeholder="Position at Entry Level (Optional)"
                         value={entryLevelPosition}
                         onChange={(e) => setEntryLevelPosition(e.target.value)}
@@ -308,7 +311,7 @@ const Alumni_fb = () => {
                 <div className="alumni_fb_row">
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_input alumni_fb_input_lgrow"
                         placeholder="Responsibilities held (Optional)"
                         value={responsibilities}
                         onChange={(e) => setResponsibilities(e.target.value)}
