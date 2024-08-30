@@ -20,6 +20,14 @@ flex-direction: column;
   margin-top: -30px;
 }
 
+.std_pract_fb_error ,.std_practical_fb_sem_err p{
+  
+  color: red;
+  font-size: 14px;
+  margin-top :15px;
+  margin-left: 51%;
+}
+
 
 .practical_fb_rows{
 
@@ -103,6 +111,9 @@ padding: 12px;
     }
     .practical_fb_rating{
       text-align: center;
+    }
+    .std_pract_fb_error ,.std_practical_fb_sem_err p{
+      margin-left: auto;
     }
   }
   

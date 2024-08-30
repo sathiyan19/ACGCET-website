@@ -12,6 +12,18 @@ const Collaborator_fb = () => {
     const [authorityName, setAuthorityName] = useState('');
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
+    const [nameError, setNameError] = useState('');
+
+    const validateName = (name) => {
+        const nameRegex = /^[A-Za-z\s]{2,30}$/;
+        if (!nameRegex.test(name)) {
+          setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+          return false;
+        } else {
+          setNameError('');
+          return true;
+        }
+      };
 
     useEffect(() => {
         document.title = 'ACGCET-Collaborator-Feedback';
@@ -29,6 +41,12 @@ const Collaborator_fb = () => {
         return Object.keys(errors).length === 0;
     };
 
+    const handleNameChange = (e) => {
+        const name = e.target.value;
+        validateName(name);
+        setAuthorityName(name);
+      };
+
     const handleRatingChange = (e, name) => {
         setRatings(prevRatings => ({
           ...prevRatings,
@@ -44,8 +62,9 @@ const Collaborator_fb = () => {
         event.preventDefault();
         
         const areRatingsValid = validateRatings();
+        const isNameValid = validateName(authorityName);
 
-        if (!areRatingsValid) {
+        if (!areRatingsValid || !isNameValid) {
           return;
         }
         
@@ -98,7 +117,8 @@ const Collaborator_fb = () => {
                 </div>
 
                 <div className="collab_fb_row">
-                    <input type="text" className="collab_fb_input_lgrow" placeholder='Name of the authority' required value={authorityName} onChange={(e) => setAuthorityName(e.target.value)}/>
+                    <input type="text" className="collab_fb_input_lgrow" placeholder='Name of the authority' required value={authorityName} onChange={handleNameChange}/>
+                    {nameError && <p className='collab_fb_name_error'>{nameError}</p>}
                 </div>
 
                 <h2 className="collab_fb_subheading">Please give your valuable feedback on a scale</h2>

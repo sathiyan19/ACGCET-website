@@ -22,6 +22,14 @@
   margin-top: -30px;
 }
 
+.std_mini_project_fb_error ,.std_mini_proj_sem_err p{
+  
+  color: red;
+  font-size: 14px;
+  margin-top :15px;
+  margin-left: 51%;
+}
+
 .std_mini_proj_fb_row {
   display: flex;
   flex-wrap: wrap;
@@ -116,5 +124,8 @@
   }
   .std_mini_proj_fb_two_line{
     margin-bottom: 10px;
+  }
+  .std_mini_project_fb_error, .std_mini_proj_sem_err p{
+    margin-left: auto;
   }
 }

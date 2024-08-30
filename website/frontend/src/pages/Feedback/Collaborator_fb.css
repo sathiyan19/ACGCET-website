@@ -25,6 +25,13 @@
   font-size: 14px;
   margin-top: -5px;
 }
+.collab_fb_name_error{
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  padding-left: 5px;
+  margin-right: auto;
+}
 
 .collab_fb_input, .collab_fb_select{
     width: 49%;
@@ -134,6 +141,9 @@ input{
 
   .collab_fb_input, .collab_fb_select {
     width: 100%;
+  }
+  .collab_fb_name_error{
+    margin-left: auto;
   }
 }
 

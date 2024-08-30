@@ -15,6 +15,29 @@ const Practical_fb = () => {
     const [studentEmail, setStudentEmail] = useState('');
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
+    const [nameError, setNameError] = useState('');
+    const [semError, setSemError] = useState('');
+
+    const validateName = (name) => {
+      const nameRegex = /^[A-Za-z\s]{2,30}$/;
+      if (!nameRegex.test(name)) {
+        setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+        return false;
+      } else {
+        setNameError('');
+        return true;
+      }
+    };
+    const validateSem= (sem) => {
+      const semRegex = /^[1-8]{1}$/;
+      if (!semRegex.test(sem)) {
+        setSemError('Enter valid semester');
+        return false;
+      } else {
+        setSemError('');
+        return true;
+      }
+    };
 
     const validateRatings = () => {
         const errors = {};
@@ -26,6 +49,17 @@ const Practical_fb = () => {
         });
         setRatingErrors(errors);
         return Object.keys(errors).length === 0;
+    };
+
+    const handleNameChange = (e) => {
+      const name = e.target.value;
+      setFaculty(name);
+      validateName(name);
+    };
+    const handleSemChange = (e) => {
+      const sem = e.target.value;
+      setSemester(sem);
+      validateSem(sem);
     };
 
     const handleRatingChange = (e, name) => {
@@ -43,8 +77,10 @@ const Practical_fb = () => {
         event.preventDefault();
         
         const areRatingsValid = validateRatings();
+        const isNameValid = validateName(faculty);
+        const isSemValid = validateSem(semester);
 
-        if (!areRatingsValid) {
+        if (!areRatingsValid || !isNameValid || !isSemValid) {
           return;
         }
         console.log(areRatingsValid);
@@ -86,7 +122,10 @@ const Practical_fb = () => {
         <option value="ME">M.E</option>
         <option value="PhD">PhD</option>
       </select>
-      <input type="text"  className ="practical_fb_input" placeholder='Semester*'  required value={semester} onChange={(e)=> setSemester(e.target.value)}/>
+      <input type="text"  className ="practical_fb_input" placeholder='Semester*'  maxLength={1} required value={semester} onChange={(e)=>{handleSemChange(e)} }/>
+    </div>
+    <div className='std_practical_fb_sem_err'>
+      {semError && <p >{semError}</p>}
     </div>
     <div className="practical_fb_rows">
      <input type="text" className='practical_fb_input_full' placeholder='Course Title*' required value={courseTitle} onChange={(e)=> setCourseTitle(e.target.value)}/>
@@ -95,7 +134,8 @@ const Practical_fb = () => {
 
     <div className="practical_fb_rows">
         <input type="text" className='practical_fb_input practical_fb_two_line' placeholder='Course code*' required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}/>
-        <input type="text" className='practical_fb_input' placeholder='Faculty*' required value={faculty} onChange={(e)=> setFaculty(e.target.value)}/>
+        <input type="text" className='practical_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>
+        {nameError && <p className='std_pract_fb_error'>{nameError}</p>}
         
     </div>
 
