@@ -17,16 +17,23 @@ const EmployeeFeedback = () => {
     const [responsibilities, setResponsibilities] = useState('');
     const [achievements, setAchievements] = useState('');
     const [ratings, setRatings] = useState({});
-    const [nameError, setNameError] = useState('');
+    const [errors, setErrors] = useState({});
+    const [nameError, setNameError] = useState({ hrName: '', studentName: '' });
     const [ratingErrors, setRatingErrors] = useState({});
 
-    const validateName = (name) => {
+    const validateName = (name, type) => {
         const nameRegex = /^[A-Za-z\s]{2,30}$/;
         if (!nameRegex.test(name)) {
-            setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+            setNameError(prevErrors => ({
+                ...prevErrors,
+                [type]: 'Name should only contain letters and spaces, and be 2 to 30 characters long.'
+            }));
             return false;
         } else {
-            setNameError('');
+            setNameError(prevErrors => ({
+                ...prevErrors,
+                [type]: ''
+            }));
             return true;
         }
     };
@@ -35,17 +42,23 @@ const EmployeeFeedback = () => {
         const errors = {};
         employerFeedbackQuestions.forEach(({ name }) => {
             if (!ratings[name]) {
-                errors[name] = 'Please select a rating';
+                errors[name] = 'Please select a rating (தயவுசெய்து மதிப்பீட்டை தேர்வு செய்யவும்)';
             }
         });
         setRatingErrors(errors);
         return Object.keys(errors).length === 0;
     };
 
-    const handleNameChange = (e, setter) => {
+    const handleHrNameChange = (e) => {
         const name = e.target.value;
-        setter(name);
-        validateName(name);
+        setHrName(name);
+        validateName(name, 'hrName');
+    };
+
+    const handleStudentNameChange = (e) => {
+        const name = e.target.value;
+        setStudentName(name);
+        validateName(name, 'studentName');
     };
 
     const handleRatingChange = (e, name) => {
@@ -59,13 +72,32 @@ const EmployeeFeedback = () => {
         }));
     };
 
+    const handleYearOfJoiningChange = (e) => {
+        const value = e.target.value;
+
+        // Check if the input contains only digits and is at most 4 characters long
+        if (/^\d{0,4}$/.test(value)) {
+            setYearOfJoining(value);
+
+            // Validate if the input has exactly 4 digits
+            if (value.length === 4) {
+                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: '' })); // Clear error if valid
+            } else {
+                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Year must be exactly 4 digits.' }));
+            }
+        } else {
+            setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter only 4 digits .' }));
+        }
+    };
+
     const EmployeeFeedbackSubmit = async (event) => {
         event.preventDefault();
 
-        const isNameValid = validateName(hrName) && validateName(studentName);
+        const isHrNameValid = validateName(hrName, 'hrName');
+        const isStudentNameValid = validateName(studentName, 'studentName');
         const areRatingsValid = validateRatings();
 
-        if (!isNameValid || !areRatingsValid) {
+        if (!isHrNameValid || !isStudentNameValid || !areRatingsValid) {
             return;
         }
 
@@ -82,7 +114,7 @@ const EmployeeFeedback = () => {
                 current_position: currentPosition,
                 responsibilities: responsibilities,
                 achievements_awards: achievements,
-                ratings:ratings // Spread ratings directly
+                ratings: ratings // Spread ratings directly
             });
 
             console.log(response.data);
@@ -100,6 +132,7 @@ const EmployeeFeedback = () => {
             setAchievements('');
             setRatings({});
             setRatingErrors({});
+            setNameError({ hrName: '', studentName: '' }); // Clear name errors on successful submission
         } catch (error) {
             console.error('Error:', error);
             alert("An error occurred while submitting your feedback");
@@ -116,7 +149,7 @@ const EmployeeFeedback = () => {
                         className='employer_fb_input' 
                         placeholder='Name of the HR*' 
                         value={hrName}
-                        onChange={(e) => handleNameChange(e, setHrName)}
+                        onChange={handleHrNameChange} // Use the HR name change handler
                         required 
                     />
                     <input 
@@ -128,6 +161,7 @@ const EmployeeFeedback = () => {
                         required 
                     />
                 </div>
+                {nameError.hrName && <p className='employer_fb_error'>{nameError.hrName}</p>}
                 <div className='employer_fb_row'>
                     <input 
                         type="text" 
@@ -143,7 +177,7 @@ const EmployeeFeedback = () => {
                         className='employer_fb_input' 
                         placeholder='Name of the student*' 
                         value={studentName}
-                        onChange={(e) => handleNameChange(e, setStudentName)}
+                        onChange={handleStudentNameChange} // Use the student name change handler
                         required 
                     />
                     <select 
@@ -158,7 +192,7 @@ const EmployeeFeedback = () => {
                         <option value="PhD">PhD</option>
                     </select>
                 </div>
-
+                {nameError.studentName && <p className='employer_fb_error'>{nameError.studentName}</p>}
                 <div className='employer_fb_row'>
                 <select 
                        className='employer_fb_input' 
@@ -179,11 +213,13 @@ const EmployeeFeedback = () => {
                         className='employer_fb_input' 
                         placeholder='Year of joining the company*' 
                         value={yearOfJoining}
-                        onChange={(e) => setYearOfJoining(e.target.value)}
-                        required 
+                        onChange={handleYearOfJoiningChange} // Use the year of joining change handler
+                        required
                     />
+                   
                 </div>
-
+                
+                {errors.yearOfJoining && <p className='employer_year_of_joining_container'>{errors.yearOfJoining}</p>}
                 <div className='employer_fb_row'>
                     <input 
                         type="text" 
@@ -202,31 +238,26 @@ const EmployeeFeedback = () => {
                 </div>
 
                 <div className='employer_fb_row'>
-                    <input 
-                        type="text" 
-                        className='employer_fb_input' 
+                    <textarea 
+                        className='employer_fb_textarea' 
                         placeholder='Responsibilities held' 
                         value={responsibilities}
                         onChange={(e) => setResponsibilities(e.target.value)}
                     />
-                    <input 
-                        type="text" 
-                        className='employer_fb_input' 
+                </div>
+                <div className='employer_fb_row'>
+                    <textarea 
+                        className='employer_fb_textarea' 
                         placeholder='Achievements/Awards' 
                         value={achievements}
                         onChange={(e) => setAchievements(e.target.value)}
                     />
                 </div>
-
-                <h2 className="employer_fb_subtitle">Please give your valuable feedback on a scale</h2>
-                <div className='employer_fb_feedback'>
-                    <p className='employer_fb_instruction'>5 - Excellent   4 - Satisfied   3 - Good   2 - Not Satisfied   1 - Poor</p>
-                    <br />
-                    {employerFeedbackQuestions.map(({ question, translation, name }) => (
-                        <div className="employer_fb_question" key={name}>
+                {employerFeedbackQuestions.map(({ question, translation, name }) => (
+                        <div className="alumni_fb_question" key={name}>
                             <p>{question}</p>
                             <p>({translation})</p>
-                            <div className="employer_fb_ratings">
+                            <div className="alumni_fb_ratings">
                                 {[1, 2, 3, 4, 5].map(num => (
                                     <label key={num}>
                                         <input 
@@ -235,18 +266,16 @@ const EmployeeFeedback = () => {
                                             value={num} 
                                             onChange={(e) => handleRatingChange(e, name)} 
                                             checked={ratings[name] === num} 
-                                            required 
                                         />
                                         <span className="custom-radio">{num}</span>
                                     </label>
                                 ))}
                             </div>
-                            {ratingErrors[name] && <p className='employer_fb_error'>{ratingErrors[name]}</p>}
+                            {ratingErrors[name] && <p className='alumni_fb_error'>{ratingErrors[name]}</p>}
                         </div>
                     ))}
-                </div>
                 <div className="employer_fb_btn">
-                    <button type="submit" className="employer_fb_submit">Submit</button>
+                    <button type="submit" className="alumni_fb_submit">Submit</button>
                 </div>
             </form>
             <Backtotop />

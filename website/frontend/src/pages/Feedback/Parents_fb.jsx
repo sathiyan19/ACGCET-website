@@ -11,8 +11,10 @@ const ParentsFeedback = () => {
     const [programme, setProgramme] = useState('');
     const [passedOutYear, setPassedOutYear] = useState('');
     const [ratings, setRatings] = useState({});
+    const [errors, setErrors] = useState({});
     const [nameError, setNameError] = useState('');
     const [ratingErrors, setRatingErrors] = useState({});
+    const [registerNumberError, setRegisterNumberError] = useState('');
 
     const validateName = (name) => {
         const nameRegex = /^[A-Za-z\s]{2,30}$/;
@@ -36,16 +38,42 @@ const ParentsFeedback = () => {
         return Object.keys(errors).length === 0;
     };
 
+
     const handleNameChange = (e) => {
         const name = e.target.value;
         setStudentName(name);
         validateName(name);
     };
 
-    const handleRegisterNumberChange = (e) => setRegisterNumber(e.target.value);
+    const handleRegisterNumberChange = (e) => {
+        const value = e.target.value;
+        if (/^\d*$/.test(value)) {
+            setRegisterNumber(value);
+            setRegisterNumberError(''); // Clear the error if valid
+        } else {
+            setRegisterNumberError('Register Number should only contain digits.');
+        }
+    };
+
     const handleBranchChange = (e) => setBranch(e.target.value);
     const handleProgrammeChange = (e) => setProgramme(e.target.value);
-    const handlePassedOutYearChange = (e) => setPassedOutYear(e.target.value);
+    const handlePassedOutYearChange = (e) => {
+        const value = e.target.value;
+
+        // Check if the input contains only digits and is at most 4 characters long
+        if (/^\d{0,4}$/.test(value)) {
+            setPassedOutYear(value);
+
+            // Validate if the input has exactly 4 digits
+            if (value.length === 4) {
+                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
+            } else {
+                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Year must be exactly 4 digits.' }));
+            }
+        } else {
+            setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter only 4 digits .' }));
+        }
+    };
 
     const handleRatingChange = (e, name) => {
         setRatings(prevRatings => ({
@@ -64,7 +92,7 @@ const ParentsFeedback = () => {
         const isNameValid = validateName(studentName);
         const areRatingsValid = validateRatings();
 
-        if (!isNameValid || !areRatingsValid) {
+        if (!isNameValid || !areRatingsValid || registerNumberError) {
             return;
         }
 
@@ -116,25 +144,34 @@ const ParentsFeedback = () => {
                     />
                 </div>
                 {nameError && <p className='parents_fb_error'>{nameError}</p>}
+                {registerNumberError && <p className='parents_student_fb_error'>{registerNumberError}</p>}
 
                 <div className='parents_fb_row'>
-                    <input 
-                        type="text" 
+                    <select
                         className='parents_fb_input' 
-                        placeholder='Enter Branch*' 
+                        placeholder='Select Branch*' 
                         value={branch}
-                        onChange={handleBranchChange}
-                        required 
-                    />
+                        onChange={(e) => setBranch(e.target.value)}
+                        required
+                    >
+                        <option value="" disabled>Select Department*</option>
+                        <option value="civil">Civil</option>
+                        <option value="mech">Mech</option>
+                        <option value="EEE">EEE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="CSE">CSE</option>
+                    </select>
                     <input 
                         type="text" 
                         className='parents_fb_input' 
                         placeholder='Enter Passed Out Year*' 
                         value={passedOutYear}
                         onChange={handlePassedOutYearChange}
-                        required 
+                        required
                     />
                 </div>
+                
+                {errors.passedOutYear && <p className='parents_year_of_joining_container'>{errors.passedOutYear}</p>}
 
                 <div className='parents_fb_row'>
                     <select 
@@ -167,7 +204,7 @@ const ParentsFeedback = () => {
                                             value={num} 
                                             onChange={(e) => handleRatingChange(e, name)} 
                                             checked={ratings[name] === num} 
-                                            required 
+                                         
                                         />
                                         <span className="parent_custom-radio">{num}</span>
                                     </label>

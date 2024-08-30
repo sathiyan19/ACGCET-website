@@ -112,6 +112,17 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
 }
+.parents_fb_error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  }
+.parents_year_of_joining_container,.parents_student_fb_error{
+  color: red;
+font-size: 14px;
+margin-top: 5px;
+margin-left:55%;
+}
 
 @media (max-width: 600px) {
   .parents_fb_row {

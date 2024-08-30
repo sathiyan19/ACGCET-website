@@ -67,13 +67,13 @@ const Supplier_fb = () => {
       return;
     }
 
-        try {
-            const response = await axios.post('/api/supplier_ratingsubmit', {
-                supplier_name: supplierName,
-                product_supplied: productSupplied,
-                branch: branch,
-                ratings: ratings
-            });
+    try {
+      const response = await axios.post('/api/ratingsubmit', {
+        supplier_name: supplierName,
+        product_supplied: productSupplied,
+        branch: branch,
+        ratings: ratings
+      });
 
       console.log(response.data);
       setAlertMessage("Feedback submitted successfully");
