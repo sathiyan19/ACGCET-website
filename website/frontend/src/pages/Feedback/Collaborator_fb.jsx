@@ -150,7 +150,7 @@ const Collaborator_fb = () => {
                     ))}
                 </div>
 
-                <div className="collab_fb_row">
+                <div className="collab_fb_btn">
                     <button type='summit' className='collab_fb_summit'> 
                         Submit
                     </button>

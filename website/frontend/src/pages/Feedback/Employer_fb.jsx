@@ -78,15 +78,15 @@ const EmployeeFeedback = () => {
         // Check if the input contains only digits and is at most 4 characters long
         if (/^\d{0,4}$/.test(value)) {
             setYearOfJoining(value);
-
+            const date= new Date();
             // Validate if the input has exactly 4 digits
-            if (value.length === 4) {
+            if (value.length === 4 && value>=1952 && value<=date.getFullYear()) {
                 setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: '' })); // Clear error if valid
             } else {
-                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Year must be exactly 4 digits.' }));
+                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
             }
         } else {
-            setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter only 4 digits .' }));
+            setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
         }
     };
 

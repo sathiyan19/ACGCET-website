@@ -71,7 +71,7 @@ const ParentsFeedback = () => {
                 setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Year must be exactly 4 digits.' }));
             }
         } else {
-            setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter only 4 digits .' }));
+            setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
         }
     };
 
@@ -136,7 +136,7 @@ const ParentsFeedback = () => {
                     />
                     <input 
                         type="text" 
-                        className='parents_fb_input' 
+                        className='parents_fb_input' minLength={7} maxLength={11}
                         placeholder='Enter Student Register number*' 
                         value={registerNumber}
                         onChange={handleRegisterNumberChange}

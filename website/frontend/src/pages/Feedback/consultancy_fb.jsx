@@ -108,9 +108,14 @@ const Consultancy_fb = () => {
         <div className='consultancy_fb_row'>
           <select className="consultancy_fb_input" required onChange={(e) => setNatureOfWork(e.target.value)} value={natureOfWork}>
             <option value="" disabled selected>Nature of Work*</option>
-            <option value="BE">B.E</option>
-            <option value="ME">M.E</option>
-            <option value="PhD">PhD</option>
+            <option value="Testing">Testing</option>
+            <option value="Fabrication">Fabrication</option>
+            <option value="TroubleShootingAndServices">Trouble Shooting and Services</option>
+            <option value="EducationalServices">Educational Services</option>
+            <option value="Auditing">Auditing</option>
+            <option value="Software Development">Software Development</option>
+            <option value="Debugging and Testing">Debugging and Testing</option>
+            <option value="Others">Others</option>
           </select>
           <input 
             type="text" 

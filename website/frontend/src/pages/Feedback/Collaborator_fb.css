@@ -98,6 +98,7 @@ input{
   
     .collab_fb_btn{
       cursor: pointer;
+      text-align: center;
     }
     
     .custom-radio {
@@ -132,6 +133,7 @@ input{
     }
 .collab_fb_summit{
     margin-top: 15px;
+
 }
 
 @media (max-width: 600px) {

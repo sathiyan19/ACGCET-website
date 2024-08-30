@@ -159,23 +159,24 @@ const Alumni_fb = () => {
                 <div className="alumni_fb_row">
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_input alumni_fb_input_lgrow"
                         placeholder="Enter Name of the Alumni*"
                         value={name}
                         onChange={handleNameChange}
                         required
                     />
-                   
+                   {nameError && <p className='alumni_fb_error'>{nameError}</p>}
+                   {errors.designation && <p className='alumni_fb_error'>{errors.designation}</p>}
+
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_input "
                         placeholder="Enter Designation*"
                         value={designation}
                         onChange={(e) => setDesignation(e.target.value)}
                         required
                     />
-                     {nameError && <p className='alumni_fb_error'>{nameError}</p>}
-                    {errors.designation && <p className='alumni_fb_error'>{errors.designation}</p>}
+                     
                 </div>
                 <div className="alumni_fb_row">
                     <select
@@ -222,10 +223,10 @@ const Alumni_fb = () => {
                 if (value.length === 4) {
                     setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
                 } else {
-                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Year must be exactly 4 digits.' }));
+                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
                 }
             } else {
-                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter only 4 digits .' }));
+                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
             }
         }}
         required
@@ -248,7 +249,7 @@ const Alumni_fb = () => {
                     </select>
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_input "
                         placeholder="Name of the institution (Optional)"
                         value={institution}
                         onChange={(e) => setInstitution(e.target.value)}
@@ -289,7 +290,7 @@ const Alumni_fb = () => {
                 <div className="alumni_fb_row">
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_input alumni_fb_input_lgrow"
                         placeholder="Position at Entry Level (Optional)"
                         value={entryLevelPosition}
                         onChange={(e) => setEntryLevelPosition(e.target.value)}
@@ -305,7 +306,7 @@ const Alumni_fb = () => {
                 <div className="alumni_fb_row">
                     <input
                         type="text"
-                        className="alumni_fb_input"
+                        className="alumni_fb_input alumni_fb_input_lgrow"
                         placeholder="Responsibilities held (Optional)"
                         value={responsibilities}
                         onChange={(e) => setResponsibilities(e.target.value)}
