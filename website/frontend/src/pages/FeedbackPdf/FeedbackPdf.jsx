@@ -34,7 +34,7 @@ const FeedbackPdf = () => {
 
         // Navigate to another page after showing the alert message
         setTimeout(() => {
-          navigate('/path-to-navigate'); // Replace with your target path
+          // navigate('./FeedbackPdf/FeedbackPdf'); 
         }, 2000); // Adjust the delay as needed
       } else {
         setAlertMessage('Failed to generate the file.');
@@ -64,13 +64,13 @@ const FeedbackPdf = () => {
           <option className='box-option' value="" disabled>Choose an option</option>
           <option className='box-option' value="supplier">Supplier Feedback</option>
           <option className='box-option' value="consultancy">Consultancy Feedback</option>
-          <option className='box-option' value="teaching"> Teaching and Learning Feedback</option>
+          <option className='box-option' value="teachingandlearning"> Teaching and Learning Feedback</option>
           <option className='box-option' value="Practical"> Practical and Laboratory Feedback</option>
-          <option className='box-option' value="mini"> Mini project and Project Feedback</option>
-          <option className='box-option' value="seminar"> Technical seminar Feedback</option>
+          <option className='box-option' value="MiniProject"> Mini project and Project Feedback</option>
+          <option className='box-option' value="Technicalseminar"> Technical seminar Feedback</option>
           <option className='box-option' value="alumni">Alumni Feedback</option>
           <option className='box-option' value="faculty">Faculty Feedback</option>
-          <option className='box-option' value="employer">Employer Feedback</option>
+          <option className='box-option' value="employee">Employee Feedback</option>
           <option className='box-option' value="parents">Parents Feedback</option>
           <option className='box-option' value="collaborator">Collaborator Feedback</option>
         </select>

@@ -1,5 +1,6 @@
 const pool = require("./db.js");
 
+
 const ratingsubmit = async (req, res) => {
     const {
         supplier_name,

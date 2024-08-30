@@ -15,6 +15,9 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/png">
+        //  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
     <title>Supplier Feedback</title>
     <style>
           body {
@@ -597,7 +600,7 @@ const getTeachingFeedbackTemplate = (feedbackData) => `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colloborator Feedback</title>
+    <title>Teaching and Learning Feedback </title>
     <style>
 
    body {
@@ -666,10 +669,10 @@ const getTeachingFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-    <h1>Collaboratar Feedback Summary</h1>
+    <h1>Teaching and Learning Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
     <table>
-        <tr>
+<tr>
 <th>Programme Name</th>
 <th>Semester</th>
 <th>Course Title</th>
@@ -678,7 +681,7 @@ const getTeachingFeedbackTemplate = (feedbackData) => `
 <th>Student Email</th>
 <th>knowledge in fundamentals</th>
 <th>Analyzing engineering problems</th>
-<thIdentify design solutions</th>
+<th>Identify design solutions</th>
 <th> Data analysis interpretation</th>
 <th>Use Modern Tools</th>
 <th>contextual knowledge</th>
@@ -731,7 +734,7 @@ const getPracticalFeedbackTemplate = (feedbackData) => `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colloborator Feedback</title>
+    <title>Practical and Laboratory Feedback</title>
     <style>
 
    body {
@@ -800,7 +803,7 @@ const getPracticalFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-    <h1>Collaboratar Feedback Summary</h1>
+    <h1>Practical and Laboratory Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
     <table>
         <tr>
@@ -995,7 +998,7 @@ const getMiniFeedbackTemplate = (feedbackData) => `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colloborator Feedback</title>
+    <title>Mini project and Project Feedback</title>
     <style>
 
    body {
@@ -1064,7 +1067,7 @@ const getMiniFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-    <h1>Collaboratar Feedback Summary</h1>
+    <h1>Mini project and Project Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
     <table>
         <tr>
@@ -1121,7 +1124,7 @@ const getSeminarFeedbackTemplate = (feedbackData) => `
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colloborator Feedback</title>
+    <title>Technical Seminar Feedback</title>
     <style>
 
    body {
@@ -1190,7 +1193,7 @@ const getSeminarFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-    <h1>Collaboratar Feedback Summary</h1>
+    <h1>Technical Seminar Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
     <table>
         <tr>
@@ -1259,7 +1262,7 @@ const generatePdfAndSendEmail = async (req, res) => {
                 [feedbackData] = await pool.query('SELECT * FROM ParentsFeedback');
                 htmlContent = getParentsFeedbackTemplate(feedbackData);
                 break;
-                case 'employer':
+                case 'employee':
                     [feedbackData] = await pool.query('SELECT * FROM employeefeedback');
                     htmlContent = getEmployeeFeedbackTemplate(feedbackData);
                     break;
@@ -1271,7 +1274,7 @@ const generatePdfAndSendEmail = async (req, res) => {
                     [feedbackData] = await pool.query('SELECT * FROM CollaboratorFeedback  ');
                     htmlContent = getCollaboratarFeedbackTemplate(feedbackData);
                     break;
-                    case 'teaching':
+                    case 'teachingandlearning':
                         [feedbackData] = await pool.query('SELECT * FROM  TeachingAndLearningFeedback ');
                         htmlContent = getTeachingFeedbackTemplate(feedbackData);
                         break;
@@ -1279,11 +1282,11 @@ const generatePdfAndSendEmail = async (req, res) => {
                         [feedbackData] = await pool.query('SELECT * FROM  PracticalFeedback ');
                         htmlContent = getPracticalFeedbackTemplate(feedbackData);
                         break;
-                    case 'mini':
+                    case 'MiniProject':
                         [feedbackData] = await pool.query('SELECT * FROM MiniProjectFeedback ');
                         htmlContent = getMiniFeedbackTemplate(feedbackData);
                         break;
-                    case 'seminar':
+                    case 'TechnicalSeminar':
                         [feedbackData] = await pool.query('SELECT * FROM  TechnicalSeminarFeedback');
                         htmlContent = getSeminarFeedbackTemplate(feedbackData);
                         break;
@@ -1337,7 +1340,7 @@ const generatePdfAndSendEmail = async (req, res) => {
         console.log(`Truncating ${option.charAt(0).toUpperCase() + option.slice(1)}Feedback table...`);
         await pool.query(`TRUNCATE TABLE ${option.charAt(0).toUpperCase() + option.slice(1)}Feedback`);
         console.log("Table truncated successfully.");
-
+        // res.redirect('./FeedbackPdf/FeedbackPdf');
     } catch (error) {
         console.error('Error during PDF generation:', error);
         res.status(500).send('Failed to generate the file.');

@@ -310,36 +310,36 @@ export const collaboratorFeedbackQustions = [
     translation:"காலமுறை மதிப்பாய்வில் செயல்திறன்",
     name:"review_performance",
   },
-  {
-    question:"Deliverables",
-    translation:"வழங்ககூடியவை",
-    name:"deliverables",
-  },
-  {
-    question:"Estimated Expenditure",
-    translation:"மதிப்பிடப்பட்ட செலவு",
-    name:"estimated_expenditure",
-  },
-  {
-    question:"Appointment of Research Staff in time",
-    translation:"சரியான நேரத்தில் ஆராய்ச்சி ஊழியர்களை நியமித்தல்",
-    name:"appoinment_of_staffs",
-  },
-  {
-    question:"Completion of Modules in time",
-    translation:"தொகுதிகளை சரியான நேரத்தில் முடித்தல்",
-    name:"completion_in_time",
-  },
-  {
-    question:"Result achieved as expected",
-    translation:"எதிர்பார்த்தபடி முடிவு அடையப்பட்டது",
-    name:"expected_result",
-  },
-  {
-    question:"Performance in periodical Reviews",
-    translation:"காலமுறை மதிப்பாய்வில் செயல்திறன்",
-    name:"review_performance",
-  },
+  // {
+  //   question:"Deliverables",
+  //   translation:"வழங்ககூடியவை",
+  //   name:"deliverables",
+  // },
+  // {
+  //   question:"Estimated Expenditure",
+  //   translation:"மதிப்பிடப்பட்ட செலவு",
+  //   name:"estimated_expenditure",
+  // },
+  // {
+  //   question:"Appointment of Research Staff in time",
+  //   translation:"சரியான நேரத்தில் ஆராய்ச்சி ஊழியர்களை நியமித்தல்",
+  //   name:"appoinment_of_staffs",
+  // },
+  // {
+  //   question:"Completion of Modules in time",
+  //   translation:"தொகுதிகளை சரியான நேரத்தில் முடித்தல்",
+  //   name:"completion_in_time",
+  // },
+  // {
+  //   question:"Result achieved as expected",
+  //   translation:"எதிர்பார்த்தபடி முடிவு அடையப்பட்டது",
+  //   name:"expected_result",
+  // },
+  // {
+  //   question:"Performance in periodical Reviews",
+  //   translation:"காலமுறை மதிப்பாய்வில் செயல்திறன்",
+  //   name:"review_performance",
+  // },
   {
     question:"Timely closure of the project",
     translation:"திட்டத்தைச் சரியான நேரத்தில் முடிப்பது",
