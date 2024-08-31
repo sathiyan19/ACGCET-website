@@ -17,9 +17,9 @@ const ParentsFeedback = () => {
     const [registerNumberError, setRegisterNumberError] = useState('');
 
     const validateName = (name) => {
-        const nameRegex = /^[A-Za-z\s]{2,30}$/;
+        const nameRegex = /^[A-Za-z\s]+$/;
         if (!nameRegex.test(name)) {
-            setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+            setNameError('Name should only contain letters and spaces.');
             return false;
         } else {
             setNameError('');
@@ -55,24 +55,15 @@ const ParentsFeedback = () => {
         }
     };
 
-    const handleBranchChange = (e) => setBranch(e.target.value);
     const handleProgrammeChange = (e) => setProgramme(e.target.value);
     const handlePassedOutYearChange = (e) => {
         const value = e.target.value;
-
-        // Check if the input contains only digits and is at most 4 characters long
-        if (/^\d{0,4}$/.test(value)) {
-            setPassedOutYear(value);
-            const date= new Date();
-
-            // Validate if the input has exactly 4 digits
-            if (value.length === 4 && value>=1952 && value<=date.getFullYear()) {
-                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
-            } else {
-                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Year must be exactly 4 digits.' }));
-            }
+        setPassedOutYear(value);
+        const date= new Date();
+        if (value>=1952 && value<=date.getFullYear()) {
+            setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
         } else {
-            setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
+            setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year.' }));
         }
     };
 
@@ -168,7 +159,7 @@ const ParentsFeedback = () => {
                         placeholder='Enter Passed Out Year*' 
                         value={passedOutYear}
                         onChange={handlePassedOutYearChange}
-                        required
+                        required maxLength={4}
                     />
                 </div>
                 

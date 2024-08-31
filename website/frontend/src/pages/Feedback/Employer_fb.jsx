@@ -22,11 +22,11 @@ const EmployeeFeedback = () => {
     const [ratingErrors, setRatingErrors] = useState({});
 
     const validateName = (name, type) => {
-        const nameRegex = /^[A-Za-z\s]{2,30}$/;
+        const nameRegex = /^[A-Za-z\s]+$/;
         if (!nameRegex.test(name)) {
             setNameError(prevErrors => ({
                 ...prevErrors,
-                [type]: 'Name should only contain letters and spaces, and be 2 to 30 characters long.'
+                [type]: 'Name should only contain letters and spaces.'
             }));
             return false;
         } else {
@@ -74,20 +74,13 @@ const EmployeeFeedback = () => {
 
     const handleYearOfJoiningChange = (e) => {
         const value = e.target.value;
-
-        // Check if the input contains only digits and is at most 4 characters long
-        if (/^\d{0,4}$/.test(value)) {
             setYearOfJoining(value);
             const date= new Date();
-            // Validate if the input has exactly 4 digits
-            if (value.length === 4 && value>=1952 && value<=date.getFullYear()) {
+            if ( value>=1952 && value<=date.getFullYear()) {
                 setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: '' })); // Clear error if valid
             } else {
                 setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
             }
-        } else {
-            setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
-        }
     };
 
     const EmployeeFeedbackSubmit = async (event) => {
@@ -213,7 +206,7 @@ const EmployeeFeedback = () => {
                         className='employer_fb_input' 
                         placeholder='Year of joining the company*' 
                         value={yearOfJoining}
-                        onChange={handleYearOfJoiningChange} // Use the year of joining change handler
+                        onChange={handleYearOfJoiningChange} maxLength={4}
                         required
                     />
                    

@@ -15,9 +15,9 @@ const Collaborator_fb = () => {
     const [nameError, setNameError] = useState('');
 
     const validateName = (name) => {
-        const nameRegex = /^[A-Za-z\s]{2,30}$/;
+        const nameRegex = /^[A-Za-z\s]+$/;
         if (!nameRegex.test(name)) {
-          setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+          setNameError('Name should only contain letters and spaces.');
           return false;
         } else {
           setNameError('');
