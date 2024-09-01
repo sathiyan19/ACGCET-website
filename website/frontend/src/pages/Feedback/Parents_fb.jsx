@@ -90,6 +90,10 @@ const ParentsFeedback = () => {
             },
         }));
     };
+    const handleProgrammeChange = (e) => {
+        setProgramme(e.target.value);
+        setErrors(prevErrors => ({ ...prevErrors, programme: '' })); // Clear any previous errors
+    };
 
     const Parentsfeedbacksubmit = async (event) => {
         event.preventDefault();

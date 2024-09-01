@@ -70,9 +70,9 @@ const EmployeeFeedback = () => {
             setYearOfJoining(value);
             const date= new Date();
             if ( value>=1952 && value<=date.getFullYear()) {
-                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: '' })); // Clear error if valid
+                setNameError(prevErrors => ({ ...prevErrors, yearOfJoining: '' })); // Clear error if valid
             } else {
-                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
+                setNameError(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
             }
     };
 
