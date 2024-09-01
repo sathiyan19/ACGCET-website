@@ -18,9 +18,9 @@ const Std_mini_project_fb = () => {
     const [semError, setSemError] = useState('');
 
     const validateName = (name) => {
-      const nameRegex = /^[A-Za-z\s]{2,30}$/;
+      const nameRegex = /^[A-Za-z\s]+$/;
       if (!nameRegex.test(name)) {
-        setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+        setNameError('Name should only contain letters and spaces.');
         return false;
       } else {
         setNameError('');
@@ -128,7 +128,9 @@ const Std_mini_project_fb = () => {
             <div className='std_mini_proj_fb_row'>
                 <input type="text" className='std_mini_proj_fb_input std_mini_proj_fb_two_line' placeholder='Course code*' required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}/>
                 <input type="text" className='std_mini_proj_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>
-                {nameError && <p className='std_mini_project_fb_error'>{nameError}</p>}
+            </div>
+            <div className='std_mini_project_fb_error'>
+            {nameError && <p>{nameError}</p>}
             </div>
             <div className='std_mini_proj_fb_row'>
                 <input type="email" className='std_mini_proj_fb_input_full'  placeholder=' Student E-mail Address*' required value={studentEmail} onChange={(e)=> setStudentEmail(e.target.value)}/>
