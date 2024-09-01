@@ -176,6 +176,7 @@ const Technical_fb = () => {
         </div>
     </form>
     <Backtotop />
+    <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
     </div>
 //    </div>
   )

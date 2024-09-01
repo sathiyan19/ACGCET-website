@@ -41,23 +41,24 @@ router.post('/api/sendquery',sendquery)
 
 router.post('/api/parentsfeedbacksubmit', parentsfeedbackSubmit)
 
-router.post('/api/employeefeedbacksubmit',  EmployeeSubmit)
+router.post('/api/employeefeedbacksubmit',   EmployeeSubmit)
 router.post('/api/consultancy_ratingsubmit', consultancy_ratingsubmit )
 router.post('/api/collaborator_ratingsubmit', collaborator_ratingsubmit )
 router.post('/api/std_teaching_ratingsubmit', std_teaching_ratingsubmit )
 router.post('/api/std_practical_ratingsubmit', std_practical_ratingsubmit )
 router.post('/api/std_technical_seminar_ratingsubmit', std_technical_seminar_ratingsubmit )
 router.post('/api/std_mini_project_ratingsubmit', std_mini_project_ratingsubmit )
+router.post('/api/std_mini_project_ratingsubmit', std_mini_project_ratingsubmit )
 
 router.post('/api/ratingsubmit',ratingsubmit);
 
 
 
-router.post('/api/parentsfeedbacksubmit', parentsfeedbackSubmit);
+// router.post('/api/parentsfeedbacksubmit', parentsfeedbackSubmit);
 
-router.post('/api/employeefeedbacksubmit',EmployeeFeedbackSubmit);
+// router.post('/api/employeefeedbacksubmit',EmployeeFeedbackSubmit);
 
-router.post('/api/alumnifeedback',alumniFeedbackSubmit)
+// router.post('/api/alumnifeedback',alumniFeedbackSubmit)
 
 router.post('/api/generate_pdf',generatePdfAndSendEmail);
 

@@ -259,7 +259,8 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
     <title>Employee Feedback</title>
     <style>
 
-     body {
+
+    body {
         font-family: Arial, sans-serif;
         margin: 15px;
         font-size: 8px; /* Reduced font size */
@@ -321,6 +322,8 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
             display: table-footer-group;
         }
     }
+
+
 </style>
 </head>
 <body>

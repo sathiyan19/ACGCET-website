@@ -190,7 +190,7 @@ export const std_mini_project_fb_data=[
   ];
 
   
-export const parentFeedbackQuestions = [
+
 export const parentFeedbackQuestions = [
   {
     question: "Rate the infrastructure facilities of the institution",

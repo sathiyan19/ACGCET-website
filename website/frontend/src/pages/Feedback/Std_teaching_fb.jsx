@@ -94,7 +94,7 @@ const Std_teaching_fb = () => {
             });
     
             console.log(response.data);
-            alert("Feedback submitted successfully");
+            setAlertMessage("Feedback submitted successfully");
     
             // Clear the form after submission
             setProgramme('');
