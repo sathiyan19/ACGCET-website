@@ -30,7 +30,14 @@
   justify-content: space-between;
   margin-bottom: 15px;
 }
-
+.parents_fb_1st_input{
+  width: 100%; /* Adjusts the width of each field to take half the available space with some gap */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 .parents_fb_input, .parents_fb_select {
   width: 48%; /* Adjusts the width of each field to take half the available space with some gap */
   padding: 10px;
@@ -115,13 +122,18 @@ input[type="radio"] {
 .parents_fb_error {
   color: red;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 0px;
   }
-.parents_year_of_joining_container,.parents_student_fb_error{
+.parents_year_of_joining_container{
   color: red;
 font-size: 14px;
 margin-top: 5px;
-margin-left:55%;
+margin-left:52%;
+}
+.parents_student_fb_error{
+  color: red;
+font-size: 14px;
+margin-top: 5px;
 }
 
 @media (max-width: 600px) {
@@ -131,5 +143,15 @@ margin-left:55%;
 
   .parents_fb_input, .parents_fb_select {
       width: 100%;
+  }
+}
+@media (max-width:600px) {
+  .parents_year_of_joining_container{
+    color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 0px;
+  margin-right: 40%;
+  
   }
 }

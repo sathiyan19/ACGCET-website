@@ -22,10 +22,13 @@ const EmployeeFeedback = () => {
     const [ratingErrors, setRatingErrors] = useState({});
     const [alertMessage, setAlertMessage] = useState('');
 
-    const validateName = (name) => {
-        const nameRegex = /^[A-Za-z\s]{2,30}$/;
+    const validateName = (name, type) => {
+        const nameRegex = /^[A-Za-z\s]+$/;
         if (!nameRegex.test(name)) {
-            setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+            setNameError(prevErrors => ({
+                ...prevErrors,
+                [type]: 'Name should only contain letters and spaces.'
+            }));
             return false;
         } else {
             setNameError('');
@@ -60,6 +63,17 @@ const EmployeeFeedback = () => {
             ...prevErrors,
             [name]: '' // Clear the error once a rating is selected
         }));
+    };
+
+    const handleYearOfJoiningChange = (e) => {
+        const value = e.target.value;
+            setYearOfJoining(value);
+            const date= new Date();
+            if ( value>=1952 && value<=date.getFullYear()) {
+                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: '' })); // Clear error if valid
+            } else {
+                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
+            }
     };
 
     const EmployeeFeedbackSubmit = async (event) => {
@@ -114,7 +128,8 @@ const EmployeeFeedback = () => {
         <div className='employer_fb_container'>
             <Underline heading="Employer Feedback" />
             <form className='employer_fb_form' onSubmit={EmployeeFeedbackSubmit}>
-                <div className='employer_fb_row'>
+                {/* <div className='employer_fb_row'> */}
+                    <div className='employer_fb_row'>
                     <input 
                         type="text" 
                         className='employer_fb_input' 
@@ -123,6 +138,9 @@ const EmployeeFeedback = () => {
                         onChange={(e) => handleNameChange(e, setHrName)}
                         required 
                     />
+                    </div>
+                    {nameError.hrName && <p className='employer_fb_error'>{nameError.hrName}</p>}
+                    <div className='employer_fb_row'>
                     <input 
                         type="text" 
                         className='employer_fb_input' 
@@ -131,9 +149,9 @@ const EmployeeFeedback = () => {
                         onChange={(e) => setCompanyName(e.target.value)}
                         required 
                     />
-                    {nameError && <p className="error">{nameError}</p>}
-
-                </div>
+                    </div>
+                {/* </div> */}
+               
                 <div className='employer_fb_row'>
                     <input 
                         type="text" 
@@ -143,6 +161,7 @@ const EmployeeFeedback = () => {
                         onChange={(e) => setCompanyAddress(e.target.value)}
                     />
                 </div>
+                {/* <div className='employer_fb_row'> */}
                 <div className='employer_fb_row'>
                     <input 
                         type="text" 
@@ -152,6 +171,8 @@ const EmployeeFeedback = () => {
                         onChange={(e) => handleNameChange(e, setStudentName)}
                         required 
                     />
+                    </div>
+                    {nameError.studentName && <p className='employer_fb_error'>{nameError.studentName}</p>}
                     <select 
                        className='employer_fb_input' 
                        value={programme} 
@@ -163,8 +184,8 @@ const EmployeeFeedback = () => {
                         <option value="ME">M.E</option>
                         <option value="PhD">PhD</option>
                     </select>
-                </div>
-
+                {/* </div> */}
+               
                 <div className='employer_fb_row'>
                 <select 
                        className='employer_fb_input' 
@@ -185,8 +206,8 @@ const EmployeeFeedback = () => {
                         className='employer_fb_input' 
                         placeholder='Year of joining the company*' 
                         value={yearOfJoining}
-                        onChange={(e) => setYearOfJoining(e.target.value)}
-                        required 
+                        onChange={handleYearOfJoiningChange} maxLength={4}
+                        required
                     />
                 </div>
 

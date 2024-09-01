@@ -18,9 +18,9 @@ const Technical_fb = () => {
     const [semError, setSemError] = useState('');
 
     const validateName = (name) => {
-      const nameRegex = /^[A-Za-z\s]{2,30}$/;
+      const nameRegex = /^[A-Za-z\s]+$/;
       if (!nameRegex.test(name)) {
-        setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+        setNameError('Name should only contain letters and spaces.');
         return false;
       } else {
         setNameError('');
@@ -139,8 +139,9 @@ const Technical_fb = () => {
     <div className="technical_fb_rows">
         <input type="text" className='technical_fb_input technical_fb_two_line' placeholder='Course code*' required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}/>
         <input type="text" className='technical_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>
-        {nameError && <p className='std_teachnical_seminar_fb_error'>{nameError}</p>}
-        
+    </div>
+    <div className='std_teachnical_seminar_fb_error'>
+    {nameError && <p>{nameError}</p>}
     </div>
 
     <div className="technical_fb_rows">

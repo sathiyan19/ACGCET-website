@@ -20,11 +20,11 @@ flex-direction: column;
   margin-top: -30px;
 }
 
-.std_teach_fb_error,.std_tech_fb_sem_err p{
+.std_teach_fb_error p,.std_tech_fb_sem_err p{
   
   color: red;
   font-size: 14px;
-  margin-top :15px;
+  margin-top :5px;
   margin-left: 51%;
 }
 
@@ -111,7 +111,7 @@ padding: 12px;
     .stud_teach_fb_two_line{
       margin-bottom: 10px;
     }
-    .std_teach_fb_error, .std_tech_fb_sem_err p{
+    .std_teach_fb_error p, .std_tech_fb_sem_err p{
       margin-left: auto;
     }
   }
