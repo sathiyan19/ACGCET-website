@@ -1,0 +1,28 @@
+.autonomous_whole{
+    padding: 20px;
+}
+.autonomous_sub_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.autonomous_sub{
+    width: 70%;
+}
+
+@media(max-width:1024px){
+    .autonomous_sub{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .autonomous_sub{
+        width:70%
+    }
+}
+
+@media(max-width:500px){
+    .autonomous_sub{
+        width: 100%;
+    }
+}

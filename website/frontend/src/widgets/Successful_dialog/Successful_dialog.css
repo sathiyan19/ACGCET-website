@@ -1,0 +1,21 @@
+.success_dialog_outer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    z-index: 1000; 
+    width: 100% !important;
+    height: 100vh !important;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0,0.8); 
+}
+
+.success_dialog_inner{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

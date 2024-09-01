@@ -1,0 +1,14 @@
+.Research {
+    line-height: 1.5; 
+  }
+  
+  .cont,
+  .cont2 {
+   
+    margin-bottom: 10px; 
+    font-weight: normal;
+    text-align: justify;
+  }
+  .phdproduced {
+    overflow-x: scroll;
+  }

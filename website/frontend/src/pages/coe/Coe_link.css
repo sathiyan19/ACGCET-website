@@ -1,0 +1,40 @@
+/* Coe_link Component CSS */
+
+/* Line spacing and text alignment for the paragraph */
+.nptel,
+.content,
+.content1 {
+  text-align: justify;
+  /* padding-left: 25px; */
+  line-height: 1.5rem;
+  color: black;
+}
+
+/* Center align content cards */
+.content_card_holder {
+  display: flex; /* Use flexbox for alignment */
+  flex-wrap: wrap; /* Allow content cards to wrap */
+  justify-content: center; /* Center align content horizontally */
+}
+
+/* Content Card Styles */
+.content_card {
+  /* Add your styles for the content cards here */
+}
+
+/* Media query for font size adjustment */
+@media (min-width: 501px) {
+  .nptel,
+  .content,
+  .content1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nptel,
+  .content,
+  .content1 {
+    font-size: 16px;
+  }
+}
