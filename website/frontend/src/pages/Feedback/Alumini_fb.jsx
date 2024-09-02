@@ -46,21 +46,10 @@ const Alumni_fb = () => {
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleYearChange = (e) => {
-        const value = e.target.value;
-        setPassedOutYear(value);
-        const date= new Date();
-        if (value>=1952 && value<=date.getFullYear()) {
-            setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
-        } else {
-            setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
-        }
-    };
-
     const validateName = (name) => {
-        const nameRegex = /^[A-Za-z\s]+$/;
+        const nameRegex = /^[A-Za-z\s]{2,30}$/;
         if (!nameRegex.test(name)) {
-            setNameError('Name should only contain letters and spaces.');
+            setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
             return false;
         } else {
             setNameError('');
@@ -96,7 +85,6 @@ const Alumni_fb = () => {
     
     validateName(name);
   };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
    
@@ -177,7 +165,7 @@ const Alumni_fb = () => {
                         placeholder="Enter Name of the Alumni*"
                         value={name}
                         onChange={handleNameChange}
-                        required minLength={2}
+                        required
                     />
                     </div>
                     {nameError && <p className='alumni_fb_error'>{nameError}</p>}
@@ -228,7 +216,24 @@ const Alumni_fb = () => {
         className="alumni_fb_input"
         placeholder="Enter passed out year*"
         value={passedOutYear}
-        onChange={handleYearChange} maxLength={4}
+        onChange={(e) => {
+            const value = e.target.value;
+
+            // Check if the input contains only digits and is at most 4 characters long
+            if (/^\d{0,4}$/.test(value)) {
+                setPassedOutYear(value);
+                const date= new Date();
+
+                // Validate if the input has exactly 4 digits
+                if (value.length === 4 && value>=1952 && value<=date.getFullYear()) {
+                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
+                } else {
+                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
+                }
+            } else {
+                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
+            }
+        }}
         required
     />
    

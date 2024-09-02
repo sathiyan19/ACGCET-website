@@ -15,6 +15,8 @@ import parentsblack from "../../assets/pictures/parentsblack.webp";
 import consultancy_fb from "../../assets/pictures/consultancy_fb.webp";
 import graduationblack from "../../assets/pictures/graduationblack.webp";
 import studentblack from "../../assets/pictures/studentblack.webp";
+import supplierblack from "../../assets/pictures/supplierblack.webp";
+import employeeblack from "../../assets/pictures/employeeblack.webp";
 import "./Feedback.css";
 
 const Feedback = () => {
@@ -99,7 +101,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/employer_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={employer_fb} />
+              <img className="feedback_image" src={employeeblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Employer </div>
@@ -127,7 +129,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/supplier_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={supplier_fb} />
+              <img className="feedback_image" src={supplierblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Supplier </div>
