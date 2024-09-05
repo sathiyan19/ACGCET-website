@@ -9,6 +9,7 @@
 // import silver_98 from '../assets/pictures/alumni_pics/silver_98.webp'
 // import pre_gold_79 from '../assets/pictures/alumni_pics/pre_gold_79.webp'
 // import diam_68 from '../assets/pictures/alumni_pics/diam_68.webp'
+import mca from '../assets/pictures/mca.webp'
 const coral_reef="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/reunions/alumni_pics/coral_reef_alumni.webp"
 const alumni_1982="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/reunions/alumni_pics/alumni_1982.webp"
 const silver_98="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/reunions/alumni_pics/silver_98.webp"
@@ -103,3 +104,13 @@ export const alumni_reunions=[
         date:"11th FEB 2023"
     },
 ]
+export const cardData = [
+    {
+        imageSrc:mca,
+      title: ' Reunion of 1990-93 batch of MCA',
+      
+      videoSrc: 'https://drive.google.com/file/d/1vnlvSMtcF4JNZizii5MfpH1h4NcSgZWX/view?usp=sharing'
+    },
+   
+    // Add more card data objects as needed
+  ];

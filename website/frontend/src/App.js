@@ -63,6 +63,7 @@ import {
   Ece_projects,
   Ece_stud_activity,
   Ece_antenna,
+  Ece_elect_test_coe,
   Annual_report,
   Academic,
   Fees,
@@ -88,6 +89,7 @@ import {
   Eee_lab,
   Eee_events,
   Ece_placement,
+  
   Iqac,
   Iqac_min,
   Iqac_aqar,
@@ -168,18 +170,23 @@ import {
   Placement_companies,
   Iqac_committee,
   Sgpa,
-  Parents_fb,
+  
+
   Feedback,
   Alumini_fb,
   Collaborator_fb,
   Employer_fb,
   Supplier_fb,
+  Parents_fb,
   Student_fb,
   Std_teaching_fb,
-  Std_mini_project_fb,
+  Practical_fb,
+  Technical_fb,
 
+  
   Consultancy_fb,
   FeedbackPdf,
+  Std_mini_project_fb
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -252,6 +259,8 @@ const App = () => {
         <Route path="/academic-calendar" element={<Academic />} />
         <Route path="/fee-structure" element={<Fees />} />
         <Route path="/ecedept/ece-peo" element={<Ece_peo />} />
+        <Route path="/ecedept/Ece_elect_test_coe" element={<Ece_elect_test_coe />} />
+
         <Route path="/ecedept/ece-faculties" element={<Ece_faculties />} />
         <Route path="/ecedept/ece-lab" element={<Ece_lab />} />
         <Route path="/ecedept/ece-research" element={<Ece_research />} />
@@ -261,6 +270,7 @@ const App = () => {
         <Route path="/ecedept/ece-projects" element={<Ece_projects/>} />
         <Route path="/ecedept/ece-student-activity" element={<Ece_stud_activity/>} />
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
+        
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
         {/* <Route path="/mechdept" element={<Under/>} /> */}
@@ -358,6 +368,7 @@ const App = () => {
          <Route path="/coe/coe_committiee"element={<Coe_Committiee/>}/>
          <Route path="/research"element={<Research/>}/>
          <Route path="/rti" element={<Rti/>}/>
+         <Route path="/clubs/build_club" element={<Build/>}/>
          
          <Route path="/audit_stmt" element={<Audit_stmt/>}/>
          <Route path="/verification" element={<Verification/>}/>
@@ -365,18 +376,22 @@ const App = () => {
          <Route path="/autonomous" element={<Autonomous/>}/>
          <Route path="/sgpa" element={<Sgpa/>}/>
 
-         <Route path="/feedback" element={<Feedback/>}/>
+         <Route path="/feedback/Feedback" element={<Feedback/>}/>
          <Route path="/feedback/alumini_fb" element={<Alumini_fb/>}/>
          <Route path="/feedback/Student_fb" element={<Student_fb/>}/>
          <Route path="/feedback/Std_teaching_fb" element={<Std_teaching_fb/>}/>
-         <Route path="/feedback/Std_mini_project_fb" element={<Std_mini_project_fb/>}/>
+         <Route path="/feedback/std_mini_project_fb" element={<Std_mini_project_fb/>}/>
 
          <Route path="/feedback/collaborator_fb" element={<Collaborator_fb/>}/>
-         <Route path="parents_fb" element={<Parents_fb/>}/>
-         <Route path="consultancy_fb" element={<Consultancy_fb/>}/>
-         <Route path="supplier_fb" element={<Supplier_fb/>}/>
-         <Route path="employer_fb" element={<Employer_fb/>}/>
-         <Route path="feedbackPdf" element={<FeedbackPdf/>}/>
+         <Route path="/feedback/student_fb" element={<Student_fb/>}/>
+         <Route path="/feedback/Std_teaching_fb" element={<Std_teaching_fb/>}/>
+         <Route path="/feedback/Practical_fb" element={<Practical_fb/>}/>
+         <Route path="/feedback/Technical_fb" element={<Technical_fb/>}/>
+         <Route path="/feedback/parents_fb" element={<Parents_fb/>}/>
+         <Route path="/feedback/consultancy_fb" element={<Consultancy_fb/>}/>
+         <Route path="/feedback/supplier_fb" element={<Supplier_fb/>}/>
+         <Route path="/feedback/employer_fb" element={<Employer_fb/>}/>
+         <Route path="/FeedbackPdf" element={<FeedbackPdf/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />

@@ -40,6 +40,7 @@ const Life = () => {
     <div className="life_at_acgcet_holder">
       <Underline heading="Life at ACGCET" />
       <div className="life_grid_holder">
+        
         <div class="life_crd life_item1">
           <div class="life_head_image">
             <img class="life_image" src={karaikudi_palace} />

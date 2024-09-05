@@ -1,5 +1,17 @@
+// import React from 'react'
+
+// const Ece_elect_test_coe = () => {
+//   return (
+//     <div>
+      
+//     </div>
+//   )
+// }
+
+// export default Ece_elect_test_coe
+
 import React ,{useEffect}from 'react'
-import "./Ece_coe.css";
+import "./Ece_elect_test_coe.css";
 import { Backtotop, Floatinmenu, Underline } from "../../widgets";
 import {
     ece_dept_menu,
@@ -10,7 +22,7 @@ import {
   import { Radial_menu, Listformat } from "../../components";
   import { FaMicrochip } from "react-icons/fa6";
   const center="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/coe/CENTRE_OF_EXCELLENCE_IN_ELECTRONICS_TEST_ENGINEERING-_1_-2.webp"
-const Ece_coe = () => {
+const Ece_elect_test_coe = () => {
     useEffect(() => {
         document.title = 'ACCET-ECE | Center of Excellence';
       }, []);
@@ -60,4 +72,4 @@ const Ece_coe = () => {
   );
 };
 
-export default Ece_coe
+export default Ece_elect_test_coe

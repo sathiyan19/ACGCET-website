@@ -257,7 +257,7 @@ const coe_regulation=[
         'id':'5',
         'program':'UG Regulation 2022',
 
-        'pdf':'https://drive.google.com/file/d/1biZjrg1cooJZdTGsDO-F2OXKvGTsjhY5/view?usp=sharing'
+        'pdf':'https://drive.google.com/file/d/1gElC0bG7dg6M2gykIUSr6VxK14Sngz2V/view?usp=sharing'
     },
     {
         'id':'6',
@@ -379,7 +379,7 @@ const coe_syllabus22=[
     'program':'Computer Science And Engineering',
     // 'pdf':'https://drive.google.com/file/d/1flPg5MjLQv4GXAufeyQHEzYCQgoVabIa/view?usp=sharing',
     // 'pdf':'https://drive.google.com/file/d/1udmwCq7A4qQgzS9-DFV1mKiW14KZIjFg/view?usp=drive_link',
-    'pdf':'https://drive.google.com/file/d/1-6iyz5ZxDopIW9BMq1Ju3d6GzizoFy0Z/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1TOwQmMlz-5ax7lEoQf2yeQTI6UPoOOyZ/view?usp=sharing',
    
   },
   {
@@ -387,35 +387,35 @@ const coe_syllabus22=[
     'id':'2',
     'program':'Mechanical engineering',
     // 'pdf':'https://drive.google.com/file/d/1dEOopLkPc6uhqzvrSanuOBocTxyQlsFW/view?usp=sharing',
-    'pdf':'https://drive.google.com/file/d/1b708AMnmhEk_dF7jUOQAJH20oj73DOLD/view?usp=sharing'
+    'pdf':'https://drive.google.com/file/d/1qwDNPDOSy8rdSLUOlN-IKABwpMTLoNDE/view?usp=sharing'
    
   },
   {
   
     'id':'3',
     'program':'Electronics And Communication Engineering',
-    'pdf':'https://drive.google.com/file/d/19V13hmGfa9gM4RyT5kTLN5T1IlvfRLkE/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1M-LzLOg-VWfAHWrvvha8idsVHSLurZ72/view?usp=sharing',
    
   },
   {
   
     'id':'4',
     'program':'Electrical And Electronics Engineering',
-    'pdf':'https://drive.google.com/file/d/1SVbqR4d_BuMFGodewPQ3FVg93Elu9Kr_/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1wCApUGkojKAsRrxo37oToIatk8r-_vP9/view?usp=sharing',
    
   },
   {
   
     'id':'5',
     'program':'Civil Engineering',
-    'pdf':'https://drive.google.com/file/d/1kX3tXBQxbRsTXrcyw7qMi4KmgG773DyK/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/1VjHPude54wBMZzvqymGrFcjXt6jL7Uru/view?usp=sharing',
    
   },
   {
   
     'id':'6',
     'program':'I year',
-    'pdf':'https://drive.google.com/file/d/15T_YK6fZ1bUt0q28L7wja2XQ2BhlMMRr/view?usp=sharing',
+    'pdf':'https://drive.google.com/file/d/19OmujOfdVFqTXqsGQoUOGY_vsb5hFI6R/view?usp=sharing',
    
   },
   

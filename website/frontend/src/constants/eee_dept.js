@@ -1006,7 +1006,7 @@ const eee_fac_profiles = [
     name: "Prof.K.Padmanaban",
     Designation: "Assistant Professor",
     mailid: "padupoi@gmail.com",
-    pdf: "https://drive.google.com/file/d/1LPeLnjYS3YyPGIc01u1HdiiRJUc3Z5xJ/view?usp=drive_link",
+    pdf: "https://drive.google.com/file/d/1kFmRvOEvAjsPpF-jidxQHrVU7hpMnGHq/view?usp=sharing",
   },
   {
     id: "12",

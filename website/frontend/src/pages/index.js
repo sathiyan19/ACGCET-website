@@ -62,6 +62,11 @@ export {default as Eee_lab} from './Eeedept/Eee_lab'
 export {default as Eee_events} from './Eeedept/Eee_events'
 export {default as Eee_modern} from './Eeedept/Eee_modern'
 export {default as Ece_placement} from './Ecedept/Ece_placement'
+export {default as Ece_elect_test_coe} from './Ecedept/Ece_elect_test_coe'
+
+
+
+
 export {default as Iqac} from './Iqac/Iqac'
 export {default as Iqac_min} from './Iqac_min/Iqac_min'
 export {default as Iqac_aqar} from './Iqac_aqar/Iqac_aqar'
@@ -167,9 +172,8 @@ export{default as Audit_stmt} from './Audit_stmt/Audit_stmt'
 export{default as Verification} from './Verification/Verification'
 export{default as Iqac_strategic} from './Iqac_strategic/Iqac_strategic'
 export{default as Autonomous} from './Autonomous/Autonomous'
-
 export {default as Build}from'./Clubs/Build'
-export{default as Ece_coe} from './Ecedept/Ece_coe'
+
 
 export{default as Feedback} from './Feedback/Feedback'
 export{default as Alumini_fb} from './Feedback/Alumini_fb'
@@ -178,7 +182,14 @@ export{default as Student_fb} from './Feedback/Student_fb'
 export{default as Std_teaching_fb} from './Feedback/Std_teaching_fb'
 export{default as Std_mini_project_fb} from './Feedback/Std_mini_project_fb'
 export{default as Employer_fb} from './Feedback/Employer_fb'
+export{default as Technical_fb} from './Feedback/Technical_fb'
+export{default as Practical_fb} from './Feedback/Practical_fb'
+
+
+
+// export{default as Parents_fb}from './Feedback/Parents_fb'
+// export{default as Consultancy_fb} from './Feedback/Consultancy_fb'
 export{default as Supplier_fb} from './Feedback/Supplier_fb'
 export{default as Parents_fb}from './Feedback/Parents_fb'
 export{default as Consultancy_fb} from './Feedback/Consultancy_fb'
-export{default as FeedbackPdf} from './FeedbackPdf'
+export{default as FeedbackPdf} from './FeedbackPdf/FeedbackPdf'

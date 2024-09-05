@@ -74,6 +74,8 @@
 // import aish_20 from '../assets/pictures/ece_dept/ece_rankers/aishwarya_20.webp'
 // import sujitha_20 from '../assets/pictures/ece_dept/ece_rankers/sujitha_20.webp'
 
+
+
 const dpm="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/boy.webp"
 const dpf="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/girl.webp"
 const cover="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/microchip.webp"
@@ -238,7 +240,7 @@ const ece_dept_menu = [
   },
   {
     id: "13",
-    path: "/ecedept/ece_coe",
+    path: "/ecedept/Ece_elect_test_coe",
     link: "Electronics Test Engineering",
     arl: "l",
   },
@@ -886,8 +888,315 @@ const ece_progs = [
 
 const ece_stud_data = [
   {
+    
     id: "1",
-    heading: "2nd Year",
+    heading: "2rd Year",
+    component: "table",
+    structure: {
+      data: [
+          {
+            sno: "1",
+            regno: "91762314001",
+            name: "AAKASH J"
+          },
+          {
+            sno: "2",
+            regno: "91762314002",
+            name: "P.Adhithyan"
+          },
+          {
+            sno: "3",
+            regno: "91762314003",
+            name: "ALAGAR G"
+          },
+          {
+            sno: "4",
+            regno: "91762314004",
+            name: "A Anishma"
+          },
+          {
+            sno: "5",
+            regno: "91762314005",
+            name: "ARPUTHAN K"
+          },
+          {
+            sno: "6",
+            regno: "91762314006",
+            name: "ARUNTHATHI.S"
+          },
+          {
+            sno: "7",
+            regno: "91762314007",
+            name: "Bathrinath sk"
+          },
+          {
+            sno: "8",
+            regno: "91762314008",
+            name: "A.Blessy"
+          },
+          {
+            sno: "9",
+            regno: "91762314009",
+            name: "Deepika M"
+          },
+          {
+            sno: "10",
+            regno: "91762314010",
+            name: "Deva Dharshini.P"
+          },
+          {
+            sno: "11",
+            regno: "91762314011",
+            name: "DHARSHINI S"
+          },
+          {
+            sno: "12",
+            regno: "91762314012",
+            name: "Dinesh G"
+          },
+          {
+            sno: "13",
+            regno: "91762314013",
+            name: "L. Gayathri"
+          },
+          {
+            sno: "14",
+            regno: "91762314015",
+            name: "Gobish V"
+          },
+          {
+            sno: "15",
+            regno: "91762314016",
+            name: "M. Gokulnath"
+          },
+          {
+            sno: "16",
+            regno: "91762314017",
+            name: "HARIHESAN M"
+          },
+          {
+            sno: "17",
+            regno: "91762314018",
+            name: "Iniya.J"
+          },
+          {
+            sno: "18",
+            regno: "91762314019",
+            name: "Ishwarya Lakshmi A"
+          },
+          {
+            sno: "19",
+            regno: "91762314020",
+            name: "Jaya S"
+          },
+          {
+            sno: "20",
+            regno: "91762314021",
+            name: "JOHN JENIT J"
+          },
+          {
+            sno: "21",
+            regno: "91762314022",
+            name: "KATHIR S"
+          },
+          {
+            sno: "22",
+            regno: "91762314023",
+            name: "KAVIYA S"
+          },
+          {
+            sno: "23",
+            regno: "91762314024",
+            name: "Lakshimi Priya V"
+          },
+          {
+            sno: "24",
+            regno: "91762314025",
+            name: "S.Lalitha"
+          },
+          {
+            sno: "25",
+            regno: "91762314026",
+            name: "MANOJ S"
+          },
+          {
+            sno: "26",
+            regno: "91762314027",
+            name: "Merlin Janet .P"
+          },
+          {
+            sno: "27",
+            regno: "91762314028",
+            name: "Mohamed Abdul Kadhar. N"
+          },
+          {
+            sno: "28",
+            regno: "91762314029",
+            name: "MUGILAN M"
+          },
+          {
+            sno: "29",
+            regno: "91762314030",
+            name: "MUTHUPANDI M"
+          },
+          {
+            sno: "30",
+            regno: "91762314031",
+            name: "Muthupriya G"
+          },
+          {
+            sno: "31",
+            regno: "91762314032",
+            name: "T.Nandhini Devi"
+          },
+          {
+            sno: "32",
+            regno: "91762314034",
+            name: "PRANEETH. T"
+          },
+          {
+            sno: "33",
+            regno: "91762314035",
+            name: "Preba M"
+          },
+          {
+            sno: "34",
+            regno: "91762314036",
+            name: "Priyadharshini P"
+          },
+          {
+            sno: "35",
+            regno: "91762314037",
+            name: "RAJADURAI M"
+          },
+          {
+            sno: "36",
+            regno: "91762314038",
+            name: "RAVIBALAN R"
+          },
+          {
+            sno: "37",
+            regno: "91762314039",
+            name: "Riya Rathna P V"
+          },
+          {
+            sno: "38",
+            regno: "91762314040",
+            name: "ROHITHKUMAR C"
+          },
+          {
+            sno: "39",
+            regno: "91762314041",
+            name: "SAKTHI PRIYAN V"
+          },
+          {
+            sno: "40",
+            regno: "91762314042",
+            name: "Sanjai G"
+          },
+          {
+            sno: "41",
+            regno: "91762314043",
+            name: "Shalini R"
+          },
+          {
+            sno: "42",
+            regno: "91762314044",
+            name: "Sivasankaran p"
+          },
+          {
+            sno: "43",
+            regno: "91762314045",
+            name: "K. Sri Krishna"
+          },
+          {
+            sno: "44",
+            regno: "91762314046",
+            name: "Subalakshmi N"
+          },
+          {
+            sno: "45",
+            regno: "91762314047",
+            name: "Subashini.T"
+          },
+          {
+            sno: "46",
+            regno: "91762314048",
+            name: "A sumithkumar"
+          },
+          {
+            sno: "47",
+            regno: "91762314049",
+            name: "Uma Rohini S"
+          },
+          {
+            sno: "48",
+            regno: "91762314050",
+            name: "K. Varusharaja"
+          },
+          {
+            sno: "49",
+            regno: "91762314051",
+            name: "VASANTHAKUMAR A"
+          },
+          {
+            sno: "50",
+            regno: "91762314052",
+            name: "Vinshika B"
+          },
+          {
+            sno: "51",
+            regno: "91762314053",
+            name: "Vishal K"
+          },
+          {
+            sno: "52",
+            regno: "91762314054",
+            name: "Yuvasri G"
+          },
+          {
+            sno: "53",
+            regno: "91762414201",
+            name: "Anvar M A"
+          },
+          {
+            sno: "54",
+            regno: "91762414202",
+            name: "Gokulakrishnan S"
+          },
+          {
+            sno: "55",
+            regno: "91762414203",
+            name: "Hariharan A"
+          },
+          {
+            sno: "56",
+            regno: "91762414204",
+            name: "Keerthana S B"
+          },
+          {
+            sno: "57",
+            regno: "91762414205",
+            name: "Mugilan P"
+          },
+          {
+            sno: "58",
+            regno: "91762414206",
+            name: "Nithish Kumar S"
+          },
+        ],
+        columns: [
+          { field: "sno", header: "sno" },
+          { field: "regno", header: "Register No" },
+          { field: "name", header: "name" },
+        ],
+      },
+    
+    
+  },
+  {
+    id: "2",
+    heading: "3rd Year",
     component: "table",
     structure: {
       data: [
@@ -1217,8 +1526,8 @@ const ece_stud_data = [
 
 
   {
-    id: "2",
-    heading: "3rd Year",
+    id: "3",
+    heading: "4th Year",
     component: "table",
     structure: {
       data: [
@@ -1497,327 +1806,7 @@ const ece_stud_data = [
     },
   },
 
-  {
-    id: "3",
-    heading: "4th Year",
-    component: "table",
-    structure: {
-      data: [
-        {
-          sno: "1",
-          regno:"2014002",
-          name: "ANURAJ KISHORE.J",
-        },
-        {
-          sno: "2",
-          regno:"2014003",
-          name: "ANUSHA .K",
-        },
-        {
-          sno: "3",
-          regno:"2014004",
-          name: "ARTHI.M",
-        },
-        {
-          sno: "4",
-          regno:"2014005",
-          name: "ASKAR.M",
-        },
-        {
-          sno: "5",
-          regno:"2014006",
-          name: "ASWIN.S",
-        },
-        {
-          sno: "6",
-          regno:"2014007",
-          name: "ATHISH.R",
-        },
-        {
-          sno: "7",
-          regno:"2014008",
-          name: "DHANUSH.E",
-        },
-        {
-          sno: "8",
-          regno:"2014009",
-          name: "DHARANEESH.K",
-        },
-        {
-          sno: "9",
-          regno:"2014010",
-          name: "DHARANI.M",
-        },
-        {
-          sno: "10",
-          regno:"2014011",
-          name: "DHARSHAN KUMAR.S",
-        },
 
-        {
-          sno: "11",
-          regno:"2014012",
-          name: "DIVYA BARATHI.S",
-        },
-        {
-          sno: "12",
-          regno:"2014013",
-          name: "GOKUL.R",
-        },
-        {
-          sno: "13",
-          regno:"2014015",
-          name: "JEEVA .K.S",
-        },
-        {
-          sno: "14",
-          regno:"2014016",
-          name: "JOSELIN SHINITA.J",
-        },
-        {
-          sno: "15",
-          regno:"2014017",
-          name: "KAMALESH.S",
-        },
-        {
-          sno: "16",
-          regno:"2014018",
-          name: "KAVIN.R",
-        },
-        {
-          sno: "17",
-          regno:"2014019",
-          name: "KAVYA.S",
-        },
-        {
-          sno: "18",
-          regno:"2014020",
-          name: "MOHAMED SANAULLAH.V",
-        },
-        {
-          sno: "19",
-          regno:"2014021",
-          name: "RAJA.S",
-        },
-        {
-          sno: "20",
-          regno:"2014022",
-          name: "RAMANA.A",
-        },
-
-        {
-          sno: "21",
-          regno:"2014023",
-          name: "RAMANATHAN.M",
-        },
-        {
-          sno: "22",
-          regno:"2014024",
-          name: "RAMKUMAR.B",
-        },
-        {
-          sno: "23",
-          regno:"2014026",
-          name: "RISHIKA K",
-        },
-        {
-          sno: "24",
-          regno:"2014027",
-          name: "SANTHIYA V",
-        },
-        {
-          sno: "25",
-          regno:"2014028",
-          name: "SATHESHKUMAR M",
-        },
-        {
-          sno: "26",
-          regno:"2014029",
-          name: "SHARMIKA L",
-        },
-        {
-          sno: "27",
-          regno:"2014030",
-          name: "SOWMIYA V",
-        },
-        {
-          sno: "28",
-          regno:"2014031",
-          name: "SRIRAM SUNDAR A",
-        },
-        {
-          sno: "29",
-          regno:"2014032",
-          name: "SURRYA U R",
-        },
-        {
-          sno: "30",
-          regno:"2014033",
-          name: "SURYA P",
-        },
-
-        {
-          sno: "31",
-          regno:"2014034",
-          name: "THARINI R",
-        },
-        {
-          sno: "32",
-          regno:"2014035",
-          name: "THARSHIKA P",
-        },
-        {
-          sno: "33",
-          regno:"2014036",
-          name: "THEVI SRINIDHI S",
-        },
-        {
-          sno: "34",
-          regno:"2014037",
-          name: "THIVIYADARSSINI K",
-        },
-        {
-          sno: "35",
-          regno:"2014038",
-          name: "THULASIMANI S",
-        },
-        {
-          sno: "36",
-          regno:"2014039",
-          name: "VAISHALI R",
-        },
-        {
-          sno: "37",
-          regno:"2014040",
-          name: "VIDHYA S",
-        },
-        {
-          sno: "38",
-          regno:"91762114201",
-          name: "AATHESHWARAN S",
-        },
-        {
-          sno: "39",
-          regno:"91762114203",
-          name: "DAMODARAN N",
-        },
-        {
-          sno: "40",
-          regno:"91762114204",
-          name: "DHANUSH B",
-        },
-
-        {
-          sno: "41",
-          regno:"91762114205",
-          name: "DINESHKUMAR R",
-        },
-        {
-          sno: "42",
-          regno:"91762114206",
-          name: "EBENEZER S",
-        },
-        {
-          sno: "43",
-          regno:"91762114207",
-          name: "GNANA BARATHI S P",
-        },
-        {
-          sno: "44",
-          regno:"91762114208",
-          name: "GOPINATHAN V",
-        },
-        {
-          sno: "45",
-          regno:"91762114209",
-          name: "ISHWARYA V",
-        },
-        {
-          sno: "46",
-          regno:"91762114210",
-          name: "KISHORE KUMAR P",
-        },
-        {
-          sno: "47",
-          regno:"91762114211",
-          name: "MAHALAKSHMI V",
-        },
-        {
-          sno: "48",
-          regno:"91762114212",
-          name: "MOHAMED MUJAHITH P",
-        },
-        {
-          sno: "49",
-          regno:"91762114213",
-          name: "PAVITHRAN Y",
-        },
-        {
-          sno: "50",
-          regno:"91762114214",
-          name: "PRISCILLA R",
-        },
-
-        {
-          sno: "51",
-          regno:"91762114215",
-          name: "SOWNDHIRARAJAN P",
-        },
-        {
-          sno: "52",
-          regno:"91762114216",
-          name: "SURIYA PRAKASH G",
-        },
-        {
-          sno: "53",
-          regno:"91762114217",
-          name: "SWETHASRI P",
-        },
-        {
-          sno: "54",
-          regno:"2014301",
-          name: "KRITHICK R",
-        },
-        {
-          sno: "55",
-          regno:"2014302",
-          name: "LAVANYA S",
-        },
-        {
-          sno: "56",
-          regno:"2014303",
-          name: "MAHADEVI T",
-        },
-        {
-          sno: "57",
-          regno:"2014304",
-          name: "MOHAMEDFARHATKHAN A",
-        },
-        {
-          sno: "58",
-          regno:"2014305",
-          name: "SUSHMITHA S",
-        },
-        {
-          sno: "59",
-          regno:"2014306",
-          name: "VIJAYAPRIYA V",
-        },
-        {
-          sno: "60",
-          regno:"2014203",
-          name: "DEVA L",
-        },
-        
-      ],
-      columns: [
-        { field: "sno", header: "sno" },
-        { field: "regno", header: "Register No" },
-        { field: "name", header: "name" },
-      ],
-    },
-  },
-  
 ];
 
 const ece_acad_labs = [

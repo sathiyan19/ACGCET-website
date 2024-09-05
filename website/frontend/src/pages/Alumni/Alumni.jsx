@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 
 import "./Alumni.css";
 
-import { Modal, Backtotop, Underline} from "../../widgets";
+import { Modal, Backtotop, Underline,Videocard} from "../../widgets";
 import { Slideshow,Reunion_card_display } from "../../components";
-import { contributions, slideshow_imgs,alumni_reunions } from "../../constants/alumni_info";
+import { contributions, slideshow_imgs,alumni_reunions,cardData } from "../../constants/alumni_info";
 
 // import accetosa_logo from "../../assets/pictures/logo-cms.webp";
 const accetosa_logo=" https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/alumini/about/logo-cms.webp"
@@ -130,6 +130,23 @@ const Alumni = () => {
 
           <Reunion_card_display cardinfo_list={alumni_reunions}/>       
         </div>
+
+        <div className="alumini_video">
+        <div className="alumini_video_heading">
+            <Underline heading="Reunion Videos" />
+            </div>
+            <div className="alumini_video_content">
+            {cardData.map((card, index) => (
+        <Videocard
+          key={index}
+          imageSrc={card.imageSrc}
+          title={card.title}
+          description={card.description}
+          videoSrc={card.videoSrc}
+        />
+              ))}
+            </div>
+          </div>
       </div>
     </>
   );
