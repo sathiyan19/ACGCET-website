@@ -1,0 +1,140 @@
+.opening_card {
+  width: 300px;
+  /* height: 220px; */
+  margin: 15px 20px;
+  border-radius: 15px;
+   box-shadow:  -7px 7px 7px  #00134d;;
+}
+
+.opening_title {
+  min-height: 87px;
+  margin: 10px 0px 10px 0;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 28px;
+  color: #00134d;
+  z-index: 2;
+  position: relative;
+}
+
+.opening_body {
+  display: block;
+  height: 240px;
+  padding: 30px 20px;
+  background-color: #d9edff;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.opening_top_head {
+  font-size: 20px;
+  color: #00134d;
+  z-index: 2;
+  position: relative;
+}
+
+.opening_title {
+  color: #00134d; /* Example text color */
+}
+
+.opening_sub_link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 15px;
+  color: #00134d;
+  background: #00134d;
+ 
+}
+.opening_sub_link:hover {
+  color: #fff; /* Change text color when hovered */
+  background: #ff6600 ; /* Change background color when hovered */
+}
+
+
+.opening_sub_link:active {
+  background-color: #ff6600; 
+  color: black; 
+}
+
+
+
+
+.heading {
+  color: white;
+  
+}
+/* Define styles for screens smaller than 600px (typical mobile screens) */
+@media (max-width: 600px) {
+  .opening_title {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  
+ 
+  
+  .opening_top_head {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  
+  .opening_sub_link {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  .heading{
+    font-size: 16px;
+  }
+}
+/* @media(max-width:400px){
+  .opening_title{
+    font-size: 10px;
+  }
+}
+.opening_sub_link .heading {
+  font-size: 14px;} /* Adjust font size for screens smaller than 500px */
+
+
+@media (max-width: 500px) {
+  .opening_sub_link .heading {
+    font-size: 12px; /* Adjust font size for screens smaller than 500px */
+  }
+}
+@media (max-width: 600px) {
+  .opening_title {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+  
+  .opening_body {
+    height: auto; /* Let the height adjust dynamically for smaller screens */
+  }
+  
+  .opening_top_head {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  
+  .opening_sub_link {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+  .heading {
+    font-size: 12px;
+  }
+  
+  .opening_sub_link {
+    order: -1; /* Move the button to the top */
+    margin-bottom: 200px; /* Add some space below the button */
+  }
+  
+  .opening_body{
+    max-height: 200px;
+  }
+  
+}
+@media (max-width: 500px) {
+  .opening_sub_link {
+   
+    
+    margin-top: 10px; /* Adjust top margin as needed */
+  }
+}
+
