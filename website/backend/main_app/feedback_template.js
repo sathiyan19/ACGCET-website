@@ -6,8 +6,11 @@ const getPdfTemplate = (feedbackData) => `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supplier Feedback</title>
     <style>
-          body {
+            body {
             font-family: Arial, sans-serif;
+            margin: 15px;
+            font-size:10px;
+            font-weight:unset;
             margin: 15px;
             font-size:10px;
             font-weight:unset;
@@ -20,13 +23,16 @@ const getPdfTemplate = (feedbackData) => `
             border-collapse: collapse;
             margin-top: 20px;
             table-layout: auto; 
+            table-layout: auto; 
         }
         table, th, td {
             border: 1px solid #ddd;
         }
         th, td {
             padding: 2px;
+            padding: 2px;
             text-align: left;
+          
           
         }
         th {
@@ -79,12 +85,58 @@ const getParentsPdfTemplate = (feedbackData) => `
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parents Feedback</title>
-<style>
-    body {
+    <style>
+        <body>
+    <h1>Supplier Feedback Summary</h1>
+    <div class="table-container">
+        <p>Date: ${new Date().toLocaleDateString()}</p>
+        <table>
+            <tr>
+                <th>Supplier Name</th>
+                <th>Product Supplied</th>
+                <th>Branch</th>
+                <th>Procurement Process</th>
+                <th>Payment Process</th>
+                <th>Staff Professionalism</th>
+                <th>Receipt Process</th>
+                <th>Paperwork Process</th>
+                <th>Communication Efficiency</th>
+                <th>Ethical Practices</th>
+                <th>Business Relationship</th>
+            </tr>
+            ${feedbackData.map(row => `
+            <tr>
+                <td>${row.supplier_name}</td>
+                <td>${row.product_supplied}</td>
+                <td>${row.branch}</td>
+                <td>${row.procurement_process}</td>
+                <td>${row.payment_process}</td>
+                <td>${row.staff_professionalism}</td>
+                <td>${row.receipt_process}</td>
+                <td>${row.paperwork_process}</td>
+                <td>${row.communication_efficiency}</td>
+                <td>${row.ethical_practices}</td>
+                <td>${row.business_relationship}</td>
+            </tr>`).join('')}
+        </table>
+    </div>
+</body>
+</html>
+`;
+
+const getParentsFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents Feedback</title>
+    <style>
+
+  body {
         font-family: Arial, sans-serif;
         margin: 15px;
-        font-size: 10px;
-        font-weight: unset;
+        font-size: 8px; /* Reduced font size */
     }
 
     h1 {
@@ -92,7 +144,7 @@ const getParentsPdfTemplate = (feedbackData) => `
     }
 
     .table-container {
-        width: 100%;
+        width: 100%; 
         margin: 0 auto;
         overflow-x: auto;
     }
@@ -101,17 +153,15 @@ const getParentsPdfTemplate = (feedbackData) => `
         width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
-        table-layout: fixed; /* Fixed layout for better control of columns */
-    }
-
-    table, th, td {
-        border: 1px solid #ddd;
+        table-layout: auto; /* Allow table to auto adjust */
     }
 
     th, td {
+        border: 1px solid #ddd;
         padding: 2px;
         text-align: left;
-        word-wrap: break-word; /* Ensure long text wraps within cells */
+        word-wrap: break-word; /* Enable word wrapping */
+        font-size: 8px; /* Reduced font size */
     }
 
     th {
@@ -121,24 +171,20 @@ const getParentsPdfTemplate = (feedbackData) => `
     @media print {
         body {
             margin: 10px;
-            font-size: 8px;
         }
 
         .table-container {
-            width: 100%;
+            width: 100%; 
         }
 
         table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            table-layout: fixed;
+            width: 100%; 
         }
 
         th, td {
             font-size: 8px;
-            padding: 2px 4px;
-            overflow: visible;
+            padding: 2px;
+            word-wrap: break-word; /* Ensure word wrapping */
         }
 
         thead {
@@ -149,8 +195,8 @@ const getParentsPdfTemplate = (feedbackData) => `
             display: table-footer-group;
         }
     }
-</style>
 
+    </style>
 </head>
 <body>
     <h1>Parents Feedback Summary</h1>
@@ -202,22 +248,22 @@ const getParentsPdfTemplate = (feedbackData) => `
         </table>
     </div>
 </body>
-</html>`
-;
-
-const getAlumniPdfTemplate = (feedbackData) => `
-   <!DOCTYPE html>
+</html>
+`;
+const getEmployeeFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parents Feedback</title>
-<style>
+    <title>Employee Feedback</title>
+    <style>
+
+
     body {
         font-family: Arial, sans-serif;
         margin: 15px;
-        font-size: 10px;
-        font-weight: unset;
+        font-size: 8px; /* Reduced font size */
     }
 
     h1 {
@@ -225,7 +271,7 @@ const getAlumniPdfTemplate = (feedbackData) => `
     }
 
     .table-container {
-        width: 100%;
+        width: 100%; 
         margin: 0 auto;
         overflow-x: auto;
     }
@@ -234,17 +280,15 @@ const getAlumniPdfTemplate = (feedbackData) => `
         width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
-        table-layout: fixed; /* Fixed layout for better control of columns */
-    }
-
-    table, th, td {
-        border: 1px solid #ddd;
+        table-layout: auto; /* Allow table to auto adjust */
     }
 
     th, td {
+        border: 1px solid #ddd;
         padding: 2px;
         text-align: left;
-        word-wrap: break-word; /* Ensure long text wraps within cells */
+        word-wrap: break-word; /* Enable word wrapping */
+        font-size: 8px; /* Reduced font size */
     }
 
     th {
@@ -254,24 +298,20 @@ const getAlumniPdfTemplate = (feedbackData) => `
     @media print {
         body {
             margin: 10px;
-            font-size: 8px;
         }
 
         .table-container {
-            width: 100%;
+            width: 100%; 
         }
 
         table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            table-layout: fixed;
+            width: 100%; 
         }
 
         th, td {
             font-size: 8px;
-            padding: 2px 4px;
-            overflow: visible;
+            padding: 2px;
+            word-wrap: break-word; /* Ensure word wrapping */
         }
 
         thead {
@@ -282,94 +322,324 @@ const getAlumniPdfTemplate = (feedbackData) => `
             display: table-footer-group;
         }
     }
-</style>
 
+
+</style>
 </head>
 <body>
-    <h1>Parents Feedback Summary</h1>
+    <h1>Employee Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
-    
-    <div class="table-container">
-<table>
-    <thead>
+    <table>
         <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Programme</th>
-            <th>Department</th>
-            <th>Passed Out Year</th>
-            <th>Higher Studies</th>
-            <th>Institution</th>
-            <th>Competitive Exam</th>
-            <th>Exam Name</th>
-            <th>Company</th>
+            <th>HR Name</th>
+            <th>Company Name</th>
+            <th>Company Address</th>
+            <th>Student Name</th>
+            <th>programme</th>
+            <th>branch</th>
+            <th>year Of Joining</th>
             <th>Entry Level Position</th>
             <th>Current Position</th>
             <th>Responsibilities</th>
-            <th>Achievements</th>
-            <th>In Service</th>
-            <th>City</th>
-            <th>Knowledge in Field</th>
-            <th>Latest Developments</th>
-            <th>Practical Solving</th>
-            <th>Creative Thoughts</th>
-            <th>Analytical Assessment</th>
-            <th>Self Learner</th>
-            <th>Financial Management</th>
-            <th>Know Capabilities</th>
-            <th>Modern Equipment</th>
-            <th>Peer Interaction</th>
-            <th>Professional Friends</th>
-            <th>Leadership Ability</th>
-            <th>Effective Communication</th>
-            <th>Clear Expression</th>
-            <th>Ethical Actions</th>
+            <th>Technical knowledge</th>
+            <th>Communication skill</th>
+            <th> Independent thinking</th>
+            <th>New Technology Inclination</th>
+            <th> Extra Responsibility</th>
+            <th> Work Beyond Schedule</th>
+            <th>Organizational Contribution</th>
+            <th>Planning Organization Skills</th>
+            <th>Leadership Qualities</th>
+            <th>Relationship with Seniors</th>
+          
         </tr>
-    </thead>
-    <tbody>
         ${feedbackData.map(row => `
         <tr>
-            <td>${row.name}</td>
-            <td>${row.designation}</td>
+            <td>${row. hr_name}</td>
+            <td>${row.company_name}</td>
+            <td>${row.company_address}</td>
+            <td>${row.student_name}</td>
             <td>${row.programme}</td>
-            <td>${row.department}</td>
-            <td>${row.passedOutYear}</td>
-            <td>${row.higherStudies ? 'Yes' : 'No'}</td>
-            <td>${row.institution || 'N/A'}</td>
-            <td>${row.competitiveExam ? 'Yes' : 'No'}</td>
-            <td>${row.examName || 'N/A'}</td>
-            <td>${row.company || 'N/A'}</td>
-            <td>${row.entryLevelPosition || 'N/A'}</td>
-            <td>${row.currentPosition || 'N/A'}</td>
-            <td>${row.responsibilities || 'N/A'}</td>
-            <td>${row.achievements || 'N/A'}</td>
-            <td>${row.serviceStatus ? 'Yes' : 'No'}</td>
-            <td>${row.city || 'N/A'}</td>
-            <td>${row.ratings.knowledge_in_field || 'N/A'}</td>
-            <td>${row.ratings.latest_developments || 'N/A'}</td>
-            <td>${row.ratings.practical_solving || 'N/A'}</td>
-            <td>${row.ratings.creative_thoughts || 'N/A'}</td>
-            <td>${row.ratings.analytical_assessment || 'N/A'}</td>
-            <td>${row.ratings.self_learner || 'N/A'}</td>
-            <td>${row.ratings.financial_management || 'N/A'}</td>
-            <td>${row.ratings.know_capabilities || 'N/A'}</td>
-            <td>${row.ratings.modern_equipment || 'N/A'}</td>
-            <td>${row.ratings.peer_interaction || 'N/A'}</td>
-            <td>${row.ratings.professional_friends || 'N/A'}</td>
-            <td>${row.ratings.leadership_ability || 'N/A'}</td>
-            <td>${row.ratings.effective_communication || 'N/A'}</td>
-            <td>${row.ratings.clear_expression || 'N/A'}</td>
-            <td>${row.ratings.ethical_actions || 'N/A'}</td>
+            <td>${row.branch}</td>
+            <td>${row.year_of_joining}</td>
+            <td>${row.entry_level_position}</td>
+            <td>${row.current_position}</td>
+            <td>${row.responsibilities}</td>
+            <td>${row.achievements_awards}</td>
+            <td>${row.technical_knowledge}</td>
+            <td>${row.communication_skill}</td>
+            <td>${row.independent_thinking}</td>
+            <td>${row.new_technology_inclination}</td>
+            <td>${row.extra_responsibility}</td>
+            <td>${row.organizational_contribution}</td>
+            <td>${row.planning_organization_skills}</td>
+            <td>${row.leadership_qualities}</td>
+            <td>${row.relationship_with_seniors}</td>
         </tr>`).join('')}
-    </tbody>
-</table>
-
-    </div>
+    </table>
 </body>
-</html>`
-;
+</html>
+`;
+const getCounsaltancyFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counsaltancy Feedback</title>
+    <style>
+
+  body {
+            font-family: Arial, sans-serif;
+            margin: 15px;
+            
+            font-size: 10px;
+            font-weight: unset;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Container to enable horizontal scrolling */
+        .table-container {
+            overflow-x: auto;
+            padding-left: 15px; /* Add left margin */
+    padding-right: 15px; /* Add right margin */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            table-layout: auto; /* Ensures the table layout is fixed for better control */
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 2px;
+            text-align: left;
+            // word-break: break-word; 
+        }
+
+        th {
+            background-color: #f4f4f4;
+          }
+
+        // td {
+        //     white-space: nowrap; 
+        //     overflow: hidden; 
+        // }
+
+        @media print {
+            body {
+                margin: 10px; /* Remove margin to utilize the full printable area */
+                font-size: 8px; /* Reduce font size for better fit in PDF */
+            }
+
+            .table-container {
+                overflow-x: visible; /* Ensure full table is printed */
+               padding-left: 15px; /* Add left margin */
+    padding-right: 15px; /* Add right margin */
+            }
+  table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            table-layout: auto; /* Ensures the table layout is fixed for better control */
+        }
+
+            th, td {
+                font-size: 8px; /* Reduce font size for better fit */
+                padding: 2px 4px; /* Adjust padding for space optimization */
+                overflow: visible; /* Allow content overflow if necessary */
+            }
+
+            thead {
+                display: table-header-group; /* Repeat header on each page */
+            }
+
+            tfoot {
+                display: table-footer-group; /* Optionally add footer if needed */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Counsaltancy Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    <table>
+        <tr>
+            <th>Work undertaking Department</th>
+            <th> company Offering</th>
+            <th>Nature Of Work</th>
+            <th>Date Of Commencement</th>
+            <th>Programme</th>
+            <th>Consultancy Fee</th>
+            <th>Meeting Deadline</th>
+            <th>Work Quality</th>
+            <th>Approach</th>
+           
+          
+        </tr>
+        ${feedbackData.map(row => `
+        <tr>
+            <td>${row. work_undertaking_dept}</td>
+            <td>${row.company_offering}</td>
+            <td>${row.nature_of_work}</td>
+            <td>${row.date_of_commencement}</td>
+            <td>${row.programme}</td>
+            <td>${row.consultancy_fee}</td>
+            <td>${row.meeting_deadline}</td>
+            <td>${row.work_quality}</td>
+            <td>${row.approach}</td>
+            
+        </tr>`).join('')}
+    </table>
+</body>
+</html>
+`;
+const getCollaboratarFeedbackTemplate = (feedbackData) => `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colloborator Feedback</title>
+    <style>
+
+   body {
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        font-size: 8px; /* Reduced font size */
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .table-container {
+        width: 100%; 
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        table-layout: auto; /* Allow table to auto adjust */
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 2px;
+        text-align: left;
+        word-wrap: break-word; /* Enable word wrapping */
+        font-size: 8px; /* Reduced font size */
+    }
+
+    th {
+        background-color: #f4f4f4;
+    }
+
+    @media print {
+        body {
+            margin: 10px;
+        }
+
+        .table-container {
+            width: 100%; 
+        }
+
+        table {
+            width: 100%; 
+        }
+
+        th, td {
+            font-size: 8px;
+            padding: 2px;
+            word-wrap: break-word; /* Ensure word wrapping */
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Collaboratar Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    <table>
+        <tr>
+<th>Project Name</th>
+<th>Funding Agency</th>
+<th>Duration</th>
+<th>Principal Invigilator</th>
+<th>Authority Name</th>
+<th>Proposal Objective</th>
+<th>State Of Art</th>
+<th>Methodology And Action Plan</th>
+<th>Performance Milestone</th>
+<th>Deliverables</th>
+<th>Estimated Expenditure</th>
+<th>Appoinment Of Staffs</th>
+<th>Completion In Time</th>
+<th>Expected Result</th>
+<th>Review Performance</th>
+<th>Project Closure Time</th>
+<th>Literature Collected</th>
+<th>Final Technical Report</th>
+<th>Developed Hardware Or Software</th>
+<th>Proposal Deliverables</th>
+<th>Publications</th>
+<th>Parents</th>
+</tr>
+${feedbackData.map(row => `
+<tr>
+<td>${row.project_name}</td>
+<td>${row.funding_agency}</td>
+<td>${row.duration}</td>
+<td>${row.principal_invigilator}</td>
+<td>${row.authority_name}</td>
+<td>${row.proposal_objective}</td>
+<td>${row.state_of_art}</td>
+<td>${row.methodology_and_action_plan}</td>
+<td>${row.performance_milestone}</td>
+<td>${row.deliverables}</td>
+<td>${row.estimated_expenditure}</td>
+<td>${row.appoinment_of_staffs}</td>
+<td>${row.completion_in_time}</td>
+<td>${row.expected_result}</td>
+<td>${row.review_performance}</td>
+<td>${row.project_closure_time}</td>
+<td>${row.literature_collected}</td>
+<td>${row.final_technical_report}</td>
+<td>${row.developed_hardware_or_software}</td>
+<td>${row.proposal_deliverables}</td>
+<td>${row.publications}</td>
+<td>${row.patents}</td>
+
+</tr>`).join('')}
+    </table>
+</body>
+</html>
+`;
 module.exports = {
     getPdfTemplate,
     getParentsPdfTemplate,
-    getAlumniPdfTemplate
+    getEmployeeFeedbackTemplate,
+    getCounsaltancyFeedbackTemplate,
+    getCollaboratarFeedbackTemplate
+
 };

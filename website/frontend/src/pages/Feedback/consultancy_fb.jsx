@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Consultancy_fb.css';
-import { Backtotop, Underline } from "../../widgets";
+import { Backtotop, Underline,Alertmessage } from "../../widgets";
 import { consultancyFeedbackQuestions } from "../../constants/feedbackQuestions";
 import axios from 'axios';
 
@@ -13,6 +13,7 @@ const Consultancy_fb = () => {
   const [ratings, setRatings] = useState({});
   const [ratingErrors, setRatingErrors] = useState({});
   const [dateError, setDateError] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
 
   const validateDate = (dateVal) => {
     const currDate=new Date();
@@ -72,7 +73,7 @@ const Consultancy_fb = () => {
       });
 
       console.log(response.data);
-      alert("Feedback submitted successfully");
+      setAlertMessage("Feedback submitted successfully");
 
       // Clear the form after submission
       setDepartment('');
@@ -84,9 +85,10 @@ const Consultancy_fb = () => {
       setRatingErrors({});
     } catch (error) {
       console.error('Error:', error);
-      alert("An error occurred while submitting your ratings");
+      setAlertMessage("An error occurred while submitting your ratings");
     }
   };
+  const handleCloseAlert = () => setAlertMessage('');
 
   return (
     <div className="consultancy_fb_container">
@@ -168,6 +170,7 @@ const Consultancy_fb = () => {
         </div>
       </form>
       <Backtotop />
+      <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Std_mini_project_fb.css'
-import { Underline ,Backtotop} from '../../widgets'
+import { Underline ,Backtotop,Alertmessage} from '../../widgets'
 import { std_mini_project_fb_data } from '../../constants/feedbackQuestions'
 import axios from 'axios';
 
@@ -14,13 +14,14 @@ const Std_mini_project_fb = () => {
     const [studentEmail, setStudentEmail] = useState('');
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
+    const [alertMessage, setAlertMessage] = useState('');
     const [nameError, setNameError] = useState('');
     const [semError, setSemError] = useState('');
 
     const validateName = (name) => {
-      const nameRegex = /^[A-Za-z\s]{2,30}$/;
+      const nameRegex = /^[A-Za-z\s]+$/;
       if (!nameRegex.test(name)) {
-        setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+        setNameError('Name should only contain letters and spaces.');
         return false;
       } else {
         setNameError('');
@@ -90,7 +91,7 @@ const Std_mini_project_fb = () => {
           });
           console.log(programme,semester);
           console.log(response.data);
-          alert("Feedback submitted successfully");
+          setAlertMessage("Feedback submitted successfully");
     
           // Clear the form after submission
           setProgramme('');
@@ -103,10 +104,10 @@ const Std_mini_project_fb = () => {
           setRatingErrors({});
         } catch (error) {
           console.error('Error:', error);
-          alert("An error occurred while submitting your ratings");
+          setAlertMessage("An error occurred while submitting your ratings");
         }
     };
-
+    const handleCloseAlert = () => setAlertMessage('');
   return (
     <div className='std_mini_proj_fb_container'>
         <Underline heading="Mini Project and Project Feedback"/>
@@ -128,7 +129,9 @@ const Std_mini_project_fb = () => {
             <div className='std_mini_proj_fb_row'>
                 <input type="text" className='std_mini_proj_fb_input std_mini_proj_fb_two_line' placeholder='Course code*' required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}/>
                 <input type="text" className='std_mini_proj_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>
-                {nameError && <p className='std_mini_project_fb_error'>{nameError}</p>}
+            </div>
+            <div className='std_mini_project_fb_error'>
+            {nameError && <p>{nameError}</p>}
             </div>
             <div className='std_mini_proj_fb_row'>
                 <input type="email" className='std_mini_proj_fb_input_full'  placeholder=' Student E-mail Address*' required value={studentEmail} onChange={(e)=> setStudentEmail(e.target.value)}/>
@@ -157,6 +160,7 @@ const Std_mini_project_fb = () => {
             </div>
         </form>
         <Backtotop/>
+        <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
     </div>
   )
 }

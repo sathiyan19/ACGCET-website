@@ -1,138 +1,151 @@
 import React, { useState } from 'react';
-import './Employer_fb.css';
+import './Alumini_fb.css';
 import { Backtotop, Underline } from "../../widgets";
-import { employerFeedbackQuestions } from "../../constants/feedbackQuestions";
+import { AlumniFeedbackQuestions } from "../../constants/feedbackQuestions";
 import axios from 'axios';
 
-const EmployeeFeedback = () => {
-    const [hrName, setHrName] = useState('');
-    const [companyName, setCompanyName] = useState('');
-    const [companyAddress, setCompanyAddress] = useState('');
-    const [studentName, setStudentName] = useState('');
+const Alumni_fb = () => {
+    // State management
+    const [name, setName] = useState('');
+    const [designation, setDesignation] = useState('');
     const [programme, setProgramme] = useState('');
-    const [branch, setBranch] = useState('');
-    const [yearOfJoining, setYearOfJoining] = useState('');
+    const [department, setDepartment] = useState('');
+    const [passedOutYear, setPassedOutYear] = useState('');
+    const [higherStudies, setHigherStudies] = useState('');
+    const [institution, setInstitution] = useState('');
+    const [competitiveExam, setCompetitiveExam] = useState('');
+    const [examName, setExamName] = useState('');
+    const [company, setCompany] = useState('');
     const [entryLevelPosition, setEntryLevelPosition] = useState('');
     const [currentPosition, setCurrentPosition] = useState('');
     const [responsibilities, setResponsibilities] = useState('');
     const [achievements, setAchievements] = useState('');
+    const [serviceStatus, setServiceStatus] = useState('');
+    const [city, setCity] = useState('');
     const [ratings, setRatings] = useState({});
     const [errors, setErrors] = useState({});
-    const [nameError, setNameError] = useState({ hrName: '', studentName: '' });
+    const [nameError, setNameError] = useState('');
     const [ratingErrors, setRatingErrors] = useState({});
 
-    const validateName = (name, type) => {
+    // Validation
+    const validateForm = () => {
+        const newErrors = {};
+        if (!name) newErrors.name = 'Name is required';
+        if (!designation) newErrors.designation = 'Designation is required';
+        if (!programme) newErrors.programme = 'Programme is required';
+        if (!department) newErrors.department = 'Department is required';
+        if (!passedOutYear) newErrors.passedOutYear = 'Passed out year is required';
+
+        AlumniFeedbackQuestions.forEach(({ name }) => {
+            if (!ratings[name]) {
+                newErrors[name] = 'Please select a rating (தயவுசெய்து மதிப்பீட்டை தேர்வு செய்யவும்)';
+            }
+        });
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    const validateName = (name) => {
         const nameRegex = /^[A-Za-z\s]{2,30}$/;
         if (!nameRegex.test(name)) {
-            setNameError(prevErrors => ({
-                ...prevErrors,
-                [type]: 'Name should only contain letters and spaces, and be 2 to 30 characters long.'
-            }));
+            setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
             return false;
         } else {
-            setNameError(prevErrors => ({
-                ...prevErrors,
-                [type]: ''
-            }));
+            setNameError('');
             return true;
         }
     };
-
     const validateRatings = () => {
         const errors = {};
-        employerFeedbackQuestions.forEach(({ name }) => {
-            if (!ratings[name]) {
-                errors[name] = 'Please select a rating (தயவுசெய்து மதிப்பீட்டை தேர்வு செய்யவும்)';
-            }
+        AlumniFeedbackQuestions.forEach(({ name }) => {
+          if (!ratings[name]) {
+            errors[name] = 'Please select a rating (தயவுசெய்து மதிப்பீட்டை தேர்வு செய்யவும்)';
+          }
         });
         setRatingErrors(errors);
         return Object.keys(errors).length === 0;
-    };
-
-    const handleHrNameChange = (e) => {
-        const name = e.target.value;
-        setHrName(name);
-        validateName(name, 'hrName');
-    };
-
-    const handleStudentNameChange = (e) => {
-        const name = e.target.value;
-        setStudentName(name);
-        validateName(name, 'studentName');
-    };
-
+      };
     const handleRatingChange = (e, name) => {
-        setRatings(prevRatings => ({
-            ...prevRatings,
-            [name]: parseInt(e.target.value, 10)
-        }));
-        setRatingErrors(prevErrors => ({
-            ...prevErrors,
-            [name]: '' // Clear the error once a rating is selected
-        }));
-    };
+      setRatings(prevRatings => ({
+          ...prevRatings,
+          [name]: parseInt(e.target.value, 10)
+      }));
+      setRatingErrors(prevErrors => ({
+          ...prevErrors,
+          [name]: '' // Clear the error once a rating is selected
+      }));
+  };
 
-    const handleYearOfJoiningChange = (e) => {
-        const value = e.target.value;
+  
+  
+  const handleNameChange = (e) => {
+    const name = e.target.value;
+    setName(name);
+    
+    validateName(name);
+  };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+   
+    const isNameValid = validateName(name);
+    const areRatingsValid = validateRatings();
 
-        // Check if the input contains only digits and is at most 4 characters long
-        if (/^\d{0,4}$/.test(value)) {
-            setYearOfJoining(value);
-            const date= new Date();
-            // Validate if the input has exactly 4 digits
-            if (value.length === 4 && value>=1952 && value<=date.getFullYear()) {
-                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: '' })); // Clear error if valid
-            } else {
-                setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
-            }
-        } else {
-            setErrors(prevErrors => ({ ...prevErrors, yearOfJoining: 'Please enter valid year' }));
-        }
-    };
 
-    const EmployeeFeedbackSubmit = async (event) => {
-        event.preventDefault();
+    if (!isNameValid || !areRatingsValid) {
+        return;
+      }
+        const isFormValid = validateForm();
 
-        const isHrNameValid = validateName(hrName, 'hrName');
-        const isStudentNameValid = validateName(studentName, 'studentName');
-        const areRatingsValid = validateRatings();
-
-        if (!isHrNameValid || !isStudentNameValid || !areRatingsValid) {
+        if (!isFormValid) {
             return;
         }
 
         try {
-            const response = await axios.post('/api/employeefeedbacksubmit', {
-                hr_name: hrName,
-                company_name: companyName,
-                company_address: companyAddress,
-                student_name: studentName,
-                programme: programme,
-                branch: branch,
-                year_of_joining: yearOfJoining,
-                entry_level_position: entryLevelPosition,
-                current_position: currentPosition,
-                responsibilities: responsibilities,
-                achievements_awards: achievements,
-                ratings: ratings // Spread ratings directly
-            });
+          const response = await axios.post('/api/alumnifeedback', {
+            name,
+            designation,
+            programme,
+            department,
+            passedOutYear,
+            higherStudies: higherStudies || null,
+            institution: institution || null,
+            competitiveExam: competitiveExam || null,
+            examName: examName || null,
+            company: company || null,
+            entryLevelPosition: entryLevelPosition || null,
+            currentPosition: currentPosition || null,
+            responsibilities: responsibilities || null,
+            achievements: achievements || null,
+            serviceStatus: serviceStatus || null,
+            city: city || null,
+            ratings
+        });
+        
+        
+            
 
             console.log(response.data);
             alert("Feedback submitted successfully");
-            setHrName('');
-            setCompanyName('');
-            setCompanyAddress('');
-            setStudentName('');
+            // Clear form
+            setName('');
+            setDesignation('');
             setProgramme('');
-            setBranch('');
-            setYearOfJoining('');
+            setDepartment('');
+            setPassedOutYear('');
+            setHigherStudies('');
+            setInstitution('');
+            setCompetitiveExam('');
+            setExamName('');
+            setCompany('');
             setEntryLevelPosition('');
             setCurrentPosition('');
             setResponsibilities('');
             setAchievements('');
+            setServiceStatus('');
+            setCity('');
             setRatings({});
-            setRatingErrors({});
-            setNameError({ hrName: '', studentName: '' }); // Clear name errors on successful submission
+            setErrors({});
         } catch (error) {
             console.error('Error:', error);
             alert("An error occurred while submitting your feedback");
@@ -140,128 +153,208 @@ const EmployeeFeedback = () => {
     };
 
     return (
-        <div className='employer_fb_container'>
-            <Underline heading="Employer Feedback" />
-            <form className='employer_fb_form' onSubmit={EmployeeFeedbackSubmit}>
-                <div className='employer_fb_row'>
-                    <input 
-                        type="text" 
-                        className='employer_fb_input' 
-                        placeholder='Name of the HR*' 
-                        value={hrName}
-                        onChange={handleHrNameChange} // Use the HR name change handler
-                        required 
+        <div className="alumni_fb_container">
+            <div className="alumni_fb_udl">
+                <Underline heading="Alumni Feedback"/>
+            </div>
+            <form className="alumni_fb_form" onSubmit={handleSubmit}>
+                <div className="alumni_fb_row">
+                    <input
+                        type="text"
+                        className="alumni_fb_1st_input"
+                        placeholder="Enter Name of the Alumni*"
+                        value={name}
+                        onChange={handleNameChange}
+                        required
                     />
-                    <input 
-                        type="text" 
-                        className='employer_fb_input' 
-                        placeholder='Name of the company*' 
-                        value={companyName}
-                        onChange={(e) => setCompanyName(e.target.value)}
-                        required 
+                    </div>
+                    {nameError && <p className='alumni_fb_error'>{nameError}</p>}
+                   <div className="alumni_fb_row">
+                    <input
+                        type="text"
+                        className="alumni_fb_1st_input"
+                        placeholder="Enter Designation*"
+                        value={designation}
+                        onChange={(e) => setDesignation(e.target.value)}
+                        required
                     />
-                </div>
-                {nameError.hrName && <p className='employer_fb_error'>{nameError.hrName}</p>}
-                <div className='employer_fb_row'>
-                    <input 
-                        type="text" 
-                        className='employer_fb_input_full' 
-                        placeholder='Address of the company' 
-                        value={companyAddress}
-                        onChange={(e) => setCompanyAddress(e.target.value)}
-                    />
-                </div>
-                <div className='employer_fb_row'>
-                    <input 
-                        type="text" 
-                        className='employer_fb_input' 
-                        placeholder='Name of the student*' 
-                        value={studentName}
-                        onChange={handleStudentNameChange} // Use the student name change handler
-                        required 
-                    />
-                    <select 
-                       className='employer_fb_input' 
-                       value={programme} 
-                       onChange={(e) => setProgramme(e.target.value)} 
-                       required
+                     </div>
+                    
+                    {errors.designation && <p className='alumni_fb_error'>{errors.designation}</p>}
+              
+                <div className="alumni_fb_row">
+                    <select
+                        className="alumni_fb_select"
+                        value={programme}
+                        onChange={(e) => setProgramme(e.target.value)}
+                        required
                     >
                         <option value="" disabled>Select Programme*</option>
                         <option value="BE">B.E</option>
                         <option value="ME">M.E</option>
                         <option value="PhD">PhD</option>
                     </select>
-                </div>
-                {nameError.studentName && <p className='employer_fb_error'>{nameError.studentName}</p>}
-                <div className='employer_fb_row'>
-                <select 
-                       className='employer_fb_input' 
-                       value={branch} 
-                       onChange={(e) => setBranch(e.target.value)} 
-                       required
+                    {errors.programme && <p className='alumni_fb_error'>{errors.programme}</p>}
+                    <select
+                        className="alumni_fb_select"
+                        value={department}
+                        onChange={(e) => setDepartment(e.target.value)}
+                        required
                     >
-                        <option value="" disabled>Select Branch*</option>
+                        <option value="" disabled>Select Department*</option>
                         <option value="civil">Civil</option>
-                        <option value="Mech">Mech</option>
+                        <option value="mech">Mech</option>
                         <option value="EEE">EEE</option>
                         <option value="ECE">ECE</option>
                         <option value="CSE">CSE</option>
-                        
                     </select>
-                    <input 
-                        type="text" 
-                        className='employer_fb_input' 
-                        placeholder='Year of joining the company*' 
-                        value={yearOfJoining}
-                        onChange={handleYearOfJoiningChange} // Use the year of joining change handler
-                        required
-                    />
-                   
+                    {errors.department && <p className='alumni_fb_error'>{errors.department}</p>}
                 </div>
-                
-                {errors.yearOfJoining && <p className='employer_year_of_joining_container'>{errors.yearOfJoining}</p>}
-                <div className='employer_fb_row'>
-                    <input 
-                        type="text" 
-                        className='employer_fb_input' 
-                        placeholder='Position at the entry level' 
+                <div className="alumni_fb_row">
+    <input
+        type="text"
+        className="alumni_fb_input"
+        placeholder="Enter passed out year*"
+        value={passedOutYear}
+        onChange={(e) => {
+            const value = e.target.value;
+
+            // Check if the input contains only digits and is at most 4 characters long
+            if (/^\d{0,4}$/.test(value)) {
+                setPassedOutYear(value);
+                const date= new Date();
+
+                // Validate if the input has exactly 4 digits
+                if (value.length === 4 && value>=1952 && value<=date.getFullYear()) {
+                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
+                } else {
+                    setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
+                }
+            } else {
+                setErrors((prevErrors) => ({ ...prevErrors, passedOutYear: 'Please enter valid year' }));
+            }
+        }}
+        required
+    />
+   
+</div>
+
+{errors.passedOutYear && <p className='alumni_fb_error'>{errors.passedOutYear}</p>}
+<h2 className="alumni_fb_subtitle">Details of Higher Studies</h2>
+                <div className="alumni_fb_row">
+                    <select
+                        className="alumni_fb_select"
+                        value={higherStudies}
+                        onChange={(e) => setHigherStudies(e.target.value)}
+                        required
+                    >
+                        <option value="" disabled>Select whether you did any higher studies</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <input
+                        type="text"
+                        className="alumni_fb_input "
+                        placeholder="Name of the institution (Optional)"
+                        value={institution}
+                        onChange={(e) => setInstitution(e.target.value)}
+                    />
+                </div>
+
+                <h2 className="alumni_fb_subtitle">Details of Competitive Exams</h2>
+                <div className="alumni_fb_row">
+                    <select
+                        className="alumni_fb_select"
+                        value={competitiveExam}
+                        onChange={(e) => setCompetitiveExam(e.target.value)}
+                        required
+                    >
+                        <option value="" disabled>Select whether you wrote any competitive exam</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    <input
+                        type="text"
+                        className="alumni_fb_input"
+                        placeholder="Name of the Examination (Optional)"
+                        value={examName}
+                        onChange={(e) => setExamName(e.target.value)}
+                    />
+                </div>
+
+                <h2 className="alumni_fb_subtitle">Career Path</h2>
+                <div className="alumni_fb_row">
+                    <input
+                        type="text"
+                        className="alumni_fb_input"
+                        placeholder="Name of the Company (Optional)"
+                        value={company}
+                        onChange={(e) => setCompany(e.target.value)}
+                    />
+                </div>
+                <div className="alumni_fb_row">
+                    <input
+                        type="text"
+                        className="alumni_fb_input alumni_fb_input_lgrow"
+                        placeholder="Position at Entry Level (Optional)"
                         value={entryLevelPosition}
                         onChange={(e) => setEntryLevelPosition(e.target.value)}
                     />
-                    <input 
-                        type="text" 
-                        className='employer_fb_input' 
-                        placeholder='Current position' 
+                    <input
+                        type="text"
+                        className="alumni_fb_input"
+                        placeholder="Enter your Current Position (Optional)"
                         value={currentPosition}
                         onChange={(e) => setCurrentPosition(e.target.value)}
                     />
                 </div>
-
-                <div className='employer_fb_row'>
-                    <textarea 
-                        className='employer_fb_textarea' 
-                        placeholder='Responsibilities held' 
+                <div className="alumni_fb_row">
+                    <input
+                        type="text"
+                        className="alumni_fb_input alumni_fb_input_lgrow"
+                        placeholder="Responsibilities held (Optional)"
                         value={responsibilities}
                         onChange={(e) => setResponsibilities(e.target.value)}
                     />
-                </div>
-                <div className='employer_fb_row'>
-                    <textarea 
-                        className='employer_fb_textarea' 
-                        placeholder='Achievements/Awards' 
+                    <input
+                        type="text"
+                        className="alumni_fb_input"
+                        placeholder="Achievements/ Awards (Optional)"
                         value={achievements}
                         onChange={(e) => setAchievements(e.target.value)}
                     />
                 </div>
-                <h2 className="employer_fb_subtitle">Please give your valuable feedback on a scale</h2>
-                <div>
-                <p className="employer_fb_instruction">5 - Excellent, 4 - Satisfied, 3 - Good, 2 - Not Satisfied, 1 - Poor</p>
-                <br />   
-                {employerFeedbackQuestions.map(({ question, translation, name }) => (
-                        <div className="employer_fb_question" key={name}>
+
+                <div className="alumni_fb_row">
+                    <select
+                        className="alumni_fb_select"
+                        value={serviceStatus}
+                        onChange={(e) => setServiceStatus(e.target.value)}
+                    >
+                        <option value="" disabled>Select whether you are inservice or retired</option>
+                        <option value="employed">Inservice</option>
+                        <option value="not_employed">Retired</option>
+                    </select>
+                </div>
+
+                <div className="alumni_fb_row">
+                    <input
+                        type="text"
+                        className="alumni_fb_input"
+                        placeholder="Enter City of Residence (Optional)"
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                    />
+                </div>
+                <h2 className="alumni_fb_subtitle">Please give your valuable feedback on a scale</h2>
+                <div className='alumni_fb_feedback'>
+                    <p className='alumni_fb_instruction'>5 - Excellent   4 - Satisfied   3 - Good   2 - Not Satisfied   1 - Poor</p>
+                    <br />
+                    {AlumniFeedbackQuestions.map(({ question, translation, name }) => (
+                        <div className="alumni_fb_question" key={name}>
                             <p>{question}</p>
                             <p>({translation})</p>
-                            <div className="employer_fb_ratings">
+                            <div className="alumni_fb_ratings">
                                 {[1, 2, 3, 4, 5].map(num => (
                                     <label key={num}>
                                         <input 
@@ -275,12 +368,12 @@ const EmployeeFeedback = () => {
                                     </label>
                                 ))}
                             </div>
-                            {ratingErrors[name] && <p className='employer_fb_error'>{ratingErrors[name]}</p>}
+                            {ratingErrors[name] && <p className='alumni_fb_error'>{ratingErrors[name]}</p>}
                         </div>
                     ))}
-                    </div>
-                <div className="employer_fb_btn">
-                    <button type="submit" className="employer_fb_submit">Submit</button>
+                </div>
+                <div className="alumni_fb_btn">
+                    <button type="submit" className="alumni_fb_submit">Submit</button>
                 </div>
             </form>
             <Backtotop />
@@ -288,4 +381,4 @@ const EmployeeFeedback = () => {
     );
 };
 
-export default EmployeeFeedback;
+export default Alumni_fb;

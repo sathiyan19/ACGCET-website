@@ -51,10 +51,10 @@ export const bulletin_info=[
 
 {
     id:'31',
-    link:"https://drive.google.com/file/d/1rw9hjW2mAWrLB-o2QaPR__xdk3NegmkB/view?usp=sharing",
+    link:"https://drive.google.com/file/d/1Mawyms2Su2cREg_mLksdL8Rm3yKcNEFg/view?usp=sharing",
     content:(
         <span>
-            <span className="newContent">New</span> <span className="insideNewContent">First Year BE Regular AY 2024-25 -  Classes commence from 09-09-2024
+            <span className="newContent">New</span> <span className="insideNewContent"> TWO WEEKS STUDENT INDUCTION PROGRAMME FOR FIRST YEAR B.E INAUGURAL INVITATION
 </span>
         </span>
     ),

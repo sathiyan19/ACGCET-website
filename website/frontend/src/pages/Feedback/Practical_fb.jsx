@@ -1,7 +1,7 @@
 
 import React ,{useState}from 'react'
 import './Practical_fb.css'
-import { Underline ,Backtotop} from '../../widgets'
+import { Underline ,Backtotop,Alertmessage} from '../../widgets'
 import { practical_fb_data } from '../../constants/feedbackQuestions'
 import axios from 'axios';
 
@@ -15,13 +15,14 @@ const Practical_fb = () => {
     const [studentEmail, setStudentEmail] = useState('');
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
+    const [alertMessage, setAlertMessage] = useState('');
     const [nameError, setNameError] = useState('');
     const [semError, setSemError] = useState('');
 
     const validateName = (name) => {
-      const nameRegex = /^[A-Za-z\s]{2,30}$/;
+      const nameRegex = /^[A-Za-z\s]+$/;
       if (!nameRegex.test(name)) {
-        setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+        setNameError('Name should only contain letters and spaces.');
         return false;
       } else {
         setNameError('');
@@ -92,7 +93,7 @@ const Practical_fb = () => {
           });
     
           console.log(response.data);
-          alert("Feedback submitted successfully");
+          setAlertMessage("Feedback submitted successfully");
     
           // Clear the form after submission
           setProgramme('');
@@ -105,10 +106,10 @@ const Practical_fb = () => {
           setRatingErrors({});
         } catch (error) {
           console.error('Error:', error);
-          alert("An error occurred while submitting your ratings");
+          setAlertMessage("An error occurred while submitting your ratings");
         }
     }; 
-
+    const handleCloseAlert = () => setAlertMessage('');
   return (
     <div className="practical_fb_container">
     <Underline heading="Practical / Labortary Feedback"/>
@@ -134,9 +135,10 @@ const Practical_fb = () => {
 
     <div className="practical_fb_rows">
         <input type="text" className='practical_fb_input practical_fb_two_line' placeholder='Course code*' required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}/>
-        <input type="text" className='practical_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>
-        {nameError && <p className='std_pract_fb_error'>{nameError}</p>}
-        
+        <input type="text" className='practical_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>        
+    </div>
+    <div  className='std_pract_fb_error'>
+      {nameError && <p>{nameError}</p>}
     </div>
 
     <div className="practical_fb_rows">
@@ -172,10 +174,11 @@ const Practical_fb = () => {
         </div>
     </form>
     <Backtotop />
+    <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
     </div>
 //    </div>
-  )
-}
+  );
+};
 
 export default Practical_fb
 

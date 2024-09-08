@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './FeedbackPdf.css';
-import { Underline, Alertmessage } from '../../widgets'; // Import Alertmessage
+import { Underline, Alertmessage } from '../../widgets';
 
 const FeedbackPdf = () => {
   const [selectedOption, setSelectedOption] = useState('');
@@ -24,7 +24,7 @@ const FeedbackPdf = () => {
         const url = window.URL.createObjectURL(new Blob([response.data]));
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', '${selectedOption}-feedback.pdf');
+        link.setAttribute('download', `${selectedOption}-feedback.pdf`);
         document.body.appendChild(link);
         link.click();
         link.remove(); // Clean up and remove the link element
@@ -34,7 +34,7 @@ const FeedbackPdf = () => {
 
         // Navigate to another page after showing the alert message
         setTimeout(() => {
-          navigate('/path-to-navigate'); // Replace with your target path
+          navigate('/admin-panel'); // Update with the correct path if needed
         }, 2000); // Adjust the delay as needed
       } else {
         setAlertMessage('Failed to generate the file.');
@@ -62,14 +62,18 @@ const FeedbackPdf = () => {
           onChange={(e) => setSelectedOption(e.target.value)}
         >
           <option className='box-option' value="" disabled>Choose an option</option>
-          <option className='box-option' value="supplier">Supplier Feedback</option>
-          <option className='box-option' value="consultancy">Consultancy Feedback</option>
-          <option className='box-option' value="student">Student Feedback</option>
           <option className='box-option' value="alumni">Alumni Feedback</option>
-          <option className='box-option' value="faculty">Faculty Feedback</option>
-          <option className='box-option' value="employer">Employer Feedback</option>
-          <option className='box-option' value="parents">Parents Feedback</option>
-          <option className='box-option' value="collaborator">Collaborator Feedback</option>
+<option className='box-option' value="collaborator">Collaborator Feedback</option>
+<option className='box-option' value="consultancy">Consultancy Feedback</option>
+<option className='box-option' value="employee">Employee Feedback</option>
+<option className='box-option' value="faculty">Faculty Feedback</option>
+<option className='box-option' value="MiniProject">Mini project and Project Feedback</option>
+<option className='box-option' value="parents">Parents Feedback</option>
+<option className='box-option' value="Practical">Practical and Laboratory Feedback</option>
+<option className='box-option' value="supplier">Supplier Feedback</option>
+<option className='box-option' value="Technicalseminar">Technical seminar Feedback</option>
+<option className='box-option' value="teachingandlearning">Teaching and Learning Feedback</option>
+
         </select>
         <button type="button" onClick={handleDownloadPdf}>Download</button>
       </div>

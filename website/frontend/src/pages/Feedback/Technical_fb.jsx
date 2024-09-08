@@ -1,8 +1,7 @@
-
-import React ,{useState,useEffect}from 'react'
-import './Technical_fb.css'
-import { Underline ,Backtotop} from '../../widgets'
-import { technical_fb_data } from '../../constants/feedbackQuestions'
+import React, { useState } from 'react';
+import './Technical_fb.css';
+import { Underline, Backtotop, Alertmessage } from '../../widgets';
+import { technical_fb_data } from '../../constants/feedbackQuestions';
 import axios from 'axios';
 
 const Technical_fb = () => {
@@ -14,13 +13,14 @@ const Technical_fb = () => {
     const [studentEmail, setStudentEmail] = useState('');
     const [ratings, setRatings] = useState({});
     const [ratingErrors, setRatingErrors] = useState({});
+    const [alertMessage, setAlertMessage] = useState('');
     const [nameError, setNameError] = useState('');
     const [semError, setSemError] = useState('');
 
     const validateName = (name) => {
-      const nameRegex = /^[A-Za-z\s]{2,30}$/;
+      const nameRegex = /^[A-Za-z\s]+$/;
       if (!nameRegex.test(name)) {
-        setNameError('Name should only contain letters and spaces, and be 2 to 30 characters long.');
+        setNameError('Name should only contain letters and spaces.');
         return false;
       } else {
         setNameError('');
@@ -42,8 +42,7 @@ const Technical_fb = () => {
         const errors = {};
         technical_fb_data.forEach(({ name }) => {
             if (!ratings[name]) {
-                errors[name] = 'Please select a rating     (தயவுசெய்து மதிப்பீட்டை தேர்வு செய்யவும்)';
-                // errors[name]='';
+                errors[name] = 'Please select a rating (தயவுசெய்து மதிப்பீட்டை தேர்வு செய்யவும்)';
             }
         });
         setRatingErrors(errors);
@@ -63,18 +62,18 @@ const Technical_fb = () => {
 
     const handleRatingChange = (e, name) => {
         setRatings(prevRatings => ({
-          ...prevRatings,
-          [name]: parseInt(e.target.value)
+            ...prevRatings,
+            [name]: parseInt(e.target.value)
         }));
         setRatingErrors(prevErrors => ({
-          ...prevErrors,
-          [name]: '' // Clear the error once a rating is selected
+            ...prevErrors,
+            [name]: '' // Clear the error once a rating is selected
         }));
     };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        
+
         const areRatingsValid = validateRatings();
         const isNameValid = validateName(faculty);
         const isSemValid = validateSem(semester);
@@ -82,34 +81,41 @@ const Technical_fb = () => {
         if (!areRatingsValid || !isNameValid || !isSemValid) {
           return;
         }
-        
+
         try {
-          const response = await axios.post('/api/std_technical_seminar_ratingsubmit', {
-            programme:programme, semester:semester,course_title:courseTitle,course_code:courseCode,faculty:faculty,student_email:studentEmail,
-            ratings: ratings
-          });
-          console.log(programme,semester);
-          console.log(response.data);
-          alert("Feedback submitted successfully");
-    
-          // Clear the form after submission
-          setProgramme('');
-          setSemester('');
-          setCourseTitle('');
-          setCourseCode('');
-          setFaculty('');
-          setStudentEmail('');
-          setRatings({});
-          setRatingErrors({});
+            const response = await axios.post('/api/std_technical_seminar_ratingsubmit', {
+                programme,
+                semester,
+                course_title: courseTitle,
+                course_code: courseCode,
+                faculty,
+                student_email: studentEmail,
+                ratings
+            });
+
+            console.log(response.data);
+            setAlertMessage("Feedback submitted successfully");
+
+            // Clear the form after submission
+            setProgramme('');
+            setSemester('');
+            setCourseTitle('');
+            setCourseCode('');
+            setFaculty('');
+            setStudentEmail('');
+            setRatings({});
+            setRatingErrors({});
         } catch (error) {
-          console.error('Error:', error);
-          alert("An error occurred while submitting your ratings");
+            console.error('Error:', error);
+            setAlertMessage("An error occurred while submitting your ratings");
         }
     };
 
-  return (
-    <div className="technical_fb_container">
-    <Underline heading="Technical Feedback"/>
+    const handleCloseAlert = () => setAlertMessage('');
+
+    return (
+        <div className="technical_fb_container">
+            <Underline heading="Technical Feedback" />
 
     <form className="technical_fb_form" onSubmit={handleSubmit}>
     <div className="technical_fb_rows">
@@ -133,8 +139,9 @@ const Technical_fb = () => {
     <div className="technical_fb_rows">
         <input type="text" className='technical_fb_input technical_fb_two_line' placeholder='Course code*' required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}/>
         <input type="text" className='technical_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>
-        {nameError && <p className='std_teachnical_seminar_fb_error'>{nameError}</p>}
-        
+    </div>
+    <div className='std_teachnical_seminar_fb_error'>
+    {nameError && <p>{nameError}</p>}
     </div>
 
     <div className="technical_fb_rows">
@@ -170,10 +177,10 @@ const Technical_fb = () => {
         </div>
     </form>
     <Backtotop />
+    <Alertmessage message={alertMessage} onClose={handleCloseAlert} /> 
     </div>
 //    </div>
   )
 }
 
-export default Technical_fb
-
+export default Technical_fb;

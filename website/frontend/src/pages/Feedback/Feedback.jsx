@@ -8,7 +8,15 @@ import colloborator_fb from "../../assets/pictures/colloborator_fb.webp";
 import supplier_fb from "../../assets/pictures/supplier_fb.webp";
 import employer_fb from "../../assets/pictures/employer_fb.webp";
 import parent_fb from "../../assets/pictures/parent_fb.webp";
+import facultyblack from "../../assets/pictures/facultyblack.webp";
+import collabooratorblack from "../../assets/pictures/collabooratorblack.webp";
+import counsaltancyblack from "../../assets/pictures/counsaltancyblack.webp";
+import parentsblack from "../../assets/pictures/parentsblack.webp";
 import consultancy_fb from "../../assets/pictures/consultancy_fb.webp";
+import graduationblack from "../../assets/pictures/graduationblack.webp";
+import studentblack from "../../assets/pictures/studentblack.webp";
+import supplierblack from "../../assets/pictures/supplierblack.webp";
+import employeeblack from "../../assets/pictures/employeeblack.webp";
 import "./Feedback.css";
 
 const Feedback = () => {
@@ -35,7 +43,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/student_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" alt="text" src={student_fb} />
+              <img className="feedback_image" alt="text" src={studentblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Student </div>
@@ -49,7 +57,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/alumini_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={alumini_fb} />
+              <img className="feedback_image" src={graduationblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Alumni </div>
@@ -63,7 +71,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/faculty-feedback")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={faculty_fb} />
+              <img className="feedback_image" src={facultyblack} />
             </div>
             <div className="feedback_content">
               <div className="faculty_description">
@@ -79,7 +87,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/consultancy_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={consultancy_fb} />
+              <img className="feedback_image" src={counsaltancyblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Consultancy </div>
@@ -93,7 +101,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/employer_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={employer_fb} />
+              <img className="feedback_image" src={employeeblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Employer </div>
@@ -107,7 +115,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/parents_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={parent_fb} />
+              <img className="feedback_image" src={parentsblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Parents </div>
@@ -121,7 +129,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/supplier_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={supplier_fb} />
+              <img className="feedback_image" src={supplierblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Supplier </div>
@@ -135,7 +143,7 @@ const Feedback = () => {
             onClick={() => handleNavigation("/feedback/collaborator_fb")}
           >
             <div className="feedback_top_image">
-              <img className="feedback_image" src={colloborator_fb} />
+              <img className="feedback_image" src={collabooratorblack} />
             </div>
             <div className="feedback_content">
               <div className="feedback_description">Collaborator </div>
