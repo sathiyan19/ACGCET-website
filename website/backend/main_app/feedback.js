@@ -115,6 +115,8 @@ const parentsfeedbackSubmit = async (req, res) => {
             college_environment_development
         ]);
 
+        
+
         // Send a success response
         res.status(200).json({ message: 'Feedback submitted successfully', results });
     } catch (err) {
@@ -848,7 +850,58 @@ const std_mini_project_ratingsubmit = async (req, res) => {
 //     }
 // };
 
+const alumniFeedbackSubmit = async (req, res) => {
+    try {
+        const {
+            name,
+            designation,
+            programme,
+            department,
+            passedOutYear,
+            higherStudies = 'no',
+            institution = null,
+            competitiveExam = 'no',
+            examName = null,
+            company = null,
+            entryLevelPosition = null,
+            currentPosition = null,
+            responsibilities = null,
+            achievements = null,
+            serviceStatus = 'no',
+            city = null,
+            ratings = {}
+        } = req.body;
 
+        const query = `
+            INSERT INTO AlumniFeedback  (
+                alumni_name, designation, programme, department, passed_out_year,
+                higher_studies, higher_studies_institution, competitive_exam, competitive_exam_name,
+                company_name, entry_level_position, current_position, responsibilities, achievements,
+                in_service, city,
+                knowledge_in_field, latest_developments, practical_solving, creative_thoughts,
+                analytical_assessment, self_learner, financial_management, know_capabilities,
+                modern_equipment, peer_interaction, professional_friends, leadership_ability,
+                effective_communication, clear_expression, ethical_actions
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `;
+        const values = [
+            name, designation, programme, department, passedOutYear,
+            String(higherStudies), institution, String(competitiveExam), examName,
+            company, entryLevelPosition, currentPosition, responsibilities, achievements,
+            String(serviceStatus), city,
+            ratings.knowledge_in_field, ratings.latest_developments, ratings.practical_solving, ratings.creative_thoughts,
+            ratings.analytical_assessment, ratings.self_learner, ratings.financial_management, ratings.know_capabilities,
+            ratings.modern_equipment, ratings.peer_interaction, ratings.professional_friends, ratings.leadership_ability,
+            ratings.effective_communication, ratings.clear_expression, ratings.ethical_actions
+        ];
+        
+        await pool.query(query, values);
+        res.status(200).json({ message: "Feedback submitted successfully" });
+    } catch (error) {
+        console.error('Error inserting data:', error);
+        res.status(500).json({ error: "An error occurred while submitting your feedback" });
+    }
+};
 module.exports = {
     ratingsubmit,
     parentsfeedbackSubmit,
@@ -859,7 +912,7 @@ module.exports = {
     std_practical_ratingsubmit,
     std_technical_seminar_ratingsubmit,
     std_mini_project_ratingsubmit,
-    parentsfeedbackSubmit
+    parentsfeedbackSubmit,
     // EmployeeSubmit,
-    // alumniFeedbackSubmit
+    alumniFeedbackSubmit
 };
