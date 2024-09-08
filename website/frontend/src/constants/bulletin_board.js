@@ -39,6 +39,17 @@ export const bulletin_info=[
 //     },
 
 {
+    id:'32',
+    link:"https://drive.google.com/file/d/1-AqGrns8S3EaGDqh75Fx9RudDbhmYqEp/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Two weeks student induction programme  Schedule for first year B.E  AY2024-2025
+            </span>
+        </span>
+    ),
+},
+
+{
     id:'31',
     link:"https://drive.google.com/file/d/1Mawyms2Su2cREg_mLksdL8Rm3yKcNEFg/view?usp=sharing",
     content:(
