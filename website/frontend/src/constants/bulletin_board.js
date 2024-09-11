@@ -37,6 +37,16 @@ export const bulletin_info=[
 //             </span>
 //         ),
 //     },
+{
+    id:'32',
+    link:"https://drive.google.com/file/d/1wXyEODPnCv1wr5U1NSefTqYELbt651E9/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent"> Pragati/Saksham/Swanath/CSS Scholarship - Fresh/Renewal for AY 2024-25- Circular
+</span>
+        </span>
+    ),
+},
 
 {
     id:'31',
