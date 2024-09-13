@@ -182,6 +182,7 @@ import {
   Std_mini_project_fb,
 
   Consultancy_fb,
+  Ece_coe,
 
 } from "./pages";
 import "./App.css";
@@ -264,6 +265,8 @@ const App = () => {
         <Route path="/ecedept/ece-projects" element={<Ece_projects/>} />
         <Route path="/ecedept/ece-student-activity" element={<Ece_stud_activity/>} />
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
+        <Route path="/ecedept/ece_coe" element={<Ece_coe/>} />
+
         <Route path="/csedept/cse-faculties" element={<Cse_faculties/>} />
         <Route path="/civildept" element={<Civildept/>} />
         {/* <Route path="/mechdept" element={<Under/>} /> */}
