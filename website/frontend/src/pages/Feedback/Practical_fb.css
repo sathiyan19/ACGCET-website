@@ -49,6 +49,11 @@ width: 99%;
 padding: 12px;
 
 }
+
+.practical_fb_faculty_line{
+  margin-top: 32px;
+}
+
 .practical_fb_subtitle {
   font-weight: bold;
   font-size: 20px;
@@ -107,7 +112,7 @@ padding: 12px;
       width: 100%;
     }
     .practical_fb_two_line{
-      margin-bottom: 10px;
+      margin-top: 10px;
     }
     .practical_fb_rating{
       text-align: center;
