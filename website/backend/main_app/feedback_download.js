@@ -8,7 +8,6 @@ require('dotenv').config(); // Import dotenv to manage environment variables
 const app = express();
 app.use(express.json()); // To handle JSON payloads
 
-// HTML template functions for each feedback type
 const getSupplierFeedbackTemplate = (feedbackData) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -19,28 +18,37 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 15px;
+            margin: 30px; /* Added margin for the whole page */
             font-size: 10px; /* Adjusted font size for readability */
         }
         h1 {
             color: #333;
         }
-              h2 {
-        font-size: 24px;
-        margin-top: 5px; /* Reduced top margin for smaller gap */
-        margin-bottom: 15px; /* Reduced bottom margin for smaller gap */
-        line-height: 1; /* Adjusted line-height for tighter spacing */
-        text-align: center; /* Center the titles */
-    }
-
-        .page-break {
-            page-break-before: always;
+             .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
         }
+
+        .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
+        // .page-break {
+        //     page-break-before: always;
+        // }
         @media print {
-            .page-break {
-                page-break-before: always;
-                padding-top: 20px; /* Add padding at the top of new pages */
-            }
+            // .page-break {
+            //     page-break-before: always;
+            //     padding-top: 20px; /* Add padding at the top of new pages */
+            // }
         }
         table {
             width: 100%;
@@ -50,20 +58,17 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
         table, th, td {
             border: 1px solid #ddd;
         }
-        th, td 
-        {
+        th, td {
             padding: 8px; /* Reduced padding to save space */
             text-align: left;
             word-wrap: break-word; /* Enable word wrapping */
         }
-        th 
-        {
+        th {
             background-color: #f4f4f4;
             color: #333;
             font-weight: bold;
         }
-        tbody tr:nth-child(even) 
-        {
+        tbody tr:nth-child(even) {
             background-color: #f9f9f9; /* Alternate row color */
         }
         tbody tr:hover {
@@ -82,10 +87,12 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
- <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
-    <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-    <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
-
+<div class="bordered-container">
+    <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
     <h1>Supplier Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -149,7 +156,9 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
         </table>
     </div>`
     ).join('')}
-</body>
+    </div>
+</body
+
 </html>
 `;
 
@@ -1703,10 +1712,10 @@ const getAluminiFeedbackTemplate = (feedbackData) => `
         }
         h2 {
             font-size: 24px;
-            margin-top: 5px; /* Reduced top margin for smaller gap */
-            margin-bottom: 15px; /* Reduced bottom margin for smaller gap */
-            line-height: 1; /* Adjusted line-height for tighter spacing */
-            text-align: center; /* Center the titles */
+            margin-top: 55px; 
+            margin-bottom: 35px; 
+            line-height: 1;
+            text-align: center; 
         }
         .table-container {
             margin-bottom: 20px; /* Consistent margin for separation */

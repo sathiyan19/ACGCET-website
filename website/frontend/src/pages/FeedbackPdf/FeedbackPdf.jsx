@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './FeedbackPdf.css';
 import { Underline, Alertmessage } from '../../widgets';
@@ -7,7 +7,11 @@ import { Underline, Alertmessage } from '../../widgets';
 const FeedbackPdf = () => {
   const [selectedOption, setSelectedOption] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
+  const [auth, setAuth] = useState(true);  // Assuming the user is initially authenticated
+  const [message, setMessage] = useState('');
+  const [reg, setReg] = useState('');
   const navigate = useNavigate();
+  axios.defaults.withCredentials = true;
 
   const handleDownloadPdf = async () => {
     if (!selectedOption) {
@@ -45,8 +49,22 @@ const FeedbackPdf = () => {
     }
   };
 
+  // Logout handler function
   const handleLogout = () => {
-    navigate("/"); // Redirect to the home page
+    axios.get('/backend/logout')
+      .then((res) => {
+        if (res.data.Status === 'Success') {
+          setAuth(false); // User is logged out
+          setReg(res.data.reg_no);
+          navigate('/'); // Redirect to login or homepage
+        } else {
+          setMessage(res.data.Error);
+        }
+      })
+      .catch((err) => {
+        console.error('Error during logout:', err);
+        setMessage('Logout failed. Please try again.');
+      });
   };
 
   const handleCloseAlert = () => setAlertMessage('');
@@ -63,17 +81,16 @@ const FeedbackPdf = () => {
         >
           <option className='box-option' value="" disabled>Choose an option</option>
           <option className='box-option' value="alumni">Alumni Feedback</option>
-<option className='box-option' value="collaborator">Collaborator Feedback</option>
-<option className='box-option' value="consultancy">Consultancy Feedback</option>
-<option className='box-option' value="employee">Employee Feedback</option>
-<option className='box-option' value="faculty">Faculty Feedback</option>
-<option className='box-option' value="MiniProject">Mini project and Project Feedback</option>
-<option className='box-option' value="parents">Parents Feedback</option>
-<option className='box-option' value="Practical">Practical and Laboratory Feedback</option>
-<option className='box-option' value="supplier">Supplier Feedback</option>
-<option className='box-option' value="Technicalseminar">Technical seminar Feedback</option>
-<option className='box-option' value="teachingandlearning">Teaching and Learning Feedback</option>
-
+          <option className='box-option' value="collaborator">Collaborator Feedback</option>
+          <option className='box-option' value="consultancy">Consultancy Feedback</option>
+          <option className='box-option' value="employee">Employee Feedback</option>
+          <option className='box-option' value="faculty">Faculty Feedback</option>
+          <option className='box-option' value="MiniProject">Mini project and Project Feedback</option>
+          <option className='box-option' value="parents">Parents Feedback</option>
+          <option className='box-option' value="Practical">Practical and Laboratory Feedback</option>
+          <option className='box-option' value="supplier">Supplier Feedback</option>
+          <option className='box-option' value="Technicalseminar">Technical seminar Feedback</option>
+          <option className='box-option' value="teachingandlearning">Teaching and Learning Feedback</option>
         </select>
         <button type="button" onClick={handleDownloadPdf}>Download</button>
       </div>
@@ -81,8 +98,16 @@ const FeedbackPdf = () => {
         <button type="button" onClick={handleLogout}>Log out</button>
       </div>
       <Alertmessage message={alertMessage} onClose={handleCloseAlert} />
+      {
+        !auth && (
+          <div>
+            <h3>{message}</h3>
+            <Link to="/login-page">Login</Link>
+          </div>
+        )
+      }
     </div>
   );
-}
+};
 
 export default FeedbackPdf;
