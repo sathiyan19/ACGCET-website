@@ -2019,8 +2019,8 @@ const generatePdfAndSendEmail = async (req, res) => {
         });
 
         const mailOptions = {
-            from: 'mohanamala07gmail.com',
-            to:'mohanamala07@gmail.com' ,
+            from: 'acgcet25@gmail.com',
+            to:'acgcet25@gmail.com' ,
             subject: `${option.charAt(0).toUpperCase() + option.slice(1)} Feedback PDF`,
             text: 'Please find the attached Feedback PDF.',
             attachments: [
