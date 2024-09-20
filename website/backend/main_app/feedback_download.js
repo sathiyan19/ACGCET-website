@@ -188,9 +188,24 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
         line-height: 1; /* Adjusted line-height for tighter spacing */
         text-align: center; /* Center the titles */
     }
-
+   .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
+        }
         .page-break {
             page-break-before: always;
+        }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
         }
         @media print {
             .page-break {
@@ -238,9 +253,12 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-<h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
-    <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-    <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+<div class="bordered-container">
+  <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
     <h1>Parents Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -328,6 +346,7 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
         </table>
     </div>`
     ).join('')}
+    </div>
 </body>
 </html>
 `;
@@ -347,8 +366,24 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
             margin: 15px;
             font-size: 10px; /* Increased font size for readability */
         }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
         h1 {
             color: #333;
+        }
+               .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
         }
         .page-break {
             page-break-before: always;
@@ -395,9 +430,12 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-<h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
-    <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-    <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+<div class="bordered-container">
+  <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
     <h1>Employee Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -501,6 +539,7 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
         </table>
     </div>`
     ).join('')}
+    </div>
 </body>
 </html>
 `;
@@ -517,6 +556,22 @@ const getCounsaltancyFeedbackTemplate = (feedbackData) => `
             font-family: Arial, sans-serif;
             margin: 15px;
             font-size: 10px; /* Adjusted font size for readability */
+        }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
+               .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
         }
         h1 {
             color: #333;
@@ -602,9 +657,12 @@ const getCounsaltancyFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-<h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
-    <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-    <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+<div class="bordered-container">
+  <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
     <h1>Counsaltancy Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -660,6 +718,7 @@ const getCounsaltancyFeedbackTemplate = (feedbackData) => `
         </table>
     </div>`
     ).join('')}
+    </div>
 </body>
 </html>
 `;
@@ -677,9 +736,25 @@ const getCollaboratarFeedbackTemplate = (feedbackData) => `
             margin: 15px;
             font-size: 10px; /* Consistent font size with Consultancy */
         }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
         h1 {
             color: #333;
             font-size:18px;
+        }
+               .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
         }
         h2 {
             font-size: 24px;
@@ -731,9 +806,12 @@ const getCollaboratarFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-<h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
-<h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-<h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+<div class="bordered-container">
+  <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
 <h1>Collaborator Feedback Summary</h1>
 <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -841,6 +919,7 @@ ${feedbackData.map((row, index) =>
     </table>
 </div>`
 ).join('')}
+</div>
 </body>
 </html>
 `;
@@ -860,8 +939,24 @@ const getTeachingFeedbackTemplate = (feedbackData) => `
             margin: 15px;
             font-size: 10px; /* Adjusted font size for readability */
         }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
         h1 {
             color: #333;
+        }
+               .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
         }
               h2 {
         font-size: 24px;
@@ -920,9 +1015,12 @@ const getTeachingFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-<h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF</h2>
-<h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-<h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+<div class="bordered-container">
+  <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
 <h1>Teaching and Learning Feedback Summary</h1>
 <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -1025,6 +1123,7 @@ ${feedbackData.map((row, index) =>
         </tbody>
     </table>
 </div>`).join('')}
+</div>
 </body>
 </html>
 `;
@@ -1042,6 +1141,22 @@ const getPracticalFeedbackTemplate = (feedbackData) => `
             font-family: Arial, sans-serif;
             margin: 15px;
             font-size: 10px; /* Adjusted font size for readability */
+        }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
+               .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
         }
         h1 {
             color: #333;
@@ -1096,9 +1211,12 @@ const getPracticalFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-<h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF</h2>
-<h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-<h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+<div class="bordered-container">
+  <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
 <h1>Practical and Laboratory Feedback Summary</h1>
 <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -1185,6 +1303,7 @@ ${feedbackData.map((row, index) =>
         </tbody>
     </table>
 </div>`).join('')}
+</div>
 </body>
 </html>
 `;
@@ -1338,6 +1457,22 @@ const getMiniFeedbackTemplate = (feedbackData) => `
             margin: 15px;
             font-size: 10px; /* Adjusted font size for readability */
         }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
+               .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
+        }
         h1 {
             color: #333;
             text-align: center; /* Center the title */
@@ -1421,9 +1556,12 @@ const getMiniFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-    <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF</h2>
-    <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-    <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+<div class="bordered-container">
+      <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
     <h1>Mini Project and Project Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -1506,6 +1644,7 @@ const getMiniFeedbackTemplate = (feedbackData) => `
             </tbody>
         </table>
     </div>`).join('')}
+    </div>
 </body>
 </html>
 `;
@@ -1522,6 +1661,22 @@ const getSeminarFeedbackTemplate = (feedbackData) => `
             font-family: Arial, sans-serif;
             margin: 15px;
             font-size: 10px; /* Adjusted font size for readability */
+        }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
+               .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
         }
         h1 {
             color: #333;
@@ -1606,9 +1761,12 @@ const getSeminarFeedbackTemplate = (feedbackData) => `
     </style>
 </head>
 <body>
-<h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
-    <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-    <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+<div class="bordered-container">
+  <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
     <h1>Technical Seminar Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
@@ -1690,6 +1848,7 @@ const getSeminarFeedbackTemplate = (feedbackData) => `
             </tbody>
         </table>
     </div>`).join('')}
+    </div>
 </body>
 </html>
 `;
@@ -1705,6 +1864,22 @@ const getAluminiFeedbackTemplate = (feedbackData) => `
             font-family: Arial, sans-serif;
             margin: 15px;
             font-size: 22px;
+        }
+            .title-container {
+            text-align: center;
+            margin-top: 50px; /* Top margin for title */
+            margin-bottom: 40px; /* Bottom margin for title */
+        }
+        .title-container h2 {
+            font-size: 24px;
+            line-height: 1; /* Adjusted line-height for tighter spacing */
+            margin: 0; /* Removed default margin for individual h2 */
+        }
+               .bordered-container {
+            margin: 30px; /* Added margin around the border */
+            padding: 20px; /* Padding inside the border */
+            border: 2px solid #000; /* Black border */
+            border-radius: 10px; /* Rounded corners */
         }
         h1 {
             color: #333;
@@ -1789,9 +1964,12 @@ const getAluminiFeedbackTemplate = (feedbackData) => `
     </style>
   </head>
   <body>
-   <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
-    <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
-    <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+  <div class="bordered-container">
+    <div class="title-container">
+        <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
+        <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
+        <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
+    </div>
 
 
     
@@ -1936,6 +2114,7 @@ const getAluminiFeedbackTemplate = (feedbackData) => `
             </tbody>
           </table>
         </div>`).join('')}
+        </div>
     </body>
     </html>
   `;
