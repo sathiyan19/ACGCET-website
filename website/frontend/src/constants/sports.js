@@ -57,6 +57,7 @@
 
 import vimanthan from "../assets/pictures/vimanthan.webp"
 import raveena from "../assets/pictures/raveena.webp"
+import chess from "../assets/pictures/sports chess.webp"
 const badminton_M_R="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Badminton_M(R).webp"
 const khokho_M_R="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Kho_M(R).webp"
 const ballbadminton_M_W="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Ball_bad_M.webp"
@@ -632,6 +633,14 @@ export const sport_achivement_info=[
         'pic':vimanthan,
         'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
         'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
+      
+      },
+      {
+        'id':'3',
+        'heading':'Runner Up',
+        'sub-head':"Our chess team finished as the runner-up in the Anna University Zone 16 Tournament on September 18, 2024, at Mohamed Sathak Engineering College, Kilakarai.",
+        'pic':chess,
+       
       
       },
 
