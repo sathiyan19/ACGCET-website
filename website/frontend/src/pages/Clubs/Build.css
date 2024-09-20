@@ -1,0 +1,31 @@
+.build_container{
+    /* margin-top: 30px; */
+    padding: 20px;
+}
+.build_cals_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.build_reports{
+    width:70%
+}
+
+
+
+@media(max-width:1024px){
+    .build_reports{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .build_reports{
+        width:70%
+    }
+}
+
+@media(max-width:500px){
+    .build_reports{
+        width: 100%;
+    }
+}
