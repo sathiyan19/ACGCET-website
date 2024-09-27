@@ -521,8 +521,6 @@ export const admin_menu = [
 
 export const 
 semesterSubjects={
-export const 
-semesterSubjects={
   CSE :{
     1:{
       code:[
@@ -535,19 +533,7 @@ semesterSubjects={
         "22CSL18",
         "22PHL19",
         "22CYL1A",
-        "22HSL1B"
-      code:[
-        "22HSE11",
-        "22MAB13",
-        "22PHB14",
-        "22CYB15",
-        "22CSG16",
-        "22HST17",
-        "22CSL18",
-        "22PHL19",
-        "22CYL1A",
-        "22HSL1B"
-    ]
+        "22HSL1B"]
     },
     2: {
       code: [
@@ -578,20 +564,7 @@ semesterSubjects={
         "22MAB34",
       ]
     },
-    3:{
-      code:[
-        "22CSC32",
-        "22CSC33",
-        "22CSC35",
-        "22CSC36",
-        "22CSG31",
-        "22CSL37",
-        "22CSL38",
-        "22CSL39",
-        "22CSZ3A",
-        "22MAB34",
-      ]
-    },
+    
     4: {
       code: [
         "22CSC41",
@@ -617,22 +590,9 @@ semesterSubjects={
         "22UGM04",
         "22CSL55",
         "22CSL56",
-        "22CSL57"
-    5: {
-      code: [
-        "22CSC51",
-        "22CSC52",
-        "22CSC53",
-        "22CSC54",
-        "22CSV24",
-        "22CSV31",
-        "22UGM04",
-        "22CSL55",
-        "22CSL56",
-        "22CSL57"
-      ]
-    }
+        "22CSL57"],
   
+  },
   },
   ECE:{
     1:{
@@ -670,18 +630,7 @@ semesterSubjects={
         "22ECL28"
       ]
     },
-    2:{
-      code:[
-        "22HSE21",
-        "22MAB22",
-        "22PHB2D",
-        "22EEG16",
-        "22HST26",
-        "22NCC01",
-        "22EPL27",
-        "22ECL28"
-      ]
-    },
+    
     3:{
       code:[
         "22MAB33" ,
@@ -708,19 +657,6 @@ semesterSubjects={
         "22ECL48"
       ]
     },
-    4:{
-      code:[
-        "22ECC41",
-        "22ECC42",
-        "22ECC43",
-        "22ECC44",
-        "22ECC45",
-        "22CYB46",
-        "22NCC02",
-        "22ECL47",
-        "22ECL48"
-      ]
-    },
     5:{
       code:[
         "22ECG51",
@@ -730,7 +666,7 @@ semesterSubjects={
         "22ECV82",
         "22ECV74",
         "22UGM05",
-        "22ECL54"
+        "22ECL54",
         "22ECG51",
         "22ECC52",
         "22ECC53",
@@ -781,20 +717,7 @@ semesterSubjects={
         "22EEZ39"
       ]
     },
-    2:{
-      code:[
-        "22MAB32",
-        "22ECG31",
-        "22EEC33",
-        "22EEC34",
-        "22EEC35",
-        "22EEG36",
-        "22EEL37",
-        "22EEL38",
-        "22EEL3A",
-        "22EEZ39"
-      ]
-    },
+ 
     3:{
       code:[
         "22MAB32",
@@ -810,7 +733,7 @@ semesterSubjects={
         
       ]
     },
-    4:{
+    
     4:{
       code:[
         "22EEC41",
@@ -822,7 +745,7 @@ semesterSubjects={
         "22NCC02",
         "22EEL47",
         "22EEL48",
-        "22EEL49"
+        "22EEL49",
         "22EEC41",
         "22EEC42",
         "22ECG43",
@@ -836,7 +759,6 @@ semesterSubjects={
       ]
     },
     5:{
-    5:{
       code:[
         "22EEC51",
         "22EEC52",
@@ -846,7 +768,7 @@ semesterSubjects={
         "22EEV33",
         "22UGM05",
         "22EEL58",
-        "22EEL59"
+        "22EEL59",
         "22EEC51",
         "22EEC52",
         "22EEC53",
@@ -859,6 +781,7 @@ semesterSubjects={
       ]
     }
   },
+
   CIV:{
     1:{
       code:[
@@ -873,7 +796,7 @@ semesterSubjects={
         "22EEL18",
         "22PHL19" ,
         "22CYL1A" ,
-        "22HSL1B"
+        "22HSL1B",
         "22HST17",
         "22EEL18",
         "22PHL19" ,
@@ -893,7 +816,7 @@ semesterSubjects={
           "22NCC01",
           "22EPL27",
           "22CSL18",
-          "22HSL29"
+          "22HSL29",
           "22HSE21",
           "22MAB22",
           "22PHB2A",
@@ -950,34 +873,8 @@ semesterSubjects={
     "22CEL55"
   ]
 },
-4:{
-  code:[
-    "22CEG41",
-    "22CEC42",
-    "22CEC43",
-    "22CEC44",
-    "22CEC45",
-    "22CYB46",
-    "22CEB47",
-    "22CEL48",
-    "22CEL49",
-    "22CEL4A",
-    "22NCC02"
-  ]
-},
-5:{
-  code:[
-    "22CEC51",
-    "22CEC52",
-    "22CEC53",
-    "22CEV26",
-    "22CEV13",
-    "22CEV13",
-    "22UGM05",
-    "22CEL54",
-    "22CEL55"
-  ]
-}
+
+
   },
   MEC:{
     1:{
@@ -1058,7 +955,7 @@ semesterSubjects={
 
 export const staffs={
 
-    },
+
     2:{
       code:[
         "22HSE21",
@@ -1117,8 +1014,8 @@ export const staffs={
     }
 
   }
-}
 
-export const staffs={
 
-}
+// export const staffs={
+
+// }
