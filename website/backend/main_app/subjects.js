@@ -1,3 +1,4 @@
+
 const subjects_list = {
     "CSE_subs": {
       "19CMG15": { "credits": 4, "subname": "Basic Civil and Mechanical Engineering" },
@@ -65,6 +66,7 @@ const subjects_list = {
       "19CSL72": { "credits": 1, "subname": "C# and .NET Laboratory" },
       "19CSZ71": { "credits": 3.5, "subname": "Mini Project" },
       "19MEP05": { "credits": 3, "subname": "Supply Chain Management" },
+      "NPTEL90": { "credits": 2, "subname": "Software Quality Management" },
       "22IPM01": { "credits": 0, "subname": "Orientation Program" },
       "22CSC32": { "credits": 3, "subname": "Database Management Systems" },
       "22CSC33": { "credits": 3, "subname": "Data Structures using C" },
@@ -85,7 +87,37 @@ const subjects_list = {
       "22PYL18": { "credits": 1.5, "subname": "Physics Laboratory" },
       "22CYL19": { "credits": 1.5, "subname": "Chemistry Laboratory" },
       "22MEL11": { "credits": 2, "subname": "Basic Mechanical Engineering" },
-      "22WPL12": { "credits": 2, "subname": "Workshop Laboratory" }
+      "22WPL12": { "credits": 2, "subname": "Workshop Laboratory" },
+      
+        "22CSG16": { "credits": 3, "subname": "Problem Solving and Python Programming" },
+        "22HST17": { "credits": 1, "subname": "Heritage of Tamils" },
+        "22CSL18": { "credits": 1.5, "subname": "Problem Solving and Python Programming Laboratory" },
+        "22PHL19": { "credits": 1.5, "subname": "Physics Laboratory" },
+        "22CYL1A": { "credits": 1.5, "subname": "Chemistry Laboratory" },
+        "22HSL1B": { "credits": 1.5, "subname": "English Laboratory" },
+        "22HSE21": { "credits": 2, "subname": "Professional English-II" },
+        "22MAB22": { "credits": 4, "subname": "Statistics and Numerical Methods" },
+        "22PHB2E": { "credits": 4, "subname": "Physics for Information Science" },
+        "22EEG16": { "credits": 3, "subname": "Basic Electrical, Electronics and Instrumentation Engineering" },
+        "22MEG24": { "credits": 4, "subname": "Engineering Graphics" },
+        "22CSC25": { "credits": 3, "subname": "Programming in C" },
+        "22HST26": { "credits": 1, "subname": "Tamils and Technology" },
+        "22NCC01": { "credits": 2, "subname": "NCC Credit Course Level 1" },
+        "22EPL27": { "credits": 2, "subname": "Engineering Practices Laboratory" },
+        "22CSL28": { "credits": 1.5, "subname": "Programming in C Laboratory" },
+        "22HSL29": { "credits": 1.5, "subname": "Communication Laboratory / Foreign Language" },
+        "22NM042": { "credits": 0, "subname": "Cambridge English Up skill course (Nan Mudhalvan course)" },
+        "22CSC41": { "credits": 3, "subname": "Introduction to Operating Systems" },
+        "22CSC42": { "credits": 4, "subname": "Computer Networks" },
+        "22CSC43": { "credits": 3, "subname": "Theory of Computation" },
+        "22CSC44": { "credits": 4, "subname": "Cryptography and Cyber Security" },
+        "22CSC45": { "credits": 3, "subname": "Artificial Intelligence" },
+        "22CYB46": { "credits": 2, "subname": "Environmental Sciences and Sustainability" },
+        "22NCC02": { "credits": 3, "subname": "NCC Credit Course Level 2" },
+        "22CSL47": { "credits": 1.5, "subname": "Operating Systems Laboratory" },
+        "22CSL48": { "credits": 2, "subname": "Network and Cyber Security Lab" },
+        "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" }
+       
     },
     "EEE_subs": {
       "19CEZ51":{credits:0,subname:"Soft Skill Enhancement Training"},
@@ -143,6 +175,11 @@ const subjects_list = {
     "19EEL61":{credits:1.5,subname:"Power Electronics Laboratory"},
     "19EEL62":{credits:1.5,subname:"Microcontroller Laboratory"},
     "19NM099":{credits:2,subname:"Artificial Intelligence and Machine Learning Fundamentals (Naan Mudhalvan Course)"},
+    
+      "19EEE16": { "credits": 3, "subname": "Embedded System Design" },
+      "19EEE21": { "credits": 3, "subname": "Power System Operation and Control" },
+    
+    
 
       "22HSE21": { credits: 2, subname: "Professional English-II" },
       "22MAB22": { credits: 4, subname: "Statistics and Numerical Methods" },
@@ -190,6 +227,7 @@ const subjects_list = {
     "22EEL49": { credits: 1.5, subname: "Microprocessor and Microcontroller Laboratory" },
     "22EEC42": { credits: 3, subname: "Digital Logic Circuits" },
     },
+
 
     "CIV_subs": {
     "22HSE11": { "credits": 3, "subname": "Professional English-I" },
@@ -316,6 +354,23 @@ const subjects_list = {
       "19ECL51": { "credits": 1, "subname": "Digital Signal Processing Laboratory" },
       "19ECL52": { "credits": 1, "subname": "Linear Integrated Circuits Laboratory" },
       "19ECZ51": { "credits": 1, "subname": "Technical Seminar I" },
+      "19NM040": { "credits": 2, "subname": "4G/5G Communication  Networks (Naan Mudhalvan Course)" },
+      "19ECB32": { "credits": 4, "subname": "Time Harmonic Electromagnetic Fields" },
+      "19CEZ51": { "credits": 0, "subname": "Soft Skills and Enhancement Training" },
+      "19CSC52": { "credits": 3, "subname": "Computer Networks" },
+      "19ECC61": { "credits": 3, "subname": "Digital Communication  System" },
+      "19ECC62": { "credits": 3, "subname": "VLSI Design" },
+      "19ECE05": { "credits": 3, "subname": "Consumer Electronics" },
+      "19ECE09": { "credits": 3, "subname": "Optoelectronic Devices" },
+      "19ECE11": { "credits": 3, "subname": "Radar and Navigational  Aids" },
+      "19ECE13": { "credits": 3, "subname": "Satellite Communication" },
+      "19ECE26": { "credits": 3, "subname": "Wireless Networks" },
+      "19ECE27": { "credits": 3, "subname": "Network Security" },
+      "19ECL61": { "credits": 1, "subname": "Analog and Digital Communication  Laboratory" },
+      "19ECL62": { "credits": 1, "subname": "VLSI and Network Programming Laboratory" },
+      "19ECM61": { "credits": 0, "subname": "Indian Constitution (Mandatory Course)" },
+      "19ECZ61": { "credits": 1, "subname": "Technical Seminar  - II" },
+      "NPTEL29": { "credits": 3, "subname": "Embedded Sensing, Actuation and Interfacing Systems" },
       "22HSE11": { "credits": 3, "subname": "Professional English-I" },
       "22PHB14": { "credits": 3, "subname": "Engineering Physics" },
       "22CYB15": { "credits": 3, "subname": "Engineering Chemistry" },
@@ -350,7 +405,26 @@ const subjects_list = {
       "22ECL52": { "credits": 1, "subname": "VLSI Laboratory" },
       "22ECZ71": { "credits": 2, "subname": "Technical Seminar II" },
       "22ECP10": { "credits": 1.5, "subname": "Internship" },
-      "22ECZ61": { "credits": 3, "subname": "Project Work" }
+      "22ECZ61": { "credits": 3, "subname": "Project Work" },
+      "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
+      "22MAB13": { "credits": 4, "subname": "Matrices, Calculus and Laplace Transforms" },
+    "22HSL1B": { "credits": 1.5, "subname": "English Laboratory" },
+    "22MEG24": { "credits": 4, "subname": "Engineering Graphics" },
+    "22ECC25":{ "credits": 4, "subname": "Circuit Analysis" },
+    "22HSL29": { "credits": 1.5, "subname": "Communication Laboratory / Foreign Language" },
+    "22NM042": { "credits": 2, "subname": "Cambridge English Upskill Course (Naan Mudhalvan Course)" },
+    "22ECC31": { "credits": 4, "subname": "Signals and Systems" },
+    "22ECC32": { "credits": 4, "subname": "Digital Systems Design" },
+    "22MAB33": { "credits": 4, "subname": "Random Processes and Linear Algebra" },
+    "22ECC34": { "credits": 3, "subname": "Electronic Devices and Circuits" },
+    "22ECC35": { "credits": 3, "subname": "Electromagnetic Field Theory" },
+    "22ECG36": { "credits": 3, "subname": "C Programming and Data Structures" },
+    "22ECL37": { "credits": 1.5, "subname": "Electronic Devices and Circuits" },
+    "22ECL38": { "credits": 1.5, "subname": "C Programming and Data StructuresLaboratory"},
+    "22ECZ39": { "credits": 1, "subname": "Professional Development"},
+    "NPTEL14": { "credits": 3, "subname": "Programming in JAVA"},
+    
+    
     },
 
     "MEC_subs":{
@@ -436,7 +510,10 @@ const subjects_list = {
     "22CYM46": { "credits": 3, "subname": "Environmental Science and Engineering" },
     "22MEL47": { "credits": 2, "subname": "Thermal Engineering Laboratory" },
     "22MEL48": { "credits": 2, "subname": "Fluid Mechanics and Machinery Laboratory" },
-    "22MEZ49": { "credits": 1, "subname": "Soft Skills and Career Development" }
+    "22MEZ49": { "credits": 1, "subname": "Soft Skills and Career Development" },
+    "22NM002": { "credits": 2, "subname": "Employability Skills (Nan Mudhalvan Course)" },
+    "22CYB46": { "credits": 2, "subname": "Environmental Sciences and Sustainability" },
+    "22NCC02": { "credits": 3, "subname": "NCC Credit Course Level 2" }
   }
   ,
 
