@@ -47,7 +47,8 @@ const Consultancy_fb = () => {
     event.preventDefault();
     
 
-    const isDateValid = validateDate(dateOfCommencement);
+    const isDateValid = true;
+    // const isDateValid = validateDate(dateOfCommencement);
     
     const areRatingsValid = validateRatings();
 
@@ -61,6 +62,7 @@ const Consultancy_fb = () => {
     if (!areRatingsValid) {
       return;
     }
+alert(dateOfCommencement);
 
     try {
       const response = await axios.post('/api/consultancy_ratingsubmit', {

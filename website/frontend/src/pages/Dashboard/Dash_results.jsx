@@ -187,8 +187,8 @@ const Dash_results = () => {
                   <div className="dash-table-header">
                     <div className="sem_options_holder">
                       <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
-                        <div className="sem_input">Sem {sem}</div>
-                        <div className="fa fa fa-chevron-circle-down"></div>
+                        {/* <div className="sem_input">Sem {sem}</div> */}
+                        {/* <div className="fa fa fa-chevron-circle-down"></div> */}
                       </div>
                       <div className="sem_options">
                         {sem_opt_flag &&
@@ -214,9 +214,9 @@ const Dash_results = () => {
                     <Table data={results} columns={column} />
                   </div>
                   <div class="marksheet-container">
-                    <div className="cool_holder">
+                    {/* <div className="cool_holder">
                       <button onClick={download_marksheet} className="coolass_button" id="coolbutton"></button>
-                    </div>
+                    </div> */}
                   </div>
                   
                   <div className="logout_button logout-btn">
