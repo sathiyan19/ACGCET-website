@@ -1,0 +1,32 @@
+.coe_lib_conts {
+    line-height: 1.6;  /* Adjust the line spacing as needed */
+    font-family: 'Arial', sans-serif;  /* Set your desired font family */
+    font-size: 16px;  /* Set your desired font size */
+    color: #333;  /* Set your desired text color */
+    margin-bottom: 20px;  /* Optional: Add margin to the bottom for spacing */
+    text-align: justify;
+}
+
+/* You can add more specific styles as needed */
+
+/* You can add more specific styles as needed */
+.coe_lib strong {
+    font-weight: bold;
+}
+
+.coe_lib em {
+    font-style: italic;
+}
+.content_card_holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* If you want the cards to wrap to the next line if there are too many */
+  }
+  
+  
+  .Content_card {
+   
+    margin: 20px; 
+  }
+  
