@@ -342,6 +342,7 @@ const collaborator_ratingsubmit = async (req, res) => {
 const std_teaching_ratingsubmit = async (req, res) => {
     const {
         programme,
+        department,
         semester,
         course_title,
         course_code,
@@ -373,6 +374,7 @@ const std_teaching_ratingsubmit = async (req, res) => {
     const insertQuery = `
         INSERT INTO TeachingAndLearningFeedback (
             programme,
+            department,
             semester,
             course_title,
             course_code,
@@ -399,6 +401,7 @@ const std_teaching_ratingsubmit = async (req, res) => {
     try {
         const [results] = await pool.query(insertQuery, [
             programme,
+            department,
             semester,
             course_title,
             course_code,
@@ -432,6 +435,7 @@ const std_teaching_ratingsubmit = async (req, res) => {
 const std_practical_ratingsubmit = async (req, res) => {
     const {
         programme,
+        department,
         semester,
         course_title,
         course_code,
@@ -459,6 +463,7 @@ const std_practical_ratingsubmit = async (req, res) => {
     const insertQuery = `
         INSERT INTO PracticalFeedback (
             programme,
+            department,
             semester,
             course_title,
             course_code,
@@ -481,6 +486,7 @@ const std_practical_ratingsubmit = async (req, res) => {
     try {
         const [results] = await pool.query(insertQuery, [
             programme,
+            department,
             semester,
             course_title,
             course_code,
@@ -510,6 +516,7 @@ const std_practical_ratingsubmit = async (req, res) => {
 const std_technical_seminar_ratingsubmit = async (req, res) => {
     const {
         programme,
+        department,
         semester,
         course_title,
         course_code,
@@ -536,6 +543,7 @@ const std_technical_seminar_ratingsubmit = async (req, res) => {
     const insertQuery = `
         INSERT INTO TechnicalSeminarFeedback (
             programme,
+            department,
             semester,
             course_title,
             course_code,
@@ -557,6 +565,7 @@ const std_technical_seminar_ratingsubmit = async (req, res) => {
     try {
         const [results] = await pool.query(insertQuery, [
             programme,
+            department,
             semester,
             course_title,
             course_code,
@@ -585,6 +594,7 @@ const std_technical_seminar_ratingsubmit = async (req, res) => {
 const std_mini_project_ratingsubmit = async (req, res) => {
     const {
         programme,
+        department,
         semester,
         course_title,
         course_code,
@@ -611,6 +621,7 @@ const std_mini_project_ratingsubmit = async (req, res) => {
     const insertQuery = `
         INSERT INTO MiniProjectFeedback (
             programme,
+            department,
             semester,
             course_title,
             course_code,
@@ -632,6 +643,7 @@ const std_mini_project_ratingsubmit = async (req, res) => {
     try {
         const [results] = await pool.query(insertQuery, [
             programme,
+            department,
             semester,
             course_title,
             course_code,
