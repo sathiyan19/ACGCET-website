@@ -521,8 +521,21 @@ export const admin_menu = [
 
 export const 
 semesterSubjects={
+export const 
+semesterSubjects={
   CSE :{
     1:{
+      code:[
+        "22HSE11",
+        "22MAB13",
+        "22PHB14",
+        "22CYB15",
+        "22CSG16",
+        "22HST17",
+        "22CSL18",
+        "22PHL19",
+        "22CYL1A",
+        "22HSL1B"
       code:[
         "22HSE11",
         "22MAB13",
@@ -565,6 +578,20 @@ semesterSubjects={
         "22MAB34",
       ]
     },
+    3:{
+      code:[
+        "22CSC32",
+        "22CSC33",
+        "22CSC35",
+        "22CSC36",
+        "22CSG31",
+        "22CSL37",
+        "22CSL38",
+        "22CSL39",
+        "22CSZ3A",
+        "22MAB34",
+      ]
+    },
     4: {
       code: [
         "22CSC41",
@@ -579,6 +606,18 @@ semesterSubjects={
         "22CSL49"
       ]
     },
+    5: {
+      code: [
+        "22CSC51",
+        "22CSC52",
+        "22CSC53",
+        "22CSC54",
+        "22CSV24",
+        "22CSV31",
+        "22UGM04",
+        "22CSL55",
+        "22CSL56",
+        "22CSL57"
     5: {
       code: [
         "22CSC51",
@@ -608,6 +647,27 @@ semesterSubjects={
         "22PHL19",
         "22CYL1A",
         "22HSL1B",
+        "22MAB13",
+        "22PHB14",
+        "22CYB15",
+        "22CSG16",
+        "22HST17",
+        "22CSL18",
+        "22PHL19",
+        "22CYL1A",
+        "22HSL1B",
+      ]
+    },
+    2:{
+      code:[
+        "22HSE21",
+        "22MAB22",
+        "22PHB2D",
+        "22EEG16",
+        "22HST26",
+        "22NCC01",
+        "22EPL27",
+        "22ECL28"
       ]
     },
     2:{
@@ -648,8 +708,29 @@ semesterSubjects={
         "22ECL48"
       ]
     },
+    4:{
+      code:[
+        "22ECC41",
+        "22ECC42",
+        "22ECC43",
+        "22ECC44",
+        "22ECC45",
+        "22CYB46",
+        "22NCC02",
+        "22ECL47",
+        "22ECL48"
+      ]
+    },
     5:{
       code:[
+        "22ECG51",
+        "22ECC52",
+        "22ECC53",
+        "22ECV41",
+        "22ECV82",
+        "22ECV74",
+        "22UGM05",
+        "22ECL54"
         "22ECG51",
         "22ECC52",
         "22ECC53",
@@ -700,6 +781,20 @@ semesterSubjects={
         "22EEZ39"
       ]
     },
+    2:{
+      code:[
+        "22MAB32",
+        "22ECG31",
+        "22EEC33",
+        "22EEC34",
+        "22EEC35",
+        "22EEG36",
+        "22EEL37",
+        "22EEL38",
+        "22EEL3A",
+        "22EEZ39"
+      ]
+    },
     3:{
       code:[
         "22MAB32",
@@ -716,7 +811,18 @@ semesterSubjects={
       ]
     },
     4:{
+    4:{
       code:[
+        "22EEC41",
+        "22EEC42",
+        "22ECG43",
+        "22EEC44",
+        "22EEC45",
+        "22CYB46",
+        "22NCC02",
+        "22EEL47",
+        "22EEL48",
+        "22EEL49"
         "22EEC41",
         "22EEC42",
         "22ECG43",
@@ -730,7 +836,17 @@ semesterSubjects={
       ]
     },
     5:{
+    5:{
       code:[
+        "22EEC51",
+        "22EEC52",
+        "22EEC53",
+        "22EEV31",
+        "22EEV32",
+        "22EEV33",
+        "22UGM05",
+        "22EEL58",
+        "22EEL59"
         "22EEC51",
         "22EEC52",
         "22EEC53",
@@ -749,8 +865,15 @@ semesterSubjects={
         "22HSE11" ,
         "22MAB12" ,
         "22PHB14",
+        "22MAB12" ,
+        "22PHB14",
         "22CYB15" ,
         "22EEG16",
+        "22HST17",
+        "22EEL18",
+        "22PHL19" ,
+        "22CYL1A" ,
+        "22HSL1B"
         "22HST17",
         "22EEL18",
         "22PHL19" ,
@@ -761,6 +884,16 @@ semesterSubjects={
     
       2:{
         code:[
+          "22HSE21",
+          "22MAB22",
+          "22PHB2A",
+          "22CSG16",
+          "22MEG24",
+          "22HST26",
+          "22NCC01",
+          "22EPL27",
+          "22CSL18",
+          "22HSL29"
           "22HSE21",
           "22MAB22",
           "22PHB2A",
@@ -816,11 +949,41 @@ semesterSubjects={
     "22CEL54",
     "22CEL55"
   ]
+},
+4:{
+  code:[
+    "22CEG41",
+    "22CEC42",
+    "22CEC43",
+    "22CEC44",
+    "22CEC45",
+    "22CYB46",
+    "22CEB47",
+    "22CEL48",
+    "22CEL49",
+    "22CEL4A",
+    "22NCC02"
+  ]
+},
+5:{
+  code:[
+    "22CEC51",
+    "22CEC52",
+    "22CEC53",
+    "22CEV26",
+    "22CEV13",
+    "22CEV13",
+    "22UGM05",
+    "22CEL54",
+    "22CEL55"
+  ]
 }
   },
   MEC:{
     1:{
       code:[
+      "22HSE11",
+      "2MAB13",
       "22HSE11",
       "2MAB13",
       "22PHB14",
@@ -832,6 +995,69 @@ semesterSubjects={
       "22CYL1A",
       "22HSL1B",
       ]
+    },
+    2:{
+      code:[
+        "22HSE21",
+        "22MAB22",
+        "22PHB2B",
+        "22CSG16",
+        "22MEG24",
+        "22HST26",
+        "22NCC01",
+        "22EPL27",
+        "22CSL18",
+        "22HSL29"
+      ]
+    },
+    3:{
+      code:[
+        "22MAB31",
+        "22MEG32",
+        "22MEC33",
+        "22MEG34",
+        "22MEC35",
+        "22MEC36",
+        "22MEL37",
+        "22MEL38",
+        "22MEZ39"
+      ]
+    },
+    4:{
+      code:[
+        "22MEC41",
+        "22MEC42",
+        "22MEC43",
+        "22MEC44",
+        "22MEC45",
+        "22CYB46",
+        "22NCC02",
+        "22MEL47",
+        "22MEL48"
+      ]
+    },
+    5:{
+      code:[
+        "22MEC51",
+        "22MEC52",
+        "22MEV22",
+        "22MEVA1",
+        "22MEV93",
+        "22MEVA3",
+        "22MEV24",
+        "22MEVA5",
+        "22UGM04",
+        "22MEZ53",
+        "22MEL54",
+        "22MEL55"
+      ]
+    }
+
+  }
+}
+
+export const staffs={
+
     },
     2:{
       code:[

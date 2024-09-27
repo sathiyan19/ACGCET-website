@@ -1,4 +1,3 @@
-
 import React ,{useState}from 'react'
 import './Practical_fb.css'
 import { Underline ,Backtotop,Alertmessage} from '../../widgets'
@@ -211,4 +210,3 @@ const Practical_fb = () => {
 };
 
 export default Practical_fb
-
