@@ -47,7 +47,7 @@ export const news_info=[
     {
         'id':'8',
         'heading':"Tarcin Signature",
-        'sub-head':'Memorandum of understanding is earned between Tarcin Robtic LLP, Madurai and ACGCET.',
+        'sub-head':'Memorandum of understanding is earned between Tarcin Robotic LLP, Madurai and ACGCET.',
         'pic':tarcinsign,
         'content_1':'',
         'content_2':'',
@@ -77,7 +77,7 @@ export const news_info=[
     {
         'id':'3',
         'heading':"Envision Conference at IITMRP",
-        'sub-head':'Empowering Tomorrow\'s Leaders: Insights from the Envision Energy Conference at IITMRP',
+        'sub-head':"Empowering Tomorrow's Leaders: Insights from the Envision Energy Conference at IITMRP",
         'pic':envision,
         // 'content_1':'A set of nine 2nd year students of our college recently had the opportunity to attend a dynamic conference themed "Envision Energy Conference" at IITMRP, on the dates 4th and 5th January, 2024, through the build club, which is being a great source of immense opportunities for our students. The conference proved to be an enlightening experience, that brought together professionals from diverse fields to exchange insights and ideas. The keynote sessions were particularly captivating, featuring industrial and educational delegates who shared their captivating and futuristic ideas. The interactive panel discussions were a highlight, allowing experts to engage in thought-provoking conversations. This groundbreaking conference not only provided valuable exposure to visionary ideas but also served as a platform for our students to broaden their understanding of the dynamic world around them',
         'content_2':'A set of nine 2nd year students of our college recently had the opportunity to attend a dynamic conference themed "Envision Energy Conference" at IITMRP, on the dates 4th and 5th January, 2024, through the build club, which is being a great source of immense opportunities for our students. The conference proved to be an enlightening experience, that brought together professionals from diverse fields to exchange insights and ideas. The keynote sessions were particularly captivating, featuring industrial and educational delegates who shared their captivating and futuristic ideas. The interactive panel discussions were a highlight, allowing experts to engage in thought-provoking conversations. This groundbreaking conference not only provided valuable exposure to visionary ideas but also served as a platform for our students to broaden their understanding of the dynamic world around them.',
