@@ -1,0 +1,279 @@
+
+.alumni-menu {
+    margin-top: -16px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 50px; */
+    padding: 10px;
+}
+
+.lin {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    padding: 7px;
+    font-weight: 900;
+    color: #01134d;
+    border: 3px solid #01134d;
+}
+
+.lin:hover {
+    color: #ff6600;
+    background-color: #01134d;
+    transition: 0.3s ease-in;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    box-shadow: 0 10px 3px #000;
+}
+
+/* .notable {
+    font-size: 40px;
+    font-weight: 500;
+    color: #01134d;
+    padding: 40px 20px;
+} */
+.notalum{
+    padding: 20px;
+}
+
+.about {
+    padding: 30px 20px;
+}
+/* 
+.heading {
+    font-size: 40px;
+    font-weight: 500;
+    color: #01134d;
+} */
+
+.abt {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accetosa {
+    width: 20%;
+}
+
+.dsc {
+    width: 77%;
+    /* font-weight: 400; */
+    color: #000;
+    font-size: 18px;
+    line-height: 1.5rem;
+    /* color: #01134d; */
+    text-align: justify;
+}
+
+.accetosa-logo {
+    box-shadow: 1px 1px 5px black;
+}
+
+.socialmedia {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.cont {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.accicon {
+    color: #01134d;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.accicon:hover {
+    color: #ff6600;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.abt-cont {
+    font-size: 18px;
+    padding: 0px 20px;
+    /* color: #01134d; */
+    line-height: 1.5rem;
+    color: #000;
+    /* font-weight: 400; */
+    text-align: justify;
+}
+
+/* .heads {
+    font-size: 40px;
+    font-weight: 400;
+    color: #01134d;
+} */
+.row {
+    margin-top: 5px;
+  }
+
+.alumni_reunion{
+    padding: 20px;
+}
+.alumini_video_heading{
+    padding: 20px;
+}
+
+  
+
+  
+  .alumini_video_content {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    padding: 20px;
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 10px; /* Add horizontal spacing between cards */
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color: #333;
+  }
+  
+  .card-footer {
+    padding: 15px;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .view-video-button {
+    background-color: #00134d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .view-video-button:hover {
+    background-color: #0056b3;
+  }
+  
+@media(max-width:1360px) {
+    .dsc {
+        font-size: 17px;
+    }
+    .accetosa-logo {
+        width: 100%;
+    }
+}
+
+@media(max-width:1150px) {
+    .accicon {
+        font-size: 24px;
+    }
+    .cont {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1010px) {
+    .abt {
+        flex-direction: column;
+        align-items: center;
+    }
+    .accetosa {
+        width: 80%;
+    }
+    .dsc {
+        width: 100%;
+        font-size: 18px;
+    }
+    .accicon {
+        font-size: 34px;
+    }
+    .cont {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:500px) {
+    .notable,.heading {
+        font-size: 28px;
+    }
+    .accetosa {
+        width: 90%;
+    }
+    .dsc {
+        width: 100%;
+        font-size: 18px;
+    }
+    .accicon {
+        font-size: 30px;
+    }
+    .cont {
+        font-size: 18px;
+    }
+    .abt-cont {
+        font-size: 18px;
+    }
+    .lin {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    .alumni-menu {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .lin {
+        font-size: 12px;
+    }
+    .heading {
+        font-size: 26px;
+    }
+    .accicon {
+        font-size: 24px;
+    }
+    .cont,
+    .dsc,
+    .abt-cont {
+        font-size: 14px;
+    }
+}

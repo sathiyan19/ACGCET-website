@@ -1,0 +1,13 @@
+.student_fb_area{
+    margin-top: 70px ;
+    margin-left: 40px;
+}
+
+.stdudent_fb_card_holder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
