@@ -428,7 +428,7 @@ const subjects_list = {
   },
 
   "MEC_subs":{
-  "19EEG16": { "credits": 4, "subname": "Basic Electrical and Electronics Engineering" },
+  
   "19MAB12": { "credits": 4, "subname": "Mathematics I" },
   "19PHB13": { "credits": 4, "subname": "Physics: Properties of Materials and Mechanics" },
   "19CHB21": { "credits": 4, "subname": "Chemistry" },
@@ -462,6 +462,9 @@ const subjects_list = {
   "19MEC61": { "credits": 3, "subname": "Design of Mechanical Drives" },
   "19MEC62": { "credits": 3, "subname": "Heat and Mass Transfer" },
   "19MEC63": { "credits": 3, "subname": "Mechatronics" },
+  "19CMG15": { "credits": 4, "subname": "Basic Civil and Mechanical Engineering" },
+ 
+    "19ENH11": { "credits": 3, "subname": "Communicative English" },
   "19MEE08": { "credits": 3, "subname": "Design of Electric Vehicles" },
   "19MEE21": { "credits": 3, "subname": "Modern Machining Processes" },
   "19MEE24": { "credits": 3, "subname": "Non Destructive Testing and Evaluation" },
@@ -514,6 +517,7 @@ const subjects_list = {
   "22NM002": { "credits": 2, "subname": "Employability Skills (Nan Mudhalvan Course)" },
   "22CYB46": { "credits": 2, "subname": "Environmental Sciences and Sustainability" },
   "22NCC02": { "credits": 3, "subname": "NCC Credit Course Level 2" }
+  
 }
 ,
 
