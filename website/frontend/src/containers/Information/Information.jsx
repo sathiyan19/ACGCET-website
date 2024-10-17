@@ -38,11 +38,11 @@ const Information = () => {
           Admission
         </a>
         <a
-          href="http://www.tnlea.com/lea/registration/application/"
+          href="https://access.auerc.com/acgcoeta"
           target="blank"
           className="quick-link"
         >
-          Lateral Admission
+          AUERC Remote Library
         </a>
         <a href="https://www.accet.co.in" target="blank" className="quick-link">
           Controller of Examination

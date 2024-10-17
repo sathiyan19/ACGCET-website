@@ -1,4 +1,3 @@
-
 const subjects_list = {
   "CSE_subs": {
     "19CMG15": { "credits": 4, "subname": "Basic Civil and Mechanical Engineering" },
@@ -116,7 +115,9 @@ const subjects_list = {
       "22NCC02": { "credits": 3, "subname": "NCC Credit Course Level 2" },
       "22CSL47": { "credits": 1.5, "subname": "Operating Systems Laboratory" },
       "22CSL48": { "credits": 2, "subname": "Network and Cyber Security Lab" },
-      "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" }
+      "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" },
+      /*ADDED*/
+      "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
      
   },
   "EEE_subs": {
@@ -178,7 +179,9 @@ const subjects_list = {
   
     "19EEE16": { "credits": 3, "subname": "Embedded System Design" },
     "19EEE21": { "credits": 3, "subname": "Power System Operation and Control" },
-  
+  /*ADDED*/
+  "19NM039": { "credits": 2, "subname": "Artificial Intelligence and Machine Learning Fundamentals (Naan Mudhalvan Course)" },
+  "22NM002": { "credits": 2, "subname": "Employability Skills (Nan Mudhalvan Course)" },
   
 
     "22HSE21": { credits: 2, subname: "Professional English-II" },
@@ -406,7 +409,7 @@ const subjects_list = {
     "22ECZ71": { "credits": 2, "subname": "Technical Seminar II" },
     "22ECP10": { "credits": 1.5, "subname": "Internship" },
     "22ECZ61": { "credits": 3, "subname": "Project Work" },
-    "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
+    "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
     "22MAB13": { "credits": 4, "subname": "Matrices, Calculus and Laplace Transforms" },
   "22HSL1B": { "credits": 1.5, "subname": "English Laboratory" },
   "22MEG24": { "credits": 4, "subname": "Engineering Graphics" },
@@ -423,12 +426,13 @@ const subjects_list = {
   "22ECL38": { "credits": 1.5, "subname": "C Programming and Data StructuresLaboratory"},
   "22ECZ39": { "credits": 1, "subname": "Professional Development"},
   "NPTEL14": { "credits": 3, "subname": "Programming in JAVA"},
+
   
   
   },
 
   "MEC_subs":{
-  "19EEG16": { "credits": 4, "subname": "Basic Electrical and Electronics Engineering" },
+  
   "19MAB12": { "credits": 4, "subname": "Mathematics I" },
   "19PHB13": { "credits": 4, "subname": "Physics: Properties of Materials and Mechanics" },
   "19CHB21": { "credits": 4, "subname": "Chemistry" },
@@ -462,6 +466,9 @@ const subjects_list = {
   "19MEC61": { "credits": 3, "subname": "Design of Mechanical Drives" },
   "19MEC62": { "credits": 3, "subname": "Heat and Mass Transfer" },
   "19MEC63": { "credits": 3, "subname": "Mechatronics" },
+  "19CMG15": { "credits": 4, "subname": "Basic Civil and Mechanical Engineering" },
+ 
+    "19ENH11": { "credits": 3, "subname": "Communicative English" },
   "19MEE08": { "credits": 3, "subname": "Design of Electric Vehicles" },
   "19MEE21": { "credits": 3, "subname": "Modern Machining Processes" },
   "19MEE24": { "credits": 3, "subname": "Non Destructive Testing and Evaluation" },
@@ -514,6 +521,7 @@ const subjects_list = {
   "22NM002": { "credits": 2, "subname": "Employability Skills (Nan Mudhalvan Course)" },
   "22CYB46": { "credits": 2, "subname": "Environmental Sciences and Sustainability" },
   "22NCC02": { "credits": 3, "subname": "NCC Credit Course Level 2" }
+  
 }
 ,
 
