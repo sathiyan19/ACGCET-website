@@ -116,7 +116,9 @@ const subjects_list = {
       "22NCC02": { "credits": 3, "subname": "NCC Credit Course Level 2" },
       "22CSL47": { "credits": 1.5, "subname": "Operating Systems Laboratory" },
       "22CSL48": { "credits": 2, "subname": "Network and Cyber Security Lab" },
-      "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" }
+      "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" },
+      /*ADDED*/
+      "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
      
   },
   "EEE_subs": {
@@ -178,7 +180,9 @@ const subjects_list = {
   
     "19EEE16": { "credits": 3, "subname": "Embedded System Design" },
     "19EEE21": { "credits": 3, "subname": "Power System Operation and Control" },
-  
+  /*ADDED*/
+  "19NM039": { "credits": 2, "subname": "Artificial Intelligence and Machine Learning Fundamentals (Naan Mudhalvan Course)" },
+  "22NM002": { "credits": 2, "subname": "Employability Skills (Nan Mudhalvan Course)" },
   
 
     "22HSE21": { credits: 2, subname: "Professional English-II" },
@@ -423,6 +427,7 @@ const subjects_list = {
   "22ECL38": { "credits": 1.5, "subname": "C Programming and Data StructuresLaboratory"},
   "22ECZ39": { "credits": 1, "subname": "Professional Development"},
   "NPTEL14": { "credits": 3, "subname": "Programming in JAVA"},
+
   
   
   },

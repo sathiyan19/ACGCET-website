@@ -447,6 +447,16 @@ const mech_fac_profiles = [
 
   },
   {
+    id: "2",
+    cover: cover,
+    dp: dpm,
+    name: "Dr.A.Athijayamani",
+    Designation: "Associate Professor",
+    mailid: "athimania@gmail.com",
+    pdf: "https://drive.google.com/file/d/1fot9OK8BzcgprLOdmmqEQs0X5LJm9h3z/view?usp=sharing",
+
+  },
+  {
     id: "3",
     cover: cover,
     dp: Geetha,

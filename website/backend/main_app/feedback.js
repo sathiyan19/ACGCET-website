@@ -9,7 +9,7 @@ const ratingsubmit = async (req, res) => {
         ratings
     } = req.body;
 
-    // Destructure ratings object
+    
     const {
         procurement_process,
         payment_process,
@@ -20,8 +20,6 @@ const ratingsubmit = async (req, res) => {
         ethical_practices,
         business_relationship
     } = ratings;
-
-    // SQL insert query
     const insertQuery = `
         INSERT INTO SupplierFeedback (
             supplier_name, product_supplied, branch,
