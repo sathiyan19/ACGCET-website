@@ -57,6 +57,7 @@
 
 import vimanthan from "../assets/pictures/vimanthan.webp"
 import raveena from "../assets/pictures/raveena.webp"
+import chess from "../assets/pictures/sports chess.webp"
 import baseketball_CM from "../assets/pictures/basketballimg.webp"
 import subha from "../assets/pictures/subhachess.webp"
 import swimming from "../assets/pictures/swimming.webp"

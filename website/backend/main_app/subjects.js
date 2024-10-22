@@ -1,4 +1,3 @@
-
 const subjects_list = {
   "CSE_subs": {
     "19CMG15": { "credits": 4, "subname": "Basic Civil and Mechanical Engineering" },
@@ -118,7 +117,7 @@ const subjects_list = {
       "22CSL48": { "credits": 2, "subname": "Network and Cyber Security Lab" },
       "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" },
       /*ADDED*/
-      "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
+      "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
      
   },
   "EEE_subs": {
@@ -410,7 +409,7 @@ const subjects_list = {
     "22ECZ71": { "credits": 2, "subname": "Technical Seminar II" },
     "22ECP10": { "credits": 1.5, "subname": "Internship" },
     "22ECZ61": { "credits": 3, "subname": "Project Work" },
-    "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
+    "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
     "22MAB13": { "credits": 4, "subname": "Matrices, Calculus and Laplace Transforms" },
   "22HSL1B": { "credits": 1.5, "subname": "English Laboratory" },
   "22MEG24": { "credits": 4, "subname": "Engineering Graphics" },
