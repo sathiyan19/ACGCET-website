@@ -1,0 +1,28 @@
+.pass_strength{
+    padding: 2px 30px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.password_str{
+    color: green;
+    /* padding: 2px 30px; */
+}
+.password_med{
+    color: #f8c33a;
+    /* padding: 2px 30px; */
+}
+.password_weak{
+    color: red;
+    /* padding: 2px 30px; */
+}
+
+.pass_not_match{
+    padding: 2px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+}
+
+.butt_disable{
+    background-color: gray !important;
+}
