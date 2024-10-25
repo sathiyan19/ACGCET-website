@@ -1,3 +1,4 @@
+import Athijayamani from '../assets/pictures/athijaya.webp'
 const dpm ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/boy.webp"
 const dpf ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/girl.webp"
 
@@ -90,6 +91,7 @@ const VENKATRAMAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.co
 const SARAVANAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/S.SARAVANAN.webp"
 const MURUGAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/T.MURUGAN.webp"
 const RAVICHANDRAN="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/Faculties/Supporting_fac/V.RAVICHANDRAN.webp"
+
 
 const mech_dept_menu = [
   {
@@ -444,6 +446,16 @@ const mech_fac_profiles = [
     Designation: "Associate Professor & Head",
     mailid: "sankarsaba@yahoo.com",
     pdf: "https://drive.google.com/file/d/1rGC4PQD03PjAaXxL_WQfXRFZmC0EOw_H/view?usp=sharing",
+
+  },
+  {
+    id: "2",
+    cover: cover,
+    dp: Athijayamani,
+    name: "Dr.A.Athijayamani",
+    Designation: "Associate Professor",
+    mailid: "athimania@gmail.com",
+    pdf: "https://drive.google.com/file/d/1fot9OK8BzcgprLOdmmqEQs0X5LJm9h3z/view?usp=sharing",
 
   },
   {

@@ -37,6 +37,27 @@ export const bulletin_info=[
 //             </span>
 //         ),
 //     },
+{
+    id:'32',
+    link:"https://drive.google.com/file/d/1wXyEODPnCv1wr5U1NSefTqYELbt651E9/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent"> Pragati/Saksham/Swanath/CSS Scholarship - Fresh/Renewal for AY 2024-25- Circular
+</span>
+        </span>
+    ),
+},
+
+{
+    id:'32',
+    link:"https://drive.google.com/file/d/1-AqGrns8S3EaGDqh75Fx9RudDbhmYqEp/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Two weeks student induction programme  Schedule for first year B.E  AY2024-2025
+            </span>
+        </span>
+    ),
+},
 
 {
     id:'32',
