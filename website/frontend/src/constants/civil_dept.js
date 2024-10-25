@@ -1,4 +1,6 @@
 import prakash from '../assets/pictures/Prakash.webp'
+import hari from '../assets/pictures/hari.webp'
+import sundar from '../assets/pictures/sundar.webp'
 //
 const ravena ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/Raveena+A_+Civil.webp"
 
@@ -772,6 +774,28 @@ const civ_stud_achivement =[
   "sub-head":
     "Abinaya.S has successfully completed the  NPTEL online certification course 'Introduction in Engineering Seismology'.",
   pic: nptl_cover,
+  content_1: "",
+  content_2: "",
+
+
+},
+{
+  id: "4",
+  heading: "Winner - Hari Shankar (III yr)",
+  "sub-head":
+  "Civil Engineering students won both the Winner and Runner-up spots in a public speaking competition during Vigilance Awareness Week 2024, hosted by POWERGRID. They received prizes worth Rs. 15,000 and mementos.",
+  pic: hari,
+  content_1: "",
+  content_2: "",
+
+
+},
+{
+  id: "5",
+  heading: "Runner - Sundhar Raj (III yr)",
+  "sub-head":
+  "Civil Engineering students won both the Winner and Runner-up spots in a public speaking competition during Vigilance Awareness Week 2024, hosted by POWERGRID. They received prizes worth Rs. 15,000 and mementos.",
+  pic: sundar,
   content_1: "",
   content_2: "",
 
