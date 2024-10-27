@@ -774,7 +774,6 @@ const civ_stud_achivement =[
     pic: gate_cover,
     content_1: "",
     content_2:    "We proudly congratulates our outstanding students, Kishore S. (2011022), Nagarajan L. (2011031), Nivetha S. (2011033), and Abiksha J. (2111001), for successfully clearing the GATE exam this year. Your exceptional dedication and hard work have led to this remarkable achievement. We are incredibly proud of your success and wish you all the best in your future endeavors. May you continue to excel and achieve great heights in your academic and professional journeys.",
-
 },
 {
   id: "3",
