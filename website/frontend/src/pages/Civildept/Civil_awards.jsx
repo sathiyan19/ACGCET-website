@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react'
+import "./Civil_awards.css"
 
 import {
     Backtotop,
@@ -50,22 +51,18 @@ const Civil_awards = () => {
                 <Underline heading="Patents & Copyrights"/>
                 {civ_patents.map((item)=><Timeline key={item.id} pdf={item.pdf} head={item.head} house={item.house} content={item.content}/>)}
               </div>
+    
+            </div>
 
+          </section>
+          <div className="civ__std_achiev-container">
               <div className="civ_stud_achievement">
                 <Underline heading="Students Achievements"/>
                 <div className='stud_achieve_cards row'>
                   {civ_stud_achivement.map((item)=><Modal heading={item.heading} pic={item.pic} content_1={item.content_1} content_2={item.content_2} link={item.link} sub_text={item["sub-head"]}/>)}
                 </div>
-
-
               </div>
-
-
-
-    
-            </div>
-
-          </section>
+              </div>
     
           <Backtotop />
         </div>

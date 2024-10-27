@@ -707,6 +707,14 @@ const civ_awards = [
     content:
       "Dr. S. R. Sumathy, As the Coordinator for IIRS has motivated students to enroll in the IIRS Outreach e-Learning Education Programme.",
   },
+  {
+    id: "9",
+    head: "",
+    house: "left",
+    pdf: "https://drive.google.com/file/d/1uAnQ2jEpQNf2LEBMqx4hZ29SC22mIbDe/view?usp=sharing",
+    content:
+      "Prof.B.Venkatesh received an appreciation certificate for the best Naan Mudhalvan coordinator from M.S. Sangeetha IAS (The District Collector, Madurai) and J Innocent Divya IAS (MD, TNSDC).",
+  },
 ];
 
 const civ_patents = [
