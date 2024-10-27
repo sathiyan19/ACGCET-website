@@ -17,7 +17,7 @@ const Cse_events = () => {
     <div className="csedept">
       <div className="csebg">
         <div className="cseheading">
-          Department of Electronics and Communication Engineering
+          Department of Computer Science and  Engineering
         </div>
         <div className="cse_sub_heading">Events</div>
       </div>
