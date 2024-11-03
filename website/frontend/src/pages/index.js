@@ -62,6 +62,11 @@ export {default as Eee_lab} from './Eeedept/Eee_lab'
 export {default as Eee_events} from './Eeedept/Eee_events'
 export {default as Eee_modern} from './Eeedept/Eee_modern'
 export {default as Ece_placement} from './Ecedept/Ece_placement'
+export{default as Ece_alumni91} from './Ecedept/Ece_alumni91'
+export{default as Ece_alumni92} from './Ecedept/Ece_alumni92'
+export{default as Ece_alumni93} from './Ecedept/Ece_alumni93'
+export{default as Ece_alumni_notable} from './Ecedept/Ece_alumni_notable'
+export{default as Ece_alumni}from './Ecedept/Ece_alumni'
 export {default as Ece_elect_test_coe} from './Ecedept/Ece_elect_test_coe'
 
 

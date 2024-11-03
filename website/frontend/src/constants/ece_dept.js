@@ -75,6 +75,90 @@
 // import sujitha_20 from '../assets/pictures/ece_dept/ece_rankers/sujitha_20.webp'
 
 
+import alagappan from "../assets/pictures/ece_alumni_pics/Alagappan Krishnan.jpg"
+import amuthan from "../assets/pictures/ece_alumni_pics/Amudhan Arumugam.jpg"
+import raja from "../assets/pictures/ece_alumni_pics/Dr B Raja Dhandapani.jpg"
+import periyaswamy from "../assets/pictures/ece_alumni_pics/Dr Periysamy Mariappan.jpg"
+import jayachitra from "../assets/pictures/ece_alumni_pics/Dr. R K Jeyachitra.jpg"
+import jayalakshmi from "../assets/pictures/ece_alumni_pics/Jayalakshmi.jpg"
+import Senthilkumar from "../assets/pictures/ece_alumni_pics/K Senthilkumar.jpg"
+import manivanan from "../assets/pictures/ece_alumni_pics/Manivannan.jpg"
+import premmurugasen from "../assets/pictures/ece_alumni_pics/Prem Murugesan.jpg"
+import rameshsudaram from "../assets/pictures/ece_alumni_pics/Ramesh Sundaram.jpg"
+import purijegannathan from "../assets/pictures/ece_alumni_pics/Puri Jegannathan.jpg"
+
+import satishthiyagarajan from "../assets/pictures/ece_alumni_pics/Satish Thiyagarajan.jpg"
+
+import tgvenkatesh from "../assets/pictures/ece_alumni_pics/T G Venkatesh.jpg"
+import ramsankar from "../assets/pictures/ece_alumni_pics/B Ramsankar.jpg"
+import Balasubramanian from "../assets/pictures/ece_alumni_pics/Balasubramanian.jpg"
+import baskaranmuthuswamy from "../assets/pictures/ece_alumni_pics/Baskaran Muthusamy.jpg"
+import sridhevi from "../assets/pictures/ece_alumni_pics/Dr B Sridevi.jpg"
+import Mohamedsiddique from "../assets/pictures/ece_alumni_pics/Mohamed Siddique.jpg"
+import mohankumar from "../assets/pictures/ece_alumni_pics/Mohankumar Jagannathan.jpg"
+import dineshbabu from "../assets/pictures/ece_alumni_pics/R. Dinesh Babu.jpg"
+import rajkumar from "../assets/pictures/ece_alumni_pics/Rajkumar R.jpg"
+import sivakumarnm from "../assets/pictures/ece_alumni_pics/Sivakumar Nm.jpg"
+import srinivasan from "../assets/pictures/ece_alumni_pics/Srinivasan Ranganathan.jpg"
+import sujaviswesan from "../assets/pictures/ece_alumni_pics/Suja Viswesan.jpg"
+import dakshinamurthy from "../assets/pictures/ece_alumni_pics/A Dakshinamurthy.jpg"
+import berlinsharmila from "../assets/pictures/ece_alumni_pics/Berlin Sharmila Manickam.jpg"
+import chidambaram from "../assets/pictures/ece_alumni_pics/Chidambaram M.jpg"
+import dittakavi from "../assets/pictures/ece_alumni_pics/DittakaviSuryanarayanan.jpg"
+import komalavalli from "../assets/pictures/ece_alumni_pics/Dr C Komalavalli.jpg"
+import dhinakaran from "../assets/pictures/ece_alumni_pics/Dr R DhinakaranSamuel.jpg"
+import selvakumarraja from "../assets/pictures/ece_alumni_pics/Dr S Selvakumar Raja.jpg"
+import durga from "../assets/pictures/ece_alumni_pics/Durga Priyadharshini.jpg"
+import eswaran from "../assets/pictures/ece_alumni_pics/Eswaran KP.jpg"
+import ganesh from "../assets/pictures/ece_alumni_pics/Ganesh CS.jpg"
+import gokul from "../assets/pictures/ece_alumni_pics/Gokul R.jpg"
+import gokulrama from "../assets/pictures/ece_alumni_pics/Gokul Ramamoorthy.jpg"
+import govindamoorthi from "../assets/pictures/ece_alumni_pics/Govindamoorthi P.jpg"
+import bharathiradha from "../assets/pictures/ece_alumni_pics/J Bharathi Radha.jpg"
+import muthu from "../assets/pictures/ece_alumni_pics/K Muthu.jpg"
+import kana from "../assets/pictures/ece_alumni_pics/Kanna K.jpg"
+import karthik from "../assets/pictures/ece_alumni_pics/Karthik K.jpg"
+import kumaraguru from "../assets/pictures/ece_alumni_pics/Kumaraguru.jpg"
+import mathuravani from "../assets/pictures/ece_alumni_pics/Madhuravani.jpg"
+import mahadevi from "../assets/pictures/ece_alumni_pics/Mahadevi T.jpg"
+import manikandan from "../assets/pictures/ece_alumni_pics/Manikandan Raghavan.jpg"
+import meenambal from "../assets/pictures/ece_alumni_pics/Meenambal M.jpg"
+import nagendran from "../assets/pictures/ece_alumni_pics/Nagendran D.jpg"
+import narayana from "../assets/pictures/ece_alumni_pics/Narayana Manickavasagam.jpg"
+import naveen from "../assets/pictures/ece_alumni_pics/Naveen Sam T.jpg"
+import navin from "../assets/pictures/ece_alumni_pics/Navin Frank l.jpg"
+import pitchai from "../assets/pictures/ece_alumni_pics/Pitchai Raman M.jpg"
+import ponnumani from "../assets/pictures/ece_alumni_pics/Ponnumani M.jpg"
+import priyaDharshini from "../assets/pictures/ece_alumni_pics/Priyadharshini Jeganathan.jpg"
+import balashanmuga from "../assets/pictures/ece_alumni_pics/R.P. Bala shanmuga Sundaram.jpg"
+import rajagopalan from "../assets/pictures/ece_alumni_pics/Rajagopalan Ravi.jpg"
+import ramaiah from "../assets/pictures/ece_alumni_pics/Ramaiah S.jpg"
+import ramesh from "../assets/pictures/ece_alumni_pics/Ramesh M.jpg"
+import ramkumarB from "../assets/pictures/ece_alumni_pics/Ramkumar B.jpg"
+import ramkumarR from "../assets/pictures/ece_alumni_pics/Ramkumar R.jpg"
+import Ponnalagu from "../assets/pictures/ece_alumni_pics/RN Ponnalagu.jpg"
+import roja from "../assets/pictures/ece_alumni_pics/Roja K S.jpg"
+import manohar from "../assets/pictures/ece_alumni_pics/S. Manohar.jpg"
+import saravanaMohan from "../assets/pictures/ece_alumni_pics/Saravanan Mohan.jpg"
+import senthilanathanpra from "../assets/pictures/ece_alumni_pics/Senthil Anandha Prakash J.jpg"
+import sheik from "../assets/pictures/ece_alumni_pics/Shiek Ashik S.jpg"
+import sivashankar from "../assets/pictures/ece_alumni_pics/Siva Shankar.jpg"
+import sivanantharaja from "../assets/pictures/ece_alumni_pics/Sivanantha Raja. A.jpg"
+import sowbharnika from "../assets/pictures/ece_alumni_pics/Sowbharanika Kumar K.jpg"
+import srikanth from "../assets/pictures/ece_alumni_pics/Srikanth Ramachandran.jpg"
+import srinivasanallaiya from "../assets/pictures/ece_alumni_pics/Srinivasa Nallaiya.jpg"
+import srinivasanranganathan from "../assets/pictures/ece_alumni_pics/Srinivasan Ranganathan.jpg"
+import subbiahrm from "../assets/pictures/ece_alumni_pics/Subbiah R M.jpg"
+import subbhuraj from "../assets/pictures/ece_alumni_pics/Subburaj Ramasamy.jpg"
+import sudhakar from "../assets/pictures/ece_alumni_pics/Sudhakar VR.jpg"
+import tamilmanan from "../assets/pictures/ece_alumni_pics/Tamilmanam Sambasivam.jpg"
+import thackor from "../assets/pictures/ece_alumni_pics/Thackor Singh.jpg"
+import thirumaraiselvan from "../assets/pictures/ece_alumni_pics/Thirumaraiselvan.jpg"
+import velupalani from "../assets/pictures/ece_alumni_pics/Velu Palani.jpg"
+import venkataraghavan from "../assets/pictures/ece_alumni_pics/Venkataraghavan PK.jpg"
+import vijaypriya from "../assets/pictures/ece_alumni_pics/Vijayapriya V.jpg"
+import partha from "../assets/pictures/ece_alumni_pics/Parthasarathi.jpg"
+import surya from "../assets/pictures/ece_alumni_pics/Surya UR.jpg"
 
 const dpm="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/boy.webp"
 const dpf="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/girl.webp"
@@ -163,7 +247,6 @@ const basketball="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com
 const football="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/ece_24football.webp"
 const handball="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Ece/studentactivity/handball24_ece.webp"
 
-
 const ece_dept_menu = [
   {
     id: "1",
@@ -242,6 +325,12 @@ const ece_dept_menu = [
     id: "13",
     path: "/ecedept/Ece_elect_test_coe",
     link: "Electronics Test Engineering",
+    arl: "l",
+  },
+  {
+    id: "14",
+    path: "/ecedept/ece-alumni",
+    link: "Alumni",
     arl: "l",
   },
 ];
@@ -735,6 +824,1417 @@ const ece_rankers = [
   
 ];
 
+const ece_alumni91= [
+  {
+    head:"1991-1995 Batch",
+    rankers:[
+     
+   
+        {
+          id: "1",
+          cover: cover, // Replace with actual cover
+          dp: manivanan, // Replace with actual profile picture
+          name: "Manivannan",
+          Designation: "Senior Vice President, Engineering, Stealth AI and Data Startup",
+          mailid: "Seattle, USA", // Location only
+        },
+        {
+          id: "2",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Janakiram Annam",
+          Designation: "Founder, Hachidori Robotics",
+          mailid: "Bangalore, India", // Location only
+        },
+        {
+          id: "3",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Venkataraman Natarajan",
+          Designation: "Head of Operations – Quality, Hachidori Robotics",
+          mailid: "Bangalore, India", // Location only
+        },
+        {
+          id: "4",
+          cover: cover, // Replace with actual cover
+          dp: jayalakshmi, // Replace with actual profile picture
+          name: "Jayalakshmi",
+          Designation: "Director, Orange Sorting Machines India Pvt ltd",
+          mailid: "Coimbatore, India", // Location only
+        },
+        {
+          id: "5",
+          cover: cover, // Replace with actual cover
+          dp: rameshsudaram, // Replace with actual profile picture
+          name: "Ramesh Sundaram",
+          Designation: "Product Manager, NTT DATA",
+          mailid: "Bangalore, India", // Location only
+        },
+        {
+          id: "6",
+          cover: cover, // Replace with actual cover
+          dp: amuthan, // Replace with actual profile picture
+          name: "Amudhan Arumugam",
+          Designation: "Delivery Manager, Kumaran Systems PVT Ltd.",
+          mailid: "Chennai, India", // Location only
+        },
+        {
+          id: "7",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Saminathan D",
+          Designation: "Founder, Undisclosed Tech/Startup",
+          mailid: "Los Angeles, CA", // Location only
+        },
+        {
+          id: "8",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Martin Ebinezer",
+          Designation: "Senior Manager, Conduent",
+          mailid: "Boston, MA", // Location only
+        },
+        {
+          id: "9",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Mani Padmanaban",
+          Designation: "Senior Sales Manager, Financial Services & Investments",
+          mailid: "New York", // Location only
+        },
+        {
+          id: "10",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Hari Nadathur",
+          Designation: "Senior Manager, Salesforce",
+          mailid: "Dallas, USA", // Location only
+        },
+        {
+          id: "11",
+          cover: cover, 
+          dp: alagappan, 
+          name: "Alagappan Krishnan",
+          Designation: "Sr Director ops Engg, Flextronics",
+          mailid: "Chengalpattu, India", // Location only
+        },
+        {
+          id: "12",
+          cover: cover, // Replace with actual cover
+          dp: Senthilkumar, // Replace with actual profile picture
+          name: "K Senthilkumar",
+          Designation: "Sr Manager - Testing mgmt., Capgemini",
+          mailid: "Chennai, India", // Location only
+        },
+        {
+          id: "13",
+          cover: cover, // Replace with actual cover
+          dp: purijegannathan, // Replace with actual profile picture
+          name: "Puri Jegannathan",
+          Designation: "VP- IT Systems, PNC Bank",
+          mailid: "Baden, Pennsylvania, USA", // Location only
+        },
+        {
+          id: "14",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "V Kandasamy",
+          Designation: "Sr Software Architect, Wipro technologies",
+          mailid: "Bangalore, India", // Location only
+        },
+        {
+          id: "15",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Ramanathan Muthiah",
+          Designation: "Senior DevOps Engineer, Trellix",
+          mailid: "Bengaluru, India", // Location only
+        },
+        {
+          id: "16",
+          cover: cover, // Replace with actual cover
+          dp: tgvenkatesh, // Replace with actual profile picture
+          name: "T G Venkatesh",
+          Designation: "Principal member of Technical staff, Geo Semiconductors",
+          mailid: "Bengaluru, India", // Location only
+        },
+        {
+          id: "17",
+          cover: cover, // Replace with actual cover
+          dp: satishthiyagarajan, // Replace with actual profile picture
+          name: "Satish Thiyagarajan",
+          Designation: "Co-founder & CEO, Zebra Robotics Inc",
+          mailid: "Ontario, Canada", // Location only
+        },
+        {
+          id: "18",
+          cover: cover, // Replace with actual cover
+          dp: rajkumar, // Replace with actual profile picture
+          name: "Rajkumar R Erode",
+          Designation: "Sr Director, Buckeye partners",
+          mailid: "Fulshear, Texas, USA", // Location only
+        },
+        {
+          id: "19",
+          cover: cover, // Replace with actual cover
+          dp: periyaswamy, // Replace with actual profile picture
+          name: "Dr Periysamy Mariappan",
+          Designation: "Principal member of Technical staff, Syed Ammal Engineering College",
+          mailid: "Landai, Ramanathapuram district", // Location only
+        },
+        {
+          id: "20",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Balaji Chandrasekaran",
+          Designation: "Enterprise Solutions Architect, Accenture",
+          mailid: "Dallas, USA", // Location only
+        },
+        {
+          id: "21",
+          cover: cover, // Replace with actual cover
+          dp: jayachitra, // Replace with actual profile picture
+          name: "Dr. R K Jeyachitra",
+          Designation: "Professor, National Institute of Technology",
+          mailid: "Trichy, India", // Location only
+        },
+        {
+          id: "22",
+          cover: cover, // Replace with actual cover
+          dp: premmurugasen, // Replace with actual profile picture
+          name: "Prem Murugesan",
+          Designation: "Executive Director, Wells Fargo",
+          mailid: "Flowermound, Texas, USA", // Location only
+        },
+        {
+          id: "23",
+          cover: cover, // Replace with actual cover
+          dp: raja, // Replace with actual profile picture
+          name: "Dr B Raja Dhandapani",
+          Designation: "Mathematician – Researcher, Wichita State University",
+          mailid: "Kansas, USA", // Location only
+        },
+        {
+          id: "24",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Dr. Martin Leo Manickam",
+          Designation: "Professor, ECE Department, St. Joseph College of Engineering",
+          mailid: "Chennai", // Location only
+        }
+      ]
+  }
+]
+const ece_alumni92=[
+  {
+    head:"1992-1996 Batch",
+    rankers:[
+    
+        {
+          id: "1",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Adinarayanamurthy P",
+          Designation: "US – East",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "2",
+          cover: cover, // Replace with actual cover
+          dp:dpm, // Replace with actual profile picture
+          name: "Alagappan P",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "3",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Anuradha R",
+          Designation: "Bangalore",
+          mailid: "India", // Location only
+        },
+        {
+          id: "4",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Dillip Kumar S",
+          Designation: "US – West",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "5",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Ganesh S",
+          Designation: "USA",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "6",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Gayathri Magie",
+          Designation: "US – Mid",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "7",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Gnanavel",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "8",
+          cover: cover, // Replace with actual cover
+          dp:dpf, // Replace with actual profile picture
+          name: "Hemalatha S",
+          Designation: "US – East",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "9",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Jayabarathi S",
+          Designation: "US – West",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "10",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Jayaprakash V",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "11",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Karpagam S",
+          Designation: "US – West",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "12",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Karunakaran D",
+          Designation: "US – Mid",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "13",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Kumaran M",
+          Designation: "US – East",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "14",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Lakshmi",
+          Designation: "Europe",
+          mailid: "UK", // Location only
+        },
+        {
+          id: "15",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Muthukrishnan Kalyani",
+          Designation: "Bangalore",
+          mailid: "India", // Lodpm
+        },
+        {
+          id: "16",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Muthuravishankar S",
+          Designation: "US – Mid",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "17",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Ormila",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "18",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Padma Venu",
+          Designation: "North India",
+          mailid: "India", // Location only
+        },
+        {
+          id: "19",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Pasu Gnanasundaram",
+          Designation: "US – East",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "20",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Pushpalatha",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "21",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Rajani Sunder",
+          Designation: "Australia",
+          mailid: "Australia", // Location only
+        },
+        {
+          id: "22",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Ramasubramaniam S",
+          Designation: "Bangalore",
+          mailid: "India", // Location only
+        },
+        {
+          id: "23",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Ramkumar G",
+          Designation: "US – East",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "24",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Renald Abel",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "25",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "SathishKumar Kuppuswamy",
+          Designation: "US – West",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "26",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Sathyanarayanan M",
+          Designation: "Bangalore",
+          mailid: "India", // Location only
+        },
+        {
+          id: "27",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Seetha Padmanabhan",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "28",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Selvan Hitler",
+          Designation: "US – West",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "29",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Senthilnathan G",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "30",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Sharada P",
+          Designation: "US – East",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "31",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Srimathy P",
+          Designation: "Europe",
+          mailid: "UK", // Location only
+        },
+        {
+          id: "32",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Swarnasaras",
+          Designation: "Bangalore",
+          mailid: "India", // Location only
+        },
+        {
+          id: "33",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "Thaiyalnayaki S P",
+          Designation: "Chennai",
+          mailid: "India", // Location only
+        },
+        {
+          id: "34",
+          cover: cover, // Replace with actual cover
+          dp: dpf, // Replace with actual profile picture
+          name: "UshaRani",
+          Designation: "US – West",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "35",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Venkataraman J",
+          Designation: "North India",
+          mailid: "India", // Location only
+        },
+        {
+          id: "36",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Venkataramanan P",
+          Designation: "US – East",
+          mailid: "USA", // Location only
+        },
+        {
+          id: "37",
+          cover: cover, // Replace with actual cover
+          dp: dpm, // Replace with actual profile picture
+          name: "Venkatesan Balasubramanian",
+          Designation: "US – East",
+          mailid: "USA", // Location only
+        },
+      ]
+      
+  }
+]
+const ece_alumni93=[
+
+
+  {
+    head:"1993-1997 Batch",
+    rankers:[
+      {
+        id: "1",
+        cover: cover, // Replace with actual cover image
+        dp: ramsankar, // Replace with actual profile picture
+        name: "B Ramsankar",
+        Designation: "Senior Consultant, EViDEN [Atos] Pvt. Ltd.",
+        mailid: "Chennai, Tamil Nadu, India",
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: sridhevi,
+        name: "Dr B Sridevi",
+        Designation: "Dean, Velammal Institute of Technology",
+        mailid: "Chennai",
+      },
+      {
+        id: "3",
+        cover: cover,
+        dp: baskaranmuthuswamy,
+        name: "Baskaran Muthusamy",
+        Designation: "Software Manager, KLA",
+        mailid: "Chennai",
+      },
+      {
+        id: "4",
+        cover: cover,
+        dp: dpm,
+        name: "Venkatesh Annadurai (Venky)",
+        Designation: "SVP of Technology, Patelco Credit Union",
+        mailid: "California, USA",
+      },
+      {
+        id: "5",
+        cover: cover,
+        dp: sivakumarnm,
+        name: "Sivakumar Nm",
+        Designation: "Delivery Manager, L&T Technology Services",
+        mailid: "Chennai",
+      },
+      {
+        id: "6",
+        cover: cover,
+        dp: dpf,
+        name: "Thavamani",
+        Designation: "IT Consultant, Commonwealth Bank",
+        mailid: "Australia",
+      },
+      {
+        id: "7",
+        cover: cover,
+        dp: srinivasan,
+        name: "Srinivasan Ranganathan",
+        Designation: "Chief Technology Officer, CalcFocus Inc",
+        mailid: "Philadelphia, PA",
+      },
+      {
+        id: "8",
+        cover: cover,
+        dp: dpm,
+        name: "Mukunthan Narasimhan",
+        Designation: "Executive Director, JP Morgan Chase",
+        mailid: "Singapore",
+      },
+      {
+        id: "9",
+        cover: cover,
+        dp: dineshbabu,
+        name: "R. Dinesh Babu",
+        Designation: "Pre-Si Verification Engineer, Intel Technology India Pvt Ltd",
+        mailid: "Bangalore",
+      },
+      {
+        id: "10",
+        cover: cover,
+        dp: dpf,
+        name: "Amudha R V",
+        Designation: "Director, Product Management Sourcing & Contracts, SAP Labs India Pvt Limited",
+        mailid: "Bangalore",
+      },
+      {
+        id: "11",
+        cover: cover,
+        dp: dpf,
+        name: "K Kannika Sudharsini",
+        Designation: "Deputy General Manager, Electronics Corporation of India Limited",
+        mailid: "Hyderabad",
+      },
+      {
+        id: "12",
+        cover: cover,
+        dp: dpm,
+        name: "S. Arumugam",
+        Designation: "Academic Director, Sai Sankalp Nursery and Primary School",
+        mailid: "Chennai",
+      },
+      {
+        id: "13",
+        cover: cover,
+        dp: dpm,
+        name: "Chinthukumar V K",
+        Designation: "Principal Engineer, Broadcom",
+        mailid: "San Jose, California, USA",
+      },
+      {
+        id: "14",
+        cover: cover,
+        dp: dpf,
+        name: "Clara P",
+        Designation: "Vice President, Bank of America",
+        mailid: "Chennai, India",
+      },
+      {
+        id: "15",
+        cover: cover,
+        dp: dpm,
+        name: "R. Balamurali",
+        Designation: "Co-Founder, Zeetaminds Technologies Pvt Ltd",
+        mailid: "Chennai",
+      },
+      {
+        id: "16",
+        cover: cover,
+        dp: dpm,
+        name: "Murugaraj Narayanan",
+        Designation: "Sr. Director IT & Security, Prochant",
+        mailid: "Chennai",
+      },
+      {
+        id: "17",
+        cover: cover,
+        dp: dpm,
+        name: "Krishna Janakiraman",
+        Designation: "Principal Engineer/Manager, Qualcomm",
+        mailid: "San Diego",
+      },
+      {
+        id: "18",
+        cover: cover,
+        dp: dpm,
+        name: "K. Velmurugan",
+        Designation: "Enterprise Architect, Tech Mahindra",
+        mailid: "Chennai",
+      },
+      {
+        id: "19",
+        cover: cover,
+        dp: dpm,
+        name: "Ashok Anandh Kumar",
+        Designation: "Sr. Manager, NCR Voyix",
+        mailid: "Chennai",
+      },
+      {
+        id: "20",
+        cover: cover,
+        dp: mohankumar,
+        name: "Mohankumar Jagannathan",
+        Designation: "Head of App Dev - Risk & Operations, Sculptor Capital",
+        mailid: "New York, NY",
+      },
+      {
+        id: "21",
+        cover: cover,
+        dp: dpm,
+        name: "Balaji Ramaswamy",
+        Designation: "Director of Engineering, Financial Industry Regulatory Authority",
+        mailid: "Washington DC",
+      },
+      {
+        id: "22",
+        cover: cover,
+        dp: Mohamedsiddique,
+        name: "Mohamed Siddique",
+        Designation: "Business Technology Director, Aljomiah Holding Company",
+        mailid: "Riyadh, Saudi Arabia",
+      },
+      {
+        id: "23",
+        cover: cover,
+        dp: dpm,
+        name: "Thiagarajan Karunanithi",
+        Designation: "Associate Partner, Infosys Consulting",
+        mailid: "Melbourne, Australia",
+      },
+      {
+        id: "24",
+        cover: cover,
+        dp: dpm,
+        name: "Vijay Anand",
+        Designation: "Director, Veritas Technologies",
+        mailid: "Bangalore",
+      },
+      {
+        id: "25",
+        cover: cover,
+        dp: dpf,
+        name: "Vijaya Gurumurthi",
+        Designation: "Application Specialist, SOAS, University of London",
+        mailid: "London",
+      },
+      {
+        id: "26",
+        cover: cover,
+        dp: dpm,
+        name: "Ramkumar",
+        Designation: "Software Engineer, Bank of America",
+        mailid: "Chennai",
+      },
+      {
+        id: "27",
+        cover: cover,
+        dp: Balasubramanian,
+        name: "Balasubramanian Viswanathan",
+        Designation: "Director of Technology & Fintech Site Leader, Booking Holdings India Private Limited",
+        mailid: "Bangalore",
+      },
+      {
+        id: "28",
+        cover: cover,
+        dp: sujaviswesan,
+        name: "Suja Viswesan",
+        Designation: "Vice President, IBM",
+        mailid: "USA",
+      }
+    ]
+  }
+]
+const ece_notablealumni=[
+  {
+    head: "1973 BATCH",
+    rankers: [
+      {
+        id: "1",
+        cover: cover, // Replace with actual cover image
+        dp: subbhuraj,
+        name: "Subburaj Ramasamy",
+        Designation: "Senior Director/Scientist 'G' (Retd.), Ministry of Electronics and Information Technology, Government of India",
+        mailid: "Chennai, Tamil Nadu, India"
+      },
+      {
+        id: "2",
+        cover: cover,
+        dp: dpm,
+        name: "Baskaran",
+        Designation: "President and CEO, NELITO LTD",
+        mailid: "Mumbai, Maharashtra, India"
+      }
+    ]
+  },
+  {
+    head: "1977 BATCH",
+    rankers: [
+      {
+        id: "3",
+        cover: cover,
+        dp: rajagopalan,
+        name: "Rajagopalan Ravi",
+        Designation: "Retired Manager, Product Development and QA, Aditya Medical Systems, Hyderabad",
+        mailid: "Hyderabad, Telangana, India"
+      },
+      {
+        id: "4",
+        cover: cover,
+        dp: nagendran,
+        name: "Nagendran D",
+        Designation: "Retired Principal, V.S.V.N Polytechnic College, Virudhunagar",
+        mailid: "Virudhunagar, Tamil Nadu, India"
+      },
+      {
+        id: "5",
+        cover: cover,
+        dp: dittakavi,
+        name: "Dittakavi Suryanarayanan",
+        Designation: "Retired Manager/Centre Head, ICFAI/Emitac, UAE-Mustfa Sultan S&I, Oman",
+        mailid: "Oman"
+      },
+      {
+        id: "6",
+        cover: cover,
+        dp: dhinakaran,
+        name: "Dr R Dhinakaran Samuel",
+        Designation: "Professor Emirates, Loyola Institute of Technology, Chennai",
+        mailid: "Chennai, Tamil Nadu, India"
+      },
+      {
+        id: "7",
+        cover: cover,
+        dp: balashanmuga,
+        name: "R.P. Bala Shanmuga Sundaram",
+        Designation: "Retired AGM, Bharat Electronics Ltd",
+        mailid: "Bengaluru, Karnataka, India"
+      },
+      {
+        id: "8",
+        cover: cover,
+        dp: manohar,
+        name: "S. Manohar",
+        Designation: "AddI Member /Railway Board (Rtd.), Consultant, Design Engineer, DFCCIL",
+        mailid: "Delhi, India"
+      }
+    ]
+  },
+  {
+    head: "1978 BATCH",
+    rankers: [
+      {
+        id: "9",
+        cover: cover,
+        dp: muthu,
+        name: "K Muthu",
+        Designation: "Senior Principal Scientist (Retd.), CSIR-CECRI",
+        mailid: "Karaikudi, Tamil Nadu, India"
+      }
+    ]
+  },
+ 
+    {
+      head: "1980 BATCH",
+      rankers: [
+        {
+          id: "1",
+          cover: cover,
+          dp: narayana,
+          name: "Narayana Manickavasagam",
+          Designation: "Data Architect",
+          mailid: "NT Government, Australia"
+        },
+        {
+          id: "2",
+          cover: cover,
+          dp: bharathiradha,
+          name: "J Bharathi Radha",
+          Designation: "Chief Engineer (Electronics and Communication)",
+          mailid: "Oil and Natural Gas Corporation Ltd"
+        },
+        {
+          id: "3",
+          cover: cover,
+          dp: subbiahrm,
+          name: "Subbiah R M",
+          Designation: "Chief General Manager (Retd.)",
+          mailid: "Department of Telecom"
+        }
+      ]
+    },
+    {
+      head: "1983 BATCH",
+      rankers: [
+        {
+          id: "4",
+          cover: cover,
+          dp: dakshinamurthy,
+          name: "A Dakshinamurthy",
+          Designation: "Chief General Manager (E&T) (Retd.)",
+          mailid: "Oil & Natural Gas Corporation Ltd (A Govt of India U/T)"
+        }
+      ]
+    },
+    {
+      head: "1984 BATCH",
+      rankers: [
+        {
+          id: "5",
+          cover: cover,
+          dp: senthilanathanpra,
+          name: "Senthil Anandha Prakash J",
+          Designation: "CEO",
+          mailid: "Prakash Motors, Sivakasi"
+        }
+      ]
+    },
+    {
+      head: "1987 BATCH",
+      rankers: [
+        {
+          id: "6",
+          cover: cover,
+          dp: sivanantharaja,
+          name: "Sivanantha Raja A",
+          Designation: "Professor of ECE",
+          mailid: "Alagappa Chettiar College of Engineering and Technology, Karaikudi"
+        }
+      ]
+    },
+    {
+      head: "1988 BATCH",
+      rankers: [
+        {
+          id: "7",
+          cover: cover,
+          dp: srikanth,
+          name: "Srikanth Ramachandran",
+          Designation: "Founder CEO",
+          mailid: "Moving Walls Pte Ltd"
+        }
+      ]
+    },
+    {
+      head: "1989 BATCH",
+      rankers: [
+        {
+          id: "8",
+          cover: cover,
+          dp: selvakumarraja,
+          name: "Dr S Selvakumar Raja",
+          Designation: "Principal",
+          mailid: "Kakatiya Institute of Technology and Science for Women, Nizamabad, Telangana"
+        },
+        {
+          id: "9",
+          cover: cover,
+          dp: ramesh,
+          name: "Ramesh M",
+          Designation: "Self Employed",
+          mailid: "Sandeep Systems"
+        },
+        {
+          id: "10",
+          cover: cover,
+          dp: ramaiah,
+          name: "Ramaiah S",
+          Designation: "Vice President",
+          mailid: "HCL Tech"
+        }
+      ]
+    },
+    {
+      head: "1990 BATCH",
+      rankers: [
+        {
+          id: "11",
+          cover: cover,
+          dp: Balasubramanian,
+          name: "Dr R Balasubramani",
+          Designation: "Professor in ISE",
+          mailid: "NMAM Institute of Technology (NITTE Deemed-to-be-University), Nitte, Karnataka"
+        },
+        {
+          id: "12",
+          cover: cover,
+          dp: chidambaram,
+          name: "Chidambaram M",
+          Designation: "Country Head",
+          mailid: "Relevance Lab Pvt Ltd"
+        }
+      ]
+    },
+    {
+      head: "1991 BATCH",
+      rankers: [
+        {
+          id: "13",
+          cover: cover,
+          dp: komalavalli,
+          name: "Dr C Komalavalli",
+          Designation: "Professor",
+          mailid: "Presidency University, Bengaluru"
+        },
+        {
+          id: "14",
+          cover: cover,
+          dp: dpm,
+          name: "Janakiraman Muthusamy",
+          Designation: "Assistant Engineer",
+          mailid: "Doordarshan Kendra, Mumbai"
+        }
+      ]
+    },
+    {
+      head: "1992 BATCH",
+      rankers: [
+        {
+          id: "15",
+          cover: cover,
+          dp: venkataraghavan,
+          name: "Venkataraghavan PK",
+          Designation: "Director of Engineering",
+          mailid: "Infineon Technologies, USA"
+        },
+        {
+          id: "16",
+          cover: cover,
+          dp: thirumaraiselvan,
+          name: "Thirumaraiselvan",
+          Designation: "Professor of ECE",
+          mailid: "Adhiparasakthi Engineering College, Melmaruvathur"
+        }
+      ]
+    },
+    {
+      head: "1993 BATCH",
+      rankers: [
+        {
+          id: "17",
+          cover: cover,
+          dp: sudhakar,
+          name: "Sudhakar VR",
+          Designation: "Director",
+          mailid: "RM Applications, Malaysia"
+        }
+      ]
+    },
+    {
+      head: "1995 BATCH",
+      rankers: [
+        {
+          id: "18",
+          cover: cover,
+          dp: sivashankar,
+          name: "Siva Shankar",
+          Designation: "Senior Manager",
+          mailid: "Sony Pictures Network India Pvt Ltd"
+        }
+      ]
+    },
+    {
+      head: "1997 BATCH",
+      rankers: [
+        {
+          id: "19",
+          cover: cover,
+          dp: baskaranmuthuswamy,
+          name: "Baskaran Muthusamy",
+          Designation: "Software Manager",
+          mailid: "KLA"
+        }
+      ]
+    },
+    {
+      head: "1999 BATCH",
+      rankers: [
+        {
+          id: "20",
+          cover: cover,
+          dp: ganesh,
+          name: "Ganesh CS",
+          Designation: "Computer Scientist",
+          mailid: "Information Sciences Institute"
+        },
+        {
+          id: "21",
+          cover: cover,
+          dp: tamilmanan,
+          name: "Tamilmanam Sambasivam",
+          Designation: "Solutions Architect",
+          mailid: "Amazon"
+        }
+      ]
+    },
+    {
+      head: "2000 BATCH",
+      rankers: [
+        {
+          id: "22",
+          cover: cover,
+          dp: manikandan,
+          name: "Manikandan Raghavan",
+          Designation: "IT Consultant",
+          mailid: "Private Organization"
+        },
+        {
+          id: "23",
+          cover: cover,
+          dp: Ponnalagu,
+          name: "RN Ponnalagu",
+          Designation: "Associate Professor",
+          mailid: "BITS Pilani Hyderabad Campus"
+        },
+        {
+          id: "24",
+          cover: cover,
+          dp: kumaraguru,
+          name: "Kumaraguru Narayanan",
+          Designation: "Director",
+          mailid: "Securden Technology"
+        }
+      ]
+    },
+    {
+      head: "2002 BATCH",
+      rankers: [
+        {
+          id: "1",
+          cover: cover,
+          dp: ramkumarR,
+          name: "Ramkumar R",
+          Designation: "Senior Technologist",
+          mailid: "Western Digital"
+        }
+      ]
+    },
+    {
+      head: "2005 BATCH",
+      rankers: [
+        {
+          id: "2",
+          cover: cover,
+          dp: velupalani,
+          name: "Velu Palani",
+          Designation: "Enterprise Data Architect",
+          mailid: "Johnson Controls"
+        },
+        {
+          id: "3",
+          cover: cover,
+          dp: saravanaMohan,
+          name: "Saravanan Mohan",
+          Designation: "Director of Software Engineering",
+          mailid: "Trellix"
+        },
+        {
+          id: "4",
+          cover: cover,
+          dp: karthi,
+          name: "Karthik K",
+          Designation: "Senior Software Engineer Manager",
+          mailid: "Juniper Network"
+        }
+      ]
+    },
+    {
+      head: "2006 BATCH",
+      rankers: [
+        {
+          id: "5",
+          cover: cover,
+          dp: berlinsharmila,
+          name: "Berlin Sharmila Manickam",
+          Designation: "Manager",
+          mailid: "Cognizant Technology Solutions"
+        }
+      ]
+    },
+    {
+      head: "2007 BATCH",
+      rankers: [
+        {
+          id: "6",
+          cover: cover,
+          dp: naveen,
+          name: "Naveen Sam T",
+          Designation: "Associate Consultant",
+          mailid: "Tata Consultancy Service"
+        },
+        {
+          id: "7",
+          cover: cover,
+          dp: gokul,
+          name: "Gokul Ramamoorthy",
+          Designation: "Senior Analyst",
+          mailid: "DXC Technology"
+        }
+      ]
+    },
+    {
+      head: "2010 BATCH",
+      rankers: [
+        {
+          id: "8",
+          cover: cover,
+          dp: pitchai,
+          name: "Pitchai Raman M",
+          Designation: "Manager",
+          mailid: "Canara Bank"
+        },
+        {
+          id: "9",
+          cover: cover,
+          dp: priyaDharshini,
+          name: "Priyadharshini Jeganathan",
+          Designation: "Test Manager",
+          mailid: "Accenture"
+        }
+      ]
+    },
+    {
+      head: "2011 BATCH",
+      rankers: [
+        {
+          id: "10",
+          cover: cover,
+          dp: srinivasanallaiya,
+          name: "Srinivasa Nallaiya",
+          Designation: "Associate Consultant",
+          mailid: "Tata Consultancy Service"
+        },
+        {
+          id: "11",
+          cover: cover,
+          dp: thackor,
+          name: "Thackor Singh",
+          Designation: "Assistant Vice President",
+          mailid: "Citi"
+        }
+      ]
+    },
+    {
+      head: "2012 BATCH",
+      rankers: [
+        {
+          id: "12",
+          cover: cover,
+          dp: govindamoorthi,
+          name: "Govindamoorthi P",
+          Designation: "Engineering Assistant",
+          mailid: "Southern Railways"
+        }
+      ]
+    },
+    {
+      head: "2015 BATCH",
+      rankers: [
+        {
+          id: "13",
+          cover: cover,
+          dp: sowbharnika,
+          name: "Sowbharanika Kumar K",
+          Designation: "Chief Marketing Officer",
+          mailid: "Musquare Technologies Private Ltd"
+        }
+      ]
+    },
+    {
+      head: "2017 BATCH",
+      rankers: [
+        {
+          id: "14",
+          cover: cover,
+          dp: mathuravani,
+          name: "Madhuravani",
+          Designation: "Design Verification Engineer",
+          mailid: "PravegaSemi Pvt Ltd"
+        },
+        {
+          id: "15",
+          cover: cover,
+          dp: durga,
+          name: "Durga Priyadharshini",
+          Designation: "IT Analyst",
+          mailid: "TCS"
+        }
+      ]
+    },
+    {
+      head: "2019 BATCH",
+      rankers: [
+        {
+          id: "16",
+          cover: cover,
+          dp: ponnumani,
+          name: "Ponnumani M",
+          Designation: "Customer Service Associate",
+          mailid: "Bank Of India"
+        }
+      ]
+    },
+    {
+      head: "2020 BATCH",
+      rankers: [
+        {
+          id: "17",
+          cover: cover,
+          dp: roja,
+          name: "Roja K S",
+          Designation: "Life Cycle Information Specialist",
+          mailid: "Hitachi Energy"
+        },
+        {
+          id: "18",
+          cover: cover,
+          dp: kana,
+          name: "Kanna K",
+          Designation: "Software Developer",
+          mailid: "ZOHO"
+        }
+      ]
+    },
+    {
+      head: "2021 BATCH",
+      rankers: [
+        {
+          id: "19",
+          cover: cover,
+          dp: sheik,
+          name: "Shiek Ashik S",
+          Designation: "Software Developer",
+          mailid: "NielsenIQ"
+        },
+        {
+          id: "20",
+          cover: cover,
+          dp: meenambal,
+          name: "Meenambal M",
+          Designation: "Data Engineer",
+          mailid: "Wavicle Data Solutions, Coimbatore"
+        },
+        {
+          id: "21",
+          cover: cover,
+          dp: navin,
+          name: "Navin Frank L",
+          Designation: "Member Technical Staff",
+          mailid: "ZOHO Corporation"
+        }
+      ]
+    },
+    {
+      head: "2023 BATCH",
+      rankers: [
+        {
+          id: "22",
+          cover: cover,
+          dp: partha,
+          name: "Parthasarathi",
+          Designation: "AWS Solution Architect",
+          mailid: "JETZERP Pvt Ltd"
+        }
+      ]
+    },
+    {
+      head: "2024 BATCH",
+      rankers: [
+        {
+          id: "23",
+          cover: cover,
+          dp: ramkumarB,
+          name: "Ramkumar B",
+          Designation: "Quality Analyst",
+          mailid: "ZOHO Corporation"
+        },
+        {
+          id: "24",
+          cover: cover,
+          dp: eswaran,
+          name: "Eswaran KP",
+          Designation: "Member Technical Staff",
+          mailid: "ZOHO"
+        },
+        {
+          id: "25",
+          cover: cover,
+          dp: surya,
+          name: "Surya UR",
+          Designation: "Java Developer",
+          mailid: "Alpharithm Technologies Pvt Ltd, Adyar"
+        },
+        {
+          id: "26",
+          cover: cover,
+          dp: mahadevi,
+          name: "Mahadevi T",
+          Designation: "Management Trainee",
+          mailid: "JETZERP Pvt Ltd"
+        },
+        {
+          id: "27",
+          cover: cover,
+          dp: vijaypriya,
+          name: "Vijayapriya V",
+          Designation: "Graduate Engineer Trainee",
+          mailid: "Schneider Electric India Pvt Ltd"
+        },
+        {
+          id: "28",
+          cover: cover,
+          dp: gokul,
+          name: "Gokul R",
+          Designation: "Technical Support",
+          mailid: "Zencommerce India"
+        }
+      ]
+    }
+  
+      
+      
+  
+];
+const ece_alumni=[
+  {
+  'id':'1',
+  'program':'1991 - 1995 BATCH',
+  'click':'/ecedept/ece-alumni91'
+  },
+  {
+    'id':'2',
+  'program':'1992-1996 BATCH',
+  'click':'/ecedept/ece-alumni92'
+  },
+  {
+    'id':'3',
+  'program':'1993-1997 BATCH',
+  'click':'/ecedept/ece-alumni93'
+  },
+  {
+    'id':'4',
+  'program':'NOTABLE ALUMNI',
+  'click':'/ecedept/ece-alumninotable'
+  }
+];
 const ece_vision = {
   id: "1",
   visiondata:
@@ -2729,6 +4229,11 @@ export {
   ece_acad_labs,
   ece_indus_labs,
   ece_rankers,
+  ece_alumni,
+  ece_alumni91,
+  ece_alumni92,
+  ece_alumni93,
+  ece_notablealumni,
   ece_dept_events,
   ece_projects,
   ece_stud_activities,

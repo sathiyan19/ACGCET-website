@@ -1,4 +1,5 @@
 import prakash from '../assets/pictures/Prakash.webp'
+import civ_stu from '../assets/pictures/civ_stu.jpg'
 //
 const ravena ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/Raveena+A_+Civil.webp"
 
@@ -772,6 +773,17 @@ const civ_stud_achivement =[
   "sub-head":
     "Abinaya.S has successfully completed the  NPTEL online certification course 'Introduction in Engineering Seismology'.",
   pic: nptl_cover,
+  content_1: "",
+  content_2: "",
+
+
+},
+{
+  id: "4",
+  heading: "Speech Competition ",
+  "sub-head":
+    "Harisankar G ranked in the top 100 among 170,000 speakers at a Tamil Nadu competition, winning an award from Deputy CM Udhayanidhi Stalin.",
+  pic: civ_stu,
   content_1: "",
   content_2: "",
 
