@@ -778,17 +778,7 @@ const civ_stud_achivement =[
 
 
 },
-{
-  id: "4",
-  heading: "Speech Competition ",
-  "sub-head":
-    "Harisankar G ranked in the top 100 among 170,000 speakers at a Tamil Nadu competition, winning an award from Deputy CM Udhayanidhi Stalin.",
-  pic: civ_stu,
-  content_1: "",
-  content_2: "",
 
-
-}
 ];
 
 
