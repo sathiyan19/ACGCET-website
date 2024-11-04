@@ -1,4 +1,6 @@
 import prakash from '../assets/pictures/Prakash.webp'
+import hari from '../assets/pictures/hari.webp'
+import sundar from '../assets/pictures/sundar.webp'
 //
 const ravena ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/Raveena+A_+Civil.webp"
 
@@ -705,6 +707,14 @@ const civ_awards = [
     content:
       "Dr. S. R. Sumathy, As the Coordinator for IIRS has motivated students to enroll in the IIRS Outreach e-Learning Education Programme.",
   },
+  {
+    id: "9",
+    head: "",
+    house: "left",
+    pdf: "https://drive.google.com/file/d/1uAnQ2jEpQNf2LEBMqx4hZ29SC22mIbDe/view?usp=sharing",
+    content:
+      "Prof.B.Venkatesh received an appreciation certificate for the best Naan Mudhalvan coordinator from M.S. Sangeetha IAS (The District Collector, Madurai) and J Innocent Divya IAS (MD, TNSDC).",
+  },
 ];
 
 const civ_patents = [
@@ -764,7 +774,6 @@ const civ_stud_achivement =[
     pic: gate_cover,
     content_1: "",
     content_2:    "We proudly congratulates our outstanding students, Kishore S. (2011022), Nagarajan L. (2011031), Nivetha S. (2011033), and Abiksha J. (2111001), for successfully clearing the GATE exam this year. Your exceptional dedication and hard work have led to this remarkable achievement. We are incredibly proud of your success and wish you all the best in your future endeavors. May you continue to excel and achieve great heights in your academic and professional journeys.",
-
 },
 {
   id: "3",
@@ -772,6 +781,28 @@ const civ_stud_achivement =[
   "sub-head":
     "Abinaya.S has successfully completed the  NPTEL online certification course 'Introduction in Engineering Seismology'.",
   pic: nptl_cover,
+  content_1: "",
+  content_2: "",
+
+
+},
+{
+  id: "4",
+  heading: "Winner - Hari Shankar (III yr)",
+  "sub-head":
+  "Civil Engineering students won both the Winner and Runner-up spots in a public speaking competition during Vigilance Awareness Week 2024, hosted by POWERGRID. They received prizes worth Rs. 15,000 and mementos.",
+  pic: hari,
+  content_1: "",
+  content_2: "",
+
+
+},
+{
+  id: "5",
+  heading: "Runner - Sundhar Raj (III yr)",
+  "sub-head":
+  "Civil Engineering students won both the Winner and Runner-up spots in a public speaking competition during Vigilance Awareness Week 2024, hosted by POWERGRID. They received prizes worth Rs. 15,000 and mementos.",
+  pic: sundar,
   content_1: "",
   content_2: "",
 

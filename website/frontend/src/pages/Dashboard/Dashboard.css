@@ -548,7 +548,7 @@ button:focus {outline:0;}
   left: 0%;
   width: 100%;
   top:35%;
-  /* margin: 0px; */
+ 
   color: white;
   font-size: 15px;
   transition: all .5s;

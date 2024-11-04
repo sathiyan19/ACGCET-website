@@ -24,7 +24,7 @@ const top_nav_paths = [
       { path: "/committee", link: "Committee/Cell" },
       // {path: "/Parents_fb", link:"Parents_feedback"},
       // {path: "/Consultancy_fb", link:"Consultancy_fb"},
-      // {path: "/feedback/supplier_fb", link: "Supplier_fb"},
+      {path: "/feedback/supplier_fb", link: "Supplier_fb"},
       // {path: "/FeedbackPdf", link: "FeedbackPdf"},
     ],
   },
@@ -39,7 +39,7 @@ const top_nav_paths = [
       { path: "/academic-calendar", link: "Academic Calendar" },
       {path:"coe",link:"Autonomous Office"},
       {path:"/research",link:"Research"},
-      // {path:"/feedback/Feedback",link:"Feedback"},
+      {path:"/feedback/Feedback",link:"Feedback"},
       
       // {path:"/feedback/Student_fb",link:"Feedback"},
 

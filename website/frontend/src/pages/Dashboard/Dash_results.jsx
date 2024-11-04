@@ -186,10 +186,10 @@ const Dash_results = () => {
                 <div className="dash-result-table">
                   <div className="dash-table-header">
                     <div className="sem_options_holder">
-                      <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
-                        {/* <div className="sem_input">Sem {sem}</div> */}
-                        {/* <div className="fa fa fa-chevron-circle-down"></div> */}
-                      </div>
+                      {/* <div className="sem_input_holder" tabIndex={0} onFocus={(e)=> setSem_opt_flag(true)} onBlur={(e)=> setSem_opt_flag(false)}>
+                        <div className="sem_input">Sem {sem}</div>
+                        <div className="fa fa fa-chevron-circle-down"></div>
+                      </div> */}
                       <div className="sem_options">
                         {sem_opt_flag &&
                           sem_list.map((item) => (

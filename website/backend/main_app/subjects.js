@@ -116,7 +116,7 @@ const subjects_list = {
       "22CSL47": { "credits": 1.5, "subname": "Operating Systems Laboratory" },
       "22CSL48": { "credits": 2, "subname": "Network and Cyber Security Lab" },
       "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" },
-      // /ADDED/
+      /*ADDED*/
       "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
      
   },
@@ -179,7 +179,7 @@ const subjects_list = {
   
     "19EEE16": { "credits": 3, "subname": "Embedded System Design" },
     "19EEE21": { "credits": 3, "subname": "Power System Operation and Control" },
-  // /ADDED/
+  /*ADDED*/
   "19NM039": { "credits": 2, "subname": "Artificial Intelligence and Machine Learning Fundamentals (Naan Mudhalvan Course)" },
   "22NM002": { "credits": 2, "subname": "Employability Skills (Nan Mudhalvan Course)" },
   

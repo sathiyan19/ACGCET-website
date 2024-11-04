@@ -1,14 +1,44 @@
 const express = require('express');
 const puppeteer = require('puppeteer');
-const pool = require('./db'); // Assuming this is correctly set up
+const pool = require('./db'); 
 const nodemailer = require('nodemailer');
-const fs = require('fs'); // Import the fs module if needed
-require('dotenv').config(); // Import dotenv to manage environment variables
-
+const fs = require('fs'); 
+require('dotenv').config();
 const app = express();
-app.use(express.json()); // To handle JSON payloads
+app.use(express.json()); 
 
-const getSupplierFeedbackTemplate = (feedbackData) => `
+const getSupplierFeedbackTemplate = (feedbackData) => {
+    // Calculate averages for each rating column
+    const totalRows = feedbackData.length;
+    const averages = {
+        procurement_process: 0,
+        payment_process: 0,
+        staff_professionalism: 0,
+        receipt_process: 0,
+        paperwork_process: 0,
+        communication_efficiency: 0,
+        ethical_practices: 0,
+        business_relationship: 0
+    };
+
+    feedbackData.forEach(row => {
+        averages.procurement_process += row.procurement_process;
+        averages.payment_process += row.payment_process;
+        averages.staff_professionalism += row.staff_professionalism;
+        averages.receipt_process += row.receipt_process;
+        averages.paperwork_process += row.paperwork_process;
+        averages.communication_efficiency += row.communication_efficiency;
+        averages.ethical_practices += row.ethical_practices;
+        averages.business_relationship += row.business_relationship;
+    });
+
+    // Compute the average by dividing the total by the number of feedback entries
+    Object.keys(averages).forEach(key => {
+        averages[key] = (averages[key] / totalRows).toFixed(2); // Round to 2 decimal places
+    });
+
+    // Generate the HTML template
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,37 +48,27 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 30px; /* Added margin for the whole page */
-            font-size: 10px; /* Adjusted font size for readability */
+            margin: 30px; 
+            font-size: 10px;
         }
         h1 {
             color: #333;
         }
-             .bordered-container {
-            margin: 30px; /* Added margin around the border */
-            padding: 20px; /* Padding inside the border */
-            border: 2px solid #000; /* Black border */
-            border-radius: 10px; /* Rounded corners */
+        .bordered-container {
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
         }
-
         .title-container {
             text-align: center;
-            margin-top: 50px; /* Top margin for title */
-            margin-bottom: 40px; /* Bottom margin for title */
+            margin-top: 50px;
+            margin-bottom: 40px;
         }
         .title-container h2 {
             font-size: 24px;
-            line-height: 1; /* Adjusted line-height for tighter spacing */
-            margin: 0; /* Removed default margin for individual h2 */
-        }
-        // .page-break {
-        //     page-break-before: always;
-        // }
-        @media print {
-            // .page-break {
-            //     page-break-before: always;
-            //     padding-top: 20px; /* Add padding at the top of new pages */
-            // }
+            line-height: 1;
+            margin: 0;
         }
         table {
             width: 100%;
@@ -59,9 +79,9 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 8px; /* Reduced padding to save space */
+            padding: 8px;
             text-align: left;
-            word-wrap: break-word; /* Enable word wrapping */
+            word-wrap: break-word;
         }
         th {
             background-color: #f4f4f4;
@@ -69,20 +89,23 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
             font-weight: bold;
         }
         tbody tr:nth-child(even) {
-            background-color: #f9f9f9; /* Alternate row color */
+            background-color: #f9f9f9;
         }
         tbody tr:hover {
-            background-color: #e0e0e0; /* Highlight row on hover */
+            background-color: #e0e0e0;
         }
         .question-column {
-            width: 50%; /* Adjusted width for better balance */
+            width: 50%;
         }
         .points-column {
-            width: 50%; /* Adjusted width for better balance */
+            width: 50%;
             text-align: center;
         }
         .table-container {
-            margin-bottom: 20px; /* Consistent margin for separation */
+            margin-bottom: 20px;
+        }
+        .averages-container {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -154,64 +177,148 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
                 </tr>
             </tbody>
         </table>
-    </div>`
-    ).join('')}
+    </div>`).join('')}
+    
+    <!-- Averages Section -->
+    <div class="averages-container">
+        <h2>Averages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="question-column">Question</th>
+                    <th class="points-column">Average Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Procurement Process</td>
+                    <td>${averages.procurement_process}</td>
+                </tr>
+                <tr>
+                    <td>Payment Process</td>
+                    <td>${averages.payment_process}</td>
+                </tr>
+                <tr>
+                    <td>Staff Professionalism</td>
+                    <td>${averages.staff_professionalism}</td>
+                </tr>
+                <tr>
+                    <td>Receipt Process</td>
+                    <td>${averages.receipt_process}</td>
+                </tr>
+                <tr>
+                    <td>Paperwork Process</td>
+                    <td>${averages.paperwork_process}</td>
+                </tr>
+                <tr>
+                    <td>Communication Efficiency</td>
+                    <td>${averages.communication_efficiency}</td>
+                </tr>
+                <tr>
+                    <td>Ethical Practices</td>
+                    <td>${averages.ethical_practices}</td>
+                </tr>
+                <tr>
+                    <td>Business Relationship</td>
+                    <td>${averages.business_relationship}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-</body
-
+</div>
+</body>
 </html>
 `;
+}
+const getCollaboratorFeedbackTemplate = (feedbackData) => {
+    // Step 1: Calculate the averages for each feedback field
+    const totalRows = feedbackData.length;
 
+    const averages = {
+        project_name: '',
+        funding_agency: '',
+        duration: '',
+        principal_invigilator: '',
+        authority_name: '',
+        proposal_objective: '',
+        state_of_art: '',
+        methodology_and_action_plan: '',
+        performance_milestone: '',
+        deliverables: '',
+        estimated_expenditure: '',
+        appoinment_of_staffs: '',
+        completion_in_time: '',
+        expected_result: '',
+        review_performance: '',
+        project_closure_time: '',
+        literature_collected: '',
+        final_technical_report: '',
+        developed_hardware_or_software: '',
+        proposal_deliverables: '',
+        publications: '',
+        patents: ''
+    };
 
-    
+    // Step 2: Process averages for fields that can be averaged (if numeric or qualitative ratings exist)
+    feedbackData.forEach(row => {
+        averages.project_name += row.project_name;
+        averages.funding_agency += row.funding_agency;
+        averages.duration += row.duration;
+        averages.principal_invigilator += row.principal_invigilator;
+        averages.authority_name += row.authority_name;
+        averages.proposal_objective += row.proposal_objective;
+        averages.state_of_art += row.state_of_art;
+        averages.methodology_and_action_plan += row.methodology_and_action_plan;
+        averages.performance_milestone += row.performance_milestone;
+        averages.deliverables += row.deliverables;
+        averages.estimated_expenditure += row.estimated_expenditure;
+        averages.appoinment_of_staffs += row.appoinment_of_staffs;
+        averages.completion_in_time += row.completion_in_time;
+        averages.expected_result += row.expected_result;
+        averages.review_performance += row.review_performance;
+        averages.project_closure_time += row.project_closure_time;
+        averages.literature_collected += row.literature_collected;
+        averages.final_technical_report += row.final_technical_report;
+        averages.developed_hardware_or_software += row.developed_hardware_or_software;
+        averages.proposal_deliverables += row.proposal_deliverables;
+        averages.publications += row.publications;
+        averages.patents += row.patents;
+    });
 
-    const getParentsFeedbackTemplate = (feedbackData) => `
+    // Divide by total feedback entries if these are quantitative fields (optional depending on use-case)
+    Object.keys(averages).forEach(key => {
+        averages[key] = (averages[key] / totalRows).toFixed(2);
+    });
+
+    // Step 3: Generate the HTML template with feedback and averages
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parents Feedback</title>
+    <title>Collaborator Feedback</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 15px;
-            font-size: 10px; /* Adjusted font size for readability */
+            font-size: 10px;
         }
         h1 {
             color: #333;
         }
-              h2 {
-        font-size: 24px;
-        margin-top: 5px; /* Reduced top margin for smaller gap */
-        margin-bottom: 15px; /* Reduced bottom margin for smaller gap */
-        line-height: 1; /* Adjusted line-height for tighter spacing */
-        text-align: center; /* Center the titles */
-    }
-   .bordered-container {
-            margin: 30px; /* Added margin around the border */
-            padding: 20px; /* Padding inside the border */
-            border: 2px solid #000; /* Black border */
-            border-radius: 10px; /* Rounded corners */
-        }
-        .page-break {
-            page-break-before: always;
-        }
-            .title-container {
-            text-align: center;
-            margin-top: 50px; /* Top margin for title */
-            margin-bottom: 40px; /* Bottom margin for title */
-        }
-        .title-container h2 {
+        h2 {
             font-size: 24px;
-            line-height: 1; /* Adjusted line-height for tighter spacing */
-            margin: 0; /* Removed default margin for individual h2 */
+            margin-top: 5px;
+            margin-bottom: 15px;
+            line-height: 1;
+            text-align: center;
         }
-        @media print {
-            .page-break {
-                page-break-before: always;
-                padding-top: 20px; /* Add padding at the top of new pages */
-            }
+        .bordered-container {
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
         }
         table {
             width: 100%;
@@ -221,34 +328,31 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
         table, th, td {
             border: 1px solid #ddd;
         }
-        th, td 
-        {
-            padding: 8px; /* Reduced padding to save space */
+        th, td {
+            padding: 8px;
             text-align: left;
-            word-wrap: break-word; /* Enable word wrapping */
+            word-wrap: break-word;
         }
-        th 
-        {
+        th {
             background-color: #f4f4f4;
             color: #333;
             font-weight: bold;
         }
-        tbody tr:nth-child(even) 
-        {
-            background-color: #f9f9f9; /* Alternate row color */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
         tbody tr:hover {
-            background-color: #e0e0e0; /* Highlight row on hover */
+            background-color: #e0e0e0;
         }
         .question-column {
-            width: 50%; /* Adjusted width for better balance */
+            width: 50%;
         }
         .points-column {
-            width: 50%; /* Adjusted width for better balance */
+            width: 50%;
             text-align: center;
         }
         .table-container {
-            margin-bottom: 20px; /* Consistent margin for separation */
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -260,9 +364,9 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
         <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
     </div>
 
-    <h1>Parents Feedback Summary</h1>
+    <h1>Collaborator Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
-    
+
     ${feedbackData.map((row, index) => 
     `<div class="table-container">
         <h2>Feedback #${index + 1}</h2>
@@ -270,90 +374,184 @@ const getSupplierFeedbackTemplate = (feedbackData) => `
             <thead>
                 <tr>
                     <th class="question-column">Question</th>
-                    <th class="points-column">Points Given</th>
+                    <th class="points-column">Details</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Student Name</td>
-                    <td>${row.student_name}</td>
+                    <td>Project Name</td>
+                    <td>${row.project_name}</td>
                 </tr>
                 <tr>
-                    <td>Register Number</td>
-                    <td>${row.student_register_number}</td>
+                    <td>Funding Agency</td>
+                    <td>${row.funding_agency}</td>
                 </tr>
                 <tr>
-                    <td>Branch</td>
-                    <td>${row.branch}</td>
+                    <td>Duration</td>
+                    <td>${row.duration}</td>
                 </tr>
                 <tr>
-                    <td>Passed Out Year</td>
-                    <td>${row.passed_out_year}</td>
+                    <td>Principal Invigilator</td>
+                    <td>${row.principal_invigilator}</td>
                 </tr>
                 <tr>
-                    <td>Program</td>
-                    <td>${row.programme}</td>
+                    <td>Authority Name</td>
+                    <td>${row.authority_name}</td>
                 </tr>
                 <tr>
-                    <td>Infrastructure</td>
-                    <td>${row.infrastructure_facilities}</td>
+                    <td>Proposal Objective</td>
+                    <td>${row.proposal_objective}</td>
                 </tr>
                 <tr>
-                    <td>College Ambience</td>
-                    <td>${row.college_ambience}</td>
+                    <td>State Of Art</td>
+                    <td>${row.state_of_art}</td>
                 </tr>
                 <tr>
-                    <td>Authority Approachability</td>
-                    <td>${row.authority_approachability}</td>
+                    <td>Methodology And Action Plan</td>
+                    <td>${row.methodology_and_action_plan}</td>
                 </tr>
                 <tr>
-                    <td>Hostel Facilities</td>
-                    <td>${row.hostel_facilities}</td>
+                    <td>Performance Milestone</td>
+                    <td>${row.performance_milestone}</td>
                 </tr>
                 <tr>
-                    <td>Library & Sports Facilities</td>
-                    <td>${row.library_sports_facilities}</td>
+                    <td>Deliverables</td>
+                    <td>${row.deliverables}</td>
                 </tr>
                 <tr>
-                    <td>Security & Safety Measures</td>
-                    <td>${row.security_safety_measures}</td>
+                    <td>Estimated Expenditure</td>
+                    <td>${row.estimated_expenditure}</td>
                 </tr>
                 <tr>
-                    <td>Faculty Academic Skills</td>
-                    <td>${row.faculty_academic_skills}</td>
+                    <td>Appoinment Of Staffs</td>
+                    <td>${row.appoinment_of_staffs}</td>
                 </tr>
                 <tr>
-                    <td>Learning Experience</td>
-                    <td>${row.learning_experience}</td>
+                    <td>Completion In Time</td>
+                    <td>${row.completion_in_time}</td>
                 </tr>
                 <tr>
-                    <td>Environment Diversity</td>
-                    <td>${row.environment_diversity}</td>
+                    <td>Expected Result</td>
+                    <td>${row.expected_result}</td>
                 </tr>
                 <tr>
-                    <td>Placement Opportunities</td>
-                    <td>${row.placement_opportunities}</td>
+                    <td>Review Performance</td>
+                    <td>${row.review_performance}</td>
                 </tr>
                 <tr>
-                    <td>Technical Knowledge Improvement</td>
-                    <td>${row.technical_knowledge_improvement}</td>
+                    <td>Project Closure Time</td>
+                    <td>${row.project_closure_time}</td>
                 </tr>
                 <tr>
-                    <td>College Environment Development</td>
-                    <td>${row.college_environment_development}</td>
+                    <td>Literature Collected</td>
+                    <td>${row.literature_collected}</td>
+                </tr>
+                <tr>
+                    <td>Final Technical Report</td>
+                    <td>${row.final_technical_report}</td>
+                </tr>
+                <tr>
+                    <td>Developed Hardware Or Software</td>
+                    <td>${row.developed_hardware_or_software}</td>
+                </tr>
+                <tr>
+                    <td>Proposal Deliverables</td>
+                    <td>${row.proposal_deliverables}</td>
+                </tr>
+                <tr>
+                    <td>Publications</td>
+                    <td>${row.publications}</td>
+                </tr>
+                <tr>
+                    <td>Patents</td>
+                    <td>${row.patents}</td>
                 </tr>
             </tbody>
         </table>
-    </div>`
-    ).join('')}
+    </div>`).join('')}
+
+    <!-- Add the averages table -->
+    <div class="table-container">
+        <h2>Averages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="question-column">Category</th>
+                    <th class="points-column">Average Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project Name</td>
+                    <td>${averages.project_name}</td>
+                </tr>
+                <tr><td>Funding Agency</td><td>${averages.funding_agency}</td></tr>
+                <tr><td>Duration</td><td>${averages.duration}</td></tr>
+                <tr><td>Principal Invigilator</td><td>${averages.principal_invigilator}</td></tr>
+                <tr><td>Authority Name</td><td>${averages.authority_name}</td></tr>
+                <tr><td>Proposal Objective</td><td>${averages.proposal_objective}</td></tr>
+                <tr><td>State Of Art</td><td>${averages.state_of_art}</td></tr>
+                <tr><td>Methodology And Action Plan</td><td>${averages.methodology_and_action_plan}</td></tr>
+                <tr><td>Performance Milestone</td><td>${averages.performance_milestone}</td></tr>
+                <tr><td>Deliverables</td><td>${averages.deliverables}</td></tr>
+                <tr><td>Estimated Expenditure</td><td>${averages.estimated_expenditure}</td></tr>
+                <tr><td>Appoinment Of Staffs</td><td>${averages.appoinment_of_staffs}</td></tr>
+                <tr><td>Completion In Time</td><td>${averages.completion_in_time}</td></tr>
+                <tr><td>Expected Result</td><td>${averages.expected_result}</td></tr>
+                <tr><td>Review Performance</td><td>${averages.review_performance}</td></tr>
+                <tr><td>Project Closure Time</td><td>${averages.project_closure_time}</td></tr>
+                <tr><td>Literature Collected</td><td>${averages.literature_collected}</td></tr>
+                <tr><td>Final Technical Report</td><td>${averages.final_technical_report}</td></tr>
+                <tr><td>Developed Hardware Or Software</td><td>${averages.developed_hardware_or_software}</td></tr>
+                <tr><td>Proposal Deliverables</td><td>${averages.proposal_deliverables}</td></tr>
+                <tr><td>Publications</td><td>${averages.publications}</td></tr>
+                <tr><td>Patents</td><td>${averages.patents}</td></tr>
+            </tbody>
+        </table>
     </div>
+</div>
 </body>
 </html>
-`;
+    `;
+};
 
-    
+const getEmployeeFeedbackTemplate = (feedbackData) => {
+    // Step 1: Calculate the averages
+    const totalRows = feedbackData.length;
 
-const getEmployeeFeedbackTemplate = (feedbackData) => `
+    const averages = {
+        technical_knowledge: 0,
+        communication_skill: 0,
+        independent_thinking: 0,
+        new_technology_inclination: 0,
+        extra_responsibility: 0,
+        work_beyond_schedule: 0,
+        organizational_contribution: 0,
+        planning_organization_skills: 0,
+        leadership_qualities: 0,
+        relationship_with_seniors: 0
+    };
+
+    feedbackData.forEach((row) => {
+        averages.technical_knowledge += row.technical_knowledge;
+        averages.communication_skill += row.communication_skill;
+        averages.independent_thinking += row.independent_thinking;
+        averages.new_technology_inclination += row.new_technology_inclination;
+        averages.extra_responsibility += row.extra_responsibility;
+        averages.work_beyond_schedule += row.work_beyond_schedule;
+        averages.organizational_contribution += row.organizational_contribution;
+        averages.planning_organization_skills += row.planning_organization_skills;
+        averages.leadership_qualities += row.leadership_qualities;
+        averages.relationship_with_seniors += row.relationship_with_seniors;
+    });
+
+    // Divide by total feedback entries to get the average
+    Object.keys(averages).forEach(key => {
+        averages[key] = (averages[key] / totalRows).toFixed(2); // Round to 2 decimal places
+    });
+
+    // Step 2: Add the averages section to the HTML
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -364,26 +562,23 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
         body {
             font-family: Arial, sans-serif;
             margin: 15px;
-            font-size: 10px; /* Increased font size for readability */
-        }
-            .title-container {
-            text-align: center;
-            margin-top: 50px; /* Top margin for title */
-            margin-bottom: 40px; /* Bottom margin for title */
-        }
-        .title-container h2 {
-            font-size: 24px;
-            line-height: 1; /* Adjusted line-height for tighter spacing */
-            margin: 0; /* Removed default margin for individual h2 */
+            font-size: 10px;
         }
         h1 {
             color: #333;
         }
-               .bordered-container {
-            margin: 30px; /* Added margin around the border */
-            padding: 20px; /* Padding inside the border */
-            border: 2px solid #000; /* Black border */
-            border-radius: 10px; /* Rounded corners */
+        h2 {
+            font-size: 24px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            line-height: 1;
+            text-align: center;
+        }
+        .bordered-container {
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
         }
         .page-break {
             page-break-before: always;
@@ -391,7 +586,7 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
         @media print {
             .page-break {
                 page-break-before: always;
-                padding-top: 20px; /* Add padding at the top of new pages */
+                padding-top: 20px;
             }
         }
         table {
@@ -403,9 +598,9 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 8px; /* Increased padding for better readability */
+            padding: 8px;
             text-align: left;
-            word-wrap: break-word; /* Enable word wrapping */
+            word-wrap: break-word;
         }
         th {
             background-color: #f4f4f4;
@@ -413,19 +608,20 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
             font-weight: bold;
         }
         tbody tr:nth-child(even) {
-            background-color: #f9f9f9; /* Alternate row color */
+            background-color: #f9f9f9;
         }
         tbody tr:hover {
-            background-color: #e0e0e0; /* Highlight row on hover */
+            background-color: #e0e0e0;
         }
         .question-column {
-            width: 50%; /* Adjusted width for better balance */
+            width: 50%;
         }
         .points-column {
-            width: 50%; /* Adjusted width for better balance */
+            width: 50%;
+            text-align: center;
         }
         .table-container {
-            margin-bottom: 20px; /* Consistent margin for separation */
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -439,9 +635,9 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
 
     <h1>Employee Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
-    
+
     ${feedbackData.map((row, index) => 
-    `<div class="table-container ${index > 0 ? 'page-break' : ''}">
+    `<div class="table-container">
         <h2>Feedback #${index + 1}</h2>
         <table>
             <thead>
@@ -537,61 +733,90 @@ const getEmployeeFeedbackTemplate = (feedbackData) => `
                 </tr>
             </tbody>
         </table>
-    </div>`
-    ).join('')}
+    </div>`).join('')}
+
+    <!-- Add the averages table -->
+    <div class="table-container">
+        <h2>Averages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="question-column">Category</th>
+                    <th class="points-column">Average Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Technical Knowledge</td><td>${averages.technical_knowledge}</td></tr>
+                <tr><td>Communication Skill</td><td>${averages.communication_skill}</td></tr>
+                <tr><td>Independent Thinking</td><td>${averages.independent_thinking}</td></tr>
+                <tr><td>New Technology Inclination</td><td>${averages.new_technology_inclination}</td></tr>
+                <tr><td>Extra Responsibility</td><td>${averages.extra_responsibility}</td></tr>
+                <tr><td>Work Beyond Schedule</td><td>${averages.work_beyond_schedule}</td></tr>
+                <tr><td>Organizational Contribution</td><td>${averages.organizational_contribution}</td></tr>
+                <tr><td>Planning/Organization Skills</td><td>${averages.planning_organization_skills}</td></tr>
+                <tr><td>Leadership Qualities</td><td>${averages.leadership_qualities}</td></tr>
+                <tr><td>Relationship with Seniors</td><td>${averages.relationship_with_seniors}</td></tr>
+            </tbody>
+        </table>
     </div>
+</div>
 </body>
 </html>
 `;
+};
 
-const getCounsaltancyFeedbackTemplate = (feedbackData) => `
+const getCounsaltancyFeedbackTemplate = (feedbackData) => {
+    // Step 1: Calculate the averages
+    const totalRows = feedbackData.length;
+
+    const averages = {
+        consultancy_fee: 0,
+        meeting_deadline: 0,
+        work_quality: 0,
+        approach: 0
+    };
+
+    feedbackData.forEach((row) => {
+        averages.consultancy_fee += row.consultancy_fee;
+        averages.meeting_deadline += row.meeting_deadline;
+        averages.work_quality += row.work_quality;
+        averages.approach += row.approach;
+    });
+
+    // Divide by total feedback entries to get the average
+    Object.keys(averages).forEach(key => {
+        averages[key] = (averages[key] / totalRows).toFixed(2); // Round to 2 decimal places
+    });
+
+    // Step 2: Add the averages section to the HTML
+    return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counsaltancy Feedback</title>
+    <title>Consultancy Feedback</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 15px;
-            font-size: 10px; /* Adjusted font size for readability */
-        }
-            .title-container {
-            text-align: center;
-            margin-top: 50px; /* Top margin for title */
-            margin-bottom: 40px; /* Bottom margin for title */
-        }
-        .title-container h2 {
-            font-size: 24px;
-            line-height: 1; /* Adjusted line-height for tighter spacing */
-            margin: 0; /* Removed default margin for individual h2 */
-        }
-               .bordered-container {
-            margin: 30px; /* Added margin around the border */
-            padding: 20px; /* Padding inside the border */
-            border: 2px solid #000; /* Black border */
-            border-radius: 10px; /* Rounded corners */
+            font-size: 10px;
         }
         h1 {
             color: #333;
         }
-              h2 {
-        font-size: 24px;
-        margin-top: 5px; /* Reduced top margin for smaller gap */
-        margin-bottom: 15px; /* Reduced bottom margin for smaller gap */
-        line-height: 1; /* Adjusted line-height for tighter spacing */
-        text-align: center; /* Center the titles */
-    }
-
-        // .page-break {
-        //     page-break-before: always;
-        // }
-        @media print {
-            .page-break {
-                // page-break-before: always;
-                padding-top: 20px; /* Add padding at the top of new pages */
-            }
+        h2 {
+            font-size: 24px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            line-height: 1;
+            text-align: center;
+        }
+        .bordered-container {
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
         }
         table {
             width: 100%;
@@ -601,59 +826,32 @@ const getCounsaltancyFeedbackTemplate = (feedbackData) => `
         table, th, td {
             border: 1px solid #ddd;
         }
-        th, td 
-        {
-            padding: 8px; /* Reduced padding to save space */
+        th, td {
+            padding: 8px;
             text-align: left;
-            word-wrap: break-word; /* Enable word wrapping */
+            word-wrap: break-word;
         }
-        th 
-        {
+        th {
             background-color: #f4f4f4;
             color: #333;
             font-weight: bold;
         }
-        tbody tr:nth-child(even) 
-        {
-            background-color: #f9f9f9; /* Alternate row color */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
         tbody tr:hover {
-            background-color: #e0e0e0; /* Highlight row on hover */
+            background-color: #e0e0e0;
         }
         .question-column {
-            width: 50%; /* Adjusted width for better balance */
+            width: 50%;
         }
         .points-column {
-            width: 50%; /* Adjusted width for better balance */
+            width: 50%;
             text-align: center;
         }
         .table-container {
-            margin-bottom: 20px; /* Consistent margin for separation */
+            margin-bottom: 20px;
         }
-        // @media print {
-        //     body {
-        //         margin: 10px;
-        //         font-size: 8px; 
-        //     }
-        //     .page-break {
-        //         page-break-before: always;
-        //         padding-top: 20px; 
-        //     }
-        //     table {
-        //         width: 100%;
-        //         border-collapse: collapse;
-        //     }
-        //     th, td {
-        //         font-size: 8px; 
-        //         padding: 2px 4px; 
-        //     }
-        //     thead {
-        //         display: table-header-group;
-        //     }
-        //     tfoot {
-        //         display: table-footer-group; 
-        //     }
-        // }
     </style>
 </head>
 <body>
@@ -664,11 +862,11 @@ const getCounsaltancyFeedbackTemplate = (feedbackData) => `
         <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
     </div>
 
-    <h1>Counsaltancy Feedback Summary</h1>
+    <h1>Consultancy Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
-    
+
     ${feedbackData.map((row, index) => 
-    `<div class="table-container ${index > 0 ? 'page-break' : ''}">
+    `<div class="table-container">
         <h2>Feedback #${index + 1}</h2>
         <table>
             <thead>
@@ -716,12 +914,34 @@ const getCounsaltancyFeedbackTemplate = (feedbackData) => `
                 </tr>
             </tbody>
         </table>
-    </div>`
-    ).join('')}
+    </div>`).join('')}
+
+    <!-- Add the averages table -->
+    <div class="table-container">
+        <h2>Averages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th class="question-column">Category</th>
+                    <th class="points-column">Average Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Consultancy Fee</td>
+                <td>${averages.consultancy_fee}</td>
+                </tr>
+                <tr><td>Meeting Deadline</td><td>${averages.meeting_deadline}</td></tr>
+                <tr><td>Work Quality</td><td>${averages.work_quality}</td></tr>
+                <tr><td>Approach</td><td>${averages.approach}</td></tr>
+            </tbody>
+        </table>
     </div>
+</div>
 </body>
 </html>
 `;
+};
 
 const getCollaboratarFeedbackTemplate = (feedbackData) => `
 <!DOCTYPE html>
@@ -923,9 +1143,6 @@ ${feedbackData.map((row, index) =>
 </body>
 </html>
 `;
-
-
-
 const getTeachingFeedbackTemplate = (feedbackData) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -1127,8 +1344,6 @@ ${feedbackData.map((row, index) =>
 </body>
 </html>
 `;
-
-
 const getPracticalFeedbackTemplate = (feedbackData) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -1307,143 +1522,6 @@ ${feedbackData.map((row, index) =>
 </body>
 </html>
 `;
-
-
-
-// const getTeachingFeedbackTemplate = (feedbackData) => `
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>Colloborator Feedback</title>
-//     <style>
-
-//    body {
-//         font-family: Arial, sans-serif;
-//         margin: 15px;
-//         font-size: 8px; /* Reduced font size */
-//     }
-
-//     h1 {
-//         color: #333;
-//     }
-
-//     .table-container {
-//         width: 100%; 
-//         margin: 0 auto;
-//         overflow-x: auto;
-//     }
-
-//     table {
-//         width: 100%;
-//         border-collapse: collapse;
-//         margin-top: 20px;
-//         table-layout: auto; /* Allow table to auto adjust */
-//     }
-
-//     th, td {
-//         border: 1px solid #ddd;
-//         padding: 2px;
-//         text-align: left;
-//         word-wrap: break-word; /* Enable word wrapping */
-//         font-size: 8px; /* Reduced font size */
-//     }
-
-//     th {
-//         background-color: #f4f4f4;
-//     }
-
-//     @media print {
-//         body {
-//             margin: 10px;
-//         }
-
-//         .table-container {
-//             width: 100%; 
-//         }
-
-//         table {
-//             width: 100%; 
-//         }
-
-//         th, td {
-//             font-size: 8px;
-//             padding: 2px;
-//             word-wrap: break-word; /* Ensure word wrapping */
-//         }
-
-//         thead {
-//             display: table-header-group;
-//         }
-
-//         tfoot {
-//             display: table-footer-group;
-//         }
-//     }
-
-//     </style>
-// </head>
-// <body>
-//     <h1>Collaboratar Feedback Summary</h1>
-//     <p>Date: ${new Date().toLocaleDateString()}</p>
-//     <table>
-//         <tr>
-// <th>Programme Name</th>
-// <th>Semester</th>
-// <th>Course Title</th>
-// <th>Course Code</th>
-// <th>Faculty Name</th>
-// <th>Student Email</th>
-// <th>knowledge in fundamentals</th>
-// <th>Analyzing engineering problems</th>
-// <thIdentify design solutions</th>
-// <th> Data analysis interpretation</th>
-// <th>Use Modern Tools</th>
-// <th>contextual knowledge</th>
-// <th>Importance of Solutions</th>
-// <th> Ethical Principles</th>
-// <th> Teamwork Ability</th>
-// <th>Communication Effectiveness</th>
-// <th> Project Management Finance</th>
-// <th> Learn New Techniques</th>
-// <th>Analyze Design Solutions Electronics</th>
-// <th>Analyze Design Solutions rf Microwaves</th>
-// <th>Design web mobile apps</th>
-
-// </tr>
-// ${feedbackData.map(row => `
-// <tr>
-// <td>${row.programme}</td>
-// <td>${row.semester}</td>
-// <td>${row.course_title}</td>
-// <td>${row.course_code}</td>
-// <td>${row.faculty}</td>
-// <td>${row.student_email}</td>
-// <td>${row.knowledge_in_fundamentals}</td>
-// <td>${row.analyze_engineering_problems}</td>
-// <td>${row.identify_design_solutions}</td>
-// <td>${row.data_analysis_interpretation}</td>
-// <td>${row.use_modern_tools}</td>
-// <td>${row.contextual_knowledge}</td>
-// <td>${row.importance_of_solutions}</td>
-// <td>${row.ethical_principles}</td>
-// <td>${row.teamwork_ability}</td>
-// <td>${row.communication_effectiveness}</td>
-// <td>${row.project_management_finance}</td>
-// <td>${row.learn_new_techniques}</td>
-// <td>${row.analyze_design_solutions_electronics}</td>
-// <td>${row.analyze_design_solutions_rf_microwaves}</td>
-// <td>${row.design_web_mobile_apps}</td>
-
-
-
-// </tr>`).join('')}
-//     </table>
-// </body>
-// </html>
-// `;
-
 const getMiniFeedbackTemplate = (feedbackData) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -1648,7 +1726,6 @@ const getMiniFeedbackTemplate = (feedbackData) => `
 </body>
 </html>
 `;
-
 const getSeminarFeedbackTemplate = (feedbackData) => `
 <!DOCTYPE html>
 <html lang="en">
@@ -2228,6 +2305,3 @@ module.exports = {
 };
 app.post('/api/generate_pdf', generatePdfAndSendEmail);
 
-// app.listen(3001, () => {
-//     console.log('Server is running on port 3001');
-// });
