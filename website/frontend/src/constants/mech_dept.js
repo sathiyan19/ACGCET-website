@@ -169,6 +169,12 @@ const mech_dept_menu = [
     link: "Centre of Excellence",
     arl:'l'
   },
+  {
+    id: "13",
+    path: "/mechdept/mech-achievements",
+    link: "Achievements",
+    arl:'l'
+  },
   
 ];
 
@@ -2101,6 +2107,14 @@ const mech_coe_researches = [
    },
  ]
 
+ const mech_stud_achievements=[
+  {
+    'id':'1',
+    'program':'ACGCET GEMS Achievement 2024',
+    'pdf':'https://drive.google.com/file/d/1NZnFnv3PKu-mQcAJ1uaCtcxG1IlNwoOp/view?usp=sharing'
+  }
+ ]
+
 export {
   mech_dept_menu,
   mech_fac_profiles,
@@ -2120,5 +2134,5 @@ export {
   mech_organised,
   mech_objectives_of_coe,
   mech_coe_researches,
-  
+  mech_stud_achievements
 };

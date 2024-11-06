@@ -458,7 +458,6 @@ export const subjects = {
   
 
   "MEC_subs":{
-    "19EEG16": { "credits": 4, "subname": "Basic Electrical and Electronics Engineering" },
     "19MAB12": { "credits": 4, "subname": "Mathematics I" },
     "19PHB13": { "credits": 4, "subname": "Physics: Properties of Materials and Mechanics" },
     "19CHB21": { "credits": 4, "subname": "Chemistry" },

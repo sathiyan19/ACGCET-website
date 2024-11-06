@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import "./Iqac_strategic.css"
-import { Floatinmenu,Underline ,Content_card} from '../../widgets'
+import { Floatinmenu,Underline ,Content_card,Backtotop} from '../../widgets'
 import { iqac_floater_menu,Strategic_data } from "../../constants/iqac"
 const Iqac_strategic = () => {
     useEffect(() => {
@@ -8,7 +8,8 @@ const Iqac_strategic = () => {
       }, []);
     
   return (
-    <div className="iqac_stra_whole">
+    <div>
+    <div className="iqac_stra_whole iqac_card_one">
       <Floatinmenu head={iqac_floater_menu.head}  links={iqac_floater_menu.links}/>
 
       <Underline heading="Strategic Plan" />
@@ -17,7 +18,9 @@ const Iqac_strategic = () => {
       {Strategic_data.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
       </div>
 
-
+      
+    </div>
+    <Backtotop />
     </div>
   )
 }
