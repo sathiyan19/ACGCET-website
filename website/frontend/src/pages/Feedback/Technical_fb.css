@@ -48,6 +48,11 @@ width: 99%;
 padding: 12px;
 
 }
+
+.technical_fb_faculty_line{
+  margin-top: 32px;
+}
+
 .technical_fb_subtitle {
   font-weight: bold;
   font-size: 20px;
@@ -107,7 +112,7 @@ padding: 12px;
       width: 100%;
     }
     .technical_fb_two_line{
-      margin-bottom: 10px;
+      margin-top: 10px;
     }
     .std_teachnical_seminar_fb_error p,.std_technical_fb_sem_err p{
       margin-left: auto;

@@ -1,13 +1,14 @@
-
 import React ,{useState}from 'react'
 import './Practical_fb.css'
 import { Underline ,Backtotop,Alertmessage} from '../../widgets'
 import { practical_fb_data } from '../../constants/feedbackQuestions'
+import { subjects, semesterSubjects } from '../../constants/dashboard';
 import axios from 'axios';
 
 const Practical_fb = () => {
 
     const [programme, setProgramme] = useState('');
+    const [department, setDepartment] = useState('');
     const [semester, setSemester] = useState('');
     const [courseTitle, setCourseTitle] = useState('');
     const [courseCode, setCourseCode] = useState('');
@@ -88,7 +89,7 @@ const Practical_fb = () => {
         
         try {
           const response = await axios.post('/api/std_practical_ratingsubmit', {
-            programme:programme, semester:semester,course_title:courseTitle,course_code:courseCode,faculty:faculty,student_email:studentEmail,
+            programme:programme, department:department, semester:semester,course_title:courseTitle,course_code:courseCode,faculty:faculty,student_email:studentEmail,
             ratings: ratings
           });
     
@@ -97,6 +98,7 @@ const Practical_fb = () => {
     
           // Clear the form after submission
           setProgramme('');
+          setDepartment('');
           setSemester('');
           setCourseTitle('');
           setCourseCode('');
@@ -117,32 +119,59 @@ const Practical_fb = () => {
     <form className="practical_fb_form" onSubmit={handleSubmit}>
     <div className="practical_fb_rows">
 
-      <select className="practical_fb_select practical_fb_two_line" required value={programme} onChange={(e)=> setProgramme(e.target.value)}>
+      <select className="practical_fb_select " required value={programme} onChange={(e)=> setProgramme(e.target.value)}>
         <option value="" disabled selected>Select Programme*</option>
         <option value="BE">B.E</option>
         <option value="ME">M.E</option>
         <option value="PhD">PhD</option>
       </select>
-      <input type="text"  className ="practical_fb_input" placeholder='Semester*'  maxLength={1} required value={semester} onChange={(e)=>{handleSemChange(e)} }/>
+      <select className="practical_fb_select practical_fb_two_line" required value={department} onChange={(e)=> setDepartment(e.target.value)}>
+                    <option value="" disabled selected>Department*</option>
+                    <option value="CIV">CIVIL</option>
+                    <option value="MEC">MECH</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CSE">CSE</option>
+                </select>
     </div>
-    <div className='std_practical_fb_sem_err'>
-      {semError && <p >{semError}</p>}
-    </div>
-    <div className="practical_fb_rows">
-     <input type="text" className='practical_fb_input_full' placeholder='Course Title*' required value={courseTitle} onChange={(e)=> setCourseTitle(e.target.value)}/>
-
-    </div>
-
-    <div className="practical_fb_rows">
-        <input type="text" className='practical_fb_input practical_fb_two_line' placeholder='Course code*' required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}/>
-        <input type="text" className='practical_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>        
-    </div>
-    <div  className='std_pract_fb_error'>
-      {nameError && <p>{nameError}</p>}
-    </div>
-
-    <div className="practical_fb_rows">
-        <input type="email" className='practical_fb_input_full'  placeholder=' Student E-mail Address*' required value={studentEmail} onChange={(e)=> setStudentEmail(e.target.value)}/>
+            <div className='practical_fb_sem_err'>
+                {semError && <p >{semError}</p>}</div>
+            <div className='practical_fb_rows'> 
+              <select className="practical_fb_select " required value={semester} onChange={(e)=> setSemester(e.target.value)}>
+                    <option value="" disabled selected>Semester*</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <select className="practical_fb_select practical_fb_two_line" required value={courseCode} onChange={(e)=> setCourseCode(e.target.value)}>
+                    <option value="" disabled selected>Course code*</option>
+                    { department && semester ?
+                      semesterSubjects[department][semester].code.map(code=>{
+                      return <option value={code}>{code}</option>
+                    }):""
+                    }
+                </select>
+            </div>
+            <div className='practical_fb_rows'>
+                <input type="text" className='practical_fb_input_full' placeholder='Course Title*' required value=
+                  { 
+                    courseCode &&
+                    subjects[department +"_subs"][courseCode].subname
+                  } 
+                  
+                  onChange={(e)=> setCourseTitle(e.target.value)}/>              
+            </div>
+            <div className='std_practical_fb_error'>
+            {nameError && <p>{nameError}</p>}
+            </div>
+            <div className='practical_fb_rows practical_fb_faculty_line'>
+                <input type="text" className='practical_fb_input' placeholder='Faculty*' required value={faculty} onChange={handleNameChange}/>
+                <input type="email" className='practical_fb_input practical_fb_two_line'  placeholder=' Student E-mail Address*' required value={studentEmail} onChange={(e)=> setStudentEmail(e.target.value)}/>
     </div>
     <h2 className="practical_fb_subtitle">Please give your valuable feedback on a scale</h2>
 
@@ -181,4 +210,3 @@ const Practical_fb = () => {
 };
 
 export default Practical_fb
-
