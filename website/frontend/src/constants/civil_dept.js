@@ -1,7 +1,8 @@
 import prakash from '../assets/pictures/Prakash.webp'
 import hari from '../assets/pictures/hari.webp'
 import sundar from '../assets/pictures/sundar.webp'
-//
+import hari1 from '../assets/pictures/harisankar.webp'
+
 const ravena ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Civil/Achievements/Raveena+A_+Civil.webp"
 
 const swayam ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/swayam.webp"
@@ -803,6 +804,17 @@ const civ_stud_achivement =[
   "sub-head":
   "Civil Engineering students won both the Winner and Runner-up spots in a public speaking competition during Vigilance Awareness Week 2024, hosted by POWERGRID. They received prizes worth Rs. 15,000 and mementos.",
   pic: sundar,
+  content_1: "",
+  content_2: "",
+
+
+},
+{
+  id: "5",
+  heading: "Speech Competition",
+  "sub-head":
+  "Harisankar G ranked in the top 100 among 170,000 speakers at a Tamil Nadu competition, winning an award from Deputy CM Udhayanidhi Stalin.",
+  pic: hari1,
   content_1: "",
   content_2: "",
 

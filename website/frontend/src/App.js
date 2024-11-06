@@ -87,6 +87,7 @@ import {
   Mech_faculties,
   Mech_lab,
   Mech_events,
+  Mech_achievements,
   Eee_peo,
   Eee_faculties,
   Eee_lab,
@@ -345,6 +346,7 @@ const App = () => {
         <Route path="/mechdept/mech-library" element={<Mech_lib/>}/>
         <Route path="/mechdept/mech-phd" element={<Mech_phd/>}/>
         <Route path="/mechdept/mech-sae"element={<Mech_events/>}/>
+        <Route path="/mechdept/mech-achievements"element={<Mech_achievements/>}/>
         <Route path="/placement" element={<Placement />} />
         <Route path="/placement/faqs" element={<Placement_faq/>}/>
         <Route path="/placement/Placement_wk_training" element={<Placement_wk_training/>}/>

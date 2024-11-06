@@ -9,6 +9,9 @@
     padding: 20px 0px;
 
 }
+.iqac_card_one{
+    margin-bottom: 100px;
+}
 
 @media (max-width:768px) {
     .iqac_stra_whole{

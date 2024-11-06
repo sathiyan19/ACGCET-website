@@ -826,7 +826,7 @@ const ece_rankers = [
 
 const ece_alumni91= [
   {
-    head:"1991-1995 Batch",
+    head:"",
     rankers:[
      
    
@@ -1027,7 +1027,7 @@ const ece_alumni91= [
 ]
 const ece_alumni92=[
   {
-    head:"1992-1996 Batch",
+    head:"",
     rankers:[
     
         {
@@ -1334,7 +1334,7 @@ const ece_alumni93=[
 
 
   {
-    head:"1993-1997 Batch",
+    head:"",
     rankers:[
       {
         id: "1",

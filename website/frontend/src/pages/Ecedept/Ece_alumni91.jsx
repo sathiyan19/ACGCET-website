@@ -30,7 +30,7 @@ const Ece_alumni91 = () => {
             <Radial_menu menu_links={ece_dept_menu} />
             <div className="ece_rankers_area">
                 <div className='ece_rankers'>
-                    <Underline heading="Alumni"/>
+                    <Underline heading="1991-1995 Batch"/>
                     {ece_alumni91.map((item)=>
                     <div className='ece_ranker_batch'>
                       <div className='ece_batch_head'>{item.head}</div>
