@@ -59,6 +59,9 @@ import {
   Ece_faculties,
   Ece_lab,
   Ece_rankers,
+  Ece_alumni91,
+  Ece_alumni92,
+  Ece_alumni93,
   Ece_events,
   Ece_projects,
   Ece_stud_activity,
@@ -186,7 +189,9 @@ import {
   
   Consultancy_fb,
   FeedbackPdf,
-  Std_mini_project_fb
+  Std_mini_project_fb,
+  Ece_alumni,
+  Ece_alumni_notable
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -268,6 +273,11 @@ const App = () => {
         <Route path="/mechdept/mech-rankers" element={<Mech_rankers/>} />
         <Route path="/ecedept/ece-dept-events" element={<Ece_events/>} />
         <Route path="/ecedept/ece-projects" element={<Ece_projects/>} />
+        <Route path="/ecedept/ece-alumni91" element={<Ece_alumni91/>} />
+        <Route path="/ecedept/ece-alumni92" element={<Ece_alumni92/>} />
+        <Route path="/ecedept/ece-alumni93" element={<Ece_alumni93/>} />
+        <Route path="/ecedept/ece-alumninotable" element={<Ece_alumni_notable/>} />
+        <Route path="/ecedept/ece-alumni" element={<Ece_alumni/>} />
         <Route path="/ecedept/ece-student-activity" element={<Ece_stud_activity/>} />
         <Route path="/ecedept/ece-antenna-testing" element={<Ece_antenna/>} />
         
