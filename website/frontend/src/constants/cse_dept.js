@@ -1765,6 +1765,17 @@ const cse_mou_data=[
 ]
 
 const cse_asso_events=[
+    // {
+  //   id: "3",
+  //   heading: "Cognoblaze'24",
+  //   "sub-head":
+  //     "21th OCT 2022",
+  //   pic: cognoblaze_23,
+  //   content_1:
+  //     "",
+  //   content_2:
+  //     "",
+  // },
   {
     id: "1",
     heading: "Cognoblaze'23",
@@ -1787,6 +1798,7 @@ const cse_asso_events=[
     content_2:
       "",
   },
+
 ]
 
 
