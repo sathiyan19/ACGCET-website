@@ -1,5 +1,54 @@
 //IMPORTANT:: Date Format: SEP 06 2023 
 export const events=[
+      
+        {
+            'id': '17',
+            'date': 'NOV 07 2024',
+            'title': "Agal -by Muthamizh Mandram",
+            'time': '09:30 am',
+            'venue': 'Murugappa Hall',
+            'details': "We cordially invite you for Congnoblaze'24"
+        },
+        {
+            'id': '14',
+            'date': 'NOV 06 2024',
+            'title': "Sygnels",
+            'time': '09:00 am',
+            'venue': 'Murugappa Hall',
+            'details': "We cordially invite you for Sygnels'24"
+        },
+        {
+            'id': '11',
+            'date': 'NOV 05 2024',
+            'title': "Fuels'25",
+            'time': '09:00 am',
+            'venue': 'Murugappa Hall',
+            'details': "We cordially invite you for Fuels'24"
+        },
+        {
+            'id': '15',
+            'date': 'OCT 24 2024',
+            'title': "Cesar",
+            'time': '09:00 am',
+            'venue': 'Sangamam Hall',
+            'details': "We cordially invite you for Cesar'24"
+        },
+        {
+            'id': '16',
+            'date': 'OCT 22,23 2024',
+            'title': "Alconsy",
+            'time': '09:00 am',
+            'venue': 'Murugappa Hall',
+            'details': "We cordially invite you for Alconsy'24"
+        },
+        {
+            'id': '13',
+            'date': 'OCT 21 2024',
+            'title': "Cognoblaze",
+            'time': '09:00 am',
+            'venue': 'Sangamam Hall',
+            'details': "We cordially invite you for Congnoblaze'24"
+        },
     {
         'id':'12',
         'date':'MAR 27 2024',
@@ -103,4 +152,6 @@ export const events=[
     //     'venue':'Murugappa Hall',
     //     'details':'Hi'
     // },
+
+
 ]
