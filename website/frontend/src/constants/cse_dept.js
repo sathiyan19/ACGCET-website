@@ -1771,7 +1771,7 @@ const cse_asso_events=[
     id: "3",
     heading: "Cognoblaze'24",
     "sub-head":
-      "21th OCT 2022",
+      "21th OCT 2024",
     pic: cognoblaze_24,
     content_1:
       "",
