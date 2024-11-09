@@ -82,7 +82,7 @@ export const bulletin_info=[
     link:"https://drive.google.com/file/d/1Ygh2LbapryXz0wKYqecypXb6g2j1lpTd/view?usp=sharing",
     content:(
         <span>
-            <span className="newContent">New</span> <span className="insideNewContent"> NOV DEC 2024 - Ph.D CourseWork Timetable
+            <span className="newContent">New</span> <span className="insideNewContent"> NOV / DEC 2024 - Ph.D CourseWork Timetable
 </span>
         </span>
     ),
