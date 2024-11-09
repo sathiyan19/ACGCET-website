@@ -38,6 +38,77 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'33',
+    link:"https://drive.google.com/file/d/1zj4KEV6zqFCNSs6snUN8kzTShKPzNSR8/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent"> NOV DEC 2024-ME Arrear timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'33',
+    link:"https://drive.google.com/file/d/1ZAWHMgm7Lqb1ksKIkngbkj6uoT1gUvub/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent"> NOV DEC 2024-BE regular timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'38',
+    link:"https://drive.google.com/file/d/1ITrnmvrScPu4kNS0OOkGpisrdIHd224F/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent"> NOV DEC 2024-R2019 & 2019A BE &PTBE Arrear timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'37',
+    link:"https://drive.google.com/file/d/1HyQAJldqjG3eqM8tE6kKtevt87O4OCsD/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">NOV DEC 2024-ME regular timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'36',
+    link:"https://drive.google.com/file/d/1Ygh2LbapryXz0wKYqecypXb6g2j1lpTd/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent"> NOV DEC 2024-ph.D CourseWork timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'35',
+    link:"https://drive.google.com/file/d/1_L1s0nbRfAEescqVMNo29wHDm3JE1iuh/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent"> NOV DEC 2024-PTBE Regular timetable
+</span>
+        </span>
+    ),
+},
+{
+    id:'34',
+    link:"https://drive.google.com/file/d/11V1mgz189ecsU98k3DifyE5tv001Mfvp/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent"> NOV DEC 2024-R2022 BE &PTBE Arrear timetable
+</span>
+        </span>
+    ),
+},
+
+{
     id:'32',
     link:"https://drive.google.com/file/d/1wXyEODPnCv1wr5U1NSefTqYELbt651E9/view?usp=sharing",
     content:(
