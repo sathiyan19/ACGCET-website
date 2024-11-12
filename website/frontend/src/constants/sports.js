@@ -59,8 +59,11 @@ import vimanthan from "../assets/pictures/vimanthan.webp"
 import raveena from "../assets/pictures/raveena.webp"
 import chess from "../assets/pictures/sports chess.webp"
 import baseketball_CM from "../assets/pictures/basketballimg.webp"
-import subha from "../assets/pictures/subhachess.webp"
-import swimming from "../assets/pictures/swimming.webp"
+// import subha from "../assets/pictures/subhachess.webp"
+import swimming from "../assets/pictures/swimming_anna.jpg"
+import subha from "../assets/pictures/subha chess.jpg"
+import badmittongirls from "../assets/pictures/ballbadmittongirls.jpg"
+import hockeyboys from "../assets/pictures/hockeyboys.jpg"
 const badminton_M_R="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Badminton_M(R).webp"
 const khokho_M_R="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Kho_M(R).webp"
 const ballbadminton_M_W="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/Sports/Sportsmeet/Typhonz/Ball_bad_M.webp"
@@ -112,7 +115,7 @@ const image5="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/spo
 
 const baja ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Mech/SAE/BAJA-2014.webp"
 
-const sports_slideshow=[image1,image2,image3,image4,image5]
+const sports_slideshow=[badmittongirls,hockeyboys,baseketball_CM,chess,image5]
 
 const sportstime = [
   {
@@ -638,15 +641,15 @@ export const sport_achivement_info=[
         'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
       
       },
-    //   {
-    //     'id':'3',
-    //     'heading':'Winner ',
-    //     'sub-head':"Subha of 3rd Year EEE secured 1st prize in the CM Trophy Tournament in chess.",
-    //     'pic':subha,
-    //     'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
-    //     'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
+      {
+        'id':'3',
+        'heading':'Winner ',
+        'sub-head':"Subha of 3rd Year EEE secured 1st prize in the CM Trophy Tournament in chess.",
+        'pic':subha,
+        'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
+        'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
       
-    //   },
+      },
       {
         'id':'4',
         'heading':'4th Place',
@@ -656,15 +659,43 @@ export const sport_achivement_info=[
         // 'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
       
       },
-    //   {
-    //     'id':'5',
-    //     'heading':'2nd Place',
-    //     'sub-head': 'Harish, a final-year EEE student, secured 2nd position in the 50-meter butterfly event at the aquatic competitions and has been selected for the state-level CM Trophy Tournament.',        
-    //     'pic':swimming,
-    //     'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
-    //     'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
+      {
+        'id':'5',
+        'heading':'2nd Place',
+        'sub-head': 'Harish, a final-year EEE student, secured 2nd position in the 50-meter butterfly event at the aquatic competitions and has been selected for the state-level CM Trophy Tournament.',        
+        'pic':swimming,
+        'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
+        'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
       
-    //   },
+      },
+
+      {
+        'id':'6',
+        'heading':'Runner',
+        'sub-head': 'Ball badminton women secure second position in anna university zone 16 tournament',        
+        'pic':badmittongirls,
+        'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
+        'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
+      
+      },
+      {
+        'id':'6',
+        'heading':'Runner',
+        'sub-head': 'Chess men team secure runner up in Anna University zone 16 held at Mohamad sathak eng college kilakarai',        
+        'pic':chess,
+        'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
+        'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
+      
+      },
+      {
+        'id':'7',
+        'heading':'3rd place',
+        'sub-head': 'Hockey men secure third in anna university zone 16 tournament',        
+        'pic':hockeyboys,
+        'content_1':"In the academic year 2014-2015, a notable event known as BAJA SAE took place under the auspices of the Society of Automotive Engineers (SAE). The event unfolded from February 12th to 15th, 2015, at the challenging terrain of Pithambur, located in the vicinity of the National Automotive Testing and R&D Infrastructure Project (NATRiP) in Indore.",
+        'content_2':" BAJA SAE, renowned for its off-road vehicle design and fabrication challenges, drew the participation of 25 enthusiastic teams. This gathering of automotive enthusiasts and engineering minds showcased innovation, technical expertise, and a passion for pushing the boundaries of vehicular design and performance. The event not only provided a platform for friendly competition but also fostered knowledge exchange and collaboration within the automotive engineering community."
+      
+      },
 
 
 ]
