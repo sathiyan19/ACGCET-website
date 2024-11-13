@@ -219,7 +219,8 @@ export const subjects = {
       "22NCC02": { "credits": 3, "subname": "NCC Credit Course Level 2" },
       "22CSL47": { "credits": 1.5, "subname": "Operating Systems Laboratory" },
       "22CSL48": { "credits": 2, "subname": "Network and Cyber Security Lab" },
-      "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" }
+      "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" },
+      "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
      
   },
   
@@ -689,7 +690,8 @@ semesterSubjects={
         "22NCC02",
         "22CSL47",
         "22CSL48",
-        "22CSL49"
+        "22CSL49",
+        "22NM003"
       ]
     },
     5: {
