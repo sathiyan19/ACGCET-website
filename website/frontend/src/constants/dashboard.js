@@ -211,15 +211,16 @@ export const subjects = {
       "22HSL29": { "credits": 1.5, "subname": "Communication Laboratory / Foreign Language" },
       "22NM042": { "credits": 0, "subname": "Cambridge English Up skill course (Nan Mudhalvan course)" },
       "22CSC41": { "credits": 3, "subname": "Introduction to Operating Systems" },
-      "22CSC42": { "credits": 4, "subname": "Computer Networks" },
+      "22CSC42": { "credits": 3, "subname": "Computer Networks" },
       "22CSC43": { "credits": 3, "subname": "Theory of Computation" },
-      "22CSC44": { "credits": 4, "subname": "Cryptography and Cyber Security" },
+      "22CSC44": { "credits": 3, "subname": "Cryptography and Cyber Security" },
       "22CSC45": { "credits": 3, "subname": "Artificial Intelligence" },
       "22CYB46": { "credits": 2, "subname": "Environmental Sciences and Sustainability" },
       "22NCC02": { "credits": 3, "subname": "NCC Credit Course Level 2" },
       "22CSL47": { "credits": 1.5, "subname": "Operating Systems Laboratory" },
       "22CSL48": { "credits": 2, "subname": "Network and Cyber Security Lab" },
-      "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" }
+      "22CSL49": { "credits": 1.5, "subname": "Artificial Intelligence Lab" },
+      "22NM003": { "credits": 2, "subname": "Experience based project learning (EBPL)(Naan Mudhalvan Course)" },
      
   },
   
@@ -686,10 +687,11 @@ semesterSubjects={
         "22CSC44",
         "22CSC45",
         "22CYB46",
-        "22NCC02",
+        // "22NCC02",
         "22CSL47",
         "22CSL48",
-        "22CSL49"
+        "22CSL49",
+        "22NM003"
       ]
     },
     5: {
