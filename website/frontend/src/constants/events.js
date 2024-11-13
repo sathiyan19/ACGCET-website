@@ -1,5 +1,30 @@
 //IMPORTANT:: Date Format: SEP 06 2023 
 export const events=[
+     
+    {
+        'id': '18',
+        'date': 'NOV 12 2024',
+        'title': "Blood Donation Camp - by YRC ",
+        'time': '09:00 am',
+        'venue': 'Murugappa Hall',
+        'details': "We cordially invite you for Blood donation camp"
+    },
+    {
+        'id': '19',
+        'date': 'NOV 11 2024',
+        'title': "Aura -by Music Club",
+        'time': '03:00 pm',
+        'venue': 'Murugappa Hall',
+        'details': "We cordially invite you for Music club"
+    },
+    {
+        'id': '20',
+        'date': 'NOV 10 2024',
+        'title': "Lubber pandhu -by Rotaract Club",
+        'time': '09:00 am',
+        'venue': 'Murugappa Hall',
+        'details': "We cordially invite you for Lubber Pandhu"
+    },
       
         {
             'id': '17',
