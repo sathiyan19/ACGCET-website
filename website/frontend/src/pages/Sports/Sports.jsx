@@ -8,7 +8,7 @@ import {
   Listformat,
   Slideshow,
 } from "../../components";
-import { Sportcard,Underline , Modal} from "../../widgets";
+import { Sportcard,Underline ,Backtotop,Floatinmenu,Radial_menu, Modal} from "../../widgets";
 
 import { Events } from "../../containers";
 import {
@@ -16,6 +16,7 @@ import {
   sports_slideshow,
   sport_cards,
   sport_achivement_info,
+  sports_menu
 } from "../../constants/sports";
 // import {
 //   Sports_heroimage_carousalinfo,
@@ -34,7 +35,10 @@ const Sports = () => {
       <div className="sports_slides">
         <Slideshow images={sports_slideshow} />
       </div>
-
+      {/* <div className='dept_float_menu'>
+        <Floatinmenu logo={FaGraduationCap} head="Menu" links={sports_menu} />
+        </div>
+        <Radial_menu menu_links={sports_menu}/> */}
       <div className="sports_content_area">
 
         <Underline heading="Sports"/>

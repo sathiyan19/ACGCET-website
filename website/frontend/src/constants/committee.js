@@ -7,9 +7,9 @@ export const commpdf=[
     },
     {
         'id':"7",
-        "head":"Placement Advisory Committee",
+        "head":"Anti Drug",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1S8TsPsEsm3nhmJHSa28XCvIcZrTDD3d1/view?usp=sharing"
+        "pdf":"https://drive.google.com/file/d/1RvfLFMWHcqikkBe4aoI05jNsrMnsNXyN/view?usp=sharing"
     },
     
     {
@@ -83,5 +83,11 @@ export const commpdf=[
         "head":"Committee for SC/ST ",
         "house":"left",
         "pdf":"https://drive.google.com/file/d/149KXoP_nN6MixidHdNTnZTtmZ91snuGM/view?usp=sharing"
+    },
+    {
+        'id':"15",
+        "head":"Placement Advisory Committee",
+        "house":"right",
+        "pdf":"https://drive.google.com/file/d/1S8TsPsEsm3nhmJHSa28XCvIcZrTDD3d1/view?usp=sharing"
     },
 ]
