@@ -3,7 +3,7 @@ export const academic_cals=[
         'id':"4",
         "head":"2023-24 (Revised)",
         "house":"right",
-        "pdf":"https://drive.google.com/file/d/1YfR3ZXI3OeaNlZpX1NbnBqd8JQMiBK2x/view?usp=drivesdk"
+        "pdf":"/Revised_Academic_Calendar_2023-24.pdf"
     },
     {
         'id':"1",

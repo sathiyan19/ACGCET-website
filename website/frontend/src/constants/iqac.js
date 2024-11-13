@@ -233,7 +233,7 @@ const iqac_aqar=[
         'id':"4",
         "head":"2022-2023",
         "house":"right",
-        "pdf":"https://drive.google.com/file/d/1cYjL55OoumsY8jhWUdW948gjeAyczScx/view?usp=sharing"
+        "pdf":"/AQAR_2022-23.pdf"
     },
     {
         'id':"3",
@@ -260,7 +260,7 @@ const iqac_min=[
         'id':"1",
         "head":"2023-2024",
         "house":"right",
-        "pdf":"https://drive.google.com/file/d/1Rhhz2NpDttiaT6S0K_9uyGYAo6VERneB/view?usp=sharing"
+        "pdf":"/IQAC_minutes_2023_24.pdf"
     },
     {
         'id':"2",
