@@ -190,7 +190,7 @@ export{default as Std_mini_project_fb} from './Feedback/Std_mini_project_fb'
 export{default as Employer_fb} from './Feedback/Employer_fb'
 export{default as Technical_fb} from './Feedback/Technical_fb'
 export{default as Practical_fb} from './Feedback/Practical_fb'
-
+export{default as Sports_achivement} from './Sports/Sports_achievement'
 
 
 // export{default as Parents_fb}from './Feedback/Parents_fb'
