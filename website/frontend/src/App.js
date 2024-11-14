@@ -192,7 +192,8 @@ import {
   FeedbackPdf,
   Std_mini_project_fb,
   Ece_alumni,
-  Ece_alumni_notable
+  Ece_alumni_notable,
+  Sports_achivement
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -260,6 +261,7 @@ const App = () => {
         <Route path="/ncc" element={<Ncc />} />
         <Route path="/thiran" element={<Thiran />} />
         <Route path="/sports" element={<Sports />} />
+        <Route path="/sportsachievement" element ={<Sports_achivement/>} />
         <Route path="/ecedept" element={<Ecedept />} />
         <Route path="/annual_reports" element={<Annual_report />} />
         <Route path="/academic-calendar" element={<Academic />} />
