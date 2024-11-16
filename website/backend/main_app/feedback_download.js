@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json()); 
 
 const getSupplierFeedbackTemplate = (feedbackData) => {
-    // Calculate averages for each rating column
+   
     const totalRows = feedbackData.length;
     const averages = {
         procurement_process: 0,
@@ -32,7 +32,6 @@ const getSupplierFeedbackTemplate = (feedbackData) => {
         averages.business_relationship += row.business_relationship;
     });
 
-    // Compute the average by dividing the total by the number of feedback entries
     Object.keys(averages).forEach(key => {
         averages[key] = (averages[key] / totalRows).toFixed(2); // Round to 2 decimal places
     });
@@ -1929,10 +1928,52 @@ const getSeminarFeedbackTemplate = (feedbackData) => `
 </body>
 </html>
 `;
-const getAluminiFeedbackTemplate = (feedbackData) => `
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+const getAluminiFeedbackTemplate = (feedbackData) => {
+    const totalRows = feedbackData.length;
+    const averages = {
+        knowledge_in_field: 0,
+        latest_developments: 0,
+        practical_solving: 0,
+        creative_thoughts: 0,
+        analytical_assessment: 0,
+        self_learner: 0,
+        financial_management: 0,
+        know_capabilities: 0,
+        modern_equipment: 0,
+        peer_interaction: 0,
+        professional_friends: 0,
+        leadership_ability: 0,
+        effective_communication: 0,
+        clear_expression: 0,
+        ethical_actions: 0
+    };
+
+    feedbackData.forEach(row => {
+        averages.knowledge_in_field += row.knowledge_in_field || 0;
+        averages.latest_developments += row.latest_developments || 0;
+        averages.practical_solving += row.practical_solving || 0;
+        averages.creative_thoughts += row.creative_thoughts || 0;
+        averages.analytical_assessment += row.analytical_assessment || 0;
+        averages.self_learner += row.self_learner || 0;
+        averages.financial_management += row.financial_management || 0;
+        averages.know_capabilities += row.know_capabilities || 0;
+        averages.modern_equipment += row.modern_equipment || 0;
+        averages.peer_interaction += row.peer_interaction || 0;
+        averages.professional_friends += row.professional_friends || 0;
+        averages.leadership_ability += row.leadership_ability || 0;
+        averages.effective_communication += row.effective_communication || 0;
+        averages.clear_expression += row.clear_expression || 0;
+        averages.ethical_actions += row.ethical_actions || 0;
+    });
+
+    Object.keys(averages).forEach(key => {
+        averages[key] = (averages[key] / totalRows).toFixed(2);
+    });
+
+    return `
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alumni Feedback</title>
@@ -1940,37 +1981,27 @@ const getAluminiFeedbackTemplate = (feedbackData) => `
         body {
             font-family: Arial, sans-serif;
             margin: 15px;
-            font-size: 22px;
+            font-size: 12px;
         }
-            .title-container {
+        .title-container {
             text-align: center;
-            margin-top: 50px; /* Top margin for title */
-            margin-bottom: 40px; /* Bottom margin for title */
+            margin-top: 50px;
+            margin-bottom: 40px;
         }
         .title-container h2 {
             font-size: 24px;
-            line-height: 1; /* Adjusted line-height for tighter spacing */
-            margin: 0; /* Removed default margin for individual h2 */
+            line-height: 1;
+            margin: 0;
         }
-               .bordered-container {
-            margin: 30px; /* Added margin around the border */
-            padding: 20px; /* Padding inside the border */
-            border: 2px solid #000; /* Black border */
-            border-radius: 10px; /* Rounded corners */
+        .bordered-container {
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
         }
         h1 {
             color: #333;
-            text-align: center; /* Center the title */
-        }
-        h2 {
-            font-size: 24px;
-            margin-top: 55px; 
-            margin-bottom: 35px; 
-            line-height: 1;
-            text-align: center; 
-        }
-        .table-container {
-            margin-bottom: 20px; /* Consistent margin for separation */
+            text-align: center;
         }
         table {
             width: 100%;
@@ -1979,222 +2010,340 @@ const getAluminiFeedbackTemplate = (feedbackData) => `
         }
         table, th, td {
             border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 8px; /* Increased padding for better readability */
-            text-align: left;
-            word-wrap: break-word; /* Enable word wrapping */
+            padding: 8px;
         }
         th {
             background-color: #f4f4f4;
             font-weight: bold;
         }
         tbody tr:nth-child(even) {
-            background-color: #f9f9f9; /* Alternate row color */
+            background-color: #f9f9f9;
         }
         tbody tr:hover {
-            background-color: #e0e0e0; /* Highlight row on hover */
+            background-color: #e0e0e0;
         }
-        @media print {
-            .page-break {
-                page-break-before: always;
-                padding-top: 20px; /* Add padding at the top of new pages */
-            }
-        }
-              table {
-            width: 100%;
-            border-collapse: collapse;
+        .averages-container {
             margin-top: 20px;
         }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td 
-        {
-            padding: 8px; /* Reduced padding to save space */
-            text-align: left;
-            word-wrap: break-word; /* Enable word wrapping */
-        }
-        th 
-        {
-            background-color: #f4f4f4;
-            color: #333;
-            font-weight: bold;
-        }
-        tbody tr:nth-child(even) 
-        {
-            background-color: #f9f9f9; /* Alternate row color */
-        }
-        tbody tr:hover {
-            background-color: #e0e0e0; /* Highlight row on hover */
-        }
-        .question-column {
-            width: 30%; /* Adjusted width for better balance */
-        }
-        .points-column {
-            width: 30%; /* Adjusted width for better balance */
-            text-align: center;
-        }
-        .table-container {
-            margin-bottom: 20px; /* Consistent margin for separation */
-        }
     </style>
-  </head>
-  <body>
-  <div class="bordered-container">
+</head>
+<body>
+<div class="bordered-container">
     <div class="title-container">
         <h2>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF </h2>
         <h2>ENGINEERING AND TECHNOLOGY KARAIKUDI-630003</h2>
         <h2>(A Government Autonomous Institution Affiliated to Anna University)</h2>
     </div>
 
-
-    
     <h1>Alumni Feedback Summary</h1>
     <p>Date: ${new Date().toLocaleDateString()}</p>
-    
+
     ${feedbackData.map((row, index) => `
         <div class="table-container ${index > 0 ? 'page-break' : ''}">
-          <h2>Feedback #${index + 1}</h2>
-          <table>
-           <thead>
+            <h2>Feedback #${index + 1}</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="question-column">Question</th>
+                        <th class="points-column">Points Given</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Alumni Name</td><td>${row.alumni_name || 'N/A'}</td></tr>
+                    <tr><td>Designation</td><td>${row.designation || 'N/A'}</td></tr>
+                    <tr><td>Programme</td><td>${row.programme || 'N/A'}</td></tr>
+                    <tr><td>Knowledge in Field</td><td>${row.knowledge_in_field || 'N/A'}</td></tr>
+                    <tr><td>Latest Developments</td><td>${row.latest_developments || 'N/A'}</td></tr>
+                    <tr><td>Practical Problem Solving</td><td>${row.practical_solving || 'N/A'}</td></tr>
+                    <tr><td>Creative and Innovative Thinking</td><td>${row.creative_thoughts || 'N/A'}</td></tr>
+                    <tr><td>Analytical Assessment</td><td>${row.analytical_assessment || 'N/A'}</td></tr>
+                    <tr><td>Self-Learning Ability</td><td>${row.self_learner || 'N/A'}</td></tr>
+                    <tr><td>Financial Management Skills</td><td>${row.financial_management || 'N/A'}</td></tr>
+                    <tr><td>Understanding of Personal Capabilities</td><td>${row.know_capabilities || 'N/A'}</td></tr>
+                    <tr><td>Familiarity with Modern Equipment</td><td>${row.modern_equipment || 'N/A'}</td></tr>
+                    <tr><td>Interaction with Peers</td><td>${row.peer_interaction || 'N/A'}</td></tr>
+                    <tr><td>Networking with Professionals</td><td>${row.professional_friends || 'N/A'}</td></tr>
+                    <tr><td>Leadership Qualities</td><td>${row.leadership_ability || 'N/A'}</td></tr>
+                    <tr><td>Effective Communication</td><td>${row.effective_communication || 'N/A'}</td></tr>
+                    <tr><td>Clear Expression of Ideas</td><td>${row.clear_expression || 'N/A'}</td></tr>
+                    <tr><td>Ethical and Social Responsibility</td><td>${row.ethical_actions || 'N/A'}</td></tr>
+                </tbody>
+            </table>
+        </div>`).join('')}
+</div>
+
+
+    <!-- Averages Section -->
+    <div class="averages-container">
+        <h2>Averages</h2>
+        <table>
+            <thead>
                 <tr>
                     <th class="question-column">Question</th>
-                    <th class="points-column">Points Given</th>
+                    <th class="points-column">Average Points</th>
                 </tr>
             </thead>
-             <tbody>
-            <tr>
-              <td>Alumni Name</td>
-              <td>${row.alumni_name || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Designation</td>
-              <td>${row.designation || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Programme</td>
-              <td>${row.programme || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Department</td>
-              <td>${row.department || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Passed Out Year</td>
-              <td>${row.passed_out_year || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Higher Studies</td>
-              <td>${row.higher_studies || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Higher Studies Institution</td>
-              <td>${row.higher_studies_institution || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Competitive Exam</td>
-              <td>${row.competitive_exam || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Competitive Exam Name</td>
-              <td>${row.competitive_exam_name || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Company Name</td>
-              <td>${row.company_name || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Entry Level Position</td>
-              <td>${row.entry_level_position || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Current Position</td>
-              <td>${row.current_position || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Responsibilities</td>
-              <td>${row.responsibilities || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Achievements</td>
-              <td>${row.achievements || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>In Service</td>
-              <td>${row.in_service || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>City</td>
-              <td>${row.city || 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Knowledge in Field</td>
-              <td>${row.knowledge_in_field !== undefined ? row.knowledge_in_field : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Latest Developments</td>
-              <td>${row.latest_developments !== undefined ? row.latest_developments : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Practical Solving</td>
-              <td>${row.practical_solving !== undefined ? row.practical_solving : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Creative Thoughts</td>
-              <td>${row.creative_thoughts !== undefined ? row.creative_thoughts : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Analytical Assessment</td>
-              <td>${row.analytical_assessment !== undefined ? row.analytical_assessment : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Self Learner</td>
-              <td>${row.self_learner !== undefined ? row.self_learner : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Financial Management</td>
-              <td>${row.financial_management !== undefined ? row.financial_management : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Know Capabilities</td>
-              <td>${row.know_capabilities !== undefined ? row.know_capabilities : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Modern Equipment</td>
-              <td>${row.modern_equipment !== undefined ? row.modern_equipment : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Peer Interaction</td>
-              <td>${row.peer_interaction !== undefined ? row.peer_interaction : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Professional Friends</td>
-              <td>${row.professional_friends !== undefined ? row.professional_friends : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Leadership Ability</td>
-              <td>${row.leadership_ability !== undefined ? row.leadership_ability : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Effective Communication</td>
-              <td>${row.effective_communication !== undefined ? row.effective_communication : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Clear Expression</td>
-              <td>${row.clear_expression !== undefined ? row.clear_expression : 'N/A'}</td>
-            </tr>
-            <tr>
-              <td>Ethical Actions</td>
-              <td>${row.ethical_actions !== undefined ? row.ethical_actions : 'N/A'}</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>Knowledge in Field</td>
+                    <td>${averages.knowledge_in_field}</td>
+                </tr>
+                <tr>
+                    <td>Latest Developments</td>
+                    <td>${averages.latest_developments}</td>
+                </tr>
+                <tr>
+                    <td>Practical Solving</td>
+                    <td>${averages.practical_solving}</td>
+                </tr>
+                <tr>
+                    <td>Creative Thoughts</td>
+                    <td>${averages.creative_thoughts}</td>
+                </tr>
+                <tr>
+                    <td>Analytical Assessment</td>
+                    <td>${averages.analytical_assessment}</td>
+                </tr>
+                <tr>
+                    <td>Self Learner</td>
+                    <td>${averages.self_learner}</td>
+                </tr>
+                <tr>
+                    <td>Financial Management</td>
+                    <td>${averages.financial_management}</td>
+                </tr>
+                <tr>
+                    <td>Know Capabilities</td>
+                    <td>${averages.know_capabilities}</td>
+                </tr>
+                <tr>
+                    <td>Modern Equipment</td>
+                    <td>${averages.modern_equipment}</td>
+                </tr>
+                <tr>
+                    <td>Peer Interaction</td>
+                    <td>${averages.peer_interaction}</td>
+                </tr>
+                <tr>
+                    <td>Professional Friends</td>
+                    <td>${averages.professional_friends}</td>
+                </tr>
+                <tr>
+                    <td>Leadership Ability</td>
+                    <td>${averages.leadership_ability}</td>
+                </tr>
+                <tr>
+                    <td>Effective Communication</td>
+                    <td>${averages.effective_communication}</td>
+                </tr>
+                <tr>
+                    <td>Clear Expression</td>
+                    <td>${averages.clear_expression}</td>
+                </tr>
+                <tr>
+                    <td>Ethical Actions</td>
+                    <td>${averages.ethical_actions}</td>
+                </tr>
             </tbody>
-          </table>
-        </div>`).join('')}
-        </div>
-    </body>
-    </html>
-  `;
+        </table>
+    </div>
+</div>
+</body>
+</html>
+    `;
+};
+const getParentsFeedbackTemplate = (feedbackData) => {
+    const totalRows = feedbackData.length;
+    const averages = {
+        infrastructure_facilities: 0,
+        college_ambience: 0,
+        authority_approachability: 0,
+        hostel_facilities: 0,
+        library_sports_facilities: 0,
+        security_safety_measures: 0,
+        faculty_academic_skills: 0,
+        learning_experience: 0,
+        environment_diversity: 0,
+        placement_opportunities: 0,
+        technical_knowledge_improvement: 0,
+        college_environment_development: 0,
+    };
+
+    feedbackData.forEach(row => {
+        averages.infrastructure_facilities += row.infrastructure_facilities;
+        averages.college_ambience += row.college_ambience;
+        averages.authority_approachability += row.authority_approachability;
+        averages.hostel_facilities += row.hostel_facilities;
+        averages.library_sports_facilities += row.library_sports_facilities;
+        averages.security_safety_measures += row.security_safety_measures;
+        averages.faculty_academic_skills += row.faculty_academic_skills;
+        averages.learning_experience += row.learning_experience;
+        averages.environment_diversity += row.environment_diversity;
+        averages.placement_opportunities += row.placement_opportunities;
+        averages.technical_knowledge_improvement += row.technical_knowledge_improvement;
+        averages.college_environment_development += row.college_environment_development;
+    });
+
+    Object.keys(averages).forEach(key => {
+        averages[key] = (averages[key] / totalRows).toFixed(2); // Round to 2 decimal places
+    });
+
+    return `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 15px;
+            font-size: 8px;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .table-container {
+            width: 100%;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: left;
+            word-wrap: break-word;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parents Feedback Summary</h1>
+    <p>Date: ${new Date().toLocaleDateString()}</p>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Register Number</th>
+                    <th>Branch</th>
+                    <th>Passed Out Year</th>
+                    <th>Infrastructure</th>
+                    <th>College Ambience</th>
+                    <th>Authority Approachability</th>
+                    <th>Hostel Facilities</th>
+                    <th>Library & Sports Facilities</th>
+                    <th>Security & Safety Measures</th>
+                    <th>Faculty Academic Skills</th>
+                    <th>Learning Experience</th>
+                    <th>Environment Diversity</th>
+                    <th>Placement Opportunities</th>
+                    <th>Technical Knowledge Improvement</th>
+                    <th>College Environment Development</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${feedbackData.map(row => `
+                <tr>
+                    <td>${row.student_name}</td>
+                    <td>${row.student_register_number}</td>
+                    <td>${row.branch}</td>
+                    <td>${row.passed_out_year}</td>
+                    <td>${row.infrastructure_facilities}</td>
+                    <td>${row.college_ambience}</td>
+                    <td>${row.authority_approachability}</td>
+                    <td>${row.hostel_facilities}</td>
+                    <td>${row.library_sports_facilities}</td>
+                    <td>${row.security_safety_measures}</td>
+                    <td>${row.faculty_academic_skills}</td>
+                    <td>${row.learning_experience}</td>
+                    <td>${row.environment_diversity}</td>
+                    <td>${row.placement_opportunities}</td>
+                    <td>${row.technical_knowledge_improvement}</td>
+                    <td>${row.college_environment_development}</td>
+                </tr>`).join('')}
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Averages Section -->
+    <div class="table-container">
+        <h2>Averages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Average Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Infrastructure Facilities</td>
+                    <td>${averages.infrastructure_facilities}</td>
+                </tr>
+                <tr>
+                    <td>College Ambience</td>
+                    <td>${averages.college_ambience}</td>
+                </tr>
+                <tr>
+                    <td>Authority Approachability</td>
+                    <td>${averages.authority_approachability}</td>
+                </tr>
+                <tr>
+                    <td>Hostel Facilities</td>
+                    <td>${averages.hostel_facilities}</td>
+                </tr>
+                <tr>
+                    <td>Library & Sports Facilities</td>
+                    <td>${averages.library_sports_facilities}</td>
+                </tr>
+                <tr>
+                    <td>Security & Safety Measures</td>
+                    <td>${averages.security_safety_measures}</td>
+                </tr>
+                <tr>
+                    <td>Faculty Academic Skills</td>
+                    <td>${averages.faculty_academic_skills}</td>
+                </tr>
+                <tr>
+                    <td>Learning Experience</td>
+                    <td>${averages.learning_experience}</td>
+                </tr>
+                <tr>
+                    <td>Environment Diversity</td>
+                    <td>${averages.environment_diversity}</td>
+                </tr>
+                <tr>
+                    <td>Placement Opportunities</td>
+                    <td>${averages.placement_opportunities}</td>
+                </tr>
+                <tr>
+                    <td>Technical Knowledge Improvement</td>
+                    <td>${averages.technical_knowledge_improvement}</td>
+                </tr>
+                <tr>
+                    <td>College Environment Development</td>
+                    <td>${averages.college_environment_development}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+`;
+};
+
+
 const generatePdfAndSendEmail = async (req, res) => {
     const { option } = req.body;
 
@@ -2275,8 +2424,8 @@ const generatePdfAndSendEmail = async (req, res) => {
         });
 
         const mailOptions = {
-            from: 'acgcet25@gmail.com',
-            to:'acgcet25@gmail.com' ,
+            from: 'mohanamala07@gmail.com',
+            to:'mohanamala07@gmail.com' ,
             subject: `${option.charAt(0).toUpperCase() + option.slice(1)} Feedback PDF`,
             text: 'Please find the attached Feedback PDF.',
             attachments: [
