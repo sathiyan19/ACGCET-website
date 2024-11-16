@@ -38,6 +38,16 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'34',
+    link:"https://drive.google.com/file/d/1zDeQTaq_IT8QF8Qu7K_zkldoLWaspyDB/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">Establishment of StartupTN Pre-incubation Centre
+</span>
+        </span>
+    ),
+},
+{
     id:'33',
     link:"https://drive.google.com/file/d/1zj4KEV6zqFCNSs6snUN8kzTShKPzNSR8/view?usp=sharing",
     content:(

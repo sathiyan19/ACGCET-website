@@ -67,7 +67,7 @@ const Admin_dashboard = () => {
       if (res.data.Status === "Success") {
         console.log("hi")
         if(res.data.stud_details.regno==='91762115000'){
-          navigate("/admin-panel")
+          navigate("/FeedbackPdf")
         }
         // console.log(stud_details);
       } else {
