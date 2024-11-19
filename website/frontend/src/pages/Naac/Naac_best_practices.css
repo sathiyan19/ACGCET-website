@@ -1,0 +1,55 @@
+.Naac_bestpractices{
+    width:75%;
+      padding: 20px;
+  }
+  .naac_tab{
+    margin-bottom: 30px;
+  
+  }
+  
+  .nbamenu{
+    /* display: flex;
+      flex-direction: column; */
+    padding: 40px 20px;
+    width: 75%;
+    /* border-radius: 5px 0 5px 0; */
+  }
+  @media (max-width:895px) {
+       .nba_tab{
+      margin:50px auto 20px auto;
+      width:90%;
+     }
+     .nba_text{
+      width: 100%;
+     }
+  }
+  @media (max-width:768px) {
+    .nba{
+        width:100%;
+    }
+    .nba_text{
+      line-height: 1.5rem;
+                color: black;
+                font-size: 18px;
+                text-align: justify;
+                width: 100%;
+    }
+  }
+  @media (max-width:698px) {
+       .nba_tab{
+      overflow-x: scroll;
+      width:100%;
+       }
+       
+      
+  }
+  @media (max-width:530px) {
+    .nba_tab{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .nba_float_menu {
+      display: none;
+    }
+  }
+  

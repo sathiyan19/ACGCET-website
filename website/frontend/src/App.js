@@ -140,6 +140,7 @@ import {
   Coe_Academic,
   Coe_link,
   
+  Naac_best_practices,
   Coe_Contact,
   Coe_Application,
   Coe_Claim,
@@ -329,7 +330,7 @@ const App = () => {
         <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
         <Route path="/iqac_committee" element={<Iqac_committee/>} />
         
-        
+        <Route path="/naacbestpractices" element={<Naac_best_practices/>}/>
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nba/nbadoc" element={<Nbadoc/>} />
         <Route path="/nba/nba_sar" element={<Nba_sar/>} />
