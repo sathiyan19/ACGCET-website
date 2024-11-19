@@ -121,6 +121,7 @@ export {default as Coe_Claim}from'./coe/Coe_Claim'
 export {default as Coe_FeeStruct}from'./coe/Coe_FeeStruct'
 export {default as Coe_syllabuss}from'./coe/Coe_syllabuss'
 
+export{default as Naac_best_practices} from './Naac/Naac_best_practices'
 export {default as Coe_syllabus1}from'./coe/Coe_syllabus1'
 export {default as Coe_Committiee}from'./coe/Coe_Committiee'
 export{default as Placement} from './placement/placement'
@@ -190,7 +191,7 @@ export{default as Std_mini_project_fb} from './Feedback/Std_mini_project_fb'
 export{default as Employer_fb} from './Feedback/Employer_fb'
 export{default as Technical_fb} from './Feedback/Technical_fb'
 export{default as Practical_fb} from './Feedback/Practical_fb'
-
+export{default as Sports_achivement} from './Sports/Sports_achievement'
 
 
 // export{default as Parents_fb}from './Feedback/Parents_fb'

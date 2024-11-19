@@ -1,3 +1,5 @@
+
+import cognoblaze_24 from "../assets/pictures/cse_symbo_pic.jpg"
 const dpm ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/boy.webp"
 const dpf ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Default_profile+/girl.webp"
 const cover ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/Departments/Cse/Faculties/Cover/cse_banner.webp"
@@ -1765,17 +1767,17 @@ const cse_mou_data=[
 ]
 
 const cse_asso_events=[
-    // {
-  //   id: "3",
-  //   heading: "Cognoblaze'24",
-  //   "sub-head":
-  //     "21th OCT 2022",
-  //   pic: cognoblaze_23,
-  //   content_1:
-  //     "",
-  //   content_2:
-  //     "",
-  // },
+    {
+    id: "3",
+    heading: "Cognoblaze'24",
+    "sub-head":
+      "21th OCT 2024",
+    pic: cognoblaze_24,
+    content_1:
+      "",
+    content_2:
+      "",
+  },
   {
     id: "1",
     heading: "Cognoblaze'23",

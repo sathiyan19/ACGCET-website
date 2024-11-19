@@ -140,6 +140,7 @@ import {
   Coe_Academic,
   Coe_link,
   
+  Naac_best_practices,
   Coe_Contact,
   Coe_Application,
   Coe_Claim,
@@ -192,7 +193,8 @@ import {
   FeedbackPdf,
   Std_mini_project_fb,
   Ece_alumni,
-  Ece_alumni_notable
+  Ece_alumni_notable,
+  Sports_achivement
 } from "./pages";
 import "./App.css";
 import Coe_syllabus from "./pages/coe/Coe_syllabuss";
@@ -260,6 +262,7 @@ const App = () => {
         <Route path="/ncc" element={<Ncc />} />
         <Route path="/thiran" element={<Thiran />} />
         <Route path="/sports" element={<Sports />} />
+        <Route path="/sportsachievement" element ={<Sports_achivement/>} />
         <Route path="/ecedept" element={<Ecedept />} />
         <Route path="/annual_reports" element={<Annual_report />} />
         <Route path="/academic-calendar" element={<Academic />} />
@@ -327,7 +330,7 @@ const App = () => {
         <Route path="/iqac_std_statisfy" element={<Iqac_std_statisfy/>} />
         <Route path="/iqac_committee" element={<Iqac_committee/>} />
         
-        
+        <Route path="/naacbestpractices" element={<Naac_best_practices/>}/>
         <Route path="/nba" element={<Nba/>} />
         <Route path="/nba/nbadoc" element={<Nbadoc/>} />
         <Route path="/nba/nba_sar" element={<Nba_sar/>} />
