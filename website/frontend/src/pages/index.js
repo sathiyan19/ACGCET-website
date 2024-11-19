@@ -121,6 +121,7 @@ export {default as Coe_Claim}from'./coe/Coe_Claim'
 export {default as Coe_FeeStruct}from'./coe/Coe_FeeStruct'
 export {default as Coe_syllabuss}from'./coe/Coe_syllabuss'
 
+export{default as Naac_best_practices} from './Naac/Naac_best_practices'
 export {default as Coe_syllabus1}from'./coe/Coe_syllabus1'
 export {default as Coe_Committiee}from'./coe/Coe_Committiee'
 export{default as Placement} from './placement/placement'

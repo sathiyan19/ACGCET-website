@@ -37,7 +37,7 @@ export const events=[
         {
             'id': '14',
             'date': 'NOV 06 2024',
-            'title': "Sygnels",
+            'title': " ECE Inter Symposium Sygnels",
             'time': '09:00 am',
             'venue': 'Murugappa Hall',
             'details': "We cordially invite you for Sygnels'24"
@@ -45,7 +45,7 @@ export const events=[
         {
             'id': '11',
             'date': 'NOV 05 2024',
-            'title': "Fuels'25",
+            'title': "MEC Intra Symposium Fuels'25",
             'time': '09:00 am',
             'venue': 'Murugappa Hall',
             'details': "We cordially invite you for Fuels'24"
@@ -53,7 +53,7 @@ export const events=[
         {
             'id': '15',
             'date': 'OCT 24 2024',
-            'title': "Cesar",
+            'title': "CIV Intra Symposium Cesar",
             'time': '09:00 am',
             'venue': 'Sangamam Hall',
             'details': "We cordially invite you for Cesar'24"
@@ -61,7 +61,7 @@ export const events=[
         {
             'id': '16',
             'date': 'OCT 22,23 2024',
-            'title': "Alconsy",
+            'title': "EEE Inter Symposium Alconsy",
             'time': '09:00 am',
             'venue': 'Murugappa Hall',
             'details': "We cordially invite you for Alconsy'24"
@@ -69,7 +69,7 @@ export const events=[
         {
             'id': '13',
             'date': 'OCT 21 2024',
-            'title': "Cognoblaze",
+            'title': "CSE Inter Symposium Cognoblaze",
             'time': '09:00 am',
             'venue': 'Sangamam Hall',
             'details': "We cordially invite you for Congnoblaze'24"
