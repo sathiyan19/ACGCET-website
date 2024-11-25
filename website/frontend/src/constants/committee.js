@@ -1,5 +1,11 @@
 export const commpdf=[
     {
+        'id':"15",
+        "head":"Helpdesk Committee",
+        "house":"left",
+        "pdf":"https://drive.google.com/file/d/1d_g8nApTHXhAsqrkLpLP3vdbHfx048_O/view?usp=sharing"
+    },
+    {
         'id':"14",
         "head":"Web Committee",
         "house":"right",
