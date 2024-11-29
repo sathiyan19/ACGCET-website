@@ -33,6 +33,8 @@ const Footer = () => {
                             <li><a href="https://drive.google.com/file/d/15XA3lz_0XbcLafIkk5V3IqsXkA-lVG6W/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Fire Service License</a></li>
                             <li><a href="https://drive.google.com/file/d/1UgGpqWhJyy6stEmUQgu_4TOLEhPqDqlG/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Occupancy Certificate</a></li>
                             <li><a href="https://drive.google.com/file/d/1ryOwfK8ryUbldT_peyqWiCZgBqiyFIoN/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Structural Stability Certificate</a></li>
+                            <li><a href="https://drive.google.com/file/d/18yaBMnjF2Lk1Qe7OTgKh4m86sYUL3Oe8/view?usp=sharing" target='blank' rel='noopener noreferrer' media='print'>Help Desk - Escalation Procedures </a></li>
+
                         </ul>
                     </div>
                     <div className="sec quicklinks col-lg-3">

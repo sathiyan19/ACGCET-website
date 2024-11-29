@@ -34,7 +34,8 @@ const Events = ({ events, head }) => {
             event.date,
             event.time,
             event.details,
-            event.venue
+            event.venue,
+            event.button,
           );
           return (
             <Eventcard
@@ -45,9 +46,11 @@ const Events = ({ events, head }) => {
               venue={event.venue}
               cal_link={gcal_link}
               status={event.status}
+              button={event.button}
             />
           );
         })}
+
       </div>
           <div className="event__knowmore-btn-container">
 
