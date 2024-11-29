@@ -4217,6 +4217,14 @@ const ece_intern=[
   },
 ]
 
+  export const sympo_data=[
+    {
+        'id':1,
+        'program':'Sygnels - A state level technical symposium',
+        'pdf':'https://docs.google.com/document/d/1RAFv8A4BjETBTg66k_Zn4Rgzh0jDE4JD/edit?usp=sharing&ouid=108455310361181583387&rtpof=true&sd=true',
+    },
+]
+
 export {
   ece_dept_menu,
   ece_fac_profiles,

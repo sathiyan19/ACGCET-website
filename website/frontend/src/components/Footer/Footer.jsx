@@ -28,6 +28,7 @@ const Footer = () => {
                             <li><a href="/aicte">AICTE</a></li>
                             <li><a href="https://drive.google.com/file/d/1ZwueQyjgqkqhmbY2-I2G972QQ7TY4urz/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Affliation</a></li>
                             <li><a href="/autonomous">Autonomous</a></li>
+                            <li><a href="https://drive.google.com/file/d/1d_g8nApTHXhAsqrkLpLP3vdbHfx048_O/view?usp=sharing">Helpdesk committee</a></li>
                             {/* <li><a href="https://drive.google.com/file/d/1s2O5gv3ZY_UFnatRDD-tI1OodPEEI864/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Autonomous</a></li> */}
                             <li><a href="https://drive.google.com/file/d/15XA3lz_0XbcLafIkk5V3IqsXkA-lVG6W/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Fire Service License</a></li>
                             <li><a href="https://drive.google.com/file/d/1UgGpqWhJyy6stEmUQgu_4TOLEhPqDqlG/view?usp=drive_link" target='blank' rel='noopener noreferrer' media='print'>Occupancy Certificate</a></li>

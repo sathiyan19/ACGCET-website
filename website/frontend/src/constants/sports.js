@@ -699,5 +699,13 @@ export const sport_achivement_info=[
 
 
 ]
+const sports_menu=[
+    {
+        id: "1",
+        path: "/sportsachievement",
+        link: "Achievement",
+        arl: "l",
+    }
+]
 
-export {sport_cards,sports_slideshow,sportstime,sportslist,sportsvision,sportsmission,sports_meet_2k24_schedule,ignatz_list,typhonz_list,phoenix_list,akkadians_list}
+export {sport_cards,sports_slideshow,sportstime,sportslist,sportsvision,sportsmission,sports_meet_2k24_schedule,ignatz_list,typhonz_list,phoenix_list,akkadians_list,sports_menu}

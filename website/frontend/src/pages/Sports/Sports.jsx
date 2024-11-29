@@ -7,15 +7,17 @@ import {
   Timeline,
   Listformat,
   Slideshow,
+  Radial_menu
 } from "../../components";
-import { Sportcard,Underline , Modal} from "../../widgets";
-
+import { Sportcard,Underline ,Backtotop,Floatinmenu, Modal} from "../../widgets";
+import {MdOutlineSportsTennis }from "react-icons/md";
 import { Events } from "../../containers";
 import {
   sports_meet_2k24_schedule,
   sports_slideshow,
   sport_cards,
   sport_achivement_info,
+  sports_menu
 } from "../../constants/sports";
 // import {
 //   Sports_heroimage_carousalinfo,
@@ -34,7 +36,10 @@ const Sports = () => {
       <div className="sports_slides">
         <Slideshow images={sports_slideshow} />
       </div>
-
+      <div className='dept_float_menu'>
+        <Floatinmenu logo={MdOutlineSportsTennis} head="Menu" links={sports_menu} />
+        </div>
+        <Radial_menu menu_links={sports_menu}/>
       <div className="sports_content_area">
 
         <Underline heading="Sports"/>
@@ -66,19 +71,7 @@ const Sports = () => {
 
         {/* <Events events={sports_meet_2k24_schedule} /> */}
 
-        <div className="mech_events">
-            <Underline heading="Achivements" />
-            <div className="lab_cards row">
-              {sport_achivement_info.map((item) => (
-                <Modal
-                  heading={item.heading}
-                  pic={item.pic}
-                 
-                  sub_text={item["sub-head"]}
-                />
-              ))}
-            </div>
-          </div>
+      
 
             
       </div>
