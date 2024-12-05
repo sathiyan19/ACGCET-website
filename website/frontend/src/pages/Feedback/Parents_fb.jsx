@@ -52,7 +52,7 @@ const ParentsFeedback = () => {
         const value = e.target.value;
         if (/^\d*$/.test(value)) {
             setRegisterNumber(value);
-            setErrors(prevErrors => ({ ...prevErrors, registerNumber: '' })); // Clear the error if valid
+            setErrors(prevErrors => ({ ...prevErrors, registerNumber: '' })); 
         } else {
             setErrors(prevErrors => ({
                 ...prevErrors,
@@ -68,7 +68,7 @@ const ParentsFeedback = () => {
         setPassedOutYear(value);
         const date = new Date();
         if (value >= 1952 && value <= date.getFullYear()) {
-            setErrors(prevErrors => ({ ...prevErrors, passedOutYear: '' })); // Clear error if valid
+            setErrors(prevErrors => ({ ...prevErrors, passedOutYear: '' }));
         } else {
             setErrors(prevErrors => ({
                 ...prevErrors,
@@ -86,13 +86,13 @@ const ParentsFeedback = () => {
             ...prevErrors,
             ratings: {
                 ...prevErrors.ratings,
-                [name]: '', // Clear the error once a rating is selected
+                [name]: '', 
             },
         }));
     };
     const handleProgrammeChange = (e) => {
         setProgramme(e.target.value);
-        setErrors(prevErrors => ({ ...prevErrors, programme: '' })); // Clear any previous errors
+        setErrors(prevErrors => ({ ...prevErrors, programme: '' })); 
     };
 
     const Parentsfeedbacksubmit = async (event) => {
@@ -121,7 +121,7 @@ const ParentsFeedback = () => {
             setRegisterNumber('');
             setBranch('');
             setPassedOutYear('');
-            setProgramme(''); // Reset programme field
+            setProgramme(''); 
             setRatings({});
             setErrors({});
         } catch (error) {
