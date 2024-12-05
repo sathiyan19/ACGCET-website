@@ -2,6 +2,14 @@ export const annual_reps=[
     {
 
         'id':"1",
+        "head":"2023-2024",
+        "house":"left",
+        "pdf":"https://drive.google.com/file/d/1qc4aRlhmIUVx8XkJkWnQH873n8LHSZCA/view?usp=sharing"
+
+    },
+    {
+
+        'id':"1",
         "head":"2022-2023",
         "house":"right",
         "pdf":"/AnnualReport_22-23.pdf"
