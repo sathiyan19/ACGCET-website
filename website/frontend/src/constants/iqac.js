@@ -208,12 +208,12 @@ const iqac_strategy=[
 ]
 
 const iqac_feed=[
-    {
-        'id':"1",
-        "head":"2023-2024",
-        "house":"right",
-        "pdf":"/feedback_document_24.pdf"
-    },
+    // {
+    //     'id':"1",
+    //     "head":"2023-2024",
+    //     "house":"right",
+    //     "pdf":"/feedback_document_24.pdf"
+    // },
     {
         'id':"1",
         "head":"2022-2023",
@@ -331,7 +331,7 @@ const iqac_floater_menu={
         },
         {
             'id':'7',
-            'link':'Strategic Plan',
+            'link':'Strategic Plan',
             'path':'/iqac_strategic'
         },
         {
@@ -435,7 +435,7 @@ const Iqac_std_statisfy_data=[
     {
         'id':'1',
         'program':'Student Satisfaction Survey',
-        'pdf':'/naac_feedback_document.pdf'
+        'pdf':'/feedback_document_24.pdf'
 
     }
 ]
