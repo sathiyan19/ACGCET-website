@@ -4,7 +4,7 @@ export const annual_reps=[
         'id':"1",
         "head":"2023-2024",
         "house":"left",
-        "pdf":"https://drive.google.com/file/d/1qc4aRlhmIUVx8XkJkWnQH873n8LHSZCA/view?usp=sharing"
+        "pdf":"/Annual report 23-24.pdf"
 
     },
     {
