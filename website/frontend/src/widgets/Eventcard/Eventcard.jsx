@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Eventcard.css'
 
-const Eventcard = ({date,title,time,venue,cal_link,status}) => {
+const Eventcard = ({date,title,time,venue,cal_link,status,button}) => {
   return (
     <div className="col-md-3 colo">
         <div className="event">
@@ -11,6 +11,7 @@ const Eventcard = ({date,title,time,venue,cal_link,status}) => {
             <div className="title">{title}</div>
             <div className="time">{time}</div>
             <div className="venue">{venue}</div>
+
             <div>
               {status && (<div className='status_up'>Upcoming !</div>)}
               {/* {!status && (<div className='status_com'>Completed</div>)} */}
