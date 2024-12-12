@@ -17,6 +17,12 @@ export const istelist = [
 
 export const istepdf=[
     {
+        'id':"6",
+        "head":"2021-2022",
+        "house":"right",
+        "pdf":"https://drive.google.com/file/d/1jKaN5RTIy3q9xfJ0cN7_wv9JKg51UtpZ/view?usp=sharing"
+    },
+    {
         'id':"1",
         "head":"2020-2021",
         "house":"left",
@@ -45,5 +51,13 @@ export const istepdf=[
         "head":"2016-2017",
         "house":"left",
         "pdf":"https://drive.google.com/file/d/1_eZfZCEg9f_lKUDZkxZqJ_2fsUsM8cPo/view?usp=sharing"
+    }
+]
+
+export const iste_stud_chapter = [
+    {
+        'id':1,
+        'program':"ISTE-TN156",
+        'pdf':"https://drive.google.com/file/d/18-X2ZG01iWb_ueQyYqS90qP8d-afwQ9S/view?usp=sharing"
     }
 ]

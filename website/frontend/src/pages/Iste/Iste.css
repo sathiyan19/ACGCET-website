@@ -33,6 +33,10 @@
 .istepdf{
     width: 70%;
 }
+.iste_cards{
+    display: flex;
+    justify-content: center;
+}
 
 @media(max-width:1350px){
     .isteabt{

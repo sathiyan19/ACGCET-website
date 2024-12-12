@@ -2,8 +2,8 @@ import React,{useEffect} from "react";
 
 import "./Iste.css";
 import { Timeline, Listformat } from "../../components";
-import { Underline, Backtotop } from "../../widgets";
-import { istepdf, istelist } from "../../constants/iste";
+import { Underline, Backtotop,Content_card} from "../../widgets";
+import { istepdf, istelist,iste_stud_chapter } from "../../constants/iste";
 // import istelogo from "../../assets/pictures/istelogo.webp";
 const istelogo ="https://accet-site-media-trial.s3.ap-northeast-1.amazonaws.com/cocurricular/iste/istelogo.webp"
 
@@ -69,6 +69,12 @@ function Iste() {
               />
             ))}
           </div>
+          
+
+        </div>
+        <Underline heading="ISTE Student Chapter TN156" />
+        <div className="iste_cards">
+            {iste_stud_chapter.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
         </div>
       </div>
     </div>
