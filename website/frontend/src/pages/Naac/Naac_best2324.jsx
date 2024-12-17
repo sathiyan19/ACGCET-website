@@ -12,14 +12,11 @@ function Naac_best_practices() {
               <Floatinmenu logo={BsClipboardDataFill} head="Menu" links={naac_menu} />
               <Radial_menu menu_links={naac_menu}/>
               </div>
-        <Underline heading="Best Practices" />
-        {/* <div className='nba_cards'>
+        <Underline heading="Best Practices 23-24" />
+        <div className='nba_cards'>
             {naac.map((item)=><Content_card key={item.id} heading={item.program} pdf={item.pdf}/>)}
-        </div> */}
-        <div className="content_card_holder">
-    {naac_best.map((item)=><Opening key={item.id} heading={item.program} click={item.click} />)}
-    </div>
-        
+        </div>
+       
     </div>
   )
 }

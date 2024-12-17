@@ -33,12 +33,19 @@ export const naac_menu=[
 export const naac=[
     {
         'id':'1',
-        'program':'2024-2025',
-        'pdf':'https://docs.google.com/document/d/1Oa1BR6YPA2B-CGFcjkzW9wPWwj_xAg9IL6E7gKxZUMk/edit?usp=sharing'
+        'program':'Description of the practices',
+        'pdf':'https://drive.google.com/file/d/1erUyCkfjZs7g7ie_CSOrLRi5SF6WsT14/view?usp=drive_link'
     },
     {
         'id':'2',
-        'program':'Best Practices 24-25',
-        'pdf':'https://docs.google.com/document/d/1osI0LGC9WXPXEaUaEnqMBsKLp_7KLSbJ-YgoU7wLkKA/edit?usp=sharing'
+        'program':'Evidence of the practices',
+        'pdf':'https://drive.google.com/file/d/16IjZIr5J_vjK-zesT9cVK_AJSN7NQJWr/view?usp=sharing'
     },
+]
+export const naac_best=[
+    {
+        'id':'1',
+        'program':'2023-2024',
+        'click':'/naacbest2324'
+        }
 ]
