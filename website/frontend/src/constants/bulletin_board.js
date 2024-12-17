@@ -38,6 +38,16 @@ export const bulletin_info=[
 //         ),
 //     },
 {
+    id:'35',
+    link:"https://drive.google.com/file/d/1JcUpA5aUeEwsC9DLbAH223ra40NPtPVm/view?usp=sharing",
+    content:(
+        <span>
+            <span className="newContent">New</span> <span className="insideNewContent">BE Part-time - College Fee for AY 2024-25 - Circular
+</span>
+        </span>
+    ),
+},
+{
     id:'34',
     link:"https://drive.google.com/file/d/1zDeQTaq_IT8QF8Qu7K_zkldoLWaspyDB/view?usp=sharing",
     content:(
