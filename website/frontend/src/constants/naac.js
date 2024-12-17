@@ -16,8 +16,15 @@ export const naac_data=[
     },
 ]
 export const naac_menu=[
+   
     {
         id: "1",
+        path: "/naac",
+        link: "About",
+        arl: "l",
+    } ,
+    {
+        id: "2",
         path: "/naacbestpractices",
         link: "Best Practices",
         arl: "l",
