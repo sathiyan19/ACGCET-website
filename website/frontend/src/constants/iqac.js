@@ -208,12 +208,12 @@ const iqac_strategy=[
 ]
 
 const iqac_feed=[
-    // {
-    //     'id':"1",
-    //     "head":"2023-2024",
-    //     "house":"right",
-    //     "pdf":"/feedback_document_24.pdf"
-    // },
+    {
+        'id':"1",
+        "head":"2023-2024",
+        "house":"right",
+        "pdf":"/Feedback Analysis_23-24.pdf"
+    },
     {
         'id':"1",
         "head":"2022-2023",
