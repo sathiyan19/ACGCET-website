@@ -1,0 +1,32 @@
+.bog_whole {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .bog_pdfsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bog_pdf {
+    width: 85%;
+  }
+  
+  @media (max-width: 1024px) {
+    .bog_pdf {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .bog_pdf {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .bog_pdf {
+      width: 100%;
+    }
+  }
+  

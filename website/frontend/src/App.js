@@ -188,7 +188,7 @@ import {
   Std_teaching_fb,
   Practical_fb,
   Technical_fb,
-
+  BoG,
   
   Consultancy_fb,
   FeedbackPdf,
@@ -409,6 +409,8 @@ const App = () => {
          <Route path="/feedback/supplier_fb" element={<Supplier_fb/>}/>
          <Route path="/feedback/employer_fb" element={<Employer_fb/>}/>
          <Route path="/FeedbackPdf" element={<FeedbackPdf/>}/>
+
+         <Route path="/BoG" element={<BoG/>}/>
       </Routes>
       {/* <Chatbot/> */}
       <Footer />
